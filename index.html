@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YSU Tool Development Tracker</title>
+<style>
+:root{
+  --bg:#f4f7fb; --card:#fff; --text:#1f2937; --muted:#6b7280;
+  --blue:#1f4e78; --line:#dbe3ec; --green:#1f8a5b; --amber:#b7791f; --red:#b42318;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--text)}
+.wrap{width:100%;max-width:none;margin:0;padding:clamp(12px,1.5vw,28px)}
+h1{font-size:26px;margin:0 0 6px}
+.sub{color:var(--muted);margin-bottom:18px}
+.metrics{display:grid;grid-template-columns:repeat(5,minmax(150px,1fr));gap:12px;margin-bottom:16px}
+.metric,.panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+.metric b{font-size:24px;display:block;margin-top:6px}
+.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:14px;width:100%}
+.controls input,.controls select,.controls button{
+  padding:9px 10px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--text)
+}
+button{cursor:pointer}
+button.primary{background:var(--blue);color:#fff;border-color:var(--blue)}
+button.danger{color:#9b1c1c}
+.statusline{margin-left:auto;color:var(--muted);font-size:12px}
+.tablewrap{width:100%;overflow:auto;max-height:76vh;border:1px solid var(--line);border-radius:12px;background:#fff}
+table{width:100%;border-collapse:collapse;font-size:13px;min-width:100%;table-layout:auto}
+th,td{padding:9px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left;overflow-wrap:anywhere;word-break:normal}
+th{
+  background:#eaf2f8;position:sticky;top:0;z-index:2;white-space:nowrap;cursor:pointer;user-select:none
+}
+th:hover{background:#dceaf5}
+th .sort{font-size:11px;color:var(--muted);margin-left:4px}
+td[contenteditable="true"]{outline:none;background:#fff}
+td[contenteditable="true"]:focus{box-shadow:inset 0 0 0 2px #7aa7cc;background:#fbfdff}
+td.num{text-align:center;min-width:64px;width:5.5vw}
+td.long{min-width:150px;width:16vw}
+td.name{min-width:160px;width:13vw}
+td.smallcol{min-width:88px;width:8vw}
+.bar{height:8px;background:#e8edf3;border-radius:999px;overflow:hidden;min-width:90px;margin-top:5px}
+.bar>span{display:block;height:100%;background:var(--blue)}
+.badge{display:inline-block;padding:3px 7px;border-radius:999px;background:#eef3f8;white-space:nowrap}
+.high{background:#fdecec;color:#9b1c1c}
+.medium{background:#fff4db;color:#855d00}
+.low{background:#edf7f1;color:#19633c}
+.cell-select{
+  width:100%;border:0;border-radius:999px;padding:5px 8px;font:inherit;cursor:pointer;outline:none
+}
+.status-active{background:#e7f6ed;color:#17603a}
+.status-planning{background:#fff4db;color:#855d00}
+.status-future{background:#eef2f7;color:#51606f}
+.status-paused{background:#fdecec;color:#9b1c1c}
+.status-complete{background:#e8f0ff;color:#1f4e78}
+.priority-high{background:#fdecec;color:#9b1c1c}
+.priority-medium{background:#fff4db;color:#855d00}
+.priority-low{background:#edf7f1;color:#19633c}
+.github-required{background:#e8f0ff;color:#1f4e78}
+.github-optional{background:#fff4db;color:#855d00}
+.github-no{background:#eef2f7;color:#51606f}
+.codex-xs{background:#eef2f7;color:#51606f}
+.codex-s{background:#edf7f1;color:#19633c}
+.codex-m{background:#fff4db;color:#855d00}
+.codex-l{background:#fdecec;color:#9b1c1c}
+.codex-xl{background:#eadcf8;color:#65318e}
+.small{color:var(--muted);font-size:12px}
+.note{margin-top:12px;color:var(--muted);font-size:12px;line-height:1.45}
+.remove{border:0;background:transparent;color:#a33;padding:2px 5px;font-size:16px}
+@media(min-width:1700px){
+  table{font-size:13px}
+  td.long{width:18vw}
+  td.name{width:14vw}
+}
+@media(max-width:1200px){
+  table{min-width:1320px}
+  td.long{min-width:210px;width:auto}
+  td.name{min-width:190px;width:auto}
+  td.smallcol{min-width:100px;width:auto}
+}
+@media(max-width:850px){
+  .metrics{grid-template-columns:repeat(2,1fr)}
+  .statusline{width:100%;margin-left:0}
+  .wrap{padding:10px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>YSU Tool Development — Time & Credit Tracker</h1>
+  <div class="sub">Most fields are freely editable. Status, Priority, GitHub, and Codex Load use fixed color-coded dropdowns for consistency. Add/delete items and click any column header to sort.</div>
+
+  <div class="metrics">
+    <div class="metric">Active tools<b id="active"></b></div>
+    <div class="metric">High priority<b id="high"></b></div>
+    <div class="metric">GitHub required<b id="githubRequired"></b></div>
+    <div class="metric">Planned Codex Load<b id="codex"></b></div>
+    <div class="metric">Planned Image 2 outputs<b id="images"></b></div>
+  </div>
+
+  <div class="controls">
+    <input id="search" placeholder="Search tool / next step">
+    <select id="priorityFilter">
+      <option value="">All priorities</option><option>High</option><option>Medium</option><option>Low</option>
+    </select>
+    <select id="resourceFilter">
+      <option value="">All resources</option><option>Codex</option><option>GPT Image 2</option><option>Manual</option><option>Mixed</option><option>Gemini</option>
+    </select>
+    <select id="statusFilter">
+      <option value="">All status</option><option>Active</option><option>Planning</option><option>Future</option><option>Paused</option><option>Complete</option>
+    </select>
+    <select id="githubFilter">
+      <option value="">All GitHub</option><option>Required</option><option>Optional</option><option>No</option>
+    </select>
+    <button id="addRow" class="primary" type="button">+ Add Item</button>
+    <button id="deleteSelected" class="danger" type="button">Delete Selected</button>
+    <button id="resetData" type="button">Reset Sample Data</button>
+    <span class="statusline" id="saveStatus">Saved locally</span>
+  </div>
+
+  <div class="tablewrap">
+    <table>
+      <thead>
+        <tr>
+          <th style="cursor:default"><input id="selectAll" type="checkbox" aria-label="Select all visible items"></th>
+          <th data-key="name">Tool <span class="sort"></span></th>
+          <th data-key="category">Category <span class="sort"></span></th>
+          <th data-key="platform">Platform <span class="sort"></span></th>
+          <th data-key="github">GitHub <span class="sort"></span></th>
+          <th data-key="status">Status <span class="sort"></span></th>
+          <th data-key="progress">Progress <span class="sort"></span></th>
+          <th data-key="priority">Priority <span class="sort"></span></th>
+          <th data-key="current">Current state <span class="sort"></span></th>
+          <th data-key="next">Next step <span class="sort"></span></th>
+          <th data-key="resource">Resource <span class="sort"></span></th>
+          <th data-key="codex">Codex Load <span class="sort"></span></th>
+          <th data-key="image2">Image2 <span class="sort"></span></th>
+          <th data-key="hours">Hours <span class="sort"></span></th>
+          <th data-key="notes">Notes <span class="sort"></span></th>
+          <th data-key="readiness">Readiness <span class="sort"></span></th>
+          <th style="cursor:default">Delete</th>
+        </tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </div>
+
+  <div class="note">
+    Use + Add Item to create a new row. New software tools default to GitHub = Required. Use Optional/No only when version control or deployment adds little value. Use the left checkboxes + Delete Selected for batch removal, or × for one item. Sorting rules: Status defaults to Active → Planning → Future → Paused → Complete. Priority defaults to High → Medium → Low.
+    Click the same header again to reverse the order. Progress, Image2, and Hours sort numerically. Codex Load is a relative workload estimate: XS → S → M → L → XL, not an actual OpenAI credit amount. GitHub order is Required → Optional → No. Changes are stored with localStorage, so they remain after reopening this HTML in the same browser profile.
+  </div>
+</div>
+
+<script>
+const DEFAULT_TOOLS = [{"name": "Plumbing Calculation Tool", "category": "Code / Calculation", "platform": "Web + Revit", "status": "Active", "progress": 80, "priority": "High", "current": "Web calculator deployed; GitHub repo + Netlify connected", "next": "Build pyRevit integration", "resource": "Codex", "codex": 3, "image2": 0, "hours": 2, "notes": "Connect web logic / calculation engine to pyRevit UI and Revit parameters", "readiness": "Ready", "github": "Required"}, {"name": "Monday Sim Project Management Tool", "category": "Project Management / Simulation", "platform": "Web / Local", "status": "Active", "progress": 70, "priority": "High", "current": "Existing tool already developed outside standardized GitHub workflow", "next": "Move project into GitHub repo and standardize push/deploy workflow", "resource": "Codex", "codex": 2, "image2": 0, "hours": 2, "notes": "Migration task: preserve current working version, initialize repo, add README/.gitignore, then use GitHub as source of truth for future pushes", "readiness": "Ready", "github": "Required"}, {"name": "YSU Architecture AI Workflow Hub v2", "category": "Platform / Library", "platform": "Web", "status": "Active", "progress": 35, "priority": "High", "current": "MVP direction + card structure + categories defined", "next": "Build first usable Hub with 5–10 tools", "resource": "Codex", "codex": 5, "image2": 4, "hours": 4, "notes": "Single-page searchable tool library; preserve portable core instructions", "readiness": "Ready", "github": "Required"}, {"name": "Rachel's Animal Chess", "category": "Game", "platform": "Browser / iPad", "status": "Active", "progress": 55, "priority": "Medium", "current": "Core rules, board topology, abilities and art direction largely defined", "next": "Split next sprint: code changes vs artwork refresh", "resource": "Mixed", "codex": 5, "image2": 18, "hours": 5, "notes": "Codex: gameplay/UI fixes. GPT Image 2: animal/skill/token art updates; keep local unless collaboration/versioning needs change", "readiness": "Ready", "github": "No"}, {"name": "AI Image / File Manager", "category": "Productivity", "platform": "Desktop / Web", "status": "Planning", "progress": 20, "priority": "High", "current": "Use cases defined: drone, field report, Enscape, batch naming/classification", "next": "Prototype batch image classification + naming workflow", "resource": "Codex", "codex": 5, "image2": 0, "hours": 4, "notes": "Start with local folder scan + metadata + AI classification fallback", "readiness": "Needs scope", "github": "Required"}, {"name": "Revit QA/QC Toolkit", "category": "BIM / QAQC", "platform": "pyRevit", "status": "Planning", "progress": 15, "priority": "High", "current": "Candidate checks identified (sheets, rooms, tags, templates, warnings)", "next": "Build first deterministic pyRevit checker", "resource": "Codex", "codex": 3, "image2": 0, "hours": 3, "notes": "Start with one narrow check, then expand into reusable QAQC commands", "readiness": "Ready", "github": "Required"}, {"name": "Revit Helper", "category": "BIM / Assistant", "platform": "Gem / GPT → pyRevit", "status": "Planning", "progress": 25, "priority": "Medium", "current": "Assistant concept exists", "next": "Define which functions should become executable Revit tools", "resource": "Manual", "codex": 1, "image2": 0, "hours": 2, "notes": "Avoid building an agent before underlying tools exist", "readiness": "Needs definition", "github": "Required"}, {"name": "Parking Calculator", "category": "Code / Calculation", "platform": "Gem / Web", "status": "Planning", "progress": 30, "priority": "Medium", "current": "Calculation concept exists", "next": "Decide whether to productize as standalone web calculator", "resource": "Codex", "codex": 3, "image2": 0, "hours": 2, "notes": "Reuse common calculator shell if Plumbing Tool architecture is stable", "readiness": "Blocked by priority", "github": "Required"}, {"name": "Occupancy / Egress Tool", "category": "Code / Calculation", "platform": "Gem / Web", "status": "Planning", "progress": 25, "priority": "Medium", "current": "Calculation concept exists", "next": "Define inputs, code assumptions, outputs and citations", "resource": "Manual", "codex": 1, "image2": 0, "hours": 3, "notes": "Do rules/spec first; code only after logic is locked", "readiness": "Needs definition", "github": "Required"}, {"name": "Tool Instruction Library", "category": "AI Infrastructure", "platform": "Markdown / Skills", "status": "Active", "progress": 40, "priority": "High", "current": "Need portable core instructions independent of Gem/GPT platform", "next": "Extract core instruction files for top 5 tools", "resource": "Manual", "codex": 1, "image2": 0, "hours": 2, "notes": "Low Codex cost; protects future Gem → Skill migration", "readiness": "Ready", "github": "Optional"}, {"name": "Architecture AI Agent / MCP", "category": "Agent / BIM", "platform": "MCP + Revit", "status": "Future", "progress": 5, "priority": "Low", "current": "Long-term architecture clarified", "next": "Wait until pyRevit tool layer is stable", "resource": "Codex", "codex": 8, "image2": 0, "hours": 8, "notes": "Do not spend scarce Codex credit here yet", "readiness": "Blocked", "github": "Required"}, {"name": "AI Agent Orchestration Dashboard", "category": "AI Infrastructure / Orchestration", "platform": "Web + API / MCP", "github": "Required", "status": "Future", "progress": 10, "priority": "Medium", "current": "Concept defined: advanced version of the development tracker for coordinating multiple AI agents and task progress", "next": "Build manual orchestration MVP: task board, agent assignment, dependencies, status, credit estimate, and handoff notes", "resource": "Codex", "codex": 5, "image2": 0, "hours": 5, "notes": "Phase 1 should NOT auto-call models. Assign GPT / Codex / Gemini / Image 2 manually first. Later phases can connect APIs, GitHub, MCP, deployment status, and automated agent handoffs.", "readiness": "Needs definition"}];
+const STORAGE_KEY = 'ysu-tool-development-tracker-v8';
+
+let tools = loadTools();
+let sortState = { key: null, dir: 1 };
+
+const statusOrder = { Active: 1, Planning: 2, Future: 3, Paused: 4, Complete: 5 };
+const priorityOrder = { High: 1, Medium: 2, Low: 3 };
+const githubOrder = { Required: 1, Optional: 2, No: 3 };
+const codexOrder = { XS: 1, S: 2, M: 3, L: 4, XL: 5 };
+
+const rows = document.getElementById('rows');
+const search = document.getElementById('search');
+const priorityFilter = document.getElementById('priorityFilter');
+const resourceFilter = document.getElementById('resourceFilter');
+const statusFilter = document.getElementById('statusFilter');
+const githubFilter = document.getElementById('githubFilter');
+const saveStatus = document.getElementById('saveStatus');
+
+function normalizeCodexLoad(v){
+  if(['XS','S','M','L','XL'].includes(v)) return v;
+  const n = Number(v);
+  if(!Number.isFinite(n) || n <= 1) return 'XS';
+  if(n <= 2) return 'S';
+  if(n <= 3) return 'M';
+  if(n <= 5) return 'L';
+  return 'XL';
+}
+
+function normalizeTools(list){
+  return list.map(t => ({...t, codex: normalizeCodexLoad(t.codex)}));
+}
+
+function loadTools(){
+  try{
+    const saved = localStorage.getItem(STORAGE_KEY);
+    return normalizeTools(saved ? JSON.parse(saved) : structuredClone(DEFAULT_TOOLS));
+  }catch(e){
+    return normalizeTools(JSON.parse(JSON.stringify(DEFAULT_TOOLS)));
+  }
+}
+
+function saveTools(){
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(tools));
+  saveStatus.textContent = 'Saved locally · ' + new Date().toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'});
+  updateMetrics();
+}
+
+function esc(v){
+  return String(v ?? '')
+    .replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;')
+    .replaceAll('"','&quot;').replaceAll("'","&#039;");
+}
+
+function num(v){
+  const n = Number(v);
+  return Number.isFinite(n) ? n : 0;
+}
+
+function getFilteredSorted(){
+  const q = search.value.toLowerCase().trim();
+  const p = priorityFilter.value;
+  const r = resourceFilter.value;
+  const s = statusFilter.value;
+  const g = githubFilter.value;
+
+  let data = tools
+    .map((t,index)=>({...t, _index:index}))
+    .filter(t =>
+      (!q || Object.values(t).join(' ').toLowerCase().includes(q)) &&
+      (!p || t.priority === p) &&
+      (!r || t.resource === r) &&
+      (!s || t.status === s) &&
+      (!g || t.github === g)
+    );
+
+  if(sortState.key){
+    const k = sortState.key;
+    const dir = sortState.dir;
+    data.sort((a,b)=>{
+      let av = a[k], bv = b[k];
+
+      if(k === 'status'){
+        av = statusOrder[av] ?? 999;
+        bv = statusOrder[bv] ?? 999;
+      } else if(k === 'priority'){
+        av = priorityOrder[av] ?? 999;
+        bv = priorityOrder[bv] ?? 999;
+      } else if(k === 'github'){
+        av = githubOrder[av] ?? 999;
+        bv = githubOrder[bv] ?? 999;
+      } else if(k === 'codex'){
+        av = codexOrder[av] ?? 999;
+        bv = codexOrder[bv] ?? 999;
+      } else if(['progress','image2','hours'].includes(k)){
+        av = num(av); bv = num(bv);
+      } else {
+        av = String(av ?? '').toLowerCase();
+        bv = String(bv ?? '').toLowerCase();
+      }
+
+      if(av < bv) return -1 * dir;
+      if(av > bv) return 1 * dir;
+      return a._index - b._index;
+    });
+  }
+  return data;
+}
+
+function editableCell(value, key, index, cls=''){
+  return `<td class="${cls}" contenteditable="true" data-index="${index}" data-key="${key}">${esc(value)}</td>`;
+}
+
+function selectCell(value, key, index, options, cls=''){
+  const opts = options.map(o => `<option value="${esc(o)}" ${o===value?'selected':''}>${esc(o)}</option>`).join('');
+  return `<td class="${cls}">
+    <select class="cell-select" data-index="${index}" data-key="${key}">
+      ${opts}
+    </select>
+  </td>`;
+}
+
+function selectColorClass(key, value){
+  if(key === 'status') return {
+    Active:'status-active', Planning:'status-planning', Future:'status-future',
+    Paused:'status-paused', Complete:'status-complete'
+  }[value] || '';
+  if(key === 'priority') return {
+    High:'priority-high', Medium:'priority-medium', Low:'priority-low'
+  }[value] || '';
+  if(key === 'github') return {
+    Required:'github-required', Optional:'github-optional', No:'github-no'
+  }[value] || '';
+  if(key === 'codex') return {
+    XS:'codex-xs', S:'codex-s', M:'codex-m', L:'codex-l', XL:'codex-xl'
+  }[value] || '';
+  return '';
+}
+
+function applySelectColor(select){
+  select.className = 'cell-select ' + selectColorClass(select.dataset.key, select.value);
+}
+
+function render(){
+  const data = getFilteredSorted();
+  rows.innerHTML = data.map(t => `
+    <tr>
+      <td><input class="rowSelect" type="checkbox" data-select="${t._index}" aria-label="Select ${esc(t.name)}"></td>
+      ${editableCell(t.name,'name',t._index,'name')}
+      ${editableCell(t.category,'category',t._index,'smallcol')}
+      ${editableCell(t.platform,'platform',t._index,'smallcol')}
+      ${selectCell(t.github,'github',t._index,['Required','Optional','No'],'smallcol')}
+      ${selectCell(t.status,'status',t._index,['Active','Planning','Future','Paused','Complete'],'smallcol')}
+      <td class="num" contenteditable="true" data-index="${t._index}" data-key="progress">
+        ${esc(t.progress)}
+        <div class="bar" contenteditable="false"><span style="width:${Math.max(0,Math.min(100,num(t.progress)))}%"></span></div>
+      </td>
+      ${selectCell(t.priority,'priority',t._index,['High','Medium','Low'],'smallcol')}
+      ${editableCell(t.current,'current',t._index,'long')}
+      ${editableCell(t.next,'next',t._index,'long')}
+      ${editableCell(t.resource,'resource',t._index,'smallcol')}
+      ${selectCell(t.codex,'codex',t._index,['XS','S','M','L','XL'],'smallcol')}
+      ${editableCell(t.image2,'image2',t._index,'num')}
+      ${editableCell(t.hours,'hours',t._index,'num')}
+      ${editableCell(t.notes,'notes',t._index,'long')}
+      ${editableCell(t.readiness,'readiness',t._index,'smallcol')}
+      <td><button class="remove" type="button" data-remove="${t._index}" title="Delete tool">×</button></td>
+    </tr>
+  `).join('');
+
+  document.querySelectorAll('td[contenteditable="true"]').forEach(td=>{
+    td.addEventListener('blur', handleEdit);
+    td.addEventListener('keydown', e=>{
+      if(e.key === 'Enter' && !e.shiftKey){
+        e.preventDefault();
+        td.blur();
+      }
+    });
+  });
+
+  document.querySelectorAll('select.cell-select').forEach(sel=>{
+    applySelectColor(sel);
+    sel.addEventListener('change', e=>{
+      const s = e.currentTarget;
+      const index = Number(s.dataset.index);
+      const key = s.dataset.key;
+      tools[index][key] = s.value;
+      applySelectColor(s);
+      saveTools();
+      render();
+    });
+  });
+
+  document.querySelectorAll('[data-remove]').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const i = Number(btn.dataset.remove);
+      if(confirm(`Delete "${tools[i].name}"?`)){
+        tools.splice(i,1);
+        saveTools();
+        render();
+      }
+    });
+  });
+
+  const visibleChecks = [...document.querySelectorAll('.rowSelect')];
+  const selectAll = document.getElementById('selectAll');
+  selectAll.checked = visibleChecks.length > 0 && visibleChecks.every(c => c.checked);
+  selectAll.indeterminate = false;
+
+  visibleChecks.forEach(c=>{
+    c.addEventListener('change', ()=>{
+      const all = [...document.querySelectorAll('.rowSelect')];
+      const checked = all.filter(x=>x.checked).length;
+      selectAll.checked = checked === all.length && all.length > 0;
+      selectAll.indeterminate = checked > 0 && checked < all.length;
+    });
+  });
+
+  updateSortIndicators();
+  updateMetrics();
+}
+
+function handleEdit(e){
+  const td = e.currentTarget;
+  const index = Number(td.dataset.index);
+  const key = td.dataset.key;
+
+  // Progress cell contains the inline bar; only read the first text node.
+  let value;
+  if(key === 'progress'){
+    value = [...td.childNodes].filter(n=>n.nodeType===Node.TEXT_NODE).map(n=>n.textContent).join('').trim();
+  }else{
+    value = td.textContent.trim();
+  }
+
+  if(['progress','image2','hours'].includes(key)){
+    value = num(value);
+    if(key === 'progress') value = Math.max(0, Math.min(100, value));
+  }
+
+  tools[index][key] = value;
+  saveTools();
+  render();
+}
+
+function updateMetrics(){
+  document.getElementById('active').textContent = tools.filter(t=>t.status === 'Active').length;
+  document.getElementById('high').textContent = tools.filter(t=>t.priority === 'High').length;
+  document.getElementById('githubRequired').textContent = tools.filter(t=>t.github === 'Required').length;
+  document.getElementById('codex').textContent = tools.filter(t=>['L','XL'].includes(t.codex)).length + ' L/XL tasks';
+  document.getElementById('images').textContent = tools.reduce((a,t)=>a+num(t.image2),0);
+}
+
+function updateSortIndicators(){
+  document.querySelectorAll('th[data-key]').forEach(th=>{
+    const span = th.querySelector('.sort');
+    if(th.dataset.key === sortState.key){
+      span.textContent = sortState.dir === 1 ? '▲' : '▼';
+    }else{
+      span.textContent = '';
+    }
+  });
+}
+
+document.querySelectorAll('th[data-key]').forEach(th=>{
+  th.addEventListener('click', ()=>{
+    const key = th.dataset.key;
+    if(sortState.key === key){
+      sortState.dir *= -1;
+    }else{
+      sortState.key = key;
+      // For status & priority, first click gives requested semantic order.
+      // For progress/cost, first click is low-to-high; click again for high-to-low.
+      sortState.dir = 1;
+    }
+    render();
+  });
+});
+
+[search, priorityFilter, resourceFilter, statusFilter, githubFilter].forEach(el=>el.addEventListener('input',render));
+
+document.getElementById('addRow').addEventListener('click', ()=>{
+  tools.push({
+    name:'New Tool', category:'', platform:'', github:'Required', status:'Planning', progress:0, priority:'Medium',
+    current:'', next:'', resource:'Manual', codex:'XS', image2:0, hours:0, notes:'', readiness:'Needs definition'
+  });
+  saveTools();
+  sortState = {key:null, dir:1};
+  render();
+  setTimeout(()=>{
+    const cells = document.querySelectorAll('td[data-key="name"]');
+    const last = cells[cells.length-1];
+    if(last){ last.focus(); document.execCommand('selectAll', false, null); }
+  },0);
+});
+
+
+document.getElementById('selectAll').addEventListener('change', e=>{
+  document.querySelectorAll('.rowSelect').forEach(c=>c.checked = e.target.checked);
+});
+
+document.getElementById('deleteSelected').addEventListener('click', ()=>{
+  const selected = [...document.querySelectorAll('.rowSelect:checked')]
+    .map(c=>Number(c.dataset.select))
+    .sort((a,b)=>b-a);
+
+  if(!selected.length){
+    alert('Select one or more items first.');
+    return;
+  }
+
+  const names = selected.map(i=>tools[i]?.name).filter(Boolean);
+  const label = names.length <= 3 ? names.join(', ') : `${names.length} selected items`;
+
+  if(confirm(`Delete ${label}?`)){
+    selected.forEach(i=>tools.splice(i,1));
+    saveTools();
+    render();
+  }
+});
+
+document.getElementById('resetData').addEventListener('click', ()=>{
+  if(confirm('Reset all edits and restore the original sample data?')){
+    tools = normalizeTools(JSON.parse(JSON.stringify(DEFAULT_TOOLS)));
+    localStorage.removeItem(STORAGE_KEY);
+    sortState = {key:null, dir:1};
+    render();
+    saveStatus.textContent = 'Sample data restored';
+  }
+});
+
+render();
+</script>
+</body>
+</html>
