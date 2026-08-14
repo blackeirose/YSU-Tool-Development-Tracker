@@ -131,6 +131,11 @@ td.smallcol{min-width:88px;width:8vw}
 .detail-field{border:1px solid var(--line);border-radius:12px;padding:12px;background:#fbfdff}
 .detail-field label{display:block;color:var(--muted);font-size:11px;margin-bottom:5px;text-transform:uppercase;letter-spacing:.04em}
 .detail-field .value{font-size:14px;white-space:pre-wrap}
+.detail-input,.detail-select,.detail-textarea{
+  width:100%;border:1px solid var(--line);border-radius:8px;padding:8px 9px;background:#fff;color:var(--text);font:inherit
+}
+.detail-textarea{min-height:88px;resize:vertical}
+.detail-number{max-width:140px}
 .detail-wide{grid-column:1/-1}
 .detail-links{display:flex;flex-wrap:wrap;gap:7px}
 @media(max-width:1400px){.kanban{grid-template-columns:repeat(3,minmax(250px,1fr))}}
@@ -141,7 +146,7 @@ td.smallcol{min-width:88px;width:8vw}
 <body>
 <div class="wrap">
   <h1>YSU Tool Development — Time & Credit Tracker</h1>
-  <div class="sub">Switch between Table and Card views. Table is best for editing; Card view is best for planning, drag-and-drop status changes, and opening project links/details.</div>
+  <div class="sub">Switch between Table and Card views. Both views are editable. Card view supports drag-and-drop status changes and click-to-edit full project details.</div>
 
   <div class="metrics">
     <div class="metric">Active tools<b id="active"></b></div>
@@ -202,7 +207,7 @@ td.smallcol{min-width:88px;width:8vw}
   <div id="cardView"></div>
 
   <div class="note">
-    Use + Add Item to create a new row. Use Edit in the Launch column to add multiple links with Label | URL. Card view supports drag-and-drop between status columns and click-to-open project details. New software tools default to GitHub = Required. Use Optional/No only when version control or deployment adds little value. Use the left checkboxes + Delete Selected for batch removal, or × for one item. Sorting rules: Status defaults to Active → Planning → Future → Idea → Paused → Complete. Priority defaults to High → Medium → Low.
+    Use + Add Item to create a new row. Use Edit in the Launch column to add multiple links with Label | URL. Card view supports drag-and-drop between status columns and click-to-edit project details. New software tools default to GitHub = Required. Use Optional/No only when version control or deployment adds little value. Use the left checkboxes + Delete Selected for batch removal, or × for one item. Sorting rules: Status defaults to Active → Planning → Future → Idea → Paused → Complete. Priority defaults to High → Medium → Low.
     Click the same header again to reverse the order. Progress, Image2, and Hours sort numerically. Codex Load is a relative workload estimate: XS → S → M → L → XL, not an actual OpenAI credit amount. GitHub order is Required → Optional → No. Changes are stored with localStorage, so they remain after reopening this HTML in the same browser profile.
   </div>
 </div>
@@ -232,7 +237,7 @@ td.smallcol{min-width:88px;width:8vw}
 
 <script>
 const DEFAULT_TOOLS = [{"name": "Plumbing Calculation Tool", "category": "Code / Calculation", "platform": "Web + Revit", "github": "Required", "status": "Active", "progress": 80, "priority": "High", "current": "Web calculator deployed; GitHub repo + Netlify connected", "next": "Build pyRevit integration", "resource": "Codex", "codex": "M", "image2": 0, "hours": 2, "notes": "Connect web logic / calculation engine to pyRevit UI and Revit parameters", "readiness": "Ready", "links": [{"label": "GPT", "url": "https://chatgpt.com/g/g-p-6a778930cb108191abe3cef74259ddda-arch-tool/c/6a778931-d95c-83ea-92b6-9e0295f13352"}, {"label": "Codex", "url": "codex://threads/019fe42f-3b7d-7211-ab36-6c2a5548d3ab"}]}, {"name": "Monday Sim Project Management Tool", "category": "Project Management / Simulation", "platform": "Web / Local", "github": "Required", "status": "Active", "progress": 70, "priority": "High", "current": "Existing tool already developed outside standardized GitHub workflow", "next": "Move project into GitHub repo and standardize push/deploy workflow", "resource": "Codex", "codex": "S", "image2": 0, "hours": 2, "notes": "Preserve working version, initialize repo, add README/.gitignore, then use GitHub as source of truth", "readiness": "Ready", "links": [{"label": "Codex", "url": "codex://threads/019fc60a-c170-7ef1-b0a0-3febfacdde94"}]}, {"name": "YSU Architecture AI Workflow Hub v2", "category": "Platform / Library", "platform": "Web", "github": "Required", "status": "Active", "progress": 35, "priority": "High", "current": "MVP direction + card structure + categories defined", "next": "Build first usable Hub with 5–10 tools", "resource": "Codex", "codex": "L", "image2": 4, "hours": 4, "notes": "Single-page searchable tool library; preserve portable core instructions", "readiness": "Ready", "links": [{"label": "Main GPT", "url": "https://chatgpt.com/g/g-p-6a696a866010819183711854837a1de0-ysu-architecture-ai-workflow-hub-v2/c/6a696bca-d360-83ea-9527-a9a20b89c1c1"}, {"label": "Style→GPT", "url": "https://chatgpt.com/g/g-p-6a696dfa4fb48191b414e7841435e956-zhuan-hua-ji-you-feng-ge-dao-gpt/c/6a696e00-1b80-83ea-add3-ab55892b0f5b"}]}, {"name": "Rachel's Animal Chess", "category": "Game", "platform": "Browser / iPad", "github": "No", "status": "Active", "progress": 55, "priority": "Medium", "current": "Core rules, board topology, abilities and art direction largely defined", "next": "Split next sprint: code changes vs artwork refresh", "resource": "Mixed", "codex": "L", "image2": 18, "hours": 5, "notes": "Codex: gameplay/UI fixes. GPT Image 2: animal/skill/token art updates", "readiness": "Ready", "links": [{"label": "GPT", "url": "https://chatgpt.com/g/g-p-6a73c8e42ab48191b24537814bd1e29e/c/6a73c928-c85c-83ea-a7e3-d820a738485e"}, {"label": "Codex", "url": "codex://threads/019fcff1-6456-7c41-86ef-5bb51f515e2d"}]}, {"name": "AI Image / File Manager", "category": "Productivity", "platform": "Desktop / Web", "github": "Required", "status": "Planning", "progress": 20, "priority": "High", "current": "Use cases defined: drone, field report, Enscape, batch naming/classification", "next": "Prototype batch image classification + naming workflow", "resource": "Codex", "codex": "L", "image2": 0, "hours": 4, "notes": "Start with local folder scan + metadata + AI classification fallback", "readiness": "Needs scope", "links": [{"label": "GPT", "url": "https://chatgpt.com/g/g-p-6a761326c4648191bed1f9481bc8379c-computer-tools/c/6a7a6a0e-a18c-83e8-9187-e1282dce3f51"}]}, {"name": "GitHub Auto-Push / Deployment Workflow", "category": "Developer Infrastructure", "platform": "GitHub / Deployment", "github": "Required", "status": "Planning", "progress": 15, "priority": "High", "current": "Need a standardized workflow for moving new tools from local development to GitHub and deployment", "next": "Define repeatable local → GitHub → Netlify / GitHub Pages workflow", "resource": "Codex", "codex": "M", "image2": 0, "hours": 2, "notes": "Shared discussion with AI Image / File Manager. Goal: reduce manual push/deploy work for future tools.", "readiness": "Needs definition", "links": [{"label": "GPT", "url": "https://chatgpt.com/g/g-p-6a761326c4648191bed1f9481bc8379c-computer-tools/c/6a7a6a0e-a18c-83e8-9187-e1282dce3f51"}]}, {"name": "Tool Instruction Library", "category": "AI Infrastructure", "platform": "Markdown / Skills", "github": "Optional", "status": "Active", "progress": 40, "priority": "High", "current": "Need portable core instructions independent of Gem/GPT platform", "next": "Extract core instruction files for top 5 tools", "resource": "Manual", "codex": "XS", "image2": 0, "hours": 2, "notes": "Low Codex cost; protects future Gem → Skill migration", "readiness": "Ready", "links": [{"label": "Style→GPT", "url": "https://chatgpt.com/g/g-p-6a696dfa4fb48191b414e7841435e956-zhuan-hua-ji-you-feng-ge-dao-gpt/c/6a696e00-1b80-83ea-add3-ab55892b0f5b"}]}, {"name": "AI Development Control Center", "category": "AI Infrastructure / Orchestration", "platform": "Web + API / MCP", "github": "Required", "status": "Future", "progress": 10, "priority": "Medium", "current": "Concept defined as the advanced evolution of the current tracker for coordinating AI work and task progress", "next": "Build manual orchestration MVP: task board, AI assignment, dependencies, status, workload estimate and handoff notes", "resource": "Codex", "codex": "L", "image2": 0, "hours": 5, "notes": "Phase 1: manual GPT / Codex / Gemini / Image 2 assignment. Later connect APIs, GitHub, MCP and automated handoffs.", "readiness": "Needs definition", "links": [{"label": "Control Center GPT", "url": "https://chatgpt.com/g/g-p-6a7771df41388191a6734c5e058e7823-ai-development-control-center/c/6a776b96-e7b8-83ea-9e65-8623e5498757"}, {"label": "Tracker Evolution GPT", "url": "https://chatgpt.com/g/g-p-6a778930cb108191abe3cef74259ddda-arch-tool/c/6a7e36ad-8368-83e8-806b-51557039133f"}]}, {"name": "Tool Development Tracker", "category": "Developer Infrastructure", "platform": "Web / GitHub Pages", "github": "Required", "status": "Active", "progress": 85, "priority": "High", "current": "Editable tracker with sorting, filters, status colors, workload planning and GitHub deployment", "next": "Add launch links and continue evolving toward the AI Development Control Center", "resource": "Manual", "codex": "XS", "image2": 0, "hours": 1, "notes": "Current tracker is the project overview layer and can later become part of the Control Center.", "readiness": "Ready", "links": [{"label": "GPT", "url": "https://chatgpt.com/g/g-p-6a778930cb108191abe3cef74259ddda-arch-tool/c/6a7e36ad-8368-83e8-806b-51557039133f"}, {"label": "GitHub", "url": "https://github.com/blackeirose/YSU-Tool-Development-Tracker"}]}, {"name": "pyRevit — Add / Delete Sheets & Views", "category": "BIM / pyRevit", "platform": "pyRevit", "github": "Required", "status": "Complete", "progress": 100, "priority": "Medium", "current": "Add / Delete Sheet and View functions completed", "next": "Maintain and reuse as a building block for future Revit tools", "resource": "Codex", "codex": "S", "image2": 0, "hours": 0, "notes": "Completed pyRevit capability; also serves as a reference building block for Revit AI / MCP experiments.", "readiness": "Done", "links": [{"label": "Codex", "url": "codex://threads/019fc9cf-3e6e-7ff1-bc46-d7ead57ee498"}]}, {"name": "Revit QA/QC Toolkit", "category": "BIM / QAQC", "platform": "pyRevit", "github": "Required", "status": "Idea", "progress": 10, "priority": "Low", "current": "Candidate checks identified (sheets, rooms, tags, templates, warnings)", "next": "Revisit only when there is a clear high-value QA/QC use case", "resource": "Codex", "codex": "M", "image2": 0, "hours": 3, "notes": "Low-priority idea; not currently worth spending development credit.", "readiness": "Idea", "links": []}, {"name": "Revit Helper", "category": "BIM / Assistant", "platform": "Gem / GPT → pyRevit", "github": "Required", "status": "Idea", "progress": 5, "priority": "Low", "current": "General assistant concept exists but is not defined as a standalone product", "next": "Only revive if a specific executable Revit workflow justifies it", "resource": "Manual", "codex": "XS", "image2": 0, "hours": 2, "notes": "May eventually merge into a broader Revit tool ecosystem rather than remain standalone.", "readiness": "Idea", "links": []}, {"name": "Parking Calculator", "category": "Code / Calculation", "platform": "Gem / Web", "github": "Required", "status": "Idea", "progress": 5, "priority": "Low", "current": "Calculation concept exists as a possible Architecture tool", "next": "Keep as candidate until there is a real workflow need", "resource": "Codex", "codex": "M", "image2": 0, "hours": 2, "notes": "Candidate tool only; not formally scheduled for development.", "readiness": "Idea", "links": []}, {"name": "Occupancy / Egress Tool", "category": "Code / Calculation", "platform": "Gem / Web", "github": "Required", "status": "Idea", "progress": 5, "priority": "Low", "current": "Potential Architecture calculation tool concept", "next": "Keep as candidate until inputs, code assumptions and actual demand are defined", "resource": "Manual", "codex": "XS", "image2": 0, "hours": 3, "notes": "Candidate tool only; not formally scheduled for development.", "readiness": "Idea", "links": []}, {"name": "Revit AI / MCP Experiment", "category": "BIM / Experiment", "platform": "MCP + Revit", "github": "Required", "status": "Idea", "progress": 5, "priority": "Low", "current": "Technical feasibility explored; current practical value is limited without a mature pyRevit command layer", "next": "Pause until enough useful pyRevit tools exist", "resource": "Codex", "codex": "XL", "image2": 0, "hours": 8, "notes": "AI/MCP should orchestrate useful deterministic tools, not replace them. Revisit after 5–10 genuinely useful pyRevit commands exist.", "readiness": "Idea", "links": [{"label": "Sheets/Views Codex", "url": "codex://threads/019fc9cf-3e6e-7ff1-bc46-d7ead57ee498"}]}];
-const STORAGE_KEY = 'ysu-tool-development-tracker-v10';
+const STORAGE_KEY = 'ysu-tool-development-tracker-v11';
 
 let tools = loadTools();
 let sortState = { key: null, dir: 1 };
@@ -507,25 +512,76 @@ function openDetail(index){
   const t=tools[index];
   if(!t) return;
   document.getElementById('detailTitle').textContent=t.name;
-  const fields=[
-    ['Status',t.status],['Priority',t.priority],['Category',t.category],['Platform',t.platform],
-    ['GitHub',t.github],['Codex Load',t.codex],['Progress',`${t.progress}%`],['Hours',`${t.hours}h`],
-    ['Current State',t.current,'wide'],['Next Step',t.next,'wide'],['Notes',t.notes,'wide'],
-    ['Readiness',t.readiness]
+
+  const select = (key,value,options) =>
+    `<select class="detail-select" data-detail-key="${key}">
+      ${options.map(o=>`<option ${o===value?'selected':''}>${esc(o)}</option>`).join('')}
+    </select>`;
+
+  const input = (key,value,type='text',extra='') =>
+    `<input class="detail-input ${extra}" data-detail-key="${key}" type="${type}" value="${esc(value)}">`;
+
+  const textarea = (key,value) =>
+    `<textarea class="detail-textarea" data-detail-key="${key}">${esc(value)}</textarea>`;
+
+  const fields = [
+    ['Tool Name', input('name',t.name), 'wide'],
+    ['Status', select('status',t.status,['Active','Planning','Future','Idea','Paused','Complete'])],
+    ['Priority', select('priority',t.priority,['High','Medium','Low'])],
+    ['Category', input('category',t.category)],
+    ['Platform', input('platform',t.platform)],
+    ['GitHub', select('github',t.github,['Required','Optional','No'])],
+    ['Codex Load', select('codex',t.codex,['XS','S','M','L','XL'])],
+    ['Progress', input('progress',t.progress,'number','detail-number')],
+    ['Hours', input('hours',t.hours,'number','detail-number')],
+    ['Image2', input('image2',t.image2,'number','detail-number')],
+    ['Resource', input('resource',t.resource)],
+    ['Readiness', input('readiness',t.readiness)],
+    ['Current State', textarea('current',t.current),'wide'],
+    ['Next Step', textarea('next',t.next),'wide'],
+    ['Notes', textarea('notes',t.notes),'wide']
   ];
+
   const links=Array.isArray(t.links)?t.links:[];
   document.getElementById('detailBody').innerHTML =
-    fields.map(([label,value,wide])=>`<div class="detail-field ${wide?'detail-wide':''}"><label>${esc(label)}</label><div class="value">${esc(value)}</div></div>`).join('') +
+    fields.map(([label,control,wide])=>`<div class="detail-field ${wide?'detail-wide':''}"><label>${esc(label)}</label>${control}</div>`).join('') +
     `<div class="detail-field detail-wide"><label>Launch Links</label><div class="detail-links">${
       links.length ? links.map(l=>{
         const href=safeUrl(l.url);
         const ext=href.startsWith('http')?' target="_blank" rel="noopener noreferrer"':'';
         return `<a class="launch-link" href="${esc(href)}"${ext}>${esc(l.label)} ↗</a>`;
       }).join('') : '<span class="small">No launch links yet.</span>'
-    }</div></div>`;
+    }</div><div style="margin-top:8px"><button class="edit-links" type="button" id="detailEditLinks">Edit Launch Links</button></div></div>`;
+
+  document.querySelectorAll('[data-detail-key]').forEach(el=>{
+    el.addEventListener('change', saveDetailField);
+    if(el.tagName==='TEXTAREA' || el.type==='text' || el.type==='number'){
+      el.addEventListener('blur', saveDetailField);
+    }
+  });
+
+  document.getElementById('detailEditLinks').addEventListener('click',()=>{
+    openLinksEditor(index);
+  });
+
   const modal=document.getElementById('detailBackdrop');
   modal.classList.add('open');
   modal.setAttribute('aria-hidden','false');
+}
+
+function saveDetailField(e){
+  if(detailIndex===null) return;
+  const el=e.currentTarget;
+  const key=el.dataset.detailKey;
+  let value=el.value;
+  if(['progress','hours','image2'].includes(key)){
+    value=num(value);
+    if(key==='progress') value=Math.max(0,Math.min(100,value));
+  }
+  tools[detailIndex][key]=value;
+  saveTools();
+  document.getElementById('detailTitle').textContent=tools[detailIndex].name;
+  render();
 }
 
 function closeDetail(){
