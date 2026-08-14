@@ -51,6 +51,7 @@ td.smallcol{min-width:88px;width:8vw}
 .status-active{background:#e7f6ed;color:#17603a}
 .status-planning{background:#fff4db;color:#855d00}
 .status-future{background:#eef2f7;color:#51606f}
+.status-idea{background:#f3eef9;color:#65427a}
 .status-paused{background:#fdecec;color:#9b1c1c}
 .status-complete{background:#e8f0ff;color:#1f4e78}
 .priority-high{background:#fdecec;color:#9b1c1c}
@@ -66,6 +67,18 @@ td.smallcol{min-width:88px;width:8vw}
 .codex-xl{background:#eadcf8;color:#65318e}
 .small{color:var(--muted);font-size:12px}
 .note{margin-top:12px;color:var(--muted);font-size:12px;line-height:1.45}
+.launch-cell{min-width:170px}
+.launch-wrap{display:flex;gap:5px;flex-wrap:wrap;align-items:center}
+.launch-link,.edit-links{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:4px 8px;background:#fff;color:var(--blue);text-decoration:none;font-size:12px;white-space:nowrap}
+.launch-link:hover,.edit-links:hover{background:#eef5fb}
+.edit-links{cursor:pointer;color:var(--muted)}
+.modal-backdrop{position:fixed;inset:0;background:rgba(15,23,42,.35);display:none;align-items:center;justify-content:center;z-index:100}
+.modal-backdrop.open{display:flex}
+.modal{width:min(680px,92vw);background:#fff;border-radius:14px;border:1px solid var(--line);padding:18px}
+.modal h2{margin:0 0 8px;font-size:20px}
+.modal p{margin:0 0 10px;color:var(--muted);font-size:13px}
+.modal textarea{width:100%;min-height:190px;border:1px solid var(--line);border-radius:10px;padding:10px;font:13px Consolas,monospace}
+.modal-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:10px}
 .remove{border:0;background:transparent;color:#a33;padding:2px 5px;font-size:16px}
 @media(min-width:1700px){
   table{font-size:13px}
@@ -83,52 +96,12 @@ td.smallcol{min-width:88px;width:8vw}
   .statusline{width:100%;margin-left:0}
   .wrap{padding:10px}
 }
-
-.view-switch{display:flex;gap:6px;align-items:center;margin-left:auto}
-.view-switch button{border:1px solid var(--line);background:#fff;color:var(--text);padding:8px 12px;border-radius:8px;cursor:pointer}
-.view-switch button.active{background:var(--blue);color:#fff;border-color:var(--blue)}
-#cardView{display:none}
-.kanban{display:grid;grid-template-columns:repeat(5,minmax(240px,1fr));gap:14px;align-items:start}
-.kanban-col{background:#edf3f8;border:1px solid var(--line);border-radius:14px;padding:12px;min-height:460px}
-.kanban-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;font-weight:600}
-.kanban-count{color:var(--muted);font-size:12px;font-weight:400}
-.kanban-list{min-height:390px}
-.task-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;margin-bottom:10px;box-shadow:0 1px 2px rgba(0,0,0,.04);cursor:grab;transition:.15s ease}
-.task-card:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,0,0,.07)}
-.task-card.dragging{opacity:.45}
-.task-card h3{font-size:14px;margin:8px 0;font-weight:600}
-.task-meta{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
-.mini-pill{display:inline-block;padding:3px 7px;border-radius:999px;font-size:11px}
-.card-footer{display:flex;justify-content:space-between;align-items:center;gap:8px;color:var(--muted);font-size:11px;margin-top:10px}
-.progress-mini{height:6px;background:#e8edf3;border-radius:999px;overflow:hidden;flex:1}
-.progress-mini span{display:block;height:100%;background:var(--blue)}
-.drop-target{outline:2px dashed #8aa9c4;outline-offset:-4px}
-.modal-backdrop{position:fixed;inset:0;background:rgba(16,24,40,.38);display:none;align-items:center;justify-content:center;z-index:50;padding:24px}
-.modal-backdrop.open{display:flex}
-.detail-modal{width:min(920px,96vw);max-height:88vh;overflow:auto;background:#fff;border-radius:18px;border:1px solid var(--line);box-shadow:0 18px 60px rgba(0,0,0,.20);padding:22px}
-.detail-top{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
-.detail-top h2{margin:0;font-size:22px}
-.detail-close{border:0;background:transparent;font-size:24px;cursor:pointer;color:var(--muted)}
-.detail-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:18px}
-.detail-field{border:1px solid var(--line);border-radius:12px;padding:12px;background:#fbfdff}
-.detail-field label{display:block;color:var(--muted);font-size:11px;margin-bottom:5px;text-transform:uppercase;letter-spacing:.04em}
-.detail-field .value{font-size:14px;white-space:pre-wrap}
-.detail-wide{grid-column:1/-1}
-.workspace-box{grid-column:1/-1;border-top:1px solid var(--line);padding-top:16px;margin-top:2px}
-.workspace-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-.workspace-link-input{flex:1;min-width:260px;padding:9px 10px;border:1px solid var(--line);border-radius:8px;font:inherit}
-.workspace-open{display:inline-block;padding:9px 12px;border-radius:8px;background:var(--blue);color:#fff;text-decoration:none}
-.workspace-open.disabled{display:none}
-.workspace-save{padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:#fff}
-@media(max-width:1400px){.kanban{grid-template-columns:repeat(3,minmax(240px,1fr))}}
-@media(max-width:900px){.kanban{grid-template-columns:1fr}.detail-grid{grid-template-columns:1fr}}
-
 </style>
 </head>
 <body>
 <div class="wrap">
   <h1>YSU Tool Development — Time & Credit Tracker</h1>
-  <div class="sub">Switch between Table and Card views. Table is best for editing; Card view is best for planning, drag-and-drop status changes, and opening full project details. Add/delete items and click any column header to sort.</div>
+  <div class="sub">Most fields are freely editable. Status, Priority, GitHub, and Codex Load use fixed color-coded dropdowns. Launch buttons open the related GPT, Codex or GitHub work context. Add/delete items and click any column header to sort.</div>
 
   <div class="metrics">
     <div class="metric">Active tools<b id="active"></b></div>
@@ -147,7 +120,7 @@ td.smallcol{min-width:88px;width:8vw}
       <option value="">All resources</option><option>Codex</option><option>GPT Image 2</option><option>Manual</option><option>Mixed</option><option>Gemini</option>
     </select>
     <select id="statusFilter">
-      <option value="">All status</option><option>Active</option><option>Planning</option><option>Future</option><option>Paused</option><option>Complete</option>
+      <option value="">All status</option><option>Active</option><option>Planning</option><option>Future</option><option>Idea</option><option>Paused</option><option>Complete</option>
     </select>
     <select id="githubFilter">
       <option value="">All GitHub</option><option>Required</option><option>Optional</option><option>No</option>
@@ -155,15 +128,16 @@ td.smallcol{min-width:88px;width:8vw}
     <button id="addRow" class="primary" type="button">+ Add Item</button>
     <button id="deleteSelected" class="danger" type="button">Delete Selected</button>
     <button id="resetData" type="button">Reset Sample Data</button>
-    <div class="view-switch"><button id="tableViewBtn" class="active" type="button">Table</button><button id="cardViewBtn" type="button">Card</button></div><span class="statusline" id="saveStatus">Saved locally</span>
+    <span class="statusline" id="saveStatus">Saved locally</span>
   </div>
 
-  <div id="tableView"><div class="tablewrap">
+  <div class="tablewrap">
     <table>
       <thead>
         <tr>
           <th style="cursor:default"><input id="selectAll" type="checkbox" aria-label="Select all visible items"></th>
           <th data-key="name">Tool <span class="sort"></span></th>
+          <th style="cursor:default">Launch</th>
           <th data-key="category">Category <span class="sort"></span></th>
           <th data-key="platform">Platform <span class="sort"></span></th>
           <th data-key="github">GitHub <span class="sort"></span></th>
@@ -183,45 +157,34 @@ td.smallcol{min-width:88px;width:8vw}
       </thead>
       <tbody id="rows"></tbody>
     </table>
-  </div></div>
-
-  <div id="cardView"></div>
+  </div>
 
   <div class="note">
-    Use + Add Item to create a new row. New software tools default to GitHub = Required. Use Optional/No only when version control or deployment adds little value. Use the left checkboxes + Delete Selected for batch removal, or × for one item. Sorting rules: Status defaults to Active → Planning → Future → Paused → Complete. Priority defaults to High → Medium → Low.
+    Use + Add Item to create a new row. Use Edit in the Launch column to add multiple links with Label | URL. New software tools default to GitHub = Required. Use Optional/No only when version control or deployment adds little value. Use the left checkboxes + Delete Selected for batch removal, or × for one item. Sorting rules: Status defaults to Active → Planning → Future → Idea → Paused → Complete. Priority defaults to High → Medium → Low.
     Click the same header again to reverse the order. Progress, Image2, and Hours sort numerically. Codex Load is a relative workload estimate: XS → S → M → L → XL, not an actual OpenAI credit amount. GitHub order is Required → Optional → No. Changes are stored with localStorage, so they remain after reopening this HTML in the same browser profile.
   </div>
+</div>
 
-  <div class="modal-backdrop" id="detailBackdrop" aria-hidden="true">
-    <div class="detail-modal" role="dialog" aria-modal="true" aria-labelledby="detailTitle">
-      <div class="detail-top">
-        <div><div class="small">Tool / Project detail</div><h2 id="detailTitle"></h2></div>
-        <button id="detailClose" class="detail-close" type="button" aria-label="Close">×</button>
-      </div>
-      <div id="detailBody" class="detail-grid"></div>
-      <div class="workspace-box">
-        <div class="small" style="margin-bottom:6px">WORKSPACE LINK</div>
-        <div class="workspace-actions">
-          <input id="workspaceLinkInput" class="workspace-link-input" type="url" placeholder="Paste GPT / Codex project or conversation link">
-          <button id="workspaceSave" class="workspace-save" type="button">Save Link</button>
-          <a id="workspaceOpen" class="workspace-open disabled" target="_blank" rel="noopener">Open Workspace</a>
-        </div>
-      </div>
+<div id="linksModal" class="modal-backdrop" aria-hidden="true">
+  <div class="modal">
+    <h2>Edit Launch Links</h2>
+    <p>One link per line using <b>Label | URL</b>. Supports https:// and codex:// links.</p>
+    <textarea id="linksEditor" placeholder="GPT | https://chatgpt.com/...&#10;Codex | codex://threads/..."></textarea>
+    <div class="modal-actions">
+      <button id="cancelLinks" type="button">Cancel</button>
+      <button id="saveLinks" class="primary" type="button">Save Links</button>
     </div>
   </div>
-
 </div>
 
 <script>
-const DEFAULT_TOOLS = [{"name": "Plumbing Calculation Tool", "category": "Code / Calculation", "platform": "Web + Revit", "status": "Active", "progress": 80, "priority": "High", "current": "Web calculator deployed; GitHub repo + Netlify connected", "next": "Build pyRevit integration", "resource": "Codex", "codex": 3, "image2": 0, "hours": 2, "notes": "Connect web logic / calculation engine to pyRevit UI and Revit parameters", "readiness": "Ready", "github": "Required", "workspaceLink": ""}, {"name": "Monday Sim Project Management Tool", "category": "Project Management / Simulation", "platform": "Web / Local", "status": "Active", "progress": 70, "priority": "High", "current": "Existing tool already developed outside standardized GitHub workflow", "next": "Move project into GitHub repo and standardize push/deploy workflow", "resource": "Codex", "codex": 2, "image2": 0, "hours": 2, "notes": "Migration task: preserve current working version, initialize repo, add README/.gitignore, then use GitHub as source of truth for future pushes", "readiness": "Ready", "github": "Required", "workspaceLink": ""}, {"name": "YSU Architecture AI Workflow Hub v2", "category": "Platform / Library", "platform": "Web", "status": "Active", "progress": 35, "priority": "High", "current": "MVP direction + card structure + categories defined", "next": "Build first usable Hub with 5–10 tools", "resource": "Codex", "codex": 5, "image2": 4, "hours": 4, "notes": "Single-page searchable tool library; preserve portable core instructions", "readiness": "Ready", "github": "Required", "workspaceLink": ""}, {"name": "Rachel's Animal Chess", "category": "Game", "platform": "Browser / iPad", "status": "Active", "progress": 55, "priority": "Medium", "current": "Core rules, board topology, abilities and art direction largely defined", "next": "Split next sprint: code changes vs artwork refresh", "resource": "Mixed", "codex": 5, "image2": 18, "hours": 5, "notes": "Codex: gameplay/UI fixes. GPT Image 2: animal/skill/token art updates; keep local unless collaboration/versioning needs change", "readiness": "Ready", "github": "No", "workspaceLink": ""}, {"name": "AI Image / File Manager", "category": "Productivity", "platform": "Desktop / Web", "status": "Planning", "progress": 20, "priority": "High", "current": "Use cases defined: drone, field report, Enscape, batch naming/classification", "next": "Prototype batch image classification + naming workflow", "resource": "Codex", "codex": 5, "image2": 0, "hours": 4, "notes": "Start with local folder scan + metadata + AI classification fallback", "readiness": "Needs scope", "github": "Required", "workspaceLink": ""}, {"name": "Revit QA/QC Toolkit", "category": "BIM / QAQC", "platform": "pyRevit", "status": "Planning", "progress": 15, "priority": "High", "current": "Candidate checks identified (sheets, rooms, tags, templates, warnings)", "next": "Build first deterministic pyRevit checker", "resource": "Codex", "codex": 3, "image2": 0, "hours": 3, "notes": "Start with one narrow check, then expand into reusable QAQC commands", "readiness": "Ready", "github": "Required", "workspaceLink": ""}, {"name": "Revit Helper", "category": "BIM / Assistant", "platform": "Gem / GPT → pyRevit", "status": "Planning", "progress": 25, "priority": "Medium", "current": "Assistant concept exists", "next": "Define which functions should become executable Revit tools", "resource": "Manual", "codex": 1, "image2": 0, "hours": 2, "notes": "Avoid building an agent before underlying tools exist", "readiness": "Needs definition", "github": "Required", "workspaceLink": ""}, {"name": "Parking Calculator", "category": "Code / Calculation", "platform": "Gem / Web", "status": "Planning", "progress": 30, "priority": "Medium", "current": "Calculation concept exists", "next": "Decide whether to productize as standalone web calculator", "resource": "Codex", "codex": 3, "image2": 0, "hours": 2, "notes": "Reuse common calculator shell if Plumbing Tool architecture is stable", "readiness": "Blocked by priority", "github": "Required", "workspaceLink": ""}, {"name": "Occupancy / Egress Tool", "category": "Code / Calculation", "platform": "Gem / Web", "status": "Planning", "progress": 25, "priority": "Medium", "current": "Calculation concept exists", "next": "Define inputs, code assumptions, outputs and citations", "resource": "Manual", "codex": 1, "image2": 0, "hours": 3, "notes": "Do rules/spec first; code only after logic is locked", "readiness": "Needs definition", "github": "Required", "workspaceLink": ""}, {"name": "Tool Instruction Library", "category": "AI Infrastructure", "platform": "Markdown / Skills", "status": "Active", "progress": 40, "priority": "High", "current": "Need portable core instructions independent of Gem/GPT platform", "next": "Extract core instruction files for top 5 tools", "resource": "Manual", "codex": 1, "image2": 0, "hours": 2, "notes": "Low Codex cost; protects future Gem → Skill migration", "readiness": "Ready", "github": "Optional", "workspaceLink": ""}, {"name": "Architecture AI Agent / MCP", "category": "Agent / BIM", "platform": "MCP + Revit", "status": "Future", "progress": 5, "priority": "Low", "current": "Long-term architecture clarified", "next": "Wait until pyRevit tool layer is stable", "resource": "Codex", "codex": 8, "image2": 0, "hours": 8, "notes": "Do not spend scarce Codex credit here yet", "readiness": "Blocked", "github": "Required", "workspaceLink": ""}, {"name": "AI Agent Orchestration Dashboard", "category": "AI Infrastructure / Orchestration", "platform": "Web + API / MCP", "github": "Required", "status": "Future", "progress": 10, "priority": "Medium", "current": "Concept defined: advanced version of the development tracker for coordinating multiple AI agents and task progress", "next": "Build manual orchestration MVP: task board, agent assignment, dependencies, status, credit estimate, and handoff notes", "resource": "Codex", "codex": 5, "image2": 0, "hours": 5, "notes": "Phase 1 should NOT auto-call models. Assign GPT / Codex / Gemini / Image 2 manually first. Later phases can connect APIs, GitHub, MCP, deployment status, and automated agent handoffs.", "readiness": "Needs definition", "workspaceLink": ""}, {"name": "GitHub Auto-Push & Deployment Framework", "category": "Development Infrastructure / Deployment", "platform": "GitHub + Web Deploy + Local Sync", "github": "Required", "status": "Planning", "progress": 15, "priority": "High", "current": "GitHub Pages, Netlify, and individual repo workflows have been tested, but the update/deployment process is not yet standardized across tools", "next": "Create a reusable GitHub workflow/template for auto-push, deployment, and downstream sync", "resource": "Mixed", "codex": "M", "image2": 0, "hours": 4, "notes": "Core infrastructure rule: every GitHub Required tool should use GitHub as source of truth. Web tools should auto-deploy from GitHub; pyRevit/Revit tools should support local sync/pull. ChatGPT and Codex should pull latest before edits and commit/push after changes whenever permissions allow.", "readiness": "Ready", "workspaceLink": ""}];
-const STORAGE_KEY = 'ysu-tool-development-tracker-v11';
+const DEFAULT_TOOLS = [{"name": "Plumbing Calculation Tool", "category": "Code / Calculation", "platform": "Web + Revit", "github": "Required", "status": "Active", "progress": 80, "priority": "High", "current": "Web calculator deployed; GitHub repo + Netlify connected", "next": "Build pyRevit integration", "resource": "Codex", "codex": "M", "image2": 0, "hours": 2, "notes": "Connect web logic / calculation engine to pyRevit UI and Revit parameters", "readiness": "Ready", "links": [{"label": "GPT", "url": "https://chatgpt.com/g/g-p-6a778930cb108191abe3cef74259ddda-arch-tool/c/6a778931-d95c-83ea-92b6-9e0295f13352"}, {"label": "Codex", "url": "codex://threads/019fe42f-3b7d-7211-ab36-6c2a5548d3ab"}]}, {"name": "Monday Sim Project Management Tool", "category": "Project Management / Simulation", "platform": "Web / Local", "github": "Required", "status": "Active", "progress": 70, "priority": "High", "current": "Existing tool already developed outside standardized GitHub workflow", "next": "Move project into GitHub repo and standardize push/deploy workflow", "resource": "Codex", "codex": "S", "image2": 0, "hours": 2, "notes": "Preserve working version, initialize repo, add README/.gitignore, then use GitHub as source of truth", "readiness": "Ready", "links": [{"label": "Codex", "url": "codex://threads/019fc60a-c170-7ef1-b0a0-3febfacdde94"}]}, {"name": "YSU Architecture AI Workflow Hub v2", "category": "Platform / Library", "platform": "Web", "github": "Required", "status": "Active", "progress": 35, "priority": "High", "current": "MVP direction + card structure + categories defined", "next": "Build first usable Hub with 5–10 tools", "resource": "Codex", "codex": "L", "image2": 4, "hours": 4, "notes": "Single-page searchable tool library; preserve portable core instructions", "readiness": "Ready", "links": [{"label": "Main GPT", "url": "https://chatgpt.com/g/g-p-6a696a866010819183711854837a1de0-ysu-architecture-ai-workflow-hub-v2/c/6a696bca-d360-83ea-9527-a9a20b89c1c1"}, {"label": "Style→GPT", "url": "https://chatgpt.com/g/g-p-6a696dfa4fb48191b414e7841435e956-zhuan-hua-ji-you-feng-ge-dao-gpt/c/6a696e00-1b80-83ea-add3-ab55892b0f5b"}]}, {"name": "Rachel's Animal Chess", "category": "Game", "platform": "Browser / iPad", "github": "No", "status": "Active", "progress": 55, "priority": "Medium", "current": "Core rules, board topology, abilities and art direction largely defined", "next": "Split next sprint: code changes vs artwork refresh", "resource": "Mixed", "codex": "L", "image2": 18, "hours": 5, "notes": "Codex: gameplay/UI fixes. GPT Image 2: animal/skill/token art updates", "readiness": "Ready", "links": [{"label": "GPT", "url": "https://chatgpt.com/g/g-p-6a73c8e42ab48191b24537814bd1e29e/c/6a73c928-c85c-83ea-a7e3-d820a738485e"}, {"label": "Codex", "url": "codex://threads/019fcff1-6456-7c41-86ef-5bb51f515e2d"}]}, {"name": "AI Image / File Manager", "category": "Productivity", "platform": "Desktop / Web", "github": "Required", "status": "Planning", "progress": 20, "priority": "High", "current": "Use cases defined: drone, field report, Enscape, batch naming/classification", "next": "Prototype batch image classification + naming workflow", "resource": "Codex", "codex": "L", "image2": 0, "hours": 4, "notes": "Start with local folder scan + metadata + AI classification fallback", "readiness": "Needs scope", "links": [{"label": "GPT", "url": "https://chatgpt.com/g/g-p-6a761326c4648191bed1f9481bc8379c-computer-tools/c/6a7a6a0e-a18c-83e8-9187-e1282dce3f51"}]}, {"name": "GitHub Auto-Push / Deployment Workflow", "category": "Developer Infrastructure", "platform": "GitHub / Deployment", "github": "Required", "status": "Planning", "progress": 15, "priority": "High", "current": "Need a standardized workflow for moving new tools from local development to GitHub and deployment", "next": "Define repeatable local → GitHub → Netlify / GitHub Pages workflow", "resource": "Codex", "codex": "M", "image2": 0, "hours": 2, "notes": "Shared discussion with AI Image / File Manager. Goal: reduce manual push/deploy work for future tools.", "readiness": "Needs definition", "links": [{"label": "GPT", "url": "https://chatgpt.com/g/g-p-6a761326c4648191bed1f9481bc8379c-computer-tools/c/6a7a6a0e-a18c-83e8-9187-e1282dce3f51"}]}, {"name": "Tool Instruction Library", "category": "AI Infrastructure", "platform": "Markdown / Skills", "github": "Optional", "status": "Active", "progress": 40, "priority": "High", "current": "Need portable core instructions independent of Gem/GPT platform", "next": "Extract core instruction files for top 5 tools", "resource": "Manual", "codex": "XS", "image2": 0, "hours": 2, "notes": "Low Codex cost; protects future Gem → Skill migration", "readiness": "Ready", "links": [{"label": "Style→GPT", "url": "https://chatgpt.com/g/g-p-6a696dfa4fb48191b414e7841435e956-zhuan-hua-ji-you-feng-ge-dao-gpt/c/6a696e00-1b80-83ea-add3-ab55892b0f5b"}]}, {"name": "AI Development Control Center", "category": "AI Infrastructure / Orchestration", "platform": "Web + API / MCP", "github": "Required", "status": "Future", "progress": 10, "priority": "Medium", "current": "Concept defined as the advanced evolution of the current tracker for coordinating AI work and task progress", "next": "Build manual orchestration MVP: task board, AI assignment, dependencies, status, workload estimate and handoff notes", "resource": "Codex", "codex": "L", "image2": 0, "hours": 5, "notes": "Phase 1: manual GPT / Codex / Gemini / Image 2 assignment. Later connect APIs, GitHub, MCP and automated handoffs.", "readiness": "Needs definition", "links": [{"label": "Control Center GPT", "url": "https://chatgpt.com/g/g-p-6a7771df41388191a6734c5e058e7823-ai-development-control-center/c/6a776b96-e7b8-83ea-9e65-8623e5498757"}, {"label": "Tracker Evolution GPT", "url": "https://chatgpt.com/g/g-p-6a778930cb108191abe3cef74259ddda-arch-tool/c/6a7e36ad-8368-83e8-806b-51557039133f"}]}, {"name": "Tool Development Tracker", "category": "Developer Infrastructure", "platform": "Web / GitHub Pages", "github": "Required", "status": "Active", "progress": 85, "priority": "High", "current": "Editable tracker with sorting, filters, status colors, workload planning and GitHub deployment", "next": "Add launch links and continue evolving toward the AI Development Control Center", "resource": "Manual", "codex": "XS", "image2": 0, "hours": 1, "notes": "Current tracker is the project overview layer and can later become part of the Control Center.", "readiness": "Ready", "links": [{"label": "GPT", "url": "https://chatgpt.com/g/g-p-6a778930cb108191abe3cef74259ddda-arch-tool/c/6a7e36ad-8368-83e8-806b-51557039133f"}, {"label": "GitHub", "url": "https://github.com/blackeirose/YSU-Tool-Development-Tracker"}]}, {"name": "pyRevit — Add / Delete Sheets & Views", "category": "BIM / pyRevit", "platform": "pyRevit", "github": "Required", "status": "Complete", "progress": 100, "priority": "Medium", "current": "Add / Delete Sheet and View functions completed", "next": "Maintain and reuse as a building block for future Revit tools", "resource": "Codex", "codex": "S", "image2": 0, "hours": 0, "notes": "Completed pyRevit capability; also serves as a reference building block for Revit AI / MCP experiments.", "readiness": "Done", "links": [{"label": "Codex", "url": "codex://threads/019fc9cf-3e6e-7ff1-bc46-d7ead57ee498"}]}, {"name": "Revit QA/QC Toolkit", "category": "BIM / QAQC", "platform": "pyRevit", "github": "Required", "status": "Idea", "progress": 10, "priority": "Low", "current": "Candidate checks identified (sheets, rooms, tags, templates, warnings)", "next": "Revisit only when there is a clear high-value QA/QC use case", "resource": "Codex", "codex": "M", "image2": 0, "hours": 3, "notes": "Low-priority idea; not currently worth spending development credit.", "readiness": "Idea", "links": []}, {"name": "Revit Helper", "category": "BIM / Assistant", "platform": "Gem / GPT → pyRevit", "github": "Required", "status": "Idea", "progress": 5, "priority": "Low", "current": "General assistant concept exists but is not defined as a standalone product", "next": "Only revive if a specific executable Revit workflow justifies it", "resource": "Manual", "codex": "XS", "image2": 0, "hours": 2, "notes": "May eventually merge into a broader Revit tool ecosystem rather than remain standalone.", "readiness": "Idea", "links": []}, {"name": "Parking Calculator", "category": "Code / Calculation", "platform": "Gem / Web", "github": "Required", "status": "Idea", "progress": 5, "priority": "Low", "current": "Calculation concept exists as a possible Architecture tool", "next": "Keep as candidate until there is a real workflow need", "resource": "Codex", "codex": "M", "image2": 0, "hours": 2, "notes": "Candidate tool only; not formally scheduled for development.", "readiness": "Idea", "links": []}, {"name": "Occupancy / Egress Tool", "category": "Code / Calculation", "platform": "Gem / Web", "github": "Required", "status": "Idea", "progress": 5, "priority": "Low", "current": "Potential Architecture calculation tool concept", "next": "Keep as candidate until inputs, code assumptions and actual demand are defined", "resource": "Manual", "codex": "XS", "image2": 0, "hours": 3, "notes": "Candidate tool only; not formally scheduled for development.", "readiness": "Idea", "links": []}, {"name": "Revit AI / MCP Experiment", "category": "BIM / Experiment", "platform": "MCP + Revit", "github": "Required", "status": "Idea", "progress": 5, "priority": "Low", "current": "Technical feasibility explored; current practical value is limited without a mature pyRevit command layer", "next": "Pause until enough useful pyRevit tools exist", "resource": "Codex", "codex": "XL", "image2": 0, "hours": 8, "notes": "AI/MCP should orchestrate useful deterministic tools, not replace them. Revisit after 5–10 genuinely useful pyRevit commands exist.", "readiness": "Idea", "links": [{"label": "Sheets/Views Codex", "url": "codex://threads/019fc9cf-3e6e-7ff1-bc46-d7ead57ee498"}]}];
+const STORAGE_KEY = 'ysu-tool-development-tracker-v9';
 
 let tools = loadTools();
 let sortState = { key: null, dir: 1 };
-let currentView = localStorage.getItem('ysu-tracker-view') || 'table';
-let currentDetailIndex = null;
 
-const statusOrder = { Active: 1, Planning: 2, Future: 3, Paused: 4, Complete: 5 };
+const statusOrder = { Active: 1, Planning: 2, Future: 3, Idea: 4, Paused: 5, Complete: 6 };
 const priorityOrder = { High: 1, Medium: 2, Low: 3 };
 const githubOrder = { Required: 1, Optional: 2, No: 3 };
 const codexOrder = { XS: 1, S: 2, M: 3, L: 4, XL: 5 };
@@ -339,7 +302,7 @@ function selectCell(value, key, index, options, cls=''){
 
 function selectColorClass(key, value){
   if(key === 'status') return {
-    Active:'status-active', Planning:'status-planning', Future:'status-future',
+    Active:'status-active', Planning:'status-planning', Future:'status-future', Idea:'status-idea',
     Paused:'status-paused', Complete:'status-complete'
   }[value] || '';
   if(key === 'priority') return {
@@ -359,128 +322,46 @@ function applySelectColor(select){
 }
 
 
-function pillClass(key, value){
-  if(key==='status') return selectColorClass('status', value);
-  if(key==='priority') return selectColorClass('priority', value);
-  if(key==='github') return selectColorClass('github', value);
-  if(key==='codex') return selectColorClass('codex', value);
-  return '';
+function safeUrl(url){
+  const u = String(url || '').trim();
+  if(u.startsWith('https://') || u.startsWith('http://') || u.startsWith('codex://')) return u;
+  return '#';
 }
 
-function cardMarkup(t){
-  return `
-    <article class="task-card" draggable="true" data-card-index="${t._index}">
-      <div class="task-meta">
-        <span class="mini-pill ${pillClass('priority',t.priority)}">${esc(t.priority)}</span>
-        <span class="mini-pill ${pillClass('github',t.github)}">GitHub ${esc(t.github)}</span>
-        <span class="mini-pill ${pillClass('codex',t.codex)}">Codex ${esc(t.codex)}</span>
-      </div>
-      <h3>${esc(t.name)}</h3>
-      <div class="small">${esc(t.category)} · ${esc(t.platform)}</div>
-      <div class="small" style="margin-top:8px"><b>Next:</b> ${esc(t.next)}</div>
-      <div class="card-footer">
-        <span>${esc(t.progress)}%</span>
-        <div class="progress-mini"><span style="width:${Math.max(0,Math.min(100,num(t.progress)))}%"></span></div>
-        <span>${esc(t.hours)}h</span>
-      </div>
-    </article>`;
+function renderLinks(links,index){
+  const arr = Array.isArray(links) ? links : [];
+  const buttons = arr.map(l => {
+    const href = safeUrl(l.url);
+    const external = href.startsWith('http') ? ' target="_blank" rel="noopener noreferrer"' : '';
+    return `<a class="launch-link" href="${esc(href)}"${external}>${esc(l.label || 'Open')} ↗</a>`;
+  }).join('');
+  return `<div class="launch-wrap">${buttons}<button class="edit-links" type="button" data-edit-links="${index}">Edit</button></div>`;
 }
 
-function renderCardView(){
-  const statuses = ['Active','Planning','Future','Paused','Complete'];
-  const data = getFilteredSorted();
-  const byStatus = Object.fromEntries(statuses.map(s=>[s,[]]));
-  data.forEach(t => (byStatus[t.status] || byStatus['Future']).push(t));
+let editingLinksIndex = null;
 
-  document.getElementById('cardView').innerHTML = `
-    <div class="kanban">
-      ${statuses.map(status => `
-        <section class="kanban-col" data-status="${status}">
-          <div class="kanban-head"><span>${status}</span><span class="kanban-count">${byStatus[status].length}</span></div>
-          <div class="kanban-list" data-drop-status="${status}">
-            ${byStatus[status].map(cardMarkup).join('')}
-          </div>
-        </section>
-      `).join('')}
-    </div>`;
-
-  document.querySelectorAll('.task-card').forEach(card=>{
-    card.addEventListener('dragstart', e=>{
-      card.classList.add('dragging');
-      e.dataTransfer.setData('text/plain', card.dataset.cardIndex);
-    });
-    card.addEventListener('dragend', ()=>card.classList.remove('dragging'));
-    card.addEventListener('click', ()=>{
-      if(card.classList.contains('dragging')) return;
-      openDetail(Number(card.dataset.cardIndex));
-    });
-  });
-
-  document.querySelectorAll('[data-drop-status]').forEach(zone=>{
-    zone.addEventListener('dragover', e=>{
-      e.preventDefault();
-      zone.closest('.kanban-col').classList.add('drop-target');
-    });
-    zone.addEventListener('dragleave', ()=>zone.closest('.kanban-col').classList.remove('drop-target'));
-    zone.addEventListener('drop', e=>{
-      e.preventDefault();
-      zone.closest('.kanban-col').classList.remove('drop-target');
-      const idx = Number(e.dataTransfer.getData('text/plain'));
-      const newStatus = zone.dataset.dropStatus;
-      if(tools[idx] && tools[idx].status !== newStatus){
-        tools[idx].status = newStatus;
-        saveTools();
-        render();
-      }
-    });
-  });
+function openLinksEditor(index){
+  editingLinksIndex = index;
+  const links = Array.isArray(tools[index].links) ? tools[index].links : [];
+  document.getElementById('linksEditor').value = links.map(l => `${l.label} | ${l.url}`).join('\n');
+  const modal = document.getElementById('linksModal');
+  modal.classList.add('open');
+  modal.setAttribute('aria-hidden','false');
 }
 
-function openDetail(index){
-  const t = tools[index];
-  currentDetailIndex = index;
-  if(!t) return;
-  document.getElementById('detailTitle').textContent = t.name;
-  const fields = [
-    ['Status',t.status],['Priority',t.priority],['GitHub',t.github],['Codex Load',t.codex],
-    ['Progress',`${t.progress}%`],['Image2',t.image2],['Hours',t.hours],['Resource',t.resource],
-    ['Category',t.category],['Platform',t.platform],['Readiness',t.readiness],
-    ['Current state',t.current,'wide'],['Next step',t.next,'wide'],['Notes',t.notes,'wide']
-  ];
-  document.getElementById('detailBody').innerHTML = fields.map(([label,value,wide])=>`
-    <div class="detail-field ${wide?'detail-wide':''}">
-      <label>${esc(label)}</label><div class="value">${esc(value)}</div>
-    </div>`).join('');
-  const linkInput = document.getElementById('workspaceLinkInput');
-  const linkOpen = document.getElementById('workspaceOpen');
-  linkInput.value = t.workspaceLink || '';
-  if(t.workspaceLink){
-    linkOpen.href = t.workspaceLink;
-    linkOpen.classList.remove('disabled');
-  }else{
-    linkOpen.removeAttribute('href');
-    linkOpen.classList.add('disabled');
-  }
-
-  const backdrop = document.getElementById('detailBackdrop');
-  backdrop.classList.add('open');
-  backdrop.setAttribute('aria-hidden','false');
+function closeLinksEditor(){
+  const modal = document.getElementById('linksModal');
+  modal.classList.remove('open');
+  modal.setAttribute('aria-hidden','true');
+  editingLinksIndex = null;
 }
 
-function closeDetail(){
-  currentDetailIndex = null;
-  const backdrop = document.getElementById('detailBackdrop');
-  backdrop.classList.remove('open');
-  backdrop.setAttribute('aria-hidden','true');
-}
-
-function applyView(){
-  const isCard = currentView === 'card';
-  document.getElementById('tableView').style.display = isCard ? 'none' : '';
-  document.getElementById('cardView').style.display = isCard ? 'block' : 'none';
-  document.getElementById('tableViewBtn').classList.toggle('active', !isCard);
-  document.getElementById('cardViewBtn').classList.toggle('active', isCard);
-  localStorage.setItem('ysu-tracker-view', currentView);
+function parseLinks(text){
+  return text.split('\n').map(line=>line.trim()).filter(Boolean).map(line=>{
+    const pos = line.indexOf('|');
+    if(pos === -1) return {label:'Open',url:line.trim()};
+    return {label:line.slice(0,pos).trim() || 'Open',url:line.slice(pos+1).trim()};
+  }).filter(l=>l.url);
 }
 
 function render(){
@@ -489,10 +370,11 @@ function render(){
     <tr>
       <td><input class="rowSelect" type="checkbox" data-select="${t._index}" aria-label="Select ${esc(t.name)}"></td>
       ${editableCell(t.name,'name',t._index,'name')}
+      <td class="launch-cell">${renderLinks(t.links,t._index)}</td>
       ${editableCell(t.category,'category',t._index,'smallcol')}
       ${editableCell(t.platform,'platform',t._index,'smallcol')}
       ${selectCell(t.github,'github',t._index,['Required','Optional','No'],'smallcol')}
-      ${selectCell(t.status,'status',t._index,['Active','Planning','Future','Paused','Complete'],'smallcol')}
+      ${selectCell(t.status,'status',t._index,['Active','Planning','Future','Idea','Paused','Complete'],'smallcol')}
       <td class="num" contenteditable="true" data-index="${t._index}" data-key="progress">
         ${esc(t.progress)}
         <div class="bar" contenteditable="false"><span style="width:${Math.max(0,Math.min(100,num(t.progress)))}%"></span></div>
@@ -533,6 +415,10 @@ function render(){
     });
   });
 
+  document.querySelectorAll('[data-edit-links]').forEach(btn=>{
+    btn.addEventListener('click', ()=>openLinksEditor(Number(btn.dataset.editLinks)));
+  });
+
   document.querySelectorAll('[data-remove]').forEach(btn=>{
     btn.addEventListener('click', ()=>{
       const i = Number(btn.dataset.remove);
@@ -558,8 +444,6 @@ function render(){
     });
   });
 
-  renderCardView();
-  applyView();
   updateSortIndicators();
   updateMetrics();
 }
@@ -623,38 +507,10 @@ document.querySelectorAll('th[data-key]').forEach(th=>{
 
 [search, priorityFilter, resourceFilter, statusFilter, githubFilter].forEach(el=>el.addEventListener('input',render));
 
-document.getElementById('tableViewBtn').addEventListener('click', ()=>{ currentView='table'; applyView(); });
-document.getElementById('cardViewBtn').addEventListener('click', ()=>{ currentView='card'; applyView(); });
-document.getElementById('detailClose').addEventListener('click', closeDetail);
-
-document.getElementById('workspaceSave').addEventListener('click', ()=>{
-  if(currentDetailIndex === null || !tools[currentDetailIndex]) return;
-  const input = document.getElementById('workspaceLinkInput');
-  let value = input.value.trim();
-  if(value && !/^https?:\/\//i.test(value)){
-    value = 'https://' + value;
-    input.value = value;
-  }
-  tools[currentDetailIndex].workspaceLink = value;
-  saveTools();
-  const open = document.getElementById('workspaceOpen');
-  if(value){
-    open.href = value;
-    open.classList.remove('disabled');
-  }else{
-    open.removeAttribute('href');
-    open.classList.add('disabled');
-  }
-});
-
-document.getElementById('detailBackdrop').addEventListener('click', e=>{ if(e.target.id==='detailBackdrop') closeDetail(); });
-document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeDetail(); });
-
-
 document.getElementById('addRow').addEventListener('click', ()=>{
   tools.push({
     name:'New Tool', category:'', platform:'', github:'Required', status:'Planning', progress:0, priority:'Medium',
-    current:'', next:'', resource:'Manual', codex:'XS', image2:0, hours:0, notes:'', readiness:'Needs definition', workspaceLink:''
+    current:'', next:'', resource:'Manual', codex:'XS', image2:0, hours:0, notes:'', readiness:'Needs definition', links:[]
   });
   saveTools();
   sortState = {key:null, dir:1};
@@ -689,6 +545,19 @@ document.getElementById('deleteSelected').addEventListener('click', ()=>{
     saveTools();
     render();
   }
+});
+
+
+document.getElementById('cancelLinks').addEventListener('click', closeLinksEditor);
+document.getElementById('linksModal').addEventListener('click', e=>{
+  if(e.target.id === 'linksModal') closeLinksEditor();
+});
+document.getElementById('saveLinks').addEventListener('click', ()=>{
+  if(editingLinksIndex === null) return;
+  tools[editingLinksIndex].links = parseLinks(document.getElementById('linksEditor').value);
+  saveTools();
+  closeLinksEditor();
+  render();
 });
 
 document.getElementById('resetData').addEventListener('click', ()=>{
