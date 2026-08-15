@@ -23,9 +23,10 @@
   <div class="metrics">
     <div class="metric">Active tools<b id="active">0</b></div>
     <div class="metric">High priority<b id="high">0</b></div>
-    <div class="metric">GitHub required<b id="githubRequired">0</b></div>
-    <div class="metric">Planned Codex Load<b id="codex">0</b></div>
-    <div class="metric">Planned Image 2 outputs<b id="images">0</b></div>
+    <div class="metric">Tool hours<b id="toolHours">0h</b></div>
+    <span id="githubRequired" class="hidden">0</span>
+    <span id="codex" class="hidden">0</span>
+    <span id="images" class="hidden">0</span>
   </div>
 
   <div class="controls">
@@ -90,5 +91,15 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="app.js"></script>
+<script>
+const trackerBaseUpdateMetrics = updateMetrics;
+updateMetrics = function(){
+  trackerBaseUpdateMetrics();
+  const remaining = tools.filter(t => t.status !== 'Complete').reduce((sum,t) => sum + num(t.hours), 0);
+  const el = document.getElementById('toolHours');
+  if(el) el.textContent = `${remaining}h`;
+};
+updateMetrics();
+</script>
 </body>
 </html>
