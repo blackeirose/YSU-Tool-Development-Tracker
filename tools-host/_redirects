@@ -1,2 +1,2 @@
-/fire-pump-test-pit /fire-pump-test-pit/ 301
-/fire-pump-test-pit/* https://tracker.ycsu.cc/fp-test-pit-20260909-review/:splat 200!
+# Fire Pump Test Pit is now hosted directly under /fire-pump-test-pit/ on the tools host.
+# No external proxy rewrite is used here.
