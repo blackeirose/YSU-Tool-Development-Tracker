@@ -7,8 +7,9 @@
 | DEC-001 | Use Supabase for cross-device Tracker data | ACTIVE |
 | DEC-002 | Keep GitHub as code source of truth | LOCKED |
 | DEC-003 | Keep GitHub Pages for current hosting | ACTIVE |
-| DEC-004 | Public read, owner-authenticated write | ACTIVE |
-| DEC-005 | Preserve localStorage during migration | LOCKED |
+| DEC-004 | Public read, owner-authenticated write | LOCKED |
+| DEC-005 | Preserve localStorage as migration/fallback safety copy | LOCKED |
+| DEC-006 | Match MAIN owner sign-in and authorize by fixed Supabase user ID | LOCKED |
 
 ---
 
@@ -32,7 +33,7 @@ Cross-device synchronization is a real product requirement, so cloud persistence
 
 ### Consequences
 
-Supabase becomes the canonical application-data store after migration, while GitHub remains the canonical source for code.
+Supabase is the canonical runtime Tracker data store, while GitHub remains the canonical source for code and durable project documentation.
 
 ---
 
@@ -74,40 +75,78 @@ Revisit only if future requirements require capabilities GitHub Pages cannot cle
 
 ## DEC-004 — Public read, owner-authenticated write
 
-**Status:** ACTIVE  
+**Status:** LOCKED  
 **Date:** 2026-08-15  
+**Updated:** 2026-09-11  
 **Scope:** Security / Access
 
 ### Decision
 
-Tracker cloud data remains publicly readable, consistent with the current public Tracker, while insert/update/delete operations require Supabase authentication for `blackeirose@gmail.com`.
+Tracker cloud data remains publicly readable. Insert, update, and delete operations require the authorized owner Supabase session.
+
+The database authorization boundary is the owner's stable Supabase Auth user ID, not merely an email string in the client.
 
 ### Reasoning
 
-This preserves convenient viewing while preventing anonymous visitors from modifying Tracker data.
+This preserves convenient public viewing while preventing anonymous or other authenticated users from modifying Tracker data.
 
 ### Consequences
 
-Row Level Security must remain enabled and write policies must stay restricted to the owner unless the user explicitly changes the collaboration model.
+Row Level Security must remain enabled. Public users may SELECT. Only the authorized owner UUID may INSERT / UPDATE / DELETE unless the user explicitly changes the collaboration model.
 
 ---
 
-## DEC-005 — Preserve localStorage during migration
+## DEC-005 — Preserve localStorage as migration/fallback safety copy
 
 **Status:** LOCKED  
 **Date:** 2026-08-15  
-**Scope:** Data Migration
+**Updated:** 2026-09-11  
+**Scope:** Data Migration / Recovery
 
 ### Decision
 
-Do not delete or overwrite the existing browser `localStorage` Tracker data until the first real-data migration to Supabase has completed successfully.
+Keep the existing browser `localStorage` Tracker cache as a safety/fallback copy after cloud migration.
 
-Do not seed the cloud database with stale repository defaults when the user's browser may contain newer data.
+Supabase is now the canonical runtime data source. localStorage must not silently replace newer cloud state.
 
 ### Reasoning
 
-The browser data may contain changes that were never committed to GitHub. Protecting that data takes priority over convenience during migration.
+The local copy remains useful for resilience and recovery while the cloud Tracker is the shared cross-device source of truth.
 
 ### Consequences
 
-The new frontend keeps local data as a fallback/safety copy and only offers migration when the cloud table is empty and the owner is authenticated.
+Local fallback may display cached data during cloud failure, but public visitors remain read-only even in fallback mode. Editing still requires the authorized owner session.
+
+---
+
+## DEC-006 — Match MAIN owner sign-in and authorize by fixed Supabase user ID
+
+**Status:** LOCKED  
+**Date:** 2026-09-11  
+**Scope:** Authentication / UX / Security
+
+### Decision
+
+Tracker owner access follows the same interaction model as `main.ycsu.cc`:
+
+`Public read-only → Owner sign in → email magic link → verified owner session → edit mode`
+
+The authorized owner is Supabase Auth user ID:
+
+`38531f7e-e05e-473a-a587-500b1d3aebe5`
+
+Current email for that account: `blackeirose@gmail.com`.
+
+The UI may use the email address to initiate passwordless sign-in, but authorization must ultimately depend on the stable owner user ID and RLS.
+
+### Reasoning
+
+Using the same owner identity and interaction pattern across MAIN and Tracker reduces friction and makes access behavior predictable. A stable user ID is a stronger authorization boundary than trusting a client-side email comparison or user-editable metadata.
+
+### Consequences
+
+- Public visitors see a clean read-only Tracker.
+- Owner-only edit controls are hidden until the verified owner session is active.
+- `shouldCreateUser` remains false for owner sign-in, so the owner UI cannot create arbitrary new Auth users.
+- Tracker RLS write policies use `auth.uid()` against the fixed owner UUID.
+- Do not authorize via `user_metadata`, display name, or a client-supplied role.
