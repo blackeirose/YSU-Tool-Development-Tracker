@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>YSU Tool Development Tracker</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="owner-ui.css">
 </head>
 <body>
 <div class="wrap">
   <h1>YSU Tool Development — Time & Credit Tracker</h1>
-  <div class="sub">Cloud-sync edition. GitHub remains the code source of truth; Supabase now stores Tracker project data across devices.</div>
+  <div class="sub">Cloud-sync edition. GitHub remains the code source of truth; Supabase stores Tracker project data across devices.</div>
 
   <div class="authbar">
     <span id="authState" class="small">Loading account…</span>
@@ -70,7 +71,7 @@
 
   <div id="cardView" class="hidden"></div>
 
-  <div class="note">Cloud data is publicly readable, matching the current public Tracker, but editing is protected by Supabase Auth and Row Level Security. Until the first migration succeeds, your existing browser localStorage remains intact as a safety copy.</div>
+  <div class="note">Tracker data is publicly readable. Editing, adding, deleting, and Kanban status changes are available only after the authorized owner signs in.</div>
 </div>
 
 <div id="detailBackdrop" class="detail-backdrop" aria-hidden="true">
@@ -91,6 +92,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="app.js"></script>
+<script src="owner-ui.js"></script>
 <script>
 const trackerBaseUpdateMetrics = updateMetrics;
 updateMetrics = function(){
