@@ -5,11 +5,11 @@
 **Name:** YSU Tool Development Tracker  
 **Repository:** `blackeirose/YSU-Tool-Development-Tracker`  
 **Type:** Lightweight web application / development dashboard  
-**Status:** Active — Supabase cloud-sync migration in progress
+**Status:** Active — Supabase cloud Tracker live
 
 ## Purpose
 
-Track YSU software/tool ideas, active development, priorities, progress, resources, workload, launch links, current state, and next steps in a single editable Table / Kanban interface.
+Track YSU software/tool ideas, active development, priorities, progress, resources, workload, launch links, current state, and next steps in a Table / Kanban interface.
 
 Primary user: YuCheng Su.
 
@@ -20,16 +20,16 @@ The Tracker supports:
 - Table view
 - Kanban / Card view
 - filtering and sorting
-- inline editing
-- detail editing
-- drag-and-drop status changes
+- inline editing in owner mode
+- detail editing in owner mode
+- drag-and-drop status changes in owner mode
 - launch links
 - workload / progress metrics
-- add and delete operations
+- add and delete operations in owner mode
+- public read-only browsing
+- MAIN-style Owner sign-in via Supabase passwordless email authentication
 
-The original application stored all Tracker item data in browser `localStorage`.
-
-A Supabase cloud-sync migration is now being implemented so Tracker data can be shared across devices and updated by connected AI/development workflows.
+The original browser-only `localStorage` data has already been migrated to Supabase. Supabase is the runtime source of truth; localStorage remains only as a local safety/fallback cache.
 
 ## Architecture
 
@@ -97,49 +97,52 @@ Cloud data includes:
 - launch links
 - ordering and timestamps
 
-Browser localStorage remains temporarily as a migration safety copy and local fallback.
+Browser localStorage remains as a safety/fallback cache, not the canonical Tracker state.
 
 ## Authentication / Access
 
-Current intended access model:
+Current access model:
 
 - public users: read-only
-- authenticated owner (`blackeirose@gmail.com`): insert / update / delete
+- authorized owner: insert / update / delete and Kanban drag/status changes
 
-Row Level Security is enabled on `tracker_items`.
+Owner access intentionally matches the YCSU MAIN interaction pattern:
+
+`Public read-only → Owner sign in → email magic link → verified owner session → edit mode`
+
+The authorized owner is identified by the fixed Supabase Auth user ID `38531f7e-e05e-473a-a587-500b1d3aebe5` (current account email `blackeirose@gmail.com`). Frontend UI checks the same owner ID; database Row Level Security is the actual write authorization boundary.
+
+`tracker_items` RLS:
+
+- `anon` + `authenticated`: SELECT
+- authenticated owner UUID only: INSERT / UPDATE / DELETE
 
 The Supabase publishable key may be present in client-side code; privileged service-role credentials must never be committed to GitHub or exposed in the browser.
 
-## Migration State
+## Owner UI
 
-Supabase project and database schema are created.
+The legacy always-visible email/auth bar is retained only as hidden compatibility DOM for the existing application code. `owner-ui.js` provides the user-facing owner flow and overrides editing availability to require the verified owner session even during local fallback.
 
-The frontend has been updated to:
-
-- read cloud data when available
-- preserve localStorage data when cloud is empty
-- support owner sign-in
-- offer one-time localStorage → Supabase migration
-- keep local data intact if migration fails
-
-The first real-data migration must be performed from the browser/profile that contains the current Tracker localStorage data.
+Public mode hides owner-only controls such as Add Item, Delete Selected, row selection/delete columns, inline editing, and Kanban drag behavior. Owner mode restores those capabilities.
 
 ## Important Constraints
 
-- Do not overwrite existing local Tracker data before successful migration.
-- Do not seed Supabase with stale repository sample data when newer browser data may exist.
+- Preserve public read-only access.
+- Never relax owner write RLS to all authenticated users.
+- Owner authorization should use the stable Supabase user ID, not user-editable metadata or a client-supplied role.
 - Preserve the lightweight static architecture unless requirements justify additional complexity.
 - Do not replace GitHub Pages merely because another deployment service is available.
 - Keep database and UI responsibilities separated enough that the service can be replaced later if needed.
+- Preserve localStorage as a safety/fallback cache unless a deliberate cleanup milestone removes it.
 
 ## Current Development Focus
 
-Complete and validate the first cloud migration from existing browser localStorage into Supabase, then verify cross-device read/write behavior.
+Maintain the live cloud Tracker and keep project/task state current. Owner editing should remain consistent with MAIN while public visitors get a clean read-only view.
 
 ## Next Likely Milestone
 
-After cloud migration is validated, allow ChatGPT / Codex / Gemini workflows to update Tracker records through the shared cloud data layer when appropriate.
+Improve shared YSU owner/admin interaction patterns only when there is a concrete usability need; do not add a new framework or authentication system for consistency alone.
 
 ## Agent Entry Summary
 
-This is a lightweight static Tracker deployed with GitHub Pages at `tracker.ycsu.cc`. GitHub is the code source of truth; Supabase is the cloud data source. Preserve the existing interface and local migration safety copy. Public access is read-only; owner-authenticated access can edit. Read `DECISIONS.md` before making durable architecture or service changes.
+This is a lightweight static Tracker deployed with GitHub Pages at `tracker.ycsu.cc`. GitHub is the code source of truth; Supabase is the cloud data source. Public access is read-only. Owner editing uses the same Supabase owner identity as MAIN and is protected by RLS using the fixed owner UUID. Read `DECISIONS.md` before making durable architecture, access, or service changes.
