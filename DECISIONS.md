@@ -155,8 +155,8 @@ Using the same owner identity and interaction pattern across MAIN and Tracker re
 
 ## DEC-007 — Six-digit email OTP in the original browser
 
-**Status:** ACTIVE  
-**Date:** 2026-09-11  
+**Status:** ACTIVE
+**Date:** 2026-09-11
 **Scope:** Authentication UX
 
 YuCheng requested the same email OTP improvement released for MAIN. Tracker now uses signInWithOtp with shouldCreateUser:false, then verifyOtp with email/token/type=email. A single six-digit field supports numeric keyboards, one-time-code autofill, leading-zero paste and Enter. Resend cooldown is 60 seconds; invalid/expired/used, rate-limit and network errors remain retryable.
