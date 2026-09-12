@@ -27,7 +27,7 @@ The Tracker supports:
 - workload / progress metrics
 - add and delete operations in owner mode
 - public read-only browsing
-- MAIN-style Owner sign-in via Supabase passwordless email authentication
+- MAIN-style Owner sign-in via six-digit Supabase email OTP
 
 The original browser-only `localStorage` data has already been migrated to Supabase. Supabase is the runtime source of truth; localStorage remains only as a local safety/fallback cache.
 
@@ -108,7 +108,7 @@ Current access model:
 
 Owner access intentionally matches the YCSU MAIN interaction pattern:
 
-`Public read-only → Owner sign in → email magic link → verified owner session → edit mode`
+`Public read-only → Owner sign in → six-digit email code → verify in the original browser → owner edit mode`
 
 The authorized owner is identified by the fixed Supabase Auth user ID `38531f7e-e05e-473a-a587-500b1d3aebe5` (current account email `blackeirose@gmail.com`). Frontend UI checks the same owner ID; database Row Level Security is the actual write authorization boundary.
 
@@ -121,7 +121,7 @@ The Supabase publishable key may be present in client-side code; privileged serv
 
 ## Owner UI
 
-The legacy always-visible email/auth bar is retained only as hidden compatibility DOM for the existing application code. `owner-ui.js` provides the user-facing owner flow and overrides editing availability to require the verified owner session even during local fallback.
+The legacy always-visible email/auth bar is retained only as hidden compatibility DOM for the existing application code. `owner-ui.js` provides the user-facing owner flow; `email-otp.js` handles request/verify and the 60-second resend cooldown. `app.js` owns the single revision-guarded Auth lifecycle and requires the fixed owner UUID even during local fallback. Supabase SDK 2.116.0 is vendored and pinned; its default session storage/refresh and Magic Link callback remain compatible.
 
 Public mode hides owner-only controls such as Add Item, Delete Selected, row selection/delete columns, inline editing, and Kanban drag behavior. Owner mode restores those capabilities.
 
@@ -146,3 +146,12 @@ Improve shared YSU owner/admin interaction patterns only when there is a concret
 ## Agent Entry Summary
 
 This is a lightweight static Tracker deployed with GitHub Pages at `tracker.ycsu.cc`. GitHub is the code source of truth; Supabase is the cloud data source. Public access is read-only. Owner editing uses the same Supabase owner identity as MAIN and is protected by RLS using the fixed owner UUID. Read `DECISIONS.md` before making durable architecture, access, or service changes.
+
+
+## Email OTP maintenance
+
+The shared Supabase project already uses the owner's Resend Custom SMTP, six-digit email OTP (3600-second expiry) and a passwordless email containing both Token and ConfirmationURL, verified during MAIN v1.4 maintenance. Tracker reuses that configuration and explicitly redirects compatible email links to its own origin. No shared Auth settings, RLS, other app or Tracker records were changed in this frontend task.
+
+Sign-out immediately removes editing and closes detail/link editors before awaiting the SDK. Mutation handlers recheck current owner permission so stale controls cannot modify the fallback cache after logout. Delayed initial hydration and OTP responses cannot replace a newer identity. Non-owners retain public read-only access.
+
+Development validation: `npm ci --ignore-scripts` and `npm test`; tests use local fake Auth/database fixtures only. Deployment remains the existing main-branch GitHub Pages process. See `docs/validation/email-otp-2026-09-11.md` for acceptance and recovery evidence.
