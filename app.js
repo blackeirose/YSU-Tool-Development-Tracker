@@ -1,6 +1,7 @@
 const SUPABASE_URL = 'https://fzydsnxxcdllkjxwdiwn.supabase.co';
 const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_wpnShrpWOLV94EEUA86vVg_zRQbbW2W';
 const OWNER_EMAIL = 'blackeirose@gmail.com';
+const OWNER_USER_ID = '38531f7e-e05e-473a-a587-500b1d3aebe5';
 const STORAGE_KEYS = [
   'ysu-tool-development-tracker-v13',
   'ysu-tool-development-tracker-v12',
@@ -13,6 +14,8 @@ const db = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
 
 let tools = [];
 let session = null;
+let authRevision = 0;
+let signingOut = false;
 let source = 'local';
 let cloudWasEmpty = false;
 let sortState = { key: null, dir: 1 };
@@ -81,8 +84,8 @@ function toolToDb(t, order=0){
     notes:t.notes, readiness:t.readiness, links:Array.isArray(t.links)?t.links:[], sort_order:order
   };
 }
-function isOwner(){ return !!session && String(session.user?.email || '').toLowerCase() === OWNER_EMAIL; }
-function canEdit(){ return source === 'local' || isOwner(); }
+function isOwner(){ return !!session && session.user?.id === OWNER_USER_ID && !!session.user?.email_confirmed_at && !session.user?.is_anonymous; }
+function canEdit(){ return isOwner(); }
 function setSync(text, kind=''){
   syncStatus.textContent = text;
   syncStatus.className = 'sync' + (kind ? ' ' + kind : '');
@@ -119,6 +122,7 @@ async function refreshFromCloud(){
   updateAuthUI(); render();
 }
 async function persistIndex(index){
+  if(!canEdit())return;
   const t = tools[index]; if(!t){ return; }
   saveLocalCache();
   if(source !== 'cloud'){
@@ -136,6 +140,7 @@ async function persistIndex(index){
   tools[index] = dbToTool(result.data); saveLocalCache(); setSync('Saved to Supabase', 'ok'); updateMetrics();
 }
 async function deleteIndex(index){
+  if(!canEdit())return;
   const t = tools[index]; if(!t) return;
   if(source === 'cloud'){
     if(!isOwner()){ setSync('Sign in to delete', 'warn'); return; }
@@ -153,16 +158,24 @@ async function migrateLocalToCloud(){
   await refreshFromCloud(); setSync('Migration complete · cloud is now source of truth','ok');
 }
 
-async function sendSignInLink(){
-  const email = authEmail.value.trim().toLowerCase();
-  if(email !== OWNER_EMAIL){ alert(`Use ${OWNER_EMAIL} for Tracker editing.`); return; }
-  signInBtn.disabled = true; setSync('Sending sign-in link…');
-  const { error } = await db.auth.signInWithOtp({ email, options:{ shouldCreateUser:true, emailRedirectTo: window.location.origin + window.location.pathname } });
-  signInBtn.disabled = false;
-  if(error){ setSync('Could not send sign-in link','error'); alert(error.message); return; }
-  setSync('Check your email for the Supabase sign-in link','ok');
+// One authoritative Auth lifecycle; OTP results never assign a session themselves.
+function applyAuthSession(nextSession){
+  ++authRevision;
+  const previousId = session?.user?.id;
+  session = nextSession;
+  if(!isOwner() || previousId !== session?.user?.id){ closeDetail(); closeLinksEditor(); }
+  updateAuthUI(); render();
+  document.dispatchEvent(new CustomEvent('tracker-auth-change'));
 }
-async function signOut(){ await db.auth.signOut(); session=null; updateAuthUI(); await refreshFromCloud(); }
+async function signOut(){
+  if(signingOut)return;
+  signingOut = true;
+  applyAuthSession(null); // Revoke editing before waiting on the network.
+  try{
+    const {error} = await db.auth.signOut({scope:'local'});
+    if(error)throw error;
+  }finally{ signingOut = false; }
+}
 
 function getFilteredSorted(){
   const q=search.value.toLowerCase().trim(), p=priorityFilter.value, r=resourceFilter.value, s=statusFilter.value, g=githubFilter.value;
@@ -187,18 +200,19 @@ function renderCards(){
   const cardView=document.getElementById('cardView'), statuses=['Active','Planning','Future','Idea','Paused','Complete'], filtered=getFilteredSorted();
   cardView.innerHTML=`<div class="kanban">${statuses.map(status=>{const items=filtered.filter(t=>t.status===status);return `<section class="kanban-col" data-status="${status}"><div class="kanban-head"><span>${status}</span><span class="kanban-count">${items.length}</span></div><div>${items.map(t=>`<article class="task-card" ${canEdit()?'draggable="true"':''} data-card-index="${t._index}"><div class="task-meta"><span class="mini-pill ${pillClass('priority',t.priority)}">${esc(t.priority)}</span><span class="mini-pill ${pillClass('github',t.github)}">GitHub ${esc(t.github)}</span><span class="mini-pill ${pillClass('codex',t.codex)}">Codex ${esc(t.codex)}</span></div><h3>${esc(t.name)}</h3><div class="card-sub">${esc(t.category)} · ${esc(t.platform)}</div><div class="card-next"><b>Next:</b> ${esc(t.next)}</div>${cardLaunchLinks(t.links)}<div class="card-footer"><span>${esc(t.progress)}%</span><div class="progress-mini"><span style="width:${Math.max(0,Math.min(100,num(t.progress)))}%"></span></div><span>${esc(t.hours)}h</span></div></article>`).join('')}</div></section>`}).join('')}</div>`;
   document.querySelectorAll('.task-card').forEach(card=>{card.addEventListener('click',()=>openDetail(Number(card.dataset.cardIndex))); if(canEdit()){card.addEventListener('dragstart',e=>{card.classList.add('dragging');e.dataTransfer.setData('text/plain',card.dataset.cardIndex)});card.addEventListener('dragend',()=>card.classList.remove('dragging'));}});
-  if(canEdit()) document.querySelectorAll('.kanban-col').forEach(col=>{col.addEventListener('dragover',e=>{e.preventDefault();col.classList.add('drop-target')});col.addEventListener('dragleave',()=>col.classList.remove('drop-target'));col.addEventListener('drop',async e=>{e.preventDefault();col.classList.remove('drop-target');const i=Number(e.dataTransfer.getData('text/plain'));if(Number.isInteger(i)&&tools[i]){tools[i].status=col.dataset.status;await persistIndex(i);render();}})});
+  if(canEdit()) document.querySelectorAll('.kanban-col').forEach(col=>{col.addEventListener('dragover',e=>{e.preventDefault();col.classList.add('drop-target')});col.addEventListener('dragleave',()=>col.classList.remove('drop-target'));col.addEventListener('drop',async e=>{e.preventDefault();if(!canEdit())return;col.classList.remove('drop-target');const i=Number(e.dataTransfer.getData('text/plain'));if(Number.isInteger(i)&&tools[i]){tools[i].status=col.dataset.status;await persistIndex(i);render();}})});
 }
 function render(){
   const data=getFilteredSorted();
   rows.innerHTML=data.map(t=>`<tr><td><input class="rowSelect" type="checkbox" data-select="${t._index}" ${canEdit()?'':'disabled'}></td>${editableCell(t.name,'name',t._index,'name')}<td>${renderLinks(t.links,t._index)}</td>${editableCell(t.category,'category',t._index,'smallcol')}${editableCell(t.platform,'platform',t._index,'smallcol')}${selectCell(t.github,'github',t._index,['Required','Optional','No'],'smallcol')}${selectCell(t.status,'status',t._index,['Active','Planning','Future','Idea','Paused','Complete'],'smallcol')}<td class="num" ${canEdit()?'contenteditable="true"':''} data-index="${t._index}" data-key="progress">${esc(t.progress)}<div class="bar" contenteditable="false"><span style="width:${Math.max(0,Math.min(100,num(t.progress)))}%"></span></div></td>${selectCell(t.priority,'priority',t._index,['High','Medium','Low'],'smallcol')}${editableCell(t.current,'current',t._index,'long')}${editableCell(t.next,'next',t._index,'long')}${editableCell(t.resource,'resource',t._index,'smallcol')}${selectCell(t.codex,'codex',t._index,['XS','S','M','L','XL'],'smallcol')}${editableCell(t.image2,'image2',t._index,'num')}${editableCell(t.hours,'hours',t._index,'num')}${editableCell(t.notes,'notes',t._index,'long')}${editableCell(t.readiness,'readiness',t._index,'smallcol')}<td>${canEdit()?`<button class="remove" data-remove="${t._index}">×</button>`:''}</td></tr>`).join('');
   document.querySelectorAll('td[contenteditable=true]').forEach(td=>{td.addEventListener('blur',handleEdit);td.addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();td.blur()}})});
-  document.querySelectorAll('.cell-select').forEach(sel=>sel.addEventListener('change',async e=>{const s=e.currentTarget,i=Number(s.dataset.index);tools[i][s.dataset.key]=s.value;await persistIndex(i);render()}));
+  document.querySelectorAll('.cell-select').forEach(sel=>sel.addEventListener('change',async e=>{if(!canEdit())return;const s=e.currentTarget,i=Number(s.dataset.index);tools[i][s.dataset.key]=s.value;await persistIndex(i);render()}));
   document.querySelectorAll('[data-edit-links]').forEach(b=>b.addEventListener('click',()=>openLinksEditor(Number(b.dataset.editLinks))));
   document.querySelectorAll('[data-remove]').forEach(b=>b.addEventListener('click',async()=>{const i=Number(b.dataset.remove);if(confirm(`Delete "${tools[i].name}"?`)) await deleteIndex(i)}));
   updateMetrics(); updateSortIndicators(); applyView(); updateAuthUI();
 }
 async function handleEdit(e){
+  if(!canEdit())return;
   const td=e.currentTarget,i=Number(td.dataset.index),key=td.dataset.key; let value;
   if(key==='progress') value=[...td.childNodes].filter(n=>n.nodeType===Node.TEXT_NODE).map(n=>n.textContent).join('').trim(); else value=td.textContent.trim();
   if(['progress','image2','hours'].includes(key)){value=num(value);if(key==='progress')value=Math.max(0,Math.min(100,value));}
@@ -214,7 +228,7 @@ function updateMetrics(){
 function updateSortIndicators(){document.querySelectorAll('th[data-key]').forEach(th=>{const span=th.querySelector('.sort');span.textContent=th.dataset.key===sortState.key?(sortState.dir===1?'▲':'▼'):''})}
 function applyView(){const table=document.getElementById('tableView'),card=document.getElementById('cardView'),tb=document.getElementById('tableViewBtn'),cb=document.getElementById('cardViewBtn'),isCard=currentView==='card';table.classList.toggle('hidden',isCard);card.classList.toggle('hidden',!isCard);tb.classList.toggle('active',!isCard);cb.classList.toggle('active',isCard);if(isCard)renderCards();}
 
-function openLinksEditor(index){ editingLinksIndex=index;document.getElementById('linksEditor').value=(tools[index].links||[]).map(l=>`${l.label} | ${l.url}`).join('\n');document.getElementById('linksModal').classList.add('open'); }
+function openLinksEditor(index){ if(!canEdit())return;editingLinksIndex=index;document.getElementById('linksEditor').value=(tools[index].links||[]).map(l=>`${l.label} | ${l.url}`).join('\n');document.getElementById('linksModal').classList.add('open'); }
 function closeLinksEditor(){document.getElementById('linksModal').classList.remove('open');editingLinksIndex=null;}
 function parseLinks(text){return text.split('\n').map(x=>x.trim()).filter(Boolean).map(line=>{const p=line.indexOf('|');return p<0?{label:'Open',url:line}:{label:line.slice(0,p).trim()||'Open',url:line.slice(p+1).trim()}}).filter(l=>l.url)}
 function openDetail(index){
@@ -222,7 +236,7 @@ function openDetail(index){
   const disabled=canEdit()?'':'disabled';const inp=(k,v,type='text')=>`<input class="detail-input" data-detail-key="${k}" type="${type}" value="${esc(v)}" ${disabled}>`;const ta=(k,v)=>`<textarea class="detail-textarea" data-detail-key="${k}" ${disabled}>${esc(v)}</textarea>`;const sel=(k,v,opts)=>`<select class="detail-select" data-detail-key="${k}" ${disabled}>${opts.map(o=>`<option ${o===v?'selected':''}>${esc(o)}</option>`).join('')}</select>`;
   const fields=[['Tool Name',inp('name',t.name),'wide'],['Status',sel('status',t.status,['Active','Planning','Future','Idea','Paused','Complete'])],['Priority',sel('priority',t.priority,['High','Medium','Low'])],['Category',inp('category',t.category)],['Platform',inp('platform',t.platform)],['GitHub',sel('github',t.github,['Required','Optional','No'])],['Codex Load',sel('codex',t.codex,['XS','S','M','L','XL'])],['Progress',inp('progress',t.progress,'number')],['Hours',inp('hours',t.hours,'number')],['Image2',inp('image2',t.image2,'number')],['Resource',inp('resource',t.resource)],['Readiness',inp('readiness',t.readiness)],['Current State',ta('current',t.current),'wide'],['Next Step',ta('next',t.next),'wide'],['Notes',ta('notes',t.notes),'wide']];
   document.getElementById('detailBody').innerHTML=fields.map(([l,c,w])=>`<div class="detail-field ${w?'detail-wide':''}"><label>${l}</label>${c}</div>`).join('')+`<div class="detail-field detail-wide"><label>Launch Links</label><div class="detail-links">${(t.links||[]).map(l=>`<a class="launch-link" href="${esc(safeUrl(l.url))}" target="_blank" rel="noopener noreferrer">${esc(l.label)} ↗</a>`).join('')||'<span class="small">No links</span>'}</div>${canEdit()?'<button class="edit-links" id="detailEditLinks">Edit Launch Links</button>':''}</div>`;
-  if(canEdit()) document.querySelectorAll('[data-detail-key]').forEach(el=>{const fn=async()=>{let v=el.value;if(['progress','hours','image2'].includes(el.dataset.detailKey))v=num(v);tools[index][el.dataset.detailKey]=v;await persistIndex(index);document.getElementById('detailTitle').textContent=tools[index].name;render()};el.addEventListener('change',fn);if(['TEXTAREA','INPUT'].includes(el.tagName))el.addEventListener('blur',fn)});
+  if(canEdit()) document.querySelectorAll('[data-detail-key]').forEach(el=>{const fn=async()=>{if(!canEdit())return;let v=el.value;if(['progress','hours','image2'].includes(el.dataset.detailKey))v=num(v);tools[index][el.dataset.detailKey]=v;await persistIndex(index);document.getElementById('detailTitle').textContent=tools[index].name;render()};el.addEventListener('change',fn);if(['TEXTAREA','INPUT'].includes(el.tagName))el.addEventListener('blur',fn)});
   document.getElementById('detailEditLinks')?.addEventListener('click',()=>openLinksEditor(index));document.getElementById('detailBackdrop').classList.add('open');
 }
 function closeDetail(){document.getElementById('detailBackdrop').classList.remove('open');detailIndex=null;}
@@ -237,8 +251,17 @@ async function deleteSelected(){
 }
 
 async function init(){
-  const { data:{ session:s } } = await db.auth.getSession(); session=s;
-  db.auth.onAuthStateChange((_event,newSession)=>{session=newSession;updateAuthUI();if(newSession)setTimeout(refreshFromCloud,0)});
+  db.auth.onAuthStateChange((_event,newSession)=>{
+    if(signingOut && newSession)return;
+    applyAuthSession(newSession);
+    if(newSession)setTimeout(()=>void refreshFromCloud(),0);
+  });
+  const revision = authRevision;
+  try{
+    const {data,error} = await db.auth.getSession();
+    if(error)throw error;
+    if(revision === authRevision && !signingOut)applyAuthSession(data.session);
+  }catch(_){ if(revision === authRevision)applyAuthSession(null); }
   authEmail.value=OWNER_EMAIL; updateAuthUI(); await refreshFromCloud();
 }
 
@@ -249,8 +272,8 @@ document.getElementById('deleteSelected').addEventListener('click',deleteSelecte
 document.getElementById('selectAll').addEventListener('change',e=>document.querySelectorAll('.rowSelect').forEach(c=>{if(!c.disabled)c.checked=e.target.checked}));
 document.getElementById('tableViewBtn').addEventListener('click',()=>{currentView='table';localStorage.setItem('ysu-tracker-view-v13',currentView);applyView()});
 document.getElementById('cardViewBtn').addEventListener('click',()=>{currentView='card';localStorage.setItem('ysu-tracker-view-v13',currentView);applyView()});
-signInBtn.addEventListener('click',sendSignInLink);signOutBtn.addEventListener('click',signOut);migrateBtn.addEventListener('click',migrateLocalToCloud);
-document.getElementById('saveLinks').addEventListener('click',async()=>{if(editingLinksIndex===null)return;tools[editingLinksIndex].links=parseLinks(document.getElementById('linksEditor').value);await persistIndex(editingLinksIndex);closeLinksEditor();render();if(detailIndex!==null)openDetail(detailIndex)});
+migrateBtn.addEventListener('click',migrateLocalToCloud);
+document.getElementById('saveLinks').addEventListener('click',async()=>{if(!canEdit()||editingLinksIndex===null)return;tools[editingLinksIndex].links=parseLinks(document.getElementById('linksEditor').value);await persistIndex(editingLinksIndex);closeLinksEditor();render();if(detailIndex!==null)openDetail(detailIndex)});
 document.getElementById('cancelLinks').addEventListener('click',closeLinksEditor);document.getElementById('linksModal').addEventListener('click',e=>{if(e.target.id==='linksModal')closeLinksEditor()});
 document.getElementById('detailClose').addEventListener('click',closeDetail);document.getElementById('detailBackdrop').addEventListener('click',e=>{if(e.target.id==='detailBackdrop')closeDetail()});document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeDetail();closeLinksEditor()}});
 
