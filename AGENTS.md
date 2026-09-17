@@ -4,7 +4,7 @@ This repository is a YSU project and follows the canonical YSU AI Core:
 
 `https://github.com/blackeirose/ysu-ai-core`
 
-Before meaningful work:
+Before meaningful work, the AI Core preflight is mandatory and must use the current canonical Core. A task that skips this preflight is non-compliant.
 
 1. Load the current YSU AI Core, beginning with its `AGENTS.md` and `AI_CORE.md`.
 2. Read this repository's `PROJECT_CONTEXT.md`.
