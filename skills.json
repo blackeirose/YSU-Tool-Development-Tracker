@@ -1,0 +1,597 @@
+{
+  "$comment": "GENERATED FILE — do not edit by hand. Source: Google Drive AI Works/06_Skills/00_SKILL_REGISTRY.md. Regenerate with `npm run skills:index`.",
+  "generated_at": "2026-09-27T02:10:56.026Z",
+  "source": {
+    "file": "skills-source/00_SKILL_REGISTRY.md",
+    "drive_file_id": "1g6Io9lD4YwkDaX5_OUqssvrcEyuCF-1P",
+    "registry_updated": "2026-09-26"
+  },
+  "registry": {
+    "title": "YSU Skills Registry — 統一管理總表",
+    "recorded": "2026-09-21",
+    "updated": "2026-09-26",
+    "owner": "YuCheng Su",
+    "management_conversation": "YSU Skills 管理中心",
+    "drive_folder": "https://drive.google.com/drive/folders/1P6b3rLGzrdev1Lh6tZVGAWnPcNkNYoV_",
+    "pending_folder_note": "AI Works / 06_Skills / 00_PENDING is the cloud staging area for unprocessed material."
+  },
+  "counts": {
+    "total": 14,
+    "registered": 13,
+    "pending": 1
+  },
+  "skills": [
+    {
+      "id": "YSU-SKILL-001",
+      "name": "YSU Scientific Interactive Simulator Skill",
+      "slug": "ysu-scientific-interactive-simulator",
+      "category": "ENGINEERING / SIMULATION",
+      "lifecycle": "Approved",
+      "validation": "Partial",
+      "version": "1.1.1",
+      "version_note": "v1.1.1",
+      "description": "科學／工程互動模擬器",
+      "graphic_reference_count": 0,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "UNVERIFIED",
+        "codex": "UNVERIFIED"
+      },
+      "platform_notes": {
+        "drive": "完整 12 檔原始套件已上傳；回下載 SHA-256 一致",
+        "chatgpt": "Plugin-ready 檔案已存在；安裝、發布及分享連結均未核實",
+        "codex": "未核實"
+      },
+      "origin_project": null,
+      "origin_conversation": null,
+      "origin_conversation_url": null,
+      "locator_status": "UNLOCATED",
+      "related_conversations": [],
+      "next_action": null,
+      "canonical_drive": "https://drive.google.com/drive/folders/1HpDA1z6_2YIEzcSezC5PvA-GdUgNgFUc",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/1HpDA1z6_2YIEzcSezC5PvA-GdUgNgFUc"
+        }
+      ],
+      "registered": true
+    },
+    {
+      "id": "YSU-SKILL-002",
+      "name": "Revit Vehicle Family Builder",
+      "slug": "revit-vehicle-family-builder",
+      "category": "ARCHITECTURE / REVIT",
+      "lifecycle": "Approved",
+      "validation": "Partial",
+      "version": "1.0.1",
+      "version_note": "紀錄：installed v1.0.1 / source v1.0.0",
+      "description": "Revit 車輛 Family 製作",
+      "graphic_reference_count": 0,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "UNVERIFIED",
+        "codex": "INSTALLED_RECORDED"
+      },
+      "platform_notes": {
+        "drive": "來源核對紀錄已歸檔；完整來源及逐檔版本比對待完成",
+        "chatgpt": "未核實；不要把 Codex 安裝當成 ChatGPT 安裝",
+        "codex": "既有紀錄顯示已安裝；本輪未重驗"
+      },
+      "origin_project": null,
+      "origin_conversation": null,
+      "origin_conversation_url": null,
+      "locator_status": "UNLOCATED",
+      "related_conversations": [],
+      "next_action": "比較完整目錄而不只 SKILL.md；保留較新的 installed 改進與所有差異，查清 canonical source，再產出可移交套件、驗證和歸檔。禁止用舊 v1.0.0 覆蓋 v1.0.1。",
+      "canonical_drive": "https://drive.google.com/drive/folders/11Qpu4WY94zEMBqSFg6ycD9kZ8oLrRF6Q",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/11Qpu4WY94zEMBqSFg6ycD9kZ8oLrRF6Q"
+        }
+      ],
+      "registered": true
+    },
+    {
+      "id": "YSU-SKILL-003",
+      "name": "YSU Site & Construction Film",
+      "slug": "ysu-site-construction-film",
+      "category": "FILM",
+      "lifecycle": "Approved",
+      "validation": "Partial",
+      "version": "1.0.0",
+      "version_note": "實讀原始 v1.0.0 / 1d05934",
+      "description": "場地／施工影片",
+      "graphic_reference_count": 6,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "UNVERIFIED",
+        "codex": "INSTALLED_RECORDED"
+      },
+      "platform_notes": {
+        "drive": "19 檔原始 ZIP 已回下載驗證；6 圖補充包另存保留",
+        "chatgpt": "未核實；不包含人物對話敘事影片總流程",
+        "codex": "既有 installed junction 同源，唯讀核對；未重新安裝或重驗新對話載入"
+      },
+      "origin_project": null,
+      "origin_conversation": null,
+      "origin_conversation_url": null,
+      "locator_status": "UNLOCATED",
+      "related_conversations": [],
+      "next_action": "取得包含 references/templates/helpers/tests 的完整來源，保存驗證紀錄，檢查私人媒體／專案路徑等分享邊界，再歸檔及處理平台安裝。不要將 Mānoa 原始影片、Premiere 專案或付費生成流程一起重新執行。",
+      "canonical_drive": "https://drive.google.com/drive/folders/1mgO1gN0uleu5pGJUDEgVo5caR7dtGprh",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/1mgO1gN0uleu5pGJUDEgVo5caR7dtGprh"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/1TfDwwUme78bu8EUEkeMtLlmR4gLsd6dc/view"
+        }
+      ],
+      "registered": true
+    },
+    {
+      "id": "YSU-SKILL-004",
+      "name": "Film Center / Router",
+      "slug": "ysu-narrative-film-system",
+      "category": "FILM",
+      "lifecycle": "Candidate",
+      "validation": "Partial",
+      "version": "0.2.0",
+      "version_note": "文件／參考 v0.2.0",
+      "description": null,
+      "graphic_reference_count": 3,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "NOT_PUBLISHED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "persistent team／CURRENT FILM／Handoff 規則已更新；3 Graphic＋v0.2.0 ZIP 已歸檔",
+        "chatgpt": "未發布、未改分享；非 runtime release",
+        "codex": "未安裝／未驗證"
+      },
+      "origin_project": null,
+      "origin_conversation": null,
+      "origin_conversation_url": null,
+      "locator_status": "UNLOCATED",
+      "related_conversations": [],
+      "next_action": null,
+      "canonical_drive": "https://drive.google.com/drive/folders/19jM7Qe1siUkjT5MEgNoZ3tF3_aVSsWty",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/19jM7Qe1siUkjT5MEgNoZ3tF3_aVSsWty"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://drive.google.com/file/d/18LNRQmR6oS8Cz9VHskFLiS1tgNq7ZmLC/view"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/1_tgRBIqYuxyLXEJrvgDeeGxGNYTfPBxI/view"
+        }
+      ],
+      "registered": true
+    },
+    {
+      "id": "YSU-SKILL-005",
+      "name": "Narrative Direction",
+      "slug": "ysu-narrative-direction",
+      "category": "FILM",
+      "lifecycle": "Candidate",
+      "validation": "Partial",
+      "version": "0.2.0",
+      "version_note": "文件／參考 v0.2.0",
+      "description": null,
+      "graphic_reference_count": 6,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "NOT_PUBLISHED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "Camera Grammar＋Beat-to-Shot；6 Graphic＋v0.2.0 ZIP 已歸檔",
+        "chatgpt": "未發布、未改分享；非 runtime release",
+        "codex": "未安裝／未驗證"
+      },
+      "origin_project": null,
+      "origin_conversation": null,
+      "origin_conversation_url": null,
+      "locator_status": "UNLOCATED",
+      "related_conversations": [],
+      "next_action": null,
+      "canonical_drive": "https://drive.google.com/drive/folders/14HodW6hOLu9FY7gLfinTVGK18oqNnSTj",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/14HodW6hOLu9FY7gLfinTVGK18oqNnSTj"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://drive.google.com/file/d/1FgzORUUJVhNzJceyebXrffNlbwrKjTKT/view"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/1zuqjUZvSzQOzPPncnw5jLmWKn9TUQj7Y/view"
+        }
+      ],
+      "registered": true
+    },
+    {
+      "id": "YSU-SKILL-006",
+      "name": "AAA Character Bible System v2",
+      "slug": "ysu-aaa-character-bible",
+      "category": "FILM",
+      "lifecycle": "Candidate",
+      "validation": "Partial",
+      "version": "0.1.1",
+      "version_note": "文件／參考 package 0.1.1",
+      "description": null,
+      "graphic_reference_count": 8,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "NOT_PUBLISHED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "MD＋範本＋8 張 Graphic＋ZIP 已歸檔；雜湊讀回通過",
+        "chatgpt": "未發布、未改分享；非 runtime release",
+        "codex": "未安裝／未驗證"
+      },
+      "origin_project": null,
+      "origin_conversation": null,
+      "origin_conversation_url": null,
+      "locator_status": "UNLOCATED",
+      "related_conversations": [],
+      "next_action": null,
+      "canonical_drive": "https://drive.google.com/drive/folders/17VgEusGXDfv1er41czUBwqyW795fTaU2",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/17VgEusGXDfv1er41czUBwqyW795fTaU2"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://drive.google.com/file/d/1hUIyz3sDXNKjd3iMv9Vy8UC_i3NlFDlj/view"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/1ygfEXhl8QHjEZFyrUyglS81HcizM9Ea4/view"
+        }
+      ],
+      "registered": true
+    },
+    {
+      "id": "YSU-SKILL-007",
+      "name": "Environment Narrative Bible",
+      "slug": "ysu-environment-narrative",
+      "category": "FILM",
+      "lifecycle": "Candidate",
+      "validation": "Partial",
+      "version": "0.1.1",
+      "version_note": "文件／參考 package 0.1.1",
+      "description": null,
+      "graphic_reference_count": 4,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "NOT_PUBLISHED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "MD＋範本＋4 張 Graphic＋ZIP 已歸檔；雜湊讀回通過",
+        "chatgpt": "未發布、未改分享；非 runtime release",
+        "codex": "未安裝／未驗證"
+      },
+      "origin_project": null,
+      "origin_conversation": null,
+      "origin_conversation_url": null,
+      "locator_status": "UNLOCATED",
+      "related_conversations": [],
+      "next_action": null,
+      "canonical_drive": "https://drive.google.com/drive/folders/1juYHY7ta2kKxRXqf6t9-Hw9Tcg6FVN2N",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/1juYHY7ta2kKxRXqf6t9-Hw9Tcg6FVN2N"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://drive.google.com/file/d/1lwY81llHBV0q3Q0onqRpoBFph9x1gieL/view"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/1dgPSzzniNsDCzbVR7D7pu5SvQ1usmcGM/view"
+        }
+      ],
+      "registered": true
+    },
+    {
+      "id": "YSU-SKILL-008",
+      "name": "Film Producer Workflow",
+      "slug": "ysu-film-producer-workflow",
+      "category": "FILM",
+      "lifecycle": "Candidate",
+      "validation": "Partial",
+      "version": "0.2.0",
+      "version_note": "文件／參考 v0.2.0",
+      "description": null,
+      "graphic_reference_count": 2,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "NOT_PUBLISHED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "Director Production Blueprint contract＋2 Graphic＋v0.2.0 ZIP 已歸檔",
+        "chatgpt": "未發布、未改分享；非 runtime release",
+        "codex": "未安裝／未驗證"
+      },
+      "origin_project": null,
+      "origin_conversation": null,
+      "origin_conversation_url": null,
+      "locator_status": "UNLOCATED",
+      "related_conversations": [],
+      "next_action": null,
+      "canonical_drive": "https://drive.google.com/drive/folders/1URJDlMtQTGhb3jgXX4UDnkOxgocp1qjs",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/1URJDlMtQTGhb3jgXX4UDnkOxgocp1qjs"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://drive.google.com/file/d/1ZiiPe7f40d8JZPSwjqYgo-V51CxPU7rm/view"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/1HXFB8NJ6_3hoJrQ4wqLpicNEN3m293RM/view"
+        }
+      ],
+      "registered": true
+    },
+    {
+      "id": "YSU-SKILL-009",
+      "name": "Cinematic Editorial & Picture Finish",
+      "slug": "ysu-cinematic-editorial",
+      "category": "FILM",
+      "lifecycle": "Candidate",
+      "validation": "Partial",
+      "version": "0.1.1",
+      "version_note": "文件／參考 package 0.1.1",
+      "description": null,
+      "graphic_reference_count": 2,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "NOT_PUBLISHED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "MD＋範本＋2 張 Graphic＋ZIP 已歸檔；雜湊讀回通過",
+        "chatgpt": "未發布、未改分享；非 runtime release",
+        "codex": "未安裝／未驗證"
+      },
+      "origin_project": null,
+      "origin_conversation": null,
+      "origin_conversation_url": null,
+      "locator_status": "UNLOCATED",
+      "related_conversations": [],
+      "next_action": null,
+      "canonical_drive": "https://drive.google.com/drive/folders/1P7UUz8Qda8U0_Epul6myr1r5Cve3VTmA",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/1P7UUz8Qda8U0_Epul6myr1r5Cve3VTmA"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://drive.google.com/file/d/1IyaCbqQZVUkqZ0RmA8mhjOxnK543ux0F/view"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/1l-mSYkbTA9BEYckGohuqfdZjwAZW8InB/view"
+        }
+      ],
+      "registered": true
+    },
+    {
+      "id": "YSU-SKILL-010",
+      "name": "Sound & Music Finish",
+      "slug": "ysu-sound-music-finish",
+      "category": "FILM",
+      "lifecycle": "Candidate",
+      "validation": "Partial",
+      "version": "0.1.1",
+      "version_note": "文件／參考 package 0.1.1",
+      "description": null,
+      "graphic_reference_count": 2,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "NOT_PUBLISHED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "MD＋範本＋2 張 Graphic＋ZIP 已歸檔；雜湊讀回通過",
+        "chatgpt": "未發布、未改分享；非 runtime release",
+        "codex": "未安裝／未驗證"
+      },
+      "origin_project": null,
+      "origin_conversation": null,
+      "origin_conversation_url": null,
+      "locator_status": "UNLOCATED",
+      "related_conversations": [],
+      "next_action": null,
+      "canonical_drive": "https://drive.google.com/drive/folders/16eejdPzgAqTv6ISrmvIfedVAtk2NWBv_",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/16eejdPzgAqTv6ISrmvIfedVAtk2NWBv_"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://drive.google.com/file/d/1vdXZeX_pWmLe6_AjvYk9YMNzydxV8-Sr/view"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/1s5J7NFHr739XFObg6QcMz-SRq7Qce4zr/view"
+        }
+      ],
+      "registered": true
+    },
+    {
+      "id": "YSU-SKILL-011",
+      "name": "YSU 圖像分析與風格反推基礎",
+      "slug": "ysu-image-style-foundation",
+      "category": "STYLE",
+      "lifecycle": "Approved",
+      "validation": "Partial",
+      "version": "1.0.0",
+      "version_note": "v1.0.0",
+      "description": "準確移植圖片風格",
+      "graphic_reference_count": 0,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "INSTALLED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "5 份作者文件已歸檔、讀回比對通過",
+        "chatgpt": "ChatGPT 個人 Skill 已安裝；分析 Project Instructions 已保存讀回；未公開分享",
+        "codex": "Windows Codex 未安裝"
+      },
+      "origin_project": "分析",
+      "origin_conversation": null,
+      "origin_conversation_url": null,
+      "locator_status": "PROJECT_TITLE_ONLY",
+      "related_conversations": [],
+      "next_action": null,
+      "canonical_drive": "https://drive.google.com/drive/folders/156Uxwl1-HIMKIsqvUNwvcncfxj98Ce28",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/156Uxwl1-HIMKIsqvUNwvcncfxj98Ce28"
+        },
+        {
+          "label": "ChatGPT Skill",
+          "url": "https://chatgpt.com/skills?skill_id=6ab537258bb88191b110ae7961dad395"
+        }
+      ],
+      "registered": true
+    },
+    {
+      "id": "YSU-SKILL-012",
+      "name": "YSU Cinematic Inkframe／電影墨格",
+      "slug": "ysu-cinematic-inkframe",
+      "category": "STYLE",
+      "lifecycle": "Candidate",
+      "validation": "Partial",
+      "version": "0.1.0",
+      "version_note": "文件／參考 v0.1.0",
+      "description": "寫實轉混合媒材漫畫、角色／空間／頓點",
+      "graphic_reference_count": 11,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "NOT_INSTALLED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "27 檔 ZIP＋展開來源／11 圖已歸檔；ZIP 回下載 SHA-256 與逐檔比對通過",
+        "chatgpt": "未安裝／未發布；未改分享；成圖與 Seedance 待驗證",
+        "codex": "未安裝"
+      },
+      "origin_project": null,
+      "origin_conversation": null,
+      "origin_conversation_url": null,
+      "locator_status": "UNLOCATED",
+      "related_conversations": [],
+      "next_action": null,
+      "canonical_drive": "https://drive.google.com/drive/folders/1pnst7YlPsgM9LWv016zI0e18CqWzP7_f",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/1pnst7YlPsgM9LWv016zI0e18CqWzP7_f"
+        }
+      ],
+      "registered": true
+    },
+    {
+      "id": "YSU-SKILL-013",
+      "name": "YSU Stylized Animal Character Bible",
+      "slug": "ysu-stylized-animal-character-bible",
+      "category": "GAME / CHARACTER",
+      "lifecycle": "Candidate",
+      "validation": "Partial",
+      "version": "0.1.0",
+      "version_note": "文件／參考 v0.1.0",
+      "description": "遊戲／動畫用風格化動物角色設定",
+      "graphic_reference_count": 5,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "NOT_PUBLISHED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "SKILL＋工作表＋5 張 REFERENCE_ONLY Graphic＋ZIP 已歸檔",
+        "chatgpt": "未發布、未改分享；未做新角色生成／rig／game runtime 驗證",
+        "codex": "未安裝／未驗證"
+      },
+      "origin_project": null,
+      "origin_conversation": null,
+      "origin_conversation_url": null,
+      "locator_status": "UNLOCATED",
+      "related_conversations": [],
+      "next_action": null,
+      "canonical_drive": "https://drive.google.com/drive/folders/1yNq2a4Hn7VZSvPc7a0--eg3v2Nq6cLfr",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/1yNq2a4Hn7VZSvPc7a0--eg3v2Nq6cLfr"
+        }
+      ],
+      "registered": true
+    },
+    {
+      "id": "YSU-PENDING-001",
+      "name": "教學與科學視覺化影片（暫名）",
+      "slug": null,
+      "category": "EDUCATION / SCIENCE",
+      "lifecycle": "Candidate",
+      "validation": "Untested",
+      "version": null,
+      "version_note": "暫無正式版本、套件、repo、安裝或分享連結",
+      "description": "將科學或技術的機制、過程與因果，轉成易理解且內容正確的教學展示影片。研究以 AI 輔助 Creative Coding／程式動畫製作可控、可編輯的解說。",
+      "graphic_reference_count": 0,
+      "platform": {
+        "drive": "UNKNOWN",
+        "chatgpt": "NOT_INSTALLED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "未建立套件",
+        "chatgpt": "未安裝",
+        "codex": "未安裝"
+      },
+      "origin_project": "分析",
+      "origin_conversation": null,
+      "origin_conversation_url": null,
+      "locator_status": "PROJECT_TITLE_ONLY",
+      "related_conversations": [],
+      "next_action": "Skills Tracker 頁面完成後，以此總表為 canonical source 納入待定項；建立 Skill 前補讀原始 Prompt／影片，確認範圍與小型示範案例，再依使用者授權製作。暫無正式版本、套件、repo、安裝或分享連結。",
+      "canonical_drive": null,
+      "links": [
+        {
+          "label": "Reference",
+          "url": "https://vocus.cc/article/6ab726a7fd89780001e8a3d7"
+        },
+        {
+          "label": "Reference",
+          "url": "https://gamma.app/docs/-wnesm1fpos32gup"
+        }
+      ],
+      "registered": false
+    }
+  ]
+}
