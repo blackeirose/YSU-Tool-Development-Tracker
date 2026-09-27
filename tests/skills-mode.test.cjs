@@ -5,6 +5,7 @@ const vm=require('node:vm');
 const {JSDOM}=require('jsdom');
 const tick=()=>new Promise(r=>setTimeout(r,20));
 const index=JSON.parse(fs.readFileSync('skills.json','utf8'));
+const thumbnails=JSON.parse(fs.readFileSync('skill-thumbnails.json','utf8'));
 
 // Skills Mode is a read-only view over skills.json. The fixture gives it the
 // real generated index and a Supabase stub, so Tasks still boots exactly as it
@@ -18,6 +19,10 @@ function fixture(options={}){
  w.supabase={createClient:()=>({auth,from:()=>({select:()=>({order:()=>({order:async()=>({data:[],error:null})})})})})};
  let fetched=[];
  w.fetch=async url=>{fetched.push(String(url));
+  if(String(url).includes('skill-thumbnails.json')){
+   if(options.failThumbs)return {ok:false,status:404,json:async()=>({})};
+   return {ok:true,status:200,json:async()=>JSON.parse(JSON.stringify(options.thumbnails??thumbnails))};
+  }
   if(options.failFetch)return {ok:false,status:500,json:async()=>({})};
   return {ok:true,status:200,json:async()=>JSON.parse(JSON.stringify(index))}};
  for(const key of Object.keys(options.storage??{}))w.localStorage.setItem(key,options.storage[key]);
@@ -34,7 +39,7 @@ test('mode switch shows Skills, keeps Tasks intact and defaults to List',async()
   await tick();
   assert.equal(f.get('tasksMode').classList.contains('hidden'),false);
   assert.equal(f.get('skillsMode').classList.contains('hidden'),true);
-  assert.equal(f.fetched.length,0,'Skills index is not fetched until Skills mode opens');
+  assert.equal(f.fetched.length,0,'Skills index and thumbnails are not fetched until Skills mode opens');
   await f.toSkills();
   assert.equal(f.get('tasksMode').classList.contains('hidden'),true);
   assert.equal(f.get('skillsMode').classList.contains('hidden'),false);
@@ -189,4 +194,35 @@ test('the generated index never invents data and stays in the documented shape',
  const inkframe=index.skills.find(s=>s.id==='YSU-SKILL-012');
  assert.equal(inkframe.lifecycle,'Candidate');
  assert.equal(inkframe.validation,'Partial');
+});
+
+test('Visual cards show curated cover thumbnails and keep the tile for the rest',async()=>{
+ const f=fixture({storage:{'ysu-skills-view-v1':'visual'}});try{
+  await f.toSkills();
+  const card=id=>f.d.querySelector(`[data-card="${id}"]`);
+  for(const [id,path] of Object.entries(thumbnails)){
+   assert.ok(fs.existsSync(path),`${path} is committed`);
+   assert.equal(card(id).querySelector('.sk-cover img').getAttribute('src'),path,`${id} cover`);
+  }
+  const bare=index.skills.filter(s=>!thumbnails[s.id]);
+  assert.ok(bare.length>0);
+  for(const s of bare){
+   assert.equal(card(s.id).querySelector('.sk-cover img'),null,`${s.id} has no cover image`);
+   assert.ok(card(s.id).querySelector('.sk-cover-mark'),`${s.id} keeps the generated tile`);
+  }
+  card('YSU-SKILL-012').click();
+  assert.equal(f.get('skDetailBody').querySelector('.sk-detail-thumb img').getAttribute('src'),thumbnails['YSU-SKILL-012']);
+ }finally{f.close()}
+});
+
+test('a missing or unsafe thumbnail manifest never breaks Skills and never injects a URL',async()=>{
+ const missing=fixture({failThumbs:true,storage:{'ysu-skills-view-v1':'visual'}});try{
+  await missing.toSkills();
+  assert.equal(missing.rows().length,index.skills.length,'list still renders');
+  assert.equal(missing.d.querySelectorAll('.sk-cover img').length,0);
+ }finally{missing.close()}
+ const unsafe=fixture({thumbnails:{'YSU-SKILL-001':'https://evil.example/x.png','YSU-SKILL-002':'javascript:alert(1)','YSU-SKILL-003':'assets/skill-thumbs/../../x.webp'},storage:{'ysu-skills-view-v1':'visual'}});try{
+  await unsafe.toSkills();
+  assert.equal(unsafe.d.querySelectorAll('.sk-cover img').length,0,'only local assets/skill-thumbs paths are used');
+ }finally{unsafe.close()}
 });

@@ -310,3 +310,33 @@ automated batch processor exists.
 - `C:\Users\ysu\OneDrive - DLR Group\Codex\Skills` remains local staging only,
   with no automatic synchronisation in either direction.
 - No additional physical folder lifecycle is created; state lives in metadata.
+
+---
+
+## DEC-012 — Skill cover thumbnails are owner-curated public repo assets
+
+**Status:** ACTIVE
+**Date:** 2026-09-27
+**Scope:** UI / Skills Mode
+
+### Decision
+
+At the owner's explicit request, Skills Mode shows one cover thumbnail per Skill
+on Visual cards and at the top of the detail drawer.
+
+- Images live in `assets/skill-thumbs/<slug>.webp` (720 px wide, WebP,
+  metadata stripped) and are mapped by Skill ID in `skill-thumbnails.json`.
+- Unlike `skills.json`, this manifest is **hand-maintained**: the owner chooses
+  each cover. The generator does not read or write it, and it is not derived
+  from the private Drive graphic references.
+- The frontend accepts only relative `assets/skill-thumbs/` paths; anything else
+  is ignored. A missing or broken manifest falls back to the generated tile.
+- Covers are public once deployed, because the Tracker is publicly readable.
+  Only add an image the owner has chosen to publish.
+
+### Consequences
+
+- The first set (2026-09-27) covers YSU-SKILL-001, 002, 003, 005, 006, 008, 009,
+  012 and 013. YSU-SKILL-004, 007, 010, 011 and YSU-PENDING-001 keep the tile.
+- To add or replace a cover: save the image under `assets/skill-thumbs/`, add or
+  update its ID in `skill-thumbnails.json`, run `npm test`.

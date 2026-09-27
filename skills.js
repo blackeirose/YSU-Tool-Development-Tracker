@@ -30,6 +30,7 @@
 
   let index = null;
   let skills = [];
+  let thumbs = {};
   let view = read(VIEW_KEY) === 'visual' ? 'visual' : 'list';
   let collapsed = new Set();
   let detailId = null;
@@ -54,8 +55,17 @@
   function load() {
     if (loading) return loading;
     if (typeof fetch !== 'function') { fail('This browser cannot load the Skills index.'); return Promise.resolve(); }
+    // Cover thumbnails are optional: a missing or broken manifest only means
+    // every card falls back to the generated tile.
+    const thumbsLoad = fetch('skill-thumbnails.json', { cache: 'no-cache' })
+      .then(response => (response.ok ? response.json() : {}))
+      .catch(() => ({}));
     loading = fetch('skills.json', { cache: 'no-cache' })
       .then(response => { if (!response.ok) throw new Error(`HTTP ${response.status}`); return response.json(); })
+      .then(data => thumbsLoad.then(map => {
+        thumbs = map && typeof map === 'object' && !Array.isArray(map) ? map : {};
+        return data;
+      }))
       .then(data => {
         index = data;
         skills = Array.isArray(data.skills) ? data.skills : [];
@@ -168,13 +178,24 @@
     host.querySelectorAll('[data-card]').forEach(card => card.addEventListener('click', () => openDetail(card.dataset.card)));
   }
 
-  // No public thumbnails exist: the reference images are private Drive files.
-  // The cover is a generated tile that still shows whether a Skill has visual
-  // references and how many, which is the MVP requirement.
+  // Cover thumbnails are owner-curated repo assets listed in
+  // skill-thumbnails.json (DEC-012). They are not the private Drive graphic
+  // references. Only a relative path inside assets/skill-thumbs/ is accepted.
+  function thumbFor(s) {
+    const path = typeof thumbs[s.id] === 'string' ? thumbs[s.id].trim() : '';
+    return /^assets\/skill-thumbs\/[\w.-]+\.(webp|png|jpe?g)$/i.test(path) ? path : null;
+  }
+
+  // Skills without a thumbnail keep the generated tile, which still shows
+  // whether a Skill has visual references and how many.
   function cardHtml(s) {
     const refs = s.graphic_reference_count || 0;
+    const thumb = thumbFor(s);
+    const cover = thumb
+      ? `<div class="sk-cover sk-cover-img"><img src="${esc(thumb)}" alt="" loading="lazy" decoding="async"></div>`
+      : `<div class="sk-cover${refs ? ' sk-cover-has' : ''}"><span class="sk-cover-mark">${refs ? `${refs} ref${refs === 1 ? '' : 's'}` : 'no reference'}</span></div>`;
     return `<article class="task-card sk-card" data-card="${esc(s.id)}" tabindex="0">
-      <div class="sk-cover${refs ? ' sk-cover-has' : ''}"><span class="sk-cover-mark">${refs ? `${refs} ref${refs === 1 ? '' : 's'}` : 'no reference'}</span></div>
+      ${cover}
       <h3>${esc(s.name)}</h3>
       <div class="card-sub">${esc(s.category)}</div>
       <div class="task-meta">${lifecyclePill(s.lifecycle)}${validationPill(s.validation)}</div>
@@ -209,7 +230,9 @@
       .map(l => { const url = safeUrl(l.url); return url ? `<a class="launch-link" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(l.label)} ↗</a>` : ''; }).join('');
     const platformRows = ['drive', 'chatgpt', 'codex'].map(key =>
       `<div class="sk-plat-row"><b>${key === 'chatgpt' ? 'ChatGPT' : key === 'codex' ? 'Codex' : 'Drive'}</b> ${esc(PLATFORM_LABEL[s.platform[key]] || UNKNOWN)}<div class="small">${esc(s.platform_notes?.[key] ?? '')}</div></div>`).join('');
+    const thumb = thumbFor(s);
     $('skDetailBody').innerHTML = [
+      thumb ? `<div class="detail-field detail-wide sk-detail-thumb"><img src="${esc(thumb)}" alt="${esc(s.name)} cover thumbnail" decoding="async"></div>` : '',
       field('Skill name', esc(s.name), true),
       field('ID', esc(s.id)),
       field('Slug', esc(s.slug ?? UNKNOWN)),

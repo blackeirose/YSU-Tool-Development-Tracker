@@ -45,7 +45,10 @@ Read-only management view over the YSU Skills registry:
 - Skill detail drawer reusing the existing modal pattern
 - Lifecycle (Candidate / Draft / Approved / Retired) and Validation (Untested / Partial / Validated) shown as independent dimensions
 - conversation locator (`DIRECT_LINK` / `PROJECT_TITLE_ONLY` / `UNLOCATED`) and platform availability (Drive / ChatGPT / Codex)
-- graphic-reference counts; the images themselves stay private in Drive
+- graphic-reference counts; the reference images themselves stay private in Drive
+- owner-curated cover thumbnails on Visual cards and in the detail drawer
+  (`skill-thumbnails.json` + `assets/skill-thumbs/`, DEC-012); Skills without
+  one keep the generated tile
 - per-field provenance: whether a value is explicit registry metadata or derived by the parser
 
 Skills Mode is read-only for everyone including the owner. A Skill is added or
@@ -192,8 +195,9 @@ Public mode hides owner-only controls such as Add Item, Delete Selected, row sel
 Maintain the live cloud Tracker and keep project/task state current. Owner editing should remain consistent with MAIN while public visitors get a clean read-only view.
 
 Skills Mode shipped as a small MVP: browse, search, locate. Skill metadata
-editing, graphic thumbnails and install management are deliberately out of
-scope until there is a concrete need.
+editing and install management are deliberately out of scope until there is a
+concrete need. Cover thumbnails were added 2026-09-27 at the owner's request
+(DEC-012).
 
 Phase 2 added the explicit metadata contract and the Pending processing
 contract. The next step is incremental registry normalization, then — only on

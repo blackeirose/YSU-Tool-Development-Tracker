@@ -164,8 +164,10 @@ conversation link, so `UNLOCATED` is the honest majority answer and the
 
 - The registry-wide management conversation (`YSU Skills 管理中心`) is exposed as
   registry metadata, not copied onto each Skill as its origin conversation.
-- Reference images are private Drive files, so Visual view draws a generated
-  cover tile with the reference count instead of a thumbnail.
+- Reference images are private Drive files and are never read by the generator.
+  Visual view shows an owner-supplied cover thumbnail where
+  `skill-thumbnails.json` lists one (DEC-012); otherwise it draws a generated
+  cover tile with the reference count.
 - Both tables that begin rows with a Skill ID are handled: the registry table is
   the document's first table and wins; the later packaging table is read only
   for ids.
