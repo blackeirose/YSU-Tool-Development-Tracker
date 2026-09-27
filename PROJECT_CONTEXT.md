@@ -5,15 +5,20 @@
 **Name:** YSU Tool Development Tracker  
 **Repository:** `blackeirose/YSU-Tool-Development-Tracker`  
 **Type:** Lightweight web application / development dashboard  
-**Status:** Active — Supabase cloud Tracker live
+**Status:** Active — Supabase cloud Tracker live; Skills Mode added 2026-09-26
 
 ## Purpose
 
-Track YSU software/tool ideas, active development, priorities, progress, resources, workload, launch links, current state, and next steps in a Table / Kanban interface.
+One product, two top-level modes (DEC-008):
+
+- **Tasks** — track YSU software/tool ideas, active development, priorities, progress, resources, workload, launch links, current state, and next steps in a Table / Kanban interface.
+- **Skills** — browse, search and locate the registered YSU Skills, read-only, from the registry maintained in Google Drive.
 
 Primary user: YuCheng Su.
 
 ## Current Product State
+
+### Tasks Mode
 
 The Tracker supports:
 
@@ -31,13 +36,33 @@ The Tracker supports:
 
 The original browser-only `localStorage` data has already been migrated to Supabase. Supabase is the runtime source of truth; localStorage remains only as a local safety/fallback cache.
 
+### Skills Mode
+
+Read-only management view over the YSU Skills registry:
+
+- List view (default) and Visual view, grouped by Category with collapsible groups
+- search, plus Category / Lifecycle / Validation / Platform / Has-graphic-reference / Has-conversation-link filters
+- Skill detail drawer reusing the existing modal pattern
+- Lifecycle (Candidate / Draft / Approved / Retired) and Validation (Untested / Partial / Validated) shown as independent dimensions
+- conversation locator (`DIRECT_LINK` / `PROJECT_TITLE_ONLY` / `UNLOCATED`) and platform availability (Drive / ChatGPT / Codex)
+- graphic-reference counts; the images themselves stay private in Drive
+
+Skills Mode is read-only for everyone including the owner. A Skill is added or
+changed in the Drive registry, never in the Tracker. It is not a Skills CMS and
+has no install/uninstall management.
+
 ## Architecture
 
-Pattern: authenticated cloud application with public read access.
+Pattern: authenticated cloud application with public read access, plus a
+generated static index for Skills.
 
 Current flow:
 
-`Browser UI → Supabase JavaScript client → Supabase Postgres`
+`Tasks:  Browser UI → Supabase JavaScript client → Supabase Postgres`
+
+`Skills: Google Drive 00_SKILL_REGISTRY.md → generated skills.json → Browser UI`
+
+Skills Mode does not touch Supabase (DEC-009).
 
 Source code and deployment remain separate from application data:
 
@@ -46,6 +71,7 @@ Source code and deployment remain separate from application data:
 ## Technology
 
 - Static HTML / CSS / JavaScript
+- Node script `tools/generate-skills-index.mjs` (build-time only, no runtime dependency)
 - Supabase JavaScript client
 - Supabase Postgres
 - Supabase Auth
@@ -99,6 +125,22 @@ Cloud data includes:
 
 Browser localStorage remains as a safety/fallback cache, not the canonical Tracker state.
 
+### Skills data
+
+Canonical registry: `Google Drive / AI Works / 06_Skills / 00_SKILL_REGISTRY.md`
+(file id `1g6Io9lD4YwkDaX5_OUqssvrcEyuCF-1P`). Cloud staging for unprocessed
+material: `AI Works / 06_Skills / 00_PENDING`
+(id `1vsF8Wd7gvGoCwKz2zBXOBBDHqvOVOStW`).
+
+`skills.json` is generated from an export of that registry held in
+`skills-source/`. Both are disposable and must never be hand-maintained; see
+`skills-source/README.md` for the refresh procedure and the parser's
+assumptions. No Supabase table, database or backend service exists for Skills.
+
+`C:\Users\ysu\OneDrive - DLR Group\Codex\Skills` is a local Skill staging /
+development source only. It is not mirrored to Drive and there is no automatic
+synchronisation in either direction.
+
 ## Authentication / Access
 
 Current access model:
@@ -139,13 +181,17 @@ Public mode hides owner-only controls such as Add Item, Delete Selected, row sel
 
 Maintain the live cloud Tracker and keep project/task state current. Owner editing should remain consistent with MAIN while public visitors get a clean read-only view.
 
+Skills Mode shipped as a small MVP: browse, search, locate. Skill metadata
+editing, graphic thumbnails and install management are deliberately out of
+scope until there is a concrete need.
+
 ## Next Likely Milestone
 
 Improve shared YSU owner/admin interaction patterns only when there is a concrete usability need; do not add a new framework or authentication system for consistency alone.
 
 ## Agent Entry Summary
 
-This is a lightweight static Tracker deployed with GitHub Pages at `tracker.ycsu.cc`. GitHub is the code source of truth; Supabase is the cloud data source. Public access is read-only. Owner editing uses the same Supabase owner identity as MAIN and is protected by RLS using the fixed owner UUID. Read `DECISIONS.md` before making durable architecture, access, or service changes.
+This is a lightweight static Tracker deployed with GitHub Pages at `tracker.ycsu.cc`, with two modes: Tasks and Skills. GitHub is the code source of truth; Supabase is the cloud data source for Tasks; Google Drive is the canonical source for Skills and `skills.json` is generated from it. Public access is read-only. Owner editing uses the same Supabase owner identity as MAIN and is protected by RLS using the fixed owner UUID. Read `DECISIONS.md` before making durable architecture, access, or service changes.
 
 
 ## Email OTP maintenance

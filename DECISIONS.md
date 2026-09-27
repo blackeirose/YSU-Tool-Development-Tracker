@@ -11,6 +11,8 @@
 | DEC-005 | Preserve localStorage as migration/fallback safety copy | LOCKED |
 | DEC-006 | Match MAIN owner sign-in and authorize by fixed Supabase user ID | LOCKED |
 | DEC-007 | Six-digit email OTP in the original browser | ACTIVE |
+| DEC-008 | Tracker has two modes: Tasks and Skills | ACTIVE |
+| DEC-009 | Skills data is generated from the Drive registry, not a database | LOCKED |
 
 ---
 
@@ -164,3 +166,71 @@ YuCheng requested the same email OTP improvement released for MAIN. Tracker now 
 This updates the Magic Link-only UX in DEC-006 while retaining its exact owner UUID and all DEC-004 RLS boundaries. The existing Supabase project, Resend settings, shared email template and allowed redirects are reused without modification. No new authentication service or account-registration path is introduced. SDK session persistence and Magic Link compatibility remain.
 
 One app.js Auth lifecycle owns session updates; owner-ui consumes the current state. Logout revokes editing synchronously and closes stale editors. Client permission checks protect both cloud interaction and local fallback; database RLS remains authoritative. Pin the existing Supabase SDK at 2.116.0 so reviewed and deployed behavior remain reproducible.
+
+
+## DEC-008 — Tracker has two modes: Tasks and Skills
+
+**Status:** ACTIVE
+**Date:** 2026-09-26
+**Scope:** Product / Information Architecture
+
+### Decision
+
+`tracker.ycsu.cc` is one product with two top-level modes, `TASKS` and `SKILLS`.
+Tasks keeps its existing Supabase architecture, data model, RLS, owner sign-in
+and Table/Card views unchanged. Skills is a new read-only management view over
+the YSU Skills registry.
+
+No separate site, subdomain or login is created for Skills. No further top-level
+modes (MAIN, Projects, Media Library, Hub, Mind Map) are part of this decision.
+
+### Consequences
+
+- Each mode remembers its own last-used view independently: Tasks in
+  `ysu-tracker-view-v13`, Skills in `ysu-skills-view-v1`, the active mode in
+  `ysu-tracker-mode-v1`.
+- Tasks defaults to Table; Skills defaults to List, because Skills is a
+  management interface rather than a gallery.
+- The owner sign-in shell is shared. Skills Mode stays read-only even for the
+  owner; a Skill is edited in Drive, not in the Tracker.
+
+---
+
+## DEC-009 — Skills data is generated from the Drive registry, not a database
+
+**Status:** LOCKED
+**Date:** 2026-09-26
+**Scope:** Architecture / Data
+
+### Decision
+
+The canonical Skill index is
+`Google Drive / AI Works / 06_Skills / 00_SKILL_REGISTRY.md`
+(file id `1g6Io9lD4YwkDaX5_OUqssvrcEyuCF-1P`).
+
+Skills Mode reads a generated static `skills.json`, produced from that registry
+by `tools/generate-skills-index.mjs`. **Skills Mode does not use Supabase.**
+No Skills table, database, backend service or second registry is created.
+
+`skills.json` and `skills-source/00_SKILL_REGISTRY.md` are generated/disposable
+artefacts. Neither may be hand-maintained.
+
+### Reasoning
+
+The registry is already a working human-maintained management document, and the
+Tracker only needs to read it. Under the YSU AI Core architecture rules there is
+no product requirement that justifies a second database.
+
+### Consequences
+
+- Cloud staging for unprocessed material is one folder,
+  `AI Works / 06_Skills / 00_PENDING` (created 2026-09-26, id
+  `1vsF8Wd7gvGoCwKz2zBXOBBDHqvOVOStW`). Lifecycle state lives in registry and
+  Tracker metadata, not in a chain of physical folders.
+- `C:\Users\ysu\OneDrive - DLR Group\Codex\Skills` remains a local staging /
+  development source. It is not mirrored, synchronised or reorganised, and no
+  automatic local-to-cloud sync exists.
+- Lifecycle (Candidate / Draft / Approved / Retired) and Validation (Untested /
+  Partial / Validated) are independent dimensions derived by documented rules in
+  `skills-source/README.md`. Unknown is recorded as unknown; no value is
+  invented, and no conversation URL is ever constructed.
