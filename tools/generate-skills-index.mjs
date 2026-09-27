@@ -158,6 +158,121 @@ function categoryOf({ slug, name, description, filmMember, type }) {
   return 'UNCATEGORIZED';
 }
 
+// --- explicit Tracker Metadata ---------------------------------------------
+//
+// Phase 2 contract (YSU Skills — Tracker Metadata Schema v1). A Skill section
+// may carry a human-readable block:
+//
+//   Tracker Metadata:
+//   - Category: FILM
+//   - Lifecycle: Approved
+//   - Validation: Partial
+//   ...
+//
+// Precedence is explicit → deterministic legacy parser → null/Unknown. An
+// explicit value is never overwritten by a heuristic. An explicit value that
+// is outside the contract is rejected with a warning and the derived value is
+// kept, so skills.json can never carry an out-of-contract token.
+
+const warnings = [];
+const warn = (id, message) => warnings.push(`${id}: ${message}`);
+
+const LIFECYCLES = ['Candidate', 'Draft', 'Approved', 'Retired'];
+const VALIDATIONS = ['Untested', 'Partial', 'Validated'];
+const LOCATORS = ['DIRECT_LINK', 'PROJECT_TITLE_ONLY', 'UNLOCATED'];
+const PLATFORM_STATES = ['ARCHIVED', 'INSTALLED', 'INSTALLED_RECORDED', 'NOT_INSTALLED', 'NOT_PUBLISHED', 'UNVERIFIED', 'UNKNOWN'];
+
+const METADATA_KEYS = {
+  category: 'category', lifecycle: 'lifecycle', validation: 'validation', version: 'version',
+  'graphic references': 'graphic_reference_count', drive: 'drive', chatgpt: 'chatgpt', codex: 'codex',
+  'origin project': 'origin_project', 'origin conversation': 'origin_conversation',
+  'origin conversation url': 'origin_conversation_url', 'locator status': 'locator_status',
+  'next action': 'next_action', 'canonical drive': 'canonical_drive'
+};
+
+// Reads the block if present. An empty value means "not stated" and falls
+// through to the legacy parser rather than clearing a known value.
+function parseTrackerMetadata(text) {
+  const start = text.search(/^[ \t]*Tracker Metadata[：:]/m);
+  if (start === -1) return null;
+  const out = {};
+  for (const line of text.slice(start).split('\n').slice(1)) {
+    const item = line.match(/^[ \t]*[-*][ \t]*([A-Za-z][A-Za-z ]*?)[ \t]*[：:][ \t]*(.*)$/);
+    if (!item) { if (!line.trim()) continue; break; }
+    const key = METADATA_KEYS[clean(item[1]).toLowerCase()];
+    const value = clean(item[2]);
+    if (key && value) out[key] = value;
+  }
+  return Object.keys(out).length ? out : null;
+}
+
+function oneOf(id, field, value, allowed) {
+  const match = allowed.find(a => a.toLowerCase() === value.toLowerCase());
+  if (!match) { warn(id, `${field} "${value}" is not one of ${allowed.join(' / ')}; kept the derived value`); return null; }
+  return match;
+}
+
+// Applies the explicit block over a derived record and reports, per field,
+// which layer won.
+function applyExplicit(derived, explicit) {
+  const id = derived.id;
+  const source = Object.fromEntries(Object.keys(derived).map(k => [k, 'derived']));
+  const take = (field, value) => { if (value !== null && value !== undefined) { derived[field] = value; source[field] = 'explicit'; } };
+
+  if (explicit) {
+    if (explicit.category) take('category', explicit.category);
+    if (explicit.lifecycle) take('lifecycle', oneOf(id, 'Lifecycle', explicit.lifecycle, LIFECYCLES));
+    if (explicit.validation) take('validation', oneOf(id, 'Validation', explicit.validation, VALIDATIONS));
+    if (explicit.version) {
+      const version = explicit.version.match(/^v?(\d+\.\d+(?:\.\d+)?)$/);
+      if (version) take('version', version[1]);
+      else warn(id, `Version "${explicit.version}" is not a version number; kept the derived value`);
+    }
+    if (explicit.graphic_reference_count !== undefined) {
+      const count = Number(explicit.graphic_reference_count);
+      if (Number.isInteger(count) && count >= 0) take('graphic_reference_count', count);
+      else warn(id, `Graphic References "${explicit.graphic_reference_count}" is not a non-negative integer; kept the derived value`);
+    }
+    for (const key of ['drive', 'chatgpt', 'codex']) {
+      if (!explicit[key]) continue;
+      const state = oneOf(id, key, explicit[key], PLATFORM_STATES);
+      if (state) { derived.platform[key] = state; source[`platform.${key}`] = 'explicit'; }
+    }
+    if (explicit.origin_project) take('origin_project', explicit.origin_project);
+    if (explicit.origin_conversation) take('origin_conversation', explicit.origin_conversation);
+    if (explicit.origin_conversation_url) {
+      if (/^https?:\/\//.test(explicit.origin_conversation_url)) take('origin_conversation_url', explicit.origin_conversation_url);
+      else warn(id, `Origin Conversation URL "${explicit.origin_conversation_url}" is not a URL; ignored`);
+    }
+    if (explicit.next_action) take('next_action', explicit.next_action);
+    if (explicit.canonical_drive) {
+      if (/^https?:\/\//.test(explicit.canonical_drive)) take('canonical_drive', explicit.canonical_drive);
+      else warn(id, `Canonical Drive "${explicit.canonical_drive}" is not a URL; ignored`);
+    }
+    if (explicit.locator_status) take('locator_status', oneOf(id, 'Locator Status', explicit.locator_status, LOCATORS));
+  }
+
+  // A real verified URL is the only thing that can produce DIRECT_LINK — an
+  // explicit claim without one is downgraded rather than trusted.
+  if (derived.locator_status === 'DIRECT_LINK' && !derived.origin_conversation_url) {
+    warn(id, 'Locator Status DIRECT_LINK has no Origin Conversation URL; downgraded');
+    derived.locator_status = derived.origin_project || derived.origin_conversation ? 'PROJECT_TITLE_ONLY' : 'UNLOCATED';
+    source.locator_status = 'derived';
+  }
+  if (derived.origin_conversation_url && derived.locator_status !== 'DIRECT_LINK' && source.locator_status !== 'explicit') {
+    derived.locator_status = 'DIRECT_LINK';
+  }
+
+  if (derived.canonical_drive) {
+    const already = derived.links.some(l => l.url === derived.canonical_drive);
+    if (!already) derived.links.unshift({ label: 'Canonical Drive folder', url: derived.canonical_drive });
+  }
+
+  derived.metadata_source = source;
+  derived.has_explicit_metadata = Boolean(explicit);
+  return derived;
+}
+
 // --- build entries ---------------------------------------------------------
 
 function buildRegistered(id) {
@@ -188,7 +303,7 @@ function buildRegistered(id) {
   const originProject = firstMatch(ownText, /「([^」]+)」\s*Project/);
   const conversationUrl = firstMatch(ownText, /(https:\/\/chatgpt\.com\/(?:c|g)\/\S+)/);
 
-  return {
+  return applyExplicit({
     id,
     name: clean(namePart),
     slug,
@@ -210,7 +325,7 @@ function buildRegistered(id) {
     canonical_drive: folderId ? `https://drive.google.com/drive/folders/${folderId}` : null,
     links,
     registered: true
-  };
+  }, parseTrackerMetadata(ownText));
 }
 
 function buildPending() {
@@ -224,7 +339,7 @@ function buildPending() {
     const body = text.slice(start, nextIdx === -1 ? undefined : nextIdx);
     const goal = firstMatch(body, /核心目標[：:]\s*([^\n]+)/);
     const originProject = firstMatch(body, /「([^」]+)」\s*Project/);
-    out.push({
+    out.push(applyExplicit({
       id,
       name: clean(m[2]),
       slug: null,
@@ -248,7 +363,7 @@ function buildPending() {
         .filter(u => !u.includes('drive.google.com'))
         .map(url => ({ label: 'Reference', url })),
       registered: false
-    });
+    }, parseTrackerMetadata(body)));
   }
   return out;
 }
@@ -260,13 +375,21 @@ const index = {
   generated_at: new Date().toISOString(),
   source: { file: SOURCE, drive_file_id: '1g6Io9lD4YwkDaX5_OUqssvrcEyuCF-1P', registry_updated: registry.updated },
   registry,
+  metadata_contract: {
+    version: 'v1',
+    schema_doc_id: '1xtTW76ksdd3pgWgB6sDGy7302tRhRzHjamYYxsv5CVo',
+    precedence: ['explicit Tracker Metadata block', 'deterministic legacy parser', 'null / Unknown']
+  },
   counts: {
     total: skills.length,
     registered: skills.filter(s => s.registered).length,
-    pending: skills.filter(s => !s.registered).length
+    pending: skills.filter(s => !s.registered).length,
+    with_explicit_metadata: skills.filter(s => s.has_explicit_metadata).length
   },
+  warnings,
   skills
 };
 
 writeFileSync(OUT, `${JSON.stringify(index, null, 2)}\n`);
-console.log(`${OUT}: ${index.counts.registered} registered + ${index.counts.pending} pending from ${SOURCE}`);
+console.log(`${OUT}: ${index.counts.registered} registered + ${index.counts.pending} pending from ${SOURCE} (${index.counts.with_explicit_metadata} with explicit metadata)`);
+for (const message of warnings) console.warn(`  warning — ${message}`);

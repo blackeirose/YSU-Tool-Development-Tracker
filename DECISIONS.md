@@ -13,6 +13,8 @@
 | DEC-007 | Six-digit email OTP in the original browser | ACTIVE |
 | DEC-008 | Tracker has two modes: Tasks and Skills | ACTIVE |
 | DEC-009 | Skills data is generated from the Drive registry, not a database | LOCKED |
+| DEC-010 | Explicit Tracker Metadata beats derived values | ACTIVE |
+| DEC-011 | 00_PENDING has a processing contract, and nothing has been processed | ACTIVE |
 
 ---
 
@@ -234,3 +236,77 @@ no product requirement that justifies a second database.
   Partial / Validated) are independent dimensions derived by documented rules in
   `skills-source/README.md`. Unknown is recorded as unknown; no value is
   invented, and no conversation URL is ever constructed.
+
+---
+
+## DEC-010 — Explicit Tracker Metadata beats derived values
+
+**Status:** ACTIVE
+**Date:** 2026-09-27
+**Scope:** Data / Skills index
+
+### Decision
+
+A Skill section in `00_SKILL_REGISTRY.md` may carry a plain-Markdown
+`Tracker Metadata:` block, defined by *YSU Skills — Tracker Metadata Schema v1*
+(Google Doc `1xtTW76ksdd3pgWgB6sDGy7302tRhRzHjamYYxsv5CVo`).
+
+The generator resolves every field in this order:
+
+1. explicit value in that block
+2. deterministic legacy parser
+3. `null` / Unknown
+
+**An explicit value is never overwritten by a heuristic.** A value outside the
+contract is rejected with a warning and the derived value is kept, so
+`skills.json` cannot carry an out-of-contract token. `DIRECT_LINK` additionally
+requires a real conversation URL; a claim without one is downgraded. No URL,
+version, validation state or platform availability is ever invented.
+
+The registry remains a human-readable management document. It is **not**
+converted to JSON or YAML, and it is not rewritten around a machine schema.
+
+### Consequences
+
+- Lifecycle, Validation and platform availability stay independent dimensions.
+- Normalization is incremental: a Skill gains its block when it is next touched,
+  reviewed or processed. **No Skill has been normalized yet** — all 13 registered
+  Skills and the pending candidate are still fully derived.
+- Each entry carries `metadata_source` and `has_explicit_metadata` so
+  normalization progress is visible in the Tracker without a new screen.
+- The parser branch is covered by `tests/fixtures/registry-explicit.md`, a
+  synthetic registry that nothing reads at runtime.
+
+---
+
+## DEC-011 — 00_PENDING has a processing contract, and nothing has been processed
+
+**Status:** ACTIVE
+**Date:** 2026-09-27
+**Scope:** Process / Skills intake
+
+### Decision
+
+`AI Works / 06_Skills / 00_PENDING` (id `1vsF8Wd7gvGoCwKz2zBXOBBDHqvOVOStW`) is
+governed by *00_PENDING — Processing Contract* (Google Doc
+`1JpvOtAKAjBgw4Tj4fZHtpPltkiLop6k8zYXmH4Re--g`), mirrored in the repository at
+`skills-source/PENDING_CONTRACT.md`.
+
+Once the owner authorises a batch, each item resolves to exactly one of
+`NEW_SKILL`, `MERGE_EXISTING`, `KEEP_PENDING` or `NO_ACTION`.
+
+### Current state
+
+**Preparation only. No Pending content has been processed.** No file inside
+`00_PENDING` has been read, analysed, classified, moved, merged, promoted,
+rejected, installed or published, and no canonical Skill has been changed from
+Pending material. The batch intake record is a document, not a database, and no
+automated batch processor exists.
+
+### Consequences
+
+- The Pending workflow must not be described as operational until a batch has
+  actually been processed under explicit owner authorisation.
+- `C:\Users\ysu\OneDrive - DLR Group\Codex\Skills` remains local staging only,
+  with no automatic synchronisation in either direction.
+- No additional physical folder lifecycle is created; state lives in metadata.

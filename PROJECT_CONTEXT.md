@@ -5,7 +5,7 @@
 **Name:** YSU Tool Development Tracker  
 **Repository:** `blackeirose/YSU-Tool-Development-Tracker`  
 **Type:** Lightweight web application / development dashboard  
-**Status:** Active — Supabase cloud Tracker live; Skills Mode added 2026-09-26
+**Status:** Active — Supabase cloud Tracker live; Skills Mode added 2026-09-26; Skills metadata contract v1 added 2026-09-27
 
 ## Purpose
 
@@ -46,6 +46,7 @@ Read-only management view over the YSU Skills registry:
 - Lifecycle (Candidate / Draft / Approved / Retired) and Validation (Untested / Partial / Validated) shown as independent dimensions
 - conversation locator (`DIRECT_LINK` / `PROJECT_TITLE_ONLY` / `UNLOCATED`) and platform availability (Drive / ChatGPT / Codex)
 - graphic-reference counts; the images themselves stay private in Drive
+- per-field provenance: whether a value is explicit registry metadata or derived by the parser
 
 Skills Mode is read-only for everyone including the owner. A Skill is added or
 changed in the Drive registry, never in the Tracker. It is not a Skills CMS and
@@ -134,8 +135,17 @@ material: `AI Works / 06_Skills / 00_PENDING`
 
 `skills.json` is generated from an export of that registry held in
 `skills-source/`. Both are disposable and must never be hand-maintained; see
-`skills-source/README.md` for the refresh procedure and the parser's
-assumptions. No Supabase table, database or backend service exists for Skills.
+`skills-source/README.md` for the refresh procedure, the explicit Tracker
+Metadata contract and the parser's fallback assumptions. No Supabase table,
+database or backend service exists for Skills.
+
+Field resolution is explicit metadata -> deterministic legacy parser -> null
+(DEC-010). No Skill is normalized yet, so every field in the live index is
+still derived.
+
+Cloud staging `00_PENDING` is governed by a processing contract mirrored at
+`skills-source/PENDING_CONTRACT.md` (DEC-011). **No Pending content has been
+processed**; the Pending workflow is not operational.
 
 `C:\Users\ysu\OneDrive - DLR Group\Codex\Skills` is a local Skill staging /
 development source only. It is not mirrored to Drive and there is no automatic
@@ -184,6 +194,10 @@ Maintain the live cloud Tracker and keep project/task state current. Owner editi
 Skills Mode shipped as a small MVP: browse, search, locate. Skill metadata
 editing, graphic thumbnails and install management are deliberately out of
 scope until there is a concrete need.
+
+Phase 2 added the explicit metadata contract and the Pending processing
+contract. The next step is incremental registry normalization, then — only on
+explicit owner authorisation — the first Pending batch.
 
 ## Next Likely Milestone
 

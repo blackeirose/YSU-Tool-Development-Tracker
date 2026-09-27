@@ -32,11 +32,86 @@ Tracker Skills Mode
 The export in this repo was taken on 2026-09-26 (registry `最新更新：2026-09-26`)
 and is byte-identical to the Drive file at 29,199 bytes.
 
+## Explicit Tracker Metadata (contract v1)
+
+Source of the contract: **YSU Skills — Tracker Metadata Schema v1**, Google Doc
+`1xtTW76ksdd3pgWgB6sDGy7302tRhRzHjamYYxsv5CVo` in `AI Works / 06_Skills`.
+
+A Skill section may carry a plain-Markdown block. The registry stays a readable
+management document — this is **not** a conversion to JSON or YAML, and the
+long-form verification prose around it stays exactly as it is.
+
+```
+Tracker Metadata:
+- Category: FILM
+- Lifecycle: Approved
+- Validation: Partial
+- Version: 0.2.0
+- Graphic References: 6
+- Drive: ARCHIVED
+- ChatGPT: NOT_INSTALLED
+- Codex: NOT_INSTALLED
+- Origin Project: 建築敘事影片專案專用
+- Origin Conversation: 建築敘事影片構想
+- Origin Conversation URL:
+- Locator Status: PROJECT_TITLE_ONLY
+- Next Action: Run SFDOT live pilot
+- Canonical Drive: https://drive.google.com/drive/folders/...
+```
+
+### Precedence
+
+1. **Explicit** value in the Skill's own `Tracker Metadata:` block
+2. **Deterministic legacy parser** (the tables below)
+3. **null / Unknown**
+
+An explicit value is never overwritten by a heuristic. A key left blank means
+"not stated" and falls through to the parser — it does not clear a known value.
+Every field records which layer won in `metadata_source`, and
+`has_explicit_metadata` says whether a Skill has been normalized yet.
+
+### Allowed values
+
+| Field | Values |
+|---|---|
+| `Lifecycle` | `Candidate` · `Draft` · `Approved` · `Retired` |
+| `Validation` | `Untested` · `Partial` · `Validated` |
+| `Locator Status` | `DIRECT_LINK` · `PROJECT_TITLE_ONLY` · `UNLOCATED` |
+| `Drive` / `ChatGPT` / `Codex` | `ARCHIVED` · `INSTALLED` · `INSTALLED_RECORDED` · `NOT_INSTALLED` · `NOT_PUBLISHED` · `UNVERIFIED` · `UNKNOWN` |
+| `Version` | a version number such as `0.2.0` |
+| `Graphic References` | a non-negative integer |
+| `Origin Conversation URL` / `Canonical Drive` | an `http(s)` URL, or blank |
+
+Lifecycle, Validation and platform availability stay **independent**.
+`Approved + Partial`, `Candidate + Partial` and `Approved + Validated` are all
+valid.
+
+### When an explicit value is wrong
+
+A value outside the contract is **rejected with a warning and the derived value
+is kept**, so `skills.json` can never carry an out-of-contract token. Warnings
+are printed by the generator and collected in the index's `warnings` array.
+
+`DIRECT_LINK` additionally requires a real `Origin Conversation URL`. A block
+that claims `DIRECT_LINK` without one is downgraded and warned about. **No
+conversation URL is ever constructed.**
+
+### Normalization status
+
+**No Skill in the canonical registry has been normalized yet** — all 13
+registered Skills and the pending candidate are still fully derived, and
+`counts.with_explicit_metadata` is `0`. Normalization is incremental: add the
+block to a Skill's section in the **Drive** registry as that Skill is touched,
+reviewed or processed, then re-export and regenerate. The parser branch is
+proven by `tests/fixtures/registry-explicit.md`, a synthetic registry that
+nothing reads at runtime.
+
 ## What the generator reads
 
-`tools/generate-skills-index.mjs` is deliberately tolerant. Anything it cannot
-read confidently becomes `null` and the UI shows **Unknown**. It never guesses a
-version, a URL or an install state.
+When no explicit block is present, `tools/generate-skills-index.mjs` falls back
+to the deterministic parser below. It is deliberately tolerant. Anything it
+cannot read confidently becomes `null` and the UI shows **Unknown**. It never
+guesses a version, a URL or an install state.
 
 | Field | Where it comes from |
 |---|---|

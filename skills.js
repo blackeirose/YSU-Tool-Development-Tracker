@@ -74,7 +74,8 @@
   function buildFilterOptions() {
     const categories = [...new Set(skills.map(s => s.category))].sort();
     $('skCategory').innerHTML = `<option value="">All categories</option>${categories.map(c => `<option>${esc(c)}</option>`).join('')}`;
-    $('skSourceNote').innerHTML = `Source of truth: <a class="launch-link" href="${esc(index.registry.drive_folder)}" target="_blank" rel="noopener noreferrer">00_SKILL_REGISTRY.md in Drive ↗</a> · registry updated ${esc(index.registry.updated ?? UNKNOWN)} · index generated ${esc((index.generated_at || '').slice(0, 10))} · ${index.counts.registered} registered + ${index.counts.pending} pending. skills.json is generated; edit the registry in Drive, never this page.`;
+    const normalized = index.counts.with_explicit_metadata ?? 0;
+    $('skSourceNote').innerHTML = `Source of truth: <a class="launch-link" href="${esc(index.registry.drive_folder)}" target="_blank" rel="noopener noreferrer">00_SKILL_REGISTRY.md in Drive ↗</a> · registry updated ${esc(index.registry.updated ?? UNKNOWN)} · index generated ${esc((index.generated_at || '').slice(0, 10))} · ${index.counts.registered} registered + ${index.counts.pending} pending · ${normalized} of ${index.counts.total} normalized to Tracker Metadata ${esc(index.metadata_contract?.version ?? '')}. skills.json is generated; edit the registry in Drive, never this page.`;
   }
 
   // --- filtering -----------------------------------------------------------
@@ -183,6 +184,17 @@
 
   // --- detail --------------------------------------------------------------
 
+  // Says where this Skill's metadata came from, so normalization progress is
+  // visible without adding a screen.
+  function provenance(s) {
+    if (!s.metadata_source) return '';
+    const values = Object.values(s.metadata_source);
+    const explicit = values.filter(v => v === 'explicit').length;
+    return s.has_explicit_metadata
+      ? `Tracker Metadata in the registry: ${explicit} field${explicit === 1 ? '' : 's'} explicit, ${values.length - explicit} still derived by the parser.`
+      : 'Not yet normalized — every field is derived from the registry prose by the parser.';
+  }
+
   function field(label, value, wide) {
     return `<div class="detail-field ${wide ? 'detail-wide' : ''}"><label>${esc(label)}</label><div class="sk-value">${value}</div></div>`;
   }
@@ -215,7 +227,7 @@
       field('Next action', esc(s.next_action ?? UNKNOWN), true),
       field('Canonical Drive', s.canonical_drive ? `<a class="launch-link" href="${esc(s.canonical_drive)}" target="_blank" rel="noopener noreferrer">Open folder ↗</a>` : esc(UNKNOWN)),
       field('Reference / package links', links || '<span class="small">None recorded</span>', true),
-      field('Registry entry', s.registered ? 'Registered Skill' : 'Pending candidate — not a released Skill', true)
+      field('Registry entry', `${s.registered ? 'Registered Skill' : 'Pending candidate — not a released Skill'}<div class="small">${provenance(s)}</div>`, true)
     ].join('');
     $('skDetailBackdrop').classList.add('open');
   }

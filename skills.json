@@ -1,6 +1,6 @@
 {
   "$comment": "GENERATED FILE — do not edit by hand. Source: Google Drive AI Works/06_Skills/00_SKILL_REGISTRY.md. Regenerate with `npm run skills:index`.",
-  "generated_at": "2026-09-27T02:10:56.026Z",
+  "generated_at": "2026-09-27T02:52:11.670Z",
   "source": {
     "file": "skills-source/00_SKILL_REGISTRY.md",
     "drive_file_id": "1g6Io9lD4YwkDaX5_OUqssvrcEyuCF-1P",
@@ -15,11 +15,22 @@
     "drive_folder": "https://drive.google.com/drive/folders/1P6b3rLGzrdev1Lh6tZVGAWnPcNkNYoV_",
     "pending_folder_note": "AI Works / 06_Skills / 00_PENDING is the cloud staging area for unprocessed material."
   },
+  "metadata_contract": {
+    "version": "v1",
+    "schema_doc_id": "1xtTW76ksdd3pgWgB6sDGy7302tRhRzHjamYYxsv5CVo",
+    "precedence": [
+      "explicit Tracker Metadata block",
+      "deterministic legacy parser",
+      "null / Unknown"
+    ]
+  },
   "counts": {
     "total": 14,
     "registered": 13,
-    "pending": 1
+    "pending": 1,
+    "with_explicit_metadata": 0
   },
+  "warnings": [],
   "skills": [
     {
       "id": "YSU-SKILL-001",
@@ -55,7 +66,31 @@
           "url": "https://drive.google.com/drive/folders/1HpDA1z6_2YIEzcSezC5PvA-GdUgNgFUc"
         }
       ],
-      "registered": true
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "derived",
+        "lifecycle": "derived",
+        "validation": "derived",
+        "version": "derived",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "derived",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "derived",
+        "origin_conversation": "derived",
+        "origin_conversation_url": "derived",
+        "locator_status": "derived",
+        "related_conversations": "derived",
+        "next_action": "derived",
+        "canonical_drive": "derived",
+        "links": "derived",
+        "registered": "derived"
+      },
+      "has_explicit_metadata": false
     },
     {
       "id": "YSU-SKILL-002",
@@ -91,7 +126,31 @@
           "url": "https://drive.google.com/drive/folders/11Qpu4WY94zEMBqSFg6ycD9kZ8oLrRF6Q"
         }
       ],
-      "registered": true
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "derived",
+        "lifecycle": "derived",
+        "validation": "derived",
+        "version": "derived",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "derived",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "derived",
+        "origin_conversation": "derived",
+        "origin_conversation_url": "derived",
+        "locator_status": "derived",
+        "related_conversations": "derived",
+        "next_action": "derived",
+        "canonical_drive": "derived",
+        "links": "derived",
+        "registered": "derived"
+      },
+      "has_explicit_metadata": false
     },
     {
       "id": "YSU-SKILL-003",
@@ -131,7 +190,31 @@
           "url": "https://drive.google.com/file/d/1TfDwwUme78bu8EUEkeMtLlmR4gLsd6dc/view"
         }
       ],
-      "registered": true
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "derived",
+        "lifecycle": "derived",
+        "validation": "derived",
+        "version": "derived",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "derived",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "derived",
+        "origin_conversation": "derived",
+        "origin_conversation_url": "derived",
+        "locator_status": "derived",
+        "related_conversations": "derived",
+        "next_action": "derived",
+        "canonical_drive": "derived",
+        "links": "derived",
+        "registered": "derived"
+      },
+      "has_explicit_metadata": false
     },
     {
       "id": "YSU-SKILL-004",
@@ -175,7 +258,31 @@
           "url": "https://drive.google.com/file/d/1_tgRBIqYuxyLXEJrvgDeeGxGNYTfPBxI/view"
         }
       ],
-      "registered": true
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "derived",
+        "lifecycle": "derived",
+        "validation": "derived",
+        "version": "derived",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "derived",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "derived",
+        "origin_conversation": "derived",
+        "origin_conversation_url": "derived",
+        "locator_status": "derived",
+        "related_conversations": "derived",
+        "next_action": "derived",
+        "canonical_drive": "derived",
+        "links": "derived",
+        "registered": "derived"
+      },
+      "has_explicit_metadata": false
     },
     {
       "id": "YSU-SKILL-005",
@@ -219,7 +326,31 @@
           "url": "https://drive.google.com/file/d/1zuqjUZvSzQOzPPncnw5jLmWKn9TUQj7Y/view"
         }
       ],
-      "registered": true
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "derived",
+        "lifecycle": "derived",
+        "validation": "derived",
+        "version": "derived",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "derived",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "derived",
+        "origin_conversation": "derived",
+        "origin_conversation_url": "derived",
+        "locator_status": "derived",
+        "related_conversations": "derived",
+        "next_action": "derived",
+        "canonical_drive": "derived",
+        "links": "derived",
+        "registered": "derived"
+      },
+      "has_explicit_metadata": false
     },
     {
       "id": "YSU-SKILL-006",
@@ -263,7 +394,31 @@
           "url": "https://drive.google.com/file/d/1ygfEXhl8QHjEZFyrUyglS81HcizM9Ea4/view"
         }
       ],
-      "registered": true
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "derived",
+        "lifecycle": "derived",
+        "validation": "derived",
+        "version": "derived",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "derived",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "derived",
+        "origin_conversation": "derived",
+        "origin_conversation_url": "derived",
+        "locator_status": "derived",
+        "related_conversations": "derived",
+        "next_action": "derived",
+        "canonical_drive": "derived",
+        "links": "derived",
+        "registered": "derived"
+      },
+      "has_explicit_metadata": false
     },
     {
       "id": "YSU-SKILL-007",
@@ -307,7 +462,31 @@
           "url": "https://drive.google.com/file/d/1dgPSzzniNsDCzbVR7D7pu5SvQ1usmcGM/view"
         }
       ],
-      "registered": true
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "derived",
+        "lifecycle": "derived",
+        "validation": "derived",
+        "version": "derived",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "derived",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "derived",
+        "origin_conversation": "derived",
+        "origin_conversation_url": "derived",
+        "locator_status": "derived",
+        "related_conversations": "derived",
+        "next_action": "derived",
+        "canonical_drive": "derived",
+        "links": "derived",
+        "registered": "derived"
+      },
+      "has_explicit_metadata": false
     },
     {
       "id": "YSU-SKILL-008",
@@ -351,7 +530,31 @@
           "url": "https://drive.google.com/file/d/1HXFB8NJ6_3hoJrQ4wqLpicNEN3m293RM/view"
         }
       ],
-      "registered": true
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "derived",
+        "lifecycle": "derived",
+        "validation": "derived",
+        "version": "derived",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "derived",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "derived",
+        "origin_conversation": "derived",
+        "origin_conversation_url": "derived",
+        "locator_status": "derived",
+        "related_conversations": "derived",
+        "next_action": "derived",
+        "canonical_drive": "derived",
+        "links": "derived",
+        "registered": "derived"
+      },
+      "has_explicit_metadata": false
     },
     {
       "id": "YSU-SKILL-009",
@@ -395,7 +598,31 @@
           "url": "https://drive.google.com/file/d/1l-mSYkbTA9BEYckGohuqfdZjwAZW8InB/view"
         }
       ],
-      "registered": true
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "derived",
+        "lifecycle": "derived",
+        "validation": "derived",
+        "version": "derived",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "derived",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "derived",
+        "origin_conversation": "derived",
+        "origin_conversation_url": "derived",
+        "locator_status": "derived",
+        "related_conversations": "derived",
+        "next_action": "derived",
+        "canonical_drive": "derived",
+        "links": "derived",
+        "registered": "derived"
+      },
+      "has_explicit_metadata": false
     },
     {
       "id": "YSU-SKILL-010",
@@ -439,7 +666,31 @@
           "url": "https://drive.google.com/file/d/1s5J7NFHr739XFObg6QcMz-SRq7Qce4zr/view"
         }
       ],
-      "registered": true
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "derived",
+        "lifecycle": "derived",
+        "validation": "derived",
+        "version": "derived",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "derived",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "derived",
+        "origin_conversation": "derived",
+        "origin_conversation_url": "derived",
+        "locator_status": "derived",
+        "related_conversations": "derived",
+        "next_action": "derived",
+        "canonical_drive": "derived",
+        "links": "derived",
+        "registered": "derived"
+      },
+      "has_explicit_metadata": false
     },
     {
       "id": "YSU-SKILL-011",
@@ -479,7 +730,31 @@
           "url": "https://chatgpt.com/skills?skill_id=6ab537258bb88191b110ae7961dad395"
         }
       ],
-      "registered": true
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "derived",
+        "lifecycle": "derived",
+        "validation": "derived",
+        "version": "derived",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "derived",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "derived",
+        "origin_conversation": "derived",
+        "origin_conversation_url": "derived",
+        "locator_status": "derived",
+        "related_conversations": "derived",
+        "next_action": "derived",
+        "canonical_drive": "derived",
+        "links": "derived",
+        "registered": "derived"
+      },
+      "has_explicit_metadata": false
     },
     {
       "id": "YSU-SKILL-012",
@@ -515,7 +790,31 @@
           "url": "https://drive.google.com/drive/folders/1pnst7YlPsgM9LWv016zI0e18CqWzP7_f"
         }
       ],
-      "registered": true
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "derived",
+        "lifecycle": "derived",
+        "validation": "derived",
+        "version": "derived",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "derived",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "derived",
+        "origin_conversation": "derived",
+        "origin_conversation_url": "derived",
+        "locator_status": "derived",
+        "related_conversations": "derived",
+        "next_action": "derived",
+        "canonical_drive": "derived",
+        "links": "derived",
+        "registered": "derived"
+      },
+      "has_explicit_metadata": false
     },
     {
       "id": "YSU-SKILL-013",
@@ -551,7 +850,31 @@
           "url": "https://drive.google.com/drive/folders/1yNq2a4Hn7VZSvPc7a0--eg3v2Nq6cLfr"
         }
       ],
-      "registered": true
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "derived",
+        "lifecycle": "derived",
+        "validation": "derived",
+        "version": "derived",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "derived",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "derived",
+        "origin_conversation": "derived",
+        "origin_conversation_url": "derived",
+        "locator_status": "derived",
+        "related_conversations": "derived",
+        "next_action": "derived",
+        "canonical_drive": "derived",
+        "links": "derived",
+        "registered": "derived"
+      },
+      "has_explicit_metadata": false
     },
     {
       "id": "YSU-PENDING-001",
@@ -591,7 +914,31 @@
           "url": "https://gamma.app/docs/-wnesm1fpos32gup"
         }
       ],
-      "registered": false
+      "registered": false,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "derived",
+        "lifecycle": "derived",
+        "validation": "derived",
+        "version": "derived",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "derived",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "derived",
+        "origin_conversation": "derived",
+        "origin_conversation_url": "derived",
+        "locator_status": "derived",
+        "related_conversations": "derived",
+        "next_action": "derived",
+        "canonical_drive": "derived",
+        "links": "derived",
+        "registered": "derived"
+      },
+      "has_explicit_metadata": false
     }
   ]
 }
