@@ -6,11 +6,12 @@
   <title>YSU Tool Development Tracker</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="owner-ui.css?v=20260911-otp1">
+  <link rel="stylesheet" href="skills.css?v=20260926-skills1">
 </head>
 <body>
 <div class="wrap">
-  <h1>YSU Tool Development — Time & Credit Tracker</h1>
-  <div class="sub">Cloud-sync edition. GitHub remains the code source of truth; Supabase stores Tracker project data across devices.</div>
+  <h1>YSU Tracker</h1>
+  <div class="sub">Tasks tracks tool development. Skills indexes the YSU Skills registry held in Google Drive.</div>
 
   <div class="authbar">
     <span id="authState" class="small">Loading account…</span>
@@ -21,6 +22,12 @@
     <span id="syncStatus" class="sync">Connecting…</span>
   </div>
 
+  <div class="mode-switch" role="tablist" aria-label="Tracker mode">
+    <button id="tasksModeBtn" type="button" role="tab" aria-selected="true" aria-controls="tasksMode" class="active">TASKS</button>
+    <button id="skillsModeBtn" type="button" role="tab" aria-selected="false" aria-controls="skillsMode">SKILLS</button>
+  </div>
+
+  <div id="tasksMode">
   <div class="metrics">
     <div class="metric">Active tools<b id="active">0</b></div>
     <div class="metric">High priority<b id="high">0</b></div>
@@ -70,8 +77,53 @@
   </div>
 
   <div id="cardView" class="hidden"></div>
+  </div>
 
-  <div class="note">Tracker data is publicly readable. Editing, adding, deleting, and Kanban status changes are available only after the authorized owner signs in.</div>
+  <div id="skillsMode" class="hidden" role="tabpanel" aria-labelledby="skillsModeBtn">
+    <div class="metrics">
+      <div class="metric">Skills shown<b id="skCount">0</b></div>
+      <div class="metric">Approved<b id="skApproved">0</b></div>
+      <div class="metric">Verified in part<b id="skPartial">0</b></div>
+      <div class="metric">Graphic references<b id="skRefs">0</b></div>
+    </div>
+
+    <div class="controls">
+      <input id="skSearch" placeholder="Search Skill / ID / purpose">
+      <select id="skCategory"><option value="">All categories</option></select>
+      <select id="skLifecycle"><option value="">All lifecycle</option><option>Candidate</option><option>Draft</option><option>Approved</option><option>Retired</option></select>
+      <select id="skValidation"><option value="">All validation</option><option>Untested</option><option>Partial</option><option>Validated</option></select>
+      <select id="skPlatform"><option value="">All platforms</option><option value="drive">Archived in Drive</option><option value="chatgpt">Available in ChatGPT</option><option value="codex">Available in Codex</option></select>
+      <label class="sk-check"><input id="skHasGraphic" type="checkbox"> Has graphic reference</label>
+      <label class="sk-check"><input id="skHasConversation" type="checkbox"> Has conversation link</label>
+      <div class="view-switch"><button id="skListBtn" class="active" type="button">List</button><button id="skVisualBtn" type="button">Visual</button></div>
+    </div>
+
+    <div id="skListView">
+      <div class="tablewrap">
+        <table id="skTable">
+          <thead><tr>
+            <th style="cursor:default">Skill</th>
+            <th style="cursor:default">ID</th>
+            <th style="cursor:default">Category</th>
+            <th style="cursor:default">Lifecycle</th>
+            <th style="cursor:default">Validation</th>
+            <th style="cursor:default">Version</th>
+            <th style="cursor:default">Refs</th>
+            <th style="cursor:default">Platform</th>
+            <th style="cursor:default">Origin / locator</th>
+            <th style="cursor:default">Next action</th>
+            <th style="cursor:default">Drive</th>
+          </tr></thead>
+          <tbody id="skRows"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="skVisualView" class="hidden"></div>
+    <div id="skSourceNote" class="small"></div>
+  </div>
+
+  <div class="note">Tracker data is publicly readable. Editing, adding, deleting, and Kanban status changes are available only after the authorized owner signs in. Skills Mode is read-only for everyone: the registry is maintained in Google Drive.</div>
 </div>
 
 <div id="detailBackdrop" class="detail-backdrop" aria-hidden="true">
@@ -90,10 +142,18 @@
   </div>
 </div>
 
+<div id="skDetailBackdrop" class="detail-backdrop" aria-hidden="true">
+  <div class="detail-modal" role="dialog" aria-modal="true">
+    <div class="detail-top"><div><div class="small">Skill detail</div><h2 id="skDetailTitle"></h2></div><button id="skDetailClose" class="detail-close" type="button">×</button></div>
+    <div id="skDetailBody" class="detail-grid"></div>
+  </div>
+</div>
+
 <script src="vendor/supabase-2.116.0.js"></script>
 <script src="app.js?v=20260911-otp1"></script>
 <script src="email-otp.js?v=20260911-otp1"></script>
 <script src="owner-ui.js?v=20260911-otp1"></script>
+<script src="skills.js?v=20260926-skills1"></script>
 <script>
 const trackerBaseUpdateMetrics = updateMetrics;
 updateMetrics = function(){
