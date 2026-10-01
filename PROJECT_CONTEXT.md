@@ -40,7 +40,7 @@ The original browser-only `localStorage` data has already been migrated to Supab
 
 Read-only management view over the YSU Skills registry:
 
-- List view (default) and Visual view, grouped by Category with collapsible groups
+- List view (default) and Visual view, grouped by purpose domain with collapsible groups and style-family subgroups
 - search, plus Category / Lifecycle / Validation / Platform / Has-graphic-reference / Has-conversation-link filters
 - Skill detail drawer reusing the existing modal pattern
 - Lifecycle (Candidate / Draft / Approved / Retired) and Validation (Untested / Partial / Validated) shown as independent dimensions
@@ -143,12 +143,14 @@ Metadata contract and the parser's fallback assumptions. No Supabase table,
 database or backend service exists for Skills.
 
 Field resolution is explicit metadata -> deterministic legacy parser -> null
-(DEC-010). No Skill is normalized yet, so every field in the live index is
-still derived.
+(DEC-010). SSF-B02 added eight explicit metadata entries on 2026-10-01: six Approved / Partial
+profiles and two Draft / Partial profiles requiring revision. The original 13
+registered entries and existing pending candidate keep their prior derived values.
 
 Cloud staging `00_PENDING` is governed by a processing contract mirrored at
-`skills-source/PENDING_CONTRACT.md` (DEC-011). **No Pending content has been
-processed**; the Pending workflow is not operational.
+`skills-source/PENDING_CONTRACT.md` (DEC-011). The first owner-authorized batch, SSF-B02, was processed on 2026-10-01; six
+profiles were approved and archived, and two remain pending correction. There is
+no automated batch processor.
 
 `C:\Users\ysu\OneDrive - DLR Group\Codex\Skills` is a local Skill staging /
 development source only. It is not mirrored to Drive and there is no automatic
@@ -219,3 +221,10 @@ The shared Supabase project already uses the owner's Resend Custom SMTP, six-dig
 Sign-out immediately removes editing and closes detail/link editors before awaiting the SDK. Mutation handlers recheck current owner permission so stale controls cannot modify the fallback cache after logout. Delayed initial hydration and OTP responses cannot replace a newer identity. Non-owners retain public read-only access.
 
 Development validation: `npm ci --ignore-scripts` and `npm test`; tests use local fake Auth/database fixtures only. Deployment remains the existing main-branch GitHub Pages process. See `docs/validation/email-otp-2026-09-11.md` for acceptance and recovery evidence.
+
+## SSF-B02 registry refresh — 2026-10-01
+
+The owner approved cases 01, 02, 03, 04, 07 and 08; 05 and 06 require additional correction. The registry now has 21 registered entries plus the existing pending candidate. Six selected reference-derived cover thumbnails are prepared locally. The owner explicitly authorized public GitHub/Tracker synchronization on 2026-10-01, resolving the earlier automatic-review block; full reference sets and packages retain private Drive permissions. No Hub publication or runtime Skill installation occurred.
+
+
+Purpose/style taxonomy v1 is generated from the Drive registry (DEC-014): six purpose domains, three currently used style families, and medium/subject tags. All 22 entries have taxonomy; 8 entries have the separate full Tracker Metadata block. The existing category filter remains as a compatibility filter.

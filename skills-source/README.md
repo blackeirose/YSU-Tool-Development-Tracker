@@ -29,8 +29,8 @@ Tracker Skills Mode
 3. `npm test`
 4. Commit both files together and push; GitHub Pages redeploys.
 
-The export in this repo was taken on 2026-09-26 (registry `最新更新：2026-09-26`)
-and is byte-identical to the Drive file at 29,199 bytes.
+The export in this repo was refreshed on 2026-10-01 from the updated canonical
+Drive registry (47,605 bytes). SSF-B02 adds six approved profiles and two revision drafts.
 
 ## Explicit Tracker Metadata (contract v1)
 
@@ -98,9 +98,9 @@ conversation URL is ever constructed.**
 
 ### Normalization status
 
-**No Skill in the canonical registry has been normalized yet** — all 13
-registered Skills and the pending candidate are still fully derived, and
-`counts.with_explicit_metadata` is `0`. Normalization is incremental: add the
+**Eight SSF-B02 entries carry explicit metadata**; the original 13
+registered Skills and the existing pending candidate retain derived fields.
+`counts.with_explicit_metadata` is `8`. Normalization is incremental: add the
 block to a Skill's section in the **Drive** registry as that Skill is touched,
 reviewed or processed, then re-export and regenerate. The parser branch is
 proven by `tests/fixtures/registry-explicit.md`, a synthetic registry that
@@ -171,3 +171,16 @@ conversation link, so `UNLOCATED` is the honest majority answer and the
 - Both tables that begin rows with a Skill ID are handled: the registry table is
   the document's first table and wins; the later packaging table is read only
   for ids.
+
+
+### Purpose/style taxonomy v1 (2026-10-01)
+
+Assignments come from the `## Skill Taxonomy v1` Markdown table in Drive.
+Columns: `Skill ID | Domain ID | Area | Style Family ID | Medium | Tags`.
+Use `—` for an absent field and `;` between tags. Controlled domain/family IDs
+and bilingual labels are in `tools/skill-taxonomy.mjs`; unknown IDs warn and are
+ignored, missing taxonomy falls back to the legacy category. This is a separate
+additive contract, not a change to the existing Tracker Metadata v1 statuses.
+The latest owner authorization permits publishing the batch index and six
+original-reference cover derivatives to this public Tracker. Full packages and
+reference sets retain their existing private Drive permissions.

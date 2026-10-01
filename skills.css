@@ -38,3 +38,9 @@
 .sk-plat-row:last-child{margin-bottom:0}
 #skSourceNote{margin-top:12px;line-height:1.5}
 @media(max-width:900px){.mode-switch button{flex:1}.sk-cards{grid-template-columns:1fr}}
+
+/* Taxonomy additions preserve the existing Tracker visual system. */
+.sk-family-head{margin:16px 2px 0;font-size:15px;color:var(--text)}
+.sk-description{font-size:13px;line-height:1.55;margin:10px 0;color:var(--text)}
+#skDomain,#skFamily{min-height:44px;max-width:100%;border-color:#7c847e}
+#skDomain:focus-visible,#skFamily:focus-visible,.sk-card:focus-visible{outline:2px solid #245bdb;outline-offset:2px}

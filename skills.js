@@ -81,7 +81,14 @@
     $('skVisualView').innerHTML = `<p class="small">${esc(message)}</p>`;
   }
 
+  const groupOf = s => s.taxonomy?.domain || s.category;
+  const familyOf = s => s.taxonomy?.style_family || '';
+  const classification = s => [groupOf(s), familyOf(s), s.taxonomy?.medium || s.taxonomy?.area].filter(Boolean).join(' · ');
+
   function buildFilterOptions() {
+    const options = (id, label, values) => { $(id).innerHTML = `<option value="">${label}</option>${[...new Set(values.filter(Boolean))].sort().map(v => `<option>${esc(v)}</option>`).join('')}`; };
+    options('skDomain', '全部用途 / All domains', skills.map(groupOf));
+    options('skFamily', '全部風格 / All style families', skills.map(familyOf));
     const categories = [...new Set(skills.map(s => s.category))].sort();
     $('skCategory').innerHTML = `<option value="">All categories</option>${categories.map(c => `<option>${esc(c)}</option>`).join('')}`;
     const normalized = index.counts.with_explicit_metadata ?? 0;
@@ -97,9 +104,11 @@
     const needGraphic = $('skHasGraphic').checked, needConversation = $('skHasConversation').checked;
     return skills.filter(s => {
       if (q) {
-        const hay = [s.id, s.name, s.slug, s.description, s.category, s.next_action, s.origin_project].join(' ').toLowerCase();
+        const hay = [s.id, s.name, s.slug, s.description, s.category, s.next_action, s.origin_project, classification(s), ...(s.taxonomy?.tags || [])].join(' ').toLowerCase();
         if (!hay.includes(q)) return false;
       }
+      if ($('skDomain').value && groupOf(s) !== $('skDomain').value) return false;
+      if ($('skFamily').value && familyOf(s) !== $('skFamily').value) return false;
       if (category && s.category !== category) return false;
       if (lifecycle && s.lifecycle !== lifecycle) return false;
       if (validation && s.validation !== validation) return false;
@@ -124,7 +133,7 @@
 
   function render() {
     if (!index) return;
-    const data = filtered();
+    const data = filtered().sort((a, b) => groupOf(a).localeCompare(groupOf(b)) || familyOf(a).localeCompare(familyOf(b)) || (a.taxonomy?.medium || '').localeCompare(b.taxonomy?.medium || '') || a.id.localeCompare(b.id));
     $('skCount').textContent = data.length;
     $('skApproved').textContent = data.filter(s => s.lifecycle === 'Approved').length;
     $('skPartial').textContent = data.filter(s => s.validation !== 'Untested').length;
@@ -133,7 +142,7 @@
     $('skRows').innerHTML = data.length ? data.map(s => `<tr data-skill="${esc(s.id)}" tabindex="0">
       <td class="name"><b>${esc(s.name)}</b>${s.slug ? `<div class="small">${esc(s.slug)}</div>` : ''}</td>
       <td class="smallcol">${esc(s.id)}</td>
-      <td class="smallcol">${esc(s.category)}</td>
+      <td class="smallcol">${esc(classification(s))}</td>
       <td class="smallcol">${lifecyclePill(s.lifecycle)}</td>
       <td class="smallcol">${validationPill(s.validation)}</td>
       <td class="num">${esc(s.version ?? '—')}</td>
@@ -156,18 +165,22 @@
   function renderVisual(data) {
     const groups = new Map();
     for (const skill of data) {
-      if (!groups.has(skill.category)) groups.set(skill.category, []);
-      groups.get(skill.category).push(skill);
+      const group = groupOf(skill);
+      if (!groups.has(group)) groups.set(group, []);
+      groups.get(group).push(skill);
     }
     const host = $('skVisualView');
     if (!groups.size) { host.innerHTML = '<p class="small">No Skill matches these filters.</p>'; return; }
     host.innerHTML = [...groups.entries()].sort((a, b) => a[0].localeCompare(b[0])).map(([category, items]) => {
       const isOpen = !collapsed.has(category);
+      const families = new Map();
+      for (const s of items) { const key = familyOf(s); if (!families.has(key)) families.set(key, []); families.get(key).push(s); }
+      const contents = [...families].map(([family, members]) => `${family ? `<h4 class="sk-family-head">${esc(family)} · ${members.length}</h4>` : ''}<div class="sk-cards">${members.map(cardHtml).join('')}</div>`).join('');
       return `<section class="sk-group">
         <button class="sk-group-head" type="button" data-group="${esc(category)}" aria-expanded="${isOpen}">
           <span class="sk-caret">${isOpen ? '▾' : '▸'}</span><span>${esc(category)}</span><span class="kanban-count">${items.length}</span>
         </button>
-        <div class="sk-cards${isOpen ? '' : ' hidden'}">${items.map(cardHtml).join('')}</div>
+        <div class="sk-group-content${isOpen ? '' : ' hidden'}">${contents}</div>
       </section>`;
     }).join('');
     host.querySelectorAll('[data-group]').forEach(button => button.addEventListener('click', () => {
@@ -175,7 +188,10 @@
       if (collapsed.has(key)) collapsed.delete(key); else collapsed.add(key);
       renderVisual(filtered());
     }));
-    host.querySelectorAll('[data-card]').forEach(card => card.addEventListener('click', () => openDetail(card.dataset.card)));
+    host.querySelectorAll('[data-card]').forEach(card => {
+      card.addEventListener('click', () => openDetail(card.dataset.card));
+      card.addEventListener('keydown', event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openDetail(card.dataset.card); } });
+    });
   }
 
   // Cover thumbnails are owner-curated repo assets listed in
@@ -197,7 +213,8 @@
     return `<article class="task-card sk-card" data-card="${esc(s.id)}" tabindex="0">
       ${cover}
       <h3>${esc(s.name)}</h3>
-      <div class="card-sub">${esc(s.category)}</div>
+      <div class="card-sub">${esc(s.taxonomy?.medium || s.taxonomy?.area || s.category)}</div>
+      ${s.description ? `<p class="sk-description">${esc(s.description)}</p>` : ''}
       <div class="task-meta">${lifecyclePill(s.lifecycle)}${validationPill(s.validation)}</div>
       <div class="card-footer"><span>${esc(s.version ?? 'no version')}</span><span>·</span><span>${refs} ref${refs === 1 ? '' : 's'}</span></div>
     </article>`;
@@ -236,7 +253,12 @@
       field('Skill name', esc(s.name), true),
       field('ID', esc(s.id)),
       field('Slug', esc(s.slug ?? UNKNOWN)),
-      field('Category', esc(s.category)),
+      field('用途 / Domain', esc(groupOf(s))),
+      field('用途子類 / Area', esc(s.taxonomy?.area || UNKNOWN)),
+      field('風格大類 / Style family', esc(familyOf(s) || '—')),
+      field('媒材 / Medium', esc(s.taxonomy?.medium || '—')),
+      field('標籤 / Tags', esc((s.taxonomy?.tags || []).join(' · ') || '—')),
+      field('Legacy category', esc(s.category)),
       field('Lifecycle', lifecyclePill(s.lifecycle)),
       field('Validation', validationPill(s.validation)),
       field('Version', `${esc(s.version ?? UNKNOWN)}<div class="small">${esc(s.version_note ?? '')}</div>`),
@@ -275,7 +297,7 @@
   $('skillsModeBtn').addEventListener('click', () => applyMode('skills', true));
   $('skListBtn').addEventListener('click', () => setView('list'));
   $('skVisualBtn').addEventListener('click', () => setView('visual'));
-  ['skSearch', 'skCategory', 'skLifecycle', 'skValidation', 'skPlatform', 'skHasGraphic', 'skHasConversation']
+  ['skSearch', 'skDomain', 'skFamily', 'skCategory', 'skLifecycle', 'skValidation', 'skPlatform', 'skHasGraphic', 'skHasConversation']
     .forEach(id => $(id).addEventListener('input', render));
   $('skDetailClose').addEventListener('click', closeDetail);
   $('skDetailBackdrop').addEventListener('click', event => { if (event.target.id === 'skDetailBackdrop') closeDetail(); });

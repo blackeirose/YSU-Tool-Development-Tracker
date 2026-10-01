@@ -1,15 +1,32 @@
 {
+  "taxonomy_contract": {
+    "version": "1.0",
+    "domains": {
+      "architecture-space": "建築與空間 / Architecture & Space",
+      "film-animation": "影片與動畫 / Film & Animation",
+      "character-design": "角色設計 / Character Design",
+      "image-style": "圖像與風格 / Image & Style",
+      "engineering-science": "工程與科學 / Engineering & Science",
+      "education": "教學與知識 / Education & Knowledge"
+    },
+    "style_families": {
+      "painting-illustration": "繪畫與插畫 / Painting & Illustration",
+      "paper-fiber": "紙藝與纖維 / Paper & Fiber",
+      "photography-realism": "攝影與寫實 / Photography & Realism"
+    },
+    "source": "Skill Taxonomy v1 table in canonical Drive registry"
+  },
   "$comment": "GENERATED FILE — do not edit by hand. Source: Google Drive AI Works/06_Skills/00_SKILL_REGISTRY.md. Regenerate with `npm run skills:index`.",
-  "generated_at": "2026-09-27T02:52:11.670Z",
+  "generated_at": "2026-10-01T23:53:16.102Z",
   "source": {
     "file": "skills-source/00_SKILL_REGISTRY.md",
     "drive_file_id": "1g6Io9lD4YwkDaX5_OUqssvrcEyuCF-1P",
-    "registry_updated": "2026-09-26"
+    "registry_updated": "2026-10-01"
   },
   "registry": {
     "title": "YSU Skills Registry — 統一管理總表",
     "recorded": "2026-09-21",
-    "updated": "2026-09-26",
+    "updated": "2026-10-01",
     "owner": "YuCheng Su",
     "management_conversation": "YSU Skills 管理中心",
     "drive_folder": "https://drive.google.com/drive/folders/1P6b3rLGzrdev1Lh6tZVGAWnPcNkNYoV_",
@@ -25,10 +42,10 @@
     ]
   },
   "counts": {
-    "total": 14,
-    "registered": 13,
+    "total": 22,
+    "registered": 21,
     "pending": 1,
-    "with_explicit_metadata": 0
+    "with_explicit_metadata": 8
   },
   "warnings": [],
   "skills": [
@@ -90,7 +107,21 @@
         "links": "derived",
         "registered": "derived"
       },
-      "has_explicit_metadata": false
+      "has_explicit_metadata": false,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "engineering-science",
+        "domain": "工程與科學 / Engineering & Science",
+        "area": "互動模擬 / Interactive simulation",
+        "style_family_id": null,
+        "style_family": null,
+        "medium": null,
+        "tags": [
+          "科學",
+          "工程"
+        ],
+        "source": "explicit registry taxonomy"
+      }
     },
     {
       "id": "YSU-SKILL-002",
@@ -150,7 +181,21 @@
         "links": "derived",
         "registered": "derived"
       },
-      "has_explicit_metadata": false
+      "has_explicit_metadata": false,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "architecture-space",
+        "domain": "建築與空間 / Architecture & Space",
+        "area": "BIM 與元件 / BIM & components",
+        "style_family_id": null,
+        "style_family": null,
+        "medium": null,
+        "tags": [
+          "Revit",
+          "車輛"
+        ],
+        "source": "explicit registry taxonomy"
+      }
     },
     {
       "id": "YSU-SKILL-003",
@@ -214,7 +259,21 @@
         "links": "derived",
         "registered": "derived"
       },
-      "has_explicit_metadata": false
+      "has_explicit_metadata": false,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "architecture-space",
+        "domain": "建築與空間 / Architecture & Space",
+        "area": "室外與施工 / Exterior & construction",
+        "style_family_id": null,
+        "style_family": null,
+        "medium": null,
+        "tags": [
+          "場地",
+          "影片"
+        ],
+        "source": "explicit registry taxonomy"
+      }
     },
     {
       "id": "YSU-SKILL-004",
@@ -282,7 +341,20 @@
         "links": "derived",
         "registered": "derived"
       },
-      "has_explicit_metadata": false
+      "has_explicit_metadata": false,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "film-animation",
+        "domain": "影片與動畫 / Film & Animation",
+        "area": "製作統籌 / Production coordination",
+        "style_family_id": null,
+        "style_family": null,
+        "medium": null,
+        "tags": [
+          "Router"
+        ],
+        "source": "explicit registry taxonomy"
+      }
     },
     {
       "id": "YSU-SKILL-005",
@@ -350,7 +422,20 @@
         "links": "derived",
         "registered": "derived"
       },
-      "has_explicit_metadata": false
+      "has_explicit_metadata": false,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "film-animation",
+        "domain": "影片與動畫 / Film & Animation",
+        "area": "導演與敘事 / Direction & narrative",
+        "style_family_id": null,
+        "style_family": null,
+        "medium": null,
+        "tags": [
+          "分鏡"
+        ],
+        "source": "explicit registry taxonomy"
+      }
     },
     {
       "id": "YSU-SKILL-006",
@@ -418,7 +503,21 @@
         "links": "derived",
         "registered": "derived"
       },
-      "has_explicit_metadata": false
+      "has_explicit_metadata": false,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "character-design",
+        "domain": "角色設計 / Character Design",
+        "area": "人物角色 / Human characters",
+        "style_family_id": null,
+        "style_family": null,
+        "medium": null,
+        "tags": [
+          "AAA",
+          "電影"
+        ],
+        "source": "explicit registry taxonomy"
+      }
     },
     {
       "id": "YSU-SKILL-007",
@@ -486,7 +585,21 @@
         "links": "derived",
         "registered": "derived"
       },
-      "has_explicit_metadata": false
+      "has_explicit_metadata": false,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "film-animation",
+        "domain": "影片與動畫 / Film & Animation",
+        "area": "場景敘事 / Environment narrative",
+        "style_family_id": null,
+        "style_family": null,
+        "medium": null,
+        "tags": [
+          "空間",
+          "世界觀"
+        ],
+        "source": "explicit registry taxonomy"
+      }
     },
     {
       "id": "YSU-SKILL-008",
@@ -554,7 +667,20 @@
         "links": "derived",
         "registered": "derived"
       },
-      "has_explicit_metadata": false
+      "has_explicit_metadata": false,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "film-animation",
+        "domain": "影片與動畫 / Film & Animation",
+        "area": "製片流程 / Production workflow",
+        "style_family_id": null,
+        "style_family": null,
+        "medium": null,
+        "tags": [
+          "製片"
+        ],
+        "source": "explicit registry taxonomy"
+      }
     },
     {
       "id": "YSU-SKILL-009",
@@ -622,7 +748,20 @@
         "links": "derived",
         "registered": "derived"
       },
-      "has_explicit_metadata": false
+      "has_explicit_metadata": false,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "film-animation",
+        "domain": "影片與動畫 / Film & Animation",
+        "area": "剪輯與畫面 / Editorial & picture",
+        "style_family_id": null,
+        "style_family": null,
+        "medium": null,
+        "tags": [
+          "後期"
+        ],
+        "source": "explicit registry taxonomy"
+      }
     },
     {
       "id": "YSU-SKILL-010",
@@ -690,7 +829,20 @@
         "links": "derived",
         "registered": "derived"
       },
-      "has_explicit_metadata": false
+      "has_explicit_metadata": false,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "film-animation",
+        "domain": "影片與動畫 / Film & Animation",
+        "area": "聲音與音樂 / Sound & music",
+        "style_family_id": null,
+        "style_family": null,
+        "medium": null,
+        "tags": [
+          "後期"
+        ],
+        "source": "explicit registry taxonomy"
+      }
     },
     {
       "id": "YSU-SKILL-011",
@@ -754,7 +906,20 @@
         "links": "derived",
         "registered": "derived"
       },
-      "has_explicit_metadata": false
+      "has_explicit_metadata": false,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "image-style",
+        "domain": "圖像與風格 / Image & Style",
+        "area": "風格分析方法 / Style analysis methods",
+        "style_family_id": null,
+        "style_family": null,
+        "medium": null,
+        "tags": [
+          "反推提示詞"
+        ],
+        "source": "explicit registry taxonomy"
+      }
     },
     {
       "id": "YSU-SKILL-012",
@@ -814,7 +979,21 @@
         "links": "derived",
         "registered": "derived"
       },
-      "has_explicit_metadata": false
+      "has_explicit_metadata": false,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "image-style",
+        "domain": "圖像與風格 / Image & Style",
+        "area": "風格轉譯 / Style transfer",
+        "style_family_id": "painting-illustration",
+        "style_family": "繪畫與插畫 / Painting & Illustration",
+        "medium": "混合媒材 / Mixed media",
+        "tags": [
+          "漫畫",
+          "電影墨格"
+        ],
+        "source": "explicit registry taxonomy"
+      }
     },
     {
       "id": "YSU-SKILL-013",
@@ -874,7 +1053,640 @@
         "links": "derived",
         "registered": "derived"
       },
-      "has_explicit_metadata": false
+      "has_explicit_metadata": false,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "character-design",
+        "domain": "角色設計 / Character Design",
+        "area": "動物角色 / Animal characters",
+        "style_family_id": null,
+        "style_family": null,
+        "medium": null,
+        "tags": [
+          "遊戲",
+          "動畫"
+        ],
+        "source": "explicit registry taxonomy"
+      }
+    },
+    {
+      "id": "YSU-SKILL-014",
+      "name": "靛金細描敘事插畫 / Indigo & Gold Editorial Illustration",
+      "slug": "ysu-indigo-gold-editorial",
+      "category": "STYLE",
+      "lifecycle": "Approved",
+      "validation": "Partial",
+      "version": "1.0.0",
+      "version_note": "1.0.0",
+      "description": "把原圖敘事轉成暖象牙紙上的靛藍、金赭、細墨線編輯插畫；適合人物故事、概念海報與敘事主視覺。",
+      "graphic_reference_count": 12,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "NOT_INSTALLED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔",
+        "chatgpt": "未安裝／未發布 Hub",
+        "codex": "未安裝"
+      },
+      "origin_project": null,
+      "origin_conversation": null,
+      "origin_conversation_url": null,
+      "locator_status": "UNLOCATED",
+      "related_conversations": [],
+      "next_action": "使用正式套件；Hub 匯入待另行授權。",
+      "canonical_drive": "https://drive.google.com/drive/folders/1g7ignAl0kRIT1jHLZtaKdwq-yTSfKppw",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/1g7ignAl0kRIT1jHLZtaKdwq-yTSfKppw"
+        }
+      ],
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "explicit",
+        "lifecycle": "explicit",
+        "validation": "explicit",
+        "version": "explicit",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "explicit",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "derived",
+        "origin_conversation": "derived",
+        "origin_conversation_url": "derived",
+        "locator_status": "explicit",
+        "related_conversations": "derived",
+        "next_action": "explicit",
+        "canonical_drive": "explicit",
+        "links": "derived",
+        "registered": "derived",
+        "platform.drive": "explicit",
+        "platform.chatgpt": "explicit",
+        "platform.codex": "explicit"
+      },
+      "has_explicit_metadata": true,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "image-style",
+        "domain": "圖像與風格 / Image & Style",
+        "area": "風格轉譯 / Style transfer",
+        "style_family_id": "painting-illustration",
+        "style_family": "繪畫與插畫 / Painting & Illustration",
+        "medium": "墨線 / Ink",
+        "tags": [
+          "靛金",
+          "敘事插畫"
+        ],
+        "source": "explicit registry taxonomy"
+      }
+    },
+    {
+      "id": "YSU-SKILL-015",
+      "name": "裂紙浮空 / Floating Torn-Paper Worlds",
+      "slug": "ysu-torn-paper-worlds",
+      "category": "STYLE",
+      "lifecycle": "Approved",
+      "validation": "Partial",
+      "version": "1.0.0",
+      "version_note": "1.0.0",
+      "description": "以纖維裂紙、懸浮紙層與光影重構場景；原圖允許時，以疏朗留白營造空氣感與意境。",
+      "graphic_reference_count": 15,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "NOT_INSTALLED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔",
+        "chatgpt": "未安裝／未發布 Hub",
+        "codex": "未安裝"
+      },
+      "origin_project": null,
+      "origin_conversation": null,
+      "origin_conversation_url": null,
+      "locator_status": "UNLOCATED",
+      "related_conversations": [],
+      "next_action": "使用正式套件；Hub 匯入待另行授權。",
+      "canonical_drive": "https://drive.google.com/drive/folders/11D4Gwnl_fWt44hxYvtYesJU2dJWU4XhC",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/11D4Gwnl_fWt44hxYvtYesJU2dJWU4XhC"
+        }
+      ],
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "explicit",
+        "lifecycle": "explicit",
+        "validation": "explicit",
+        "version": "explicit",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "explicit",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "derived",
+        "origin_conversation": "derived",
+        "origin_conversation_url": "derived",
+        "locator_status": "explicit",
+        "related_conversations": "derived",
+        "next_action": "explicit",
+        "canonical_drive": "explicit",
+        "links": "derived",
+        "registered": "derived",
+        "platform.drive": "explicit",
+        "platform.chatgpt": "explicit",
+        "platform.codex": "explicit"
+      },
+      "has_explicit_metadata": true,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "image-style",
+        "domain": "圖像與風格 / Image & Style",
+        "area": "風格轉譯 / Style transfer",
+        "style_family_id": "paper-fiber",
+        "style_family": "紙藝與纖維 / Paper & Fiber",
+        "medium": "紙藝 / Paper art",
+        "tags": [
+          "裂紙",
+          "浮空",
+          "留白"
+        ],
+        "source": "explicit registry taxonomy"
+      }
+    },
+    {
+      "id": "YSU-SKILL-016",
+      "name": "柔絨羊毛氈浮雕 / Soft Felt Relief",
+      "slug": "ysu-soft-felt-relief",
+      "category": "STYLE",
+      "lifecycle": "Approved",
+      "validation": "Partial",
+      "version": "1.0.0",
+      "version_note": "1.0.0",
+      "description": "以短絨羊毛氈、刺繡細線與柔和低浮雕，把複雜內容化為安靜、可觸摸的敘事插畫。",
+      "graphic_reference_count": 10,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "NOT_INSTALLED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔",
+        "chatgpt": "未安裝／未發布 Hub",
+        "codex": "未安裝"
+      },
+      "origin_project": null,
+      "origin_conversation": null,
+      "origin_conversation_url": null,
+      "locator_status": "UNLOCATED",
+      "related_conversations": [],
+      "next_action": "使用正式套件；Hub 匯入待另行授權。",
+      "canonical_drive": "https://drive.google.com/drive/folders/1ATQWh7DP8tN52fR17uUoXjEyWPbmUix8",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/1ATQWh7DP8tN52fR17uUoXjEyWPbmUix8"
+        }
+      ],
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "explicit",
+        "lifecycle": "explicit",
+        "validation": "explicit",
+        "version": "explicit",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "explicit",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "derived",
+        "origin_conversation": "derived",
+        "origin_conversation_url": "derived",
+        "locator_status": "explicit",
+        "related_conversations": "derived",
+        "next_action": "explicit",
+        "canonical_drive": "explicit",
+        "links": "derived",
+        "registered": "derived",
+        "platform.drive": "explicit",
+        "platform.chatgpt": "explicit",
+        "platform.codex": "explicit"
+      },
+      "has_explicit_metadata": true,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "image-style",
+        "domain": "圖像與風格 / Image & Style",
+        "area": "風格轉譯 / Style transfer",
+        "style_family_id": "paper-fiber",
+        "style_family": "紙藝與纖維 / Paper & Fiber",
+        "medium": "纖維 / Fiber art",
+        "tags": [
+          "羊毛氈",
+          "浮雕"
+        ],
+        "source": "explicit registry taxonomy"
+      }
+    },
+    {
+      "id": "YSU-SKILL-017",
+      "name": "青墨琥珀復古動畫 / Teal & Amber Ink Anime",
+      "slug": "ysu-teal-amber-ink-anime",
+      "category": "STYLE",
+      "lifecycle": "Approved",
+      "validation": "Partial",
+      "version": "1.0.0",
+      "version_note": "1.0.0",
+      "description": "以精密動畫墨線、青黑暗部和琥珀亮部呈現濃密但可讀的敘事場景。",
+      "graphic_reference_count": 25,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "NOT_INSTALLED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔",
+        "chatgpt": "未安裝／未發布 Hub",
+        "codex": "未安裝"
+      },
+      "origin_project": null,
+      "origin_conversation": null,
+      "origin_conversation_url": null,
+      "locator_status": "UNLOCATED",
+      "related_conversations": [],
+      "next_action": "使用正式套件；Hub 匯入待另行授權。",
+      "canonical_drive": "https://drive.google.com/drive/folders/1uXyFSgS8vKcus6PKl_XV3koMP8d92Imd",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/1uXyFSgS8vKcus6PKl_XV3koMP8d92Imd"
+        }
+      ],
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "explicit",
+        "lifecycle": "explicit",
+        "validation": "explicit",
+        "version": "explicit",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "explicit",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "derived",
+        "origin_conversation": "derived",
+        "origin_conversation_url": "derived",
+        "locator_status": "explicit",
+        "related_conversations": "derived",
+        "next_action": "explicit",
+        "canonical_drive": "explicit",
+        "links": "derived",
+        "registered": "derived",
+        "platform.drive": "explicit",
+        "platform.chatgpt": "explicit",
+        "platform.codex": "explicit"
+      },
+      "has_explicit_metadata": true,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "image-style",
+        "domain": "圖像與風格 / Image & Style",
+        "area": "風格轉譯 / Style transfer",
+        "style_family_id": "painting-illustration",
+        "style_family": "繪畫與插畫 / Painting & Illustration",
+        "medium": "墨線 / Ink",
+        "tags": [
+          "復古動畫",
+          "青墨",
+          "琥珀"
+        ],
+        "source": "explicit registry taxonomy"
+      }
+    },
+    {
+      "id": "YSU-SKILL-018",
+      "name": "靜觀自然光電影寫實 / Contemplative Natural-Light Cinema",
+      "slug": "ysu-contemplative-cinema",
+      "category": "STYLE",
+      "lifecycle": "Draft",
+      "validation": "Partial",
+      "version": "0.1.0",
+      "version_note": "0.1.0-review.1",
+      "description": "以可信材質、方向自然光和安靜明暗組織呈現原敘事，保留超現實內容的同時避免遊戲宣傳渲染。",
+      "graphic_reference_count": 16,
+      "platform": {
+        "drive": "UNVERIFIED",
+        "chatgpt": "NOT_INSTALLED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "00_PENDING 草稿；05／06 需修正",
+        "chatgpt": "未安裝／未發布 Hub",
+        "codex": "未安裝"
+      },
+      "origin_project": null,
+      "origin_conversation": null,
+      "origin_conversation_url": null,
+      "locator_status": "UNLOCATED",
+      "related_conversations": [],
+      "next_action": "需額外修正；等待使用者指出具體方向，不能列為通過。",
+      "canonical_drive": "https://drive.google.com/drive/folders/1vsF8Wd7gvGoCwKz2zBXOBBDHqvOVOStW",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/1vsF8Wd7gvGoCwKz2zBXOBBDHqvOVOStW"
+        }
+      ],
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "explicit",
+        "lifecycle": "explicit",
+        "validation": "explicit",
+        "version": "explicit",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "explicit",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "derived",
+        "origin_conversation": "derived",
+        "origin_conversation_url": "derived",
+        "locator_status": "explicit",
+        "related_conversations": "derived",
+        "next_action": "explicit",
+        "canonical_drive": "derived",
+        "links": "derived",
+        "registered": "derived",
+        "platform.drive": "explicit",
+        "platform.chatgpt": "explicit",
+        "platform.codex": "explicit"
+      },
+      "has_explicit_metadata": true,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "image-style",
+        "domain": "圖像與風格 / Image & Style",
+        "area": "風格轉譯 / Style transfer",
+        "style_family_id": "photography-realism",
+        "style_family": "攝影與寫實 / Photography & Realism",
+        "medium": "電影寫實 / Cinematic realism",
+        "tags": [
+          "自然光"
+        ],
+        "source": "explicit registry taxonomy"
+      }
+    },
+    {
+      "id": "YSU-SKILL-019",
+      "name": "懷舊膠彩敘事海報 / Nostalgic Gouache Narrative",
+      "slug": "ysu-nostalgic-gouache-narrative",
+      "category": "STYLE",
+      "lifecycle": "Draft",
+      "validation": "Partial",
+      "version": "0.1.0",
+      "version_note": "0.1.0-review.1",
+      "description": "用有印刷紙感的動畫背景膠彩、明確色塊及敘事留白，保留原圖故事的情緒與可讀性。",
+      "graphic_reference_count": 27,
+      "platform": {
+        "drive": "UNVERIFIED",
+        "chatgpt": "NOT_INSTALLED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "00_PENDING 草稿；05／06 需修正",
+        "chatgpt": "未安裝／未發布 Hub",
+        "codex": "未安裝"
+      },
+      "origin_project": null,
+      "origin_conversation": null,
+      "origin_conversation_url": null,
+      "locator_status": "UNLOCATED",
+      "related_conversations": [],
+      "next_action": "需額外修正；等待使用者指出具體方向，不能列為通過。",
+      "canonical_drive": "https://drive.google.com/drive/folders/1vsF8Wd7gvGoCwKz2zBXOBBDHqvOVOStW",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/1vsF8Wd7gvGoCwKz2zBXOBBDHqvOVOStW"
+        }
+      ],
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "explicit",
+        "lifecycle": "explicit",
+        "validation": "explicit",
+        "version": "explicit",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "explicit",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "derived",
+        "origin_conversation": "derived",
+        "origin_conversation_url": "derived",
+        "locator_status": "explicit",
+        "related_conversations": "derived",
+        "next_action": "explicit",
+        "canonical_drive": "derived",
+        "links": "derived",
+        "registered": "derived",
+        "platform.drive": "explicit",
+        "platform.chatgpt": "explicit",
+        "platform.codex": "explicit"
+      },
+      "has_explicit_metadata": true,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "image-style",
+        "domain": "圖像與風格 / Image & Style",
+        "area": "風格轉譯 / Style transfer",
+        "style_family_id": "painting-illustration",
+        "style_family": "繪畫與插畫 / Painting & Illustration",
+        "medium": "膠彩 / Gouache",
+        "tags": [
+          "懷舊",
+          "敘事海報"
+        ],
+        "source": "explicit registry taxonomy"
+      }
+    },
+    {
+      "id": "YSU-SKILL-020",
+      "name": "建築墨線色塊拼貼 / Architectural Ink & Color Collage",
+      "slug": "ysu-architectural-ink-collage",
+      "category": "STYLE",
+      "lifecycle": "Approved",
+      "validation": "Partial",
+      "version": "1.0.0",
+      "version_note": "1.0.0",
+      "description": "將原圖空間結構轉成精密透視墨線、碎片色面與受控制潑彩交疊的建築感插畫。",
+      "graphic_reference_count": 12,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "NOT_INSTALLED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔",
+        "chatgpt": "未安裝／未發布 Hub",
+        "codex": "未安裝"
+      },
+      "origin_project": null,
+      "origin_conversation": null,
+      "origin_conversation_url": null,
+      "locator_status": "UNLOCATED",
+      "related_conversations": [],
+      "next_action": "使用正式套件；Hub 匯入待另行授權。",
+      "canonical_drive": "https://drive.google.com/drive/folders/1cvTajsMZjqQASC_fY9J_n-Wg7dgpjg42",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/1cvTajsMZjqQASC_fY9J_n-Wg7dgpjg42"
+        }
+      ],
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "explicit",
+        "lifecycle": "explicit",
+        "validation": "explicit",
+        "version": "explicit",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "explicit",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "derived",
+        "origin_conversation": "derived",
+        "origin_conversation_url": "derived",
+        "locator_status": "explicit",
+        "related_conversations": "derived",
+        "next_action": "explicit",
+        "canonical_drive": "explicit",
+        "links": "derived",
+        "registered": "derived",
+        "platform.drive": "explicit",
+        "platform.chatgpt": "explicit",
+        "platform.codex": "explicit"
+      },
+      "has_explicit_metadata": true,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "image-style",
+        "domain": "圖像與風格 / Image & Style",
+        "area": "風格轉譯 / Style transfer",
+        "style_family_id": "painting-illustration",
+        "style_family": "繪畫與插畫 / Painting & Illustration",
+        "medium": "混合媒材 / Mixed media",
+        "tags": [
+          "建築",
+          "墨線",
+          "拼貼"
+        ],
+        "source": "explicit registry taxonomy"
+      }
+    },
+    {
+      "id": "YSU-SKILL-021",
+      "name": "攝影 × 精切紙雕雙區海報 / Photo × Precision-Paper Diptych",
+      "slug": "ysu-photo-paper-diptych",
+      "category": "STYLE",
+      "lifecycle": "Approved",
+      "validation": "Partial",
+      "version": "1.0.0",
+      "version_note": "1.0.0",
+      "description": "每張目標各成一張 3:4 直式海報，上半原圖、下半紙雕轉譯，各占嚴格 50%。",
+      "graphic_reference_count": 12,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "NOT_INSTALLED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔",
+        "chatgpt": "未安裝／未發布 Hub",
+        "codex": "未安裝"
+      },
+      "origin_project": null,
+      "origin_conversation": null,
+      "origin_conversation_url": null,
+      "locator_status": "UNLOCATED",
+      "related_conversations": [],
+      "next_action": "使用正式套件；Hub 匯入待另行授權。",
+      "canonical_drive": "https://drive.google.com/drive/folders/1eHHmYuDwHPfn2CGKRI8n1r9jrwegtx4e",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/1eHHmYuDwHPfn2CGKRI8n1r9jrwegtx4e"
+        }
+      ],
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "explicit",
+        "lifecycle": "explicit",
+        "validation": "explicit",
+        "version": "explicit",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "explicit",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "derived",
+        "origin_conversation": "derived",
+        "origin_conversation_url": "derived",
+        "locator_status": "explicit",
+        "related_conversations": "derived",
+        "next_action": "explicit",
+        "canonical_drive": "explicit",
+        "links": "derived",
+        "registered": "derived",
+        "platform.drive": "explicit",
+        "platform.chatgpt": "explicit",
+        "platform.codex": "explicit"
+      },
+      "has_explicit_metadata": true,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "image-style",
+        "domain": "圖像與風格 / Image & Style",
+        "area": "風格轉譯 / Style transfer",
+        "style_family_id": "paper-fiber",
+        "style_family": "紙藝與纖維 / Paper & Fiber",
+        "medium": "紙藝 / Paper art",
+        "tags": [
+          "紙雕",
+          "攝影",
+          "雙區海報"
+        ],
+        "source": "explicit registry taxonomy"
+      }
     },
     {
       "id": "YSU-PENDING-001",
@@ -938,7 +1750,21 @@
         "links": "derived",
         "registered": "derived"
       },
-      "has_explicit_metadata": false
+      "has_explicit_metadata": false,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "education",
+        "domain": "教學與知識 / Education & Knowledge",
+        "area": "科學解說 / Science communication",
+        "style_family_id": null,
+        "style_family": null,
+        "medium": null,
+        "tags": [
+          "教學",
+          "影片"
+        ],
+        "source": "explicit registry taxonomy"
+      }
     }
   ]
 }

@@ -25,3 +25,5 @@ Instruction priority:
 Preserve the existing Tracker UI and working behavior unless a confirmed requirement requires change. Do not introduce a new framework, hosting provider, database, authentication system, or other external service without a product requirement and documented justification.
 
 This project may be worked on by ChatGPT, Codex, Gemini / Antigravity, future AI agents, and human developers. All contributors must work from the same canonical GitHub repository state and leave durable project knowledge in the repository rather than private chat history.
+
+UI work also follows canonical `docs/SMALL_PROJECT_UI_STANDARD.md` (v1.0); preserve the approved Tracker identity and see `DESIGN.md`.

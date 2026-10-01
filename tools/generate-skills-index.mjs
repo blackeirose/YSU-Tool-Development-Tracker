@@ -16,6 +16,7 @@
 
 import { readFileSync, writeFileSync } from 'node:fs';
 import { argv } from 'node:process';
+import { readTaxonomy, domains, families } from './skill-taxonomy.mjs';
 
 const SOURCE = argv[2] || 'skills-source/00_SKILL_REGISTRY.md';
 const OUT = argv[3] || 'skills.json';
@@ -370,7 +371,11 @@ function buildPending() {
 
 const skills = [...[...rows.keys()].sort().map(buildRegistered), ...buildPending()];
 
+const taxonomy = readTaxonomy(raw, warn);
+for (const skill of skills) skill.taxonomy = taxonomy.get(skill.id) || null;
+
 const index = {
+  taxonomy_contract: { version: '1.0', domains, style_families: families, source: 'Skill Taxonomy v1 table in canonical Drive registry' },
   $comment: 'GENERATED FILE — do not edit by hand. Source: Google Drive AI Works/06_Skills/00_SKILL_REGISTRY.md. Regenerate with `npm run skills:index`.',
   generated_at: new Date().toISOString(),
   source: { file: SOURCE, drive_file_id: '1g6Io9lD4YwkDaX5_OUqssvrcEyuCF-1P', registry_updated: registry.updated },

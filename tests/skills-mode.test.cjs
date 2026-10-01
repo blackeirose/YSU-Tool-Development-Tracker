@@ -54,7 +54,7 @@ test('every registered Skill appears with lifecycle, validation, version, refs a
  const f=fixture();try{
   await f.toSkills();
   assert.equal(f.rows().length,index.skills.length);
-  assert.equal(index.skills.filter(s=>s.registered).length,13,'all 13 registered Skills are indexed');
+  assert.equal(index.skills.filter(s=>s.registered).length,21,'all 21 registered Skills are indexed');
   const text=f.get('skRows').textContent;
   for(const s of index.skills){
    assert.ok(text.includes(s.name),`${s.id} name shown`);
@@ -112,7 +112,7 @@ test('Visual view groups by category, collapses and opens detail',async()=>{
   assert.equal(f.get('skVisualView').classList.contains('hidden'),false);
   assert.equal(f.get('skListView').classList.contains('hidden'),true);
   const groups=[...f.d.querySelectorAll('#skVisualView [data-group]')];
-  const categories=[...new Set(index.skills.map(s=>s.category))];
+  const categories=[...new Set(index.skills.map(s=>s.taxonomy?.domain || s.category))];
   assert.equal(groups.length,categories.length);
   assert.ok(groups.length>1,'more than one category group');
   const first=groups[0];
@@ -120,7 +120,7 @@ test('Visual view groups by category, collapses and opens detail',async()=>{
   first.click();
   const reopened=f.d.querySelector(`#skVisualView [data-group="${first.dataset.group}"]`);
   assert.equal(reopened.getAttribute('aria-expanded'),'false','group collapses');
-  assert.equal(reopened.parentElement.querySelector('.sk-cards').classList.contains('hidden'),true);
+  assert.equal(reopened.parentElement.querySelector('.sk-group-content').classList.contains('hidden'),true);
   reopened.click();
   assert.equal(f.d.querySelector(`#skVisualView [data-group="${first.dataset.group}"]`).getAttribute('aria-expanded'),'true');
 
@@ -178,7 +178,7 @@ test('a failed index load reports it instead of rendering an empty list silently
 });
 
 test('the generated index never invents data and stays in the documented shape',()=>{
- assert.equal(index.counts.registered,13);
+ assert.equal(index.counts.registered,21);
  assert.ok(index.source.file.includes('00_SKILL_REGISTRY.md'));
  for(const s of index.skills){
   assert.match(s.id,/^YSU-(SKILL|PENDING)-\d{3}$/);
@@ -225,4 +225,24 @@ test('a missing or unsafe thumbnail manifest never breaks Skills and never injec
   await unsafe.toSkills();
   assert.equal(unsafe.d.querySelectorAll('.sk-cover img').length,0,'only local assets/skill-thumbs paths are used');
  }finally{unsafe.close()}
+});
+
+test('taxonomy separates purpose from style and keeps paper styles together',async()=>{
+ const f=fixture();try{
+  await f.toSkills();
+  f.get('skFamily').value='紙藝與纖維 / Paper & Fiber';f.get('skFamily').dispatchEvent(new f.w.Event('input'));
+  assert.deepEqual(f.rows().map(r=>r.dataset.skill).sort(),['YSU-SKILL-015','YSU-SKILL-016','YSU-SKILL-021']);
+  f.get('skDomain').value='建築與空間 / Architecture & Space';f.get('skDomain').dispatchEvent(new f.w.Event('input'));
+  assert.equal(f.rows().length,0,'independent filters intersect; no invented architecture support');
+  f.get('skFamily').value='';f.get('skFamily').dispatchEvent(new f.w.Event('input'));
+  assert.deepEqual(f.rows().map(r=>r.dataset.skill).sort(),['YSU-SKILL-002','YSU-SKILL-003']);
+  f.get('skDomain').value='圖像與風格 / Image & Style';f.get('skDomain').dispatchEvent(new f.w.Event('input'));
+  f.get('skVisualBtn').click();
+  assert.equal(f.d.querySelectorAll('.sk-family-head').length,3,'ten image/style Skills use only three style families');
+  const card=f.d.querySelector('[data-card="YSU-SKILL-015"]');
+  assert.ok(card.querySelector('.sk-description').textContent.includes('留白'));
+  card.dispatchEvent(new f.w.KeyboardEvent('keydown',{key:'Enter',bubbles:true}));
+  assert.equal(f.get('skDetailBackdrop').classList.contains('open'),true,'keyboard opens style detail');
+  assert.ok(f.get('skDetailBody').textContent.includes('紙藝與纖維'));
+ }finally{f.close()}
 });

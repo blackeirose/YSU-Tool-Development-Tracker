@@ -6,7 +6,7 @@
   <title>YSU Tool Development Tracker</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="owner-ui.css?v=20260911-otp1">
-  <link rel="stylesheet" href="skills.css?v=20260927-thumbs1">
+  <link rel="stylesheet" href="skills.css?v=20261001-taxonomy1">
 </head>
 <body>
 <div class="wrap">
@@ -89,7 +89,9 @@
 
     <div class="controls">
       <input id="skSearch" placeholder="Search Skill / ID / purpose">
-      <select id="skCategory"><option value="">All categories</option></select>
+      <select id="skDomain" aria-label="用途大類 / Domain"></select>
+      <select id="skFamily" aria-label="風格大類 / Style family"></select>
+      <select id="skCategory" aria-label="既有分類 / Legacy category"><option value="">All categories</option></select>
       <select id="skLifecycle"><option value="">All lifecycle</option><option>Candidate</option><option>Draft</option><option>Approved</option><option>Retired</option></select>
       <select id="skValidation"><option value="">All validation</option><option>Untested</option><option>Partial</option><option>Validated</option></select>
       <select id="skPlatform"><option value="">All platforms</option><option value="drive">Archived in Drive</option><option value="chatgpt">Available in ChatGPT</option><option value="codex">Available in Codex</option></select>
@@ -153,7 +155,7 @@
 <script src="app.js?v=20260911-otp1"></script>
 <script src="email-otp.js?v=20260911-otp1"></script>
 <script src="owner-ui.js?v=20260911-otp1"></script>
-<script src="skills.js?v=20260927-thumbs1"></script>
+<script src="skills.js?v=20261001-taxonomy1"></script>
 <script>
 const trackerBaseUpdateMetrics = updateMetrics;
 updateMetrics = function(){

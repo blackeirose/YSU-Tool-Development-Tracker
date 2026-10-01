@@ -340,3 +340,26 @@ on Visual cards and at the top of the detail drawer.
   012 and 013. YSU-SKILL-004, 007, 010, 011 and YSU-PENDING-001 keep the tile.
 - To add or replace a cover: save the image under `assets/skill-thumbs/`, add or
   update its ID in `skill-thumbnails.json`, run `npm test`.
+
+
+## DEC-013 — SSF-B02 owner review and registry refresh
+
+**Status:** ACTIVE
+**Date:** 2026-10-01
+**Scope:** Skills content only
+
+The owner authorized processing eight Drive style folders and approved all except cases 05 and 06. Register 014–021 with explicit metadata: 014/015/016/017/020/021 are Approved + Partial at v1.0.0; 018/019 are Draft + Partial, with revision required. This supersedes the preparation-only current-state statement in DEC-011 for this batch; no automated processor is introduced.
+
+Case 02 is 裂紙浮空 / Floating Torn-Paper Worlds, preserving contemplative negative space where the content target permits. Registry export and generated index remain disposable. Prepare the six owner-selected 720px covers under DEC-012. On 2026-10-01 the owner explicitly authorized public Tracker synchronization (「你更新到TRACKER上吧 同意同步」), including the previously disclosed names, descriptions, states and six original-reference cover derivatives. The prior disclosure block is resolved. Task data, auth, application behavior and hosting are unchanged.
+
+
+## DEC-014 — Compact purpose and style taxonomy
+
+**Status:** ACTIVE
+**Date:** 2026-10-01
+
+The owner requested grouping related styles and Skills under a small number of reusable categories, including interior/exterior architecture and watercolor styles. Each Skill has one primary purpose domain, a purpose area, an optional style family and medium, and multiple tags. These are independent dimensions: a generic style is not duplicated for each subject.
+
+Six purpose domains cover the current inventory. Architectural interiors, exteriors/landscape and BIM/components are subareas of Architecture & Space. The eight SSF-B02 styles share three families: Painting & Illustration (01/04/06/07), Paper & Fiber (02/03/08), Photography & Realism (05). Watercolor belongs under Painting & Illustration; Gouache remains a distinct medium. Palette, mood, era, composition and subject use tags, not new top-level groups. Prefer 3–5 style families; add only for a recurring distinction not covered by an existing family. Do not create empty groups or infer tested capabilities from a subject tag.
+
+The human-readable `Skill Taxonomy v1` table in the canonical Drive registry owns assignments. `tools/skill-taxonomy.mjs` defines stable IDs/labels and validates assignments; generated `skills.json` carries them as `taxonomy`. Visual mode groups by purpose then style family; filters/search/list/detail use the same data. Existing `category` and v1 provenance are retained for compatibility; taxonomy has its own explicit source. Hub handoff maps `domain_id`, `area`, `style_family_id`, `medium`, `tags` without flattening them into more categories. No Hub publication is implied.

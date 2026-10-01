@@ -1,13 +1,13 @@
 # YSU Skills Registry — 統一管理總表
 
 
-紀錄日期：2026-09-21；最新更新：2026-09-26。Owner：YuCheng Su。  
+紀錄日期：2026-09-21；最新更新：2026-10-01。Owner：YuCheng Su。  
 管理入口：Google Drive / My Drive / AI Works / 06_Skills。  
 資料夾：https://drive.google.com/drive/folders/1P6b3rLGzrdev1Lh6tZVGAWnPcNkNYoV_
 
 
 本表是已登錄 YSU 自製 Skills 的管理索引，不是帳號中所有第三方 Skills 的盤點。  
-目前 13 個已登錄項目：既有 12 項加上 YSU Stylized Animal Character Bible。影片群組維持原 9 項；新動物角色 Skill 為跨遊戲／動畫用途的獨立角色設定套件，不是電影流程必經 Skill。此計數不是 13 個平台已安裝／runtime 已驗證 Skills。  
+目前 21 個已登錄項目：既有 13 項，加上本批 6 套已核准風格及 2 套待修正草稿。影片群組維持原 9 項；新動物角色 Skill 為跨遊戲／動畫用途的獨立角色設定套件，不是電影流程必經 Skill。此計數不是 21 個平台已安裝／runtime 已驗證 Skills。  
 管理對話：YSU Skills 管理中心（使用者於 2026-09-21 指定；不代表已操作聊天 UI 更名）。  
 以下未加新日期的來源核對段落保留 2026-09-21 歷史；該次接續核對已讀三份中央文件、兩個 Skill 的歷史盤點及影片 VALIDATION 全文，並新增來源核對紀錄與本機取回指令；兩套完整來源仍未取得。本機安裝版本均為歷史紀錄，未直讀使用者電腦或重新安裝。  
 下方 YSU-SKILL-001 段落保留首次移交紀錄；該段「本輪」指首次歸檔，不是本次來源核對。本次沒有重跑 Simulator 套件或行為驗證。
@@ -31,6 +31,14 @@
 | YSU-SKILL-011 | YSU 圖像分析與風格反推基礎；準確移植圖片風格 | v1.0.0 | 5 份作者文件已歸檔、讀回比對通過 | Windows Codex 未安裝 | ChatGPT 個人 Skill 已安裝；分析 Project Instructions 已保存讀回；未公開分享 |  
 | YSU-SKILL-012 | YSU Cinematic Inkframe／電影墨格；寫實轉混合媒材漫畫、角色／空間／頓點 | 文件／參考 v0.1.0 | 27 檔 ZIP＋展開來源／11 圖已歸檔；ZIP 回下載 SHA-256 與逐檔比對通過 | 未安裝 | 未安裝／未發布；未改分享；成圖與 Seedance 待驗證 |  
 | YSU-SKILL-013 | YSU Stylized Animal Character Bible；遊戲／動畫用風格化動物角色設定 | 文件／參考 v0.1.0 | SKILL＋工作表＋5 張 REFERENCE_ONLY Graphic＋ZIP 已歸檔 | 未安裝／未驗證 | 未發布、未改分享；未做新角色生成／rig／game runtime 驗證 |
+| YSU-SKILL-014 | 靛金細描敘事插畫 / Indigo & Gold Editorial Illustration；把原圖敘事轉成暖象牙紙上的靛藍、金赭、細墨線編輯插畫；適合人物故事、概念海報與敘事主視覺。 | 1.0.0 | 正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔 | 未安裝 | 未安裝／未發布 Hub |
+| YSU-SKILL-015 | 裂紙浮空 / Floating Torn-Paper Worlds；以纖維裂紙、懸浮紙層與光影重構場景；原圖允許時，以疏朗留白營造空氣感與意境。 | 1.0.0 | 正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔 | 未安裝 | 未安裝／未發布 Hub |
+| YSU-SKILL-016 | 柔絨羊毛氈浮雕 / Soft Felt Relief；以短絨羊毛氈、刺繡細線與柔和低浮雕，把複雜內容化為安靜、可觸摸的敘事插畫。 | 1.0.0 | 正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔 | 未安裝 | 未安裝／未發布 Hub |
+| YSU-SKILL-017 | 青墨琥珀復古動畫 / Teal & Amber Ink Anime；以精密動畫墨線、青黑暗部和琥珀亮部呈現濃密但可讀的敘事場景。 | 1.0.0 | 正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔 | 未安裝 | 未安裝／未發布 Hub |
+| YSU-SKILL-018 | 靜觀自然光電影寫實 / Contemplative Natural-Light Cinema；以可信材質、方向自然光和安靜明暗組織呈現原敘事，保留超現實內容的同時避免遊戲宣傳渲染。 | 0.1.0-review.1 | 00_PENDING 草稿；05／06 需修正 | 未安裝 | 未安裝／未發布 Hub |
+| YSU-SKILL-019 | 懷舊膠彩敘事海報 / Nostalgic Gouache Narrative；用有印刷紙感的動畫背景膠彩、明確色塊及敘事留白，保留原圖故事的情緒與可讀性。 | 0.1.0-review.1 | 00_PENDING 草稿；05／06 需修正 | 未安裝 | 未安裝／未發布 Hub |
+| YSU-SKILL-020 | 建築墨線色塊拼貼 / Architectural Ink & Color Collage；將原圖空間結構轉成精密透視墨線、碎片色面與受控制潑彩交疊的建築感插畫。 | 1.0.0 | 正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔 | 未安裝 | 未安裝／未發布 Hub |
+| YSU-SKILL-021 | 攝影 × 精切紙雕雙區海報 / Photo × Precision-Paper Diptych；每張目標各成一張 3:4 直式海報，上半原圖、下半紙雕轉譯，各占嚴格 50%。 | 1.0.0 | 正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔 | 未安裝 | 未安裝／未發布 Hub |
 
 
 ## YSU-SKILL-001 — Scientific Interactive Simulator
@@ -218,7 +226,7 @@ Router name 規範為 `ysu-narrative-film-system` 以匹配根資料夾；`ysu-n
 - 本次驗證：安裝格式和相對連結通過；一個獨立文字 P 案例實際輸出英／繁中，正確說明未提供圖片、保留設計視角、不生圖、不改 Skill。這不是圖片風格轉化或生成畫質驗證。  
 - 「分析」Project 的原 Instructions 為空；已實際填入本 Skill 路由、核心目標、黃大基底、A/P/G 與使用者授權迭代規則。保存後重新開啟，666 字元全文一致。未變更專案名稱、記憶或權限。  
 - 5 份作者文件：SKILL.md、agents/openai.yaml、references/huang-original-gem.md、references/analysis-project-routing.md、references/version-history.md。4 份 Markdown 讀回全文一致；YAML 原始下載 bytes 一致。ChatGPT 安裝端另可能產生介面資產，不是風格參考圖。  
-- 尚未以實際參考／目標圖片生成比較；未建立獨立 GitHub Skill repo、未安裝 Windows Codex、未建立公開分享。沒有把生成品質待驗證冒充 PASS。  
+- 尚未以實際參考／目標圖片生成比較；未建立獨立 GitHub Skill repo、未安装 Windows Codex、未建立公開分享。沒有把生成品質待驗證冒充 PASS。  
 - Core 前置實讀：AGENTS.md v1.7 blob f4b7f1947134d23f0f3a36005429b3b2cc0cdb44；AI_CORE.md v1.4 blob 4ca6830edb63bd2c19cba8e98fedd39089e1f284；相關 AGENTIC_RESOURCES、COMMUNICATION_STANDARD、WORKSPACE_STANDARD；本次為文檔 Skill 與已授權平台設定，無程式部署或 Admin 操作。
 
 
@@ -286,3 +294,315 @@ Router name 規範為 `ysu-narrative-film-system` 以匹配根資料夾；`ysu-n
 - 原始 Prompt 入口：https://gamma.app/docs/-wnesm1fpos32gup
 - 已讀證據／限制：本次對話已讀文章正文及提示詞架構圖；Gamma 完整 Prompt 遭驗證頁阻擋，內嵌影片未完整觀看；沒有製作案例或模型優劣的驗證。
 - 下一步：Skills Tracker 頁面完成後，以此總表為 canonical source 納入待定項；建立 Skill 前補讀原始 Prompt／影片，確認範圍與小型示範案例，再依使用者授權製作。暫無正式版本、套件、repo、安裝或分享連結。
+
+
+
+## 2026-10-01 — SSF-B02 審查結果
+
+Owner：「先通過5和6以外的。這兩個要額外修正」。01／02／03／04／07／08 為 NEW_SKILL；05／06 為 KEEP_PENDING。原始 P style 資料夾及先前審查包保留。舊退役 Factory 軟體不復活。
+
+
+## YSU-SKILL-014 — 靛金細描敘事插畫 / Indigo & Gold Editorial Illustration
+
+Skill ID：ysu-indigo-gold-editorial  
+批次：SSF-B02-01。
+
+把原圖敘事轉成暖象牙紙上的靛藍、金赭、細墨線編輯插畫；適合人物故事、概念海報與敘事主視覺。  
+Fine ink lines, indigo and matte gold on ivory paper create intricate narrative illustrations.
+
+Tracker Metadata:
+- Category: STYLE
+- Lifecycle: Approved
+- Validation: Partial
+- Version: 1.0.0
+- Graphic References: 12
+- Drive: ARCHIVED
+- ChatGPT: NOT_INSTALLED
+- Codex: NOT_INSTALLED
+- Origin Project:
+- Origin Conversation:
+- Origin Conversation URL:
+- Locator Status: UNLOCATED
+- Next Action: 使用正式套件；Hub 匯入待另行授權。
+- Canonical Drive: https://drive.google.com/drive/folders/1g7ignAl0kRIT1jHLZtaKdwq-yTSfKppw
+
+中央資料夾：https://drive.google.com/drive/folders/1g7ignAl0kRIT1jHLZtaKdwq-yTSfKppw  
+完整套件：https://drive.google.com/file/d/10kkTpUJO3RfyqGGDglMdvmFf5rGQ_D8E/view?usp=drivesdk  
+套件：YSU-SKILL-014_ysu-indigo-gold-editorial_v1.0.0.zip；17133084 bytes  
+SHA-256：c74a29bcbd85d62a7327f50169e51f7ed46aaab666f008e1a45b308aa6e05fae  
+已選縮圖：P01-010，https://drive.google.com/file/d/1DtK8SE8idmezjNDV6g_dGJdvWvH68-UJ/view?usp=drivesdk。使用者已於 2026-10-01 明確同意公開同步；Tracker 封面採此原始參考圖的 720px 縮圖。完整參考集與套件保持私人 Drive 權限。
+
+2026-10-01 America/Los_Angeles 使用者核准名稱、規則、提案參考分類、縮圖及 A／B 成圖。02 包含裂紙浮空更名與原圖可行時的留白意境規則。封装檔 CRC／本機 SHA-256 已驗證，上傳後核對 Drive 大小及所在資料夾；未宣稱 Drive 端 SHA-256 已測量。
+
+來源：https://drive.google.com/drive/folders/15Tkwd3v5qlxlgxhzDgIplWxWXa6prq7O。完整歷史聊天未提供，未虛構對話 URL。Validation = Partial：僅兩個指定目標的美術測試，跨平台、逐字文字與所有題材未驗證。無安裝、Hub 發布或全參考圖公开授權。此 instruction/reference 套件尚未建立獨立 GitHub Skill source coverage。
+
+
+## YSU-SKILL-015 — 裂紙浮空 / Floating Torn-Paper Worlds
+
+Skill ID：ysu-torn-paper-worlds  
+批次：SSF-B02-02。
+
+以纖維裂紙、懸浮紙層與光影重構場景；原圖允許時，以疏朗留白營造空氣感與意境。  
+Fibrous torn paper and floating layers frame the scene, with contemplative negative space where the source allows.
+
+Tracker Metadata:
+- Category: STYLE
+- Lifecycle: Approved
+- Validation: Partial
+- Version: 1.0.0
+- Graphic References: 15
+- Drive: ARCHIVED
+- ChatGPT: NOT_INSTALLED
+- Codex: NOT_INSTALLED
+- Origin Project:
+- Origin Conversation:
+- Origin Conversation URL:
+- Locator Status: UNLOCATED
+- Next Action: 使用正式套件；Hub 匯入待另行授權。
+- Canonical Drive: https://drive.google.com/drive/folders/11D4Gwnl_fWt44hxYvtYesJU2dJWU4XhC
+
+中央資料夾：https://drive.google.com/drive/folders/11D4Gwnl_fWt44hxYvtYesJU2dJWU4XhC  
+完整套件：https://drive.google.com/file/d/1oBcTz2KzT_E-wugESKXg7_BdZTROKg1C/view?usp=drivesdk  
+套件：YSU-SKILL-015_ysu-torn-paper-worlds_v1.0.0.zip；8165767 bytes  
+SHA-256：8c32d62cdf1b09b60eeca7b3e6380456b7b743346ce34ebad5c0ad76d06b28f5  
+已選縮圖：P02-011，https://drive.google.com/file/d/1XdzVO5Yfm2W92S6Z-8FjvpXVnsIYQBOk/view?usp=drivesdk。使用者已於 2026-10-01 明確同意公開同步；Tracker 封面採此原始參考圖的 720px 縮圖。完整參考集與套件保持私人 Drive 權限。
+
+2026-10-01 America/Los_Angeles 使用者核准名稱、規則、提案參考分類、縮圖及 A／B 成圖。02 包含裂紙浮空更名與原圖可行時的留白意境規則。封装檔 CRC／本機 SHA-256 已驗證，上傳後核對 Drive 大小及所在資料夾；未宣稱 Drive 端 SHA-256 已測量。
+
+來源：https://drive.google.com/drive/folders/1QFzp8nAeWFu8OvAnn_awP76X5BxudnU8。完整歷史聊天未提供，未虛構對話 URL。Validation = Partial：僅兩個指定目標的美術測試，跨平台、逐字文字與所有題材未驗證。無安裝、Hub 發布或全參考圖公开授權。此 instruction/reference 套件尚未建立獨立 GitHub Skill source coverage。
+
+
+## YSU-SKILL-016 — 柔絨羊毛氈浮雕 / Soft Felt Relief
+
+Skill ID：ysu-soft-felt-relief  
+批次：SSF-B02-03。
+
+以短絨羊毛氈、刺繡細線與柔和低浮雕，把複雜內容化為安靜、可觸摸的敘事插畫。  
+Short wool fibers, embroidered detail and pastel appliqué form gentle shallow reliefs.
+
+Tracker Metadata:
+- Category: STYLE
+- Lifecycle: Approved
+- Validation: Partial
+- Version: 1.0.0
+- Graphic References: 10
+- Drive: ARCHIVED
+- ChatGPT: NOT_INSTALLED
+- Codex: NOT_INSTALLED
+- Origin Project:
+- Origin Conversation:
+- Origin Conversation URL:
+- Locator Status: UNLOCATED
+- Next Action: 使用正式套件；Hub 匯入待另行授權。
+- Canonical Drive: https://drive.google.com/drive/folders/1ATQWh7DP8tN52fR17uUoXjEyWPbmUix8
+
+中央資料夾：https://drive.google.com/drive/folders/1ATQWh7DP8tN52fR17uUoXjEyWPbmUix8  
+完整套件：https://drive.google.com/file/d/14P4-1JjuUatOGP56AD98gjmFLIt9i67E/view?usp=drivesdk  
+套件：YSU-SKILL-016_ysu-soft-felt-relief_v1.0.0.zip；12435158 bytes  
+SHA-256：b055de3c76dedd2de8f1286372fa701fad22a484434f8f756b536c3745764cf1  
+已選縮圖：P03-009，https://drive.google.com/file/d/1YpH7TeNmnJVCdbAUqVAVhD6t7OAis7gc/view?usp=drivesdk。使用者已於 2026-10-01 明確同意公開同步；Tracker 封面採此原始參考圖的 720px 縮圖。完整參考集與套件保持私人 Drive 權限。
+
+2026-10-01 America/Los_Angeles 使用者核准名稱、規則、提案參考分類、縮圖及 A／B 成圖。02 包含裂紙浮空更名與原圖可行時的留白意境規則。封装檔 CRC／本機 SHA-256 已驗證，上傳後核對 Drive 大小及所在資料夾；未宣稱 Drive 端 SHA-256 已測量。
+
+來源：https://drive.google.com/drive/folders/1eq1bQQ7LbYv1XOxPV9jTzToFcHAOTlV6。完整歷史聊天未提供，未虛構對話 URL。Validation = Partial：僅兩個指定目標的美術測試，跨平台、逐字文字與所有題材未驗證。無安裝、Hub 發布或全參考圖公开授權。此 instruction/reference 套件尚未建立獨立 GitHub Skill source coverage。
+
+
+## YSU-SKILL-017 — 青墨琥珀復古動畫 / Teal & Amber Ink Anime
+
+Skill ID：ysu-teal-amber-ink-anime  
+批次：SSF-B02-04。
+
+以精密動畫墨線、青黑暗部和琥珀亮部呈現濃密但可讀的敘事場景。  
+Precise animation inkwork combines deep teal shadows with amber light and worn color planes.
+
+Tracker Metadata:
+- Category: STYLE
+- Lifecycle: Approved
+- Validation: Partial
+- Version: 1.0.0
+- Graphic References: 25
+- Drive: ARCHIVED
+- ChatGPT: NOT_INSTALLED
+- Codex: NOT_INSTALLED
+- Origin Project:
+- Origin Conversation:
+- Origin Conversation URL:
+- Locator Status: UNLOCATED
+- Next Action: 使用正式套件；Hub 匯入待另行授權。
+- Canonical Drive: https://drive.google.com/drive/folders/1uXyFSgS8vKcus6PKl_XV3koMP8d92Imd
+
+中央資料夾：https://drive.google.com/drive/folders/1uXyFSgS8vKcus6PKl_XV3koMP8d92Imd  
+完整套件：https://drive.google.com/file/d/1zCjcwxLx3-m6cxckEke48-Z_49tpDdJ8/view?usp=drivesdk  
+套件：YSU-SKILL-017_ysu-teal-amber-ink-anime_v1.0.0.zip；35230541 bytes  
+SHA-256：c595b0b8cd3eb4fe03b3387a739b1c67c010c8a921aa675c13d1b7e1e4414917  
+已選縮圖：P04-019，https://drive.google.com/file/d/1VsOT_2zLUfWOW52LzpOfR79Qbq3pPQEg/view?usp=drivesdk。使用者已於 2026-10-01 明確同意公開同步；Tracker 封面採此原始參考圖的 720px 縮圖。完整參考集與套件保持私人 Drive 權限。
+
+2026-10-01 America/Los_Angeles 使用者核准名稱、規則、提案參考分類、縮圖及 A／B 成圖。02 包含裂紙浮空更名與原圖可行時的留白意境規則。封装檔 CRC／本機 SHA-256 已驗證，上傳後核對 Drive 大小及所在資料夾；未宣稱 Drive 端 SHA-256 已測量。
+
+來源：https://drive.google.com/drive/folders/1wRhQdDtpVycBS7amIOnKxnIZFUk77S_8。完整歷史聊天未提供，未虛構對話 URL。Validation = Partial：僅兩個指定目標的美術測試，跨平台、逐字文字與所有題材未驗證。無安裝、Hub 發布或全參考圖公开授權。此 instruction/reference 套件尚未建立獨立 GitHub Skill source coverage。
+
+
+## YSU-SKILL-018 — 靜觀自然光電影寫實 / Contemplative Natural-Light Cinema
+
+Skill ID：ysu-contemplative-cinema  
+批次：SSF-B02-05。
+
+以可信材質、方向自然光和安靜明暗組織呈現原敘事，保留超現實內容的同時避免遊戲宣傳渲染。  
+Directional natural light, believable materials and restrained color create quiet cinematic realism.
+
+Tracker Metadata:
+- Category: STYLE
+- Lifecycle: Draft
+- Validation: Partial
+- Version: 0.1.0
+- Graphic References: 16
+- Drive: UNVERIFIED
+- ChatGPT: NOT_INSTALLED
+- Codex: NOT_INSTALLED
+- Origin Project:
+- Origin Conversation:
+- Origin Conversation URL:
+- Locator Status: UNLOCATED
+- Next Action: 需額外修正；等待使用者指出具體方向，不能列為通過。
+- Canonical Drive: 
+
+草稿位置：https://drive.google.com/drive/folders/1vsF8Wd7gvGoCwKz2zBXOBBDHqvOVOStW。修正中，沒有正式歸檔或核准日期。YSU-SKILL-018／019 僅為管理編號，不能當作完成狀態。
+
+來源：https://drive.google.com/drive/folders/1riMZjkGfsicV65qo3d5-_s2I6z5Vxr_R。完整歷史聊天未提供，未虛構對話 URL。Validation = Partial：僅兩個指定目標的美術測試，跨平台、逐字文字與所有題材未驗證。無安裝、Hub 發布或全參考圖公开授權。此 instruction/reference 套件尚未建立獨立 GitHub Skill source coverage。
+
+
+## YSU-SKILL-019 — 懷舊膠彩敘事海報 / Nostalgic Gouache Narrative
+
+Skill ID：ysu-nostalgic-gouache-narrative  
+批次：SSF-B02-06。
+
+用有印刷紙感的動畫背景膠彩、明確色塊及敘事留白，保留原圖故事的情緒與可讀性。  
+Opaque painted shapes, dry-brush edges and paper grain create nostalgic narrative scenes.
+
+Tracker Metadata:
+- Category: STYLE
+- Lifecycle: Draft
+- Validation: Partial
+- Version: 0.1.0
+- Graphic References: 27
+- Drive: UNVERIFIED
+- ChatGPT: NOT_INSTALLED
+- Codex: NOT_INSTALLED
+- Origin Project:
+- Origin Conversation:
+- Origin Conversation URL:
+- Locator Status: UNLOCATED
+- Next Action: 需額外修正；等待使用者指出具體方向，不能列為通過。
+- Canonical Drive: 
+
+草稿位置：https://drive.google.com/drive/folders/1vsF8Wd7gvGoCwKz2zBXOBBDHqvOVOStW。修正中，沒有正式歸檔或核准日期。YSU-SKILL-018／019 僅為管理編號，不能當作完成狀態。
+
+來源：https://drive.google.com/drive/folders/1a74_MdDBKQjPzAhmkXmiUZ5ctBZxzyho。完整歷史聊天未提供，未虛構對話 URL。Validation = Partial：僅兩個指定目標的美術測試，跨平台、逐字文字與所有題材未驗證。無安裝、Hub 發布或全參考圖公开授權。此 instruction/reference 套件尚未建立獨立 GitHub Skill source coverage。
+
+
+## YSU-SKILL-020 — 建築墨線色塊拼貼 / Architectural Ink & Color Collage
+
+Skill ID：ysu-architectural-ink-collage  
+批次：SSF-B02-07。
+
+將原圖空間結構轉成精密透視墨線、碎片色面與受控制潑彩交疊的建築感插畫。  
+Perspective inkwork, fragmented painted planes and selective splashes emphasize spatial structure.
+
+Tracker Metadata:
+- Category: STYLE
+- Lifecycle: Approved
+- Validation: Partial
+- Version: 1.0.0
+- Graphic References: 12
+- Drive: ARCHIVED
+- ChatGPT: NOT_INSTALLED
+- Codex: NOT_INSTALLED
+- Origin Project:
+- Origin Conversation:
+- Origin Conversation URL:
+- Locator Status: UNLOCATED
+- Next Action: 使用正式套件；Hub 匯入待另行授權。
+- Canonical Drive: https://drive.google.com/drive/folders/1cvTajsMZjqQASC_fY9J_n-Wg7dgpjg42
+
+中央資料夾：https://drive.google.com/drive/folders/1cvTajsMZjqQASC_fY9J_n-Wg7dgpjg42  
+完整套件：https://drive.google.com/file/d/1JJZcGkDx-cmiH46P87qEM5QUlbbYreGv/view?usp=drivesdk  
+套件：YSU-SKILL-020_ysu-architectural-ink-collage_v1.0.0.zip；20123467 bytes  
+SHA-256：3c194f130b0034a0888624e87958474a02ae2d4f19e5cfd44f55d5ffc50e1ad8  
+已選縮圖：P07-012，https://drive.google.com/file/d/1OUQmjnMMh7SbFzNyHE2TcsFmlsgCmb8U/view?usp=drivesdk。使用者已於 2026-10-01 明確同意公開同步；Tracker 封面採此原始參考圖的 720px 縮圖。完整參考集與套件保持私人 Drive 權限。
+
+2026-10-01 America/Los_Angeles 使用者核准名稱、規則、提案參考分類、縮圖及 A／B 成圖。02 包含裂紙浮空更名與原圖可行時的留白意境規則。封装檔 CRC／本機 SHA-256 已驗證，上傳後核對 Drive 大小及所在資料夾；未宣稱 Drive 端 SHA-256 已測量。
+
+來源：https://drive.google.com/drive/folders/1KVqqng6Yu_g0IDBZWu8HD41OX5AtO948。完整歷史聊天未提供，未虛構對話 URL。Validation = Partial：僅兩個指定目標的美術測試，跨平台、逐字文字與所有題材未驗證。無安裝、Hub 發布或全參考圖公开授權。此 instruction/reference 套件尚未建立獨立 GitHub Skill source coverage。
+
+
+## YSU-SKILL-021 — 攝影 × 精切紙雕雙區海報 / Photo × Precision-Paper Diptych
+
+Skill ID：ysu-photo-paper-diptych  
+批次：SSF-B02-08。
+
+每張目標各成一張 3:4 直式海報，上半原圖、下半紙雕轉譯，各占嚴格 50%。  
+An equal-height diptych pairs the original image above with a precision-cut paper relief below.
+
+Tracker Metadata:
+- Category: STYLE
+- Lifecycle: Approved
+- Validation: Partial
+- Version: 1.0.0
+- Graphic References: 12
+- Drive: ARCHIVED
+- ChatGPT: NOT_INSTALLED
+- Codex: NOT_INSTALLED
+- Origin Project:
+- Origin Conversation:
+- Origin Conversation URL:
+- Locator Status: UNLOCATED
+- Next Action: 使用正式套件；Hub 匯入待另行授權。
+- Canonical Drive: https://drive.google.com/drive/folders/1eHHmYuDwHPfn2CGKRI8n1r9jrwegtx4e
+
+中央資料夾：https://drive.google.com/drive/folders/1eHHmYuDwHPfn2CGKRI8n1r9jrwegtx4e  
+完整套件：https://drive.google.com/file/d/1JdS2747LSrIShwhDXjbUr3-V4EiTi5qv/view?usp=drivesdk  
+套件：YSU-SKILL-021_ysu-photo-paper-diptych_v1.0.0.zip；35079649 bytes  
+SHA-256：8608b2c97fa5ddc1d5fca465fbd50abce6543a22f44c8fc90c8e1e540acae4b3  
+已選縮圖：P08-012，https://drive.google.com/file/d/1A8ZNdhEJ_a1hdGPNQADG7-H-hAB8DvhP/view?usp=drivesdk。使用者已於 2026-10-01 明確同意公開同步；Tracker 封面採此原始參考圖的 720px 縮圖。完整參考集與套件保持私人 Drive 權限。
+
+2026-10-01 America/Los_Angeles 使用者核准名稱、規則、提案參考分類、縮圖及 A／B 成圖。02 包含裂紙浮空更名與原圖可行時的留白意境規則。封装檔 CRC／本機 SHA-256 已驗證，上傳後核對 Drive 大小及所在資料夾；未宣稱 Drive 端 SHA-256 已測量。
+
+來源：https://drive.google.com/drive/folders/1RkXVLqvmH0u-BlYf60FTwKDnlH2IurPq。完整歷史聊天未提供，未虛構對話 URL。Validation = Partial：僅兩個指定目標的美術測試，跨平台、逐字文字與所有題材未驗證。無安裝、Hub 發布或全參考圖公开授權。此 instruction/reference 套件尚未建立獨立 GitHub Skill source coverage。
+
+## SSF-B02 Tracker publication authorization — 2026-10-01
+
+使用者明確授權：「你更新到TRACKER上吧 同意同步」。授權涵蓋此批次名稱、說明、狀態及六張已選原始參考圖縮圖在公開 GitHub／Tracker 顯示，解除先前自動核准審查的公開同步阻擋。05／06 維持待修正；Hub 發布、平台安裝、完整來源參考集公開仍不在本次範圍。發布驗證結果另記於批次交接。
+
+## Skill Taxonomy v1
+
+分類更新：2026-10-01。管理分類與風格規則分開；不改變既有 ID、slug、版本、核准或驗證狀態。
+固定少數用途大類，下分用途子類。建築與空間可下分室內 / Interior、室外與景觀 / Exterior & Landscape、BIM 與元件 / BIM & Components；沒有對應套件時不顯示空分類。
+風格另外採「風格大類 → 媒材子類 → 個別風格」。水彩 / Watercolor 統一放在繪畫與插畫之下，膠彩不等於水彩。色盤、情緒、題材、年代與構圖用標籤；不各自建立大類。
+本批八套使用三個風格大類。預設維持約 3–5 個風格大類；增加前先確認現有大類確實無法容納多套風格。不能一個風格新建一個大類。
+每套 Skill 只有一個主要用途歸屬，可有多個標籤；跨室內／室外的通用風格保留單一套件。題材標籤不代表該題材已通過生成驗證。
+下表是 Tracker／Hub 共用分類來源。Hub 匯入時保留 domain_id、area、style_family_id、medium、tags；套件 ZIP 的既有 metadata 是封存快照，匯入時以本表和最新 Master metadata 補充分類及 Tracker 公開授權。不為此重新生成圖像或重包內容。
+
+| Skill ID | Domain ID | Area | Style Family ID | Medium | Tags |
+|---|---|---|---|---|---|
+| YSU-SKILL-001 | engineering-science | 互動模擬 / Interactive simulation | — | — | 科學; 工程 |
+| YSU-SKILL-002 | architecture-space | BIM 與元件 / BIM & components | — | — | Revit; 車輛 |
+| YSU-SKILL-003 | architecture-space | 室外與施工 / Exterior & construction | — | — | 場地; 影片 |
+| YSU-SKILL-004 | film-animation | 製作統籌 / Production coordination | — | — | Router |
+| YSU-SKILL-005 | film-animation | 導演與敘事 / Direction & narrative | — | — | 分鏡 |
+| YSU-SKILL-006 | character-design | 人物角色 / Human characters | — | — | AAA; 電影 |
+| YSU-SKILL-007 | film-animation | 場景敘事 / Environment narrative | — | — | 空間; 世界觀 |
+| YSU-SKILL-008 | film-animation | 製片流程 / Production workflow | — | — | 製片 |
+| YSU-SKILL-009 | film-animation | 剪輯與畫面 / Editorial & picture | — | — | 後期 |
+| YSU-SKILL-010 | film-animation | 聲音與音樂 / Sound & music | — | — | 後期 |
+| YSU-SKILL-011 | image-style | 風格分析方法 / Style analysis methods | — | — | 反推提示詞 |
+| YSU-SKILL-012 | image-style | 風格轉譯 / Style transfer | painting-illustration | 混合媒材 / Mixed media | 漫畫; 電影墨格 |
+| YSU-SKILL-013 | character-design | 動物角色 / Animal characters | — | — | 遊戲; 動畫 |
+| YSU-SKILL-014 | image-style | 風格轉譯 / Style transfer | painting-illustration | 墨線 / Ink | 靛金; 敘事插畫 |
+| YSU-SKILL-015 | image-style | 風格轉譯 / Style transfer | paper-fiber | 紙藝 / Paper art | 裂紙; 浮空; 留白 |
+| YSU-SKILL-016 | image-style | 風格轉譯 / Style transfer | paper-fiber | 纖維 / Fiber art | 羊毛氈; 浮雕 |
+| YSU-SKILL-017 | image-style | 風格轉譯 / Style transfer | painting-illustration | 墨線 / Ink | 復古動畫; 青墨; 琥珀 |
+| YSU-SKILL-018 | image-style | 風格轉譯 / Style transfer | photography-realism | 電影寫實 / Cinematic realism | 自然光 |
+| YSU-SKILL-019 | image-style | 風格轉譯 / Style transfer | painting-illustration | 膠彩 / Gouache | 懷舊; 敘事海報 |
+| YSU-SKILL-020 | image-style | 風格轉譯 / Style transfer | painting-illustration | 混合媒材 / Mixed media | 建築; 墨線; 拼貼 |
+| YSU-SKILL-021 | image-style | 風格轉譯 / Style transfer | paper-fiber | 紙藝 / Paper art | 紙雕; 攝影; 雙區海報 |
+| YSU-PENDING-001 | education | 科學解說 / Science communication | — | — | 教學; 影片 |
