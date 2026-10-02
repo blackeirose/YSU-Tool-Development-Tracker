@@ -243,3 +243,8 @@ All eight instruction/reference packages have owner-approved rules and Drive arc
 ## Style 05/06 covers — 2026-10-02 UTC
 
 Complete all eight SSF-B02 original-reference covers under DEC-017. Style 05 uses P05-015; Style 06 uses P06-020. Existing UI consumes the two new manifest entries and local WebP assets; no runtime behavior or task data changes. Both profiles remain Approved / Untested. Drive source/final folders were reorganized with stable IDs and links, and PENDING is now empty; batch records live in the archive.
+
+
+## WC-A/B package refresh — 2026-10-02
+
+The canonical registry now lists 27 registered Skills plus the existing pending candidate. 026/027 are watercolor instruction/reference packages, Approved / Untested v1.0.0, with original-reference thumbnails and direct instruction/package links. No runtime installations or Hub entries were created. Style 13 and WC-C remain on hold outside the registered-Skill count. See DEC-021 and the private source packages for evidence limits.

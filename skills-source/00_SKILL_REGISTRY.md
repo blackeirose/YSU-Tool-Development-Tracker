@@ -7,7 +7,7 @@
 
 
 本表是已登錄 YSU 自製 Skills 的管理索引，不是帳號中所有第三方 Skills 的盤點。  
-目前 25 個已登錄項目：既有13項，加上12套規則已核准風格（05／06新版待實測；09–12本次已核准歸檔）。影片群組維持原 9 項；新動物角色 Skill 為跨遊戲／動畫用途的獨立角色設定套件，不是電影流程必經 Skill。此計數不是 25 個平台已安裝／runtime 已驗證 Skills。  
+目前 27 個已登錄項目：既有 25 項，加上 WC-A／WC-B 兩套已批准封裝的水彩風格。兩套新提示詞尚待實際生圖驗證；13 待定、WC-C 暫停，不列入已登錄計數。此計數不代表平台已安裝或全部實測通過。  
 管理對話：YSU Skills 管理中心（使用者於 2026-09-21 指定；不代表已操作聊天 UI 更名）。  
 以下未加新日期的來源核對段落保留 2026-09-21 歷史；該次接續核對已讀三份中央文件、兩個 Skill 的歷史盤點及影片 VALIDATION 全文，並新增來源核對紀錄與本機取回指令；兩套完整來源仍未取得。本機安裝版本均為歷史紀錄，未直讀使用者電腦或重新安裝。  
 下方 YSU-SKILL-001 段落保留首次移交紀錄；該段「本輪」指首次歸檔，不是本次來源核對。本次沒有重跑 Simulator 套件或行為驗證。
@@ -43,6 +43,8 @@
 | YSU-SKILL-023 | 灰境碎筆敘事 / Muted Fragmented-Paint Narratives；把具體敘事轉成灰白、低彩、局部崩解的碎筆繪畫，保留人物與情緒。 | 1.0.0 | 正式套件、雙語Prompt、原圖縮圖已歸檔；ZIP回下載hash一致 | 未安裝 | 未安裝／未發布Hub |
 | YSU-SKILL-024 | 攝影 × 留白水彩雙區海報 / Photo × Negative-Space Watercolor Diptych；把同一個內容呈現為原圖與留白水彩的上下對照海報，展示敘事提煉而非全量複製。 | 1.0.0 | 正式套件、雙語Prompt、原圖縮圖已歸檔；ZIP回下載hash一致 | 未安裝 | 未安裝／未發布Hub |
 | YSU-SKILL-025 | 彩墨版畫敘事 / Chromatic Ink-Print Narratives；以墨線骨架、平面彩層與碎裂印刷感，統整複雜敘事。 | 1.0.0 | 正式套件、雙語Prompt、原圖縮圖已歸檔；ZIP回下載hash一致 | 未安裝 | 未安裝／未發布Hub |
+| YSU-SKILL-026 | 極簡時尚人物水彩風格 / Minimalist Fashion Figure Watercolor；以有筆壓的斷線、透明薄彩與主體內留白，保留人物辨識並形成輕盈的時尚插畫。 | 1.0.0 | 正式套件、雙語Prompt、原圖與縮圖已歸檔 | 未安裝 | 未安裝／未發布 Hub |
+| YSU-SKILL-027 | 建築水彩融合 / Architectural Watercolor Fusion；以細建築墨線維持空間結構，結合豐富透明色洗、材料筆觸與留白，呈現成熟建築水彩。 | 1.0.0 | 正式套件、雙語Prompt、原圖與縮圖已歸檔 | 未安裝 | 未安裝／未發布 Hub |
 
 
 ## YSU-SKILL-001 — Scientific Interactive Simulator
@@ -616,6 +618,8 @@ SHA-256：8608b2c97fa5ddc1d5fca465fbd50abce6543a22f44c8fc90c8e1e540acae4b3
 | YSU-SKILL-023 | image-style | 風格轉譯 / Style transfer | painting-illustration | 碎筆混合繪畫 / Fragmented paint | 碎筆; 低彩; 敘事 |
 | YSU-SKILL-024 | image-style | 風格轉譯 / Style transfer | painting-illustration | 水彩 / Watercolor | 水彩; 攝影; 雙區海報 |
 | YSU-SKILL-025 | image-style | 風格轉譯 / Style transfer | painting-illustration | 彩墨版印外觀 / Ink-print appearance | 墨線; 平面色層; 敘事 |
+| YSU-SKILL-026 | image-style | 風格轉譯 / Style transfer | painting-illustration | 水彩 / Watercolor | 水彩; 人物; 時尚插畫; 斷線; 留白 |
+| YSU-SKILL-027 | image-style | 風格轉譯 / Style transfer | painting-illustration | 水彩 / Watercolor | 水彩; 建築; 空間; 透明色洗; 材料 |
 | YSU-PENDING-001 | education | 科學解說 / Science communication | — | — | 教學; 影片 |
 
 
@@ -819,4 +823,84 @@ SHA-256：c1f960684c5c77027605439a896f84f0f1648aa79247f2a7446c0f140a336705
 | YSU-SKILL-024 | `ysu-photo-watercolor-diptych` | `1X7kwfO0YbMF2Vn-Jzpi02JB1-Gf9KSxN` | `1EX4k4CE1msvDnU8fEvBForGpIC9_ZS0A` | `1Yf6wlQZaPRic2g0u7kBCduVUByWq0JL2` |
 | YSU-SKILL-025 | `ysu-chromatic-ink-print` | `1BGdo--zegqS9d4KF0CWKqmUdSD7-3mk3` | `1qdX15rOMgqe79bXheXCSLGYkOQEImkjZ` | `17i2H3TYLMhqtZVflG96Gf51djaKj_Esh` |
 | YSU-SKILL-015 | `ysu-torn-paper-worlds` | `11D4Gwnl_fWt44hxYvtYesJU2dJWU4XhC` | `1R6fPcxX21wTX5y-4NT3Hy4CAW6kkykbw` | `1oRrH12CH5B-C83WV3hjjHmDLJbHttim2` |
+
+
+
+## YSU-SKILL-026 — 極簡時尚人物水彩風格 / Minimalist Fashion Figure Watercolor
+
+Skill ID：ysu-minimalist-fashion-figure-watercolor  
+批次：SSF-WC；來源代號：WC-A。
+
+以有筆壓的斷線、透明薄彩與主體內留白，保留人物辨識並形成輕盈的時尚插畫。  
+Selective ink, transparent washes, and internal paper white create airy fashion figures.
+
+Tracker Metadata:
+- Category: STYLE
+- Lifecycle: Approved
+- Validation: Untested
+- Version: 1.0.0
+- Graphic References: 17
+- Drive: ARCHIVED
+- ChatGPT: NOT_INSTALLED
+- Codex: NOT_INSTALLED
+- Origin Project:
+- Origin Conversation: 高級水彩時尚插畫；極簡水彩風格設計；水彩圖風格分析；極簡水彩建築插畫
+- Origin Conversation URL:
+- Locator Status: PROJECT_TITLE_ONLY
+- Next Action: 以合適目標測試本版提示詞；待授權後安裝或匯入 Hub。
+- Canonical Drive: https://drive.google.com/drive/folders/18Kmj9SLK-qI0_9OIb2dyd_NKztvm9eO5
+
+SKILL.md：[讀取指令](https://drive.google.com/file/d/1kjOxIcaF2H4SxyvRIcO7olNWU9DEzx99/view?usp=drivesdk)  
+完整套件：[YSU-SKILL-026_ysu-minimalist-fashion-figure-watercolor_v1.0.0.zip](https://drive.google.com/file/d/1iosTUr5ZbQdm-7WGjgCdPIuQlNnowaZq/view?usp=drivesdk)  
+SHA-256：80ca2303a61349e7b4ed268d3f2aaaee56a5e6408205bd050681fe7836199342  
+原圖來源：[SOURCE](https://drive.google.com/drive/folders/1D92JYAhMBIJ1G4aZzOIFpZoTU_TGms-L)；代表圖 R8445，720px 原圖縮圖。
+
+2026-10-02 America/Los_Angeles：使用者確認並要求 WC-A／WC-B 打包。Approved 僅代表目前風格方向與 instruction/reference 封裝；新重建 Prompt 未生成新測試，Validation=Untested。WC-B 的 L01 是使用者確認的成熟參考；WC-A 個別原圖仍未逐張分類，不能由打包批准推導全部 Approved。四段歷史對話尚未取得完整逐訊息內容與附件映射；本版按當前批准及已恢復證據封裝，未假稱完整 final-state 取證已完成。沒有平台安裝、Hub 發布或全套原圖公開；來源／版本限制在 SOURCE_STATE.md。
+
+
+## YSU-SKILL-027 — 建築水彩融合 / Architectural Watercolor Fusion
+
+Skill ID：ysu-architectural-watercolor-fusion  
+批次：SSF-WC；來源代號：WC-B。
+
+以細建築墨線維持空間結構，結合豐富透明色洗、材料筆觸與留白，呈現成熟建築水彩。  
+Delicate architectural ink and lively layered washes preserve design while expressing light and material.
+
+Tracker Metadata:
+- Category: STYLE
+- Lifecycle: Approved
+- Validation: Untested
+- Version: 1.0.0
+- Graphic References: 4
+- Drive: ARCHIVED
+- ChatGPT: NOT_INSTALLED
+- Codex: NOT_INSTALLED
+- Origin Project:
+- Origin Conversation: 高級水彩時尚插畫；極簡水彩風格設計；水彩圖風格分析；極簡水彩建築插畫
+- Origin Conversation URL:
+- Locator Status: PROJECT_TITLE_ONLY
+- Next Action: 以合適目標測試本版提示詞；待授權後安裝或匯入 Hub。
+- Canonical Drive: https://drive.google.com/drive/folders/1HexV-Lc3YJ8VxFoToublYnCCVcO-rLVY
+
+SKILL.md：[讀取指令](https://drive.google.com/file/d/1_eKpTkKqZUeVsp0mrEmwLlB6eO55WuJQ/view?usp=drivesdk)  
+完整套件：[YSU-SKILL-027_ysu-architectural-watercolor-fusion_v1.0.0.zip](https://drive.google.com/file/d/1sqF93FbnzmP2czzLXMFkRS2csrZjOs2V/view?usp=drivesdk)  
+SHA-256：1aeb08b818cc372f906f57e98e3f767e528741f9177fd729f63b23cecfb4baba  
+原圖來源：[SOURCE](https://drive.google.com/drive/folders/17C0bERdq0mVP8f2hc3n25yi_GlipVagU)；代表圖 L01，720px 原圖縮圖。
+
+2026-10-02 America/Los_Angeles：使用者確認並要求 WC-A／WC-B 打包。Approved 僅代表目前風格方向與 instruction/reference 封裝；新重建 Prompt 未生成新測試，Validation=Untested。WC-B 的 L01 是使用者確認的成熟參考；WC-A 個別原圖仍未逐張分類，不能由打包批准推導全部 Approved。四段歷史對話尚未取得完整逐訊息內容與附件映射；本版按當前批准及已恢復證據封裝，未假稱完整 final-state 取證已完成。沒有平台安裝、Hub 發布或全套原圖公開；來源／版本限制在 SOURCE_STATE.md。
+
+
+## SSF-WC 最新套件定位表
+
+| ID | slug | canonical folder ID | SKILL.md file ID | package ZIP file ID |
+|---|---|---|---|---|
+| YSU-SKILL-026 | `ysu-minimalist-fashion-figure-watercolor` | `18Kmj9SLK-qI0_9OIb2dyd_NKztvm9eO5` | `1kjOxIcaF2H4SxyvRIcO7olNWU9DEzx99` | `1iosTUr5ZbQdm-7WGjgCdPIuQlNnowaZq` |
+| YSU-SKILL-027 | `ysu-architectural-watercolor-fusion` | `1HexV-Lc3YJ8VxFoToublYnCCVcO-rLVY` | `1_eKpTkKqZUeVsp0mrEmwLlB6eO55WuJQ` | `1sqF93FbnzmP2czzLXMFkRS2csrZjOs2V` |
+
+## 2026-10-02 08:50 PDT — WC-A/B 封裝與 13 待定
+
+- WC-A 正式命名「極簡時尚人物水彩風格 / Minimalist Fashion Figure Watercolor」。WC-B「建築水彩融合 / Architectural Watercolor Fusion」名稱與成熟方向已確認。兩套共用既有繪畫與插畫／水彩分類，不新增大類。
+- SSF-B04-13「生活街景墨線水彩」：使用者同意與 WC-B 的子風格關係分析，但目前因管理與差異测试需求先待定。暫停後續生成、合併與正式打包，保留原參考／分析／歷史測試；待找到更合適目標圖再決定。這裡的風格13不等於既有 YSU-SKILL-013 動物角色套件。
+- WC-C 暫停，等待真正最後喜歡的圖片；14／15撤回狀態不變。
+- 本次遵循既有 Factory 封裝、原參考縮圖與 Tracker 同步指示；完整原圖及套件保持私人。Hub 未發布，平台未安裝。
 

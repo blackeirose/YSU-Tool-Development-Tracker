@@ -17,7 +17,7 @@
     "source": "Skill Taxonomy v1 table in canonical Drive registry"
   },
   "$comment": "GENERATED FILE — do not edit by hand. Source: Google Drive AI Works/06_Skills/00_SKILL_REGISTRY.md. Regenerate with `npm run skills:index`.",
-  "generated_at": "2026-10-02T06:08:28.096Z",
+  "generated_at": "2026-10-02T16:28:28.115Z",
   "source": {
     "file": "skills-source/00_SKILL_REGISTRY.md",
     "drive_file_id": "1g6Io9lD4YwkDaX5_OUqssvrcEyuCF-1P",
@@ -42,10 +42,10 @@
     ]
   },
   "counts": {
-    "total": 26,
-    "registered": 25,
+    "total": 28,
+    "registered": 27,
     "pending": 1,
-    "with_explicit_metadata": 12
+    "with_explicit_metadata": 14
   },
   "warnings": [],
   "skills": [
@@ -2035,6 +2035,182 @@
           "墨線",
           "平面色層",
           "敘事"
+        ],
+        "source": "explicit registry taxonomy"
+      }
+    },
+    {
+      "id": "YSU-SKILL-026",
+      "name": "極簡時尚人物水彩風格 / Minimalist Fashion Figure Watercolor",
+      "slug": "ysu-minimalist-fashion-figure-watercolor",
+      "category": "STYLE",
+      "lifecycle": "Approved",
+      "validation": "Untested",
+      "version": "1.0.0",
+      "version_note": "1.0.0",
+      "description": "以有筆壓的斷線、透明薄彩與主體內留白，保留人物辨識並形成輕盈的時尚插畫。",
+      "graphic_reference_count": 17,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "NOT_INSTALLED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "正式套件、雙語Prompt、原圖與縮圖已歸檔",
+        "chatgpt": "未安裝／未發布 Hub",
+        "codex": "未安裝"
+      },
+      "origin_project": null,
+      "origin_conversation": "高級水彩時尚插畫；極簡水彩風格設計；水彩圖風格分析；極簡水彩建築插畫",
+      "origin_conversation_url": null,
+      "locator_status": "PROJECT_TITLE_ONLY",
+      "related_conversations": [],
+      "next_action": "以合適目標測試本版提示詞；待授權後安裝或匯入 Hub。",
+      "canonical_drive": "https://drive.google.com/drive/folders/18Kmj9SLK-qI0_9OIb2dyd_NKztvm9eO5",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/18Kmj9SLK-qI0_9OIb2dyd_NKztvm9eO5"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://drive.google.com/file/d/1kjOxIcaF2H4SxyvRIcO7olNWU9DEzx99/view"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/1iosTUr5ZbQdm-7WGjgCdPIuQlNnowaZq/view"
+        }
+      ],
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "explicit",
+        "lifecycle": "explicit",
+        "validation": "explicit",
+        "version": "explicit",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "explicit",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "derived",
+        "origin_conversation": "explicit",
+        "origin_conversation_url": "derived",
+        "locator_status": "explicit",
+        "related_conversations": "derived",
+        "next_action": "explicit",
+        "canonical_drive": "explicit",
+        "links": "derived",
+        "registered": "derived",
+        "platform.drive": "explicit",
+        "platform.chatgpt": "explicit",
+        "platform.codex": "explicit"
+      },
+      "has_explicit_metadata": true,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "image-style",
+        "domain": "圖像與風格 / Image & Style",
+        "area": "風格轉譯 / Style transfer",
+        "style_family_id": "painting-illustration",
+        "style_family": "繪畫與插畫 / Painting & Illustration",
+        "medium": "水彩 / Watercolor",
+        "tags": [
+          "水彩",
+          "人物",
+          "時尚插畫",
+          "斷線",
+          "留白"
+        ],
+        "source": "explicit registry taxonomy"
+      }
+    },
+    {
+      "id": "YSU-SKILL-027",
+      "name": "建築水彩融合 / Architectural Watercolor Fusion",
+      "slug": "ysu-architectural-watercolor-fusion",
+      "category": "STYLE",
+      "lifecycle": "Approved",
+      "validation": "Untested",
+      "version": "1.0.0",
+      "version_note": "1.0.0",
+      "description": "以細建築墨線維持空間結構，結合豐富透明色洗、材料筆觸與留白，呈現成熟建築水彩。",
+      "graphic_reference_count": 4,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "NOT_INSTALLED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "正式套件、雙語Prompt、原圖與縮圖已歸檔",
+        "chatgpt": "未安裝／未發布 Hub",
+        "codex": "未安裝"
+      },
+      "origin_project": null,
+      "origin_conversation": "高級水彩時尚插畫；極簡水彩風格設計；水彩圖風格分析；極簡水彩建築插畫",
+      "origin_conversation_url": null,
+      "locator_status": "PROJECT_TITLE_ONLY",
+      "related_conversations": [],
+      "next_action": "以合適目標測試本版提示詞；待授權後安裝或匯入 Hub。",
+      "canonical_drive": "https://drive.google.com/drive/folders/1HexV-Lc3YJ8VxFoToublYnCCVcO-rLVY",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/1HexV-Lc3YJ8VxFoToublYnCCVcO-rLVY"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://drive.google.com/file/d/1_eKpTkKqZUeVsp0mrEmwLlB6eO55WuJQ/view"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/1sqF93FbnzmP2czzLXMFkRS2csrZjOs2V/view"
+        }
+      ],
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "explicit",
+        "lifecycle": "explicit",
+        "validation": "explicit",
+        "version": "explicit",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "explicit",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "derived",
+        "origin_conversation": "explicit",
+        "origin_conversation_url": "derived",
+        "locator_status": "explicit",
+        "related_conversations": "derived",
+        "next_action": "explicit",
+        "canonical_drive": "explicit",
+        "links": "derived",
+        "registered": "derived",
+        "platform.drive": "explicit",
+        "platform.chatgpt": "explicit",
+        "platform.codex": "explicit"
+      },
+      "has_explicit_metadata": true,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "image-style",
+        "domain": "圖像與風格 / Image & Style",
+        "area": "風格轉譯 / Style transfer",
+        "style_family_id": "painting-illustration",
+        "style_family": "繪畫與插畫 / Painting & Illustration",
+        "medium": "水彩 / Watercolor",
+        "tags": [
+          "水彩",
+          "建築",
+          "空間",
+          "透明色洗",
+          "材料"
         ],
         "source": "explicit registry taxonomy"
       }

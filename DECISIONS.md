@@ -426,3 +426,15 @@ The owner approved styles 09–12 and requested packaging, categorized source ar
 09 裂紙浮空 / Torn-Paper Levitation belongs to paper-fiber; 10–12 belong to painting-illustration. Existing three style families remain unchanged. Rename old02 YSU-SKILL-015 to 撕紙秘境 / Torn-Paper Dioramas v1.0.1, preserving stable ID, slug, rules and existing cover. Both paper styles may contain tears; the distinction is compositional emphasis, not a binary presence/absence of an opening.
 
 Drive remains canonical. Export its verified registry, then regenerate skills.json. This content release changes no application, Auth, database or deployment architecture. See docs/validation/ssf-b03-2026-10-02.md for verification and limits.
+
+
+## DEC-021 — WC-A/B canonical packages; Style 13 on hold
+
+**Status:** ACTIVE
+**Date:** 2026-10-02 America/Los_Angeles
+
+The owner directed packaging WC-A and WC-B after reviewing the recovered visual evidence and confirming WC-B as the mature direction. Register 026 Minimalist Fashion Figure Watercolor / 極簡時尚人物水彩風格 and 027 Architectural Watercolor Fusion / 建築水彩融合, v1.0.0 Approved / Untested. Both use painting-illustration / Watercolor. Untested refers to the newly reconstructed prompts, not the existence of mature historical reference art. Full four-conversation retrieval remains incomplete and is disclosed in each package. Preserve genuine per-image approval scope.
+
+Under the standing Factory Tracker-sync and original-reference cover instructions, publish only the selected 720px R8445 and L01 cover derivatives; complete images and packages retain private Drive permissions. Metadata and package links come from the read-back canonical registry. No app behavior, Tasks data, Auth, installation, or Hub publication changes.
+
+Style 13's relation to B is accepted conceptually, but owner puts it on hold for suitable-target differentiation tests. Do not merge it, enable a substyle, or package it. WC-C stays on hold for corrected final references. 14 and 15 remain withdrawn. Factory batch trackers and the registry own these decisions; this release adds only 026/027 to the registered public index.
