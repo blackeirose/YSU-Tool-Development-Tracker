@@ -7,7 +7,7 @@
 
 
 本表是已登錄 YSU 自製 Skills 的管理索引，不是帳號中所有第三方 Skills 的盤點。  
-目前 28 個已登錄項目：既有 27 項，加上 YSU-SKILL-028 逐格角色動畫製作 v1.0.0。方法／套件已批准，動畫與引擎待實測；WC-A／WC-B 新提示詞仍待生圖驗證，風格13待定、WC-C暫停。此計數不代表平台已安裝或全部實測通過。  
+目前 29 個已登錄項目：新增 YSU-SKILL-029 古畫捲軸雕塑高訂 v1.0.0；YSU-SKILL-028 逐格角色動畫製作 v1.0.0 保留。方法／套件已批准，動畫與引擎待實測；WC-A／WC-B 新提示詞仍待生圖驗證，風格13待定、WC-C暫停。此計數不代表平台已安裝或全部實測通過。  
 管理對話：YSU Skills 管理中心（使用者於 2026-09-21 指定；不代表已操作聊天 UI 更名）。  
 以下未加新日期的來源核對段落保留 2026-09-21 歷史；該次接續核對已讀三份中央文件、兩個 Skill 的歷史盤點及影片 VALIDATION 全文，並新增來源核對紀錄與本機取回指令；兩套完整來源仍未取得。本機安裝版本均為歷史紀錄，未直讀使用者電腦或重新安裝。  
 下方 YSU-SKILL-001 段落保留首次移交紀錄；該段「本輪」指首次歸檔，不是本次來源核對。本次沒有重跑 Simulator 套件或行為驗證。
@@ -46,6 +46,7 @@
 | YSU-SKILL-026 | 極簡時尚人物水彩風格 / Minimalist Fashion Figure Watercolor；以有筆壓的斷線、透明薄彩與主體內留白，保留人物辨識並形成輕盈的時尚插畫。 | 1.0.0 | 正式套件、雙語Prompt、原圖與縮圖已歸檔 | 未安裝 | 未安裝／未發布 Hub |
 | YSU-SKILL-027 | 建築水彩融合 / Architectural Watercolor Fusion；以細建築墨線維持空間結構，結合豐富透明色洗、材料筆觸與留白，呈現成熟建築水彩。 | 1.0.0 | 正式套件、雙語Prompt、原圖與縮圖已歸檔 | 未安裝 | 未安裝／未發布 Hub |
 | YSU-SKILL-028 | 逐格角色動畫製作 / Sprite Animation Production；核可角色→動作→逐格修復→QA→交付 | 1.0.0 | 22 檔正式套件、雙語 Prompt、原圖及來源版本已歸檔；回下載 hash 通過 | 未安裝 | 未安裝／未發布 Hub；方法通過、動畫／引擎未測 |
+| YSU-SKILL-029 | 古畫捲軸雕塑高訂 / Sculptural Scroll Couture；以古畫捲軸構成立體高訂服裝，呈現黑底時尚人像 | 1.0.0 | 19 檔完整套件、雙語 Prompt、原圖縮圖已歸檔；回下載 hash 通過 | 未安裝 | 未安裝／未發布 Hub；規則封裝已批准、新 Prompt 待實測 |
 
 
 ## YSU-SKILL-001 — Scientific Interactive Simulator
@@ -631,6 +632,7 @@ SHA-256：8608b2c97fa5ddc1d5fca465fbd50abce6543a22f44c8fc90c8e1e540acae4b3
 | YSU-SKILL-026 | image-style | 風格轉譯 / Style transfer | painting-illustration | 水彩 / Watercolor | 水彩; 人物; 時尚插畫; 斷線; 留白 |
 | YSU-SKILL-027 | image-style | 風格轉譯 / Style transfer | painting-illustration | 水彩 / Watercolor | 水彩; 建築; 空間; 透明色洗; 材料 |
 | YSU-SKILL-028 | character-design | 角色動畫製作 / Character animation production | — | — | ANIMATION; SPRITE; WORKFLOW; GAME_ASSET |
+| YSU-SKILL-029 | image-style | 高訂時尚攝影 / Couture fashion photography | photography-realism | 寫實棚拍與雕塑服裝 / Photoreal studio portrait and sculptural garments | STYLE; PHOTOGRAPHY; COUTURE; PORTRAIT; SCULPTURAL; SCROLL |
 | YSU-PENDING-001 | education | 科學解說 / Science communication | — | — | 教學; 影片 |
 
 
@@ -962,4 +964,46 @@ Master：**Approved**；Method Review：Completed；Package QA：Passed；Animat
 |---|---|---|---|---|
 | YSU-SKILL-028 | `ysu-sprite-animation-production` | `1UWhdu91LsZ-De98NkFlXywMLnvrKC_CU` | `1b6xk_o3Mf6oeJt5vevsa2yJQtjkWupya` | `1ab5fw294Trv9XKaiAIzmLRSwW58GWHsJ` |
 
+
+
+
+## YSU-SKILL-029 — 古畫捲軸雕塑高訂 / Sculptural Scroll Couture
+
+Skill ID：ysu-sculptural-scroll-couture。
+以古畫捲軸構成立體高訂服裝，呈現沉穩黑底時尚人像。
+
+Tracker Metadata:
+- Category: STYLE
+- Lifecycle: Approved
+- Validation: Untested
+- Version: 1.0.0
+- Graphic References: 4
+- Drive: ARCHIVED
+- ChatGPT: NOT_INSTALLED
+- Codex: NOT_INSTALLED
+- Origin Project: 分析
+- Origin Conversation: 分析圖片風格
+- Origin Conversation URL:
+- Locator Status: PROJECT_TITLE_ONLY
+- Next Action: 用合適人像實測；保留身份，先檢查捲軸是否構成服裝。歷史逐圖核可未完整取回。
+- Canonical Drive: https://drive.google.com/drive/folders/1BlnPuGfOf5ARY8TKMLrquZDfeHgbgQw4
+
+2026-10-02 America/Los_Angeles：使用者要求本風格納入並打包，並再次要求不要重複確認，直接完成既有流程。Approved 是 instruction/reference 封裝批准，不推導成生成圖逐張核可或新 Prompt 生圖測試。
+
+- 正式位置：[攝影與寫實／本案資料夾](https://drive.google.com/drive/folders/1BlnPuGfOf5ARY8TKMLrquZDfeHgbgQw4)
+- [SKILL.md](https://drive.google.com/file/d/1KIxvJ89l6S3OZOpXafLwpQ2LsAfwEaXT/view?usp=drivesdk)；[雙語 Prompt](https://drive.google.com/file/d/1fRvOhgj_rUsmBdHuL2BYyYzjJx6WgEpp/view?usp=drivesdk)
+- [完整 ZIP](https://drive.google.com/file/d/1Rl_vDUyMb7g0YeFzsJLxQwUejKsxKakC/view?usp=drivesdk)：19檔、七份Factory標準文件、完整來源prompt、重建雙語prompt、四份圖像證據、來源限制與REVIEW.html。
+- ZIP SHA-256：b09716d13ac2707f03333187313521499f27c5988ea0447a369d4d0c0619ac31；5897475 bytes；回下載 bytes／hash／CRC一致。
+- [原始參考縮圖](https://drive.google.com/file/d/1MShir3szi8Fo9unJXW4CGbc0sG3cid7h/view?usp=drivesdk)：R01 IMG_0675.jpeg等比例720px寬，不裁切、不生成、不用測試圖。既有Factory授權涵蓋Tracker索引／單張縮圖同步；完整來源與真人生成案例維持私人。Hub未發布。
+- [私人版本bundle](https://drive.google.com/file/d/1_vjwGEjROMOp38UO8_surY0LqItJawPA/view?usp=drivesdk)：Factory instruction/reference版本，不宣稱獨立GitHub Skill repo或平台安裝。
+
+來源：本次附件核實對話標題，R01完整原圖與R02含全文prompt的同圖截圖已實看。R01主要風格、R02原始文字、E01局部參考、E02為不符合完整捲軸服裝的對照，屬分析者分類，未偽稱已取回Owner逐張分類。四份圖像只有一個主要原始風格作品，不能當四種風格。
+
+完整原對話／URL／所有早期生成結果未取回，不標全文final-state取證完成。來源圖與原始prompt支持目前規則；新版可攜prompt未實測，Validation=Untested。保留人物身份、古畫作衣物材料、立體翻折回捲、低彩古絹／暗金、寫實黑底棚拍；漂浮背景絲帶不能替代穿在身上的服裝。
+
+## Sculptural Scroll Couture 套件定位表
+
+| ID | slug | canonical folder ID | SKILL.md file ID | package ZIP file ID |
+|---|---|---|---|---|
+| YSU-SKILL-029 | `ysu-sculptural-scroll-couture` | `1BlnPuGfOf5ARY8TKMLrquZDfeHgbgQw4` | `1KIxvJ89l6S3OZOpXafLwpQ2LsAfwEaXT` | `1Rl_vDUyMb7g0YeFzsJLxQwUejKsxKakC` |
 

@@ -457,3 +457,8 @@ This status-only synchronization follows the standing Factory milestone/Tracker-
 The owner explicitly requested Tracker synchronization and thumbnail upload after approving the portable Sprite Animation Production package. Add YSU-SKILL-028 v1.0.0, Approved / Untested, under existing character-design / Character animation production. Publish only the selected original method diagram as a metadata-stripped 720×480 WebP cover at assets/skill-thumbs/ysu-sprite-animation-production.webp. The diagram remains Partial method evidence, not an approved animation or target character.
 
 Canonical Drive registry supplies taxonomy and stable package links. The catalog now has 28 registered Skills plus one existing pending candidate, with 16 explicit metadata entries. Full-resolution references and packages remain private. This updates the prior package-time public-cover restriction only for this derivative; no method version change, runtime installation, Hub publication, Tasks data, Auth, database or hosting change.
+
+
+## DEC-024 — Sculptural Scroll Couture catalog package
+
+2026-10-02. Owner requests including and packaging the named style and reiterates completing the existing Factory flow without repeated confirmations. Add YSU-SKILL-029, Approved / Untested v1.0.0, under existing Image & Style / Photography & Realism, with STYLE tag and the original R01 thumbnail. Approval covers instructions/archive; individual historic image approvals and full transcript remain incomplete, and new prompts are not image-tested. Only the catalog and a 720px original-reference derivative are public; full references and personal examples remain in private Drive. No Hub/runtime installation, task data, auth, UI behavior or infrastructure change.

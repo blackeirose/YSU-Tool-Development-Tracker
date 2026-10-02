@@ -17,7 +17,7 @@
     "source": "Skill Taxonomy v1 table in canonical Drive registry"
   },
   "$comment": "GENERATED FILE — do not edit by hand. Source: Google Drive AI Works/06_Skills/00_SKILL_REGISTRY.md. Regenerate with `npm run skills:index`.",
-  "generated_at": "2026-10-02T22:01:26.599Z",
+  "generated_at": "2026-10-02T23:22:44.637Z",
   "source": {
     "file": "skills-source/00_SKILL_REGISTRY.md",
     "drive_file_id": "1g6Io9lD4YwkDaX5_OUqssvrcEyuCF-1P",
@@ -42,10 +42,10 @@
     ]
   },
   "counts": {
-    "total": 29,
-    "registered": 28,
+    "total": 30,
+    "registered": 29,
     "pending": 1,
-    "with_explicit_metadata": 16
+    "with_explicit_metadata": 17
   },
   "warnings": [],
   "skills": [
@@ -2298,6 +2298,95 @@
           "SPRITE",
           "WORKFLOW",
           "GAME_ASSET"
+        ],
+        "source": "explicit registry taxonomy"
+      }
+    },
+    {
+      "id": "YSU-SKILL-029",
+      "name": "古畫捲軸雕塑高訂 / Sculptural Scroll Couture",
+      "slug": "ysu-sculptural-scroll-couture",
+      "category": "STYLE",
+      "lifecycle": "Approved",
+      "validation": "Untested",
+      "version": "1.0.0",
+      "version_note": "1.0.0",
+      "description": "以古畫捲軸構成立體高訂服裝，呈現黑底時尚人像",
+      "graphic_reference_count": 4,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "NOT_INSTALLED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "19 檔完整套件、雙語 Prompt、原圖縮圖已歸檔；回下載 hash 通過",
+        "chatgpt": "未安裝／未發布 Hub；規則封裝已批准、新 Prompt 待實測",
+        "codex": "未安裝"
+      },
+      "origin_project": "分析",
+      "origin_conversation": "分析圖片風格",
+      "origin_conversation_url": null,
+      "locator_status": "PROJECT_TITLE_ONLY",
+      "related_conversations": [],
+      "next_action": "用合適人像實測；保留身份，先檢查捲軸是否構成服裝。歷史逐圖核可未完整取回。",
+      "canonical_drive": "https://drive.google.com/drive/folders/1BlnPuGfOf5ARY8TKMLrquZDfeHgbgQw4",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/1BlnPuGfOf5ARY8TKMLrquZDfeHgbgQw4"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://drive.google.com/file/d/1KIxvJ89l6S3OZOpXafLwpQ2LsAfwEaXT/view"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/1Rl_vDUyMb7g0YeFzsJLxQwUejKsxKakC/view"
+        }
+      ],
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "explicit",
+        "lifecycle": "explicit",
+        "validation": "explicit",
+        "version": "explicit",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "explicit",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "explicit",
+        "origin_conversation": "explicit",
+        "origin_conversation_url": "derived",
+        "locator_status": "explicit",
+        "related_conversations": "derived",
+        "next_action": "explicit",
+        "canonical_drive": "explicit",
+        "links": "derived",
+        "registered": "derived",
+        "platform.drive": "explicit",
+        "platform.chatgpt": "explicit",
+        "platform.codex": "explicit"
+      },
+      "has_explicit_metadata": true,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "image-style",
+        "domain": "圖像與風格 / Image & Style",
+        "area": "高訂時尚攝影 / Couture fashion photography",
+        "style_family_id": "photography-realism",
+        "style_family": "攝影與寫實 / Photography & Realism",
+        "medium": "寫實棚拍與雕塑服裝 / Photoreal studio portrait and sculptural garments",
+        "tags": [
+          "STYLE",
+          "PHOTOGRAPHY",
+          "COUTURE",
+          "PORTRAIT",
+          "SCULPTURAL",
+          "SCROLL"
         ],
         "source": "explicit registry taxonomy"
       }

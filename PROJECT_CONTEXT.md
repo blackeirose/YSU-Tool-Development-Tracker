@@ -257,3 +257,8 @@ YSU-SKILL-012 is now Approved / Partial based on the owner's acceptance of the e
 ## Sprite production catalog refresh — 2026-10-02
 
 YSU-SKILL-028 Sprite Animation Production / 逐格角色動畫製作 v1.0.0 is added from the canonical Drive registry, Approved / Untested. It belongs to existing Character Design and uses the selected original method diagram as its public 720px cover. Counts become 28 registered + 1 pending; 16 have explicit metadata. Direct SKILL.md, ZIP and canonical-folder links are available. All preexisting catalog records are preserved. See DEC-023 and docs/validation/sprite-2026-10-02.md. The animation method itself remains untested in production; Tracker publication does not install it or publish it to Hub.
+
+
+## Sculptural Scroll Couture catalog refresh — 2026-10-02
+
+YSU-SKILL-029 v1.0.0 adds the owner's requested photographic couture style under the existing Photography & Realism family. Counts become 29 registered + 1 pending, 17 explicit metadata entries. Approved refers to instruction/reference packaging; current-prompt visual validation remains Untested. The original R01 cover and direct SKILL/ZIP links accompany the registry-derived entry. Previous catalog records remain unchanged. See DEC-024 and docs/validation/couture-2026-10-02.md.
