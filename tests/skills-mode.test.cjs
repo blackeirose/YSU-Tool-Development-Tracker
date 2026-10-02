@@ -54,7 +54,7 @@ test('every registered Skill appears with lifecycle, validation, version, refs a
  const f=fixture();try{
   await f.toSkills();
   assert.equal(f.rows().length,index.skills.length);
-  assert.equal(index.skills.filter(s=>s.registered).length,27,'all 27 registered Skills are indexed');
+  assert.equal(index.skills.filter(s=>s.registered).length,28,'all 28 registered Skills are indexed');
   const text=f.get('skRows').textContent;
   for(const s of index.skills){
    assert.ok(text.includes(s.name),`${s.id} name shown`);
@@ -178,7 +178,7 @@ test('a failed index load reports it instead of rendering an empty list silently
 });
 
 test('the generated index never invents data and stays in the documented shape',()=>{
- assert.equal(index.counts.registered,27);
+ assert.equal(index.counts.registered,28);
  assert.ok(index.source.file.includes('00_SKILL_REGISTRY.md'));
  for(const s of index.skills){
   assert.match(s.id,/^YSU-(SKILL|PENDING)-\d{3}$/);

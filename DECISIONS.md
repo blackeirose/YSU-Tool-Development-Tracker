@@ -448,3 +448,12 @@ Style 13's relation to B is accepted conceptually, but owner puts it on hold for
 Owner approves YSU-SKILL-012 based on satisfaction with the existing SFDOT character board. Lifecycle becomes Approved through explicit canonical Drive metadata; Validation remains Partial and version remains 0.1.0. The current SFDOT portrait thumbnail is unchanged. The board is an Approved Application Reference, without turning its character, layout, typography or palette into universal style rules. Seedance, animation, audio and cross-project reproducibility remain unverified.
 
 This status-only synchronization follows the standing Factory milestone/Tracker-sync instructions. The Drive registry and COVER_SELECTION.md record the approval. No new media, Skill content, installation, sharing change or Hub publication; the separate Hub architecture discussion still awaits confirmation and Codex handoff.
+
+## DEC-023 — Sprite production Skill and original-reference cover
+
+**Status:** ACTIVE
+**Date:** 2026-10-02 America/Los_Angeles
+
+The owner explicitly requested Tracker synchronization and thumbnail upload after approving the portable Sprite Animation Production package. Add YSU-SKILL-028 v1.0.0, Approved / Untested, under existing character-design / Character animation production. Publish only the selected original method diagram as a metadata-stripped 720×480 WebP cover at assets/skill-thumbs/ysu-sprite-animation-production.webp. The diagram remains Partial method evidence, not an approved animation or target character.
+
+Canonical Drive registry supplies taxonomy and stable package links. The catalog now has 28 registered Skills plus one existing pending candidate, with 16 explicit metadata entries. Full-resolution references and packages remain private. This updates the prior package-time public-cover restriction only for this derivative; no method version change, runtime installation, Hub publication, Tasks data, Auth, database or hosting change.

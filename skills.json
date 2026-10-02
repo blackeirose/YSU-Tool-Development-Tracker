@@ -17,7 +17,7 @@
     "source": "Skill Taxonomy v1 table in canonical Drive registry"
   },
   "$comment": "GENERATED FILE — do not edit by hand. Source: Google Drive AI Works/06_Skills/00_SKILL_REGISTRY.md. Regenerate with `npm run skills:index`.",
-  "generated_at": "2026-10-02T17:24:38.263Z",
+  "generated_at": "2026-10-02T22:01:26.599Z",
   "source": {
     "file": "skills-source/00_SKILL_REGISTRY.md",
     "drive_file_id": "1g6Io9lD4YwkDaX5_OUqssvrcEyuCF-1P",
@@ -42,10 +42,10 @@
     ]
   },
   "counts": {
-    "total": 28,
-    "registered": 27,
+    "total": 29,
+    "registered": 28,
     "pending": 1,
-    "with_explicit_metadata": 15
+    "with_explicit_metadata": 16
   },
   "warnings": [],
   "skills": [
@@ -2211,6 +2211,93 @@
           "空間",
           "透明色洗",
           "材料"
+        ],
+        "source": "explicit registry taxonomy"
+      }
+    },
+    {
+      "id": "YSU-SKILL-028",
+      "name": "逐格角色動畫製作 / Sprite Animation Production",
+      "slug": "ysu-sprite-animation-production",
+      "category": "GAME / CHARACTER",
+      "lifecycle": "Approved",
+      "validation": "Untested",
+      "version": "1.0.0",
+      "version_note": "1.0.0",
+      "description": "核可角色→動作→逐格修復→QA→交付",
+      "graphic_reference_count": 1,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "NOT_INSTALLED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "22 檔正式套件、雙語 Prompt、原圖及來源版本已歸檔；回下載 hash 通過",
+        "chatgpt": "未安裝／未發布 Hub；方法通過、動畫／引擎未測",
+        "codex": "未安裝"
+      },
+      "origin_project": null,
+      "origin_conversation": null,
+      "origin_conversation_url": null,
+      "locator_status": "UNLOCATED",
+      "related_conversations": [],
+      "next_action": "以可讀核可角色參考完成一個小型動作實測；按需求驗證播放、目標尺寸及引擎接入。",
+      "canonical_drive": "https://drive.google.com/drive/folders/1UWhdu91LsZ-De98NkFlXywMLnvrKC_CU",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/1UWhdu91LsZ-De98NkFlXywMLnvrKC_CU"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://drive.google.com/file/d/1b6xk_o3Mf6oeJt5vevsa2yJQtjkWupya/view"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/1ab5fw294Trv9XKaiAIzmLRSwW58GWHsJ/view"
+        }
+      ],
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "explicit",
+        "lifecycle": "explicit",
+        "validation": "explicit",
+        "version": "explicit",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "explicit",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "derived",
+        "origin_conversation": "derived",
+        "origin_conversation_url": "derived",
+        "locator_status": "explicit",
+        "related_conversations": "derived",
+        "next_action": "explicit",
+        "canonical_drive": "explicit",
+        "links": "derived",
+        "registered": "derived",
+        "platform.drive": "explicit",
+        "platform.chatgpt": "explicit",
+        "platform.codex": "explicit"
+      },
+      "has_explicit_metadata": true,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "character-design",
+        "domain": "角色設計 / Character Design",
+        "area": "角色動畫製作 / Character animation production",
+        "style_family_id": null,
+        "style_family": null,
+        "medium": null,
+        "tags": [
+          "ANIMATION",
+          "SPRITE",
+          "WORKFLOW",
+          "GAME_ASSET"
         ],
         "source": "explicit registry taxonomy"
       }

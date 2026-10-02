@@ -7,7 +7,7 @@
 
 
 本表是已登錄 YSU 自製 Skills 的管理索引，不是帳號中所有第三方 Skills 的盤點。  
-目前 27 個已登錄項目：既有 25 項，加上 WC-A／WC-B 兩套已批准封裝的水彩風格。兩套新提示詞尚待實際生圖驗證；13 待定、WC-C 暫停，不列入已登錄計數。此計數不代表平台已安裝或全部實測通過。  
+目前 28 個已登錄項目：既有 27 項，加上 YSU-SKILL-028 逐格角色動畫製作 v1.0.0。方法／套件已批准，動畫與引擎待實測；WC-A／WC-B 新提示詞仍待生圖驗證，風格13待定、WC-C暫停。此計數不代表平台已安裝或全部實測通過。  
 管理對話：YSU Skills 管理中心（使用者於 2026-09-21 指定；不代表已操作聊天 UI 更名）。  
 以下未加新日期的來源核對段落保留 2026-09-21 歷史；該次接續核對已讀三份中央文件、兩個 Skill 的歷史盤點及影片 VALIDATION 全文，並新增來源核對紀錄與本機取回指令；兩套完整來源仍未取得。本機安裝版本均為歷史紀錄，未直讀使用者電腦或重新安裝。  
 下方 YSU-SKILL-001 段落保留首次移交紀錄；該段「本輪」指首次歸檔，不是本次來源核對。本次沒有重跑 Simulator 套件或行為驗證。
@@ -45,6 +45,7 @@
 | YSU-SKILL-025 | 彩墨版畫敘事 / Chromatic Ink-Print Narratives；以墨線骨架、平面彩層與碎裂印刷感，統整複雜敘事。 | 1.0.0 | 正式套件、雙語Prompt、原圖縮圖已歸檔；ZIP回下載hash一致 | 未安裝 | 未安裝／未發布Hub |
 | YSU-SKILL-026 | 極簡時尚人物水彩風格 / Minimalist Fashion Figure Watercolor；以有筆壓的斷線、透明薄彩與主體內留白，保留人物辨識並形成輕盈的時尚插畫。 | 1.0.0 | 正式套件、雙語Prompt、原圖與縮圖已歸檔 | 未安裝 | 未安裝／未發布 Hub |
 | YSU-SKILL-027 | 建築水彩融合 / Architectural Watercolor Fusion；以細建築墨線維持空間結構，結合豐富透明色洗、材料筆觸與留白，呈現成熟建築水彩。 | 1.0.0 | 正式套件、雙語Prompt、原圖與縮圖已歸檔 | 未安裝 | 未安裝／未發布 Hub |
+| YSU-SKILL-028 | 逐格角色動畫製作 / Sprite Animation Production；核可角色→動作→逐格修復→QA→交付 | 1.0.0 | 22 檔正式套件、雙語 Prompt、原圖及來源版本已歸檔；回下載 hash 通過 | 未安裝 | 未安裝／未發布 Hub；方法通過、動畫／引擎未測 |
 
 
 ## YSU-SKILL-001 — Scientific Interactive Simulator
@@ -629,6 +630,7 @@ SHA-256：8608b2c97fa5ddc1d5fca465fbd50abce6543a22f44c8fc90c8e1e540acae4b3
 | YSU-SKILL-025 | image-style | 風格轉譯 / Style transfer | painting-illustration | 彩墨版印外觀 / Ink-print appearance | 墨線; 平面色層; 敘事 |
 | YSU-SKILL-026 | image-style | 風格轉譯 / Style transfer | painting-illustration | 水彩 / Watercolor | 水彩; 人物; 時尚插畫; 斷線; 留白 |
 | YSU-SKILL-027 | image-style | 風格轉譯 / Style transfer | painting-illustration | 水彩 / Watercolor | 水彩; 建築; 空間; 透明色洗; 材料 |
+| YSU-SKILL-028 | character-design | 角色動畫製作 / Character animation production | — | — | ANIMATION; SPRITE; WORKFLOW; GAME_ASSET |
 | YSU-PENDING-001 | education | 科學解說 / Science communication | — | — | 教學; 影片 |
 
 
@@ -912,4 +914,52 @@ SHA-256：1aeb08b818cc372f906f57e98e3f767e528741f9177fd729f63b23cecfb4baba
 - SSF-B04-13「生活街景墨線水彩」：使用者同意與 WC-B 的子風格關係分析，但目前因管理與差異测试需求先待定。暫停後續生成、合併與正式打包，保留原參考／分析／歷史測試；待找到更合適目標圖再決定。這裡的風格13不等於既有 YSU-SKILL-013 動物角色套件。
 - WC-C 暫停，等待真正最後喜歡的圖片；14／15撤回狀態不變。
 - 本次遵循既有 Factory 封裝、原參考縮圖與 Tracker 同步指示；完整原圖及套件保持私人。Hub 未發布，平台未安裝。
+
+## YSU-SKILL-028 — 逐格角色動畫製作 / Sprite Animation Production
+
+Skill ID：`ysu-sprite-animation-production`；版本 **1.0.0**。  
+從核可角色規劃、製作、修正並交付一致的逐格動畫；跨專案、跨 Agent，保留角色與畫法，控制定位、時間、接觸與循環。
+
+Tracker Metadata:
+- Category: GAME / CHARACTER
+- Lifecycle: Approved
+- Validation: Untested
+- Version: 1.0.0
+- Graphic References: 1
+- Drive: ARCHIVED
+- ChatGPT: NOT_INSTALLED
+- Codex: NOT_INSTALLED
+- Origin Project:
+- Origin Conversation:
+- Origin Conversation URL:
+- Locator Status: UNLOCATED
+- Next Action: 以可讀核可角色參考完成一個小型動作實測；按需求驗證播放、目標尺寸及引擎接入。
+- Canonical Drive: https://drive.google.com/drive/folders/1UWhdu91LsZ-De98NkFlXywMLnvrKC_CU
+
+分類：角色設計 / Character Design → 角色動畫製作；tags：ANIMATION、SPRITE、WORKFLOW、GAME_ASSET。這是製作方法，不新增美術風格家族。
+
+Master：**Approved**；Method Review：Completed；Package QA：Passed；Animation / Engine：Untested。  
+使用者 2026-10-02 13:34 America/Los_Angeles：「可以 請正式打包」。批准範圍為通用方法與 instruction/reference 封裝；不推成角色身份、動畫成品、安裝或發布批准。
+
+- [正式資料夾](https://drive.google.com/drive/folders/1UWhdu91LsZ-De98NkFlXywMLnvrKC_CU)（從 00_PENDING 移出，原 folder ID 不變）。
+- [SKILL.md](https://drive.google.com/file/d/1b6xk_o3Mf6oeJt5vevsa2yJQtjkWupya/view?usp=drivesdk)；[README](https://drive.google.com/file/d/1onC_pRJv8A3b2xdjZL9JdAK9Tzo20dkR/view?usp=drivesdk)；[雙語 Prompt](https://drive.google.com/file/d/1AdGJVNSIpkLmlJiCaCEsFxDGaClKOBNb/view?usp=drivesdk)。
+- [完整 ZIP](https://drive.google.com/file/d/1ab5fw294Trv9XKaiAIzmLRSwW58GWHsJ/view?usp=drivesdk)：394114 bytes；SHA-256 `27fb7e45c40b1826050dd03f5882b1020b81d688c8234cff1c2200c7c0e4fa20`。22 檔，標準七檔、完整方法、7 組中英模板、基本 JSON Schema、示例、QA 與原 JPEG。
+- [來源版本檔](https://drive.google.com/file/d/1TuDLnsvI49dTza3ci9YkDKXj7LFxPrg3/view?usp=drivesdk)；commit `3a7f1f7f57eae133774ea55df9bc49ee078227bd`。私人 Factory Git bundle；未核實專用 GitHub Skill repo，非 installed Skill／軟體 production release。
+- [原始圖 SOURCE](https://drive.google.com/drive/folders/1e0QVMeEsdrhykX4yYR_1xae3EumvnM5A)；[私人原圖縮圖](https://drive.google.com/file/d/1sIfTRSntsFSZwfd6Y9UmP4ALN1QtC7yX/view?usp=drivesdk)；S01 為審查者 Partial / Useful Element，非目標角色或已核可動畫。
+- [review.2 歷史](https://drive.google.com/drive/folders/1Xu3MXHnjHj7NAJdrr3XINT6ERljINJRq)；9 份審查檔、原 JPEG 的既有 ID／檔名／大小保留，中央文件更新前快照同存。
+- [PACKAGE_QA](https://drive.google.com/file/d/1CuiFCIP29aevrIDIcZJ3jt5kGNMuRZcd/view?usp=drivesdk)：28 項封裝／Schema／示例檢查通過；獨立方法與封裝審查完成。ZIP 回下載 SHA-256／CRC／逐檔 hash 及 bundle verify 通過。沒有動畫／PNG↔sheet／目標尺寸／引擎實測。
+
+來源缺口：2026-08-29 原上傳 JPEG 已實看並歸檔，文章全文與兩套現行 YSU Skill 已讀；歷史「AI Sprite Bible／Sprite Animation Maker」仍只有檢索摘錄，完整 transcript／可靠原對話名稱／URL 未取回。管理對話為 Style Skill Factory — Master Control。不能標為完整 final-state 原文已讀。
+
+使用方式：接手者下載完整 ZIP 並讀 SKILL.md，提供核可角色圖、動作／方向／起終狀態、目標尺寸與本次授權。按任務取用方法，優先原生格式，技術選擇由 Agent 處理；不因調用而自行開發 App 或改遊戲。正式導出與圖片品質仍需每案 QA。
+
+2026-10-02 14:18 PDT：使用者要求同步 Tracker 並上傳縮圖，授權發布本 Skill 的索引及 S01 原圖衍生 720px 縮圖。此授權取代前次封裝時「僅私人 Master」的發布範圍；完整原圖、套件與其餘資料維持私人，Hub 未發布。套件 ZIP／HUB_METADATA 為先前核可快照，新的封面公開範圍與實際發布結果另記 COVER_SELECTION.md／TRACKER_RELEASE.json，不改方法或驗證狀態。PENDING 其餘三份 intake 保留。
+
+
+## Sprite 套件定位表
+
+| ID | slug | canonical folder ID | SKILL.md file ID | package ZIP file ID |
+|---|---|---|---|---|
+| YSU-SKILL-028 | `ysu-sprite-animation-production` | `1UWhdu91LsZ-De98NkFlXywMLnvrKC_CU` | `1b6xk_o3Mf6oeJt5vevsa2yJQtjkWupya` | `1ab5fw294Trv9XKaiAIzmLRSwW58GWHsJ` |
+
 
