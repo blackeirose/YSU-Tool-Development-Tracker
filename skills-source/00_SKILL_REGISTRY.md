@@ -366,8 +366,8 @@ Tracker Metadata:
 - Canonical Drive: https://drive.google.com/drive/folders/11D4Gwnl_fWt44hxYvtYesJU2dJWU4XhC
 
 中央資料夾：https://drive.google.com/drive/folders/11D4Gwnl_fWt44hxYvtYesJU2dJWU4XhC  
-SKILL.md：https://drive.google.com/file/d/1R6fPcxX21wTX5y-4NT3Hy4CAW6kkykbw/view?usp=drivesdk  
-完整套件：https://drive.google.com/file/d/1oRrH12CH5B-C83WV3hjjHmDLJbHttim2/view?usp=drivesdk  
+SKILL.md：[讀取指令](https://drive.google.com/file/d/1R6fPcxX21wTX5y-4NT3Hy4CAW6kkykbw/view?usp=drivesdk)
+完整套件：[下載ZIP](https://drive.google.com/file/d/1oRrH12CH5B-C83WV3hjjHmDLJbHttim2/view?usp=drivesdk)
 套件：YSU-SKILL-015_ysu-torn-paper-worlds_v1.0.1.zip；8166035 bytes  
 SHA-256：96380ffbcdde84df8a299ad66506d35dc2ff63f66060e66f8bd64c49a5ab1aa1  
 縮圖：P02-011，https://drive.google.com/file/d/1XdzVO5Yfm2W92S6Z-8FjvpXVnsIYQBOk/view?usp=drivesdk。採原始參考圖，不使用本輪測試圖；公開Tracker僅720px封面，其餘原圖與套件保留原私人權限。
@@ -689,8 +689,8 @@ Tracker Metadata:
 - Canonical Drive: https://drive.google.com/drive/folders/1rdBDnrSCn7HecIuUYLK8q2lwCLgmfyVy
 
 中央資料夾：https://drive.google.com/drive/folders/1rdBDnrSCn7HecIuUYLK8q2lwCLgmfyVy  
-SKILL.md：https://drive.google.com/file/d/1FDtAqD3nBPMJWbCESW5ncPtIVd9F5J1n/view?usp=drivesdk  
-完整套件：https://drive.google.com/file/d/1VRV2xd3rIvy773Lt9NXnc-Pc774O6KC4/view?usp=drivesdk  
+SKILL.md：[讀取指令](https://drive.google.com/file/d/1FDtAqD3nBPMJWbCESW5ncPtIVd9F5J1n/view?usp=drivesdk)
+完整套件：[下載ZIP](https://drive.google.com/file/d/1VRV2xd3rIvy773Lt9NXnc-Pc774O6KC4/view?usp=drivesdk)
 套件：YSU-SKILL-022_ysu-torn-paper-levitation_v1.0.0.zip；10431211 bytes  
 SHA-256：c3c19e522e8f1b03b95ded6db62ddb4200e81b504f2619e0230e304b4c73d4a1  
 縮圖：R11，https://drive.google.com/file/d/1vQ3rgccnAxds7CV4T_vGgz9L58fDHX_w/view?usp=drivesdk。採原始參考圖，不使用本輪測試圖；公開Tracker僅720px封面，其餘原圖與套件保留原私人權限。
@@ -725,8 +725,8 @@ Tracker Metadata:
 - Canonical Drive: https://drive.google.com/drive/folders/1zpXV6yyLo-2AZNRbJTXWMGyDNJwyQ4t1
 
 中央資料夾：https://drive.google.com/drive/folders/1zpXV6yyLo-2AZNRbJTXWMGyDNJwyQ4t1  
-SKILL.md：https://drive.google.com/file/d/1EtUghbgJJwauz1Z6ehQD5wmSux0RTV_I/view?usp=drivesdk  
-完整套件：https://drive.google.com/file/d/1oOfpusmLNhAY0AQOZYN6FR6hUcbMZKVp/view?usp=drivesdk  
+SKILL.md：[讀取指令](https://drive.google.com/file/d/1EtUghbgJJwauz1Z6ehQD5wmSux0RTV_I/view?usp=drivesdk)
+完整套件：[下載ZIP](https://drive.google.com/file/d/1oOfpusmLNhAY0AQOZYN6FR6hUcbMZKVp/view?usp=drivesdk)
 套件：YSU-SKILL-023_ysu-muted-fragmented-paint_v1.0.0.zip；11409269 bytes  
 SHA-256：ba93f379746ea371de1cda6d7cbff81efccb3e1b6827bf9534649b968be82704  
 縮圖：R02，https://drive.google.com/file/d/1mXAihu33pTND9sFPB24iKsbV-jPTuIMi/view?usp=drivesdk。採原始參考圖，不使用本輪測試圖；公開Tracker僅720px封面，其餘原圖與套件保留原私人權限。
@@ -761,8 +761,8 @@ Tracker Metadata:
 - Canonical Drive: https://drive.google.com/drive/folders/1X7kwfO0YbMF2Vn-Jzpi02JB1-Gf9KSxN
 
 中央資料夾：https://drive.google.com/drive/folders/1X7kwfO0YbMF2Vn-Jzpi02JB1-Gf9KSxN  
-SKILL.md：https://drive.google.com/file/d/1EX4k4CE1msvDnU8fEvBForGpIC9_ZS0A/view?usp=drivesdk  
-完整套件：https://drive.google.com/file/d/1Yf6wlQZaPRic2g0u7kBCduVUByWq0JL2/view?usp=drivesdk  
+SKILL.md：[讀取指令](https://drive.google.com/file/d/1EX4k4CE1msvDnU8fEvBForGpIC9_ZS0A/view?usp=drivesdk)
+完整套件：[下載ZIP](https://drive.google.com/file/d/1Yf6wlQZaPRic2g0u7kBCduVUByWq0JL2/view?usp=drivesdk)
 套件：YSU-SKILL-024_ysu-photo-watercolor-diptych_v1.0.0.zip；12917669 bytes  
 SHA-256：683ce5ab29ab97ce628c4a72a9453c6cb39724f135781739d788f319ecd41201  
 縮圖：R01，https://drive.google.com/file/d/1A4U8gOHW3HGALnFjEucCMdtFBcxFFXyN/view?usp=drivesdk。採原始參考圖，不使用本輪測試圖；公開Tracker僅720px封面，其餘原圖與套件保留原私人權限。
@@ -797,8 +797,8 @@ Tracker Metadata:
 - Canonical Drive: https://drive.google.com/drive/folders/1BGdo--zegqS9d4KF0CWKqmUdSD7-3mk3
 
 中央資料夾：https://drive.google.com/drive/folders/1BGdo--zegqS9d4KF0CWKqmUdSD7-3mk3  
-SKILL.md：https://drive.google.com/file/d/1qdX15rOMgqe79bXheXCSLGYkOQEImkjZ/view?usp=drivesdk  
-完整套件：https://drive.google.com/file/d/17i2H3TYLMhqtZVflG96Gf51djaKj_Esh/view?usp=drivesdk  
+SKILL.md：[讀取指令](https://drive.google.com/file/d/1qdX15rOMgqe79bXheXCSLGYkOQEImkjZ/view?usp=drivesdk)
+完整套件：[下載ZIP](https://drive.google.com/file/d/17i2H3TYLMhqtZVflG96Gf51djaKj_Esh/view?usp=drivesdk)
 套件：YSU-SKILL-025_ysu-chromatic-ink-print_v1.0.0.zip；20832751 bytes  
 SHA-256：c1f960684c5c77027605439a896f84f0f1648aa79247f2a7446c0f140a336705  
 縮圖：R04，https://drive.google.com/file/d/1VIZl2XPGdjJCxsu1scbsCOFjzvhL9wL1/view?usp=drivesdk。採原始參考圖，不使用本輪測試圖；公開Tracker僅720px封面，其餘原圖與套件保留原私人權限。
