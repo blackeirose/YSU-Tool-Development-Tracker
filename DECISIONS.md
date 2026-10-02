@@ -399,3 +399,19 @@ Drive organization was also completed under the owner's preceding instruction: a
 The owner confirmed R06 as the public Tracker cover for YSU-SKILL-012 (電影墨格 / Cinematic Inkframe), replacing the grayscale science-fiction wash collage that did not represent its canonical mixed-media comic criteria. Source: existing package reference R06.png, Drive file `1UhU4AvA3N8ZqCIAamwtUfqOyAKKTbcJf`. Publish its complete composition as a metadata-stripped 720px WebP derivative at `assets/skill-thumbs/ysu-cinematic-inkframe-r06.webp`. A new asset path avoids reusing the old cached cover URL.
 
 Approval covers this selected public thumbnail only; it does not publish the remaining reference collection or change Skill rules, version, validation status, installation or Hub state. The Skill's canonical text and 11 reference images were consistent; this is a cover-selection correction. The previous asset remains available in Git history/current assets for recovery.
+
+
+## DEC-019 — SFDOT application portrait replaces R06 as Inkframe cover
+
+**Status:** ACTIVE
+**Date:** 2026-10-01 America/Los_Angeles / 2026-10-02 UTC
+
+After reviewing the supplied SFDOT Diego Ramirez character board, the owner approved its upper-right portrait as the public cover for 電影墨格 / Cinematic Inkframe (YSU-SKILL-012). This supersedes DEC-018's active cover selection only. R06 remains an original style reference.
+
+- Original application board: Drive `1Nn_4kGwMOlOLE2NNToAnGjHDkdLxGmcU`, archived beside the canonical package as `EXAMPLE_01_SFDOT_Diego_Ramirez_Character_Board.png`.
+- Source SHA-256: `3c487238adee7037ec7332e85ff485305ab330a8b5977623b949a9439e0e2af2`.
+- Thumbnail: `assets/skill-thumbs/ysu-cinematic-inkframe-sfdot.webp`; Drive `1Q9_9a9S9K38ZXqnmawjZr3v4bAKCHs2k` (`thumbnail.webp`).
+- Crop: original 1448 x 1086 px; bounding box left/top/right/bottom `(948, 0, 1448, 411)`; resized to 720 x 592 px, metadata stripped. No image regeneration.
+- Thumbnail SHA-256: `ddf06c52c2bc602b9382057aad0df0df463dbfab228910b8ad9e87c8c5a16049`.
+
+The full board is an application example, not a new universal specification: character turnaround layout, typography, subject and red/blue palette are not mandatory style rules. Existing canonical Skill text, v0.1.0 ZIP snapshot, reference classifications, validation status and other styles stay unchanged. Public authorization covers the selected portrait derivative; the full board remains in the existing private Drive folder.
