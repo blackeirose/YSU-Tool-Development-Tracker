@@ -363,3 +363,11 @@ The owner requested grouping related styles and Skills under a small number of r
 Six purpose domains cover the current inventory. Architectural interiors, exteriors/landscape and BIM/components are subareas of Architecture & Space. The eight SSF-B02 styles share three families: Painting & Illustration (01/04/06/07), Paper & Fiber (02/03/08), Photography & Realism (05). Watercolor belongs under Painting & Illustration; Gouache remains a distinct medium. Palette, mood, era, composition and subject use tags, not new top-level groups. Prefer 3–5 style families; add only for a recurring distinction not covered by an existing family. Do not create empty groups or infer tested capabilities from a subject tag.
 
 The human-readable `Skill Taxonomy v1` table in the canonical Drive registry owns assignments. `tools/skill-taxonomy.mjs` defines stable IDs/labels and validates assignments; generated `skills.json` carries them as `taxonomy`. Visual mode groups by purpose then style family; filters/search/list/detail use the same data. Existing `category` and v1 provenance are retained for compatibility; taxonomy has its own explicit source. Hub handoff maps `domain_id`, `area`, `style_family_id`, `medium`, `tags` without flattening them into more categories. No Hub publication is implied.
+
+
+## DEC-015 — Style 05 approved rules with deferred image testing
+
+**Status:** ACTIVE
+**Date:** 2026-10-02 UTC (2026-10-01 America/Los_Angeles)
+
+The owner authorized writing Style 05's revised analysis into the Skill now and testing later when suitable personal photos are available. YSU-SKILL-018 v0.2.0 is 靜觀人境攝影 / Contemplative Environmental Portraiture, with Lifecycle Approved and Validation Untested. Approval covers the composition-first instructions/archive; it does not approve test outputs, individual references or runtime installation. Legacy tests do not validate this revision. Preserve the stable slug. Keep it under Photography & Realism with personal-photo/environmental-portraiture area. No new cover is published; the original reference remains private. Case 06 stays Draft pending deeper analysis. This supersedes DEC-013's earlier status for 018 only.

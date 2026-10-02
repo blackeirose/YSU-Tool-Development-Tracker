@@ -228,3 +228,8 @@ The owner approved cases 01, 02, 03, 04, 07 and 08; 05 and 06 require additional
 
 
 Purpose/style taxonomy v1 is generated from the Drive registry (DEC-014): six purpose domains, three currently used style families, and medium/subject tags. All 22 entries have taxonomy; 8 entries have the separate full Tracker Metadata block. The existing category filter remains as a compatibility filter.
+
+
+## Style 05 instruction revision — 2026-10-02 UTC
+
+YSU-SKILL-018 v0.2.0 now describes personal-photo framing and a quiet person–environment relationship. Rules/archive are Approved; current-version image validation is Untested. The prior two unsuitable targets remain historical. Case 06 stays Draft for deeper analysis. No new image cover, UI behavior, runtime Skill installation or Hub publication is part of this metadata refresh.

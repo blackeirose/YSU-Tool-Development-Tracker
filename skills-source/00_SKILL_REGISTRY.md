@@ -1,7 +1,7 @@
 # YSU Skills Registry — 統一管理總表
 
 
-紀錄日期：2026-09-21；最新更新：2026-10-01。Owner：YuCheng Su。  
+紀錄日期：2026-09-21；最新更新：2026-10-02。Owner：YuCheng Su。  
 管理入口：Google Drive / My Drive / AI Works / 06_Skills。  
 資料夾：https://drive.google.com/drive/folders/1P6b3rLGzrdev1Lh6tZVGAWnPcNkNYoV_
 
@@ -35,7 +35,7 @@
 | YSU-SKILL-015 | 裂紙浮空 / Floating Torn-Paper Worlds；以纖維裂紙、懸浮紙層與光影重構場景；原圖允許時，以疏朗留白營造空氣感與意境。 | 1.0.0 | 正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔 | 未安裝 | 未安裝／未發布 Hub |
 | YSU-SKILL-016 | 柔絨羊毛氈浮雕 / Soft Felt Relief；以短絨羊毛氈、刺繡細線與柔和低浮雕，把複雜內容化為安靜、可觸摸的敘事插畫。 | 1.0.0 | 正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔 | 未安裝 | 未安裝／未發布 Hub |
 | YSU-SKILL-017 | 青墨琥珀復古動畫 / Teal & Amber Ink Anime；以精密動畫墨線、青黑暗部和琥珀亮部呈現濃密但可讀的敘事場景。 | 1.0.0 | 正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔 | 未安裝 | 未安裝／未發布 Hub |
-| YSU-SKILL-018 | 靜觀自然光電影寫實 / Contemplative Natural-Light Cinema；以可信材質、方向自然光和安靜明暗組織呈現原敘事，保留超現實內容的同時避免遊戲宣傳渲染。 | 0.1.0-review.1 | 00_PENDING 草稿；05／06 需修正 | 未安裝 | 未安裝／未發布 Hub |
+| YSU-SKILL-018 | 靜觀人境攝影 / Contemplative Environmental Portraiture；以取景距離、人物尺度、視線和留白，呈現個人與環境之間安靜的關係；光色與材質為輔。 | 0.2.0 | 正式歸檔；規則已確認／待實測 | 未安裝 | 未安裝／未發布 Hub |
 | YSU-SKILL-019 | 懷舊膠彩敘事海報 / Nostalgic Gouache Narrative；用有印刷紙感的動畫背景膠彩、明確色塊及敘事留白，保留原圖故事的情緒與可讀性。 | 0.1.0-review.1 | 00_PENDING 草稿；05／06 需修正 | 未安裝 | 未安裝／未發布 Hub |
 | YSU-SKILL-020 | 建築墨線色塊拼貼 / Architectural Ink & Color Collage；將原圖空間結構轉成精密透視墨線、碎片色面與受控制潑彩交疊的建築感插畫。 | 1.0.0 | 正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔 | 未安裝 | 未安裝／未發布 Hub |
 | YSU-SKILL-021 | 攝影 × 精切紙雕雙區海報 / Photo × Precision-Paper Diptych；每張目標各成一張 3:4 直式海報，上半原圖、下半紙雕轉譯，各占嚴格 50%。 | 1.0.0 | 正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔 | 未安裝 | 未安裝／未發布 Hub |
@@ -442,34 +442,35 @@ SHA-256：c595b0b8cd3eb4fe03b3387a739b1c67c010c8a921aa675c13d1b7e1e4414917
 來源：https://drive.google.com/drive/folders/1wRhQdDtpVycBS7amIOnKxnIZFUk77S_8。完整歷史聊天未提供，未虛構對話 URL。Validation = Partial：僅兩個指定目標的美術測試，跨平台、逐字文字與所有題材未驗證。無安裝、Hub 發布或全參考圖公开授權。此 instruction/reference 套件尚未建立獨立 GitHub Skill source coverage。
 
 
-## YSU-SKILL-018 — 靜觀自然光電影寫實 / Contemplative Natural-Light Cinema
+## YSU-SKILL-018 — 靜觀人境攝影 / Contemplative Environmental Portraiture
 
 Skill ID：ysu-contemplative-cinema  
 批次：SSF-B02-05。
 
-以可信材質、方向自然光和安靜明暗組織呈現原敘事，保留超現實內容的同時避免遊戲宣傳渲染。  
-Directional natural light, believable materials and restrained color create quiet cinematic realism.
+以取景距離、人物尺度、視線和留白，呈現個人與環境之間安靜的關係；光色與材質為輔。  
+Quiet environmental portraits shaped by framing, human scale, gaze and negative space; light and color support the relationship.
 
 Tracker Metadata:
 - Category: STYLE
-- Lifecycle: Draft
-- Validation: Partial
-- Version: 0.1.0
+- Lifecycle: Approved
+- Validation: Untested
+- Version: 0.2.0
 - Graphic References: 16
-- Drive: UNVERIFIED
+- Drive: ARCHIVED
 - ChatGPT: NOT_INSTALLED
 - Codex: NOT_INSTALLED
 - Origin Project:
 - Origin Conversation:
 - Origin Conversation URL:
 - Locator Status: UNLOCATED
-- Next Action: 需額外修正；等待使用者指出具體方向，不能列為通過。
-- Canonical Drive: 
+- Next Action: 規則已確認；待適合個人照片實測。逐圖分類未確認；未安裝、未發布 Hub。
+- Canonical Drive: https://drive.google.com/drive/folders/1hMuel2LZ14EhfJiuX7IMBfvTgbH2ctrp
 
-草稿位置：https://drive.google.com/drive/folders/1vsF8Wd7gvGoCwKz2zBXOBBDHqvOVOStW。修正中，沒有正式歸檔或核准日期。YSU-SKILL-018／019 僅為管理編號，不能當作完成狀態。
+2026-10-02 UTC（2026-10-01 洛杉磯）：使用者允許將攝影構圖、人境關係與安靜感的分析先寫入 Skill，日後再測。Approved 僅代表本版規則與存檔批准；Validation = Untested。新版無測試圖；舊 A/B 只留作適配不足紀錄。保留原構圖為預設，已授權重構另有分支。
 
-來源：https://drive.google.com/drive/folders/1riMZjkGfsicV65qo3d5-_s2I6z5Vxr_R。完整歷史聊天未提供，未虛構對話 URL。Validation = Partial：僅兩個指定目標的美術測試，跨平台、逐字文字與所有題材未驗證。無安裝、Hub 發布或全參考圖公开授權。此 instruction/reference 套件尚未建立獨立 GitHub Skill source coverage。
+來源：https://drive.google.com/drive/folders/1riMZjkGfsicV65qo3d5-_s2I6z5Vxr_R。完整原來源聊天未定位；Master Control 後期決策已納入。16 張參考圖的逐圖分類未確認，不由規則批准推導。原 P05-015 私有縮圖保留；未授權新增公開封面。舊名稱：靜觀自然光電影寫實 / Contemplative Natural-Light Cinema。
 
+套件：https://drive.google.com/file/d/1lgn0PyJnayPQ_H0Vw4C08t_cor0jvLue/view 。私人來源同步未完成，已保存可回復的版本紀錄；不宣稱平台安裝或 GitHub Skill source release。
 
 ## YSU-SKILL-019 — 懷舊膠彩敘事海報 / Nostalgic Gouache Narrative
 
@@ -601,8 +602,13 @@ SHA-256：8608b2c97fa5ddc1d5fca465fbd50abce6543a22f44c8fc90c8e1e540acae4b3
 | YSU-SKILL-015 | image-style | 風格轉譯 / Style transfer | paper-fiber | 紙藝 / Paper art | 裂紙; 浮空; 留白 |
 | YSU-SKILL-016 | image-style | 風格轉譯 / Style transfer | paper-fiber | 纖維 / Fiber art | 羊毛氈; 浮雕 |
 | YSU-SKILL-017 | image-style | 風格轉譯 / Style transfer | painting-illustration | 墨線 / Ink | 復古動畫; 青墨; 琥珀 |
-| YSU-SKILL-018 | image-style | 風格轉譯 / Style transfer | photography-realism | 電影寫實 / Cinematic realism | 自然光 |
+| YSU-SKILL-018 | image-style | 個人照片與環境人像 / Personal photos & environmental portraiture | photography-realism | 攝影構圖 / Photographic composition | 個人照片、人境關係、取景、安靜 |
 | YSU-SKILL-019 | image-style | 風格轉譯 / Style transfer | painting-illustration | 膠彩 / Gouache | 懷舊; 敘事海報 |
 | YSU-SKILL-020 | image-style | 風格轉譯 / Style transfer | painting-illustration | 混合媒材 / Mixed media | 建築; 墨線; 拼貼 |
 | YSU-SKILL-021 | image-style | 風格轉譯 / Style transfer | paper-fiber | 紙藝 / Paper art | 紙雕; 攝影; 雙區海報 |
 | YSU-PENDING-001 | education | 科學解說 / Science communication | — | — | 教學; 影片 |
+
+
+## SSF-B02 最新修訂 — 2026-10-02 UTC
+
+05：規則與歸檔已確認，v0.2.0 Approved / Untested；以個人照片、攝影構圖與人境關係為核心。06：使用者要求再次深入分析媒材及敘事構圖，保持 Draft / QA Review；本輪分析不等於新版規則批准。先前 05／06 同列待修正的紀錄屬歷史狀態。

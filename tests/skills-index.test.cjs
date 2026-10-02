@@ -131,7 +131,7 @@ test('legacy entries with no metadata block still parse completely',()=>{
   assert.ok(legacy[field],`${field} still derived`);
 });
 
-test('the live index includes the approved SSF-B02 batch and two revision drafts',()=>{
+test('the live index includes the SSF-B02 rules approval independently from image validation',()=>{
  assert.equal(live.counts.registered,21);
  assert.equal(live.counts.pending,1);
  assert.equal(live.counts.total,22);
@@ -142,10 +142,13 @@ test('the live index includes the approved SSF-B02 batch and two revision drafts
   const s=live.skills.find(s=>s.id==='YSU-SKILL-'+id);
   assert.equal(s.lifecycle,'Approved');assert.equal(s.validation,'Partial');assert.equal(s.version,'1.0.0');
  }
- for(const id of ['018','019']){
+ for(const id of ['019']){
   const s=live.skills.find(s=>s.id==='YSU-SKILL-'+id);
   assert.equal(s.lifecycle,'Draft');assert.equal(s.validation,'Partial');
  }
+ const revised=byId(live,'YSU-SKILL-018');
+ assert.equal(revised.lifecycle,'Approved');assert.equal(revised.validation,'Untested');assert.equal(revised.version,'0.2.0');
+ assert.match(revised.name,/靜觀人境攝影/);
  assert.equal(live.metadata_contract.version,'v1');
  assert.deepEqual(live.metadata_contract.precedence,
   ['explicit Tracker Metadata block','deterministic legacy parser','null / Unknown']);

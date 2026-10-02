@@ -17,16 +17,16 @@
     "source": "Skill Taxonomy v1 table in canonical Drive registry"
   },
   "$comment": "GENERATED FILE — do not edit by hand. Source: Google Drive AI Works/06_Skills/00_SKILL_REGISTRY.md. Regenerate with `npm run skills:index`.",
-  "generated_at": "2026-10-01T23:53:16.102Z",
+  "generated_at": "2026-10-02T04:11:50.651Z",
   "source": {
     "file": "skills-source/00_SKILL_REGISTRY.md",
     "drive_file_id": "1g6Io9lD4YwkDaX5_OUqssvrcEyuCF-1P",
-    "registry_updated": "2026-10-01"
+    "registry_updated": "2026-10-02"
   },
   "registry": {
     "title": "YSU Skills Registry — 統一管理總表",
     "recorded": "2026-09-21",
-    "updated": "2026-10-01",
+    "updated": "2026-10-02",
     "owner": "YuCheng Su",
     "management_conversation": "YSU Skills 管理中心",
     "drive_folder": "https://drive.google.com/drive/folders/1P6b3rLGzrdev1Lh6tZVGAWnPcNkNYoV_",
@@ -1381,22 +1381,22 @@
     },
     {
       "id": "YSU-SKILL-018",
-      "name": "靜觀自然光電影寫實 / Contemplative Natural-Light Cinema",
+      "name": "靜觀人境攝影 / Contemplative Environmental Portraiture",
       "slug": "ysu-contemplative-cinema",
       "category": "STYLE",
-      "lifecycle": "Draft",
-      "validation": "Partial",
-      "version": "0.1.0",
-      "version_note": "0.1.0-review.1",
-      "description": "以可信材質、方向自然光和安靜明暗組織呈現原敘事，保留超現實內容的同時避免遊戲宣傳渲染。",
+      "lifecycle": "Approved",
+      "validation": "Untested",
+      "version": "0.2.0",
+      "version_note": "0.2.0",
+      "description": "以取景距離、人物尺度、視線和留白，呈現個人與環境之間安靜的關係；光色與材質為輔。",
       "graphic_reference_count": 16,
       "platform": {
-        "drive": "UNVERIFIED",
+        "drive": "ARCHIVED",
         "chatgpt": "NOT_INSTALLED",
         "codex": "NOT_INSTALLED"
       },
       "platform_notes": {
-        "drive": "00_PENDING 草稿；05／06 需修正",
+        "drive": "正式歸檔；規則已確認／待實測",
         "chatgpt": "未安裝／未發布 Hub",
         "codex": "未安裝"
       },
@@ -1405,12 +1405,12 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": "需額外修正；等待使用者指出具體方向，不能列為通過。",
-      "canonical_drive": "https://drive.google.com/drive/folders/1vsF8Wd7gvGoCwKz2zBXOBBDHqvOVOStW",
+      "next_action": "規則已確認；待適合個人照片實測。逐圖分類未確認；未安裝、未發布 Hub。",
+      "canonical_drive": "https://drive.google.com/drive/folders/1hMuel2LZ14EhfJiuX7IMBfvTgbH2ctrp",
       "links": [
         {
           "label": "Canonical Drive folder",
-          "url": "https://drive.google.com/drive/folders/1vsF8Wd7gvGoCwKz2zBXOBBDHqvOVOStW"
+          "url": "https://drive.google.com/drive/folders/1hMuel2LZ14EhfJiuX7IMBfvTgbH2ctrp"
         }
       ],
       "registered": true,
@@ -1433,7 +1433,7 @@
         "locator_status": "explicit",
         "related_conversations": "derived",
         "next_action": "explicit",
-        "canonical_drive": "derived",
+        "canonical_drive": "explicit",
         "links": "derived",
         "registered": "derived",
         "platform.drive": "explicit",
@@ -1445,12 +1445,12 @@
         "version": "1.0",
         "domain_id": "image-style",
         "domain": "圖像與風格 / Image & Style",
-        "area": "風格轉譯 / Style transfer",
+        "area": "個人照片與環境人像 / Personal photos & environmental portraiture",
         "style_family_id": "photography-realism",
         "style_family": "攝影與寫實 / Photography & Realism",
-        "medium": "電影寫實 / Cinematic realism",
+        "medium": "攝影構圖 / Photographic composition",
         "tags": [
-          "自然光"
+          "個人照片、人境關係、取景、安靜"
         ],
         "source": "explicit registry taxonomy"
       }
