@@ -379,3 +379,13 @@ The owner authorized writing Style 05's revised analysis into the Skill now and 
 **Date:** 2026-10-01 America/Los_Angeles / 2026-10-02 UTC
 
 The owner accepted the deeper Style 06 analysis and authorized saving the Skill now, with image testing later. YSU-SKILL-019 v0.2.0 is 懷舊手繪動畫敘事海報 / Nostalgic Hand-Painted Anime Narrative Poster. Lifecycle Approved covers instructions/archive; Validation Untested applies to this revised version. Keep stable slug ysu-nostalgic-gouache-narrative and former name as an alias. The revised workflow separates rendering-only transfer from authorized narrative reconstruction and uses opaque painted color / animation-style drawing rather than asserting Taiwanese 膠彩 as its medium. All eight SSF-B02 profiles now have approved rules; 05/06 have deferred image tests and unconfirmed per-image classification. No runtime installation, Hub publication or new public cover. This supersedes earlier draft-state notes for 019; other profiles are unchanged.
+
+
+## DEC-017 — Complete Style 05/06 public reference covers
+
+**Status:** ACTIVE
+**Date:** 2026-10-01 America/Los_Angeles / 2026-10-02 UTC
+
+The owner reported that Style 05 and 06 thumbnails were missing from Tracker and requested completing the existing original-reference covers. Publish only the chosen P05-015 and P06-020 images as metadata-stripped 720px WebP derivatives under DEC-012. This extends the prior six-cover authorization to all eight SSF-B02 styles and supersedes the no-new-public-cover limitations in DEC-015/016. The private originals/full reference collections remain private. This does not approve per-image classifications, revised image-test results, runtime installation or Hub publishing. Both revised profiles remain Approved / Untested.
+
+Drive organization was also completed under the owner's preceding instruction: all eight canonical folders retain their IDs under three style families in 01_STYLES; original source folders are nested within each canonical folder; batch history is in 90_ARCHIVE; 00_PENDING was independently verified empty. The source registry has the current storage map. Historical preparation-only and pending-correction notes above are not current state.

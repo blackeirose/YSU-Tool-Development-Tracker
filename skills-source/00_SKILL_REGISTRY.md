@@ -7,7 +7,7 @@
 
 
 本表是已登錄 YSU 自製 Skills 的管理索引，不是帳號中所有第三方 Skills 的盤點。  
-目前 21 個已登錄項目：既有 13 項，加上本批 6 套已核准風格及 2 套待修正草稿。影片群組維持原 9 項；新動物角色 Skill 為跨遊戲／動畫用途的獨立角色設定套件，不是電影流程必經 Skill。此計數不是 21 個平台已安裝／runtime 已驗證 Skills。  
+目前 21 個已登錄項目：既有 13 項，加上本批 8 套規則已核准風格（05／06 新版待實測）。影片群組維持原 9 項；新動物角色 Skill 為跨遊戲／動畫用途的獨立角色設定套件，不是電影流程必經 Skill。此計數不是 21 個平台已安裝／runtime 已驗證 Skills。  
 管理對話：YSU Skills 管理中心（使用者於 2026-09-21 指定；不代表已操作聊天 UI 更名）。  
 以下未加新日期的來源核對段落保留 2026-09-21 歷史；該次接續核對已讀三份中央文件、兩個 Skill 的歷史盤點及影片 VALIDATION 全文，並新增來源核對紀錄與本機取回指令；兩套完整來源仍未取得。本機安裝版本均為歷史紀錄，未直讀使用者電腦或重新安裝。  
 下方 YSU-SKILL-001 段落保留首次移交紀錄；該段「本輪」指首次歸檔，不是本次來源核對。本次沒有重跑 Simulator 套件或行為驗證。
@@ -110,7 +110,7 @@ File ID：`140EOfOmvqC7H9H_UEGdlmCzePs9fOqhW`。狀態：待本機 Codex 執行�
 ## 不列入現役 Skill 計數
 
 
-Style Skill Factory 已退役；其測試套件與尚未完成的六個風格案例不算現役完成 Skills。  
+舊 Style Skill Factory 軟體已退役；早期未完成的六個對話案例不計為已完成 Skills。這不排除本次已正式登錄的 SSF-B02 八種風格（YSU-SKILL-014～021）。  
 Gems、Custom GPT Instructions、Visual Bibles、網站工具、pyRevit 按鈕與第三方安裝 Skills 分類不同，不能直接混入上述自製 Skill 數量。
 
 
@@ -618,3 +618,31 @@ SHA-256：8608b2c97fa5ddc1d5fca465fbd50abce6543a22f44c8fc90c8e1e540acae4b3
 ## SSF-B02 06 規則批准 — 2026-10-02 UTC
 
 06 v0.2.0 已按使用者確認寫入並歸檔。至此八案皆有 Approved 規則；01／02／03／04／07／08 維持 Partial，05／06 新版為 Untested。保留原始參考圖縮圖、現有三個風格大類。先前 06 待修正與待確認分析為歷史階段；本批未自動安裝或發布 Hub。
+
+
+## 2026-10-02 UTC — SSF-B02 整理完成
+
+八套正式風格已移入 [01_STYLES｜風格套件](https://drive.google.com/drive/folders/1Etnn0hzNsjyBah9NAto398HoI5sFvsfh)，依繪畫與插畫、紙藝與纖維、攝影與寫實分組。每個正式資料夾以「固定 Skill ID｜中文名稱｜English Name」命名，內含原來源 SOURCE 子資料夾。機器 slug、Drive ID、套件版本及現有連結保持不變。
+
+[批次管理與歷史資料](https://drive.google.com/drive/folders/19TPM7POlLFDAluG3ULTUmquFFEnqXS9g) 集中保存 Master ZIP、Batch Tracker、舊 REVIEW ZIP／PDF、重析與整理前快照。PENDING 回讀為 0 個項目，等待下一批；05／06 規則已批准／待實測，不再留在 PENDING。歸檔不等於驗證、安裝或 Hub 發布。
+
+| 編號 | 風格 | 大類 | 位置 |
+|---|---|---|---|
+| 01 | 靛金細描敘事插畫 / Indigo & Gold Editorial Illustration | 繪畫與插畫 / Painting & Illustration | [正式套件](https://drive.google.com/drive/folders/1g7ignAl0kRIT1jHLZtaKdwq-yTSfKppw) · [原始來源](https://drive.google.com/drive/folders/15Tkwd3v5qlxlgxhzDgIplWxWXa6prq7O) |
+| 02 | 裂紙浮空 / Floating Torn-Paper Worlds | 紙藝與纖維 / Paper & Fiber | [正式套件](https://drive.google.com/drive/folders/11D4Gwnl_fWt44hxYvtYesJU2dJWU4XhC) · [原始來源](https://drive.google.com/drive/folders/1QFzp8nAeWFu8OvAnn_awP76X5BxudnU8) |
+| 03 | 柔絨羊毛氈浮雕 / Soft Felt Relief | 紙藝與纖維 / Paper & Fiber | [正式套件](https://drive.google.com/drive/folders/1ATQWh7DP8tN52fR17uUoXjEyWPbmUix8) · [原始來源](https://drive.google.com/drive/folders/1eq1bQQ7LbYv1XOxPV9jTzToFcHAOTlV6) |
+| 04 | 青墨琥珀復古動畫 / Teal & Amber Ink Anime | 繪畫與插畫 / Painting & Illustration | [正式套件](https://drive.google.com/drive/folders/1uXyFSgS8vKcus6PKl_XV3koMP8d92Imd) · [原始來源](https://drive.google.com/drive/folders/1wRhQdDtpVycBS7amIOnKxnIZFUk77S_8) |
+| 05 | 靜觀人境攝影 / Contemplative Environmental Portraiture | 攝影與寫實 / Photography & Realism | [正式套件](https://drive.google.com/drive/folders/1hMuel2LZ14EhfJiuX7IMBfvTgbH2ctrp) · [原始來源](https://drive.google.com/drive/folders/1riMZjkGfsicV65qo3d5-_s2I6z5Vxr_R) |
+| 06 | 懷舊手繪動畫敘事海報 / Nostalgic Hand-Painted Anime Narrative Poster | 繪畫與插畫 / Painting & Illustration | [正式套件](https://drive.google.com/drive/folders/1ayxmKlBhovOMKLdQPEgusPN71HMyrA1p) · [原始來源](https://drive.google.com/drive/folders/1a74_MdDBKQjPzAhmkXmiUZ5ctBZxzyho) |
+| 07 | 建築墨線色塊拼貼 / Architectural Ink & Color Collage | 繪畫與插畫 / Painting & Illustration | [正式套件](https://drive.google.com/drive/folders/1cvTajsMZjqQASC_fY9J_n-Wg7dgpjg42) · [原始來源](https://drive.google.com/drive/folders/1KVqqng6Yu_g0IDBZWu8HD41OX5AtO948) |
+| 08 | 攝影 × 精切紙雕雙區海報 / Photo × Precision-Paper Diptych | 紙藝與纖維 / Paper & Fiber | [正式套件](https://drive.google.com/drive/folders/1eHHmYuDwHPfn2CGKRI8n1r9jrwegtx4e) · [原始來源](https://drive.google.com/drive/folders/1RkXVLqvmH0u-BlYf60FTwKDnlH2IurPq) |
+
+已驗證 32 項移動／更名的 parent 與名稱；八個來源資料夾 136 個原檔的 ID、名稱、大小一致。未刪除檔案、未改原圖內容；未變更分享權限。正式套件 ZIP 保持原 bytes／版本，包內 P style 名稱及 staging_drive 為當時 intake 歷史，不可用舊路徑重建第二份主檔。最新實際位置由固定 Drive ID、總表與 STORAGE_MAP.json 定位。
+
+本輪更新的是 Drive 歸檔與管理紀錄。公開 Tracker 八案名稱、狀態、分類與 canonical 連結不變，無需網站發布；本輪未執行新 UI 驗收。05／06 原圖縮圖只新增於私人正式資料夾，不追加公開封面授權。
+
+
+## 2026-10-02 UTC — 05／06 Tracker 原始參考縮圖同步
+
+使用者指出「05 06的縮圖沒放上TRACKER」，要求補上既有原圖縮圖。此指示授權 P05-015（YSU-SKILL-018）與 P06-020（YSU-SKILL-019）的 720px WebP 縮圖發布至公開 Tracker／其 GitHub 素材目錄，補足先前六張封面。此後本批八案都有原始參考封面。原圖與完整參考集仍保持私人；不代表逐圖分類、成圖測試、安裝或 Hub 發布批准。05／06 維持 Approved / Untested。先前「不追加公開封面」是此次指示前的歷史限制。
+
