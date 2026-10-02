@@ -371,3 +371,11 @@ The human-readable `Skill Taxonomy v1` table in the canonical Drive registry own
 **Date:** 2026-10-02 UTC (2026-10-01 America/Los_Angeles)
 
 The owner authorized writing Style 05's revised analysis into the Skill now and testing later when suitable personal photos are available. YSU-SKILL-018 v0.2.0 is 靜觀人境攝影 / Contemplative Environmental Portraiture, with Lifecycle Approved and Validation Untested. Approval covers the composition-first instructions/archive; it does not approve test outputs, individual references or runtime installation. Legacy tests do not validate this revision. Preserve the stable slug. Keep it under Photography & Realism with personal-photo/environmental-portraiture area. No new cover is published; the original reference remains private. Case 06 stays Draft pending deeper analysis. This supersedes DEC-013's earlier status for 018 only.
+
+
+## DEC-016 — Style 06 approved narrative-poster rules; tests deferred
+
+**Status:** ACTIVE
+**Date:** 2026-10-01 America/Los_Angeles / 2026-10-02 UTC
+
+The owner accepted the deeper Style 06 analysis and authorized saving the Skill now, with image testing later. YSU-SKILL-019 v0.2.0 is 懷舊手繪動畫敘事海報 / Nostalgic Hand-Painted Anime Narrative Poster. Lifecycle Approved covers instructions/archive; Validation Untested applies to this revised version. Keep stable slug ysu-nostalgic-gouache-narrative and former name as an alias. The revised workflow separates rendering-only transfer from authorized narrative reconstruction and uses opaque painted color / animation-style drawing rather than asserting Taiwanese 膠彩 as its medium. All eight SSF-B02 profiles now have approved rules; 05/06 have deferred image tests and unconfirmed per-image classification. No runtime installation, Hub publication or new public cover. This supersedes earlier draft-state notes for 019; other profiles are unchanged.

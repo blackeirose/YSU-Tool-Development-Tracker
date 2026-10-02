@@ -17,7 +17,7 @@
     "source": "Skill Taxonomy v1 table in canonical Drive registry"
   },
   "$comment": "GENERATED FILE — do not edit by hand. Source: Google Drive AI Works/06_Skills/00_SKILL_REGISTRY.md. Regenerate with `npm run skills:index`.",
-  "generated_at": "2026-10-02T04:11:50.651Z",
+  "generated_at": "2026-10-02T04:38:56.312Z",
   "source": {
     "file": "skills-source/00_SKILL_REGISTRY.md",
     "drive_file_id": "1g6Io9lD4YwkDaX5_OUqssvrcEyuCF-1P",
@@ -1457,22 +1457,22 @@
     },
     {
       "id": "YSU-SKILL-019",
-      "name": "懷舊膠彩敘事海報 / Nostalgic Gouache Narrative",
+      "name": "懷舊手繪動畫敘事海報 / Nostalgic Hand-Painted Anime Narrative Poster",
       "slug": "ysu-nostalgic-gouache-narrative",
       "category": "STYLE",
-      "lifecycle": "Draft",
-      "validation": "Partial",
-      "version": "0.1.0",
-      "version_note": "0.1.0-review.1",
-      "description": "用有印刷紙感的動畫背景膠彩、明確色塊及敘事留白，保留原圖故事的情緒與可讀性。",
+      "lifecycle": "Approved",
+      "validation": "Untested",
+      "version": "0.2.0",
+      "version_note": "0.2.0",
+      "description": "以霧面手繪色塊、動畫式人物與融入場景的敘事意象，把故事濃縮成具有懷舊情緒的海報。",
       "graphic_reference_count": 27,
       "platform": {
-        "drive": "UNVERIFIED",
+        "drive": "ARCHIVED",
         "chatgpt": "NOT_INSTALLED",
         "codex": "NOT_INSTALLED"
       },
       "platform_notes": {
-        "drive": "00_PENDING 草稿；05／06 需修正",
+        "drive": "正式歸檔；規則已確認／待實測",
         "chatgpt": "未安裝／未發布 Hub",
         "codex": "未安裝"
       },
@@ -1481,12 +1481,12 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": "需額外修正；等待使用者指出具體方向，不能列為通過。",
-      "canonical_drive": "https://drive.google.com/drive/folders/1vsF8Wd7gvGoCwKz2zBXOBBDHqvOVOStW",
+      "next_action": "規則已確認；待適合素材實測。逐圖分類未確認；未安裝、未發布 Hub。",
+      "canonical_drive": "https://drive.google.com/drive/folders/1ayxmKlBhovOMKLdQPEgusPN71HMyrA1p",
       "links": [
         {
           "label": "Canonical Drive folder",
-          "url": "https://drive.google.com/drive/folders/1vsF8Wd7gvGoCwKz2zBXOBBDHqvOVOStW"
+          "url": "https://drive.google.com/drive/folders/1ayxmKlBhovOMKLdQPEgusPN71HMyrA1p"
         }
       ],
       "registered": true,
@@ -1509,7 +1509,7 @@
         "locator_status": "explicit",
         "related_conversations": "derived",
         "next_action": "explicit",
-        "canonical_drive": "derived",
+        "canonical_drive": "explicit",
         "links": "derived",
         "registered": "derived",
         "platform.drive": "explicit",
@@ -1521,13 +1521,12 @@
         "version": "1.0",
         "domain_id": "image-style",
         "domain": "圖像與風格 / Image & Style",
-        "area": "風格轉譯 / Style transfer",
+        "area": "敘事海報 / Narrative posters",
         "style_family_id": "painting-illustration",
         "style_family": "繪畫與插畫 / Painting & Illustration",
-        "medium": "膠彩 / Gouache",
+        "medium": "不透明手繪色面 / Opaque painted color",
         "tags": [
-          "懷舊",
-          "敘事海報"
+          "動畫、懷舊、敘事意象、海報"
         ],
         "source": "explicit registry taxonomy"
       }

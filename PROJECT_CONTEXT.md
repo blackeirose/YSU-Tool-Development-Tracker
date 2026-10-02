@@ -233,3 +233,8 @@ Purpose/style taxonomy v1 is generated from the Drive registry (DEC-014): six pu
 ## Style 05 instruction revision — 2026-10-02 UTC
 
 YSU-SKILL-018 v0.2.0 now describes personal-photo framing and a quiet person–environment relationship. Rules/archive are Approved; current-version image validation is Untested. The prior two unsuitable targets remain historical. Case 06 stays Draft for deeper analysis. No new image cover, UI behavior, runtime Skill installation or Hub publication is part of this metadata refresh.
+
+
+## Latest SSF-B02 state — 2026-10-02 UTC
+
+All eight instruction/reference packages have owner-approved rules and Drive archives. Six profiles retain v1.0.0 / Partial validation. Styles 05 and 06 are v0.2.0 / Untested after substantive revisions, with testing explicitly deferred. Style 06 is now 懷舊手繪動畫敘事海報 / Nostalgic Hand-Painted Anime Narrative Poster under Painting & Illustration; medium describes opaque painted color. Earlier pending-correction notes are historical. New source images or public thumbnails are not part of this metadata refresh. No runtime installation or Hub publication.

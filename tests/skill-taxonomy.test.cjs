@@ -23,5 +23,5 @@ test('all current Skills have one purpose, eight styles share three families',()
  assert.equal(batch.length,8);
  assert.equal(new Set(batch.map(s=>s.taxonomy.style_family_id)).size,3);
  assert.ok(batch.every(s=>s.taxonomy.domain_id==='image-style'));
- assert.equal(batch.find(s=>s.id==='YSU-SKILL-019').taxonomy.medium,'膠彩 / Gouache');
+ assert.equal(batch.find(s=>s.id==='YSU-SKILL-019').taxonomy.medium,'不透明手繪色面 / Opaque painted color');
 });

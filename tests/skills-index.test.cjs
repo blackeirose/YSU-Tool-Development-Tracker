@@ -144,7 +144,7 @@ test('the live index includes the SSF-B02 rules approval independently from imag
  }
  for(const id of ['019']){
   const s=live.skills.find(s=>s.id==='YSU-SKILL-'+id);
-  assert.equal(s.lifecycle,'Draft');assert.equal(s.validation,'Partial');
+  assert.equal(s.lifecycle,'Approved');assert.equal(s.validation,'Untested');assert.equal(s.version,'0.2.0');
  }
  const revised=byId(live,'YSU-SKILL-018');
  assert.equal(revised.lifecycle,'Approved');assert.equal(revised.validation,'Untested');assert.equal(revised.version,'0.2.0');

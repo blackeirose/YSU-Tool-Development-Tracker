@@ -36,7 +36,7 @@
 | YSU-SKILL-016 | 柔絨羊毛氈浮雕 / Soft Felt Relief；以短絨羊毛氈、刺繡細線與柔和低浮雕，把複雜內容化為安靜、可觸摸的敘事插畫。 | 1.0.0 | 正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔 | 未安裝 | 未安裝／未發布 Hub |
 | YSU-SKILL-017 | 青墨琥珀復古動畫 / Teal & Amber Ink Anime；以精密動畫墨線、青黑暗部和琥珀亮部呈現濃密但可讀的敘事場景。 | 1.0.0 | 正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔 | 未安裝 | 未安裝／未發布 Hub |
 | YSU-SKILL-018 | 靜觀人境攝影 / Contemplative Environmental Portraiture；以取景距離、人物尺度、視線和留白，呈現個人與環境之間安靜的關係；光色與材質為輔。 | 0.2.0 | 正式歸檔；規則已確認／待實測 | 未安裝 | 未安裝／未發布 Hub |
-| YSU-SKILL-019 | 懷舊膠彩敘事海報 / Nostalgic Gouache Narrative；用有印刷紙感的動畫背景膠彩、明確色塊及敘事留白，保留原圖故事的情緒與可讀性。 | 0.1.0-review.1 | 00_PENDING 草稿；05／06 需修正 | 未安裝 | 未安裝／未發布 Hub |
+| YSU-SKILL-019 | 懷舊手繪動畫敘事海報 / Nostalgic Hand-Painted Anime Narrative Poster；以霧面手繪色塊、動畫式人物與融入場景的敘事意象，把故事濃縮成具有懷舊情緒的海報。 | 0.2.0 | 正式歸檔；規則已確認／待實測 | 未安裝 | 未安裝／未發布 Hub |
 | YSU-SKILL-020 | 建築墨線色塊拼貼 / Architectural Ink & Color Collage；將原圖空間結構轉成精密透視墨線、碎片色面與受控制潑彩交疊的建築感插畫。 | 1.0.0 | 正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔 | 未安裝 | 未安裝／未發布 Hub |
 | YSU-SKILL-021 | 攝影 × 精切紙雕雙區海報 / Photo × Precision-Paper Diptych；每張目標各成一張 3:4 直式海報，上半原圖、下半紙雕轉譯，各占嚴格 50%。 | 1.0.0 | 正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔 | 未安裝 | 未安裝／未發布 Hub |
 
@@ -472,34 +472,35 @@ Tracker Metadata:
 
 套件：https://drive.google.com/file/d/1lgn0PyJnayPQ_H0Vw4C08t_cor0jvLue/view 。私人來源同步未完成，已保存可回復的版本紀錄；不宣稱平台安裝或 GitHub Skill source release。
 
-## YSU-SKILL-019 — 懷舊膠彩敘事海報 / Nostalgic Gouache Narrative
+## YSU-SKILL-019 — 懷舊手繪動畫敘事海報 / Nostalgic Hand-Painted Anime Narrative Poster
 
-Skill ID：ysu-nostalgic-gouache-narrative  
+Skill ID：ysu-nostalgic-gouache-narrative
 批次：SSF-B02-06。
 
-用有印刷紙感的動畫背景膠彩、明確色塊及敘事留白，保留原圖故事的情緒與可讀性。  
-Opaque painted shapes, dry-brush edges and paper grain create nostalgic narrative scenes.
+以霧面手繪色塊、動畫式人物與融入場景的敘事意象，把故事濃縮成具有懷舊情緒的海報。
+Matte painted color, anime-style characters and scene-integrated visual metaphors condense a story into a nostalgic poster.
 
 Tracker Metadata:
 - Category: STYLE
-- Lifecycle: Draft
-- Validation: Partial
-- Version: 0.1.0
+- Lifecycle: Approved
+- Validation: Untested
+- Version: 0.2.0
 - Graphic References: 27
-- Drive: UNVERIFIED
+- Drive: ARCHIVED
 - ChatGPT: NOT_INSTALLED
 - Codex: NOT_INSTALLED
 - Origin Project:
 - Origin Conversation:
 - Origin Conversation URL:
 - Locator Status: UNLOCATED
-- Next Action: 需額外修正；等待使用者指出具體方向，不能列為通過。
-- Canonical Drive: 
+- Next Action: 規則已確認；待適合素材實測。逐圖分類未確認；未安裝、未發布 Hub。
+- Canonical Drive: https://drive.google.com/drive/folders/1ayxmKlBhovOMKLdQPEgusPN71HMyrA1p
 
-草稿位置：https://drive.google.com/drive/folders/1vsF8Wd7gvGoCwKz2zBXOBBDHqvOVOStW。修正中，沒有正式歸檔或核准日期。YSU-SKILL-018／019 僅為管理編號，不能當作完成狀態。
+2026-10-01 America/Los_Angeles（2026-10-02 UTC）：使用者確認重析方向，允許先製作 Skill、日後再測。Approved 僅代表規則與歸檔；新版 Validation = Untested，舊 A/B 不算本版驗證。分開保留構圖的畫法轉譯及已授權的敘事海報重構；意象須基於目標故事。
 
-來源：https://drive.google.com/drive/folders/1a74_MdDBKQjPzAhmkXmiUZ5ctBZxzyho。完整歷史聊天未提供，未虛構對話 URL。Validation = Partial：僅兩個指定目標的美術測試，跨平台、逐字文字與所有題材未驗證。無安裝、Hub 發布或全參考圖公开授權。此 instruction/reference 套件尚未建立獨立 GitHub Skill source coverage。
+來源：https://drive.google.com/drive/folders/1a74_MdDBKQjPzAhmkXmiUZ5ctBZxzyho。完整原來源聊天未定位；管理對話為 Style Skill Factory — Master Control。27 張原圖分類尚未確認；原 P06-020 私有縮圖保留。媒材描述改為不透明手繪色面，不認定實際膠彩或顏料。舊名稱：懷舊膠彩敘事海報 / Nostalgic Gouache Narrative。
 
+套件：https://drive.google.com/file/d/14oNzoLUomels2qzelbPBfIeO7DtngKlz/view 。文件與版本紀錄已歸檔；沒有平台安裝、Hub 發布或獨立 GitHub Skill source coverage 的聲明。
 
 ## YSU-SKILL-020 — 建築墨線色塊拼貼 / Architectural Ink & Color Collage
 
@@ -603,7 +604,7 @@ SHA-256：8608b2c97fa5ddc1d5fca465fbd50abce6543a22f44c8fc90c8e1e540acae4b3
 | YSU-SKILL-016 | image-style | 風格轉譯 / Style transfer | paper-fiber | 纖維 / Fiber art | 羊毛氈; 浮雕 |
 | YSU-SKILL-017 | image-style | 風格轉譯 / Style transfer | painting-illustration | 墨線 / Ink | 復古動畫; 青墨; 琥珀 |
 | YSU-SKILL-018 | image-style | 個人照片與環境人像 / Personal photos & environmental portraiture | photography-realism | 攝影構圖 / Photographic composition | 個人照片、人境關係、取景、安靜 |
-| YSU-SKILL-019 | image-style | 風格轉譯 / Style transfer | painting-illustration | 膠彩 / Gouache | 懷舊; 敘事海報 |
+| YSU-SKILL-019 | image-style | 敘事海報 / Narrative posters | painting-illustration | 不透明手繪色面 / Opaque painted color | 動畫、懷舊、敘事意象、海報 |
 | YSU-SKILL-020 | image-style | 風格轉譯 / Style transfer | painting-illustration | 混合媒材 / Mixed media | 建築; 墨線; 拼貼 |
 | YSU-SKILL-021 | image-style | 風格轉譯 / Style transfer | paper-fiber | 紙藝 / Paper art | 紙雕; 攝影; 雙區海報 |
 | YSU-PENDING-001 | education | 科學解說 / Science communication | — | — | 教學; 影片 |
@@ -612,3 +613,8 @@ SHA-256：8608b2c97fa5ddc1d5fca465fbd50abce6543a22f44c8fc90c8e1e540acae4b3
 ## SSF-B02 最新修訂 — 2026-10-02 UTC
 
 05：規則與歸檔已確認，v0.2.0 Approved / Untested；以個人照片、攝影構圖與人境關係為核心。06：使用者要求再次深入分析媒材及敘事構圖，保持 Draft / QA Review；本輪分析不等於新版規則批准。先前 05／06 同列待修正的紀錄屬歷史狀態。
+
+
+## SSF-B02 06 規則批准 — 2026-10-02 UTC
+
+06 v0.2.0 已按使用者確認寫入並歸檔。至此八案皆有 Approved 規則；01／02／03／04／07／08 維持 Partial，05／06 新版為 Untested。保留原始參考圖縮圖、現有三個風格大類。先前 06 待修正與待確認分析為歷史階段；本批未自動安裝或發布 Hub。
