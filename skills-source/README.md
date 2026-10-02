@@ -98,13 +98,7 @@ conversation URL is ever constructed.**
 
 ### Normalization status
 
-**Twelve SSF-B02/B03 entries carry explicit metadata**; the original 13
-registered Skills and the existing pending candidate retain derived fields.
-`counts.with_explicit_metadata` is `12`. Normalization is incremental: add the
-block to a Skill's section in the **Drive** registry as that Skill is touched,
-reviewed or processed, then re-export and regenerate. The parser branch is
-proven by `tests/fixtures/registry-explicit.md`, a synthetic registry that
-nothing reads at runtime.
+**Fifteen entries carry explicit metadata**: the 14 SSF-B02/B03/WC records plus YSU-SKILL-012, approved by the owner on 2026-10-02 based on the SFDOT character board. The other original records and existing pending candidate retain derived fields. `counts.with_explicit_metadata` is `15`. Normalize only in the canonical Drive registry, then export and regenerate. Synthetic parser coverage remains in `tests/fixtures/registry-explicit.md`.
 
 ## What the generator reads
 

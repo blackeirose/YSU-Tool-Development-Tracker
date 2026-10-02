@@ -17,7 +17,7 @@
     "source": "Skill Taxonomy v1 table in canonical Drive registry"
   },
   "$comment": "GENERATED FILE — do not edit by hand. Source: Google Drive AI Works/06_Skills/00_SKILL_REGISTRY.md. Regenerate with `npm run skills:index`.",
-  "generated_at": "2026-10-02T16:28:28.115Z",
+  "generated_at": "2026-10-02T17:24:38.263Z",
   "source": {
     "file": "skills-source/00_SKILL_REGISTRY.md",
     "drive_file_id": "1g6Io9lD4YwkDaX5_OUqssvrcEyuCF-1P",
@@ -45,7 +45,7 @@
     "total": 28,
     "registered": 27,
     "pending": 1,
-    "with_explicit_metadata": 14
+    "with_explicit_metadata": 15
   },
   "warnings": [],
   "skills": [
@@ -926,7 +926,7 @@
       "name": "YSU Cinematic Inkframe／電影墨格",
       "slug": "ysu-cinematic-inkframe",
       "category": "STYLE",
-      "lifecycle": "Candidate",
+      "lifecycle": "Approved",
       "validation": "Partial",
       "version": "0.1.0",
       "version_note": "文件／參考 v0.1.0",
@@ -939,7 +939,7 @@
       },
       "platform_notes": {
         "drive": "27 檔 ZIP＋展開來源／11 圖已歸檔；ZIP 回下載 SHA-256 與逐檔比對通過",
-        "chatgpt": "未安裝／未發布；未改分享；成圖與 Seedance 待驗證",
+        "chatgpt": "未安裝／未發布；未改分享；SFDOT 人物 BOARD 已核准，Seedance／跨案待驗證",
         "codex": "未安裝"
       },
       "origin_project": null,
@@ -947,7 +947,7 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": null,
+      "next_action": "風格已核准（SFDOT 人物 BOARD）；Hub 匯入待架構確認與 Codex 交接，Seedance／其他題材另行驗證。",
       "canonical_drive": "https://drive.google.com/drive/folders/1pnst7YlPsgM9LWv016zI0e18CqWzP7_f",
       "links": [
         {
@@ -961,8 +961,8 @@
         "name": "derived",
         "slug": "derived",
         "category": "derived",
-        "lifecycle": "derived",
-        "validation": "derived",
+        "lifecycle": "explicit",
+        "validation": "explicit",
         "version": "derived",
         "version_note": "derived",
         "description": "derived",
@@ -974,12 +974,12 @@
         "origin_conversation_url": "derived",
         "locator_status": "derived",
         "related_conversations": "derived",
-        "next_action": "derived",
+        "next_action": "explicit",
         "canonical_drive": "derived",
         "links": "derived",
         "registered": "derived"
       },
-      "has_explicit_metadata": false,
+      "has_explicit_metadata": true,
       "taxonomy": {
         "version": "1.0",
         "domain_id": "image-style",

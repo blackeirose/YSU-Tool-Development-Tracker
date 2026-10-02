@@ -135,8 +135,8 @@ test('the live index includes SSF-B02/B03/WC approval independently from image v
  assert.equal(live.counts.registered,27);
  assert.equal(live.counts.pending,1);
  assert.equal(live.counts.total,28);
- // SSF-B02/B03/WC have explicit metadata; the original 13 entries remain derived.
- assert.equal(live.counts.with_explicit_metadata,14);
+ // SSF-B02/B03/WC and owner-approved Inkframe have explicit metadata.
+ assert.equal(live.counts.with_explicit_metadata,15);
  assert.deepEqual(live.warnings,[]);
  for(const id of ['014','016','017','020','021','022','023','024','025']){
   const s=live.skills.find(s=>s.id==='YSU-SKILL-'+id);
@@ -165,7 +165,7 @@ test('the live index includes SSF-B02/B03/WC approval independently from image v
  for(const s of live.skills){
   assert.ok(LIFECYCLES.includes(s.lifecycle),`${s.id} lifecycle`);
   assert.ok(VALIDATIONS.includes(s.validation),`${s.id} validation`);
-  assert.equal(s.has_explicit_metadata,/^YSU-SKILL-(01[4-9]|02[0-7])$/.test(s.id));
+  assert.equal(s.has_explicit_metadata,/^YSU-SKILL-(012|01[4-9]|02[0-7])$/.test(s.id));
  }
 });
 

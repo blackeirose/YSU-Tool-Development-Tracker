@@ -29,7 +29,7 @@
 | YSU-SKILL-009 | Cinematic Editorial & Picture Finish | 文件／參考 package 0.1.1 | MD＋範本＋2 張 Graphic＋ZIP 已歸檔；雜湊讀回通過 | 未安裝／未驗證 | 未發布、未改分享；非 runtime release |  
 | YSU-SKILL-010 | Sound & Music Finish | 文件／參考 package 0.1.1 | MD＋範本＋2 張 Graphic＋ZIP 已歸檔；雜湊讀回通過 | 未安裝／未驗證 | 未發布、未改分享；非 runtime release |  
 | YSU-SKILL-011 | YSU 圖像分析與風格反推基礎；準確移植圖片風格 | v1.0.0 | 5 份作者文件已歸檔、讀回比對通過 | Windows Codex 未安裝 | ChatGPT 個人 Skill 已安裝；分析 Project Instructions 已保存讀回；未公開分享 |  
-| YSU-SKILL-012 | YSU Cinematic Inkframe／電影墨格；寫實轉混合媒材漫畫、角色／空間／頓點 | 文件／參考 v0.1.0 | 27 檔 ZIP＋展開來源／11 圖已歸檔；ZIP 回下載 SHA-256 與逐檔比對通過 | 未安裝 | 未安裝／未發布；未改分享；成圖與 Seedance 待驗證 |  
+| YSU-SKILL-012 | YSU Cinematic Inkframe／電影墨格；寫實轉混合媒材漫畫、角色／空間／頓點 | 文件／參考 v0.1.0 | 27 檔 ZIP＋展開來源／11 圖已歸檔；ZIP 回下載 SHA-256 與逐檔比對通過 | 未安裝 | 未安裝／未發布；未改分享；SFDOT 人物 BOARD 已核准，Seedance／跨案待驗證 |  
 | YSU-SKILL-013 | YSU Stylized Animal Character Bible；遊戲／動畫用風格化動物角色設定 | 文件／參考 v0.1.0 | SKILL＋工作表＋5 張 REFERENCE_ONLY Graphic＋ZIP 已歸檔 | 未安裝／未驗證 | 未發布、未改分享；未做新角色生成／rig／game runtime 驗證 |
 | YSU-SKILL-014 | 靛金細描敘事插畫 / Indigo & Gold Editorial Illustration；把原圖敘事轉成暖象牙紙上的靛藍、金赭、細墨線編輯插畫；適合人物故事、概念海報與敘事主視覺。 | 1.0.0 | 正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔 | 未安裝 | 未安裝／未發布 Hub |
 | YSU-SKILL-015 | 撕紙秘境 / Torn-Paper Dioramas；以纖維裂紙、懸浮紙層與光影重構場景；原圖允許時，以疏朗留白營造空氣感與意境。 | 1.0.1 | 正式套件、雙語Prompt、原圖縮圖已歸檔；ZIP回下載hash一致 | 未安裝 | 未安裝／未發布Hub |
@@ -237,6 +237,15 @@ Router name 規範為 `ysu-narrative-film-system` 以匹配根資料夾；`ysu-n
 
 
 ## YSU-SKILL-012 — YSU Cinematic Inkframe／電影墨格
+
+Tracker Metadata:
+- Lifecycle: Approved
+- Validation: Partial
+- Next Action: 風格已核准（SFDOT 人物 BOARD）；Hub 匯入待架構確認與 Codex 交接，Seedance／其他題材另行驗證。
+
+2026-10-02 10:18 America/Los_Angeles 最新批准：Owner「電影墨格可以先通過 目前SFDOT的人物BOARD我挺滿意的」。SFDOT 人物 BOARD 為 Approved Application Reference；Lifecycle=Approved，Validation 保持 Partial。沿用 v0.1.0 及 SFDOT 人像縮圖；未生成新測試、未安裝或發布 Hub。角色、版面、文字及紅藍配色不是通用規則，其餘參考圖不自動批准。完整批准範圍：[COVER_SELECTION.md](https://drive.google.com/file/d/14gvOOZthoVdaHHb1CABp6uABIrsQNNRY/view)。
+
+以下為 2026-09-24 封裝歷史；當時尚未核准成圖的記錄，由上述當前批准更新其適用狀態。
 
 
 2026-09-24：依使用者「這次的分析非常詳細，必須要記錄到 SKILL 裡面，方便未來取用」授權，保存完整 Style Study v0.1 並整理成可重複引用的 v0.1.0 指令／參考套件。

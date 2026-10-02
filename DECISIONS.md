@@ -438,3 +438,13 @@ The owner directed packaging WC-A and WC-B after reviewing the recovered visual 
 Under the standing Factory Tracker-sync and original-reference cover instructions, publish only the selected 720px R8445 and L01 cover derivatives; complete images and packages retain private Drive permissions. Metadata and package links come from the read-back canonical registry. No app behavior, Tasks data, Auth, installation, or Hub publication changes.
 
 Style 13's relation to B is accepted conceptually, but owner puts it on hold for suitable-target differentiation tests. Do not merge it, enable a substyle, or package it. WC-C stays on hold for corrected final references. 14 and 15 remain withdrawn. Factory batch trackers and the registry own these decisions; this release adds only 026/027 to the registered public index.
+
+
+## DEC-022 — Cinematic Inkframe owner approval
+
+**Status:** ACTIVE
+**Date:** 2026-10-02 America/Los_Angeles
+
+Owner approves YSU-SKILL-012 based on satisfaction with the existing SFDOT character board. Lifecycle becomes Approved through explicit canonical Drive metadata; Validation remains Partial and version remains 0.1.0. The current SFDOT portrait thumbnail is unchanged. The board is an Approved Application Reference, without turning its character, layout, typography or palette into universal style rules. Seedance, animation, audio and cross-project reproducibility remain unverified.
+
+This status-only synchronization follows the standing Factory milestone/Tracker-sync instructions. The Drive registry and COVER_SELECTION.md record the approval. No new media, Skill content, installation, sharing change or Hub publication; the separate Hub architecture discussion still awaits confirmation and Codex handoff.

@@ -248,3 +248,8 @@ Complete all eight SSF-B02 original-reference covers under DEC-017. Style 05 use
 ## WC-A/B package refresh — 2026-10-02
 
 The canonical registry now lists 27 registered Skills plus the existing pending candidate. 026/027 are watercolor instruction/reference packages, Approved / Untested v1.0.0, with original-reference thumbnails and direct instruction/package links. No runtime installations or Hub entries were created. Style 13 and WC-C remain on hold outside the registered-Skill count. See DEC-021 and the private source packages for evidence limits.
+
+
+## Cinematic Inkframe approval — 2026-10-02
+
+YSU-SKILL-012 is now Approved / Partial based on the owner's acceptance of the existing SFDOT character board. Version 0.1.0 and the SFDOT thumbnail are preserved. This overrides the previous derived Candidate state, not the outstanding motion/cross-project validation limits. The catalog still contains 27 registered Skills plus one pending item; 15 entries now have explicit metadata. See DEC-022. No Hub content or runtime installation changes.

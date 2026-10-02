@@ -192,7 +192,7 @@ test('the generated index never invents data and stays in the documented shape',
   if(s.version)assert.match(s.version,/^\d+\.\d+\.\d+$/);
  }
  const inkframe=index.skills.find(s=>s.id==='YSU-SKILL-012');
- assert.equal(inkframe.lifecycle,'Candidate');
+ assert.equal(inkframe.lifecycle,'Approved');
  assert.equal(inkframe.validation,'Partial');
 });
 
