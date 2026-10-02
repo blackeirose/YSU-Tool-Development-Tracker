@@ -807,3 +807,16 @@ SHA-256：c1f960684c5c77027605439a896f84f0f1648aa79247f2a7446c0f140a336705
 
 參考分類與限制以STYLE_REFERENCE.md、HUB_METADATA.json及逐圖索引為準；主要參考按本次整批審查接受，R20單獨核可，其他支援圖不自動取得逐張批准。指令文本以Git提交並保存私人bundle，完整圖檔在ZIP與SOURCE；未安裝、未發布Hub，未宣稱獨立GitHub Skill來源庫。
 
+
+## SSF-B03 最新套件定位表
+
+供既有Tracker parser與Codex依固定ID取用。
+
+| ID | Slug | Folder ID | SKILL file ID | ZIP file ID |
+|---|---|---|---|---|
+| YSU-SKILL-022 | `ysu-torn-paper-levitation` | `1rdBDnrSCn7HecIuUYLK8q2lwCLgmfyVy` | `1FDtAqD3nBPMJWbCESW5ncPtIVd9F5J1n` | `1VRV2xd3rIvy773Lt9NXnc-Pc774O6KC4` |
+| YSU-SKILL-023 | `ysu-muted-fragmented-paint` | `1zpXV6yyLo-2AZNRbJTXWMGyDNJwyQ4t1` | `1EtUghbgJJwauz1Z6ehQD5wmSux0RTV_I` | `1oOfpusmLNhAY0AQOZYN6FR6hUcbMZKVp` |
+| YSU-SKILL-024 | `ysu-photo-watercolor-diptych` | `1X7kwfO0YbMF2Vn-Jzpi02JB1-Gf9KSxN` | `1EX4k4CE1msvDnU8fEvBForGpIC9_ZS0A` | `1Yf6wlQZaPRic2g0u7kBCduVUByWq0JL2` |
+| YSU-SKILL-025 | `ysu-chromatic-ink-print` | `1BGdo--zegqS9d4KF0CWKqmUdSD7-3mk3` | `1qdX15rOMgqe79bXheXCSLGYkOQEImkjZ` | `17i2H3TYLMhqtZVflG96Gf51djaKj_Esh` |
+| YSU-SKILL-015 | `ysu-torn-paper-worlds` | `11D4Gwnl_fWt44hxYvtYesJU2dJWU4XhC` | `1R6fPcxX21wTX5y-4NT3Hy4CAW6kkykbw` | `1oRrH12CH5B-C83WV3hjjHmDLJbHttim2` |
+

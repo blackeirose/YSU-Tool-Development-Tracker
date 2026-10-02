@@ -17,7 +17,7 @@
     "source": "Skill Taxonomy v1 table in canonical Drive registry"
   },
   "$comment": "GENERATED FILE — do not edit by hand. Source: Google Drive AI Works/06_Skills/00_SKILL_REGISTRY.md. Regenerate with `npm run skills:index`.",
-  "generated_at": "2026-10-02T06:07:34.334Z",
+  "generated_at": "2026-10-02T06:08:28.096Z",
   "source": {
     "file": "skills-source/00_SKILL_REGISTRY.md",
     "drive_file_id": "1g6Io9lD4YwkDaX5_OUqssvrcEyuCF-1P",
@@ -1178,6 +1178,14 @@
         {
           "label": "Canonical Drive folder",
           "url": "https://drive.google.com/drive/folders/11D4Gwnl_fWt44hxYvtYesJU2dJWU4XhC"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://drive.google.com/file/d/1R6fPcxX21wTX5y-4NT3Hy4CAW6kkykbw/view"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/1oRrH12CH5B-C83WV3hjjHmDLJbHttim2/view"
         }
       ],
       "registered": true,
@@ -1719,6 +1727,14 @@
         {
           "label": "Canonical Drive folder",
           "url": "https://drive.google.com/drive/folders/1rdBDnrSCn7HecIuUYLK8q2lwCLgmfyVy"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://drive.google.com/file/d/1FDtAqD3nBPMJWbCESW5ncPtIVd9F5J1n/view"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/1VRV2xd3rIvy773Lt9NXnc-Pc774O6KC4/view"
         }
       ],
       "registered": true,
@@ -1797,6 +1813,14 @@
         {
           "label": "Canonical Drive folder",
           "url": "https://drive.google.com/drive/folders/1zpXV6yyLo-2AZNRbJTXWMGyDNJwyQ4t1"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://drive.google.com/file/d/1EtUghbgJJwauz1Z6ehQD5wmSux0RTV_I/view"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/1oOfpusmLNhAY0AQOZYN6FR6hUcbMZKVp/view"
         }
       ],
       "registered": true,
@@ -1875,6 +1899,14 @@
         {
           "label": "Canonical Drive folder",
           "url": "https://drive.google.com/drive/folders/1X7kwfO0YbMF2Vn-Jzpi02JB1-Gf9KSxN"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://drive.google.com/file/d/1EX4k4CE1msvDnU8fEvBForGpIC9_ZS0A/view"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/1Yf6wlQZaPRic2g0u7kBCduVUByWq0JL2/view"
         }
       ],
       "registered": true,
@@ -1953,6 +1985,14 @@
         {
           "label": "Canonical Drive folder",
           "url": "https://drive.google.com/drive/folders/1BGdo--zegqS9d4KF0CWKqmUdSD7-3mk3"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://drive.google.com/file/d/1qdX15rOMgqe79bXheXCSLGYkOQEImkjZ/view"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/17i2H3TYLMhqtZVflG96Gf51djaKj_Esh/view"
         }
       ],
       "registered": true,
