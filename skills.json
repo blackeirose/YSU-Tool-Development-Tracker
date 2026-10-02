@@ -17,7 +17,7 @@
     "source": "Skill Taxonomy v1 table in canonical Drive registry"
   },
   "$comment": "GENERATED FILE — do not edit by hand. Source: Google Drive AI Works/06_Skills/00_SKILL_REGISTRY.md. Regenerate with `npm run skills:index`.",
-  "generated_at": "2026-10-02T05:00:19.981Z",
+  "generated_at": "2026-10-02T06:02:30.379Z",
   "source": {
     "file": "skills-source/00_SKILL_REGISTRY.md",
     "drive_file_id": "1g6Io9lD4YwkDaX5_OUqssvrcEyuCF-1P",
@@ -42,10 +42,10 @@
     ]
   },
   "counts": {
-    "total": 22,
-    "registered": 21,
+    "total": 26,
+    "registered": 25,
     "pending": 1,
-    "with_explicit_metadata": 8
+    "with_explicit_metadata": 12
   },
   "warnings": [],
   "skills": [
@@ -1148,13 +1148,13 @@
     },
     {
       "id": "YSU-SKILL-015",
-      "name": "裂紙浮空 / Floating Torn-Paper Worlds",
+      "name": "撕紙秘境 / Torn-Paper Dioramas",
       "slug": "ysu-torn-paper-worlds",
       "category": "STYLE",
       "lifecycle": "Approved",
       "validation": "Partial",
-      "version": "1.0.0",
-      "version_note": "1.0.0",
+      "version": "1.0.1",
+      "version_note": "1.0.1",
       "description": "以纖維裂紙、懸浮紙層與光影重構場景；原圖允許時，以疏朗留白營造空氣感與意境。",
       "graphic_reference_count": 15,
       "platform": {
@@ -1163,8 +1163,8 @@
         "codex": "NOT_INSTALLED"
       },
       "platform_notes": {
-        "drive": "正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔",
-        "chatgpt": "未安裝／未發布 Hub",
+        "drive": "正式套件、雙語Prompt、原圖縮圖已歸檔；ZIP回下載hash一致",
+        "chatgpt": "未安裝／未發布Hub",
         "codex": "未安裝"
       },
       "origin_project": null,
@@ -1172,7 +1172,7 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": "使用正式套件；Hub 匯入待另行授權。",
+      "next_action": "正式套件可用；Hub匯入／平台安裝待另行授權。",
       "canonical_drive": "https://drive.google.com/drive/folders/11D4Gwnl_fWt44hxYvtYesJU2dJWU4XhC",
       "links": [
         {
@@ -1217,8 +1217,8 @@
         "style_family": "紙藝與纖維 / Paper & Fiber",
         "medium": "紙藝 / Paper art",
         "tags": [
-          "裂紙",
-          "浮空",
+          "撕紙",
+          "微縮場景",
           "留白"
         ],
         "source": "explicit registry taxonomy"
@@ -1683,6 +1683,318 @@
           "紙雕",
           "攝影",
           "雙區海報"
+        ],
+        "source": "explicit registry taxonomy"
+      }
+    },
+    {
+      "id": "YSU-SKILL-022",
+      "name": "裂紙浮空 / Torn-Paper Levitation",
+      "slug": "ysu-torn-paper-levitation",
+      "category": "STYLE",
+      "lifecycle": "Approved",
+      "validation": "Partial",
+      "version": "1.0.0",
+      "version_note": "1.0.0",
+      "description": "以大片安靜紙面、曲折裂口與人物尺度，將故事重組為有留白意境的紙層空間。",
+      "graphic_reference_count": 20,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "NOT_INSTALLED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "正式套件、雙語Prompt、原圖縮圖已歸檔；ZIP回下載hash一致",
+        "chatgpt": "未安裝／未發布Hub",
+        "codex": "未安裝"
+      },
+      "origin_project": null,
+      "origin_conversation": null,
+      "origin_conversation_url": null,
+      "locator_status": "UNLOCATED",
+      "related_conversations": [],
+      "next_action": "正式套件可用；Hub匯入／平台安裝待另行授權。",
+      "canonical_drive": "https://drive.google.com/drive/folders/1rdBDnrSCn7HecIuUYLK8q2lwCLgmfyVy",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/1rdBDnrSCn7HecIuUYLK8q2lwCLgmfyVy"
+        }
+      ],
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "explicit",
+        "lifecycle": "explicit",
+        "validation": "explicit",
+        "version": "explicit",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "explicit",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "derived",
+        "origin_conversation": "derived",
+        "origin_conversation_url": "derived",
+        "locator_status": "explicit",
+        "related_conversations": "derived",
+        "next_action": "explicit",
+        "canonical_drive": "explicit",
+        "links": "derived",
+        "registered": "derived",
+        "platform.drive": "explicit",
+        "platform.chatgpt": "explicit",
+        "platform.codex": "explicit"
+      },
+      "has_explicit_metadata": true,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "image-style",
+        "domain": "圖像與風格 / Image & Style",
+        "area": "風格轉譯 / Style transfer",
+        "style_family_id": "paper-fiber",
+        "style_family": "紙藝與纖維 / Paper & Fiber",
+        "medium": "紙藝 / Paper art",
+        "tags": [
+          "裂紙",
+          "留白",
+          "敘事"
+        ],
+        "source": "explicit registry taxonomy"
+      }
+    },
+    {
+      "id": "YSU-SKILL-023",
+      "name": "灰境碎筆敘事 / Muted Fragmented-Paint Narratives",
+      "slug": "ysu-muted-fragmented-paint",
+      "category": "STYLE",
+      "lifecycle": "Approved",
+      "validation": "Partial",
+      "version": "1.0.0",
+      "version_note": "1.0.0",
+      "description": "把具體敘事轉成灰白、低彩、局部崩解的碎筆繪畫，保留人物與情緒。",
+      "graphic_reference_count": 5,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "NOT_INSTALLED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "正式套件、雙語Prompt、原圖縮圖已歸檔；ZIP回下載hash一致",
+        "chatgpt": "未安裝／未發布Hub",
+        "codex": "未安裝"
+      },
+      "origin_project": null,
+      "origin_conversation": null,
+      "origin_conversation_url": null,
+      "locator_status": "UNLOCATED",
+      "related_conversations": [],
+      "next_action": "正式套件可用；Hub匯入／平台安裝待另行授權。",
+      "canonical_drive": "https://drive.google.com/drive/folders/1zpXV6yyLo-2AZNRbJTXWMGyDNJwyQ4t1",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/1zpXV6yyLo-2AZNRbJTXWMGyDNJwyQ4t1"
+        }
+      ],
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "explicit",
+        "lifecycle": "explicit",
+        "validation": "explicit",
+        "version": "explicit",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "explicit",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "derived",
+        "origin_conversation": "derived",
+        "origin_conversation_url": "derived",
+        "locator_status": "explicit",
+        "related_conversations": "derived",
+        "next_action": "explicit",
+        "canonical_drive": "explicit",
+        "links": "derived",
+        "registered": "derived",
+        "platform.drive": "explicit",
+        "platform.chatgpt": "explicit",
+        "platform.codex": "explicit"
+      },
+      "has_explicit_metadata": true,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "image-style",
+        "domain": "圖像與風格 / Image & Style",
+        "area": "風格轉譯 / Style transfer",
+        "style_family_id": "painting-illustration",
+        "style_family": "繪畫與插畫 / Painting & Illustration",
+        "medium": "碎筆混合繪畫 / Fragmented paint",
+        "tags": [
+          "碎筆",
+          "低彩",
+          "敘事"
+        ],
+        "source": "explicit registry taxonomy"
+      }
+    },
+    {
+      "id": "YSU-SKILL-024",
+      "name": "攝影 × 留白水彩雙區海報 / Photo × Negative-Space Watercolor Diptych",
+      "slug": "ysu-photo-watercolor-diptych",
+      "category": "STYLE",
+      "lifecycle": "Approved",
+      "validation": "Partial",
+      "version": "1.0.0",
+      "version_note": "1.0.0",
+      "description": "把同一個內容呈現為原圖與留白水彩的上下對照海報，展示敘事提煉而非全量複製。",
+      "graphic_reference_count": 9,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "NOT_INSTALLED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "正式套件、雙語Prompt、原圖縮圖已歸檔；ZIP回下載hash一致",
+        "chatgpt": "未安裝／未發布Hub",
+        "codex": "未安裝"
+      },
+      "origin_project": null,
+      "origin_conversation": null,
+      "origin_conversation_url": null,
+      "locator_status": "UNLOCATED",
+      "related_conversations": [],
+      "next_action": "正式套件可用；Hub匯入／平台安裝待另行授權。",
+      "canonical_drive": "https://drive.google.com/drive/folders/1X7kwfO0YbMF2Vn-Jzpi02JB1-Gf9KSxN",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/1X7kwfO0YbMF2Vn-Jzpi02JB1-Gf9KSxN"
+        }
+      ],
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "explicit",
+        "lifecycle": "explicit",
+        "validation": "explicit",
+        "version": "explicit",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "explicit",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "derived",
+        "origin_conversation": "derived",
+        "origin_conversation_url": "derived",
+        "locator_status": "explicit",
+        "related_conversations": "derived",
+        "next_action": "explicit",
+        "canonical_drive": "explicit",
+        "links": "derived",
+        "registered": "derived",
+        "platform.drive": "explicit",
+        "platform.chatgpt": "explicit",
+        "platform.codex": "explicit"
+      },
+      "has_explicit_metadata": true,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "image-style",
+        "domain": "圖像與風格 / Image & Style",
+        "area": "風格轉譯 / Style transfer",
+        "style_family_id": "painting-illustration",
+        "style_family": "繪畫與插畫 / Painting & Illustration",
+        "medium": "水彩 / Watercolor",
+        "tags": [
+          "水彩",
+          "攝影",
+          "雙區海報"
+        ],
+        "source": "explicit registry taxonomy"
+      }
+    },
+    {
+      "id": "YSU-SKILL-025",
+      "name": "彩墨版畫敘事 / Chromatic Ink-Print Narratives",
+      "slug": "ysu-chromatic-ink-print",
+      "category": "STYLE",
+      "lifecycle": "Approved",
+      "validation": "Partial",
+      "version": "1.0.0",
+      "version_note": "1.0.0",
+      "description": "以墨線骨架、平面彩層與碎裂印刷感，統整複雜敘事。",
+      "graphic_reference_count": 14,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "NOT_INSTALLED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "正式套件、雙語Prompt、原圖縮圖已歸檔；ZIP回下載hash一致",
+        "chatgpt": "未安裝／未發布Hub",
+        "codex": "未安裝"
+      },
+      "origin_project": null,
+      "origin_conversation": null,
+      "origin_conversation_url": null,
+      "locator_status": "UNLOCATED",
+      "related_conversations": [],
+      "next_action": "正式套件可用；Hub匯入／平台安裝待另行授權。",
+      "canonical_drive": "https://drive.google.com/drive/folders/1BGdo--zegqS9d4KF0CWKqmUdSD7-3mk3",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/1BGdo--zegqS9d4KF0CWKqmUdSD7-3mk3"
+        }
+      ],
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "explicit",
+        "lifecycle": "explicit",
+        "validation": "explicit",
+        "version": "explicit",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "explicit",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "derived",
+        "origin_conversation": "derived",
+        "origin_conversation_url": "derived",
+        "locator_status": "explicit",
+        "related_conversations": "derived",
+        "next_action": "explicit",
+        "canonical_drive": "explicit",
+        "links": "derived",
+        "registered": "derived",
+        "platform.drive": "explicit",
+        "platform.chatgpt": "explicit",
+        "platform.codex": "explicit"
+      },
+      "has_explicit_metadata": true,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "image-style",
+        "domain": "圖像與風格 / Image & Style",
+        "area": "風格轉譯 / Style transfer",
+        "style_family_id": "painting-illustration",
+        "style_family": "繪畫與插畫 / Painting & Illustration",
+        "medium": "彩墨版印外觀 / Ink-print appearance",
+        "tags": [
+          "墨線",
+          "平面色層",
+          "敘事"
         ],
         "source": "explicit registry taxonomy"
       }

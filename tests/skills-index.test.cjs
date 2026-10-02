@@ -131,17 +131,20 @@ test('legacy entries with no metadata block still parse completely',()=>{
   assert.ok(legacy[field],`${field} still derived`);
 });
 
-test('the live index includes the SSF-B02 rules approval independently from image validation',()=>{
- assert.equal(live.counts.registered,21);
+test('the live index includes SSF-B02/B03 approval independently from image validation',()=>{
+ assert.equal(live.counts.registered,25);
  assert.equal(live.counts.pending,1);
- assert.equal(live.counts.total,22);
- // SSF-B02 has explicit metadata; the original 13 entries remain derived.
- assert.equal(live.counts.with_explicit_metadata,8);
+ assert.equal(live.counts.total,26);
+ // SSF-B02/B03 have explicit metadata; the original 13 entries remain derived.
+ assert.equal(live.counts.with_explicit_metadata,12);
  assert.deepEqual(live.warnings,[]);
- for(const id of ['014','015','016','017','020','021']){
+ for(const id of ['014','016','017','020','021','022','023','024','025']){
   const s=live.skills.find(s=>s.id==='YSU-SKILL-'+id);
   assert.equal(s.lifecycle,'Approved');assert.equal(s.validation,'Partial');assert.equal(s.version,'1.0.0');
  }
+ const renamed=byId(live,'YSU-SKILL-015');
+ assert.equal(renamed.version,'1.0.1');assert.match(renamed.name,/撕紙秘境/);
+ assert.equal(renamed.slug,'ysu-torn-paper-worlds');assert.equal(renamed.lifecycle,'Approved');assert.equal(renamed.validation,'Partial');
  for(const id of ['019']){
   const s=live.skills.find(s=>s.id==='YSU-SKILL-'+id);
   assert.equal(s.lifecycle,'Approved');assert.equal(s.validation,'Untested');assert.equal(s.version,'0.2.0');
@@ -155,7 +158,7 @@ test('the live index includes the SSF-B02 rules approval independently from imag
  for(const s of live.skills){
   assert.ok(LIFECYCLES.includes(s.lifecycle),`${s.id} lifecycle`);
   assert.ok(VALIDATIONS.includes(s.validation),`${s.id} validation`);
-  assert.equal(s.has_explicit_metadata,/^YSU-SKILL-(014|015|016|017|018|019|020|021)$/.test(s.id));
+  assert.equal(s.has_explicit_metadata,/^YSU-SKILL-(01[4-9]|02[0-5])$/.test(s.id));
  }
 });
 

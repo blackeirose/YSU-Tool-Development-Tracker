@@ -415,3 +415,14 @@ After reviewing the supplied SFDOT Diego Ramirez character board, the owner appr
 - Thumbnail SHA-256: `ddf06c52c2bc602b9382057aad0df0df463dbfab228910b8ad9e87c8c5a16049`.
 
 The full board is an application example, not a new universal specification: character turnaround layout, typography, subject and red/blue palette are not mandatory style rules. Existing canonical Skill text, v0.1.0 ZIP snapshot, reference classifications, validation status and other styles stay unchanged. Public authorization covers the selected portrait derivative; the full board remains in the existing private Drive folder.
+
+## DEC-020 — SSF-B03 approved catalog and old02 naming separation
+
+**Status:** ACTIVE
+**Date:** 2026-10-02 UTC
+
+The owner approved styles 09–12 and requested packaging, categorized source archival and Tracker synchronization. Register YSU-SKILL-022–025 as Approved / Partial v1.0.0, without treating archive approval as installation or Hub publication. Add the four original-reference 720px covers (R11, R02, R01, R04 respectively) under the standing cover preference. Full packages, reference sets and tests keep their private Drive permissions.
+
+09 裂紙浮空 / Torn-Paper Levitation belongs to paper-fiber; 10–12 belong to painting-illustration. Existing three style families remain unchanged. Rename old02 YSU-SKILL-015 to 撕紙秘境 / Torn-Paper Dioramas v1.0.1, preserving stable ID, slug, rules and existing cover. Both paper styles may contain tears; the distinction is compositional emphasis, not a binary presence/absence of an opening.
+
+Drive remains canonical. Export its verified registry, then regenerate skills.json. This content release changes no application, Auth, database or deployment architecture. See docs/validation/ssf-b03-2026-10-02.md for verification and limits.

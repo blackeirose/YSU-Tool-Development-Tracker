@@ -16,11 +16,11 @@ test('taxonomy rejects unknown families and duplicate assignments, supports miss
  assert.deepEqual(data.get('YSU-SKILL-001').tags,['透明','留白']);
  assert.equal(readTaxonomy('# Old registry',()=>{}).size,0);
 });
-test('all current Skills have one purpose, eight styles share three families',()=>{
+test('all current Skills have one purpose, twelve factory styles share three families',()=>{
  const index=JSON.parse(fs.readFileSync('skills.json'));
  for(const s of index.skills) assert.ok(s.taxonomy?.domain_id,s.id);
- const batch=index.skills.filter(s=>/^YSU-SKILL-(01[4-9]|02[01])$/.test(s.id));
- assert.equal(batch.length,8);
+ const batch=index.skills.filter(s=>/^YSU-SKILL-(01[4-9]|02[0-5])$/.test(s.id));
+ assert.equal(batch.length,12);
  assert.equal(new Set(batch.map(s=>s.taxonomy.style_family_id)).size,3);
  assert.ok(batch.every(s=>s.taxonomy.domain_id==='image-style'));
  assert.equal(batch.find(s=>s.id==='YSU-SKILL-019').taxonomy.medium,'不透明手繪色面 / Opaque painted color');

@@ -98,9 +98,9 @@ conversation URL is ever constructed.**
 
 ### Normalization status
 
-**Eight SSF-B02 entries carry explicit metadata**; the original 13
+**Twelve SSF-B02/B03 entries carry explicit metadata**; the original 13
 registered Skills and the existing pending candidate retain derived fields.
-`counts.with_explicit_metadata` is `8`. Normalization is incremental: add the
+`counts.with_explicit_metadata` is `12`. Normalization is incremental: add the
 block to a Skill's section in the **Drive** registry as that Skill is touched,
 reviewed or processed, then re-export and regenerate. The parser branch is
 proven by `tests/fixtures/registry-explicit.md`, a synthetic registry that
