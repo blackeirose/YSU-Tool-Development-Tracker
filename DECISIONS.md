@@ -389,3 +389,13 @@ The owner accepted the deeper Style 06 analysis and authorized saving the Skill 
 The owner reported that Style 05 and 06 thumbnails were missing from Tracker and requested completing the existing original-reference covers. Publish only the chosen P05-015 and P06-020 images as metadata-stripped 720px WebP derivatives under DEC-012. This extends the prior six-cover authorization to all eight SSF-B02 styles and supersedes the no-new-public-cover limitations in DEC-015/016. The private originals/full reference collections remain private. This does not approve per-image classifications, revised image-test results, runtime installation or Hub publishing. Both revised profiles remain Approved / Untested.
 
 Drive organization was also completed under the owner's preceding instruction: all eight canonical folders retain their IDs under three style families in 01_STYLES; original source folders are nested within each canonical folder; batch history is in 90_ARCHIVE; 00_PENDING was independently verified empty. The source registry has the current storage map. Historical preparation-only and pending-correction notes above are not current state.
+
+
+## DEC-018 — Cinematic Inkframe cover uses original reference R06
+
+**Status:** ACTIVE
+**Date:** 2026-10-01 America/Los_Angeles / 2026-10-02 UTC
+
+The owner confirmed R06 as the public Tracker cover for YSU-SKILL-012 (電影墨格 / Cinematic Inkframe), replacing the grayscale science-fiction wash collage that did not represent its canonical mixed-media comic criteria. Source: existing package reference R06.png, Drive file `1UhU4AvA3N8ZqCIAamwtUfqOyAKKTbcJf`. Publish its complete composition as a metadata-stripped 720px WebP derivative at `assets/skill-thumbs/ysu-cinematic-inkframe-r06.webp`. A new asset path avoids reusing the old cached cover URL.
+
+Approval covers this selected public thumbnail only; it does not publish the remaining reference collection or change Skill rules, version, validation status, installation or Hub state. The Skill's canonical text and 11 reference images were consistent; this is a cover-selection correction. The previous asset remains available in Git history/current assets for recovery.
