@@ -262,3 +262,8 @@ YSU-SKILL-028 Sprite Animation Production / 逐格角色動畫製作 v1.0.0 is a
 ## Sculptural Scroll Couture catalog refresh — 2026-10-02
 
 YSU-SKILL-029 v1.0.0 adds the owner's requested photographic couture style under the existing Photography & Realism family. Counts become 29 registered + 1 pending, 17 explicit metadata entries. Approved refers to instruction/reference packaging; current-prompt visual validation remains Untested. The original R01 cover and direct SKILL/ZIP links accompany the registry-derived entry. Previous catalog records remain unchanged. See DEC-024 and docs/validation/couture-2026-10-02.md.
+
+
+## WC-C catalog addition — 2026-10-02
+
+30 registered Skills plus the existing pending candidate. WC-C is YSU-SKILL-030, Approved / Untested v1.0.0; current source conversation located. Its selected original After supplies the single Tracker cover. Future Hub Before/After pair is recorded in the private package and next-action text; no new Tracker comparison UI or Hub release. WC-B remains its original mature L01 package.

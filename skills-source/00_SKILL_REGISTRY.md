@@ -7,7 +7,7 @@
 
 
 本表是已登錄 YSU 自製 Skills 的管理索引，不是帳號中所有第三方 Skills 的盤點。  
-目前 29 個已登錄項目：新增 YSU-SKILL-029 古畫捲軸雕塑高訂 v1.0.0；YSU-SKILL-028 逐格角色動畫製作 v1.0.0 保留。方法／套件已批准，動畫與引擎待實測；WC-A／WC-B 新提示詞仍待生圖驗證，風格13待定、WC-C暫停。此計數不代表平台已安裝或全部實測通過。  
+目前 30 個已登錄項目：新增 YSU-SKILL-030 留白建築明信片 v1.0.0（WC-C）；新增 YSU-SKILL-029 古畫捲軸雕塑高訂 v1.0.0；YSU-SKILL-028 逐格角色動畫製作 v1.0.0 保留。方法／套件已批准，動畫與引擎待實測；WC-A／WC-B 新提示詞仍待生圖驗證，風格13待定、WC-C已正式封裝，Hub Before/After配對已記錄，新Prompt未實測。此計數不代表平台已安裝或全部實測通過。  
 管理對話：YSU Skills 管理中心（使用者於 2026-09-21 指定；不代表已操作聊天 UI 更名）。  
 以下未加新日期的來源核對段落保留 2026-09-21 歷史；該次接續核對已讀三份中央文件、兩個 Skill 的歷史盤點及影片 VALIDATION 全文，並新增來源核對紀錄與本機取回指令；兩套完整來源仍未取得。本機安裝版本均為歷史紀錄，未直讀使用者電腦或重新安裝。  
 下方 YSU-SKILL-001 段落保留首次移交紀錄；該段「本輪」指首次歸檔，不是本次來源核對。本次沒有重跑 Simulator 套件或行為驗證。
@@ -47,6 +47,7 @@
 | YSU-SKILL-027 | 建築水彩融合 / Architectural Watercolor Fusion；以細建築墨線維持空間結構，結合豐富透明色洗、材料筆觸與留白，呈現成熟建築水彩。 | 1.0.0 | 正式套件、雙語Prompt、原圖與縮圖已歸檔 | 未安裝 | 未安裝／未發布 Hub |
 | YSU-SKILL-028 | 逐格角色動畫製作 / Sprite Animation Production；核可角色→動作→逐格修復→QA→交付 | 1.0.0 | 22 檔正式套件、雙語 Prompt、原圖及來源版本已歸檔；回下載 hash 通過 | 未安裝 | 未安裝／未發布 Hub；方法通過、動畫／引擎未測 |
 | YSU-SKILL-029 | 古畫捲軸雕塑高訂 / Sculptural Scroll Couture；以古畫捲軸構成立體高訂服裝，呈現黑底時尚人像 | 1.0.0 | 19 檔完整套件、雙語 Prompt、原圖縮圖已歸檔；回下載 hash 通過 | 未安裝 | 未安裝／未發布 Hub；規則封裝已批准、新 Prompt 待實測 |
+| YSU-SKILL-030 | 留白建築明信片 / Negative-Space Architectural Postcard；以紙白、斷續墨線與集中藍色暈染，保留建築辨識度 | 1.0.0 | 25 檔正式套件、雙語 Prompt、Before/After 原圖、縮圖已歸檔；ZIP 回下載核對通過 | 未安裝 | 未安裝／未發布 Hub；新版 Prompt Untested |
 
 
 ## YSU-SKILL-001 — Scientific Interactive Simulator
@@ -633,6 +634,7 @@ SHA-256：8608b2c97fa5ddc1d5fca465fbd50abce6543a22f44c8fc90c8e1e540acae4b3
 | YSU-SKILL-027 | image-style | 風格轉譯 / Style transfer | painting-illustration | 水彩 / Watercolor | 水彩; 建築; 空間; 透明色洗; 材料 |
 | YSU-SKILL-028 | character-design | 角色動畫製作 / Character animation production | — | — | ANIMATION; SPRITE; WORKFLOW; GAME_ASSET |
 | YSU-SKILL-029 | image-style | 高訂時尚攝影 / Couture fashion photography | photography-realism | 寫實棚拍與雕塑服裝 / Photoreal studio portrait and sculptural garments | STYLE; PHOTOGRAPHY; COUTURE; PORTRAIT; SCULPTURAL; SCROLL |
+| YSU-SKILL-030 | image-style | 風格轉譯 / Style transfer | painting-illustration | 水彩 / Watercolor | STYLE; WATERCOLOR; ARCHITECTURE; NEGATIVE_SPACE; INK_WASH; BEFORE_AFTER |
 | YSU-PENDING-001 | education | 科學解說 / Science communication | — | — | 教學; 影片 |
 
 
@@ -914,7 +916,7 @@ SHA-256：1aeb08b818cc372f906f57e98e3f767e528741f9177fd729f63b23cecfb4baba
 
 - WC-A 正式命名「極簡時尚人物水彩風格 / Minimalist Fashion Figure Watercolor」。WC-B「建築水彩融合 / Architectural Watercolor Fusion」名稱與成熟方向已確認。兩套共用既有繪畫與插畫／水彩分類，不新增大類。
 - SSF-B04-13「生活街景墨線水彩」：使用者同意與 WC-B 的子風格關係分析，但目前因管理與差異测试需求先待定。暫停後續生成、合併與正式打包，保留原參考／分析／歷史測試；待找到更合適目標圖再決定。這裡的風格13不等於既有 YSU-SKILL-013 動物角色套件。
-- WC-C 暫停，等待真正最後喜歡的圖片；14／15撤回狀態不變。
+- WC-C：Owner 已確認 `11_Complete Story-2.jpg` 為最終 Approved Reference，並已批准 v1.0.0 正式封裝，登錄為 YSU-SKILL-030。WC-B v1.0.0 與 L01 原設定保留。14／15撤回狀態不變。
 - 本次遵循既有 Factory 封裝、原參考縮圖與 Tracker 同步指示；完整原圖及套件保持私人。Hub 未發布，平台未安裝。
 
 ## YSU-SKILL-028 — 逐格角色動畫製作 / Sprite Animation Production
@@ -1006,4 +1008,52 @@ Tracker Metadata:
 | ID | slug | canonical folder ID | SKILL.md file ID | package ZIP file ID |
 |---|---|---|---|---|
 | YSU-SKILL-029 | `ysu-sculptural-scroll-couture` | `1BlnPuGfOf5ARY8TKMLrquZDfeHgbgQw4` | `1KIxvJ89l6S3OZOpXafLwpQ2LsAfwEaXT` | `1Rl_vDUyMb7g0YeFzsJLxQwUejKsxKakC` |
+
+
+## 2026-10-02 水彩歸屬更正
+
+Owner 明確指出 WC-B 原版沒有問題；Lake County 最終圖屬 WC-C（由 A+B 融合發展）。撤回助手前輪將該圖當 WC-B 新主參考的推論。WC-B 正式檔案未曾套用錯誤修改，保留原版與縮圖。此段記錄當時 WC-C 恢復整理的歷史狀態；已由下方正式封裝決策更新。現已封裝、未安裝／發布 Hub；總數 30。來源整理：https://drive.google.com/drive/folders/1UHGtdlqzpqTRvj0knqOdVwVN6OhxfPIh
+
+
+## YSU-SKILL-030 — 留白建築明信片 / Negative-Space Architectural Postcard
+
+Skill ID：ysu-negative-space-architectural-postcard
+批次：SSF-WC；來源代號：WC-C。版本 1.0.0。
+以紙白、斷續墨線與集中藍色暈染，保留建築辨識度。
+
+Tracker Metadata:
+- Category: STYLE
+- Lifecycle: Approved
+- Validation: Untested
+- Version: 1.0.0
+- Graphic References: 2
+- Drive: ARCHIVED
+- ChatGPT: NOT_INSTALLED
+- Codex: NOT_INSTALLED
+- Origin Project:
+- Origin Conversation: 極簡水彩建築插畫
+- Origin Conversation URL: https://chatgpt.com/c/6a078130-e360-83ea-8d19-3856cbde5a49
+- Locator Status: DIRECT_LINK
+- Next Action: Hub 使用 Before／After 泡泡；原圖與定稿已配對，先檢查畫幅對齊。新 Prompt 待實測。
+- Canonical Drive: https://drive.google.com/drive/folders/1Bvio10ZCZ0PjIq73VEaUBcz2qfKO_wHI
+
+分類：繪畫與插畫 / Painting & Illustration → 水彩 / Watercolor。Tags 含 STYLE。
+
+- [正式資料夾](https://drive.google.com/drive/folders/1Bvio10ZCZ0PjIq73VEaUBcz2qfKO_wHI)
+- [SKILL.md](https://drive.google.com/file/d/1O-JEQy0SCqRsjFhOYkOhOkrS_MX0Qczv/view?usp=drivesdk)
+- [完整 ZIP](https://drive.google.com/file/d/1aup51Ta0nsWxRumiJCgTq_d2MhhP2Xo1/view?usp=drivesdk)：25 檔，1804443 bytes；SHA-256 f10c7556344cc35783941c122c422594381e891af0e68423adb6a39a29187357。回下載 hash／CRC／逐檔比對通過。
+- [Codex Hub 交接](https://drive.google.com/file/d/19ERZv8V9ewpbsYjlW8egRn4woIwQCxWZ/view?usp=drivesdk)
+- [原參考縮圖](https://drive.google.com/file/d/1iO_7X2MUCPqzngYqNpSf3aGi3wtMBG5x/view?usp=drivesdk)：核可 After 完整構圖等比720px，非新測試圖。
+- [原圖與配對資料](https://drive.google.com/drive/folders/12VaCFiIad7JqYZZ_-CzWLYuCRIV1qPpm)
+- [私人 Factory 來源版本](https://drive.google.com/file/d/1tmYzMNP6xOA48M_RulF_kXXG3FXyj03B/view?usp=drivesdk)：9c7a7df73dc982c8938ec915f40141f81cd9741b。不是平台安裝或獨立 GitHub repo。
+
+2026-10-02 America/Los_Angeles：Owner 明確要求打包並指定未來 Hub Before/After。Before = 1974_004.jpg（1974_004(1).jpg 為相同 bytes）；After = 11_Complete Story-2.jpg。保留原始檔、角色／順序／尺寸／SHA256及未像素對齊限制。此顯示偏好僅適用 WC-C，未變更其他風格；不是 Photo × Watercolor Diptych。
+
+目前可見來源文字分支已讀，完整歷史附件與替代分支未全取回。Approved 為風格／封裝，Untested 為本版重建 Prompt。WC-B 原版與 L01 不變，13待定、14/15撤回不變。完整原圖與套件保持私人；Tracker依既有授權同步索引／縮圖。Hub尚未發布。
+
+## WC-C 套件定位表
+
+| ID | slug | canonical folder ID | SKILL.md file ID | package ZIP file ID |
+|---|---|---|---|---|
+| YSU-SKILL-030 | `ysu-negative-space-architectural-postcard` | `1Bvio10ZCZ0PjIq73VEaUBcz2qfKO_wHI` | `1O-JEQy0SCqRsjFhOYkOhOkrS_MX0Qczv` | `1aup51Ta0nsWxRumiJCgTq_d2MhhP2Xo1` |
 

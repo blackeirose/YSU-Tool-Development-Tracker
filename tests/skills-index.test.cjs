@@ -132,11 +132,11 @@ test('legacy entries with no metadata block still parse completely',()=>{
 });
 
 test('the live index includes SSF-B02/B03/WC approval independently from image validation',()=>{
- assert.equal(live.counts.registered,29);
+ assert.equal(live.counts.registered,30);
  assert.equal(live.counts.pending,1);
- assert.equal(live.counts.total,30);
+ assert.equal(live.counts.total,31);
  // SSF-B02/B03/WC and owner-approved Inkframe have explicit metadata.
- assert.equal(live.counts.with_explicit_metadata,17);
+ assert.equal(live.counts.with_explicit_metadata,18);
  assert.deepEqual(live.warnings,[]);
  for(const id of ['014','016','017','020','021','022','023','024','025']){
   const s=live.skills.find(s=>s.id==='YSU-SKILL-'+id);
@@ -152,7 +152,7 @@ test('the live index includes SSF-B02/B03/WC approval independently from image v
  const revised=byId(live,'YSU-SKILL-018');
  assert.equal(revised.lifecycle,'Approved');assert.equal(revised.validation,'Untested');assert.equal(revised.version,'0.2.0');
  assert.match(revised.name,/靜觀人境攝影/);
- for(const id of ['026','027']){
+ for(const id of ['026','027','030']){
   const s=byId(live,'YSU-SKILL-'+id);
   assert.equal(s.lifecycle,'Approved');assert.equal(s.validation,'Untested');assert.equal(s.version,'1.0.0');
   assert.equal(s.platform.chatgpt,'NOT_INSTALLED');assert.equal(s.platform.codex,'NOT_INSTALLED');
@@ -165,7 +165,7 @@ test('the live index includes SSF-B02/B03/WC approval independently from image v
  for(const s of live.skills){
   assert.ok(LIFECYCLES.includes(s.lifecycle),`${s.id} lifecycle`);
   assert.ok(VALIDATIONS.includes(s.validation),`${s.id} validation`);
-  assert.equal(s.has_explicit_metadata,/^YSU-SKILL-(012|01[4-9]|02[0-9])$/.test(s.id));
+  assert.equal(s.has_explicit_metadata,/^YSU-SKILL-(012|01[4-9]|02[0-9]|030)$/.test(s.id));
  }
 });
 

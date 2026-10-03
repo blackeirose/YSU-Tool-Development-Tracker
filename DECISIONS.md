@@ -462,3 +462,10 @@ Canonical Drive registry supplies taxonomy and stable package links. The catalog
 ## DEC-024 — Sculptural Scroll Couture catalog package
 
 2026-10-02. Owner requests including and packaging the named style and reiterates completing the existing Factory flow without repeated confirmations. Add YSU-SKILL-029, Approved / Untested v1.0.0, under existing Image & Style / Photography & Realism, with STYLE tag and the original R01 thumbnail. Approval covers instructions/archive; individual historic image approvals and full transcript remain incomplete, and new prompts are not image-tested. Only the catalog and a 720px original-reference derivative are public; full references and personal examples remain in private Drive. No Hub/runtime installation, task data, auth, UI behavior or infrastructure change.
+
+
+## DEC-025 — WC-C approved archive and future Hub Before/After
+
+2026-10-02 America/Los_Angeles. Owner authorizes WC-C packaging and adds the original photograph for a future Hub Before/After bubble. Register YSU-SKILL-030 留白建築明信片 / Negative-Space Architectural Postcard v1.0.0, Approved / Untested, under image-style / painting-illustration / watercolor. Before=1974_004.jpg; After=owner-approved 11_Complete Story-2.jpg. Pair metadata and Codex handoff are in the private canonical package. Original frames are not pixel-registered.
+
+Standing Factory authorization covers this catalog update and the selected full-composition 720px After thumbnail. No original full-size images or private source text are added to the public repository. WC-B/L01 and all existing covers/entries remain unchanged; 13 stays on hold, 14/15 withdrawn. No Hub publication, Skill installation, new image test, UI or Tasks/Auth/database change. This supersedes DEC-021's historical WC-C hold only.

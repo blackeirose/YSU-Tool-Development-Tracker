@@ -17,7 +17,7 @@
     "source": "Skill Taxonomy v1 table in canonical Drive registry"
   },
   "$comment": "GENERATED FILE — do not edit by hand. Source: Google Drive AI Works/06_Skills/00_SKILL_REGISTRY.md. Regenerate with `npm run skills:index`.",
-  "generated_at": "2026-10-02T23:22:44.637Z",
+  "generated_at": "2026-10-03T01:21:51.263Z",
   "source": {
     "file": "skills-source/00_SKILL_REGISTRY.md",
     "drive_file_id": "1g6Io9lD4YwkDaX5_OUqssvrcEyuCF-1P",
@@ -42,10 +42,10 @@
     ]
   },
   "counts": {
-    "total": 30,
-    "registered": 29,
+    "total": 31,
+    "registered": 30,
     "pending": 1,
-    "with_explicit_metadata": 17
+    "with_explicit_metadata": 18
   },
   "warnings": [],
   "skills": [
@@ -2387,6 +2387,95 @@
           "PORTRAIT",
           "SCULPTURAL",
           "SCROLL"
+        ],
+        "source": "explicit registry taxonomy"
+      }
+    },
+    {
+      "id": "YSU-SKILL-030",
+      "name": "留白建築明信片 / Negative-Space Architectural Postcard",
+      "slug": "ysu-negative-space-architectural-postcard",
+      "category": "STYLE",
+      "lifecycle": "Approved",
+      "validation": "Untested",
+      "version": "1.0.0",
+      "version_note": "1.0.0",
+      "description": "以紙白、斷續墨線與集中藍色暈染，保留建築辨識度",
+      "graphic_reference_count": 2,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "NOT_INSTALLED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "25 檔正式套件、雙語 Prompt、Before/After 原圖、縮圖已歸檔；ZIP 回下載核對通過",
+        "chatgpt": "未安裝／未發布 Hub；新版 Prompt Untested",
+        "codex": "未安裝"
+      },
+      "origin_project": null,
+      "origin_conversation": "極簡水彩建築插畫",
+      "origin_conversation_url": "https://chatgpt.com/c/6a078130-e360-83ea-8d19-3856cbde5a49",
+      "locator_status": "DIRECT_LINK",
+      "related_conversations": [],
+      "next_action": "Hub 使用 Before／After 泡泡；原圖與定稿已配對，先檢查畫幅對齊。新 Prompt 待實測。",
+      "canonical_drive": "https://drive.google.com/drive/folders/1Bvio10ZCZ0PjIq73VEaUBcz2qfKO_wHI",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/1Bvio10ZCZ0PjIq73VEaUBcz2qfKO_wHI"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://drive.google.com/file/d/1O-JEQy0SCqRsjFhOYkOhOkrS_MX0Qczv/view"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/1aup51Ta0nsWxRumiJCgTq_d2MhhP2Xo1/view"
+        }
+      ],
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "explicit",
+        "lifecycle": "explicit",
+        "validation": "explicit",
+        "version": "explicit",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "explicit",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "derived",
+        "origin_conversation": "explicit",
+        "origin_conversation_url": "explicit",
+        "locator_status": "explicit",
+        "related_conversations": "derived",
+        "next_action": "explicit",
+        "canonical_drive": "explicit",
+        "links": "derived",
+        "registered": "derived",
+        "platform.drive": "explicit",
+        "platform.chatgpt": "explicit",
+        "platform.codex": "explicit"
+      },
+      "has_explicit_metadata": true,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "image-style",
+        "domain": "圖像與風格 / Image & Style",
+        "area": "風格轉譯 / Style transfer",
+        "style_family_id": "painting-illustration",
+        "style_family": "繪畫與插畫 / Painting & Illustration",
+        "medium": "水彩 / Watercolor",
+        "tags": [
+          "STYLE",
+          "WATERCOLOR",
+          "ARCHITECTURE",
+          "NEGATIVE_SPACE",
+          "INK_WASH",
+          "BEFORE_AFTER"
         ],
         "source": "explicit registry taxonomy"
       }
