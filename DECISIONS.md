@@ -469,3 +469,15 @@ Canonical Drive registry supplies taxonomy and stable package links. The catalog
 2026-10-02 America/Los_Angeles. Owner authorizes WC-C packaging and adds the original photograph for a future Hub Before/After bubble. Register YSU-SKILL-030 留白建築明信片 / Negative-Space Architectural Postcard v1.0.0, Approved / Untested, under image-style / painting-illustration / watercolor. Before=1974_004.jpg; After=owner-approved 11_Complete Story-2.jpg. Pair metadata and Codex handoff are in the private canonical package. Original frames are not pixel-registered.
 
 Standing Factory authorization covers this catalog update and the selected full-composition 720px After thumbnail. No original full-size images or private source text are added to the public repository. WC-B/L01 and all existing covers/entries remain unchanged; 13 stays on hold, 14/15 withdrawn. No Hub publication, Skill installation, new image test, UI or Tasks/Auth/database change. This supersedes DEC-021's historical WC-C hold only.
+
+
+## DEC-026 — Photography Hub publication status synchronization
+
+**Status:** ACTIVE
+**Date:** 2026-10-02 America/Los_Angeles (2026-10-03 UTC)
+
+Owner explicitly authorizes completion of photography Hub publication and this single Tracker production status release. YSU-SKILL-018 v0.2.0 / public-r1 is already published; preserve its latest bilingual Hub row and existing media. YSU-SKILL-029 v1.0.0 / public-r2 is now published via normal Owner CMS as the sole second child of Photography & Realism. The later Owner decision permits the selected existing R01 thumbnail and release package for the Hub audience, superseding the earlier own/friends trial hold. This records an Owner decision, not independently verified third-party redistribution rights.
+
+Read-back canonical Drive Registry supplies Published to Hub status, actual Hub entry, Bubble IDs, package revision and publication times. Keep both Approved / Untested; normal Member UI remains NOT VERIFIED due to no suitable session. Owner/Admin Launch-to-Drive actual downloads and Guest sign-in boundary were tested separately. New 029 release changes publishing documents only; canonical Skill, prompts and reference bytes remain unchanged. Public release download URLs stay in protected Hub Launch and private release records, never this public Tracker export.
+
+Regenerate with the existing generator; only 018/029 index entries change, preserving the other 29 entries, counts (30 registered + 1 pending, 18 explicit metadata), thumbnails and taxonomy. Existing 37 tests passed in an approved execution environment using existing Node/jsdom, without Admin or device changes. No Tracker app/UI/Tasks/Auth changes, no Hub code/schema/RLS/Auth/deployment changes. Prior no-Hub statements remain historical.

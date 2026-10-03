@@ -267,3 +267,10 @@ YSU-SKILL-029 v1.0.0 adds the owner's requested photographic couture style under
 ## WC-C catalog addition — 2026-10-02
 
 30 registered Skills plus the existing pending candidate. WC-C is YSU-SKILL-030, Approved / Untested v1.0.0; current source conversation located. Its selected original After supplies the single Tracker cover. Future Hub Before/After pair is recorded in the private package and next-action text; no new Tracker comparison UI or Hub release. WC-B remains its original mature L01 package.
+
+
+## Photography Hub publication synchronization — 2026-10-02 America/Los_Angeles
+
+YSU-SKILL-018 v0.2.0 / public-r1 and YSU-SKILL-029 v1.0.0 / public-r2 are Published to Hub under the existing Photography & Realism Main. The canonical Drive Registry records actual Bubble IDs, Hub entry and publication dates. This owner-authorized status-only release preserves all other catalog entries, thumbnails and application behavior; counts remain 30 registered + 1 pending and 18 explicit metadata entries.
+
+Both remain Approved / Untested. Guest UI and Owner/Admin actual Launch → Drive → complete ZIP were verified separately; ordinary Member UI is NOT VERIFIED because no suitable session was available. The later Owner 029 publication decision supersedes its prior own/friends hold while retaining the unverified third-party redistribution-rights disclosure. Protected public-release ZIP URLs are absent from the public source and generated index. See DEC-026 and docs/validation/photography-hub-2026-10-02.md.

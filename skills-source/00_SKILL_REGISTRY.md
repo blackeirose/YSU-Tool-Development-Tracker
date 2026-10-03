@@ -35,7 +35,7 @@
 | YSU-SKILL-015 | 撕紙秘境 / Torn-Paper Dioramas；以纖維裂紙、懸浮紙層與光影重構場景；原圖允許時，以疏朗留白營造空氣感與意境。 | 1.0.1 | 正式套件、雙語Prompt、原圖縮圖已歸檔；ZIP回下載hash一致 | 未安裝 | 未安裝／未發布Hub |
 | YSU-SKILL-016 | 柔絨羊毛氈浮雕 / Soft Felt Relief；以短絨羊毛氈、刺繡細線與柔和低浮雕，把複雜內容化為安靜、可觸摸的敘事插畫。 | 1.0.0 | 正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔 | 未安裝 | 未安裝／未發布 Hub |
 | YSU-SKILL-017 | 青墨琥珀復古動畫 / Teal & Amber Ink Anime；以精密動畫墨線、青黑暗部和琥珀亮部呈現濃密但可讀的敘事場景。 | 1.0.0 | 正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔 | 未安裝 | 未安裝／未發布 Hub |
-| YSU-SKILL-018 | 靜觀人境攝影 / Contemplative Environmental Portraiture；以取景距離、人物尺度、視線和留白，呈現個人與環境之間安靜的關係；光色與材質為輔。 | 0.2.0 | 正式歸檔；規則已確認／待實測 | 未安裝 | 未安裝／未發布 Hub |
+| YSU-SKILL-018 | 靜觀人境攝影 / Contemplative Environmental Portraiture；以取景距離、人物尺度、視線和留白，呈現個人與環境之間安靜的關係；光色與材質為輔。 | 0.2.0 | 正式歸檔；規則已確認／待實測 | 未安裝 | 未安裝／Published to Hub |
 | YSU-SKILL-019 | 懷舊手繪動畫敘事海報 / Nostalgic Hand-Painted Anime Narrative Poster；以霧面手繪色塊、動畫式人物與融入場景的敘事意象，把故事濃縮成具有懷舊情緒的海報。 | 0.2.0 | 正式歸檔；規則已確認／待實測 | 未安裝 | 未安裝／未發布 Hub |
 | YSU-SKILL-020 | 建築墨線色塊拼貼 / Architectural Ink & Color Collage；將原圖空間結構轉成精密透視墨線、碎片色面與受控制潑彩交疊的建築感插畫。 | 1.0.0 | 正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔 | 未安裝 | 未安裝／未發布 Hub |
 | YSU-SKILL-021 | 攝影 × 精切紙雕雙區海報 / Photo × Precision-Paper Diptych；每張目標各成一張 3:4 直式海報，上半原圖、下半紙雕轉譯，各占嚴格 50%。 | 1.0.0 | 正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔 | 未安裝 | 未安裝／未發布 Hub |
@@ -46,7 +46,7 @@
 | YSU-SKILL-026 | 極簡時尚人物水彩風格 / Minimalist Fashion Figure Watercolor；以有筆壓的斷線、透明薄彩與主體內留白，保留人物辨識並形成輕盈的時尚插畫。 | 1.0.0 | 正式套件、雙語Prompt、原圖與縮圖已歸檔 | 未安裝 | 未安裝／未發布 Hub |
 | YSU-SKILL-027 | 建築水彩融合 / Architectural Watercolor Fusion；以細建築墨線維持空間結構，結合豐富透明色洗、材料筆觸與留白，呈現成熟建築水彩。 | 1.0.0 | 正式套件、雙語Prompt、原圖與縮圖已歸檔 | 未安裝 | 未安裝／未發布 Hub |
 | YSU-SKILL-028 | 逐格角色動畫製作 / Sprite Animation Production；核可角色→動作→逐格修復→QA→交付 | 1.0.0 | 22 檔正式套件、雙語 Prompt、原圖及來源版本已歸檔；回下載 hash 通過 | 未安裝 | 未安裝／未發布 Hub；方法通過、動畫／引擎未測 |
-| YSU-SKILL-029 | 古畫捲軸雕塑高訂 / Sculptural Scroll Couture；以古畫捲軸構成立體高訂服裝，呈現黑底時尚人像 | 1.0.0 | 19 檔完整套件、雙語 Prompt、原圖縮圖已歸檔；回下載 hash 通過 | 未安裝 | 未安裝／未發布 Hub；規則封裝已批准、新 Prompt 待實測 |
+| YSU-SKILL-029 | 古畫捲軸雕塑高訂 / Sculptural Scroll Couture；以古畫捲軸構成立體高訂服裝，呈現黑底時尚人像 | 1.0.0 | 19 檔完整套件、雙語 Prompt、原圖縮圖已歸檔；回下載 hash 通過 | 未安裝 | 未安裝／Published to Hub；規則封裝已批准、新 Prompt 待實測 |
 | YSU-SKILL-030 | 留白建築明信片 / Negative-Space Architectural Postcard；以紙白、斷續墨線與集中藍色暈染，保留建築辨識度 | 1.0.0 | 25 檔正式套件、雙語 Prompt、Before/After 原圖、縮圖已歸檔；ZIP 回下載核對通過 | 未安裝 | 未安裝／未發布 Hub；新版 Prompt Untested |
 
 
@@ -482,7 +482,13 @@ Tracker Metadata:
 - Origin Conversation:
 - Origin Conversation URL:
 - Locator Status: UNLOCATED
-- Next Action: 規則已確認；待適合個人照片實測。逐圖分類未確認；未安裝、未發布 Hub。
+- Next Action: Published to Hub；v0.2.0／public-r1 已發布；待具資格 Member UI 驗收與適合個人照片影像實測。逐圖分類仍未全確認；未安裝。
+- Hub Status: Published to Hub
+- Hub URL: https://hub.ycsu.cc/
+- Bubble ID: b_19c636ee-5f0d-4af7-aed0-f0a4d950f5fc
+- Hub Parent Bubble ID: b_5c9ab19c-b7fd-4208-a053-8135ca2a9c27
+- Hub Package Version: 0.2.0 / public-r1
+- Hub Published At: 2026-10-03T04:42:32.883214Z
 - Canonical Drive: https://drive.google.com/drive/folders/1hMuel2LZ14EhfJiuX7IMBfvTgbH2ctrp
 
 2026-10-02 UTC（2026-10-01 洛杉磯）：使用者允許將攝影構圖、人境關係與安靜感的分析先寫入 Skill，日後再測。Approved 僅代表本版規則與存檔批准；Validation = Untested。新版無測試圖；舊 A/B 只留作適配不足紀錄。保留原構圖為預設，已授權重構另有分支。
@@ -490,6 +496,11 @@ Tracker Metadata:
 來源：https://drive.google.com/drive/folders/1riMZjkGfsicV65qo3d5-_s2I6z5Vxr_R。完整原來源聊天未定位；Master Control 後期決策已納入。16 張參考圖的逐圖分類未確認，不由規則批准推導。原 P05-015 私有縮圖保留；未授權新增公開封面。舊名稱：靜觀自然光電影寫實 / Contemplative Natural-Light Cinema。
 
 套件：https://drive.google.com/file/d/1lgn0PyJnayPQ_H0Vw4C08t_cor0jvLue/view 。私人來源同步未完成，已保存可回復的版本紀錄；不宣稱平台安裝或 GitHub Skill source release。
+
+2026-10-02 America/Los_Angeles（2026-10-03 UTC）— HUB 正式內容匯入：使用者本輪明確授權發布無 hold 的攝影內容。以既有 CMS 發布上述 Main → Child，原始20筆內容／排序／row version與40個媒體連結、34個資產資料保持一致。018沿用較晚核可的 P05-015 720px WebP 封面（Tracker DEC-017），不公開私人原圖、完整16張參考集或舊測試。獨立發布包public-r1保留核可核心規則與prompts，ZIP下載網址僅存HUB protected Launch及私有發布清單，不加入本Registry公開匯出。匿名HTTP完整ZIP、CRC／hash與Owner/Admin實際Launch→Drive→下載通過；Guest UI登入阻擋及重新整理檢查完成；普通Member session與Owner實際登出流程尚未驗。手機390px可水平滑到Child與INFO，但主子無法同屏顯示。規則Approved、影像Validation仍Untested；不改canonical Skill，不宣稱平台安裝。舊「未發布Hub／縮圖尚未公開」文字保留為歷史，以上較晚紀錄為現況。
+
+
+2026-10-02 America/Los_Angeles（2026-10-03 UTC）— 本輪攝影收尾核對：018及攝影Main保留已部署新版雙語短文案、row_version=2、P05-015同圖雙槽媒體與既有Launch，不重建、不覆蓋舊v1。018 v0.2.0／public-r1原連結本輪匿名HTTP完整ZIP及Owner/Admin實際Launch→Drive→下載再次核對相同大小與完整SHA-256，CRC／解壓通過。Guest入口持續要求登入；普通Member UI仍NOT VERIFIED，影像Validation=Untested。舊縮圖未公開註記、旧手機Detail版本限制屬歷史，較晚核可及新版Detail以最新HUB讀回為準。
 
 ## YSU-SKILL-019 — 懷舊手繪動畫敘事海報 / Nostalgic Hand-Painted Anime Narrative Poster
 
@@ -987,7 +998,13 @@ Tracker Metadata:
 - Origin Conversation: 分析圖片風格
 - Origin Conversation URL:
 - Locator Status: PROJECT_TITLE_ONLY
-- Next Action: 用合適人像實測；保留身份，先檢查捲軸是否構成服裝。歷史逐圖核可未完整取回。
+- Next Action: Published to Hub；v1.0.0／public-r2 已發布；Owner/Admin Launch→Drive→完整ZIP及Guest入口驗收通過；普通Member UI尚未驗證。用合適人像實測；影像Validation仍Untested。
+- Hub Status: Published to Hub
+- Hub URL: https://hub.ycsu.cc/
+- Bubble ID: b_9e42f112-1ae1-470f-b490-52743a829f28
+- Hub Parent Bubble ID: b_5c9ab19c-b7fd-4208-a053-8135ca2a9c27
+- Hub Package Version: 1.0.0 / public-r2
+- Hub Published At: 2026-10-03T06:13:48.926974Z
 - Canonical Drive: https://drive.google.com/drive/folders/1BlnPuGfOf5ARY8TKMLrquZDfeHgbgQw4
 
 2026-10-02 America/Los_Angeles：使用者要求本風格納入並打包，並再次要求不要重複確認，直接完成既有流程。Approved 是 instruction/reference 封裝批准，不推導成生成圖逐張核可或新 Prompt 生圖測試。
@@ -1002,6 +1019,11 @@ Tracker Metadata:
 來源：本次附件核實對話標題，R01完整原圖與R02含全文prompt的同圖截圖已實看。R01主要風格、R02原始文字、E01局部參考、E02為不符合完整捲軸服裝的對照，屬分析者分類，未偽稱已取回Owner逐張分類。四份圖像只有一個主要原始風格作品，不能當四種風格。
 
 完整原對話／URL／所有早期生成結果未取回，不標全文final-state取證完成。來源圖與原始prompt支持目前規則；新版可攜prompt未實測，Validation=Untested。保留人物身份、古畫作衣物材料、立體翻折回捲、低彩古絹／暗金、寫實黑底棚拍；漂浮背景絲帶不能替代穿在身上的服裝。
+
+2026-10-02 America/Los_Angeles（2026-10-03 UTC）— HUB 匯入準備完成／發布 hold：018已獨立發布，不受029限制阻擋。029 v1.0.0／public-r1參考R01全圖與發布ZIP仍限自己與好友非商業試用；現有HUB公開Bubble對Guest可見、Launch服務全部合格會員，不能自動擴大素材散布。既有R01全構圖720px Tracker封面核可與全圖／ZIP範圍分開；未寫入正式029Bubble，未標Published to Hub，Validation維持Untested，沒有生成替代圖或改canonical。下一步是取得符合HUB受眾的素材範圍或另行製作並核可新圖。
+
+
+2026-10-02 America/Los_Angeles（2026-10-03 UTC）— 較晚 Owner 正式發布決定／HUB 收尾：本次明確授權沿用既有 R01 全構圖縮圖及發布套件，正式提供於 HUB 公開 Bubble 與既有合格會員 protected Launch，取代上一段自己與好友試用範圍及發布 hold。這是 Owner 的發布決定，未獨立核實原作者再散布權利；保留來源與查證限制，不聲稱已取得第三方授權。正常 Owner CMS 已新增唯一029 Child；以上ID、版本及時間為獨立正式資料讀回。Main與018仍為row_version=2，原有22筆Bubble、媒體與排序完整保留。public-r2只修正發布文件；核心SKILL、prompts與R01原圖和Skill v1.0.0保持不變。兩套ZIP本輪匿名HTTP取得完整檔案，大小／SHA-256／CRC／解壓通過；Owner/Admin實際HUB Launch→Drive分享頁→下載兩套正確ZIP通過。029 Detail桌面891px、手機390px與320px雙語順序／Tags／Close／登入入口及無水平溢出通過；畫布平移另列。Guest只見登入入口，ZIP網址不進公開INFO／Guest payload／本Registry公開匯出；普通Member session不足，Member UI=NOT VERIFIED。下載與內容發布通過不代表影像實測，Validation=Untested，ChatGPT/Codex未安裝。canonical完整歸檔、母資料夾私有；歷史public-r1保留，現行HUB使用public-r2。
 
 ## Sculptural Scroll Couture 套件定位表
 
@@ -1056,4 +1078,3 @@ Tracker Metadata:
 | ID | slug | canonical folder ID | SKILL.md file ID | package ZIP file ID |
 |---|---|---|---|---|
 | YSU-SKILL-030 | `ysu-negative-space-architectural-postcard` | `1Bvio10ZCZ0PjIq73VEaUBcz2qfKO_wHI` | `1O-JEQy0SCqRsjFhOYkOhOkrS_MX0Qczv` | `1aup51Ta0nsWxRumiJCgTq_d2MhhP2Xo1` |
-

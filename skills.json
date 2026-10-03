@@ -17,7 +17,7 @@
     "source": "Skill Taxonomy v1 table in canonical Drive registry"
   },
   "$comment": "GENERATED FILE — do not edit by hand. Source: Google Drive AI Works/06_Skills/00_SKILL_REGISTRY.md. Regenerate with `npm run skills:index`.",
-  "generated_at": "2026-10-03T01:21:51.263Z",
+  "generated_at": "2026-10-03T06:21:06.097Z",
   "source": {
     "file": "skills-source/00_SKILL_REGISTRY.md",
     "drive_file_id": "1g6Io9lD4YwkDaX5_OUqssvrcEyuCF-1P",
@@ -1405,7 +1405,7 @@
       },
       "platform_notes": {
         "drive": "正式歸檔；規則已確認／待實測",
-        "chatgpt": "未安裝／未發布 Hub",
+        "chatgpt": "未安裝／Published to Hub",
         "codex": "未安裝"
       },
       "origin_project": null,
@@ -1413,7 +1413,7 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": "規則已確認；待適合個人照片實測。逐圖分類未確認；未安裝、未發布 Hub。",
+      "next_action": "Published to Hub；v0.2.0／public-r1 已發布；待具資格 Member UI 驗收與適合個人照片影像實測。逐圖分類仍未全確認；未安裝。",
       "canonical_drive": "https://drive.google.com/drive/folders/1hMuel2LZ14EhfJiuX7IMBfvTgbH2ctrp",
       "links": [
         {
@@ -2320,7 +2320,7 @@
       },
       "platform_notes": {
         "drive": "19 檔完整套件、雙語 Prompt、原圖縮圖已歸檔；回下載 hash 通過",
-        "chatgpt": "未安裝／未發布 Hub；規則封裝已批准、新 Prompt 待實測",
+        "chatgpt": "未安裝／Published to Hub；規則封裝已批准、新 Prompt 待實測",
         "codex": "未安裝"
       },
       "origin_project": "分析",
@@ -2328,7 +2328,7 @@
       "origin_conversation_url": null,
       "locator_status": "PROJECT_TITLE_ONLY",
       "related_conversations": [],
-      "next_action": "用合適人像實測；保留身份，先檢查捲軸是否構成服裝。歷史逐圖核可未完整取回。",
+      "next_action": "Published to Hub；v1.0.0／public-r2 已發布；Owner/Admin Launch→Drive→完整ZIP及Guest入口驗收通過；普通Member UI尚未驗證。用合適人像實測；影像Validation仍Untested。",
       "canonical_drive": "https://drive.google.com/drive/folders/1BlnPuGfOf5ARY8TKMLrquZDfeHgbgQw4",
       "links": [
         {
