@@ -17,7 +17,7 @@
     "source": "Skill Taxonomy v1 table in canonical Drive registry"
   },
   "$comment": "GENERATED FILE — do not edit by hand. Source: Google Drive AI Works/06_Skills/00_SKILL_REGISTRY.md. Regenerate with `npm run skills:index`.",
-  "generated_at": "2026-10-03T06:21:06.097Z",
+  "generated_at": "2026-10-03T10:21:06.496Z",
   "source": {
     "file": "skills-source/00_SKILL_REGISTRY.md",
     "drive_file_id": "1g6Io9lD4YwkDaX5_OUqssvrcEyuCF-1P",
@@ -1164,7 +1164,7 @@
       },
       "platform_notes": {
         "drive": "正式套件、雙語Prompt、原圖縮圖已歸檔；ZIP回下載hash一致",
-        "chatgpt": "未安裝／未發布Hub",
+        "chatgpt": "未安裝／Published to Hub",
         "codex": "未安裝"
       },
       "origin_project": null,
@@ -1172,7 +1172,7 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": "正式套件可用；Hub匯入／平台安裝待另行授權。",
+      "next_action": "Published to Hub；v1.0.1／public-r1 已發布；待普通 Member UI 與剩餘影像／跨平台實測，Validation=Partial，未安裝。",
       "canonical_drive": "https://drive.google.com/drive/folders/11D4Gwnl_fWt44hxYvtYesJU2dJWU4XhC",
       "links": [
         {
@@ -1250,7 +1250,7 @@
       },
       "platform_notes": {
         "drive": "正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔",
-        "chatgpt": "未安裝／未發布 Hub",
+        "chatgpt": "未安裝／Published to Hub",
         "codex": "未安裝"
       },
       "origin_project": null,
@@ -1258,7 +1258,7 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": "使用正式套件；Hub 匯入待另行授權。",
+      "next_action": "Published to Hub；v1.0.0／public-r1 已發布；待普通 Member UI 與剩餘影像／跨平台實測，Validation=Partial，未安裝。",
       "canonical_drive": "https://drive.google.com/drive/folders/1ATQWh7DP8tN52fR17uUoXjEyWPbmUix8",
       "links": [
         {
@@ -1635,7 +1635,7 @@
       },
       "platform_notes": {
         "drive": "正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔",
-        "chatgpt": "未安裝／未發布 Hub",
+        "chatgpt": "未安裝／Published to Hub",
         "codex": "未安裝"
       },
       "origin_project": null,
@@ -1643,7 +1643,7 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": "使用正式套件；Hub 匯入待另行授權。",
+      "next_action": "Published to Hub；v1.0.0／public-r1 已發布；待普通 Member UI 與剩餘影像／跨平台實測，Validation=Partial，未安裝。",
       "canonical_drive": "https://drive.google.com/drive/folders/1eHHmYuDwHPfn2CGKRI8n1r9jrwegtx4e",
       "links": [
         {
@@ -1713,7 +1713,7 @@
       },
       "platform_notes": {
         "drive": "正式套件、雙語Prompt、原圖縮圖已歸檔；ZIP回下載hash一致",
-        "chatgpt": "未安裝／未發布Hub",
+        "chatgpt": "未安裝／Published to Hub",
         "codex": "未安裝"
       },
       "origin_project": null,
@@ -1721,7 +1721,7 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": "正式套件可用；Hub匯入／平台安裝待另行授權。",
+      "next_action": "Published to Hub；v1.0.0／public-r1 已發布；待普通 Member UI 與剩餘影像／跨平台實測，Validation=Partial，未安裝。",
       "canonical_drive": "https://drive.google.com/drive/folders/1rdBDnrSCn7HecIuUYLK8q2lwCLgmfyVy",
       "links": [
         {

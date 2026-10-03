@@ -32,14 +32,14 @@
 | YSU-SKILL-012 | YSU Cinematic Inkframe／電影墨格；寫實轉混合媒材漫畫、角色／空間／頓點 | 文件／參考 v0.1.0 | 27 檔 ZIP＋展開來源／11 圖已歸檔；ZIP 回下載 SHA-256 與逐檔比對通過 | 未安裝 | 未安裝／未發布；未改分享；SFDOT 人物 BOARD 已核准，Seedance／跨案待驗證 |  
 | YSU-SKILL-013 | YSU Stylized Animal Character Bible；遊戲／動畫用風格化動物角色設定 | 文件／參考 v0.1.0 | SKILL＋工作表＋5 張 REFERENCE_ONLY Graphic＋ZIP 已歸檔 | 未安裝／未驗證 | 未發布、未改分享；未做新角色生成／rig／game runtime 驗證 |
 | YSU-SKILL-014 | 靛金細描敘事插畫 / Indigo & Gold Editorial Illustration；把原圖敘事轉成暖象牙紙上的靛藍、金赭、細墨線編輯插畫；適合人物故事、概念海報與敘事主視覺。 | 1.0.0 | 正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔 | 未安裝 | 未安裝／未發布 Hub |
-| YSU-SKILL-015 | 撕紙秘境 / Torn-Paper Dioramas；以纖維裂紙、懸浮紙層與光影重構場景；原圖允許時，以疏朗留白營造空氣感與意境。 | 1.0.1 | 正式套件、雙語Prompt、原圖縮圖已歸檔；ZIP回下載hash一致 | 未安裝 | 未安裝／未發布Hub |
-| YSU-SKILL-016 | 柔絨羊毛氈浮雕 / Soft Felt Relief；以短絨羊毛氈、刺繡細線與柔和低浮雕，把複雜內容化為安靜、可觸摸的敘事插畫。 | 1.0.0 | 正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔 | 未安裝 | 未安裝／未發布 Hub |
+| YSU-SKILL-015 | 撕紙秘境 / Torn-Paper Dioramas；以纖維裂紙、懸浮紙層與光影重構場景；原圖允許時，以疏朗留白營造空氣感與意境。 | 1.0.1 | 正式套件、雙語Prompt、原圖縮圖已歸檔；ZIP回下載hash一致 | 未安裝 | 未安裝／Published to Hub |
+| YSU-SKILL-016 | 柔絨羊毛氈浮雕 / Soft Felt Relief；以短絨羊毛氈、刺繡細線與柔和低浮雕，把複雜內容化為安靜、可觸摸的敘事插畫。 | 1.0.0 | 正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔 | 未安裝 | 未安裝／Published to Hub |
 | YSU-SKILL-017 | 青墨琥珀復古動畫 / Teal & Amber Ink Anime；以精密動畫墨線、青黑暗部和琥珀亮部呈現濃密但可讀的敘事場景。 | 1.0.0 | 正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔 | 未安裝 | 未安裝／未發布 Hub |
 | YSU-SKILL-018 | 靜觀人境攝影 / Contemplative Environmental Portraiture；以取景距離、人物尺度、視線和留白，呈現個人與環境之間安靜的關係；光色與材質為輔。 | 0.2.0 | 正式歸檔；規則已確認／待實測 | 未安裝 | 未安裝／Published to Hub |
 | YSU-SKILL-019 | 懷舊手繪動畫敘事海報 / Nostalgic Hand-Painted Anime Narrative Poster；以霧面手繪色塊、動畫式人物與融入場景的敘事意象，把故事濃縮成具有懷舊情緒的海報。 | 0.2.0 | 正式歸檔；規則已確認／待實測 | 未安裝 | 未安裝／未發布 Hub |
 | YSU-SKILL-020 | 建築墨線色塊拼貼 / Architectural Ink & Color Collage；將原圖空間結構轉成精密透視墨線、碎片色面與受控制潑彩交疊的建築感插畫。 | 1.0.0 | 正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔 | 未安裝 | 未安裝／未發布 Hub |
-| YSU-SKILL-021 | 攝影 × 精切紙雕雙區海報 / Photo × Precision-Paper Diptych；每張目標各成一張 3:4 直式海報，上半原圖、下半紙雕轉譯，各占嚴格 50%。 | 1.0.0 | 正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔 | 未安裝 | 未安裝／未發布 Hub |
-| YSU-SKILL-022 | 裂紙浮空 / Torn-Paper Levitation；以大片安靜紙面、曲折裂口與人物尺度，將故事重組為有留白意境的紙層空間。 | 1.0.0 | 正式套件、雙語Prompt、原圖縮圖已歸檔；ZIP回下載hash一致 | 未安裝 | 未安裝／未發布Hub |
+| YSU-SKILL-021 | 攝影 × 精切紙雕雙區海報 / Photo × Precision-Paper Diptych；每張目標各成一張 3:4 直式海報，上半原圖、下半紙雕轉譯，各占嚴格 50%。 | 1.0.0 | 正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔 | 未安裝 | 未安裝／Published to Hub |
+| YSU-SKILL-022 | 裂紙浮空 / Torn-Paper Levitation；以大片安靜紙面、曲折裂口與人物尺度，將故事重組為有留白意境的紙層空間。 | 1.0.0 | 正式套件、雙語Prompt、原圖縮圖已歸檔；ZIP回下載hash一致 | 未安裝 | 未安裝／Published to Hub |
 | YSU-SKILL-023 | 灰境碎筆敘事 / Muted Fragmented-Paint Narratives；把具體敘事轉成灰白、低彩、局部崩解的碎筆繪畫，保留人物與情緒。 | 1.0.0 | 正式套件、雙語Prompt、原圖縮圖已歸檔；ZIP回下載hash一致 | 未安裝 | 未安裝／未發布Hub |
 | YSU-SKILL-024 | 攝影 × 留白水彩雙區海報 / Photo × Negative-Space Watercolor Diptych；把同一個內容呈現為原圖與留白水彩的上下對照海報，展示敘事提煉而非全量複製。 | 1.0.0 | 正式套件、雙語Prompt、原圖縮圖已歸檔；ZIP回下載hash一致 | 未安裝 | 未安裝／未發布Hub |
 | YSU-SKILL-025 | 彩墨版畫敘事 / Chromatic Ink-Print Narratives；以墨線骨架、平面彩層與碎裂印刷感，統整複雜敘事。 | 1.0.0 | 正式套件、雙語Prompt、原圖縮圖已歸檔；ZIP回下載hash一致 | 未安裝 | 未安裝／未發布Hub |
@@ -376,7 +376,13 @@ Tracker Metadata:
 - Origin Conversation:
 - Origin Conversation URL:
 - Locator Status: UNLOCATED
-- Next Action: 正式套件可用；Hub匯入／平台安裝待另行授權。
+- Next Action: Published to Hub；v1.0.1／public-r1 已發布；待普通 Member UI 與剩餘影像／跨平台實測，Validation=Partial，未安裝。
+- Hub Status: Published to Hub
+- Hub URL: https://hub.ycsu.cc/
+- Bubble ID: b_d9c15406-4b18-43c3-a50a-0efd4ef056f0
+- Hub Parent Bubble ID: demo-massing-daylight
+- Hub Package Version: 1.0.1 / public-r1
+- Hub Published At: 2026-10-03T10:05:21.854161+00:00
 - Canonical Drive: https://drive.google.com/drive/folders/11D4Gwnl_fWt44hxYvtYesJU2dJWU4XhC
 
 中央資料夾：https://drive.google.com/drive/folders/11D4Gwnl_fWt44hxYvtYesJU2dJWU4XhC  
@@ -389,6 +395,8 @@ SHA-256：96380ffbcdde84df8a299ad66506d35dc2ff63f66060e66f8bd64c49a5ab1aa1
 2026-10-02 UTC：舊02改名撕紙秘境 / Torn-Paper Dioramas，v1.0.1為命名修訂；固定ID、slug、原規則、留白條件、15張既有批准參考和A/B測試均保留。Validation=Partial；稀疏留白、深色變體與跨平台仍未驗證。原始來源：https://drive.google.com/drive/folders/1QFzp8nAeWFu8OvAnn_awP76X5BxudnU8，現位於正式套件SOURCE子資料夾。完整原始對話未提供，未臆造對話連結。
 
 09現使用裂紙浮空 / Torn-Paper Levitation；兩案保留分開。同屬紙藝與纖維，不能只按有無破口分流。原v1.0.0已移至HISTORY保留： https://drive.google.com/file/d/1oBcTz2KzT_E-wugESKXg7_BdZTROKg1C/view 。指令文本以Git提交並保存私人bundle，完整圖檔在ZIP與SOURCE；未安裝、未發布Hub，未宣稱獨立GitHub Skill來源庫。
+
+2026-10-03 UTC（2026-10-03 America/Los_Angeles）— 紙藝與纖維正式發布：使用者明確授權更新指定原主泡泡 demo-massing-daylight，保留 ID 與第4排序，由 Massing to Daylight Render 改為 紙藝與纖維 / Paper & Fiber。透過既有 Owner CMS 發布本 Child，完整雙語 Detail、既有核可封面同圖雙槽（hover_swap），不新增第三層。public-r1 保留七份標準文件、完整核可 Prompts 與既有 720px 封面；完整原圖、私人測試／來源對話／內部紀錄不納入。022 的 R20 原圖未核實對外分享，僅保留文字基準與使用限制，不宣稱本輪核對 R20 影像。發布 ZIP 匿名 HTTP 完整下載與 Owner/Admin 實際 HUB Launch→Drive→下載已核對完整 SHA-256、大小、CRC、解壓及必要檔案；下載網址仅存 protected Launch 與私有發布紀錄。Detail 桌面與390px／320px無水平文字溢出；普通Member UI仍NOT VERIFIED，Owner實際登出尚未驗；手機Universe原有畫布水平捲動與登入面板在Detail後方的問題保留截圖交回HUB，不改版型。Approved／Partial／未安裝保持；canonical Skill 與ZIP維持私有且未修改。較晚本紀錄為現況，舊未發布註記保留歷史。
 
 
 ## YSU-SKILL-016 — 柔絨羊毛氈浮雕 / Soft Felt Relief
@@ -412,7 +420,13 @@ Tracker Metadata:
 - Origin Conversation:
 - Origin Conversation URL:
 - Locator Status: UNLOCATED
-- Next Action: 使用正式套件；Hub 匯入待另行授權。
+- Next Action: Published to Hub；v1.0.0／public-r1 已發布；待普通 Member UI 與剩餘影像／跨平台實測，Validation=Partial，未安裝。
+- Hub Status: Published to Hub
+- Hub URL: https://hub.ycsu.cc/
+- Bubble ID: b_0db546cc-c705-4dbc-8300-33d956b5bcb7
+- Hub Parent Bubble ID: demo-massing-daylight
+- Hub Package Version: 1.0.0 / public-r1
+- Hub Published At: 2026-10-03T10:07:17.458315+00:00
 - Canonical Drive: https://drive.google.com/drive/folders/1ATQWh7DP8tN52fR17uUoXjEyWPbmUix8
 
 中央資料夾：https://drive.google.com/drive/folders/1ATQWh7DP8tN52fR17uUoXjEyWPbmUix8  
@@ -424,6 +438,8 @@ SHA-256：b055de3c76dedd2de8f1286372fa701fad22a484434f8f756b536c3745764cf1
 2026-10-01 America/Los_Angeles 使用者核准名稱、規則、提案參考分類、縮圖及 A／B 成圖。02 包含裂紙浮空更名與原圖可行時的留白意境規則。封装檔 CRC／本機 SHA-256 已驗證，上傳後核對 Drive 大小及所在資料夾；未宣稱 Drive 端 SHA-256 已測量。
 
 來源：https://drive.google.com/drive/folders/1eq1bQQ7LbYv1XOxPV9jTzToFcHAOTlV6。完整歷史聊天未提供，未虛構對話 URL。Validation = Partial：僅兩個指定目標的美術測試，跨平台、逐字文字與所有題材未驗證。無安裝、Hub 發布或全參考圖公开授權。此 instruction/reference 套件尚未建立獨立 GitHub Skill source coverage。
+
+2026-10-03 UTC（2026-10-03 America/Los_Angeles）— 紙藝與纖維正式發布：使用者明確授權更新指定原主泡泡 demo-massing-daylight，保留 ID 與第4排序，由 Massing to Daylight Render 改為 紙藝與纖維 / Paper & Fiber。透過既有 Owner CMS 發布本 Child，完整雙語 Detail、既有核可封面同圖雙槽（hover_swap），不新增第三層。public-r1 保留七份標準文件、完整核可 Prompts 與既有 720px 封面；完整原圖、私人測試／來源對話／內部紀錄不納入。022 的 R20 原圖未核實對外分享，僅保留文字基準與使用限制，不宣稱本輪核對 R20 影像。發布 ZIP 匿名 HTTP 完整下載與 Owner/Admin 實際 HUB Launch→Drive→下載已核對完整 SHA-256、大小、CRC、解壓及必要檔案；下載網址仅存 protected Launch 與私有發布紀錄。Detail 桌面與390px／320px無水平文字溢出；普通Member UI仍NOT VERIFIED，Owner實際登出尚未驗；手機Universe原有畫布水平捲動與登入面板在Detail後方的問題保留截圖交回HUB，不改版型。Approved／Partial／未安裝保持；canonical Skill 與ZIP維持私有且未修改。較晚本紀錄為現況，舊未發布註記保留歷史。
 
 
 ## YSU-SKILL-017 — 青墨琥珀復古動畫 / Teal & Amber Ink Anime
@@ -588,7 +604,13 @@ Tracker Metadata:
 - Origin Conversation:
 - Origin Conversation URL:
 - Locator Status: UNLOCATED
-- Next Action: 使用正式套件；Hub 匯入待另行授權。
+- Next Action: Published to Hub；v1.0.0／public-r1 已發布；待普通 Member UI 與剩餘影像／跨平台實測，Validation=Partial，未安裝。
+- Hub Status: Published to Hub
+- Hub URL: https://hub.ycsu.cc/
+- Bubble ID: b_c9f4be3b-c779-4a4d-b8f0-93b9897737a5
+- Hub Parent Bubble ID: demo-massing-daylight
+- Hub Package Version: 1.0.0 / public-r1
+- Hub Published At: 2026-10-03T10:09:24.930646+00:00
 - Canonical Drive: https://drive.google.com/drive/folders/1eHHmYuDwHPfn2CGKRI8n1r9jrwegtx4e
 
 中央資料夾：https://drive.google.com/drive/folders/1eHHmYuDwHPfn2CGKRI8n1r9jrwegtx4e  
@@ -600,6 +622,9 @@ SHA-256：8608b2c97fa5ddc1d5fca465fbd50abce6543a22f44c8fc90c8e1e540acae4b3
 2026-10-01 America/Los_Angeles 使用者核准名稱、規則、提案參考分類、縮圖及 A／B 成圖。02 包含裂紙浮空更名與原圖可行時的留白意境規則。封装檔 CRC／本機 SHA-256 已驗證，上傳後核對 Drive 大小及所在資料夾；未宣稱 Drive 端 SHA-256 已測量。
 
 來源：https://drive.google.com/drive/folders/1RkXVLqvmH0u-BlYf60FTwKDnlH2IurPq。完整歷史聊天未提供，未虛構對話 URL。Validation = Partial：僅兩個指定目標的美術測試，跨平台、逐字文字與所有題材未驗證。無安裝、Hub 發布或全參考圖公开授權。此 instruction/reference 套件尚未建立獨立 GitHub Skill source coverage。
+
+2026-10-03 UTC（2026-10-03 America/Los_Angeles）— 紙藝與纖維正式發布：使用者明確授權更新指定原主泡泡 demo-massing-daylight，保留 ID 與第4排序，由 Massing to Daylight Render 改為 紙藝與纖維 / Paper & Fiber。透過既有 Owner CMS 發布本 Child，完整雙語 Detail、既有核可封面同圖雙槽（hover_swap），不新增第三層。public-r1 保留七份標準文件、完整核可 Prompts 與既有 720px 封面；完整原圖、私人測試／來源對話／內部紀錄不納入。022 的 R20 原圖未核實對外分享，僅保留文字基準與使用限制，不宣稱本輪核對 R20 影像。發布 ZIP 匿名 HTTP 完整下載與 Owner/Admin 實際 HUB Launch→Drive→下載已核對完整 SHA-256、大小、CRC、解壓及必要檔案；下載網址仅存 protected Launch 與私有發布紀錄。Detail 桌面與390px／320px無水平文字溢出；普通Member UI仍NOT VERIFIED，Owner實際登出尚未驗；手機Universe原有畫布水平捲動與登入面板在Detail後方的問題保留截圖交回HUB，不改版型。Approved／Partial／未安裝保持；canonical Skill 與ZIP維持私有且未修改。較晚本紀錄為現況，舊未發布註記保留歷史。
+
 
 ## SSF-B02 Tracker publication authorization — 2026-10-01
 
@@ -715,7 +740,13 @@ Tracker Metadata:
 - Origin Conversation:
 - Origin Conversation URL:
 - Locator Status: UNLOCATED
-- Next Action: 正式套件可用；Hub匯入／平台安裝待另行授權。
+- Next Action: Published to Hub；v1.0.0／public-r1 已發布；待普通 Member UI 與剩餘影像／跨平台實測，Validation=Partial，未安裝。
+- Hub Status: Published to Hub
+- Hub URL: https://hub.ycsu.cc/
+- Bubble ID: b_af14881a-bfcb-4d1d-9c11-7864f7c21192
+- Hub Parent Bubble ID: demo-massing-daylight
+- Hub Package Version: 1.0.0 / public-r1
+- Hub Published At: 2026-10-03T10:11:16.608351+00:00
 - Canonical Drive: https://drive.google.com/drive/folders/1rdBDnrSCn7HecIuUYLK8q2lwCLgmfyVy
 
 中央資料夾：https://drive.google.com/drive/folders/1rdBDnrSCn7HecIuUYLK8q2lwCLgmfyVy  
@@ -728,6 +759,8 @@ SHA-256：c3c19e522e8f1b03b95ded6db62ddb4200e81b504f2619e0230e304b4c73d4a1
 2026-10-02 UTC：使用者已核准本批四案、打包、分類整理及Tracker同步。兩個指定目標A/B已接受（11為r2），Validation=Partial；不是跨平台、逐字文字或全題材驗證。原始來源：https://drive.google.com/drive/folders/1WpcKRRdYvqAd0AMmGtDSREsxIDNBEQc8，現位於正式套件SOURCE子資料夾。完整原始對話未提供，未臆造對話連結。
 
 參考分類與限制以STYLE_REFERENCE.md、HUB_METADATA.json及逐圖索引為準；主要參考按本次整批審查接受，R20單獨核可，其他支援圖不自動取得逐張批准。指令文本以Git提交並保存私人bundle，完整圖檔在ZIP與SOURCE；未安裝、未發布Hub，未宣稱獨立GitHub Skill來源庫。
+
+2026-10-03 UTC（2026-10-03 America/Los_Angeles）— 紙藝與纖維正式發布：使用者明確授權更新指定原主泡泡 demo-massing-daylight，保留 ID 與第4排序，由 Massing to Daylight Render 改為 紙藝與纖維 / Paper & Fiber。透過既有 Owner CMS 發布本 Child，完整雙語 Detail、既有核可封面同圖雙槽（hover_swap），不新增第三層。public-r1 保留七份標準文件、完整核可 Prompts 與既有 720px 封面；完整原圖、私人測試／來源對話／內部紀錄不納入。022 的 R20 原圖未核實對外分享，僅保留文字基準與使用限制，不宣稱本輪核對 R20 影像。發布 ZIP 匿名 HTTP 完整下載與 Owner/Admin 實際 HUB Launch→Drive→下載已核對完整 SHA-256、大小、CRC、解壓及必要檔案；下載網址仅存 protected Launch 與私有發布紀錄。Detail 桌面與390px／320px無水平文字溢出；普通Member UI仍NOT VERIFIED，Owner實際登出尚未驗；手機Universe原有畫布水平捲動與登入面板在Detail後方的問題保留截圖交回HUB，不改版型。Approved／Partial／未安裝保持；canonical Skill 與ZIP維持私有且未修改。較晚本紀錄為現況，舊未發布註記保留歷史。
 
 
 ## YSU-SKILL-023 — 灰境碎筆敘事 / Muted Fragmented-Paint Narratives
