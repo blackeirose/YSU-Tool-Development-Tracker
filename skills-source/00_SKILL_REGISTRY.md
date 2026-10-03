@@ -244,7 +244,14 @@ Router name 規範為 `ysu-narrative-film-system` 以匹配根資料夾；`ysu-n
 Tracker Metadata:
 - Lifecycle: Approved
 - Validation: Partial
-- Next Action: 風格已核准（SFDOT 人物 BOARD）；Hub 匯入待架構確認與 Codex 交接，Seedance／其他題材另行驗證。
+- Next Action: Published to Hub；v0.1.0／public-r1 已發布；待普通 Member UI 與剩餘影像實測，Validation=Partial；未新增安裝。
+- Hub Status: Published to Hub
+- Hub URL: https://hub.ycsu.cc/
+- Bubble ID: b_9db4cbcb-7e96-4668-bf03-3b67ac39bf92
+- Hub Parent Bubble ID: b_ae355bfa-4ac2-4e0b-940a-56882456310e
+- Hub Group: 漫畫與動畫美術 / Comics & Animation Art
+- Hub Package Version: 0.1.0 / public-r1
+- Hub Published At: 2026-10-03T19:46:04.708478+00:00
 
 2026-10-02 10:18 America/Los_Angeles 最新批准：Owner「電影墨格可以先通過 目前SFDOT的人物BOARD我挺滿意的」。SFDOT 人物 BOARD 為 Approved Application Reference；Lifecycle=Approved，Validation 保持 Partial。沿用 v0.1.0 及 SFDOT 人像縮圖；未生成新測試、未安裝或發布 Hub。角色、版面、文字及紅藍配色不是通用規則，其餘參考圖不自動批准。完整批准範圍：[COVER_SELECTION.md](https://drive.google.com/file/d/14gvOOZthoVdaHHb1CABp6uABIrsQNNRY/view)。
 
@@ -266,6 +273,9 @@ Tracker Metadata:
 - 使用方式：先讀 SKILL.md、REFERENCE_GUIDE，按用途實際查看 1–2 張參考；分析／提示詞不自動生圖。迭代依使用者授權，保留已驗證與待驗證區別。  
 - [三份管理文件更新前快照](https://drive.google.com/file/d/1bsvVNCUYcaOpbW6Xailg65pNeoGuXFEn/view)；為可回復歷史，不是第二份 live registry。
 
+
+
+2026-10-03 America/Los_Angeles — 繪畫與插畫 HUB 正式內容發布：以上 Main／Child ID 由既有 Owner CMS 寫入並獨立正式讀回；Skill版本保持 v0.1.0，Approved 與 Partial 保留，未安裝或重跑影像實測。public-r1含核可縮圖／實用雙語 prompts，canonical完整套件及母資料夾維持私有。匿名 HTTP 已實際取得完整 ZIP並驗證大小／SHA-256／CRC／解壓／逐檔映射；Owner/Admin 的 HUB Launch→正確 Drive ZIP分享頁已實際通過，瀏覽器下載檔案回傳受工具限制未驗證。桌面逐項 Detail、390px／320px代表性長名稱／I/O、WC-C比較控制已實測；Guest登入要求與無下載網址公開資料已核對；普通 Member UI=NOT VERIFIED（無現成 session）。發布依 Owner 本次明確決定，未獨立核實第三方原圖再散布權利，不宣稱新增授權。較早「未發布Hub」敘述保留為歷史，不覆寫。
 
 ## YSU-SKILL-013 — YSU Stylized Animal Character Bible
 
@@ -341,7 +351,14 @@ Tracker Metadata:
 - Origin Conversation:
 - Origin Conversation URL:
 - Locator Status: UNLOCATED
-- Next Action: 使用正式套件；Hub 匯入待另行授權。
+- Next Action: Published to Hub；v1.0.0／public-r1 已發布；待普通 Member UI 與剩餘影像實測，Validation=Partial；未新增安裝。
+- Hub Status: Published to Hub
+- Hub URL: https://hub.ycsu.cc/
+- Bubble ID: b_e2c37c82-5805-45ec-904d-d8a2f98033c6
+- Hub Parent Bubble ID: b_111706ca-3476-4761-adde-2f607b772da7
+- Hub Group: 墨彩與混合媒材 / Ink & Mixed Media
+- Hub Package Version: 1.0.0 / public-r1
+- Hub Published At: 2026-10-03T19:43:50.656966+00:00
 - Canonical Drive: https://drive.google.com/drive/folders/1g7ignAl0kRIT1jHLZtaKdwq-yTSfKppw
 
 中央資料夾：https://drive.google.com/drive/folders/1g7ignAl0kRIT1jHLZtaKdwq-yTSfKppw  
@@ -354,6 +371,9 @@ SHA-256：c74a29bcbd85d62a7327f50169e51f7ed46aaab666f008e1a45b308aa6e05fae
 
 來源：https://drive.google.com/drive/folders/15Tkwd3v5qlxlgxhzDgIplWxWXa6prq7O。完整歷史聊天未提供，未虛構對話 URL。Validation = Partial：僅兩個指定目標的美術測試，跨平台、逐字文字與所有題材未驗證。無安裝、Hub 發布或全參考圖公开授權。此 instruction/reference 套件尚未建立獨立 GitHub Skill source coverage。
 
+
+
+2026-10-03 America/Los_Angeles — 繪畫與插畫 HUB 正式內容發布：以上 Main／Child ID 由既有 Owner CMS 寫入並獨立正式讀回；Skill版本保持 v1.0.0，Approved 與 Partial 保留，未安裝或重跑影像實測。public-r1含核可縮圖／實用雙語 prompts，canonical完整套件及母資料夾維持私有。匿名 HTTP 已實際取得完整 ZIP並驗證大小／SHA-256／CRC／解壓／逐檔映射；Owner/Admin 的 HUB Launch→正確 Drive ZIP分享頁已實際通過，瀏覽器下載檔案回傳受工具限制未驗證。桌面逐項 Detail、390px／320px代表性長名稱／I/O、WC-C比較控制已實測；Guest登入要求與無下載網址公開資料已核對；普通 Member UI=NOT VERIFIED（無現成 session）。發布依 Owner 本次明確決定，未獨立核實第三方原圖再散布權利，不宣稱新增授權。較早「未發布Hub」敘述保留為歷史，不覆寫。
 
 ## YSU-SKILL-015 — 撕紙秘境 / Torn-Paper Dioramas
 
@@ -463,7 +483,14 @@ Tracker Metadata:
 - Origin Conversation:
 - Origin Conversation URL:
 - Locator Status: UNLOCATED
-- Next Action: 使用正式套件；Hub 匯入待另行授權。
+- Next Action: Published to Hub；v1.0.0／public-r1 已發布；待普通 Member UI 與剩餘影像實測，Validation=Partial；未新增安裝。
+- Hub Status: Published to Hub
+- Hub URL: https://hub.ycsu.cc/
+- Bubble ID: b_b8d8295b-e228-4d79-b817-4913c5fa5f73
+- Hub Parent Bubble ID: b_ae355bfa-4ac2-4e0b-940a-56882456310e
+- Hub Group: 漫畫與動畫美術 / Comics & Animation Art
+- Hub Package Version: 1.0.0 / public-r1
+- Hub Published At: 2026-10-03T19:46:36.896929+00:00
 - Canonical Drive: https://drive.google.com/drive/folders/1uXyFSgS8vKcus6PKl_XV3koMP8d92Imd
 
 中央資料夾：https://drive.google.com/drive/folders/1uXyFSgS8vKcus6PKl_XV3koMP8d92Imd  
@@ -476,6 +503,9 @@ SHA-256：c595b0b8cd3eb4fe03b3387a739b1c67c010c8a921aa675c13d1b7e1e4414917
 
 來源：https://drive.google.com/drive/folders/1wRhQdDtpVycBS7amIOnKxnIZFUk77S_8。完整歷史聊天未提供，未虛構對話 URL。Validation = Partial：僅兩個指定目標的美術測試，跨平台、逐字文字與所有題材未驗證。無安裝、Hub 發布或全參考圖公开授權。此 instruction/reference 套件尚未建立獨立 GitHub Skill source coverage。
 
+
+
+2026-10-03 America/Los_Angeles — 繪畫與插畫 HUB 正式內容發布：以上 Main／Child ID 由既有 Owner CMS 寫入並獨立正式讀回；Skill版本保持 v1.0.0，Approved 與 Partial 保留，未安裝或重跑影像實測。public-r1含核可縮圖／實用雙語 prompts，canonical完整套件及母資料夾維持私有。匿名 HTTP 已實際取得完整 ZIP並驗證大小／SHA-256／CRC／解壓／逐檔映射；Owner/Admin 的 HUB Launch→正確 Drive ZIP分享頁已實際通過，瀏覽器下載檔案回傳受工具限制未驗證。桌面逐項 Detail、390px／320px代表性長名稱／I/O、WC-C比較控制已實測；Guest登入要求與無下載網址公開資料已核對；普通 Member UI=NOT VERIFIED（無現成 session）。發布依 Owner 本次明確決定，未獨立核實第三方原圖再散布權利，不宣稱新增授權。較早「未發布Hub」敘述保留為歷史，不覆寫。
 
 ## YSU-SKILL-018 — 靜觀人境攝影 / Contemplative Environmental Portraiture
 
@@ -539,7 +569,14 @@ Tracker Metadata:
 - Origin Conversation:
 - Origin Conversation URL:
 - Locator Status: UNLOCATED
-- Next Action: 規則已確認；待適合素材實測。逐圖分類未確認；未安裝、未發布 Hub。
+- Next Action: Published to Hub；v0.2.0／public-r1 已發布；待普通 Member UI 與剩餘影像實測，Validation=Untested；未新增安裝。
+- Hub Status: Published to Hub
+- Hub URL: https://hub.ycsu.cc/
+- Bubble ID: b_72af829c-798d-45fb-8dce-a8f0e500205e
+- Hub Parent Bubble ID: b_ae355bfa-4ac2-4e0b-940a-56882456310e
+- Hub Group: 漫畫與動畫美術 / Comics & Animation Art
+- Hub Package Version: 0.2.0 / public-r1
+- Hub Published At: 2026-10-03T19:47:08.412466+00:00
 - Canonical Drive: https://drive.google.com/drive/folders/1ayxmKlBhovOMKLdQPEgusPN71HMyrA1p
 
 2026-10-01 America/Los_Angeles（2026-10-02 UTC）：使用者確認重析方向，允許先製作 Skill、日後再測。Approved 僅代表規則與歸檔；新版 Validation = Untested，舊 A/B 不算本版驗證。分開保留構圖的畫法轉譯及已授權的敘事海報重構；意象須基於目標故事。
@@ -547,6 +584,9 @@ Tracker Metadata:
 來源：https://drive.google.com/drive/folders/1a74_MdDBKQjPzAhmkXmiUZ5ctBZxzyho。完整原來源聊天未定位；管理對話為 Style Skill Factory — Master Control。27 張原圖分類尚未確認；原 P06-020 私有縮圖保留。媒材描述改為不透明手繪色面，不認定實際膠彩或顏料。舊名稱：懷舊膠彩敘事海報 / Nostalgic Gouache Narrative。
 
 套件：https://drive.google.com/file/d/14oNzoLUomels2qzelbPBfIeO7DtngKlz/view 。文件與版本紀錄已歸檔；沒有平台安裝、Hub 發布或獨立 GitHub Skill source coverage 的聲明。
+
+
+2026-10-03 America/Los_Angeles — 繪畫與插畫 HUB 正式內容發布：以上 Main／Child ID 由既有 Owner CMS 寫入並獨立正式讀回；Skill版本保持 v0.2.0，Approved 與 Untested 保留，未安裝或重跑影像實測。public-r1含核可縮圖／實用雙語 prompts，canonical完整套件及母資料夾維持私有。匿名 HTTP 已實際取得完整 ZIP並驗證大小／SHA-256／CRC／解壓／逐檔映射；Owner/Admin 的 HUB Launch→正確 Drive ZIP分享頁已實際通過，瀏覽器下載檔案回傳受工具限制未驗證。桌面逐項 Detail、390px／320px代表性長名稱／I/O、WC-C比較控制已實測；Guest登入要求與無下載網址公開資料已核對；普通 Member UI=NOT VERIFIED（無現成 session）。發布依 Owner 本次明確決定，未獨立核實第三方原圖再散布權利，不宣稱新增授權。較早「未發布Hub」敘述保留為歷史，不覆寫。
 
 ## YSU-SKILL-020 — 建築墨線色塊拼貼 / Architectural Ink & Color Collage
 
@@ -569,7 +609,14 @@ Tracker Metadata:
 - Origin Conversation:
 - Origin Conversation URL:
 - Locator Status: UNLOCATED
-- Next Action: 使用正式套件；Hub 匯入待另行授權。
+- Next Action: Published to Hub；v1.0.0／public-r1 已發布；待普通 Member UI 與剩餘影像實測，Validation=Partial；未新增安裝。
+- Hub Status: Published to Hub
+- Hub URL: https://hub.ycsu.cc/
+- Bubble ID: b_18930050-ce19-476f-9720-d017196d40ed
+- Hub Parent Bubble ID: b_111706ca-3476-4761-adde-2f607b772da7
+- Hub Group: 墨彩與混合媒材 / Ink & Mixed Media
+- Hub Package Version: 1.0.0 / public-r1
+- Hub Published At: 2026-10-03T19:44:27.650818+00:00
 - Canonical Drive: https://drive.google.com/drive/folders/1cvTajsMZjqQASC_fY9J_n-Wg7dgpjg42
 
 中央資料夾：https://drive.google.com/drive/folders/1cvTajsMZjqQASC_fY9J_n-Wg7dgpjg42  
@@ -582,6 +629,9 @@ SHA-256：3c194f130b0034a0888624e87958474a02ae2d4f19e5cfd44f55d5ffc50e1ad8
 
 來源：https://drive.google.com/drive/folders/1KVqqng6Yu_g0IDBZWu8HD41OX5AtO948。完整歷史聊天未提供，未虛構對話 URL。Validation = Partial：僅兩個指定目標的美術測試，跨平台、逐字文字與所有題材未驗證。無安裝、Hub 發布或全參考圖公开授權。此 instruction/reference 套件尚未建立獨立 GitHub Skill source coverage。
 
+
+
+2026-10-03 America/Los_Angeles — 繪畫與插畫 HUB 正式內容發布：以上 Main／Child ID 由既有 Owner CMS 寫入並獨立正式讀回；Skill版本保持 v1.0.0，Approved 與 Partial 保留，未安裝或重跑影像實測。public-r1含核可縮圖／實用雙語 prompts，canonical完整套件及母資料夾維持私有。匿名 HTTP 已實際取得完整 ZIP並驗證大小／SHA-256／CRC／解壓／逐檔映射；Owner/Admin 的 HUB Launch→正確 Drive ZIP分享頁已實際通過，瀏覽器下載檔案回傳受工具限制未驗證。桌面逐項 Detail、390px／320px代表性長名稱／I/O、WC-C比較控制已實測；Guest登入要求與無下載網址公開資料已核對；普通 Member UI=NOT VERIFIED（無現成 session）。發布依 Owner 本次明確決定，未獨立核實第三方原圖再散布權利，不宣稱新增授權。較早「未發布Hub」敘述保留為歷史，不覆寫。
 
 ## YSU-SKILL-021 — 攝影 × 精切紙雕雙區海報 / Photo × Precision-Paper Diptych
 
@@ -784,7 +834,14 @@ Tracker Metadata:
 - Origin Conversation:
 - Origin Conversation URL:
 - Locator Status: UNLOCATED
-- Next Action: 正式套件可用；Hub匯入／平台安裝待另行授權。
+- Next Action: Published to Hub；v1.0.0／public-r1 已發布；待普通 Member UI 與剩餘影像實測，Validation=Partial；未新增安裝。
+- Hub Status: Published to Hub
+- Hub URL: https://hub.ycsu.cc/
+- Bubble ID: b_504ebf68-cadb-46ec-85f4-9cfdf8565823
+- Hub Parent Bubble ID: b_111706ca-3476-4761-adde-2f607b772da7
+- Hub Group: 墨彩與混合媒材 / Ink & Mixed Media
+- Hub Package Version: 1.0.0 / public-r1
+- Hub Published At: 2026-10-03T19:44:56.08138+00:00
 - Canonical Drive: https://drive.google.com/drive/folders/1zpXV6yyLo-2AZNRbJTXWMGyDNJwyQ4t1
 
 中央資料夾：https://drive.google.com/drive/folders/1zpXV6yyLo-2AZNRbJTXWMGyDNJwyQ4t1  
@@ -798,6 +855,9 @@ SHA-256：ba93f379746ea371de1cda6d7cbff81efccb3e1b6827bf9534649b968be82704
 
 參考分類與限制以STYLE_REFERENCE.md、HUB_METADATA.json及逐圖索引為準；主要參考按本次整批審查接受，R20單獨核可，其他支援圖不自動取得逐張批准。指令文本以Git提交並保存私人bundle，完整圖檔在ZIP與SOURCE；未安裝、未發布Hub，未宣稱獨立GitHub Skill來源庫。
 
+
+
+2026-10-03 America/Los_Angeles — 繪畫與插畫 HUB 正式內容發布：以上 Main／Child ID 由既有 Owner CMS 寫入並獨立正式讀回；Skill版本保持 v1.0.0，Approved 與 Partial 保留，未安裝或重跑影像實測。public-r1含核可縮圖／實用雙語 prompts，canonical完整套件及母資料夾維持私有。匿名 HTTP 已實際取得完整 ZIP並驗證大小／SHA-256／CRC／解壓／逐檔映射；Owner/Admin 的 HUB Launch→正確 Drive ZIP分享頁已實際通過，瀏覽器下載檔案回傳受工具限制未驗證。桌面逐項 Detail、390px／320px代表性長名稱／I/O、WC-C比較控制已實測；Guest登入要求與無下載網址公開資料已核對；普通 Member UI=NOT VERIFIED（無現成 session）。發布依 Owner 本次明確決定，未獨立核實第三方原圖再散布權利，不宣稱新增授權。較早「未發布Hub」敘述保留為歷史，不覆寫。
 
 ## YSU-SKILL-024 — 攝影 × 留白水彩雙區海報 / Photo × Negative-Space Watercolor Diptych
 
@@ -820,7 +880,14 @@ Tracker Metadata:
 - Origin Conversation:
 - Origin Conversation URL:
 - Locator Status: UNLOCATED
-- Next Action: 正式套件可用；Hub匯入／平台安裝待另行授權。
+- Next Action: Published to Hub；v1.0.0／public-r1 已發布；待普通 Member UI 與剩餘影像實測，Validation=Partial；未新增安裝。
+- Hub Status: Published to Hub
+- Hub URL: https://hub.ycsu.cc/
+- Bubble ID: sat-watercolor-detailed
+- Hub Parent Bubble ID: demo-watercolor-style
+- Hub Group: 水彩 / Watercolor
+- Hub Package Version: 1.0.0 / public-r1
+- Hub Published At: 2026-10-03T19:42:49.066146+00:00
 - Canonical Drive: https://drive.google.com/drive/folders/1X7kwfO0YbMF2Vn-Jzpi02JB1-Gf9KSxN
 
 中央資料夾：https://drive.google.com/drive/folders/1X7kwfO0YbMF2Vn-Jzpi02JB1-Gf9KSxN  
@@ -834,6 +901,9 @@ SHA-256：683ce5ab29ab97ce628c4a72a9453c6cb39724f135781739d788f319ecd41201
 
 參考分類與限制以STYLE_REFERENCE.md、HUB_METADATA.json及逐圖索引為準；主要參考按本次整批審查接受，R20單獨核可，其他支援圖不自動取得逐張批准。指令文本以Git提交並保存私人bundle，完整圖檔在ZIP與SOURCE；未安裝、未發布Hub，未宣稱獨立GitHub Skill來源庫。
 
+
+
+2026-10-03 America/Los_Angeles — 繪畫與插畫 HUB 正式內容發布：以上 Main／Child ID 由既有 Owner CMS 寫入並獨立正式讀回；Skill版本保持 v1.0.0，Approved 與 Partial 保留，未安裝或重跑影像實測。public-r1含核可縮圖／實用雙語 prompts，canonical完整套件及母資料夾維持私有。匿名 HTTP 已實際取得完整 ZIP並驗證大小／SHA-256／CRC／解壓／逐檔映射；Owner/Admin 的 HUB Launch→正確 Drive ZIP分享頁已實際通過，瀏覽器下載檔案回傳受工具限制未驗證。桌面逐項 Detail、390px／320px代表性長名稱／I/O、WC-C比較控制已實測；Guest登入要求與無下載網址公開資料已核對；普通 Member UI=NOT VERIFIED（無現成 session）。發布依 Owner 本次明確決定，未獨立核實第三方原圖再散布權利，不宣稱新增授權。較早「未發布Hub」敘述保留為歷史，不覆寫。
 
 ## YSU-SKILL-025 — 彩墨版畫敘事 / Chromatic Ink-Print Narratives
 
@@ -856,7 +926,14 @@ Tracker Metadata:
 - Origin Conversation:
 - Origin Conversation URL:
 - Locator Status: UNLOCATED
-- Next Action: 正式套件可用；Hub匯入／平台安裝待另行授權。
+- Next Action: Published to Hub；v1.0.0／public-r1 已發布；待普通 Member UI 與剩餘影像實測，Validation=Partial；未新增安裝。
+- Hub Status: Published to Hub
+- Hub URL: https://hub.ycsu.cc/
+- Bubble ID: b_201e0299-668c-40b6-97c7-575da54e5fb4
+- Hub Parent Bubble ID: b_111706ca-3476-4761-adde-2f607b772da7
+- Hub Group: 墨彩與混合媒材 / Ink & Mixed Media
+- Hub Package Version: 1.0.0 / public-r1
+- Hub Published At: 2026-10-03T19:45:28.751658+00:00
 - Canonical Drive: https://drive.google.com/drive/folders/1BGdo--zegqS9d4KF0CWKqmUdSD7-3mk3
 
 中央資料夾：https://drive.google.com/drive/folders/1BGdo--zegqS9d4KF0CWKqmUdSD7-3mk3  
@@ -870,6 +947,9 @@ SHA-256：c1f960684c5c77027605439a896f84f0f1648aa79247f2a7446c0f140a336705
 
 參考分類與限制以STYLE_REFERENCE.md、HUB_METADATA.json及逐圖索引為準；主要參考按本次整批審查接受，R20單獨核可，其他支援圖不自動取得逐張批准。指令文本以Git提交並保存私人bundle，完整圖檔在ZIP與SOURCE；未安裝、未發布Hub，未宣稱獨立GitHub Skill來源庫。
 
+
+
+2026-10-03 America/Los_Angeles — 繪畫與插畫 HUB 正式內容發布：以上 Main／Child ID 由既有 Owner CMS 寫入並獨立正式讀回；Skill版本保持 v1.0.0，Approved 與 Partial 保留，未安裝或重跑影像實測。public-r1含核可縮圖／實用雙語 prompts，canonical完整套件及母資料夾維持私有。匿名 HTTP 已實際取得完整 ZIP並驗證大小／SHA-256／CRC／解壓／逐檔映射；Owner/Admin 的 HUB Launch→正確 Drive ZIP分享頁已實際通過，瀏覽器下載檔案回傳受工具限制未驗證。桌面逐項 Detail、390px／320px代表性長名稱／I/O、WC-C比較控制已實測；Guest登入要求與無下載網址公開資料已核對；普通 Member UI=NOT VERIFIED（無現成 session）。發布依 Owner 本次明確決定，未獨立核實第三方原圖再散布權利，不宣稱新增授權。較早「未發布Hub」敘述保留為歷史，不覆寫。
 
 ## SSF-B03 最新套件定位表
 
@@ -906,7 +986,14 @@ Tracker Metadata:
 - Origin Conversation: 高級水彩時尚插畫；極簡水彩風格設計；水彩圖風格分析；極簡水彩建築插畫
 - Origin Conversation URL:
 - Locator Status: PROJECT_TITLE_ONLY
-- Next Action: 以合適目標測試本版提示詞；待授權後安裝或匯入 Hub。
+- Next Action: Published to Hub；v1.0.0／public-r1 已發布；待普通 Member UI 與剩餘影像實測，Validation=Untested；未新增安裝。
+- Hub Status: Published to Hub
+- Hub URL: https://hub.ycsu.cc/
+- Bubble ID: sat-watercolor-soft
+- Hub Parent Bubble ID: demo-watercolor-style
+- Hub Group: 水彩 / Watercolor
+- Hub Package Version: 1.0.0 / public-r1
+- Hub Published At: 2026-10-03T19:38:52.927898+00:00
 - Canonical Drive: https://drive.google.com/drive/folders/18Kmj9SLK-qI0_9OIb2dyd_NKztvm9eO5
 
 SKILL.md：[讀取指令](https://drive.google.com/file/d/1kjOxIcaF2H4SxyvRIcO7olNWU9DEzx99/view?usp=drivesdk)  
@@ -916,6 +1003,9 @@ SHA-256：80ca2303a61349e7b4ed268d3f2aaaee56a5e6408205bd050681fe7836199342
 
 2026-10-02 America/Los_Angeles：使用者確認並要求 WC-A／WC-B 打包。Approved 僅代表目前風格方向與 instruction/reference 封裝；新重建 Prompt 未生成新測試，Validation=Untested。WC-B 的 L01 是使用者確認的成熟參考；WC-A 個別原圖仍未逐張分類，不能由打包批准推導全部 Approved。四段歷史對話尚未取得完整逐訊息內容與附件映射；本版按當前批准及已恢復證據封裝，未假稱完整 final-state 取證已完成。沒有平台安裝、Hub 發布或全套原圖公開；來源／版本限制在 SOURCE_STATE.md。
 
+
+
+2026-10-03 America/Los_Angeles — 繪畫與插畫 HUB 正式內容發布：以上 Main／Child ID 由既有 Owner CMS 寫入並獨立正式讀回；Skill版本保持 v1.0.0，Approved 與 Untested 保留，未安裝或重跑影像實測。public-r1含核可縮圖／實用雙語 prompts，canonical完整套件及母資料夾維持私有。匿名 HTTP 已實際取得完整 ZIP並驗證大小／SHA-256／CRC／解壓／逐檔映射；Owner/Admin 的 HUB Launch→正確 Drive ZIP分享頁已實際通過，瀏覽器下載檔案回傳受工具限制未驗證。桌面逐項 Detail、390px／320px代表性長名稱／I/O、WC-C比較控制已實測；Guest登入要求與無下載網址公開資料已核對；普通 Member UI=NOT VERIFIED（無現成 session）。發布依 Owner 本次明確決定，未獨立核實第三方原圖再散布權利，不宣稱新增授權。較早「未發布Hub」敘述保留為歷史，不覆寫。
 
 ## YSU-SKILL-027 — 建築水彩融合 / Architectural Watercolor Fusion
 
@@ -938,7 +1028,14 @@ Tracker Metadata:
 - Origin Conversation: 高級水彩時尚插畫；極簡水彩風格設計；水彩圖風格分析；極簡水彩建築插畫
 - Origin Conversation URL:
 - Locator Status: PROJECT_TITLE_ONLY
-- Next Action: 以合適目標測試本版提示詞；待授權後安裝或匯入 Hub。
+- Next Action: Published to Hub；v1.0.0／public-r1 已發布；待普通 Member UI 與剩餘影像實測，Validation=Untested；未新增安裝。
+- Hub Status: Published to Hub
+- Hub URL: https://hub.ycsu.cc/
+- Bubble ID: sat-watercolor-ink
+- Hub Parent Bubble ID: demo-watercolor-style
+- Hub Group: 水彩 / Watercolor
+- Hub Package Version: 1.0.0 / public-r1
+- Hub Published At: 2026-10-03T19:41:06.145748+00:00
 - Canonical Drive: https://drive.google.com/drive/folders/1HexV-Lc3YJ8VxFoToublYnCCVcO-rLVY
 
 SKILL.md：[讀取指令](https://drive.google.com/file/d/1_eKpTkKqZUeVsp0mrEmwLlB6eO55WuJQ/view?usp=drivesdk)  
@@ -948,6 +1045,9 @@ SHA-256：1aeb08b818cc372f906f57e98e3f767e528741f9177fd729f63b23cecfb4baba
 
 2026-10-02 America/Los_Angeles：使用者確認並要求 WC-A／WC-B 打包。Approved 僅代表目前風格方向與 instruction/reference 封裝；新重建 Prompt 未生成新測試，Validation=Untested。WC-B 的 L01 是使用者確認的成熟參考；WC-A 個別原圖仍未逐張分類，不能由打包批准推導全部 Approved。四段歷史對話尚未取得完整逐訊息內容與附件映射；本版按當前批准及已恢復證據封裝，未假稱完整 final-state 取證已完成。沒有平台安裝、Hub 發布或全套原圖公開；來源／版本限制在 SOURCE_STATE.md。
 
+
+
+2026-10-03 America/Los_Angeles — 繪畫與插畫 HUB 正式內容發布：以上 Main／Child ID 由既有 Owner CMS 寫入並獨立正式讀回；Skill版本保持 v1.0.0，Approved 與 Untested 保留，未安裝或重跑影像實測。public-r1含核可縮圖／實用雙語 prompts，canonical完整套件及母資料夾維持私有。匿名 HTTP 已實際取得完整 ZIP並驗證大小／SHA-256／CRC／解壓／逐檔映射；Owner/Admin 的 HUB Launch→正確 Drive ZIP分享頁已實際通過，瀏覽器下載檔案回傳受工具限制未驗證。桌面逐項 Detail、390px／320px代表性長名稱／I/O、WC-C比較控制已實測；Guest登入要求與無下載網址公開資料已核對；普通 Member UI=NOT VERIFIED（無現成 session）。發布依 Owner 本次明確決定，未獨立核實第三方原圖再散布權利，不宣稱新增授權。較早「未發布Hub」敘述保留為歷史，不覆寫。
 
 ## SSF-WC 最新套件定位表
 
@@ -1089,7 +1189,14 @@ Tracker Metadata:
 - Origin Conversation: 極簡水彩建築插畫
 - Origin Conversation URL: https://chatgpt.com/c/6a078130-e360-83ea-8d19-3856cbde5a49
 - Locator Status: DIRECT_LINK
-- Next Action: Hub 使用 Before／After 泡泡；原圖與定稿已配對，先檢查畫幅對齊。新 Prompt 待實測。
+- Next Action: Published to Hub；v1.0.0／public-r1 已發布；待普通 Member UI 與剩餘影像實測，Validation=Untested；未新增安裝。
+- Hub Status: Published to Hub
+- Hub URL: https://hub.ycsu.cc/
+- Bubble ID: sat-watercolor-loose
+- Hub Parent Bubble ID: demo-watercolor-style
+- Hub Group: 水彩 / Watercolor
+- Hub Package Version: 1.0.0 / public-r1
+- Hub Published At: 2026-10-03T19:41:59.341349+00:00
 - Canonical Drive: https://drive.google.com/drive/folders/1Bvio10ZCZ0PjIq73VEaUBcz2qfKO_wHI
 
 分類：繪畫與插畫 / Painting & Illustration → 水彩 / Watercolor。Tags 含 STYLE。
@@ -1105,6 +1212,9 @@ Tracker Metadata:
 2026-10-02 America/Los_Angeles：Owner 明確要求打包並指定未來 Hub Before/After。Before = 1974_004.jpg（1974_004(1).jpg 為相同 bytes）；After = 11_Complete Story-2.jpg。保留原始檔、角色／順序／尺寸／SHA256及未像素對齊限制。此顯示偏好僅適用 WC-C，未變更其他風格；不是 Photo × Watercolor Diptych。
 
 目前可見來源文字分支已讀，完整歷史附件與替代分支未全取回。Approved 為風格／封裝，Untested 為本版重建 Prompt。WC-B 原版與 L01 不變，13待定、14/15撤回不變。完整原圖與套件保持私人；Tracker依既有授權同步索引／縮圖。Hub尚未發布。
+
+
+2026-10-03 America/Los_Angeles — 繪畫與插畫 HUB 正式內容發布：以上 Main／Child ID 由既有 Owner CMS 寫入並獨立正式讀回；Skill版本保持 v1.0.0，Approved 與 Untested 保留，未安裝或重跑影像實測。public-r1含核可縮圖／實用雙語 prompts，canonical完整套件及母資料夾維持私有。匿名 HTTP 已實際取得完整 ZIP並驗證大小／SHA-256／CRC／解壓／逐檔映射；Owner/Admin 的 HUB Launch→正確 Drive ZIP分享頁已實際通過，瀏覽器下載檔案回傳受工具限制未驗證。桌面逐項 Detail、390px／320px代表性長名稱／I/O、WC-C比較控制已實測；Guest登入要求與無下載網址公開資料已核對；普通 Member UI=NOT VERIFIED（無現成 session）。發布依 Owner 本次明確決定，未獨立核實第三方原圖再散布權利，不宣稱新增授權。較早「未發布Hub」敘述保留為歷史，不覆寫。
 
 ## WC-C 套件定位表
 

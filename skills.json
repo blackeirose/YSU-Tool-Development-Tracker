@@ -17,7 +17,7 @@
     "source": "Skill Taxonomy v1 table in canonical Drive registry"
   },
   "$comment": "GENERATED FILE — do not edit by hand. Source: Google Drive AI Works/06_Skills/00_SKILL_REGISTRY.md. Regenerate with `npm run skills:index`.",
-  "generated_at": "2026-10-03T10:21:06.496Z",
+  "generated_at": "2026-10-03T20:12:30.166Z",
   "source": {
     "file": "skills-source/00_SKILL_REGISTRY.md",
     "drive_file_id": "1g6Io9lD4YwkDaX5_OUqssvrcEyuCF-1P",
@@ -947,7 +947,7 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": "風格已核准（SFDOT 人物 BOARD）；Hub 匯入待架構確認與 Codex 交接，Seedance／其他題材另行驗證。",
+      "next_action": "Published to Hub；v0.1.0／public-r1 已發布；待普通 Member UI 與剩餘影像實測，Validation=Partial；未新增安裝。",
       "canonical_drive": "https://drive.google.com/drive/folders/1pnst7YlPsgM9LWv016zI0e18CqWzP7_f",
       "links": [
         {
@@ -1095,7 +1095,7 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": "使用正式套件；Hub 匯入待另行授權。",
+      "next_action": "Published to Hub；v1.0.0／public-r1 已發布；待普通 Member UI 與剩餘影像實測，Validation=Partial；未新增安裝。",
       "canonical_drive": "https://drive.google.com/drive/folders/1g7ignAl0kRIT1jHLZtaKdwq-yTSfKppw",
       "links": [
         {
@@ -1335,7 +1335,7 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": "使用正式套件；Hub 匯入待另行授權。",
+      "next_action": "Published to Hub；v1.0.0／public-r1 已發布；待普通 Member UI 與剩餘影像實測，Validation=Partial；未新增安裝。",
       "canonical_drive": "https://drive.google.com/drive/folders/1uXyFSgS8vKcus6PKl_XV3koMP8d92Imd",
       "links": [
         {
@@ -1489,7 +1489,7 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": "規則已確認；待適合素材實測。逐圖分類未確認；未安裝、未發布 Hub。",
+      "next_action": "Published to Hub；v0.2.0／public-r1 已發布；待普通 Member UI 與剩餘影像實測，Validation=Untested；未新增安裝。",
       "canonical_drive": "https://drive.google.com/drive/folders/1ayxmKlBhovOMKLdQPEgusPN71HMyrA1p",
       "links": [
         {
@@ -1565,7 +1565,7 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": "使用正式套件；Hub 匯入待另行授權。",
+      "next_action": "Published to Hub；v1.0.0／public-r1 已發布；待普通 Member UI 與剩餘影像實測，Validation=Partial；未新增安裝。",
       "canonical_drive": "https://drive.google.com/drive/folders/1cvTajsMZjqQASC_fY9J_n-Wg7dgpjg42",
       "links": [
         {
@@ -1807,7 +1807,7 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": "正式套件可用；Hub匯入／平台安裝待另行授權。",
+      "next_action": "Published to Hub；v1.0.0／public-r1 已發布；待普通 Member UI 與剩餘影像實測，Validation=Partial；未新增安裝。",
       "canonical_drive": "https://drive.google.com/drive/folders/1zpXV6yyLo-2AZNRbJTXWMGyDNJwyQ4t1",
       "links": [
         {
@@ -1893,7 +1893,7 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": "正式套件可用；Hub匯入／平台安裝待另行授權。",
+      "next_action": "Published to Hub；v1.0.0／public-r1 已發布；待普通 Member UI 與剩餘影像實測，Validation=Partial；未新增安裝。",
       "canonical_drive": "https://drive.google.com/drive/folders/1X7kwfO0YbMF2Vn-Jzpi02JB1-Gf9KSxN",
       "links": [
         {
@@ -1979,7 +1979,7 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": "正式套件可用；Hub匯入／平台安裝待另行授權。",
+      "next_action": "Published to Hub；v1.0.0／public-r1 已發布；待普通 Member UI 與剩餘影像實測，Validation=Partial；未新增安裝。",
       "canonical_drive": "https://drive.google.com/drive/folders/1BGdo--zegqS9d4KF0CWKqmUdSD7-3mk3",
       "links": [
         {
@@ -2065,7 +2065,7 @@
       "origin_conversation_url": null,
       "locator_status": "PROJECT_TITLE_ONLY",
       "related_conversations": [],
-      "next_action": "以合適目標測試本版提示詞；待授權後安裝或匯入 Hub。",
+      "next_action": "Published to Hub；v1.0.0／public-r1 已發布；待普通 Member UI 與剩餘影像實測，Validation=Untested；未新增安裝。",
       "canonical_drive": "https://drive.google.com/drive/folders/18Kmj9SLK-qI0_9OIb2dyd_NKztvm9eO5",
       "links": [
         {
@@ -2153,7 +2153,7 @@
       "origin_conversation_url": null,
       "locator_status": "PROJECT_TITLE_ONLY",
       "related_conversations": [],
-      "next_action": "以合適目標測試本版提示詞；待授權後安裝或匯入 Hub。",
+      "next_action": "Published to Hub；v1.0.0／public-r1 已發布；待普通 Member UI 與剩餘影像實測，Validation=Untested；未新增安裝。",
       "canonical_drive": "https://drive.google.com/drive/folders/1HexV-Lc3YJ8VxFoToublYnCCVcO-rLVY",
       "links": [
         {
@@ -2417,7 +2417,7 @@
       "origin_conversation_url": "https://chatgpt.com/c/6a078130-e360-83ea-8d19-3856cbde5a49",
       "locator_status": "DIRECT_LINK",
       "related_conversations": [],
-      "next_action": "Hub 使用 Before／After 泡泡；原圖與定稿已配對，先檢查畫幅對齊。新 Prompt 待實測。",
+      "next_action": "Published to Hub；v1.0.0／public-r1 已發布；待普通 Member UI 與剩餘影像實測，Validation=Untested；未新增安裝。",
       "canonical_drive": "https://drive.google.com/drive/folders/1Bvio10ZCZ0PjIq73VEaUBcz2qfKO_wHI",
       "links": [
         {
