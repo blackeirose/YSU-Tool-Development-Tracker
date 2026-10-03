@@ -2,7 +2,7 @@
 
 Four Owner-authorized styles were published with the existing Production CMS under reused Main demo-massing-daylight. 015/016/021/022 remain Approved / Partial and not installed, at 1.0.1/1.0.0/1.0.0/1.0.0. Existing selected cover derivatives and taxonomy are unchanged.
 
-Canonical Registry same-ID update was independently fetched byte-for-byte: 101330 bytes, SHA-256 5fa67c0a1c51ef85c6283060180216e49e40cc88aed0523c57c71f95b99d442b. Only four table rows and their four owned sections changed; historical notes are retained. Download URLs remain in protected Hub Launch and private records, never this public export.
+Canonical Registry same-ID update was independently fetched byte-for-byte: 101330 bytes, SHA-256 5fa67c0a1c51ef85c6283060180216e49e40cc88aed0523c57c71f95b99d442b. Only four table rows and their four owned sections changed; historical notes are retained. Public-release ZIP URLs remain in protected Hub Launch and private records, never this public export.
 
 Regenerated with existing tools/generate-skills-index.mjs. Only four skills' platform_notes.chatgpt/next_action changed; all other 27 entries are identical. Counts remain 30 registered + 1 pending, 18 explicit metadata; no warnings. Existing 37 tests passed using installed Node/jsdom and synthetic Auth fixtures, without Admin/software installation or production DB writes.
 
