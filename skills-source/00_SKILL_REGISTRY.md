@@ -7,7 +7,7 @@
 
 
 本表是已登錄 YSU 自製 Skills 的管理索引，不是帳號中所有第三方 Skills 的盤點。  
-目前 31 個已登錄項目：新增 YSU-SKILL-031 岩彩幻境敘事 v1.0.0（Approved／Partial；預設保留構圖、可選風格重構）；新增 YSU-SKILL-030 留白建築明信片 v1.0.0（WC-C）；新增 YSU-SKILL-029 古畫捲軸雕塑高訂 v1.0.0；YSU-SKILL-028 逐格角色動畫製作 v1.0.0 保留。方法／套件已批准，動畫與引擎待實測；WC-A／WC-B 新提示詞仍待生圖驗證，風格13待定、WC-C已正式封裝，Hub Before/After配對已記錄，新Prompt未實測。此計數不代表平台已安裝或全部實測通過。  
+目前 32 個已登錄項目：新增 YSU-SKILL-032 生活街景墨線水彩 v1.0.0（Approved／Partial）；新增 YSU-SKILL-031 岩彩幻境敘事 v1.0.0（Approved／Partial；預設保留構圖、可選風格重構）；新增 YSU-SKILL-030 留白建築明信片 v1.0.0（WC-C）；新增 YSU-SKILL-029 古畫捲軸雕塑高訂 v1.0.0；YSU-SKILL-028 逐格角色動畫製作 v1.0.0 保留。方法／套件已批准，動畫與引擎待實測；WC-A／WC-B 新提示詞仍待生圖驗證，風格13已正式封裝為032、WC-C已正式封裝，Hub Before/After配對已記錄，新Prompt未實測。此計數不代表平台已安裝或全部實測通過。  
 管理對話：YSU Skills 管理中心（使用者於 2026-09-21 指定；不代表已操作聊天 UI 更名）。  
 以下未加新日期的來源核對段落保留 2026-09-21 歷史；該次接續核對已讀三份中央文件、兩個 Skill 的歷史盤點及影片 VALIDATION 全文，並新增來源核對紀錄與本機取回指令；兩套完整來源仍未取得。本機安裝版本均為歷史紀錄，未直讀使用者電腦或重新安裝。  
 下方 YSU-SKILL-001 段落保留首次移交紀錄；該段「本輪」指首次歸檔，不是本次來源核對。本次沒有重跑 Simulator 套件或行為驗證。
@@ -49,6 +49,7 @@
 | YSU-SKILL-029 | 古畫捲軸雕塑高訂 / Sculptural Scroll Couture；以古畫捲軸構成立體高訂服裝，呈現黑底時尚人像 | 1.0.0 | 19 檔完整套件、雙語 Prompt、原圖縮圖已歸檔；回下載 hash 通過 | 未安裝 | 未安裝／Published to Hub；規則封裝已批准、新 Prompt 待實測 |
 | YSU-SKILL-030 | 留白建築明信片 / Negative-Space Architectural Postcard；以紙白、斷續墨線與集中藍色暈染，保留建築辨識度 | 1.0.0 | 25 檔正式套件、雙語 Prompt、Before/After 原圖、縮圖已歸檔；ZIP 回下載核對通過 | 未安裝 | 未安裝／未發布 Hub；新版 Prompt Untested |
 | YSU-SKILL-031 | 岩彩幻境敘事 / Mineral-Pigment Dreamscape Narrative；以細描、啞面碎色與連續敘事空間呈現幻想插畫，預設保留構圖，可選風格重構 | 1.0.0 | 48 檔正式套件、21 原始參考、雙語 Prompt、兩輪測試與縮圖已歸檔；ZIP 回下載核對通過 | 未安裝 | 未安裝／未發布 Hub |
+| YSU-SKILL-032 | 生活街景墨線水彩 / Lived-In Urban Watercolor；以細碎墨線、透明碎色與生活細節，呈現手繪場景敘事；原風格13 | 1.0.0 | 30檔正式套件、7原始參考、兩組核可測試、雙語Prompt與原圖縮圖已歸檔；ZIP回下載核對通過 | 未安裝 | 未安裝／未發布 Hub |
 
 
 ## YSU-SKILL-001 — Scientific Interactive Simulator
@@ -759,6 +760,7 @@ SHA-256：8608b2c97fa5ddc1d5fca465fbd50abce6543a22f44c8fc90c8e1e540acae4b3
 | YSU-SKILL-029 | image-style | 高訂時尚攝影 / Couture fashion photography | photography-realism | 寫實棚拍與雕塑服裝 / Photoreal studio portrait and sculptural garments | STYLE; PHOTOGRAPHY; COUTURE; PORTRAIT; SCULPTURAL; SCROLL |
 | YSU-SKILL-030 | image-style | 風格轉譯 / Style transfer | painting-illustration | 水彩 / Watercolor | STYLE; WATERCOLOR; ARCHITECTURE; NEGATIVE_SPACE; INK_WASH; BEFORE_AFTER |
 | YSU-SKILL-031 | image-style | 敘事風格轉譯 / Narrative style transfer | painting-illustration | 礦物顏料般不透明碎色 / Mineral-like opaque pigment patches | STYLE; Illustration; Narrative; Mineral-Pigment Look; Surreal Composition; Fine Line |
+| YSU-SKILL-032 | image-style | 場景敘事風格轉譯 / Narrative scene style transfer | painting-illustration | 水彩 / Watercolor | STYLE; Watercolor; Ink Drawing; Hand-Drawn; Scene Narrative; Architecture; Everyday Life |
 | YSU-PENDING-001 | education | 科學解說 / Science communication | — | — | 教學; 影片 |
 
 
@@ -1345,3 +1347,45 @@ Tracker Metadata:
 | YSU-SKILL-023 | `ysu-muted-fragmented-paint` | `1zpXV6yyLo-2AZNRbJTXWMGyDNJwyQ4t1` | `1EtUghbgJJwauz1Z6ehQD5wmSux0RTV_I` | `1jPnMkAH_OprjQdrpy3y5GdnaOkfvRQBO` |
 
 Review／來源版本：https://drive.google.com/drive/folders/1pxk-qkxfLU6gyqEJWAHBrJL4uvbW0oYj 。私人原圖與canonical套件維持既有權限；公開Tracker只更新文字／版本／既有封面映射，不加入HUB protected下載URL。
+
+## YSU-SKILL-032 — 生活街景墨線水彩 / Lived-In Urban Watercolor
+
+Skill ID：ysu-lived-in-urban-watercolor
+批次：SSF-B04-13；原風格13／WaterColorStyle01，不是既有YSU-SKILL-013動物角色。正式版本1.0.0。
+
+Tracker Metadata:
+- Category: STYLE
+- Lifecycle: Approved
+- Validation: Partial
+- Version: 1.0.0
+- Graphic References: 9
+- Drive: ARCHIVED
+- ChatGPT: NOT_INSTALLED
+- Codex: NOT_INSTALLED
+- Origin Project: Style Skill Factory
+- Origin Conversation: Style Skill Factory — Master Control
+- Origin Conversation URL:
+- Locator Status: PROJECT_TITLE_ONLY
+- Next Action: 已正式打包；保留構圖兩例手繪差異已核可，重構與通用模板尚待實測。WC-B天空與暈染保留；未安裝／未發布Hub。
+- Hub Status: Not Published
+- Canonical Drive: https://drive.google.com/drive/folders/1A822-KQjF7sbXE58I1vMqwNqgeUAx-v6
+
+分類：繪畫與插畫 / Painting & Illustration → 水彩 / Watercolor；獨立風格，不是WC-B子風格。預設保留構圖，可選風格重構；新增內容、鏡頭與姿勢變更須另明確授權。
+
+- [正式資料夾](https://drive.google.com/drive/folders/1A822-KQjF7sbXE58I1vMqwNqgeUAx-v6)
+- [SKILL.md](https://drive.google.com/file/d/1RLpXjhEX2VLgViXKxWO5Ig1vGsY8mG3Q/view)
+- [完整 ZIP](https://drive.google.com/file/d/1I0Bo6Msqc_BkbRX-1cvYOO3U9Bh4S_mJ/view)：30檔，15994217 bytes；SHA-256 `dfce9c4dde177a8f3030d72bd26e20db4f83860e9f06997a9254fa235a18bbcc`。回下載大小／SHA-256／CRC／逐檔清單一致。
+- [原圖縮圖](https://drive.google.com/file/d/1QBsM8JFbVuVUOLqbGhbFeQihhNOXPpYs/view)：R02完整構圖等比例720px，不是測試圖；依Factory既有縮圖與Tracker同步授權。
+- [原始來源](https://drive.google.com/drive/folders/1e_6zLGhRw6aGYK7ksl20CbajLSK_2gMz)：7張原參考保留原ID，已從Pending移入正式SOURCE。
+- [核可測試與私人版控](https://drive.google.com/drive/folders/1qXIZg9zeQWks3uaKw5oia0QcKzir8aKK)；[Git bundle](https://drive.google.com/file/d/1DXX5kW-070zjkPMLU-7ar-g5lU3M0ezO/view) commit `32c15bb33e56a14961b7465ce98aa640d23f0269`，回下載hash一致。
+- [最後定案](https://drive.google.com/file/d/1mWzrWuKNqPkqVDZbqjVnHe962QgiH7C-/view)。
+
+2026-10-04 UTC（Owner於2026-10-03 America/Los_Angeles確認）：13筆觸已確實呈現不同且更手繪；解除待定並正式打包。r3「差異不足」的最終判斷撤回。WC-B天空與暈染是刻意保留，r3限制天空色洗的建議撤回；其canonical文件／版本／縮圖未改。
+9參考計數=7來源+2核可風格應用；另2測試輸入不計入風格參考。7原圖逐張核可未全確認，不臆造Rejected。保留構圖兩例獲風格核可，精確文字／幾何／人物保真沒有因此全部通過；RECOMPOSE與通用模板未另生圖實測，故Partial。文字代理使用檢查不算影像驗證。
+來源對話為Master Control；原作者對話／Prompt未定位，不補造URL。完整原圖與ZIP保持私有；Tracker只公開管理資料與選定720px封面。未安裝／未發布HUB，不新增公開發布ZIP。未來HUB使用中英短說明、STYLE標籤及單張滿版cover，不加外圍白邊、不拉伸。14與15仍撤案，不重新啟動。
+
+## 風格13正式套件定位表
+
+| ID | slug | canonical folder ID | SKILL.md file ID | package ZIP file ID |
+|---|---|---|---|---|
+| YSU-SKILL-032 | `ysu-lived-in-urban-watercolor` | `1A822-KQjF7sbXE58I1vMqwNqgeUAx-v6` | `1RLpXjhEX2VLgViXKxWO5Ig1vGsY8mG3Q` | `1I0Bo6Msqc_BkbRX-1cvYOO3U9Bh4S_mJ` |

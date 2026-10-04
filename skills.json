@@ -17,7 +17,7 @@
     "source": "Skill Taxonomy v1 table in canonical Drive registry"
   },
   "$comment": "GENERATED FILE — do not edit by hand. Source: Google Drive AI Works/06_Skills/00_SKILL_REGISTRY.md. Regenerate with `npm run skills:index`.",
-  "generated_at": "2026-10-04T05:02:15.214Z",
+  "generated_at": "2026-10-04T05:04:29.043Z",
   "source": {
     "file": "skills-source/00_SKILL_REGISTRY.md",
     "drive_file_id": "1g6Io9lD4YwkDaX5_OUqssvrcEyuCF-1P",
@@ -42,10 +42,10 @@
     ]
   },
   "counts": {
-    "total": 32,
-    "registered": 31,
+    "total": 33,
+    "registered": 32,
     "pending": 1,
-    "with_explicit_metadata": 19
+    "with_explicit_metadata": 20
   },
   "warnings": [],
   "skills": [
@@ -2597,6 +2597,96 @@
           "Mineral-Pigment Look",
           "Surreal Composition",
           "Fine Line"
+        ],
+        "source": "explicit registry taxonomy"
+      }
+    },
+    {
+      "id": "YSU-SKILL-032",
+      "name": "生活街景墨線水彩 / Lived-In Urban Watercolor",
+      "slug": "ysu-lived-in-urban-watercolor",
+      "category": "STYLE",
+      "lifecycle": "Approved",
+      "validation": "Partial",
+      "version": "1.0.0",
+      "version_note": "1.0.0",
+      "description": "以細碎墨線、透明碎色與生活細節，呈現手繪場景敘事；原風格13",
+      "graphic_reference_count": 9,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "NOT_INSTALLED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "30檔正式套件、7原始參考、兩組核可測試、雙語Prompt與原圖縮圖已歸檔；ZIP回下載核對通過",
+        "chatgpt": "未安裝／未發布 Hub",
+        "codex": "未安裝"
+      },
+      "origin_project": "Style Skill Factory",
+      "origin_conversation": "Style Skill Factory — Master Control",
+      "origin_conversation_url": null,
+      "locator_status": "PROJECT_TITLE_ONLY",
+      "related_conversations": [],
+      "next_action": "已正式打包；保留構圖兩例手繪差異已核可，重構與通用模板尚待實測。WC-B天空與暈染保留；未安裝／未發布Hub。",
+      "canonical_drive": "https://drive.google.com/drive/folders/1A822-KQjF7sbXE58I1vMqwNqgeUAx-v6",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/1A822-KQjF7sbXE58I1vMqwNqgeUAx-v6"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://drive.google.com/file/d/1RLpXjhEX2VLgViXKxWO5Ig1vGsY8mG3Q/view"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/1I0Bo6Msqc_BkbRX-1cvYOO3U9Bh4S_mJ/view"
+        }
+      ],
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "explicit",
+        "lifecycle": "explicit",
+        "validation": "explicit",
+        "version": "explicit",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "explicit",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "explicit",
+        "origin_conversation": "explicit",
+        "origin_conversation_url": "derived",
+        "locator_status": "explicit",
+        "related_conversations": "derived",
+        "next_action": "explicit",
+        "canonical_drive": "explicit",
+        "links": "derived",
+        "registered": "derived",
+        "platform.drive": "explicit",
+        "platform.chatgpt": "explicit",
+        "platform.codex": "explicit"
+      },
+      "has_explicit_metadata": true,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "image-style",
+        "domain": "圖像與風格 / Image & Style",
+        "area": "場景敘事風格轉譯 / Narrative scene style transfer",
+        "style_family_id": "painting-illustration",
+        "style_family": "繪畫與插畫 / Painting & Illustration",
+        "medium": "水彩 / Watercolor",
+        "tags": [
+          "STYLE",
+          "Watercolor",
+          "Ink Drawing",
+          "Hand-Drawn",
+          "Scene Narrative",
+          "Architecture",
+          "Everyday Life"
         ],
         "source": "explicit registry taxonomy"
       }
