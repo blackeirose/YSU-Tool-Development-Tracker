@@ -145,7 +145,7 @@ test('the live index includes SSF-B02/B03/WC approval independently from image v
  for(const id of ['014','016','022','023','025']){
   const s=byId(live,'YSU-SKILL-'+id);
   assert.equal(s.lifecycle,'Approved'); assert.equal(s.validation,'Untested'); assert.equal(s.version,'1.1.0');
-  assert.match(s.next_action,/HUB仍為v1\.0\.0/);
+  assert.match(s.next_action,/Published to Hub；v1\.1\.0\/public-r1 雙模式公開包已發布/);
   assert.ok(s.links.some(l=>l.label==='Package ZIP'));
  }
  const renamed=byId(live,'YSU-SKILL-015');
@@ -154,6 +154,12 @@ test('the live index includes SSF-B02/B03/WC approval independently from image v
  for(const id of ['019']){
   const s=live.skills.find(s=>s.id==='YSU-SKILL-'+id);
   assert.equal(s.lifecycle,'Approved');assert.equal(s.validation,'Untested');assert.equal(s.version,'0.3.0');
+ }
+ for(const id of ['018','019']){
+  const s=byId(live,'YSU-SKILL-'+id);
+  assert.match(s.next_action,/Published to Hub；v0\.3\.0\/public-r1 雙模式公開包已發布/);
+  assert.equal(s.platform.chatgpt,'NOT_INSTALLED');
+  assert.equal(s.platform.codex,'NOT_INSTALLED');
  }
  const revised=byId(live,'YSU-SKILL-018');
  assert.equal(revised.lifecycle,'Approved');assert.equal(revised.validation,'Untested');assert.equal(revised.version,'0.3.0');

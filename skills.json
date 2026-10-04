@@ -17,7 +17,7 @@
     "source": "Skill Taxonomy v1 table in canonical Drive registry"
   },
   "$comment": "GENERATED FILE — do not edit by hand. Source: Google Drive AI Works/06_Skills/00_SKILL_REGISTRY.md. Regenerate with `npm run skills:index`.",
-  "generated_at": "2026-10-04T03:48:16.641Z",
+  "generated_at": "2026-10-04T05:02:15.214Z",
   "source": {
     "file": "skills-source/00_SKILL_REGISTRY.md",
     "drive_file_id": "1g6Io9lD4YwkDaX5_OUqssvrcEyuCF-1P",
@@ -1087,7 +1087,7 @@
       },
       "platform_notes": {
         "drive": "雙模式新版已歸檔；7標準文件＋雙語Prompt＋原圖＋ZIP回下載hash一致；影像Untested",
-        "chatgpt": "未安裝；HUB仍為v1.0.0/public-r1，新版未替換",
+        "chatgpt": "未安裝／Published to Hub；v1.1.0/public-r1雙模式；影像Untested",
         "codex": "未安裝"
       },
       "origin_project": null,
@@ -1095,7 +1095,7 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": "雙模式v1.1.0已更新；預設保留構圖、可選風格重構。新版影像Untested；HUB仍為v1.0.0/public-r1，待新版review／適合題材實測後另行發布；未安裝。",
+      "next_action": "Published to Hub；v1.1.0/public-r1 雙模式公開包已發布；預設保留構圖、可選風格重構。新版影像Untested，歷史驗證保留；待普通Member UI與雙模式影像實測；未安裝。",
       "canonical_drive": "https://drive.google.com/drive/folders/1g7ignAl0kRIT1jHLZtaKdwq-yTSfKppw",
       "links": [
         {
@@ -1258,7 +1258,7 @@
       },
       "platform_notes": {
         "drive": "雙模式新版已歸檔；7標準文件＋雙語Prompt＋原圖＋ZIP回下載hash一致；影像Untested",
-        "chatgpt": "未安裝；HUB仍為v1.0.0/public-r1，新版未替換",
+        "chatgpt": "未安裝／Published to Hub；v1.1.0/public-r1雙模式；影像Untested",
         "codex": "未安裝"
       },
       "origin_project": null,
@@ -1266,7 +1266,7 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": "雙模式v1.1.0已更新；預設保留構圖、可選風格重構。新版影像Untested；HUB仍為v1.0.0/public-r1，待新版review／適合題材實測後另行發布；未安裝。",
+      "next_action": "Published to Hub；v1.1.0/public-r1 雙模式公開包已發布；預設保留構圖、可選風格重構。新版影像Untested，歷史驗證保留；待普通Member UI與雙模式影像實測；未安裝。",
       "canonical_drive": "https://drive.google.com/drive/folders/1ATQWh7DP8tN52fR17uUoXjEyWPbmUix8",
       "links": [
         {
@@ -1421,7 +1421,7 @@
       },
       "platform_notes": {
         "drive": "雙模式新版已歸檔；7標準文件＋雙語Prompt＋原圖＋ZIP回下載hash一致；影像Untested",
-        "chatgpt": "未安裝；HUB仍為v0.2.0/public-r1，新版未替換",
+        "chatgpt": "未安裝／Published to Hub；v0.3.0/public-r1雙模式；影像Untested",
         "codex": "未安裝"
       },
       "origin_project": null,
@@ -1429,7 +1429,7 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": "雙模式v0.3.0已更新；預設保留構圖、可選風格重構。新版影像Untested；HUB仍為v0.2.0/public-r1，待新版review／適合題材實測後另行發布；未安裝。",
+      "next_action": "Published to Hub；v0.3.0/public-r1 雙模式公開包已發布；預設保留構圖、可選風格重構。新版影像Untested，歷史驗證保留；待普通Member UI與雙模式影像實測；未安裝。",
       "canonical_drive": "https://drive.google.com/drive/folders/1hMuel2LZ14EhfJiuX7IMBfvTgbH2ctrp",
       "links": [
         {
@@ -1505,7 +1505,7 @@
       },
       "platform_notes": {
         "drive": "雙模式新版已歸檔；7標準文件＋雙語Prompt＋原圖＋ZIP回下載hash一致；影像Untested",
-        "chatgpt": "未安裝；HUB仍為v0.2.0/public-r1，新版未替換",
+        "chatgpt": "未安裝／Published to Hub；v0.3.0/public-r1雙模式；影像Untested",
         "codex": "未安裝"
       },
       "origin_project": null,
@@ -1513,7 +1513,7 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": "雙模式v0.3.0已更新；預設保留構圖、可選風格重構。新版影像Untested；HUB仍為v0.2.0/public-r1，待新版review／適合題材實測後另行發布；未安裝。",
+      "next_action": "Published to Hub；v0.3.0/public-r1 雙模式公開包已發布；預設保留構圖、可選風格重構。新版影像Untested，歷史驗證保留；待普通Member UI與雙模式影像實測；未安裝。",
       "canonical_drive": "https://drive.google.com/drive/folders/1ayxmKlBhovOMKLdQPEgusPN71HMyrA1p",
       "links": [
         {
@@ -1745,7 +1745,7 @@
       },
       "platform_notes": {
         "drive": "雙模式新版已歸檔；7標準文件＋雙語Prompt＋原圖＋ZIP回下載hash一致；影像Untested",
-        "chatgpt": "未安裝；HUB仍為v1.0.0/public-r1，新版未替換",
+        "chatgpt": "未安裝／Published to Hub；v1.1.0/public-r1雙模式；影像Untested",
         "codex": "未安裝"
       },
       "origin_project": null,
@@ -1753,7 +1753,7 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": "雙模式v1.1.0已更新；預設保留構圖、可選風格重構。新版影像Untested；HUB仍為v1.0.0/public-r1，待新版review／適合題材實測後另行發布；未安裝。",
+      "next_action": "Published to Hub；v1.1.0/public-r1 雙模式公開包已發布；預設保留構圖、可選風格重構。新版影像Untested，歷史驗證保留；待普通Member UI與雙模式影像實測；未安裝。",
       "canonical_drive": "https://drive.google.com/drive/folders/1rdBDnrSCn7HecIuUYLK8q2lwCLgmfyVy",
       "links": [
         {
@@ -1831,7 +1831,7 @@
       },
       "platform_notes": {
         "drive": "雙模式新版已歸檔；7標準文件＋雙語Prompt＋原圖＋ZIP回下載hash一致；影像Untested",
-        "chatgpt": "未安裝；HUB仍為v1.0.0/public-r1，新版未替換",
+        "chatgpt": "未安裝／Published to Hub；v1.1.0/public-r1雙模式；影像Untested",
         "codex": "未安裝"
       },
       "origin_project": null,
@@ -1839,7 +1839,7 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": "雙模式v1.1.0已更新；預設保留構圖、可選風格重構。新版影像Untested；HUB仍為v1.0.0/public-r1，待新版review／適合題材實測後另行發布；未安裝。",
+      "next_action": "Published to Hub；v1.1.0/public-r1 雙模式公開包已發布；預設保留構圖、可選風格重構。新版影像Untested，歷史驗證保留；待普通Member UI與雙模式影像實測；未安裝。",
       "canonical_drive": "https://drive.google.com/drive/folders/1zpXV6yyLo-2AZNRbJTXWMGyDNJwyQ4t1",
       "links": [
         {
@@ -2003,7 +2003,7 @@
       },
       "platform_notes": {
         "drive": "雙模式新版已歸檔；7標準文件＋雙語Prompt＋原圖＋ZIP回下載hash一致；影像Untested",
-        "chatgpt": "未安裝；HUB仍為v1.0.0/public-r1，新版未替換",
+        "chatgpt": "未安裝／Published to Hub；v1.1.0/public-r1雙模式；影像Untested",
         "codex": "未安裝"
       },
       "origin_project": null,
@@ -2011,7 +2011,7 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": "雙模式v1.1.0已更新；預設保留構圖、可選風格重構。新版影像Untested；HUB仍為v1.0.0/public-r1，待新版review／適合題材實測後另行發布；未安裝。",
+      "next_action": "Published to Hub；v1.1.0/public-r1 雙模式公開包已發布；預設保留構圖、可選風格重構。新版影像Untested，歷史驗證保留；待普通Member UI與雙模式影像實測；未安裝。",
       "canonical_drive": "https://drive.google.com/drive/folders/1BGdo--zegqS9d4KF0CWKqmUdSD7-3mk3",
       "links": [
         {
