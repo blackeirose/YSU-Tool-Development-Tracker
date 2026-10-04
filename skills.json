@@ -17,16 +17,16 @@
     "source": "Skill Taxonomy v1 table in canonical Drive registry"
   },
   "$comment": "GENERATED FILE — do not edit by hand. Source: Google Drive AI Works/06_Skills/00_SKILL_REGISTRY.md. Regenerate with `npm run skills:index`.",
-  "generated_at": "2026-10-03T20:12:30.166Z",
+  "generated_at": "2026-10-04T00:10:01.166Z",
   "source": {
     "file": "skills-source/00_SKILL_REGISTRY.md",
     "drive_file_id": "1g6Io9lD4YwkDaX5_OUqssvrcEyuCF-1P",
-    "registry_updated": "2026-10-02"
+    "registry_updated": "2026-10-03"
   },
   "registry": {
     "title": "YSU Skills Registry — 統一管理總表",
     "recorded": "2026-09-21",
-    "updated": "2026-10-02",
+    "updated": "2026-10-03",
     "owner": "YuCheng Su",
     "management_conversation": "YSU Skills 管理中心",
     "drive_folder": "https://drive.google.com/drive/folders/1P6b3rLGzrdev1Lh6tZVGAWnPcNkNYoV_",
@@ -42,10 +42,10 @@
     ]
   },
   "counts": {
-    "total": 31,
-    "registered": 30,
+    "total": 32,
+    "registered": 31,
     "pending": 1,
-    "with_explicit_metadata": 18
+    "with_explicit_metadata": 19
   },
   "warnings": [],
   "skills": [
@@ -2476,6 +2476,95 @@
           "NEGATIVE_SPACE",
           "INK_WASH",
           "BEFORE_AFTER"
+        ],
+        "source": "explicit registry taxonomy"
+      }
+    },
+    {
+      "id": "YSU-SKILL-031",
+      "name": "岩彩幻境敘事 / Mineral-Pigment Dreamscape Narrative",
+      "slug": "ysu-mineral-pigment-dreamscape",
+      "category": "STYLE",
+      "lifecycle": "Approved",
+      "validation": "Partial",
+      "version": "1.0.0",
+      "version_note": "1.0.0",
+      "description": "以細描、啞面碎色與連續敘事空間呈現幻想插畫，預設保留構圖，可選風格重構",
+      "graphic_reference_count": 21,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "NOT_INSTALLED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "48 檔正式套件、21 原始參考、雙語 Prompt、兩輪測試與縮圖已歸檔；ZIP 回下載核對通過",
+        "chatgpt": "未安裝／未發布 Hub",
+        "codex": "未安裝"
+      },
+      "origin_project": "Style Skill Factory",
+      "origin_conversation": "Style Skill Factory — Master Control",
+      "origin_conversation_url": null,
+      "locator_status": "PROJECT_TITLE_ONLY",
+      "related_conversations": [],
+      "next_action": "雙模式套件已批准；待更多合適題材與跨平台實測。未發布 Hub；建議未來歸入漫畫與動畫美術。舊 Skills 僅紅圈7案列入下一輪 review，藍圈6案保留。",
+      "canonical_drive": "https://drive.google.com/drive/folders/1IU0oGYBq902UcQXZAO-_f0fCSN_RPcEK",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/1IU0oGYBq902UcQXZAO-_f0fCSN_RPcEK"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://drive.google.com/file/d/1mn4VzlGBoWHLwrDmWUYltNPalFFeKXCs/view"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/1RVL1vLIX3kQn0jWuPJ5Qrx5xLpigMXmT/view"
+        }
+      ],
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "explicit",
+        "lifecycle": "explicit",
+        "validation": "explicit",
+        "version": "explicit",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "explicit",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "explicit",
+        "origin_conversation": "explicit",
+        "origin_conversation_url": "derived",
+        "locator_status": "explicit",
+        "related_conversations": "derived",
+        "next_action": "explicit",
+        "canonical_drive": "explicit",
+        "links": "derived",
+        "registered": "derived",
+        "platform.drive": "explicit",
+        "platform.chatgpt": "explicit",
+        "platform.codex": "explicit"
+      },
+      "has_explicit_metadata": true,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "image-style",
+        "domain": "圖像與風格 / Image & Style",
+        "area": "敘事風格轉譯 / Narrative style transfer",
+        "style_family_id": "painting-illustration",
+        "style_family": "繪畫與插畫 / Painting & Illustration",
+        "medium": "礦物顏料般不透明碎色 / Mineral-like opaque pigment patches",
+        "tags": [
+          "STYLE",
+          "Illustration",
+          "Narrative",
+          "Mineral-Pigment Look",
+          "Surreal Composition",
+          "Fine Line"
         ],
         "source": "explicit registry taxonomy"
       }

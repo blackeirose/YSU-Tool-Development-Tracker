@@ -54,7 +54,7 @@ test('every registered Skill appears with lifecycle, validation, version, refs a
  const f=fixture();try{
   await f.toSkills();
   assert.equal(f.rows().length,index.skills.length);
-  assert.equal(index.skills.filter(s=>s.registered).length,30,'all 30 registered Skills are indexed');
+  assert.equal(index.skills.filter(s=>s.registered).length,31,'all 31 registered Skills are indexed');
   const text=f.get('skRows').textContent;
   for(const s of index.skills){
    assert.ok(text.includes(s.name),`${s.id} name shown`);
@@ -178,7 +178,7 @@ test('a failed index load reports it instead of rendering an empty list silently
 });
 
 test('the generated index never invents data and stays in the documented shape',()=>{
- assert.equal(index.counts.registered,30);
+ assert.equal(index.counts.registered,31);
  assert.ok(index.source.file.includes('00_SKILL_REGISTRY.md'));
  for(const s of index.skills){
   assert.match(s.id,/^YSU-(SKILL|PENDING)-\d{3}$/);
@@ -246,3 +246,4 @@ test('taxonomy separates purpose from style and keeps paper styles together',asy
   assert.ok(f.get('skDetailBody').textContent.includes('紙藝與纖維'));
  }finally{f.close()}
 });
+

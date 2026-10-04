@@ -1,13 +1,13 @@
 # YSU Skills Registry — 統一管理總表
 
 
-紀錄日期：2026-09-21；最新更新：2026-10-02。Owner：YuCheng Su。  
+紀錄日期：2026-09-21；最新更新：2026-10-03。Owner：YuCheng Su。  
 管理入口：Google Drive / My Drive / AI Works / 06_Skills。  
 資料夾：https://drive.google.com/drive/folders/1P6b3rLGzrdev1Lh6tZVGAWnPcNkNYoV_
 
 
 本表是已登錄 YSU 自製 Skills 的管理索引，不是帳號中所有第三方 Skills 的盤點。  
-目前 30 個已登錄項目：新增 YSU-SKILL-030 留白建築明信片 v1.0.0（WC-C）；新增 YSU-SKILL-029 古畫捲軸雕塑高訂 v1.0.0；YSU-SKILL-028 逐格角色動畫製作 v1.0.0 保留。方法／套件已批准，動畫與引擎待實測；WC-A／WC-B 新提示詞仍待生圖驗證，風格13待定、WC-C已正式封裝，Hub Before/After配對已記錄，新Prompt未實測。此計數不代表平台已安裝或全部實測通過。  
+目前 31 個已登錄項目：新增 YSU-SKILL-031 岩彩幻境敘事 v1.0.0（Approved／Partial；預設保留構圖、可選風格重構）；新增 YSU-SKILL-030 留白建築明信片 v1.0.0（WC-C）；新增 YSU-SKILL-029 古畫捲軸雕塑高訂 v1.0.0；YSU-SKILL-028 逐格角色動畫製作 v1.0.0 保留。方法／套件已批准，動畫與引擎待實測；WC-A／WC-B 新提示詞仍待生圖驗證，風格13待定、WC-C已正式封裝，Hub Before/After配對已記錄，新Prompt未實測。此計數不代表平台已安裝或全部實測通過。  
 管理對話：YSU Skills 管理中心（使用者於 2026-09-21 指定；不代表已操作聊天 UI 更名）。  
 以下未加新日期的來源核對段落保留 2026-09-21 歷史；該次接續核對已讀三份中央文件、兩個 Skill 的歷史盤點及影片 VALIDATION 全文，並新增來源核對紀錄與本機取回指令；兩套完整來源仍未取得。本機安裝版本均為歷史紀錄，未直讀使用者電腦或重新安裝。  
 下方 YSU-SKILL-001 段落保留首次移交紀錄；該段「本輪」指首次歸檔，不是本次來源核對。本次沒有重跑 Simulator 套件或行為驗證。
@@ -48,6 +48,7 @@
 | YSU-SKILL-028 | 逐格角色動畫製作 / Sprite Animation Production；核可角色→動作→逐格修復→QA→交付 | 1.0.0 | 22 檔正式套件、雙語 Prompt、原圖及來源版本已歸檔；回下載 hash 通過 | 未安裝 | 未安裝／未發布 Hub；方法通過、動畫／引擎未測 |
 | YSU-SKILL-029 | 古畫捲軸雕塑高訂 / Sculptural Scroll Couture；以古畫捲軸構成立體高訂服裝，呈現黑底時尚人像 | 1.0.0 | 19 檔完整套件、雙語 Prompt、原圖縮圖已歸檔；回下載 hash 通過 | 未安裝 | 未安裝／Published to Hub；規則封裝已批准、新 Prompt 待實測 |
 | YSU-SKILL-030 | 留白建築明信片 / Negative-Space Architectural Postcard；以紙白、斷續墨線與集中藍色暈染，保留建築辨識度 | 1.0.0 | 25 檔正式套件、雙語 Prompt、Before/After 原圖、縮圖已歸檔；ZIP 回下載核對通過 | 未安裝 | 未安裝／未發布 Hub；新版 Prompt Untested |
+| YSU-SKILL-031 | 岩彩幻境敘事 / Mineral-Pigment Dreamscape Narrative；以細描、啞面碎色與連續敘事空間呈現幻想插畫，預設保留構圖，可選風格重構 | 1.0.0 | 48 檔正式套件、21 原始參考、雙語 Prompt、兩輪測試與縮圖已歸檔；ZIP 回下載核對通過 | 未安裝 | 未安裝／未發布 Hub |
 
 
 ## YSU-SKILL-001 — Scientific Interactive Simulator
@@ -721,6 +722,7 @@ SHA-256：8608b2c97fa5ddc1d5fca465fbd50abce6543a22f44c8fc90c8e1e540acae4b3
 | YSU-SKILL-028 | character-design | 角色動畫製作 / Character animation production | — | — | ANIMATION; SPRITE; WORKFLOW; GAME_ASSET |
 | YSU-SKILL-029 | image-style | 高訂時尚攝影 / Couture fashion photography | photography-realism | 寫實棚拍與雕塑服裝 / Photoreal studio portrait and sculptural garments | STYLE; PHOTOGRAPHY; COUTURE; PORTRAIT; SCULPTURAL; SCROLL |
 | YSU-SKILL-030 | image-style | 風格轉譯 / Style transfer | painting-illustration | 水彩 / Watercolor | STYLE; WATERCOLOR; ARCHITECTURE; NEGATIVE_SPACE; INK_WASH; BEFORE_AFTER |
+| YSU-SKILL-031 | image-style | 敘事風格轉譯 / Narrative style transfer | painting-illustration | 礦物顏料般不透明碎色 / Mineral-like opaque pigment patches | STYLE; Illustration; Narrative; Mineral-Pigment Look; Surreal Composition; Fine Line |
 | YSU-PENDING-001 | education | 科學解說 / Science communication | — | — | 教學; 影片 |
 
 
@@ -1221,3 +1223,46 @@ Tracker Metadata:
 | ID | slug | canonical folder ID | SKILL.md file ID | package ZIP file ID |
 |---|---|---|---|---|
 | YSU-SKILL-030 | `ysu-negative-space-architectural-postcard` | `1Bvio10ZCZ0PjIq73VEaUBcz2qfKO_wHI` | `1O-JEQy0SCqRsjFhOYkOhOkrS_MX0Qczv` | `1aup51Ta0nsWxRumiJCgTq_d2MhhP2Xo1` |
+
+
+## YSU-SKILL-031 — 岩彩幻境敘事 / Mineral-Pigment Dreamscape Narrative
+
+Skill ID：ysu-mineral-pigment-dreamscape
+批次：P09-20261003；來源 P style09（不是舊09裂紙浮空）。版本 1.0.0。
+
+Tracker Metadata:
+- Category: STYLE
+- Lifecycle: Approved
+- Validation: Partial
+- Version: 1.0.0
+- Graphic References: 21
+- Drive: ARCHIVED
+- ChatGPT: NOT_INSTALLED
+- Codex: NOT_INSTALLED
+- Origin Project: Style Skill Factory
+- Origin Conversation: Style Skill Factory — Master Control
+- Origin Conversation URL:
+- Locator Status: PROJECT_TITLE_ONLY
+- Next Action: 雙模式套件已批准；待更多合適題材與跨平台實測。未發布 Hub；建議未來歸入漫畫與動畫美術。舊 Skills 僅紅圈7案列入下一輪 review，藍圈6案保留。
+- Hub Status: Not Published
+- Canonical Drive: https://drive.google.com/drive/folders/1IU0oGYBq902UcQXZAO-_f0fCSN_RPcEK
+
+分類：繪畫與插畫 / Painting & Illustration。預設保留構圖／可選風格重構，內容、身分、必要物件與故事鎖定兩模式通用。背景新增需另列允許範圍；不是自由發明內容。
+
+- [正式資料夾](https://drive.google.com/drive/folders/1IU0oGYBq902UcQXZAO-_f0fCSN_RPcEK)
+- [SKILL.md](https://drive.google.com/file/d/1mn4VzlGBoWHLwrDmWUYltNPalFFeKXCs/view)
+- [完整 ZIP](https://drive.google.com/file/d/1RVL1vLIX3kQn0jWuPJ5Qrx5xLpigMXmT/view): 48 檔，28112060 bytes；SHA-256 bc5074a2af64ae6de17bdf758bf6735dbe239be7790b6a9d071c21df757e06f3。回下載 SHA-256／CRC／逐檔雜湊一致。
+- [原參考縮圖](https://drive.google.com/file/d/1Ef-XSnoWRYbI93_QHgoBsV_axCzKVeyu/view)：R21 完整構圖等比例720px，非新測試圖；依既有 Factory 原圖封面選擇授權選用，不臆造逐張核可。
+- [原始來源](https://drive.google.com/drive/folders/1awLJ3azcga0Viz-X4jOEdFytblD5wyMx)：21 張原 JPEG，原 ID 保留，已移入正式 SOURCE。
+- [審查歷史](https://drive.google.com/drive/folders/1LMj5SCRsNCkZwr_7MUaF2BMuOHfjyUPO)：兩輪 review、整理前快照、後續紅藍圈清單與私人來源版控。
+- [私人 Factory Git bundle](https://drive.google.com/file/d/1ef2FxBR7fN2q7ePYBUmvRNgQkNmufoR1/view): commit be2fe7b49e2264224e3706c1dd8b84ce3f4102e8；不是平台安裝或獨立 GitHub repo。
+
+2026-10-03 America/Los_Angeles：Owner 接受分析結論與雙模式並要求先正式打包。Approved 指方法／套件，21張原圖逐一核可未全確認，沒有捏造 Rejected Reference。A-r2/B-r2 與 A-r3/B-r3b 有實際比較；未固定 seed，精確文字／UI／幾何／真人身分與跨平台再現未驗證；最終背景新增 NONE 模板未另跑影像實測，故維持 Partial。完整來源與ZIP私人；Tracker僅同步索引與選定原圖720px縮圖，HUB與舊Skills不改。
+
+後續 Review 範圍（非改版批准）：紅圈 018、022、016、019、014、025、023；藍圈 029、015、021、024、026、030 原則保持；未圈選 017、027、012、020 保持原狀。詳 NEXT_REVIEW_SCOPE.md。未處理的其他PENDING intake 保留，不為淨空而移走。
+
+## P09 套件定位表
+
+| ID | slug | canonical folder ID | SKILL.md file ID | package ZIP file ID |
+|---|---|---|---|---|
+| YSU-SKILL-031 | `ysu-mineral-pigment-dreamscape` | `1IU0oGYBq902UcQXZAO-_f0fCSN_RPcEK` | `1mn4VzlGBoWHLwrDmWUYltNPalFFeKXCs` | `1RVL1vLIX3kQn0jWuPJ5Qrx5xLpigMXmT` |
