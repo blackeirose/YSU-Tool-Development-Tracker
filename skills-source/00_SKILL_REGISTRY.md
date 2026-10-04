@@ -7,7 +7,7 @@
 
 
 本表是已登錄 YSU 自製 Skills 的管理索引，不是帳號中所有第三方 Skills 的盤點。  
-目前 31 個已登錄項目：新增 YSU-SKILL-031 岩彩幻境敘事 v1.0.0（Approved／Partial；預設保留構圖、可選風格重構）；新增 YSU-SKILL-030 留白建築明信片 v1.0.0（WC-C）；新增 YSU-SKILL-029 古畫捲軸雕塑高訂 v1.0.0；YSU-SKILL-028 逐格角色動畫製作 v1.0.0 保留。方法／套件已批准，動畫與引擎待實測；WC-A／WC-B 新提示詞仍待生圖驗證，風格13待定、WC-C已正式封裝，Hub Before/After配對已記錄，新Prompt未實測。此計數不代表平台已安裝或全部實測通過。  
+目前 32 個已登錄項目：新增 YSU-SKILL-032 生活街景墨線水彩 v1.0.0（Approved／Partial）；新增 YSU-SKILL-031 岩彩幻境敘事 v1.0.0（Approved／Partial；預設保留構圖、可選風格重構）；新增 YSU-SKILL-030 留白建築明信片 v1.0.0（WC-C）；新增 YSU-SKILL-029 古畫捲軸雕塑高訂 v1.0.0；YSU-SKILL-028 逐格角色動畫製作 v1.0.0 保留。方法／套件已批准，動畫與引擎待實測；WC-A／WC-B 新提示詞仍待生圖驗證，風格13已正式封裝為032、WC-C已正式封裝，Hub Before/After配對已記錄，新Prompt未實測。此計數不代表平台已安裝或全部實測通過。  
 管理對話：YSU Skills 管理中心（使用者於 2026-09-21 指定；不代表已操作聊天 UI 更名）。  
 以下未加新日期的來源核對段落保留 2026-09-21 歷史；該次接續核對已讀三份中央文件、兩個 Skill 的歷史盤點及影片 VALIDATION 全文，並新增來源核對紀錄與本機取回指令；兩套完整來源仍未取得。本機安裝版本均為歷史紀錄，未直讀使用者電腦或重新安裝。  
 下方 YSU-SKILL-001 段落保留首次移交紀錄；該段「本輪」指首次歸檔，不是本次來源核對。本次沒有重跑 Simulator 套件或行為驗證。
@@ -31,24 +31,25 @@
 | YSU-SKILL-011 | YSU 圖像分析與風格反推基礎；準確移植圖片風格 | v1.0.0 | 5 份作者文件已歸檔、讀回比對通過 | Windows Codex 未安裝 | ChatGPT 個人 Skill 已安裝；分析 Project Instructions 已保存讀回；未公開分享 |  
 | YSU-SKILL-012 | YSU Cinematic Inkframe／電影墨格；寫實轉混合媒材漫畫、角色／空間／頓點 | 文件／參考 v0.1.0 | 27 檔 ZIP＋展開來源／11 圖已歸檔；ZIP 回下載 SHA-256 與逐檔比對通過 | 未安裝 | 未安裝／未發布；未改分享；SFDOT 人物 BOARD 已核准，Seedance／跨案待驗證 |  
 | YSU-SKILL-013 | YSU Stylized Animal Character Bible；遊戲／動畫用風格化動物角色設定 | 文件／參考 v0.1.0 | SKILL＋工作表＋5 張 REFERENCE_ONLY Graphic＋ZIP 已歸檔 | 未安裝／未驗證 | 未發布、未改分享；未做新角色生成／rig／game runtime 驗證 |
-| YSU-SKILL-014 | 靛金細描敘事插畫 / Indigo & Gold Editorial Illustration；把原圖敘事轉成暖象牙紙上的靛藍、金赭、細墨線編輯插畫；適合人物故事、概念海報與敘事主視覺。 | 1.1.0 | 雙模式新版已歸檔；7標準文件＋雙語Prompt＋原圖＋ZIP回下載hash一致；影像Untested | 未安裝 | 未安裝；HUB仍為v1.0.0/public-r1，新版未替換 |
+| YSU-SKILL-014 | 靛金細描敘事插畫 / Indigo & Gold Editorial Illustration；把原圖敘事轉成暖象牙紙上的靛藍、金赭、細墨線編輯插畫；適合人物故事、概念海報與敘事主視覺。 | 1.1.0 | 雙模式新版已歸檔；7標準文件＋雙語Prompt＋原圖＋ZIP回下載hash一致；影像Untested | 未安裝 | 未安裝／Published to Hub；v1.1.0/public-r1雙模式；影像Untested |
 | YSU-SKILL-015 | 撕紙秘境 / Torn-Paper Dioramas；以纖維裂紙、懸浮紙層與光影重構場景；原圖允許時，以疏朗留白營造空氣感與意境。 | 1.0.1 | 正式套件、雙語Prompt、原圖縮圖已歸檔；ZIP回下載hash一致 | 未安裝 | 未安裝／Published to Hub |
-| YSU-SKILL-016 | 柔絨羊毛氈浮雕 / Soft Felt Relief；以短絨羊毛氈、刺繡細線與柔和低浮雕，把複雜內容化為安靜、可觸摸的敘事插畫。 | 1.1.0 | 雙模式新版已歸檔；7標準文件＋雙語Prompt＋原圖＋ZIP回下載hash一致；影像Untested | 未安裝 | 未安裝；HUB仍為v1.0.0/public-r1，新版未替換 |
+| YSU-SKILL-016 | 柔絨羊毛氈浮雕 / Soft Felt Relief；以短絨羊毛氈、刺繡細線與柔和低浮雕，把複雜內容化為安靜、可觸摸的敘事插畫。 | 1.1.0 | 雙模式新版已歸檔；7標準文件＋雙語Prompt＋原圖＋ZIP回下載hash一致；影像Untested | 未安裝 | 未安裝／Published to Hub；v1.1.0/public-r1雙模式；影像Untested |
 | YSU-SKILL-017 | 青墨琥珀復古動畫 / Teal & Amber Ink Anime；以精密動畫墨線、青黑暗部和琥珀亮部呈現濃密但可讀的敘事場景。 | 1.0.0 | 正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔 | 未安裝 | 未安裝／未發布 Hub |
-| YSU-SKILL-018 | 靜觀人境攝影 / Contemplative Environmental Portraiture；以取景距離、人物尺度、視線和留白，呈現個人與環境之間安靜的關係；光色與材質為輔。 | 0.3.0 | 雙模式新版已歸檔；7標準文件＋雙語Prompt＋原圖＋ZIP回下載hash一致；影像Untested | 未安裝 | 未安裝；HUB仍為v0.2.0/public-r1，新版未替換 |
-| YSU-SKILL-019 | 懷舊手繪動畫敘事海報 / Nostalgic Hand-Painted Anime Narrative Poster；以霧面手繪色塊、動畫式人物與融入場景的敘事意象，把故事濃縮成具有懷舊情緒的海報。 | 0.3.0 | 雙模式新版已歸檔；7標準文件＋雙語Prompt＋原圖＋ZIP回下載hash一致；影像Untested | 未安裝 | 未安裝；HUB仍為v0.2.0/public-r1，新版未替換 |
+| YSU-SKILL-018 | 靜觀人境攝影 / Contemplative Environmental Portraiture；以取景距離、人物尺度、視線和留白，呈現個人與環境之間安靜的關係；光色與材質為輔。 | 0.3.0 | 雙模式新版已歸檔；7標準文件＋雙語Prompt＋原圖＋ZIP回下載hash一致；影像Untested | 未安裝 | 未安裝／Published to Hub；v0.3.0/public-r1雙模式；影像Untested |
+| YSU-SKILL-019 | 懷舊手繪動畫敘事海報 / Nostalgic Hand-Painted Anime Narrative Poster；以霧面手繪色塊、動畫式人物與融入場景的敘事意象，把故事濃縮成具有懷舊情緒的海報。 | 0.3.0 | 雙模式新版已歸檔；7標準文件＋雙語Prompt＋原圖＋ZIP回下載hash一致；影像Untested | 未安裝 | 未安裝／Published to Hub；v0.3.0/public-r1雙模式；影像Untested |
 | YSU-SKILL-020 | 建築墨線色塊拼貼 / Architectural Ink & Color Collage；將原圖空間結構轉成精密透視墨線、碎片色面與受控制潑彩交疊的建築感插畫。 | 1.0.0 | 正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔 | 未安裝 | 未安裝／未發布 Hub |
 | YSU-SKILL-021 | 攝影 × 精切紙雕雙區海報 / Photo × Precision-Paper Diptych；每張目標各成一張 3:4 直式海報，上半原圖、下半紙雕轉譯，各占嚴格 50%。 | 1.0.0 | 正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔 | 未安裝 | 未安裝／Published to Hub |
-| YSU-SKILL-022 | 裂紙浮空 / Torn-Paper Levitation；以大片安靜紙面、曲折裂口與人物尺度，將故事重組為有留白意境的紙層空間。 | 1.1.0 | 雙模式新版已歸檔；7標準文件＋雙語Prompt＋原圖＋ZIP回下載hash一致；影像Untested | 未安裝 | 未安裝；HUB仍為v1.0.0/public-r1，新版未替換 |
-| YSU-SKILL-023 | 灰境碎筆敘事 / Muted Fragmented-Paint Narratives；把具體敘事轉成灰白、低彩、局部崩解的碎筆繪畫，保留人物與情緒。 | 1.1.0 | 雙模式新版已歸檔；7標準文件＋雙語Prompt＋原圖＋ZIP回下載hash一致；影像Untested | 未安裝 | 未安裝；HUB仍為v1.0.0/public-r1，新版未替換 |
+| YSU-SKILL-022 | 裂紙浮空 / Torn-Paper Levitation；以大片安靜紙面、曲折裂口與人物尺度，將故事重組為有留白意境的紙層空間。 | 1.1.0 | 雙模式新版已歸檔；7標準文件＋雙語Prompt＋原圖＋ZIP回下載hash一致；影像Untested | 未安裝 | 未安裝／Published to Hub；v1.1.0/public-r1雙模式；影像Untested |
+| YSU-SKILL-023 | 灰境碎筆敘事 / Muted Fragmented-Paint Narratives；把具體敘事轉成灰白、低彩、局部崩解的碎筆繪畫，保留人物與情緒。 | 1.1.0 | 雙模式新版已歸檔；7標準文件＋雙語Prompt＋原圖＋ZIP回下載hash一致；影像Untested | 未安裝 | 未安裝／Published to Hub；v1.1.0/public-r1雙模式；影像Untested |
 | YSU-SKILL-024 | 攝影 × 留白水彩雙區海報 / Photo × Negative-Space Watercolor Diptych；把同一個內容呈現為原圖與留白水彩的上下對照海報，展示敘事提煉而非全量複製。 | 1.0.0 | 正式套件、雙語Prompt、原圖縮圖已歸檔；ZIP回下載hash一致 | 未安裝 | 未安裝／未發布Hub |
-| YSU-SKILL-025 | 彩墨版畫敘事 / Chromatic Ink-Print Narratives；以墨線骨架、平面彩層與碎裂印刷感，統整複雜敘事。 | 1.1.0 | 雙模式新版已歸檔；7標準文件＋雙語Prompt＋原圖＋ZIP回下載hash一致；影像Untested | 未安裝 | 未安裝；HUB仍為v1.0.0/public-r1，新版未替換 |
+| YSU-SKILL-025 | 彩墨版畫敘事 / Chromatic Ink-Print Narratives；以墨線骨架、平面彩層與碎裂印刷感，統整複雜敘事。 | 1.1.0 | 雙模式新版已歸檔；7標準文件＋雙語Prompt＋原圖＋ZIP回下載hash一致；影像Untested | 未安裝 | 未安裝／Published to Hub；v1.1.0/public-r1雙模式；影像Untested |
 | YSU-SKILL-026 | 極簡時尚人物水彩風格 / Minimalist Fashion Figure Watercolor；以有筆壓的斷線、透明薄彩與主體內留白，保留人物辨識並形成輕盈的時尚插畫。 | 1.0.0 | 正式套件、雙語Prompt、原圖與縮圖已歸檔 | 未安裝 | 未安裝／未發布 Hub |
 | YSU-SKILL-027 | 建築水彩融合 / Architectural Watercolor Fusion；以細建築墨線維持空間結構，結合豐富透明色洗、材料筆觸與留白，呈現成熟建築水彩。 | 1.0.0 | 正式套件、雙語Prompt、原圖與縮圖已歸檔 | 未安裝 | 未安裝／未發布 Hub |
 | YSU-SKILL-028 | 逐格角色動畫製作 / Sprite Animation Production；核可角色→動作→逐格修復→QA→交付 | 1.0.0 | 22 檔正式套件、雙語 Prompt、原圖及來源版本已歸檔；回下載 hash 通過 | 未安裝 | 未安裝／未發布 Hub；方法通過、動畫／引擎未測 |
 | YSU-SKILL-029 | 古畫捲軸雕塑高訂 / Sculptural Scroll Couture；以古畫捲軸構成立體高訂服裝，呈現黑底時尚人像 | 1.0.0 | 19 檔完整套件、雙語 Prompt、原圖縮圖已歸檔；回下載 hash 通過 | 未安裝 | 未安裝／Published to Hub；規則封裝已批准、新 Prompt 待實測 |
 | YSU-SKILL-030 | 留白建築明信片 / Negative-Space Architectural Postcard；以紙白、斷續墨線與集中藍色暈染，保留建築辨識度 | 1.0.0 | 25 檔正式套件、雙語 Prompt、Before/After 原圖、縮圖已歸檔；ZIP 回下載核對通過 | 未安裝 | 未安裝／未發布 Hub；新版 Prompt Untested |
 | YSU-SKILL-031 | 岩彩幻境敘事 / Mineral-Pigment Dreamscape Narrative；以細描、啞面碎色與連續敘事空間呈現幻想插畫，預設保留構圖，可選風格重構 | 1.0.0 | 48 檔正式套件、21 原始參考、雙語 Prompt、兩輪測試與縮圖已歸檔；ZIP 回下載核對通過 | 未安裝 | 未安裝／未發布 Hub |
+| YSU-SKILL-032 | 生活街景墨線水彩 / Lived-In Urban Watercolor；以細碎墨線、透明碎色與生活細節，呈現手繪場景敘事；原風格13 | 1.0.0 | 30檔正式套件、7原始參考、兩組核可測試、雙語Prompt與原圖縮圖已歸檔；ZIP回下載核對通過 | 未安裝 | 未安裝／未發布 Hub |
 
 
 ## YSU-SKILL-001 — Scientific Interactive Simulator
@@ -352,14 +353,14 @@ Tracker Metadata:
 - Origin Conversation:
 - Origin Conversation URL:
 - Locator Status: UNLOCATED
-- Next Action: 雙模式v1.1.0已更新；預設保留構圖、可選風格重構。新版影像Untested；HUB仍為v1.0.0/public-r1，待新版review／適合題材實測後另行發布；未安裝。
+- Next Action: Published to Hub；v1.1.0/public-r1 雙模式公開包已發布；預設保留構圖、可選風格重構。新版影像Untested，歷史驗證保留；待普通Member UI與雙模式影像實測；未安裝。
 - Hub Status: Published to Hub
 - Hub URL: https://hub.ycsu.cc/
 - Bubble ID: b_e2c37c82-5805-45ec-904d-d8a2f98033c6
 - Hub Parent Bubble ID: b_111706ca-3476-4761-adde-2f607b772da7
 - Hub Group: 墨彩與混合媒材 / Ink & Mixed Media
-- Hub Package Version: 1.0.0 / public-r1
-- Hub Published At: 2026-10-03T19:43:50.656966+00:00
+- Hub Package Version: 1.1.0 / public-r1
+- Hub Published At: 2026-10-04T04:40:52.407393+00:00
 - Canonical Drive: https://drive.google.com/drive/folders/1g7ignAl0kRIT1jHLZtaKdwq-yTSfKppw
 
 2026-10-04 UTC（2026-10-03 洛杉磯）— **目前 canonical v1.1.0**：使用者授權本案雙模式更新。精密線描包住角面互鎖色群，疏密區與靛藍、象牙、啞金形成編輯式秩序。 兩模式均保留身份、必保數量與故事；構圖選擇不等於新增姿勢、視點或象徵的授權。
@@ -381,6 +382,9 @@ SHA-256：c74a29bcbd85d62a7327f50169e51f7ed46aaab666f008e1a45b308aa6e05fae
 
 
 2026-10-03 America/Los_Angeles — 繪畫與插畫 HUB 正式內容發布：以上 Main／Child ID 由既有 Owner CMS 寫入並獨立正式讀回；Skill版本保持 v1.0.0，Approved 與 Partial 保留，未安裝或重跑影像實測。public-r1含核可縮圖／實用雙語 prompts，canonical完整套件及母資料夾維持私有。匿名 HTTP 已實際取得完整 ZIP並驗證大小／SHA-256／CRC／解壓／逐檔映射；Owner/Admin 的 HUB Launch→正確 Drive ZIP分享頁已實際通過，瀏覽器下載檔案回傳受工具限制未驗證。桌面逐項 Detail、390px／320px代表性長名稱／I/O、WC-C比較控制已實測；Guest登入要求與無下載網址公開資料已核對；普通 Member UI=NOT VERIFIED（無現成 session）。發布依 Owner 本次明確決定，未獨立核實第三方原圖再散布權利，不宣稱新增授權。較早「未發布Hub」敘述保留為歷史，不覆寫。
+
+
+2026-10-04 UTC（2026-10-03 America/Los_Angeles）— 七風格雙模式 HUB 下載更新：本 Child 保留原ID、父子關係、名稱、分類、Tags、排序、display type、全部媒體ID與滿版裁切／焦點／縮放／位置；Owner CMS只更新 protected Launch與簡短雙語 Additional Information。目前 HUB 供應 v1.1.0/public-r1：七份標準文件、完整雙語Prompt逐位元沿用新版canonical、既有公開720px縮圖及公開manifest；無完整私有原圖、案例、對話、內部審查或歷史備份，修正附件說明與失效引用，不改canonical核心風格。七包均經獨立包審查、anyone/reader獨立讀回及匿名無Cookie/OAuth完整ZIP下載，大小／SHA-256／CRC／manifest／解壓通過。Owner/Admin實際HUB Launch→各自新版Drive分享頁通過；Guest七筆要求登入且不提供Drive連結，重新整理後資料仍正確。Detail桌面1280px、七筆390px及320px代表長名稱無水平文字溢出。普通Member UI與瀏覽器下載檔案bytes=NOT VERIFIED；未建立帳號或更改角色。新版影像Validation=Untested，Approved／未安裝保持，歷史Partial或Untested不改。Canonical ZIP及資料夾私有；舊public ZIP保留且仍列入全部撤權清單，未重跑批次關閉；本次無HUB前端部署、Auth/RLS/schema/write gate或會員規則變更。較早HUB仍供應舊版的記載保留為當時歷史，以上較晚狀態為現況。022不新增公開R20全圖。下載網址只保存在protected Launch及私有發布紀錄，不加入公開Registry export或Tracker索引。
 
 ## YSU-SKILL-015 — 撕紙秘境 / Torn-Paper Dioramas
 
@@ -447,13 +451,13 @@ Tracker Metadata:
 - Origin Conversation:
 - Origin Conversation URL:
 - Locator Status: UNLOCATED
-- Next Action: 雙模式v1.1.0已更新；預設保留構圖、可選風格重構。新版影像Untested；HUB仍為v1.0.0/public-r1，待新版review／適合題材實測後另行發布；未安裝。
+- Next Action: Published to Hub；v1.1.0/public-r1 雙模式公開包已發布；預設保留構圖、可選風格重構。新版影像Untested，歷史驗證保留；待普通Member UI與雙模式影像實測；未安裝。
 - Hub Status: Published to Hub
 - Hub URL: https://hub.ycsu.cc/
 - Bubble ID: b_0db546cc-c705-4dbc-8300-33d956b5bcb7
 - Hub Parent Bubble ID: demo-massing-daylight
-- Hub Package Version: 1.0.0 / public-r1
-- Hub Published At: 2026-10-03T10:07:17.458315+00:00
+- Hub Package Version: 1.1.0 / public-r1
+- Hub Published At: 2026-10-04T04:39:35.755458+00:00
 - Canonical Drive: https://drive.google.com/drive/folders/1ATQWh7DP8tN52fR17uUoXjEyWPbmUix8
 
 2026-10-04 UTC（2026-10-03 洛杉磯）— **目前 canonical v1.1.0**：使用者授權本案雙模式更新。少量淺浮雕層、柔圓形群、大中小節奏及克制的刺繡細線，建立柔軟安靜的排列。 兩模式均保留身份、必保數量與故事；構圖選擇不等於新增姿勢、視點或象徵的授權。
@@ -474,6 +478,9 @@ SHA-256：b055de3c76dedd2de8f1286372fa701fad22a484434f8f756b536c3745764cf1
 
 2026-10-03 UTC（2026-10-03 America/Los_Angeles）— 紙藝與纖維正式發布：使用者明確授權更新指定原主泡泡 demo-massing-daylight，保留 ID 與第4排序，由 Massing to Daylight Render 改為 紙藝與纖維 / Paper & Fiber。透過既有 Owner CMS 發布本 Child，完整雙語 Detail、既有核可封面同圖雙槽（hover_swap），不新增第三層。public-r1 保留七份標準文件、完整核可 Prompts 與既有 720px 封面；完整原圖、私人測試／來源對話／內部紀錄不納入。022 的 R20 原圖未核實對外分享，僅保留文字基準與使用限制，不宣稱本輪核對 R20 影像。發布 ZIP 匿名 HTTP 完整下載與 Owner/Admin 實際 HUB Launch→Drive→下載已核對完整 SHA-256、大小、CRC、解壓及必要檔案；下載網址仅存 protected Launch 與私有發布紀錄。Detail 桌面與390px／320px無水平文字溢出；普通Member UI仍NOT VERIFIED，Owner實際登出尚未驗；手機Universe原有畫布水平捲動與登入面板在Detail後方的問題保留截圖交回HUB，不改版型。Approved／Partial／未安裝保持；canonical Skill 與ZIP維持私有且未修改。較晚本紀錄為現況，舊未發布註記保留歷史。
 
+
+
+2026-10-04 UTC（2026-10-03 America/Los_Angeles）— 七風格雙模式 HUB 下載更新：本 Child 保留原ID、父子關係、名稱、分類、Tags、排序、display type、全部媒體ID與滿版裁切／焦點／縮放／位置；Owner CMS只更新 protected Launch與簡短雙語 Additional Information。目前 HUB 供應 v1.1.0/public-r1：七份標準文件、完整雙語Prompt逐位元沿用新版canonical、既有公開720px縮圖及公開manifest；無完整私有原圖、案例、對話、內部審查或歷史備份，修正附件說明與失效引用，不改canonical核心風格。七包均經獨立包審查、anyone/reader獨立讀回及匿名無Cookie/OAuth完整ZIP下載，大小／SHA-256／CRC／manifest／解壓通過。Owner/Admin實際HUB Launch→各自新版Drive分享頁通過；Guest七筆要求登入且不提供Drive連結，重新整理後資料仍正確。Detail桌面1280px、七筆390px及320px代表長名稱無水平文字溢出。普通Member UI與瀏覽器下載檔案bytes=NOT VERIFIED；未建立帳號或更改角色。新版影像Validation=Untested，Approved／未安裝保持，歷史Partial或Untested不改。Canonical ZIP及資料夾私有；舊public ZIP保留且仍列入全部撤權清單，未重跑批次關閉；本次無HUB前端部署、Auth/RLS/schema/write gate或會員規則變更。較早HUB仍供應舊版的記載保留為當時歷史，以上較晚狀態為現況。022不新增公開R20全圖。下載網址只保存在protected Launch及私有發布紀錄，不加入公開Registry export或Tracker索引。
 
 ## YSU-SKILL-017 — 青墨琥珀復古動畫 / Teal & Amber Ink Anime
 
@@ -541,13 +548,13 @@ Tracker Metadata:
 - Origin Conversation:
 - Origin Conversation URL:
 - Locator Status: UNLOCATED
-- Next Action: 雙模式v0.3.0已更新；預設保留構圖、可選風格重構。新版影像Untested；HUB仍為v0.2.0/public-r1，待新版review／適合題材實測後另行發布；未安裝。
+- Next Action: Published to Hub；v0.3.0/public-r1 雙模式公開包已發布；預設保留構圖、可選風格重構。新版影像Untested，歷史驗證保留；待普通Member UI與雙模式影像實測；未安裝。
 - Hub Status: Published to Hub
 - Hub URL: https://hub.ycsu.cc/
 - Bubble ID: b_19c636ee-5f0d-4af7-aed0-f0a4d950f5fc
 - Hub Parent Bubble ID: b_5c9ab19c-b7fd-4208-a053-8135ca2a9c27
-- Hub Package Version: 0.2.0 / public-r1
-- Hub Published At: 2026-10-03T04:42:32.883214Z
+- Hub Package Version: 0.3.0 / public-r1
+- Hub Published At: 2026-10-04T04:38:28.818119+00:00
 - Canonical Drive: https://drive.google.com/drive/folders/1hMuel2LZ14EhfJiuX7IMBfvTgbH2ctrp
 
 2026-10-04 UTC（2026-10-03 洛杉磯）— **目前 canonical v0.3.0**：使用者授權本案雙模式更新。觀看距離、人境尺度、視線所需空間及低資訊區；以可信的攝影取景建立安靜關係。 兩模式均保留身份、必保數量與故事；構圖選擇不等於新增姿勢、視點或象徵的授權。
@@ -566,6 +573,9 @@ Tracker Metadata:
 
 
 2026-10-02 America/Los_Angeles（2026-10-03 UTC）— 本輪攝影收尾核對：018及攝影Main保留已部署新版雙語短文案、row_version=2、P05-015同圖雙槽媒體與既有Launch，不重建、不覆蓋舊v1。018 v0.2.0／public-r1原連結本輪匿名HTTP完整ZIP及Owner/Admin實際Launch→Drive→下載再次核對相同大小與完整SHA-256，CRC／解壓通過。Guest入口持續要求登入；普通Member UI仍NOT VERIFIED，影像Validation=Untested。舊縮圖未公開註記、旧手機Detail版本限制屬歷史，較晚核可及新版Detail以最新HUB讀回為準。
+
+
+2026-10-04 UTC（2026-10-03 America/Los_Angeles）— 七風格雙模式 HUB 下載更新：本 Child 保留原ID、父子關係、名稱、分類、Tags、排序、display type、全部媒體ID與滿版裁切／焦點／縮放／位置；Owner CMS只更新 protected Launch與簡短雙語 Additional Information。目前 HUB 供應 v0.3.0/public-r1：七份標準文件、完整雙語Prompt逐位元沿用新版canonical、既有公開720px縮圖及公開manifest；無完整私有原圖、案例、對話、內部審查或歷史備份，修正附件說明與失效引用，不改canonical核心風格。七包均經獨立包審查、anyone/reader獨立讀回及匿名無Cookie/OAuth完整ZIP下載，大小／SHA-256／CRC／manifest／解壓通過。Owner/Admin實際HUB Launch→各自新版Drive分享頁通過；Guest七筆要求登入且不提供Drive連結，重新整理後資料仍正確。Detail桌面1280px、七筆390px及320px代表長名稱無水平文字溢出。普通Member UI與瀏覽器下載檔案bytes=NOT VERIFIED；未建立帳號或更改角色。新版影像Validation=Untested，Approved／未安裝保持，歷史Partial或Untested不改。Canonical ZIP及資料夾私有；舊public ZIP保留且仍列入全部撤權清單，未重跑批次關閉；本次無HUB前端部署、Auth/RLS/schema/write gate或會員規則變更。較早HUB仍供應舊版的記載保留為當時歷史，以上較晚狀態為現況。022不新增公開R20全圖。下載網址只保存在protected Launch及私有發布紀錄，不加入公開Registry export或Tracker索引。
 
 ## YSU-SKILL-019 — 懷舊手繪動畫敘事海報 / Nostalgic Hand-Painted Anime Narrative Poster
 
@@ -588,14 +598,14 @@ Tracker Metadata:
 - Origin Conversation:
 - Origin Conversation URL:
 - Locator Status: UNLOCATED
-- Next Action: 雙模式v0.3.0已更新；預設保留構圖、可選風格重構。新版影像Untested；HUB仍為v0.2.0/public-r1，待新版review／適合題材實測後另行發布；未安裝。
+- Next Action: Published to Hub；v0.3.0/public-r1 雙模式公開包已發布；預設保留構圖、可選風格重構。新版影像Untested，歷史驗證保留；待普通Member UI與雙模式影像實測；未安裝。
 - Hub Status: Published to Hub
 - Hub URL: https://hub.ycsu.cc/
 - Bubble ID: b_72af829c-798d-45fb-8dce-a8f0e500205e
 - Hub Parent Bubble ID: b_ae355bfa-4ac2-4e0b-940a-56882456310e
 - Hub Group: 漫畫與動畫美術 / Comics & Animation Art
-- Hub Package Version: 0.2.0 / public-r1
-- Hub Published At: 2026-10-03T19:47:08.412466+00:00
+- Hub Package Version: 0.3.0 / public-r1
+- Hub Published At: 2026-10-04T04:37:00.575496+00:00
 - Canonical Drive: https://drive.google.com/drive/folders/1ayxmKlBhovOMKLdQPEgusPN71HMyrA1p
 
 2026-10-04 UTC（2026-10-03 洛杉磯）— **目前 canonical v0.3.0**：使用者授權本案雙模式更新。一個可讀的敘事主形，加上人物線描／背景繪畫分工；有根據時採用一種第二層意象。 兩模式均保留身份、必保數量與故事；構圖選擇不等於新增姿勢、視點或象徵的授權。
@@ -612,6 +622,9 @@ Tracker Metadata:
 
 
 2026-10-03 America/Los_Angeles — 繪畫與插畫 HUB 正式內容發布：以上 Main／Child ID 由既有 Owner CMS 寫入並獨立正式讀回；Skill版本保持 v0.2.0，Approved 與 Untested 保留，未安裝或重跑影像實測。public-r1含核可縮圖／實用雙語 prompts，canonical完整套件及母資料夾維持私有。匿名 HTTP 已實際取得完整 ZIP並驗證大小／SHA-256／CRC／解壓／逐檔映射；Owner/Admin 的 HUB Launch→正確 Drive ZIP分享頁已實際通過，瀏覽器下載檔案回傳受工具限制未驗證。桌面逐項 Detail、390px／320px代表性長名稱／I/O、WC-C比較控制已實測；Guest登入要求與無下載網址公開資料已核對；普通 Member UI=NOT VERIFIED（無現成 session）。發布依 Owner 本次明確決定，未獨立核實第三方原圖再散布權利，不宣稱新增授權。較早「未發布Hub」敘述保留為歷史，不覆寫。
+
+
+2026-10-04 UTC（2026-10-03 America/Los_Angeles）— 七風格雙模式 HUB 下載更新：本 Child 保留原ID、父子關係、名稱、分類、Tags、排序、display type、全部媒體ID與滿版裁切／焦點／縮放／位置；Owner CMS只更新 protected Launch與簡短雙語 Additional Information。目前 HUB 供應 v0.3.0/public-r1：七份標準文件、完整雙語Prompt逐位元沿用新版canonical、既有公開720px縮圖及公開manifest；無完整私有原圖、案例、對話、內部審查或歷史備份，修正附件說明與失效引用，不改canonical核心風格。七包均經獨立包審查、anyone/reader獨立讀回及匿名無Cookie/OAuth完整ZIP下載，大小／SHA-256／CRC／manifest／解壓通過。Owner/Admin實際HUB Launch→各自新版Drive分享頁通過；Guest七筆要求登入且不提供Drive連結，重新整理後資料仍正確。Detail桌面1280px、七筆390px及320px代表長名稱無水平文字溢出。普通Member UI與瀏覽器下載檔案bytes=NOT VERIFIED；未建立帳號或更改角色。新版影像Validation=Untested，Approved／未安裝保持，歷史Partial或Untested不改。Canonical ZIP及資料夾私有；舊public ZIP保留且仍列入全部撤權清單，未重跑批次關閉；本次無HUB前端部署、Auth/RLS/schema/write gate或會員規則變更。較早HUB仍供應舊版的記載保留為當時歷史，以上較晚狀態為現況。022不新增公開R20全圖。下載網址只保存在protected Launch及私有發布紀錄，不加入公開Registry export或Tracker索引。
 
 ## YSU-SKILL-020 — 建築墨線色塊拼貼 / Architectural Ink & Color Collage
 
@@ -747,6 +760,7 @@ SHA-256：8608b2c97fa5ddc1d5fca465fbd50abce6543a22f44c8fc90c8e1e540acae4b3
 | YSU-SKILL-029 | image-style | 高訂時尚攝影 / Couture fashion photography | photography-realism | 寫實棚拍與雕塑服裝 / Photoreal studio portrait and sculptural garments | STYLE; PHOTOGRAPHY; COUTURE; PORTRAIT; SCULPTURAL; SCROLL |
 | YSU-SKILL-030 | image-style | 風格轉譯 / Style transfer | painting-illustration | 水彩 / Watercolor | STYLE; WATERCOLOR; ARCHITECTURE; NEGATIVE_SPACE; INK_WASH; BEFORE_AFTER |
 | YSU-SKILL-031 | image-style | 敘事風格轉譯 / Narrative style transfer | painting-illustration | 礦物顏料般不透明碎色 / Mineral-like opaque pigment patches | STYLE; Illustration; Narrative; Mineral-Pigment Look; Surreal Composition; Fine Line |
+| YSU-SKILL-032 | image-style | 場景敘事風格轉譯 / Narrative scene style transfer | painting-illustration | 水彩 / Watercolor | STYLE; Watercolor; Ink Drawing; Hand-Drawn; Scene Narrative; Architecture; Everyday Life |
 | YSU-PENDING-001 | education | 科學解說 / Science communication | — | — | 教學; 影片 |
 
 
@@ -816,13 +830,13 @@ Tracker Metadata:
 - Origin Conversation:
 - Origin Conversation URL:
 - Locator Status: UNLOCATED
-- Next Action: 雙模式v1.1.0已更新；預設保留構圖、可選風格重構。新版影像Untested；HUB仍為v1.0.0/public-r1，待新版review／適合題材實測後另行發布；未安裝。
+- Next Action: Published to Hub；v1.1.0/public-r1 雙模式公開包已發布；預設保留構圖、可選風格重構。新版影像Untested，歷史驗證保留；待普通Member UI與雙模式影像實測；未安裝。
 - Hub Status: Published to Hub
 - Hub URL: https://hub.ycsu.cc/
 - Bubble ID: b_af14881a-bfcb-4d1d-9c11-7864f7c21192
 - Hub Parent Bubble ID: demo-massing-daylight
-- Hub Package Version: 1.0.0 / public-r1
-- Hub Published At: 2026-10-03T10:11:16.608351+00:00
+- Hub Package Version: 1.1.0 / public-r1
+- Hub Published At: 2026-10-04T04:40:03.075891+00:00
 - Canonical Drive: https://drive.google.com/drive/folders/1rdBDnrSCn7HecIuUYLK8q2lwCLgmfyVy
 
 2026-10-04 UTC（2026-10-03 洛杉磯）— **目前 canonical v1.1.0**：使用者授權本案雙模式更新。大片安靜紙面與少數連續裂口，將內容收束成可閱讀的敘事路徑。 兩模式均保留身份、必保數量與故事；構圖選擇不等於新增姿勢、視點或象徵的授權。
@@ -845,6 +859,9 @@ SHA-256：c3c19e522e8f1b03b95ded6db62ddb4200e81b504f2619e0230e304b4c73d4a1
 2026-10-03 UTC（2026-10-03 America/Los_Angeles）— 紙藝與纖維正式發布：使用者明確授權更新指定原主泡泡 demo-massing-daylight，保留 ID 與第4排序，由 Massing to Daylight Render 改為 紙藝與纖維 / Paper & Fiber。透過既有 Owner CMS 發布本 Child，完整雙語 Detail、既有核可封面同圖雙槽（hover_swap），不新增第三層。public-r1 保留七份標準文件、完整核可 Prompts 與既有 720px 封面；完整原圖、私人測試／來源對話／內部紀錄不納入。022 的 R20 原圖未核實對外分享，僅保留文字基準與使用限制，不宣稱本輪核對 R20 影像。發布 ZIP 匿名 HTTP 完整下載與 Owner/Admin 實際 HUB Launch→Drive→下載已核對完整 SHA-256、大小、CRC、解壓及必要檔案；下載網址仅存 protected Launch 與私有發布紀錄。Detail 桌面與390px／320px無水平文字溢出；普通Member UI仍NOT VERIFIED，Owner實際登出尚未驗；手機Universe原有畫布水平捲動與登入面板在Detail後方的問題保留截圖交回HUB，不改版型。Approved／Partial／未安裝保持；canonical Skill 與ZIP維持私有且未修改。較晚本紀錄為現況，舊未發布註記保留歷史。
 
 
+
+2026-10-04 UTC（2026-10-03 America/Los_Angeles）— 七風格雙模式 HUB 下載更新：本 Child 保留原ID、父子關係、名稱、分類、Tags、排序、display type、全部媒體ID與滿版裁切／焦點／縮放／位置；Owner CMS只更新 protected Launch與簡短雙語 Additional Information。目前 HUB 供應 v1.1.0/public-r1：七份標準文件、完整雙語Prompt逐位元沿用新版canonical、既有公開720px縮圖及公開manifest；無完整私有原圖、案例、對話、內部審查或歷史備份，修正附件說明與失效引用，不改canonical核心風格。七包均經獨立包審查、anyone/reader獨立讀回及匿名無Cookie/OAuth完整ZIP下載，大小／SHA-256／CRC／manifest／解壓通過。Owner/Admin實際HUB Launch→各自新版Drive分享頁通過；Guest七筆要求登入且不提供Drive連結，重新整理後資料仍正確。Detail桌面1280px、七筆390px及320px代表長名稱無水平文字溢出。普通Member UI與瀏覽器下載檔案bytes=NOT VERIFIED；未建立帳號或更改角色。新版影像Validation=Untested，Approved／未安裝保持，歷史Partial或Untested不改。Canonical ZIP及資料夾私有；舊public ZIP保留且仍列入全部撤權清單，未重跑批次關閉；本次無HUB前端部署、Auth/RLS/schema/write gate或會員規則變更。較早HUB仍供應舊版的記載保留為當時歷史，以上較晚狀態為現況。022不新增公開R20全圖。下載網址只保存在protected Launch及私有發布紀錄，不加入公開Registry export或Tracker索引。
+
 ## YSU-SKILL-023 — 灰境碎筆敘事 / Muted Fragmented-Paint Narratives
 
 Skill ID：ysu-muted-fragmented-paint  
@@ -866,14 +883,14 @@ Tracker Metadata:
 - Origin Conversation:
 - Origin Conversation URL:
 - Locator Status: UNLOCATED
-- Next Action: 雙模式v1.1.0已更新；預設保留構圖、可選風格重構。新版影像Untested；HUB仍為v1.0.0/public-r1，待新版review／適合題材實測後另行發布；未安裝。
+- Next Action: Published to Hub；v1.1.0/public-r1 雙模式公開包已發布；預設保留構圖、可選風格重構。新版影像Untested，歷史驗證保留；待普通Member UI與雙模式影像實測；未安裝。
 - Hub Status: Published to Hub
 - Hub URL: https://hub.ycsu.cc/
 - Bubble ID: b_504ebf68-cadb-46ec-85f4-9cfdf8565823
 - Hub Parent Bubble ID: b_111706ca-3476-4761-adde-2f607b772da7
 - Hub Group: 墨彩與混合媒材 / Ink & Mixed Media
-- Hub Package Version: 1.0.0 / public-r1
-- Hub Published At: 2026-10-03T19:44:56.08138+00:00
+- Hub Package Version: 1.1.0 / public-r1
+- Hub Published At: 2026-10-04T04:41:17.041818+00:00
 - Canonical Drive: https://drive.google.com/drive/folders/1zpXV6yyLo-2AZNRbJTXWMGyDNJwyQ4t1
 
 2026-10-04 UTC（2026-10-03 洛杉磯）— **目前 canonical v1.1.0**：使用者授權本案雙模式更新。低彩人物暗形對應大片粉白空間；透過距離、視線空隙和選擇性失邊建立含蓄關係。 兩模式均保留身份、必保數量與故事；構圖選擇不等於新增姿勢、視點或象徵的授權。
@@ -896,6 +913,9 @@ SHA-256：ba93f379746ea371de1cda6d7cbff81efccb3e1b6827bf9534649b968be82704
 
 
 2026-10-03 America/Los_Angeles — 繪畫與插畫 HUB 正式內容發布：以上 Main／Child ID 由既有 Owner CMS 寫入並獨立正式讀回；Skill版本保持 v1.0.0，Approved 與 Partial 保留，未安裝或重跑影像實測。public-r1含核可縮圖／實用雙語 prompts，canonical完整套件及母資料夾維持私有。匿名 HTTP 已實際取得完整 ZIP並驗證大小／SHA-256／CRC／解壓／逐檔映射；Owner/Admin 的 HUB Launch→正確 Drive ZIP分享頁已實際通過，瀏覽器下載檔案回傳受工具限制未驗證。桌面逐項 Detail、390px／320px代表性長名稱／I/O、WC-C比較控制已實測；Guest登入要求與無下載網址公開資料已核對；普通 Member UI=NOT VERIFIED（無現成 session）。發布依 Owner 本次明確決定，未獨立核實第三方原圖再散布權利，不宣稱新增授權。較早「未發布Hub」敘述保留為歷史，不覆寫。
+
+
+2026-10-04 UTC（2026-10-03 America/Los_Angeles）— 七風格雙模式 HUB 下載更新：本 Child 保留原ID、父子關係、名稱、分類、Tags、排序、display type、全部媒體ID與滿版裁切／焦點／縮放／位置；Owner CMS只更新 protected Launch與簡短雙語 Additional Information。目前 HUB 供應 v1.1.0/public-r1：七份標準文件、完整雙語Prompt逐位元沿用新版canonical、既有公開720px縮圖及公開manifest；無完整私有原圖、案例、對話、內部審查或歷史備份，修正附件說明與失效引用，不改canonical核心風格。七包均經獨立包審查、anyone/reader獨立讀回及匿名無Cookie/OAuth完整ZIP下載，大小／SHA-256／CRC／manifest／解壓通過。Owner/Admin實際HUB Launch→各自新版Drive分享頁通過；Guest七筆要求登入且不提供Drive連結，重新整理後資料仍正確。Detail桌面1280px、七筆390px及320px代表長名稱無水平文字溢出。普通Member UI與瀏覽器下載檔案bytes=NOT VERIFIED；未建立帳號或更改角色。新版影像Validation=Untested，Approved／未安裝保持，歷史Partial或Untested不改。Canonical ZIP及資料夾私有；舊public ZIP保留且仍列入全部撤權清單，未重跑批次關閉；本次無HUB前端部署、Auth/RLS/schema/write gate或會員規則變更。較早HUB仍供應舊版的記載保留為當時歷史，以上較晚狀態為現況。022不新增公開R20全圖。下載網址只保存在protected Launch及私有發布紀錄，不加入公開Registry export或Tracker索引。
 
 ## YSU-SKILL-024 — 攝影 × 留白水彩雙區海報 / Photo × Negative-Space Watercolor Diptych
 
@@ -964,14 +984,14 @@ Tracker Metadata:
 - Origin Conversation:
 - Origin Conversation URL:
 - Locator Status: UNLOCATED
-- Next Action: 雙模式v1.1.0已更新；預設保留構圖、可選風格重構。新版影像Untested；HUB仍為v1.0.0/public-r1，待新版review／適合題材實測後另行發布；未安裝。
+- Next Action: Published to Hub；v1.1.0/public-r1 雙模式公開包已發布；預設保留構圖、可選風格重構。新版影像Untested，歷史驗證保留；待普通Member UI與雙模式影像實測；未安裝。
 - Hub Status: Published to Hub
 - Hub URL: https://hub.ycsu.cc/
 - Bubble ID: b_201e0299-668c-40b6-97c7-575da54e5fb4
 - Hub Parent Bubble ID: b_111706ca-3476-4761-adde-2f607b772da7
 - Hub Group: 墨彩與混合媒材 / Ink & Mixed Media
-- Hub Package Version: 1.0.0 / public-r1
-- Hub Published At: 2026-10-03T19:45:28.751658+00:00
+- Hub Package Version: 1.1.0 / public-r1
+- Hub Published At: 2026-10-04T04:41:40.947143+00:00
 - Canonical Drive: https://drive.google.com/drive/folders/1BGdo--zegqS9d4KF0CWKqmUdSD7-3mk3
 
 2026-10-04 UTC（2026-10-03 洛杉磯）— **目前 canonical v1.1.0**：使用者授權本案雙模式更新。黑墨骨架、前景框形、穿行的中景通道及局部暖亮節點；密集但有深度的版印敘事。 兩模式均保留身份、必保數量與故事；構圖選擇不等於新增姿勢、視點或象徵的授權。
@@ -994,6 +1014,9 @@ SHA-256：c1f960684c5c77027605439a896f84f0f1648aa79247f2a7446c0f140a336705
 
 
 2026-10-03 America/Los_Angeles — 繪畫與插畫 HUB 正式內容發布：以上 Main／Child ID 由既有 Owner CMS 寫入並獨立正式讀回；Skill版本保持 v1.0.0，Approved 與 Partial 保留，未安裝或重跑影像實測。public-r1含核可縮圖／實用雙語 prompts，canonical完整套件及母資料夾維持私有。匿名 HTTP 已實際取得完整 ZIP並驗證大小／SHA-256／CRC／解壓／逐檔映射；Owner/Admin 的 HUB Launch→正確 Drive ZIP分享頁已實際通過，瀏覽器下載檔案回傳受工具限制未驗證。桌面逐項 Detail、390px／320px代表性長名稱／I/O、WC-C比較控制已實測；Guest登入要求與無下載網址公開資料已核對；普通 Member UI=NOT VERIFIED（無現成 session）。發布依 Owner 本次明確決定，未獨立核實第三方原圖再散布權利，不宣稱新增授權。較早「未發布Hub」敘述保留為歷史，不覆寫。
+
+
+2026-10-04 UTC（2026-10-03 America/Los_Angeles）— 七風格雙模式 HUB 下載更新：本 Child 保留原ID、父子關係、名稱、分類、Tags、排序、display type、全部媒體ID與滿版裁切／焦點／縮放／位置；Owner CMS只更新 protected Launch與簡短雙語 Additional Information。目前 HUB 供應 v1.1.0/public-r1：七份標準文件、完整雙語Prompt逐位元沿用新版canonical、既有公開720px縮圖及公開manifest；無完整私有原圖、案例、對話、內部審查或歷史備份，修正附件說明與失效引用，不改canonical核心風格。七包均經獨立包審查、anyone/reader獨立讀回及匿名無Cookie/OAuth完整ZIP下載，大小／SHA-256／CRC／manifest／解壓通過。Owner/Admin實際HUB Launch→各自新版Drive分享頁通過；Guest七筆要求登入且不提供Drive連結，重新整理後資料仍正確。Detail桌面1280px、七筆390px及320px代表長名稱無水平文字溢出。普通Member UI與瀏覽器下載檔案bytes=NOT VERIFIED；未建立帳號或更改角色。新版影像Validation=Untested，Approved／未安裝保持，歷史Partial或Untested不改。Canonical ZIP及資料夾私有；舊public ZIP保留且仍列入全部撤權清單，未重跑批次關閉；本次無HUB前端部署、Auth/RLS/schema/write gate或會員規則變更。較早HUB仍供應舊版的記載保留為當時歷史，以上較晚狀態為現況。022不新增公開R20全圖。下載網址只保存在protected Launch及私有發布紀錄，不加入公開Registry export或Tracker索引。
 
 ## SSF-B03 最新套件定位表
 
@@ -1324,3 +1347,45 @@ Tracker Metadata:
 | YSU-SKILL-023 | `ysu-muted-fragmented-paint` | `1zpXV6yyLo-2AZNRbJTXWMGyDNJwyQ4t1` | `1EtUghbgJJwauz1Z6ehQD5wmSux0RTV_I` | `1jPnMkAH_OprjQdrpy3y5GdnaOkfvRQBO` |
 
 Review／來源版本：https://drive.google.com/drive/folders/1pxk-qkxfLU6gyqEJWAHBrJL4uvbW0oYj 。私人原圖與canonical套件維持既有權限；公開Tracker只更新文字／版本／既有封面映射，不加入HUB protected下載URL。
+
+## YSU-SKILL-032 — 生活街景墨線水彩 / Lived-In Urban Watercolor
+
+Skill ID：ysu-lived-in-urban-watercolor
+批次：SSF-B04-13；原風格13／WaterColorStyle01，不是既有YSU-SKILL-013動物角色。正式版本1.0.0。
+
+Tracker Metadata:
+- Category: STYLE
+- Lifecycle: Approved
+- Validation: Partial
+- Version: 1.0.0
+- Graphic References: 9
+- Drive: ARCHIVED
+- ChatGPT: NOT_INSTALLED
+- Codex: NOT_INSTALLED
+- Origin Project: Style Skill Factory
+- Origin Conversation: Style Skill Factory — Master Control
+- Origin Conversation URL:
+- Locator Status: PROJECT_TITLE_ONLY
+- Next Action: 已正式打包；保留構圖兩例手繪差異已核可，重構與通用模板尚待實測。WC-B天空與暈染保留；未安裝／未發布Hub。
+- Hub Status: Not Published
+- Canonical Drive: https://drive.google.com/drive/folders/1A822-KQjF7sbXE58I1vMqwNqgeUAx-v6
+
+分類：繪畫與插畫 / Painting & Illustration → 水彩 / Watercolor；獨立風格，不是WC-B子風格。預設保留構圖，可選風格重構；新增內容、鏡頭與姿勢變更須另明確授權。
+
+- [正式資料夾](https://drive.google.com/drive/folders/1A822-KQjF7sbXE58I1vMqwNqgeUAx-v6)
+- [SKILL.md](https://drive.google.com/file/d/1RLpXjhEX2VLgViXKxWO5Ig1vGsY8mG3Q/view)
+- [完整 ZIP](https://drive.google.com/file/d/1I0Bo6Msqc_BkbRX-1cvYOO3U9Bh4S_mJ/view)：30檔，15994217 bytes；SHA-256 `dfce9c4dde177a8f3030d72bd26e20db4f83860e9f06997a9254fa235a18bbcc`。回下載大小／SHA-256／CRC／逐檔清單一致。
+- [原圖縮圖](https://drive.google.com/file/d/1QBsM8JFbVuVUOLqbGhbFeQihhNOXPpYs/view)：R02完整構圖等比例720px，不是測試圖；依Factory既有縮圖與Tracker同步授權。
+- [原始來源](https://drive.google.com/drive/folders/1e_6zLGhRw6aGYK7ksl20CbajLSK_2gMz)：7張原參考保留原ID，已從Pending移入正式SOURCE。
+- [核可測試與私人版控](https://drive.google.com/drive/folders/1qXIZg9zeQWks3uaKw5oia0QcKzir8aKK)；[Git bundle](https://drive.google.com/file/d/1DXX5kW-070zjkPMLU-7ar-g5lU3M0ezO/view) commit `32c15bb33e56a14961b7465ce98aa640d23f0269`，回下載hash一致。
+- [最後定案](https://drive.google.com/file/d/1mWzrWuKNqPkqVDZbqjVnHe962QgiH7C-/view)。
+
+2026-10-04 UTC（Owner於2026-10-03 America/Los_Angeles確認）：13筆觸已確實呈現不同且更手繪；解除待定並正式打包。r3「差異不足」的最終判斷撤回。WC-B天空與暈染是刻意保留，r3限制天空色洗的建議撤回；其canonical文件／版本／縮圖未改。
+9參考計數=7來源+2核可風格應用；另2測試輸入不計入風格參考。7原圖逐張核可未全確認，不臆造Rejected。保留構圖兩例獲風格核可，精確文字／幾何／人物保真沒有因此全部通過；RECOMPOSE與通用模板未另生圖實測，故Partial。文字代理使用檢查不算影像驗證。
+來源對話為Master Control；原作者對話／Prompt未定位，不補造URL。完整原圖與ZIP保持私有；Tracker只公開管理資料與選定720px封面。未安裝／未發布HUB，不新增公開發布ZIP。未來HUB使用中英短說明、STYLE標籤及單張滿版cover，不加外圍白邊、不拉伸。14與15仍撤案，不重新啟動。
+
+## 風格13正式套件定位表
+
+| ID | slug | canonical folder ID | SKILL.md file ID | package ZIP file ID |
+|---|---|---|---|---|
+| YSU-SKILL-032 | `ysu-lived-in-urban-watercolor` | `1A822-KQjF7sbXE58I1vMqwNqgeUAx-v6` | `1RLpXjhEX2VLgViXKxWO5Ig1vGsY8mG3Q` | `1I0Bo6Msqc_BkbRX-1cvYOO3U9Bh4S_mJ` |
