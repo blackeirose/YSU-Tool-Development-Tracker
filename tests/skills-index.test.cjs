@@ -138,19 +138,25 @@ test('the live index includes SSF-B02/B03/WC approval independently from image v
  // SSF-B02/B03/WC and owner-approved Inkframe have explicit metadata.
  assert.equal(live.counts.with_explicit_metadata,19);
  assert.deepEqual(live.warnings,[]);
- for(const id of ['014','016','017','020','021','022','023','024','025']){
+ for(const id of ['017','020','021','024']){
   const s=live.skills.find(s=>s.id==='YSU-SKILL-'+id);
   assert.equal(s.lifecycle,'Approved');assert.equal(s.validation,'Partial');assert.equal(s.version,'1.0.0');
+ }
+ for(const id of ['014','016','022','023','025']){
+  const s=byId(live,'YSU-SKILL-'+id);
+  assert.equal(s.lifecycle,'Approved'); assert.equal(s.validation,'Untested'); assert.equal(s.version,'1.1.0');
+  assert.match(s.next_action,/HUB仍為v1\.0\.0/);
+  assert.ok(s.links.some(l=>l.label==='Package ZIP'));
  }
  const renamed=byId(live,'YSU-SKILL-015');
  assert.equal(renamed.version,'1.0.1');assert.match(renamed.name,/撕紙秘境/);
  assert.equal(renamed.slug,'ysu-torn-paper-worlds');assert.equal(renamed.lifecycle,'Approved');assert.equal(renamed.validation,'Partial');
  for(const id of ['019']){
   const s=live.skills.find(s=>s.id==='YSU-SKILL-'+id);
-  assert.equal(s.lifecycle,'Approved');assert.equal(s.validation,'Untested');assert.equal(s.version,'0.2.0');
+  assert.equal(s.lifecycle,'Approved');assert.equal(s.validation,'Untested');assert.equal(s.version,'0.3.0');
  }
  const revised=byId(live,'YSU-SKILL-018');
- assert.equal(revised.lifecycle,'Approved');assert.equal(revised.validation,'Untested');assert.equal(revised.version,'0.2.0');
+ assert.equal(revised.lifecycle,'Approved');assert.equal(revised.validation,'Untested');assert.equal(revised.version,'0.3.0');
  assert.match(revised.name,/靜觀人境攝影/);
  for(const id of ['026','027','030']){
   const s=byId(live,'YSU-SKILL-'+id);

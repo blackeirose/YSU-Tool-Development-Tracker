@@ -17,16 +17,16 @@
     "source": "Skill Taxonomy v1 table in canonical Drive registry"
   },
   "$comment": "GENERATED FILE — do not edit by hand. Source: Google Drive AI Works/06_Skills/00_SKILL_REGISTRY.md. Regenerate with `npm run skills:index`.",
-  "generated_at": "2026-10-04T00:10:01.166Z",
+  "generated_at": "2026-10-04T03:48:16.641Z",
   "source": {
     "file": "skills-source/00_SKILL_REGISTRY.md",
     "drive_file_id": "1g6Io9lD4YwkDaX5_OUqssvrcEyuCF-1P",
-    "registry_updated": "2026-10-03"
+    "registry_updated": "2026-10-04"
   },
   "registry": {
     "title": "YSU Skills Registry — 統一管理總表",
     "recorded": "2026-09-21",
-    "updated": "2026-10-03",
+    "updated": "2026-10-04",
     "owner": "YuCheng Su",
     "management_conversation": "YSU Skills 管理中心",
     "drive_folder": "https://drive.google.com/drive/folders/1P6b3rLGzrdev1Lh6tZVGAWnPcNkNYoV_",
@@ -1075,9 +1075,9 @@
       "slug": "ysu-indigo-gold-editorial",
       "category": "STYLE",
       "lifecycle": "Approved",
-      "validation": "Partial",
-      "version": "1.0.0",
-      "version_note": "1.0.0",
+      "validation": "Untested",
+      "version": "1.1.0",
+      "version_note": "1.1.0",
       "description": "把原圖敘事轉成暖象牙紙上的靛藍、金赭、細墨線編輯插畫；適合人物故事、概念海報與敘事主視覺。",
       "graphic_reference_count": 12,
       "platform": {
@@ -1086,8 +1086,8 @@
         "codex": "NOT_INSTALLED"
       },
       "platform_notes": {
-        "drive": "正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔",
-        "chatgpt": "未安裝／未發布 Hub",
+        "drive": "雙模式新版已歸檔；7標準文件＋雙語Prompt＋原圖＋ZIP回下載hash一致；影像Untested",
+        "chatgpt": "未安裝；HUB仍為v1.0.0/public-r1，新版未替換",
         "codex": "未安裝"
       },
       "origin_project": null,
@@ -1095,12 +1095,20 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": "Published to Hub；v1.0.0／public-r1 已發布；待普通 Member UI 與剩餘影像實測，Validation=Partial；未新增安裝。",
+      "next_action": "雙模式v1.1.0已更新；預設保留構圖、可選風格重構。新版影像Untested；HUB仍為v1.0.0/public-r1，待新版review／適合題材實測後另行發布；未安裝。",
       "canonical_drive": "https://drive.google.com/drive/folders/1g7ignAl0kRIT1jHLZtaKdwq-yTSfKppw",
       "links": [
         {
           "label": "Canonical Drive folder",
           "url": "https://drive.google.com/drive/folders/1g7ignAl0kRIT1jHLZtaKdwq-yTSfKppw"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://drive.google.com/file/d/1QsjTj6jFIyC-rLa3B3rinYbOvVJkd9jO/view"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/15KOTolA1nxP1J47IlhbM9pCE0rS8RfZO/view"
         }
       ],
       "registered": true,
@@ -1238,9 +1246,9 @@
       "slug": "ysu-soft-felt-relief",
       "category": "STYLE",
       "lifecycle": "Approved",
-      "validation": "Partial",
-      "version": "1.0.0",
-      "version_note": "1.0.0",
+      "validation": "Untested",
+      "version": "1.1.0",
+      "version_note": "1.1.0",
       "description": "以短絨羊毛氈、刺繡細線與柔和低浮雕，把複雜內容化為安靜、可觸摸的敘事插畫。",
       "graphic_reference_count": 10,
       "platform": {
@@ -1249,8 +1257,8 @@
         "codex": "NOT_INSTALLED"
       },
       "platform_notes": {
-        "drive": "正式 instruction/reference 套件、縮圖、雙語 Prompt 已歸檔",
-        "chatgpt": "未安裝／Published to Hub",
+        "drive": "雙模式新版已歸檔；7標準文件＋雙語Prompt＋原圖＋ZIP回下載hash一致；影像Untested",
+        "chatgpt": "未安裝；HUB仍為v1.0.0/public-r1，新版未替換",
         "codex": "未安裝"
       },
       "origin_project": null,
@@ -1258,12 +1266,20 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": "Published to Hub；v1.0.0／public-r1 已發布；待普通 Member UI 與剩餘影像／跨平台實測，Validation=Partial，未安裝。",
+      "next_action": "雙模式v1.1.0已更新；預設保留構圖、可選風格重構。新版影像Untested；HUB仍為v1.0.0/public-r1，待新版review／適合題材實測後另行發布；未安裝。",
       "canonical_drive": "https://drive.google.com/drive/folders/1ATQWh7DP8tN52fR17uUoXjEyWPbmUix8",
       "links": [
         {
           "label": "Canonical Drive folder",
           "url": "https://drive.google.com/drive/folders/1ATQWh7DP8tN52fR17uUoXjEyWPbmUix8"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://drive.google.com/file/d/1Z1chlCmbUMDAcvPu3mYHMmwNAVFa2Di5/view"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/1Enrru3mqyeNas3LZEa__ki7dG2uR-anY/view"
         }
       ],
       "registered": true,
@@ -1394,8 +1410,8 @@
       "category": "STYLE",
       "lifecycle": "Approved",
       "validation": "Untested",
-      "version": "0.2.0",
-      "version_note": "0.2.0",
+      "version": "0.3.0",
+      "version_note": "0.3.0",
       "description": "以取景距離、人物尺度、視線和留白，呈現個人與環境之間安靜的關係；光色與材質為輔。",
       "graphic_reference_count": 16,
       "platform": {
@@ -1404,8 +1420,8 @@
         "codex": "NOT_INSTALLED"
       },
       "platform_notes": {
-        "drive": "正式歸檔；規則已確認／待實測",
-        "chatgpt": "未安裝／Published to Hub",
+        "drive": "雙模式新版已歸檔；7標準文件＋雙語Prompt＋原圖＋ZIP回下載hash一致；影像Untested",
+        "chatgpt": "未安裝；HUB仍為v0.2.0/public-r1，新版未替換",
         "codex": "未安裝"
       },
       "origin_project": null,
@@ -1413,12 +1429,20 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": "Published to Hub；v0.2.0／public-r1 已發布；待具資格 Member UI 驗收與適合個人照片影像實測。逐圖分類仍未全確認；未安裝。",
+      "next_action": "雙模式v0.3.0已更新；預設保留構圖、可選風格重構。新版影像Untested；HUB仍為v0.2.0/public-r1，待新版review／適合題材實測後另行發布；未安裝。",
       "canonical_drive": "https://drive.google.com/drive/folders/1hMuel2LZ14EhfJiuX7IMBfvTgbH2ctrp",
       "links": [
         {
           "label": "Canonical Drive folder",
           "url": "https://drive.google.com/drive/folders/1hMuel2LZ14EhfJiuX7IMBfvTgbH2ctrp"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://drive.google.com/file/d/1jexUCsOJ8sVfKMV3YAePNF_5jEIBfrG8/view"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/1fwp7sZhe7Fa2w_GWLH77YZ9ihoZ9yZFP/view"
         }
       ],
       "registered": true,
@@ -1470,8 +1494,8 @@
       "category": "STYLE",
       "lifecycle": "Approved",
       "validation": "Untested",
-      "version": "0.2.0",
-      "version_note": "0.2.0",
+      "version": "0.3.0",
+      "version_note": "0.3.0",
       "description": "以霧面手繪色塊、動畫式人物與融入場景的敘事意象，把故事濃縮成具有懷舊情緒的海報。",
       "graphic_reference_count": 27,
       "platform": {
@@ -1480,8 +1504,8 @@
         "codex": "NOT_INSTALLED"
       },
       "platform_notes": {
-        "drive": "正式歸檔；規則已確認／待實測",
-        "chatgpt": "未安裝／未發布 Hub",
+        "drive": "雙模式新版已歸檔；7標準文件＋雙語Prompt＋原圖＋ZIP回下載hash一致；影像Untested",
+        "chatgpt": "未安裝；HUB仍為v0.2.0/public-r1，新版未替換",
         "codex": "未安裝"
       },
       "origin_project": null,
@@ -1489,12 +1513,20 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": "Published to Hub；v0.2.0／public-r1 已發布；待普通 Member UI 與剩餘影像實測，Validation=Untested；未新增安裝。",
+      "next_action": "雙模式v0.3.0已更新；預設保留構圖、可選風格重構。新版影像Untested；HUB仍為v0.2.0/public-r1，待新版review／適合題材實測後另行發布；未安裝。",
       "canonical_drive": "https://drive.google.com/drive/folders/1ayxmKlBhovOMKLdQPEgusPN71HMyrA1p",
       "links": [
         {
           "label": "Canonical Drive folder",
           "url": "https://drive.google.com/drive/folders/1ayxmKlBhovOMKLdQPEgusPN71HMyrA1p"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://drive.google.com/file/d/1pOk5Prn5zG7yHjSy4rYglyMSfhhFpqpM/view"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/1Afbr8W_OogDPafFLpTVl_FOqB4GbPaFO/view"
         }
       ],
       "registered": true,
@@ -1701,9 +1733,9 @@
       "slug": "ysu-torn-paper-levitation",
       "category": "STYLE",
       "lifecycle": "Approved",
-      "validation": "Partial",
-      "version": "1.0.0",
-      "version_note": "1.0.0",
+      "validation": "Untested",
+      "version": "1.1.0",
+      "version_note": "1.1.0",
       "description": "以大片安靜紙面、曲折裂口與人物尺度，將故事重組為有留白意境的紙層空間。",
       "graphic_reference_count": 20,
       "platform": {
@@ -1712,8 +1744,8 @@
         "codex": "NOT_INSTALLED"
       },
       "platform_notes": {
-        "drive": "正式套件、雙語Prompt、原圖縮圖已歸檔；ZIP回下載hash一致",
-        "chatgpt": "未安裝／Published to Hub",
+        "drive": "雙模式新版已歸檔；7標準文件＋雙語Prompt＋原圖＋ZIP回下載hash一致；影像Untested",
+        "chatgpt": "未安裝；HUB仍為v1.0.0/public-r1，新版未替換",
         "codex": "未安裝"
       },
       "origin_project": null,
@@ -1721,7 +1753,7 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": "Published to Hub；v1.0.0／public-r1 已發布；待普通 Member UI 與剩餘影像／跨平台實測，Validation=Partial，未安裝。",
+      "next_action": "雙模式v1.1.0已更新；預設保留構圖、可選風格重構。新版影像Untested；HUB仍為v1.0.0/public-r1，待新版review／適合題材實測後另行發布；未安裝。",
       "canonical_drive": "https://drive.google.com/drive/folders/1rdBDnrSCn7HecIuUYLK8q2lwCLgmfyVy",
       "links": [
         {
@@ -1734,7 +1766,7 @@
         },
         {
           "label": "Package ZIP",
-          "url": "https://drive.google.com/file/d/1VRV2xd3rIvy773Lt9NXnc-Pc774O6KC4/view"
+          "url": "https://drive.google.com/file/d/1zzd_8vmfk3ywsfrYWKt0q0-yVpnQMOFz/view"
         }
       ],
       "registered": true,
@@ -1787,9 +1819,9 @@
       "slug": "ysu-muted-fragmented-paint",
       "category": "STYLE",
       "lifecycle": "Approved",
-      "validation": "Partial",
-      "version": "1.0.0",
-      "version_note": "1.0.0",
+      "validation": "Untested",
+      "version": "1.1.0",
+      "version_note": "1.1.0",
       "description": "把具體敘事轉成灰白、低彩、局部崩解的碎筆繪畫，保留人物與情緒。",
       "graphic_reference_count": 5,
       "platform": {
@@ -1798,8 +1830,8 @@
         "codex": "NOT_INSTALLED"
       },
       "platform_notes": {
-        "drive": "正式套件、雙語Prompt、原圖縮圖已歸檔；ZIP回下載hash一致",
-        "chatgpt": "未安裝／未發布Hub",
+        "drive": "雙模式新版已歸檔；7標準文件＋雙語Prompt＋原圖＋ZIP回下載hash一致；影像Untested",
+        "chatgpt": "未安裝；HUB仍為v1.0.0/public-r1，新版未替換",
         "codex": "未安裝"
       },
       "origin_project": null,
@@ -1807,7 +1839,7 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": "Published to Hub；v1.0.0／public-r1 已發布；待普通 Member UI 與剩餘影像實測，Validation=Partial；未新增安裝。",
+      "next_action": "雙模式v1.1.0已更新；預設保留構圖、可選風格重構。新版影像Untested；HUB仍為v1.0.0/public-r1，待新版review／適合題材實測後另行發布；未安裝。",
       "canonical_drive": "https://drive.google.com/drive/folders/1zpXV6yyLo-2AZNRbJTXWMGyDNJwyQ4t1",
       "links": [
         {
@@ -1820,7 +1852,7 @@
         },
         {
           "label": "Package ZIP",
-          "url": "https://drive.google.com/file/d/1oOfpusmLNhAY0AQOZYN6FR6hUcbMZKVp/view"
+          "url": "https://drive.google.com/file/d/1jPnMkAH_OprjQdrpy3y5GdnaOkfvRQBO/view"
         }
       ],
       "registered": true,
@@ -1959,9 +1991,9 @@
       "slug": "ysu-chromatic-ink-print",
       "category": "STYLE",
       "lifecycle": "Approved",
-      "validation": "Partial",
-      "version": "1.0.0",
-      "version_note": "1.0.0",
+      "validation": "Untested",
+      "version": "1.1.0",
+      "version_note": "1.1.0",
       "description": "以墨線骨架、平面彩層與碎裂印刷感，統整複雜敘事。",
       "graphic_reference_count": 14,
       "platform": {
@@ -1970,8 +2002,8 @@
         "codex": "NOT_INSTALLED"
       },
       "platform_notes": {
-        "drive": "正式套件、雙語Prompt、原圖縮圖已歸檔；ZIP回下載hash一致",
-        "chatgpt": "未安裝／未發布Hub",
+        "drive": "雙模式新版已歸檔；7標準文件＋雙語Prompt＋原圖＋ZIP回下載hash一致；影像Untested",
+        "chatgpt": "未安裝；HUB仍為v1.0.0/public-r1，新版未替換",
         "codex": "未安裝"
       },
       "origin_project": null,
@@ -1979,7 +2011,7 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": "Published to Hub；v1.0.0／public-r1 已發布；待普通 Member UI 與剩餘影像實測，Validation=Partial；未新增安裝。",
+      "next_action": "雙模式v1.1.0已更新；預設保留構圖、可選風格重構。新版影像Untested；HUB仍為v1.0.0/public-r1，待新版review／適合題材實測後另行發布；未安裝。",
       "canonical_drive": "https://drive.google.com/drive/folders/1BGdo--zegqS9d4KF0CWKqmUdSD7-3mk3",
       "links": [
         {
@@ -1992,7 +2024,7 @@
         },
         {
           "label": "Package ZIP",
-          "url": "https://drive.google.com/file/d/17i2H3TYLMhqtZVflG96Gf51djaKj_Esh/view"
+          "url": "https://drive.google.com/file/d/1amp5h6e1ts07F6738NVgJ-eXFH9d0mVI/view"
         }
       ],
       "registered": true,
