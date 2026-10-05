@@ -144,8 +144,8 @@ test('the live index includes SSF-B02/B03/WC approval independently from image v
  }
  for(const id of ['014','016','022','023','025']){
   const s=byId(live,'YSU-SKILL-'+id);
-  assert.equal(s.lifecycle,'Approved'); assert.equal(s.validation,'Untested'); assert.equal(s.version,'1.1.0');
-  assert.match(s.next_action,/Published to Hub；v1\.1\.0\/public-r1 雙模式公開包已發布/);
+  assert.equal(s.lifecycle,'Approved'); assert.equal(s.validation,'Untested'); assert.equal(s.version,id==='023'?'1.1.1':'1.1.0');
+  assert.match(s.next_action,id==='023'?/Published to Hub；墨影碎筆敘事 v1\.1\.1\/public-r1/:/Published to Hub；v1\.1\.0\/public-r1 雙模式公開包已發布/);
   assert.ok(s.links.some(l=>l.label==='Package ZIP'));
  }
  const renamed=byId(live,'YSU-SKILL-015');

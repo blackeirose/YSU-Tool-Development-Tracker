@@ -274,3 +274,8 @@ YSU-SKILL-029 v1.0.0 adds the owner's requested photographic couture style under
 YSU-SKILL-018 v0.2.0 / public-r1 and YSU-SKILL-029 v1.0.0 / public-r2 are Published to Hub under the existing Photography & Realism Main. The canonical Drive Registry records actual Bubble IDs, Hub entry and publication dates. This owner-authorized status-only release preserves all other catalog entries, thumbnails and application behavior; counts remain 30 registered + 1 pending and 18 explicit metadata entries.
 
 Both remain Approved / Untested. Guest UI and Owner/Admin actual Launch → Drive → complete ZIP were verified separately; ordinary Member UI is NOT VERIFIED because no suitable session was available. The later Owner 029 publication decision supersedes its prior own/friends hold while retaining the unverified third-party redistribution-rights disclosure. Protected public-release ZIP URLs are absent from the public source and generated index. See DEC-026 and docs/validation/photography-hub-2026-10-02.md.
+
+
+## YSU-SKILL-023 v1.1.1 名稱及 HUB package 同步
+
+023更新為墨影碎筆敘事 / Ink-Shadow Fragmented Narratives，canonical1.1.1、HUBpublic-r1，原Child/Main/slug及R02媒體保持。Registry生成索引只更新023，參考數10、Approved／Untested／未安裝；historicalPartial保留。詳見 INK_SHADOW_V111_RELEASE_20261004.md。新public ZIP網址只在protected Launch與私有HUB發布紀錄；公開source export省略新增的私人歷史canonical ZIP URL。

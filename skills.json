@@ -17,7 +17,7 @@
     "source": "Skill Taxonomy v1 table in canonical Drive registry"
   },
   "$comment": "GENERATED FILE — do not edit by hand. Source: Google Drive AI Works/06_Skills/00_SKILL_REGISTRY.md. Regenerate with `npm run skills:index`.",
-  "generated_at": "2026-10-04T05:04:29.043Z",
+  "generated_at": "2026-10-05T01:56:49.314Z",
   "source": {
     "file": "skills-source/00_SKILL_REGISTRY.md",
     "drive_file_id": "1g6Io9lD4YwkDaX5_OUqssvrcEyuCF-1P",
@@ -1815,23 +1815,23 @@
     },
     {
       "id": "YSU-SKILL-023",
-      "name": "灰境碎筆敘事 / Muted Fragmented-Paint Narratives",
+      "name": "墨影碎筆敘事 / Ink-Shadow Fragmented Narratives",
       "slug": "ysu-muted-fragmented-paint",
       "category": "STYLE",
       "lifecycle": "Approved",
       "validation": "Untested",
-      "version": "1.1.0",
-      "version_note": "1.1.0",
+      "version": "1.1.1",
+      "version_note": "1.1.1",
       "description": "把具體敘事轉成灰白、低彩、局部崩解的碎筆繪畫，保留人物與情緒。",
-      "graphic_reference_count": 5,
+      "graphic_reference_count": 10,
       "platform": {
         "drive": "ARCHIVED",
         "chatgpt": "NOT_INSTALLED",
         "codex": "NOT_INSTALLED"
       },
       "platform_notes": {
-        "drive": "雙模式新版已歸檔；7標準文件＋雙語Prompt＋原圖＋ZIP回下載hash一致；影像Untested",
-        "chatgpt": "未安裝／Published to Hub；v1.1.0/public-r1雙模式；影像Untested",
+        "drive": "改名與10張原圖補齊；ZIP／文件回下載一致；影像Untested",
+        "chatgpt": "未安裝／Published to Hub；墨影碎筆敘事v1.1.1/public-r1；影像Untested",
         "codex": "未安裝"
       },
       "origin_project": null,
@@ -1839,7 +1839,7 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": "Published to Hub；v1.1.0/public-r1 雙模式公開包已發布；預設保留構圖、可選風格重構。新版影像Untested，歷史驗證保留；待普通Member UI與雙模式影像實測；未安裝。",
+      "next_action": "Published to Hub；墨影碎筆敘事 v1.1.1/public-r1 已更新原 Bubble；預設保留構圖、可選風格重構。十張完整參考保持私有，R06–R10待分類；影像Untested、未安裝。普通Member UI與新版影像實測仍待驗證。",
       "canonical_drive": "https://drive.google.com/drive/folders/1zpXV6yyLo-2AZNRbJTXWMGyDNJwyQ4t1",
       "links": [
         {
