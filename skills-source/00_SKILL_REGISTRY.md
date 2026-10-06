@@ -1,13 +1,13 @@
 # YSU Skills Registry — 統一管理總表
 
 
-紀錄日期：2026-09-21；最新更新：2026-10-04。Owner：YuCheng Su。  
+紀錄日期：2026-09-21；最新更新：2026-10-06 UTC。Owner：YuCheng Su。  
 管理入口：Google Drive / My Drive / AI Works / 06_Skills。  
 資料夾：https://drive.google.com/drive/folders/1P6b3rLGzrdev1Lh6tZVGAWnPcNkNYoV_
 
 
 本表是已登錄 YSU 自製 Skills 的管理索引，不是帳號中所有第三方 Skills 的盤點。  
-目前 32 個已登錄項目：新增 YSU-SKILL-032 生活街景墨線水彩 v1.0.0（Approved／Partial）；新增 YSU-SKILL-031 岩彩幻境敘事 v1.0.0（Approved／Partial；預設保留構圖、可選風格重構）；新增 YSU-SKILL-030 留白建築明信片 v1.0.0（WC-C）；新增 YSU-SKILL-029 古畫捲軸雕塑高訂 v1.0.0；YSU-SKILL-028 逐格角色動畫製作 v1.0.0 保留。方法／套件已批准，動畫與引擎待實測；WC-A／WC-B 新提示詞仍待生圖驗證，風格13已正式封裝為032、WC-C已正式封裝，Hub Before/After配對已記錄，新Prompt未實測。此計數不代表平台已安裝或全部實測通過。  
+目前 38 個已登錄項目：新增 YSU-SKILL-033–038 六套 P11–P16 風格 v1.0.0（Approved／Partial；四單模式、兩雙模式），ACR 仍待定；新增 YSU-SKILL-032 生活街景墨線水彩 v1.0.0（Approved／Partial）；新增 YSU-SKILL-031 岩彩幻境敘事 v1.0.0（Approved／Partial；預設保留構圖、可選風格重構）；新增 YSU-SKILL-030 留白建築明信片 v1.0.0（WC-C）；新增 YSU-SKILL-029 古畫捲軸雕塑高訂 v1.0.0；YSU-SKILL-028 逐格角色動畫製作 v1.0.0 保留。方法／套件已批准，動畫與引擎待實測；WC-A／WC-B 新提示詞仍待生圖驗證，風格13已正式封裝為032、WC-C已正式封裝，Hub Before/After配對已記錄，新Prompt未實測。此計數不代表平台已安裝或全部實測通過。  
 管理對話：YSU Skills 管理中心（使用者於 2026-09-21 指定；不代表已操作聊天 UI 更名）。  
 以下未加新日期的來源核對段落保留 2026-09-21 歷史；該次接續核對已讀三份中央文件、兩個 Skill 的歷史盤點及影片 VALIDATION 全文，並新增來源核對紀錄與本機取回指令；兩套完整來源仍未取得。本機安裝版本均為歷史紀錄，未直讀使用者電腦或重新安裝。  
 下方 YSU-SKILL-001 段落保留首次移交紀錄；該段「本輪」指首次歸檔，不是本次來源核對。本次沒有重跑 Simulator 套件或行為驗證。
@@ -51,6 +51,12 @@
 | YSU-SKILL-031 | 岩彩幻境敘事 / Mineral-Pigment Dreamscape Narrative；以細描、啞面碎色與連續敘事空間呈現幻想插畫，預設保留構圖，可選風格重構 | 1.0.0 | 48 檔正式套件、21 原始參考、雙語 Prompt、兩輪測試與縮圖已歸檔；ZIP 回下載核對通過 | 未安裝 | 未安裝／未發布 Hub |
 | YSU-SKILL-032 | 生活街景墨線水彩 / Lived-In Urban Watercolor；以細碎墨線、透明碎色與生活細節，呈現手繪場景敘事；原風格13 | 1.0.0 | 30檔正式套件、7原始參考、兩組核可測試、雙語Prompt與原圖縮圖已歸檔；ZIP回下載核對通過 | 未安裝 | 未安裝／未發布 Hub |
 
+| YSU-SKILL-033 | 溫光微縮敘事 / Warm-Lit Miniature Narratives；以混合材質微縮模型與局部暖光，呈現人物及場景的親密敘事。 | 1.0.0 | 5張原始參考、雙語Prompt、歷史測試與原圖縮圖已歸檔；保留構圖單模式；檔案驗收詳見本案段落 | 未安裝 | 未安裝／未發布 Hub |
+| YSU-SKILL-034 | 暖光繁街手繪 / Warm-Lit Urban Sketch Narratives；以重疊墨線、乾濕色層與暖光節奏，描繪有生活密度的場景。 | 1.0.0 | 38張原始參考、雙語Prompt、歷史測試與原圖縮圖已歸檔；保留構圖單模式；檔案驗收詳見本案段落 | 未安裝 | 未安裝／未發布 Hub |
+| YSU-SKILL-035 | 星夜暈彩繪本 / Starry Wash Storybook；以纖細線稿、流動透明暈彩與安靜色域，呈現柔和的陪伴敘事。 | 1.0.0 | 10張原始參考、雙語Prompt、歷史測試與原圖縮圖已歸檔；預設保留構圖／可選風格重構；檔案驗收詳見本案段落 | 未安裝 | 未安裝／未發布 Hub |
+| YSU-SKILL-036 | 纖維微縮童話 / Fiber Miniature Storyworlds；將角色與環境轉成具有短纖維觸感、遮擋與實體深度的微縮童話。 | 1.0.0 | 22張原始參考、雙語Prompt、歷史測試與原圖縮圖已歸檔；保留構圖單模式；檔案驗收詳見本案段落 | 未安裝 | 未安裝／未發布 Hub |
+| YSU-SKILL-037 | 靛夜剪影詩畫 / Indigo-Night Silhouette Poetry；以清楚剪影、少量色階與靛金色域，建立稀疏而可辨識的詩性敘事。 | 1.0.0 | 18張原始參考、雙語Prompt、歷史測試與原圖縮圖已歸檔；預設保留構圖／可選風格重構；檔案驗收詳見本案段落 | 未安裝 | 未安裝／未發布 Hub |
+| YSU-SKILL-038 | 森境幽光繪本 / Luminous Woodland Storybook；以啞面手繪色層、既有框景與局部暖光，保留場景中的神秘童話感。 | 1.0.0 | 14張原始參考、雙語Prompt、歷史測試與原圖縮圖已歸檔；保留構圖單模式；檔案驗收詳見本案段落 | 未安裝 | 未安裝／未發布 Hub |
 
 ## YSU-SKILL-001 — Scientific Interactive Simulator
 
@@ -761,6 +767,12 @@ SHA-256：8608b2c97fa5ddc1d5fca465fbd50abce6543a22f44c8fc90c8e1e540acae4b3
 | YSU-SKILL-030 | image-style | 風格轉譯 / Style transfer | painting-illustration | 水彩 / Watercolor | STYLE; WATERCOLOR; ARCHITECTURE; NEGATIVE_SPACE; INK_WASH; BEFORE_AFTER |
 | YSU-SKILL-031 | image-style | 敘事風格轉譯 / Narrative style transfer | painting-illustration | 礦物顏料般不透明碎色 / Mineral-like opaque pigment patches | STYLE; Illustration; Narrative; Mineral-Pigment Look; Surreal Composition; Fine Line |
 | YSU-SKILL-032 | image-style | 場景敘事風格轉譯 / Narrative scene style transfer | painting-illustration | 水彩 / Watercolor | STYLE; Watercolor; Ink Drawing; Hand-Drawn; Scene Narrative; Architecture; Everyday Life |
+| YSU-SKILL-033 | image-style | 微縮模型敘事 / Miniature scene narratives | photography-realism | Mixed-material miniature photography | STYLE; Miniature; Mixed Material; Warm Light; Narrative; Preserve Composition |
+| YSU-SKILL-034 | image-style | 場景手繪敘事 / Illustrated scene narratives | painting-illustration | Ink, watercolor wash and opaque highlights | STYLE; Ink; Layered Paint; Urban Sketch; Narrative; Preserve Composition |
+| YSU-SKILL-035 | image-style | 水彩繪本 / Watercolor storybook | painting-illustration | Transparent watercolor and fine outlines | STYLE; Watercolor; Storybook; Wet Wash; Negative Space; Dual Mode |
+| YSU-SKILL-036 | image-style | 立體纖維場景 / Three-dimensional fiber scenes | paper-fiber | Short fiber, needle-felted miniature craft | STYLE; Fiber; Felt; Miniature; Three Dimensional; Preserve Composition |
+| YSU-SKILL-037 | image-style | 平面剪影敘事 / Flat silhouette narratives | painting-illustration | Flat illustration, silhouette and subtle paper texture | STYLE; Silhouette; Graphic Illustration; Indigo; Negative Space; Dual Mode |
+| YSU-SKILL-038 | image-style | 繪本場景 / Storybook scenes | painting-illustration | Matte opaque painted color and fine outlines | STYLE; Storybook; Opaque Paint; Localized Glow; Narrative; Preserve Composition |
 | YSU-PENDING-001 | education | 科學解說 / Science communication | — | — | 教學; 影片 |
 
 
@@ -1398,3 +1410,230 @@ Tracker Metadata:
 | ID | slug | canonical folder ID | SKILL.md file ID | package ZIP file ID |
 |---|---|---|---|---|
 | YSU-SKILL-032 | `ysu-lived-in-urban-watercolor` | `1A822-KQjF7sbXE58I1vMqwNqgeUAx-v6` | `1RLpXjhEX2VLgViXKxWO5Ig1vGsY8mG3Q` | `1I0Bo6Msqc_BkbRX-1cvYOO3U9Bh4S_mJ` |
+
+
+
+## YSU-SKILL-033 — 溫光微縮敘事 / Warm-Lit Miniature Narratives
+
+Skill ID：ysu-warm-lit-miniature-narratives
+批次：SSF-P11-P16-20261005；來源 P11 / P style11。正式版本1.0.0。
+
+Tracker Metadata:
+- Category: STYLE
+- Lifecycle: Approved
+- Validation: Partial
+- Version: 1.0.0
+- Graphic References: 5
+- Drive: ARCHIVED
+- ChatGPT: NOT_INSTALLED
+- Codex: NOT_INSTALLED
+- Origin Project: Style Skill Factory
+- Origin Conversation: Style Skill Factory — Master Control
+- Origin Conversation URL:
+- Locator Status: PROJECT_TITLE_ONLY
+- Next Action: 已正式封裝；保留構圖單模式。已完成四張共用輸入的探索測試，新通用Prompt與跨模型重現待驗證；未安裝／未發布Hub。
+- Hub Status: Not Published
+- Canonical Drive: https://drive.google.com/drive/folders/1caOXPDYzqR5FC704tk2dfNJUG8zhGuy1
+
+以混合材質微縮模型與局部暖光，呈現人物及場景的親密敘事。 保留構圖單模式。模式選擇不等於授權新增物件、改变故事、人物身分或建築設計；重構亦需保留必要計數與互動群組。
+
+- [正式資料夾](https://drive.google.com/drive/folders/1caOXPDYzqR5FC704tk2dfNJUG8zhGuy1)
+- [SKILL.md](https://drive.google.com/file/d/1zUjGDLHQNAEgsz0aCtnt9bdSeyCrjlJt/view?usp=drivesdk)；完整套件包含七份標準文件、中英Prompt、QA、原始圖像映射與歷史測試。
+- [完整私人 ZIP](https://drive.google.com/file/d/1O4JAQk9txO0UnSKSd45YMKkFvjDVMC-C/view?usp=drivesdk)：30檔，26462198 bytes；SHA-256 `8bc311751b10e2901b49f70cbcced20c65f485e2798401fe9fada5c184e0d4a3`。
+- 本機ZIP大小／SHA-256／CRC／manifest通過；雲端10份文件已逐份讀回與定稿一致。雲端完整ZIP回下載逐位元组／SHA-256／CRC一致。
+- [原圖縮圖](https://drive.google.com/file/d/12yunjYgvMJ884BwFHPDznZlZMfoTe0SI/view?usp=drivesdk)：P11-R04，720px完整構圖，不是測試圖。
+- [原始來源](https://drive.google.com/drive/folders/1AXxX7aytFr5x1llk8QTKUFOhDfphzD0x)：保留原資料夾與圖片ID，已由Pending移入正式SOURCE。
+- [批次審查與私人 Git 來源封存](https://drive.google.com/drive/folders/1x-lLRn3EtuBwWGQMms8p_7vBWij1oON2)：commit `1da05bf0db25b3ecbcb5e3cba122ffd9a0bc193f`；Git bundle分片保存，重組說明與完整hash同存。
+
+Owner於2026-10-05 America/Los_Angeles核可风格與模式，並明示「可以打包，並且更新到TRACKER」。最後核對2026-10-06 UTC。Approved是风格與套件批准，不代表所有原圖均逐張核可、每個測試畫素都準確或通用Prompt已完整驗證。原參考逐圖分類保留Unclassified及分析者角色；不擅自全列Approved。影像維持Partial，平台未安裝，HUB未發布。原圖與完整ZIP私有；Tracker僅公開管理資訊和選定縮圖。未來HUB媒體用滿版cover、不加白框、不拉伸。
+
+
+## YSU-SKILL-034 — 暖光繁街手繪 / Warm-Lit Urban Sketch Narratives
+
+Skill ID：ysu-warm-lit-urban-sketch
+批次：SSF-P11-P16-20261005；來源 P12 / P style12。正式版本1.0.0。
+
+Tracker Metadata:
+- Category: STYLE
+- Lifecycle: Approved
+- Validation: Partial
+- Version: 1.0.0
+- Graphic References: 38
+- Drive: ARCHIVED
+- ChatGPT: NOT_INSTALLED
+- Codex: NOT_INSTALLED
+- Origin Project: Style Skill Factory
+- Origin Conversation: Style Skill Factory — Master Control
+- Origin Conversation URL:
+- Locator Status: PROJECT_TITLE_ONLY
+- Next Action: 已正式封裝；保留構圖單模式。已完成四張共用輸入的探索測試，新通用Prompt與跨模型重現待驗證；未安裝／未發布Hub。
+- Hub Status: Not Published
+- Canonical Drive: https://drive.google.com/drive/folders/1B6HHbs6zmQjg31i649tVUjDUddpzX6ad
+
+以重疊墨線、乾濕色層與暖光節奏，描繪有生活密度的場景。 保留構圖單模式。模式選擇不等於授權新增物件、改变故事、人物身分或建築設計；重構亦需保留必要計數與互動群組。
+
+- [正式資料夾](https://drive.google.com/drive/folders/1B6HHbs6zmQjg31i649tVUjDUddpzX6ad)
+- [SKILL.md](https://drive.google.com/file/d/16LN7fIwCh88Seb_yGbhNMK_JkloPshAx/view?usp=drivesdk)；完整套件包含七份標準文件、中英Prompt、QA、原始圖像映射與歷史測試。
+- [完整私人 ZIP](https://drive.google.com/file/d/1Bcbr66y22hYPfWNDSzRgVEqqWV1wcn9F/view?usp=drivesdk)：63檔，51955841 bytes；SHA-256 `f521cb7cc7be2ce1bbc008bdd2d23f760ad9dc5f1bbde21e28a63185aa86b8cf`。
+- 本機ZIP大小／SHA-256／CRC／manifest通過；雲端10份文件已逐份讀回與定稿一致。雲端ZIP大小已獨立核對；完整回下載受32 MiB工具限制，尚未驗證，不宣稱雲端ZIP CRC PASS。
+- [原圖縮圖](https://drive.google.com/file/d/1yc0aOQ-D3i0vTAPA0FmN_QFJ-Uio6tk_/view?usp=drivesdk)：P12-R19，720px完整構圖，不是測試圖。
+- [原始來源](https://drive.google.com/drive/folders/1ohqKK8fFkEL3w0Jb5IA4YHrdRmasd1N-)：保留原資料夾與圖片ID，已由Pending移入正式SOURCE。
+- [批次審查與私人 Git 來源封存](https://drive.google.com/drive/folders/1x-lLRn3EtuBwWGQMms8p_7vBWij1oON2)：commit `1da05bf0db25b3ecbcb5e3cba122ffd9a0bc193f`；Git bundle分片保存，重組說明與完整hash同存。
+
+Owner於2026-10-05 America/Los_Angeles核可风格與模式，並明示「可以打包，並且更新到TRACKER」。最後核對2026-10-06 UTC。Approved是风格與套件批准，不代表所有原圖均逐張核可、每個測試畫素都準確或通用Prompt已完整驗證。原參考逐圖分類保留Unclassified及分析者角色；不擅自全列Approved。影像維持Partial，平台未安裝，HUB未發布。原圖與完整ZIP私有；Tracker僅公開管理資訊和選定縮圖。未來HUB媒體用滿版cover、不加白框、不拉伸。
+
+
+## YSU-SKILL-035 — 星夜暈彩繪本 / Starry Wash Storybook
+
+Skill ID：ysu-starry-wash-storybook
+批次：SSF-P11-P16-20261005；來源 P13 / P style13。正式版本1.0.0。
+
+Tracker Metadata:
+- Category: STYLE
+- Lifecycle: Approved
+- Validation: Partial
+- Version: 1.0.0
+- Graphic References: 10
+- Drive: ARCHIVED
+- ChatGPT: NOT_INSTALLED
+- Codex: NOT_INSTALLED
+- Origin Project: Style Skill Factory
+- Origin Conversation: Style Skill Factory — Master Control
+- Origin Conversation URL:
+- Locator Status: PROJECT_TITLE_ONLY
+- Next Action: 已正式封裝；預設保留構圖／可選風格重構。已完成四張共用輸入的探索測試，新通用Prompt與跨模型重現待驗證；未安裝／未發布Hub。
+- Hub Status: Not Published
+- Canonical Drive: https://drive.google.com/drive/folders/1UnhbObLOfrGe0ljeUDaCaLXj22HfxVaf
+
+以纖細線稿、流動透明暈彩與安靜色域，呈現柔和的陪伴敘事。 預設保留構圖／可選風格重構。模式選擇不等於授權新增物件、改变故事、人物身分或建築設計；重構亦需保留必要計數與互動群組。
+
+- [正式資料夾](https://drive.google.com/drive/folders/1UnhbObLOfrGe0ljeUDaCaLXj22HfxVaf)
+- [SKILL.md](https://drive.google.com/file/d/10UZPKtYCiyfmS8L2bY0dmNTQIKPniQrU/view?usp=drivesdk)；完整套件包含七份標準文件、中英Prompt、QA、原始圖像映射與歷史測試。
+- [完整私人 ZIP](https://drive.google.com/file/d/1Nu7sEQfRhaWKcEOxNtq4SyNNAlADg_sQ/view?usp=drivesdk)：36檔，33930027 bytes；SHA-256 `7ddb641b7d149484ecdf6c11a02ac788121324c6aae150e9f20159ab23abe4e7`。
+- 本機ZIP大小／SHA-256／CRC／manifest通過；雲端10份文件已逐份讀回與定稿一致。雲端ZIP大小已獨立核對；完整回下載受32 MiB工具限制，尚未驗證，不宣稱雲端ZIP CRC PASS。
+- [原圖縮圖](https://drive.google.com/file/d/1W6Nr9gODp2TY6JyQFVnM9uPjmr9KGPqO/view?usp=drivesdk)：P13-R07，720px完整構圖，不是測試圖。
+- [原始來源](https://drive.google.com/drive/folders/1UxR1fL2TGB6xsXyJP-IO5OtNiTVDECvj)：保留原資料夾與圖片ID，已由Pending移入正式SOURCE。
+- [批次審查與私人 Git 來源封存](https://drive.google.com/drive/folders/1x-lLRn3EtuBwWGQMms8p_7vBWij1oON2)：commit `1da05bf0db25b3ecbcb5e3cba122ffd9a0bc193f`；Git bundle分片保存，重組說明與完整hash同存。
+
+Owner於2026-10-05 America/Los_Angeles核可风格與模式，並明示「可以打包，並且更新到TRACKER」。最後核對2026-10-06 UTC。Approved是风格與套件批准，不代表所有原圖均逐張核可、每個測試畫素都準確或通用Prompt已完整驗證。原參考逐圖分類保留Unclassified及分析者角色；不擅自全列Approved。影像維持Partial，平台未安裝，HUB未發布。原圖與完整ZIP私有；Tracker僅公開管理資訊和選定縮圖。未來HUB媒體用滿版cover、不加白框、不拉伸。
+
+
+## YSU-SKILL-036 — 纖維微縮童話 / Fiber Miniature Storyworlds
+
+Skill ID：ysu-fiber-miniature-storyworlds
+批次：SSF-P11-P16-20261005；來源 P14 / P style14。正式版本1.0.0。
+
+Tracker Metadata:
+- Category: STYLE
+- Lifecycle: Approved
+- Validation: Partial
+- Version: 1.0.0
+- Graphic References: 22
+- Drive: ARCHIVED
+- ChatGPT: NOT_INSTALLED
+- Codex: NOT_INSTALLED
+- Origin Project: Style Skill Factory
+- Origin Conversation: Style Skill Factory — Master Control
+- Origin Conversation URL:
+- Locator Status: PROJECT_TITLE_ONLY
+- Next Action: 已正式封裝；保留構圖單模式。已完成四張共用輸入的探索測試，新通用Prompt與跨模型重現待驗證；未安裝／未發布Hub。
+- Hub Status: Not Published
+- Canonical Drive: https://drive.google.com/drive/folders/1LZ9Xfu0ds6oXOWP2fbQGWsZlM5OR5j8w
+
+將角色與環境轉成具有短纖維觸感、遮擋與實體深度的微縮童話。 保留構圖單模式。模式選擇不等於授權新增物件、改变故事、人物身分或建築設計；重構亦需保留必要計數與互動群組。
+
+- [正式資料夾](https://drive.google.com/drive/folders/1LZ9Xfu0ds6oXOWP2fbQGWsZlM5OR5j8w)
+- [SKILL.md](https://drive.google.com/file/d/1CpQ2-HM6RlwgS_loR8VuXS7PTO3vsjCb/view?usp=drivesdk)；完整套件包含七份標準文件、中英Prompt、QA、原始圖像映射與歷史測試。
+- [完整私人 ZIP](https://drive.google.com/file/d/1dfnhAFS7-95dSL-v9xo-RDFPUwo7YZ03/view?usp=drivesdk)：47檔，30344396 bytes；SHA-256 `db87d5aaee1c8037d77f81024dda3f246c730c04b7208b2ff4f900587e0689eb`。
+- 本機ZIP大小／SHA-256／CRC／manifest通過；雲端10份文件已逐份讀回與定稿一致。雲端完整ZIP回下載逐位元组／SHA-256／CRC一致。
+- [原圖縮圖](https://drive.google.com/file/d/1aC46DOzE5vxGsrPAwiR9AgQVLW3umCHS/view?usp=drivesdk)：P14-R16，720px完整構圖，不是測試圖。
+- [原始來源](https://drive.google.com/drive/folders/1Kbog4DPH_FUG8VXs-FtA9BPpdBwakzah)：保留原資料夾與圖片ID，已由Pending移入正式SOURCE。
+- [批次審查與私人 Git 來源封存](https://drive.google.com/drive/folders/1x-lLRn3EtuBwWGQMms8p_7vBWij1oON2)：commit `1da05bf0db25b3ecbcb5e3cba122ffd9a0bc193f`；Git bundle分片保存，重組說明與完整hash同存。
+
+Owner於2026-10-05 America/Los_Angeles核可风格與模式，並明示「可以打包，並且更新到TRACKER」。最後核對2026-10-06 UTC。Approved是风格與套件批准，不代表所有原圖均逐張核可、每個測試畫素都準確或通用Prompt已完整驗證。原參考逐圖分類保留Unclassified及分析者角色；不擅自全列Approved。影像維持Partial，平台未安裝，HUB未發布。原圖與完整ZIP私有；Tracker僅公開管理資訊和選定縮圖。未來HUB媒體用滿版cover、不加白框、不拉伸。
+
+
+## YSU-SKILL-037 — 靛夜剪影詩畫 / Indigo-Night Silhouette Poetry
+
+Skill ID：ysu-indigo-night-silhouette-poetry
+批次：SSF-P11-P16-20261005；來源 P15 / P style15。正式版本1.0.0。
+
+Tracker Metadata:
+- Category: STYLE
+- Lifecycle: Approved
+- Validation: Partial
+- Version: 1.0.0
+- Graphic References: 18
+- Drive: ARCHIVED
+- ChatGPT: NOT_INSTALLED
+- Codex: NOT_INSTALLED
+- Origin Project: Style Skill Factory
+- Origin Conversation: Style Skill Factory — Master Control
+- Origin Conversation URL:
+- Locator Status: PROJECT_TITLE_ONLY
+- Next Action: 已正式封裝；預設保留構圖／可選風格重構。已完成四張共用輸入的探索測試，新通用Prompt與跨模型重現待驗證；未安裝／未發布Hub。
+- Hub Status: Not Published
+- Canonical Drive: https://drive.google.com/drive/folders/14lXfhg0bBR8Vci7naPwQZ0KEcKbN443h
+
+以清楚剪影、少量色階與靛金色域，建立稀疏而可辨識的詩性敘事。 預設保留構圖／可選風格重構。模式選擇不等於授權新增物件、改变故事、人物身分或建築設計；重構亦需保留必要計數與互動群組。
+
+- [正式資料夾](https://drive.google.com/drive/folders/14lXfhg0bBR8Vci7naPwQZ0KEcKbN443h)
+- [SKILL.md](https://drive.google.com/file/d/1oSq0wLAHpqJ3xKmjnyHk40jM1isdw8M2/view?usp=drivesdk)；完整套件包含七份標準文件、中英Prompt、QA、原始圖像映射與歷史測試。
+- [完整私人 ZIP](https://drive.google.com/file/d/1QpHkVYozd3ycs1RTKFbv5mEUHwbwa1vc/view?usp=drivesdk)：44檔，31564527 bytes；SHA-256 `6158c55ce838d3d974a3030b1afd57fb16e66397d61507f751569e02ac133a90`。
+- 本機ZIP大小／SHA-256／CRC／manifest通過；雲端10份文件已逐份讀回與定稿一致。雲端完整ZIP回下載逐位元组／SHA-256／CRC一致。
+- [原圖縮圖](https://drive.google.com/file/d/1Efyu89dZ58K6UmLA_DsQ1uYYk0sIjKGX/view?usp=drivesdk)：P15-R05，720px完整構圖，不是測試圖。
+- [原始來源](https://drive.google.com/drive/folders/1RVOKFF7eIdYNl5xevTSsHlV-0bfMDReZ)：保留原資料夾與圖片ID，已由Pending移入正式SOURCE。
+- [批次審查與私人 Git 來源封存](https://drive.google.com/drive/folders/1x-lLRn3EtuBwWGQMms8p_7vBWij1oON2)：commit `1da05bf0db25b3ecbcb5e3cba122ffd9a0bc193f`；Git bundle分片保存，重組說明與完整hash同存。
+
+Owner於2026-10-05 America/Los_Angeles核可风格與模式，並明示「可以打包，並且更新到TRACKER」。最後核對2026-10-06 UTC。Approved是风格與套件批准，不代表所有原圖均逐張核可、每個測試畫素都準確或通用Prompt已完整驗證。原參考逐圖分類保留Unclassified及分析者角色；不擅自全列Approved。影像維持Partial，平台未安裝，HUB未發布。原圖與完整ZIP私有；Tracker僅公開管理資訊和選定縮圖。未來HUB媒體用滿版cover、不加白框、不拉伸。
+
+
+## YSU-SKILL-038 — 森境幽光繪本 / Luminous Woodland Storybook
+
+Skill ID：ysu-luminous-woodland-storybook
+批次：SSF-P11-P16-20261005；來源 P16 / P style16。正式版本1.0.0。
+
+Tracker Metadata:
+- Category: STYLE
+- Lifecycle: Approved
+- Validation: Partial
+- Version: 1.0.0
+- Graphic References: 14
+- Drive: ARCHIVED
+- ChatGPT: NOT_INSTALLED
+- Codex: NOT_INSTALLED
+- Origin Project: Style Skill Factory
+- Origin Conversation: Style Skill Factory — Master Control
+- Origin Conversation URL:
+- Locator Status: PROJECT_TITLE_ONLY
+- Next Action: 已正式封裝；保留構圖單模式。已完成四張共用輸入的探索測試，新通用Prompt與跨模型重現待驗證；未安裝／未發布Hub。
+- Hub Status: Not Published
+- Canonical Drive: https://drive.google.com/drive/folders/1ocd0q1XRMuO3klmsSdTgep_AnAuSQn5d
+
+以啞面手繪色層、既有框景與局部暖光，保留場景中的神秘童話感。 保留構圖單模式。模式選擇不等於授權新增物件、改变故事、人物身分或建築設計；重構亦需保留必要計數與互動群組。
+
+- [正式資料夾](https://drive.google.com/drive/folders/1ocd0q1XRMuO3klmsSdTgep_AnAuSQn5d)
+- [SKILL.md](https://drive.google.com/file/d/1s-nOEBGquQOSqszJ__vtxG8WX7Rc3BPU/view?usp=drivesdk)；完整套件包含七份標準文件、中英Prompt、QA、原始圖像映射與歷史測試。
+- [完整私人 ZIP](https://drive.google.com/file/d/1lVcG3scRQ51rCZsn1-7V41S6Q5vKjACC/view?usp=drivesdk)：40檔，34871756 bytes；SHA-256 `778b6fce7c05f03f288c526e5c7bcbceb692c489d262b936770b2195a9a49dc3`。
+- 本機ZIP大小／SHA-256／CRC／manifest通過；雲端10份文件已逐份讀回與定稿一致。雲端ZIP大小已獨立核對；完整回下載受32 MiB工具限制，尚未驗證，不宣稱雲端ZIP CRC PASS。
+- [原圖縮圖](https://drive.google.com/file/d/1pgrHCruptIfCRwKuo_9jKtIh7KILlypq/view?usp=drivesdk)：P16-R09，720px完整構圖，不是測試圖。
+- [原始來源](https://drive.google.com/drive/folders/1W_HPXIR-ecvWjzTntei8gdevD6Gw-nyt)：保留原資料夾與圖片ID，已由Pending移入正式SOURCE。
+- [批次審查與私人 Git 來源封存](https://drive.google.com/drive/folders/1x-lLRn3EtuBwWGQMms8p_7vBWij1oON2)：commit `1da05bf0db25b3ecbcb5e3cba122ffd9a0bc193f`；Git bundle分片保存，重組說明與完整hash同存。
+
+Owner於2026-10-05 America/Los_Angeles核可风格與模式，並明示「可以打包，並且更新到TRACKER」。最後核對2026-10-06 UTC。Approved是风格與套件批准，不代表所有原圖均逐張核可、每個測試畫素都準確或通用Prompt已完整驗證。原參考逐圖分類保留Unclassified及分析者角色；不擅自全列Approved。影像維持Partial，平台未安裝，HUB未發布。原圖與完整ZIP私有；Tracker僅公開管理資訊和選定縮圖。未來HUB媒體用滿版cover、不加白框、不拉伸。
+
+
+## SSF-P11-P16 審核定案與待定項 — 2026-10-06 UTC
+
+六套已正式封裝為033–038；P11/P12/P14/P16只保留構圖，P13/P15雙模式。ACR（來源資料夾 Acrylic）仍On Hold：非建築測試具趣味，但需要更多建築量體強化測試；本輪不封裝、不登錄新Skill、不進Hub。不影響既有原風格13／YSU-SKILL-032。未處理的PhotoStyle01、WaterColorStyle02保持原處。
+
+## SSF-P11-P16 Package File Map
+
+| ID | slug | canonical folder ID | SKILL.md file ID | package ZIP file ID |
+|---|---|---|---|---|
+| YSU-SKILL-033 | `ysu-warm-lit-miniature-narratives` | `1caOXPDYzqR5FC704tk2dfNJUG8zhGuy1` | `1zUjGDLHQNAEgsz0aCtnt9bdSeyCrjlJt` | `1O4JAQk9txO0UnSKSd45YMKkFvjDVMC-C` |
+| YSU-SKILL-034 | `ysu-warm-lit-urban-sketch` | `1B6HHbs6zmQjg31i649tVUjDUddpzX6ad` | `16LN7fIwCh88Seb_yGbhNMK_JkloPshAx` | `1Bcbr66y22hYPfWNDSzRgVEqqWV1wcn9F` |
+| YSU-SKILL-035 | `ysu-starry-wash-storybook` | `1UnhbObLOfrGe0ljeUDaCaLXj22HfxVaf` | `10UZPKtYCiyfmS8L2bY0dmNTQIKPniQrU` | `1Nu7sEQfRhaWKcEOxNtq4SyNNAlADg_sQ` |
+| YSU-SKILL-036 | `ysu-fiber-miniature-storyworlds` | `1LZ9Xfu0ds6oXOWP2fbQGWsZlM5OR5j8w` | `1CpQ2-HM6RlwgS_loR8VuXS7PTO3vsjCb` | `1dfnhAFS7-95dSL-v9xo-RDFPUwo7YZ03` |
+| YSU-SKILL-037 | `ysu-indigo-night-silhouette-poetry` | `14lXfhg0bBR8Vci7naPwQZ0KEcKbN443h` | `1oSq0wLAHpqJ3xKmjnyHk40jM1isdw8M2` | `1QpHkVYozd3ycs1RTKFbv5mEUHwbwa1vc` |
+| YSU-SKILL-038 | `ysu-luminous-woodland-storybook` | `1ocd0q1XRMuO3klmsSdTgep_AnAuSQn5d` | `1s-nOEBGquQOSqszJ__vtxG8WX7Rc3BPU` | `1lVcG3scRQ51rCZsn1-7V41S6Q5vKjACC` |

@@ -17,16 +17,16 @@
     "source": "Skill Taxonomy v1 table in canonical Drive registry"
   },
   "$comment": "GENERATED FILE — do not edit by hand. Source: Google Drive AI Works/06_Skills/00_SKILL_REGISTRY.md. Regenerate with `npm run skills:index`.",
-  "generated_at": "2026-10-05T01:56:49.314Z",
+  "generated_at": "2026-10-06T04:08:40.566Z",
   "source": {
     "file": "skills-source/00_SKILL_REGISTRY.md",
     "drive_file_id": "1g6Io9lD4YwkDaX5_OUqssvrcEyuCF-1P",
-    "registry_updated": "2026-10-04"
+    "registry_updated": "2026-10-06"
   },
   "registry": {
     "title": "YSU Skills Registry — 統一管理總表",
     "recorded": "2026-09-21",
-    "updated": "2026-10-04",
+    "updated": "2026-10-06",
     "owner": "YuCheng Su",
     "management_conversation": "YSU Skills 管理中心",
     "drive_folder": "https://drive.google.com/drive/folders/1P6b3rLGzrdev1Lh6tZVGAWnPcNkNYoV_",
@@ -42,10 +42,10 @@
     ]
   },
   "counts": {
-    "total": 33,
-    "registered": 32,
+    "total": 39,
+    "registered": 38,
     "pending": 1,
-    "with_explicit_metadata": 20
+    "with_explicit_metadata": 26
   },
   "warnings": [],
   "skills": [
@@ -2687,6 +2687,540 @@
           "Scene Narrative",
           "Architecture",
           "Everyday Life"
+        ],
+        "source": "explicit registry taxonomy"
+      }
+    },
+    {
+      "id": "YSU-SKILL-033",
+      "name": "溫光微縮敘事 / Warm-Lit Miniature Narratives",
+      "slug": "ysu-warm-lit-miniature-narratives",
+      "category": "STYLE",
+      "lifecycle": "Approved",
+      "validation": "Partial",
+      "version": "1.0.0",
+      "version_note": "1.0.0",
+      "description": "以混合材質微縮模型與局部暖光，呈現人物及場景的親密敘事。",
+      "graphic_reference_count": 5,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "NOT_INSTALLED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "5張原始參考、雙語Prompt、歷史測試與原圖縮圖已歸檔；保留構圖單模式；檔案驗收詳見本案段落",
+        "chatgpt": "未安裝／未發布 Hub",
+        "codex": "未安裝"
+      },
+      "origin_project": "Style Skill Factory",
+      "origin_conversation": "Style Skill Factory — Master Control",
+      "origin_conversation_url": null,
+      "locator_status": "PROJECT_TITLE_ONLY",
+      "related_conversations": [],
+      "next_action": "已正式封裝；保留構圖單模式。已完成四張共用輸入的探索測試，新通用Prompt與跨模型重現待驗證；未安裝／未發布Hub。",
+      "canonical_drive": "https://drive.google.com/drive/folders/1caOXPDYzqR5FC704tk2dfNJUG8zhGuy1",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/1caOXPDYzqR5FC704tk2dfNJUG8zhGuy1"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://drive.google.com/file/d/1zUjGDLHQNAEgsz0aCtnt9bdSeyCrjlJt/view"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/1O4JAQk9txO0UnSKSd45YMKkFvjDVMC-C/view"
+        }
+      ],
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "explicit",
+        "lifecycle": "explicit",
+        "validation": "explicit",
+        "version": "explicit",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "explicit",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "explicit",
+        "origin_conversation": "explicit",
+        "origin_conversation_url": "derived",
+        "locator_status": "explicit",
+        "related_conversations": "derived",
+        "next_action": "explicit",
+        "canonical_drive": "explicit",
+        "links": "derived",
+        "registered": "derived",
+        "platform.drive": "explicit",
+        "platform.chatgpt": "explicit",
+        "platform.codex": "explicit"
+      },
+      "has_explicit_metadata": true,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "image-style",
+        "domain": "圖像與風格 / Image & Style",
+        "area": "微縮模型敘事 / Miniature scene narratives",
+        "style_family_id": "photography-realism",
+        "style_family": "攝影與寫實 / Photography & Realism",
+        "medium": "Mixed-material miniature photography",
+        "tags": [
+          "STYLE",
+          "Miniature",
+          "Mixed Material",
+          "Warm Light",
+          "Narrative",
+          "Preserve Composition"
+        ],
+        "source": "explicit registry taxonomy"
+      }
+    },
+    {
+      "id": "YSU-SKILL-034",
+      "name": "暖光繁街手繪 / Warm-Lit Urban Sketch Narratives",
+      "slug": "ysu-warm-lit-urban-sketch",
+      "category": "STYLE",
+      "lifecycle": "Approved",
+      "validation": "Partial",
+      "version": "1.0.0",
+      "version_note": "1.0.0",
+      "description": "以重疊墨線、乾濕色層與暖光節奏，描繪有生活密度的場景。",
+      "graphic_reference_count": 38,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "NOT_INSTALLED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "38張原始參考、雙語Prompt、歷史測試與原圖縮圖已歸檔；保留構圖單模式；檔案驗收詳見本案段落",
+        "chatgpt": "未安裝／未發布 Hub",
+        "codex": "未安裝"
+      },
+      "origin_project": "Style Skill Factory",
+      "origin_conversation": "Style Skill Factory — Master Control",
+      "origin_conversation_url": null,
+      "locator_status": "PROJECT_TITLE_ONLY",
+      "related_conversations": [],
+      "next_action": "已正式封裝；保留構圖單模式。已完成四張共用輸入的探索測試，新通用Prompt與跨模型重現待驗證；未安裝／未發布Hub。",
+      "canonical_drive": "https://drive.google.com/drive/folders/1B6HHbs6zmQjg31i649tVUjDUddpzX6ad",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/1B6HHbs6zmQjg31i649tVUjDUddpzX6ad"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://drive.google.com/file/d/16LN7fIwCh88Seb_yGbhNMK_JkloPshAx/view"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/1Bcbr66y22hYPfWNDSzRgVEqqWV1wcn9F/view"
+        }
+      ],
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "explicit",
+        "lifecycle": "explicit",
+        "validation": "explicit",
+        "version": "explicit",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "explicit",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "explicit",
+        "origin_conversation": "explicit",
+        "origin_conversation_url": "derived",
+        "locator_status": "explicit",
+        "related_conversations": "derived",
+        "next_action": "explicit",
+        "canonical_drive": "explicit",
+        "links": "derived",
+        "registered": "derived",
+        "platform.drive": "explicit",
+        "platform.chatgpt": "explicit",
+        "platform.codex": "explicit"
+      },
+      "has_explicit_metadata": true,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "image-style",
+        "domain": "圖像與風格 / Image & Style",
+        "area": "場景手繪敘事 / Illustrated scene narratives",
+        "style_family_id": "painting-illustration",
+        "style_family": "繪畫與插畫 / Painting & Illustration",
+        "medium": "Ink, watercolor wash and opaque highlights",
+        "tags": [
+          "STYLE",
+          "Ink",
+          "Layered Paint",
+          "Urban Sketch",
+          "Narrative",
+          "Preserve Composition"
+        ],
+        "source": "explicit registry taxonomy"
+      }
+    },
+    {
+      "id": "YSU-SKILL-035",
+      "name": "星夜暈彩繪本 / Starry Wash Storybook",
+      "slug": "ysu-starry-wash-storybook",
+      "category": "STYLE",
+      "lifecycle": "Approved",
+      "validation": "Partial",
+      "version": "1.0.0",
+      "version_note": "1.0.0",
+      "description": "以纖細線稿、流動透明暈彩與安靜色域，呈現柔和的陪伴敘事。",
+      "graphic_reference_count": 10,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "NOT_INSTALLED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "10張原始參考、雙語Prompt、歷史測試與原圖縮圖已歸檔；預設保留構圖／可選風格重構；檔案驗收詳見本案段落",
+        "chatgpt": "未安裝／未發布 Hub",
+        "codex": "未安裝"
+      },
+      "origin_project": "Style Skill Factory",
+      "origin_conversation": "Style Skill Factory — Master Control",
+      "origin_conversation_url": null,
+      "locator_status": "PROJECT_TITLE_ONLY",
+      "related_conversations": [],
+      "next_action": "已正式封裝；預設保留構圖／可選風格重構。已完成四張共用輸入的探索測試，新通用Prompt與跨模型重現待驗證；未安裝／未發布Hub。",
+      "canonical_drive": "https://drive.google.com/drive/folders/1UnhbObLOfrGe0ljeUDaCaLXj22HfxVaf",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/1UnhbObLOfrGe0ljeUDaCaLXj22HfxVaf"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://drive.google.com/file/d/10UZPKtYCiyfmS8L2bY0dmNTQIKPniQrU/view"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/1Nu7sEQfRhaWKcEOxNtq4SyNNAlADg_sQ/view"
+        }
+      ],
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "explicit",
+        "lifecycle": "explicit",
+        "validation": "explicit",
+        "version": "explicit",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "explicit",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "explicit",
+        "origin_conversation": "explicit",
+        "origin_conversation_url": "derived",
+        "locator_status": "explicit",
+        "related_conversations": "derived",
+        "next_action": "explicit",
+        "canonical_drive": "explicit",
+        "links": "derived",
+        "registered": "derived",
+        "platform.drive": "explicit",
+        "platform.chatgpt": "explicit",
+        "platform.codex": "explicit"
+      },
+      "has_explicit_metadata": true,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "image-style",
+        "domain": "圖像與風格 / Image & Style",
+        "area": "水彩繪本 / Watercolor storybook",
+        "style_family_id": "painting-illustration",
+        "style_family": "繪畫與插畫 / Painting & Illustration",
+        "medium": "Transparent watercolor and fine outlines",
+        "tags": [
+          "STYLE",
+          "Watercolor",
+          "Storybook",
+          "Wet Wash",
+          "Negative Space",
+          "Dual Mode"
+        ],
+        "source": "explicit registry taxonomy"
+      }
+    },
+    {
+      "id": "YSU-SKILL-036",
+      "name": "纖維微縮童話 / Fiber Miniature Storyworlds",
+      "slug": "ysu-fiber-miniature-storyworlds",
+      "category": "STYLE",
+      "lifecycle": "Approved",
+      "validation": "Partial",
+      "version": "1.0.0",
+      "version_note": "1.0.0",
+      "description": "將角色與環境轉成具有短纖維觸感、遮擋與實體深度的微縮童話。",
+      "graphic_reference_count": 22,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "NOT_INSTALLED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "22張原始參考、雙語Prompt、歷史測試與原圖縮圖已歸檔；保留構圖單模式；檔案驗收詳見本案段落",
+        "chatgpt": "未安裝／未發布 Hub",
+        "codex": "未安裝"
+      },
+      "origin_project": "Style Skill Factory",
+      "origin_conversation": "Style Skill Factory — Master Control",
+      "origin_conversation_url": null,
+      "locator_status": "PROJECT_TITLE_ONLY",
+      "related_conversations": [],
+      "next_action": "已正式封裝；保留構圖單模式。已完成四張共用輸入的探索測試，新通用Prompt與跨模型重現待驗證；未安裝／未發布Hub。",
+      "canonical_drive": "https://drive.google.com/drive/folders/1LZ9Xfu0ds6oXOWP2fbQGWsZlM5OR5j8w",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/1LZ9Xfu0ds6oXOWP2fbQGWsZlM5OR5j8w"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://drive.google.com/file/d/1CpQ2-HM6RlwgS_loR8VuXS7PTO3vsjCb/view"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/1dfnhAFS7-95dSL-v9xo-RDFPUwo7YZ03/view"
+        }
+      ],
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "explicit",
+        "lifecycle": "explicit",
+        "validation": "explicit",
+        "version": "explicit",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "explicit",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "explicit",
+        "origin_conversation": "explicit",
+        "origin_conversation_url": "derived",
+        "locator_status": "explicit",
+        "related_conversations": "derived",
+        "next_action": "explicit",
+        "canonical_drive": "explicit",
+        "links": "derived",
+        "registered": "derived",
+        "platform.drive": "explicit",
+        "platform.chatgpt": "explicit",
+        "platform.codex": "explicit"
+      },
+      "has_explicit_metadata": true,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "image-style",
+        "domain": "圖像與風格 / Image & Style",
+        "area": "立體纖維場景 / Three-dimensional fiber scenes",
+        "style_family_id": "paper-fiber",
+        "style_family": "紙藝與纖維 / Paper & Fiber",
+        "medium": "Short fiber, needle-felted miniature craft",
+        "tags": [
+          "STYLE",
+          "Fiber",
+          "Felt",
+          "Miniature",
+          "Three Dimensional",
+          "Preserve Composition"
+        ],
+        "source": "explicit registry taxonomy"
+      }
+    },
+    {
+      "id": "YSU-SKILL-037",
+      "name": "靛夜剪影詩畫 / Indigo-Night Silhouette Poetry",
+      "slug": "ysu-indigo-night-silhouette-poetry",
+      "category": "STYLE",
+      "lifecycle": "Approved",
+      "validation": "Partial",
+      "version": "1.0.0",
+      "version_note": "1.0.0",
+      "description": "以清楚剪影、少量色階與靛金色域，建立稀疏而可辨識的詩性敘事。",
+      "graphic_reference_count": 18,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "NOT_INSTALLED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "18張原始參考、雙語Prompt、歷史測試與原圖縮圖已歸檔；預設保留構圖／可選風格重構；檔案驗收詳見本案段落",
+        "chatgpt": "未安裝／未發布 Hub",
+        "codex": "未安裝"
+      },
+      "origin_project": "Style Skill Factory",
+      "origin_conversation": "Style Skill Factory — Master Control",
+      "origin_conversation_url": null,
+      "locator_status": "PROJECT_TITLE_ONLY",
+      "related_conversations": [],
+      "next_action": "已正式封裝；預設保留構圖／可選風格重構。已完成四張共用輸入的探索測試，新通用Prompt與跨模型重現待驗證；未安裝／未發布Hub。",
+      "canonical_drive": "https://drive.google.com/drive/folders/14lXfhg0bBR8Vci7naPwQZ0KEcKbN443h",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/14lXfhg0bBR8Vci7naPwQZ0KEcKbN443h"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://drive.google.com/file/d/1oSq0wLAHpqJ3xKmjnyHk40jM1isdw8M2/view"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/1QpHkVYozd3ycs1RTKFbv5mEUHwbwa1vc/view"
+        }
+      ],
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "explicit",
+        "lifecycle": "explicit",
+        "validation": "explicit",
+        "version": "explicit",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "explicit",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "explicit",
+        "origin_conversation": "explicit",
+        "origin_conversation_url": "derived",
+        "locator_status": "explicit",
+        "related_conversations": "derived",
+        "next_action": "explicit",
+        "canonical_drive": "explicit",
+        "links": "derived",
+        "registered": "derived",
+        "platform.drive": "explicit",
+        "platform.chatgpt": "explicit",
+        "platform.codex": "explicit"
+      },
+      "has_explicit_metadata": true,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "image-style",
+        "domain": "圖像與風格 / Image & Style",
+        "area": "平面剪影敘事 / Flat silhouette narratives",
+        "style_family_id": "painting-illustration",
+        "style_family": "繪畫與插畫 / Painting & Illustration",
+        "medium": "Flat illustration, silhouette and subtle paper texture",
+        "tags": [
+          "STYLE",
+          "Silhouette",
+          "Graphic Illustration",
+          "Indigo",
+          "Negative Space",
+          "Dual Mode"
+        ],
+        "source": "explicit registry taxonomy"
+      }
+    },
+    {
+      "id": "YSU-SKILL-038",
+      "name": "森境幽光繪本 / Luminous Woodland Storybook",
+      "slug": "ysu-luminous-woodland-storybook",
+      "category": "STYLE",
+      "lifecycle": "Approved",
+      "validation": "Partial",
+      "version": "1.0.0",
+      "version_note": "1.0.0",
+      "description": "以啞面手繪色層、既有框景與局部暖光，保留場景中的神秘童話感。",
+      "graphic_reference_count": 14,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "NOT_INSTALLED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "14張原始參考、雙語Prompt、歷史測試與原圖縮圖已歸檔；保留構圖單模式；檔案驗收詳見本案段落",
+        "chatgpt": "未安裝／未發布 Hub",
+        "codex": "未安裝"
+      },
+      "origin_project": "Style Skill Factory",
+      "origin_conversation": "Style Skill Factory — Master Control",
+      "origin_conversation_url": null,
+      "locator_status": "PROJECT_TITLE_ONLY",
+      "related_conversations": [],
+      "next_action": "已正式封裝；保留構圖單模式。已完成四張共用輸入的探索測試，新通用Prompt與跨模型重現待驗證；未安裝／未發布Hub。",
+      "canonical_drive": "https://drive.google.com/drive/folders/1ocd0q1XRMuO3klmsSdTgep_AnAuSQn5d",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/1ocd0q1XRMuO3klmsSdTgep_AnAuSQn5d"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://drive.google.com/file/d/1s-nOEBGquQOSqszJ__vtxG8WX7Rc3BPU/view"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/1lVcG3scRQ51rCZsn1-7V41S6Q5vKjACC/view"
+        }
+      ],
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "explicit",
+        "lifecycle": "explicit",
+        "validation": "explicit",
+        "version": "explicit",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "explicit",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "explicit",
+        "origin_conversation": "explicit",
+        "origin_conversation_url": "derived",
+        "locator_status": "explicit",
+        "related_conversations": "derived",
+        "next_action": "explicit",
+        "canonical_drive": "explicit",
+        "links": "derived",
+        "registered": "derived",
+        "platform.drive": "explicit",
+        "platform.chatgpt": "explicit",
+        "platform.codex": "explicit"
+      },
+      "has_explicit_metadata": true,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "image-style",
+        "domain": "圖像與風格 / Image & Style",
+        "area": "繪本場景 / Storybook scenes",
+        "style_family_id": "painting-illustration",
+        "style_family": "繪畫與插畫 / Painting & Illustration",
+        "medium": "Matte opaque painted color and fine outlines",
+        "tags": [
+          "STYLE",
+          "Storybook",
+          "Opaque Paint",
+          "Localized Glow",
+          "Narrative",
+          "Preserve Composition"
         ],
         "source": "explicit registry taxonomy"
       }
