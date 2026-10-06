@@ -54,7 +54,7 @@ test('every registered Skill appears with lifecycle, validation, version, refs a
  const f=fixture();try{
   await f.toSkills();
   assert.equal(f.rows().length,index.skills.length);
-  assert.equal(index.skills.filter(s=>s.registered).length,38,'all 38 registered Skills are indexed');
+  assert.equal(index.skills.filter(s=>s.registered).length,39,'all 39 registered Skills are indexed');
   const text=f.get('skRows').textContent;
   for(const s of index.skills){
    assert.ok(text.includes(s.name),`${s.id} name shown`);
@@ -95,7 +95,8 @@ test('search and every MVP filter narrow the list',async()=>{
   narrows('skCategory','FILM',s=>s.category==='FILM');
   narrows('skLifecycle','Approved',s=>s.lifecycle==='Approved');
   narrows('skValidation','Partial',s=>s.validation==='Partial');
-  narrows('skPlatform','chatgpt',s=>s.platform.chatgpt==='INSTALLED');
+  // Availability includes archived Skills-page packages; this does not claim installation.
+  narrows('skPlatform','chatgpt',s=>['ARCHIVED','INSTALLED','INSTALLED_RECORDED'].includes(s.platform.chatgpt));
   narrows('skHasGraphic',true,s=>s.graphic_reference_count>0);
 
   // No Skill has a direct conversation URL yet, so this filter must empty the
@@ -178,7 +179,7 @@ test('a failed index load reports it instead of rendering an empty list silently
 });
 
 test('the generated index never invents data and stays in the documented shape',()=>{
- assert.equal(index.counts.registered,38);
+ assert.equal(index.counts.registered,39);
  assert.ok(index.source.file.includes('00_SKILL_REGISTRY.md'));
  for(const s of index.skills){
   assert.match(s.id,/^YSU-(SKILL|PENDING)-\d{3}$/);
@@ -246,4 +247,3 @@ test('taxonomy separates purpose from style and keeps paper styles together',asy
   assert.ok(f.get('skDetailBody').textContent.includes('紙藝與纖維'));
  }finally{f.close()}
 });
-

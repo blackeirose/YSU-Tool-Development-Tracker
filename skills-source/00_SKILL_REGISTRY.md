@@ -7,7 +7,7 @@
 
 
 本表是已登錄 YSU 自製 Skills 的管理索引，不是帳號中所有第三方 Skills 的盤點。  
-目前 38 個已登錄項目：新增 YSU-SKILL-033–038 六套 P11–P16 風格 v1.0.0（Approved／Partial；四單模式、兩雙模式），ACR 仍待定；新增 YSU-SKILL-032 生活街景墨線水彩 v1.0.0（Approved／Partial）；新增 YSU-SKILL-031 岩彩幻境敘事 v1.0.0（Approved／Partial；預設保留構圖、可選風格重構）；新增 YSU-SKILL-030 留白建築明信片 v1.0.0（WC-C）；新增 YSU-SKILL-029 古畫捲軸雕塑高訂 v1.0.0；YSU-SKILL-028 逐格角色動畫製作 v1.0.0 保留。方法／套件已批准，動畫與引擎待實測；WC-A／WC-B 新提示詞仍待生圖驗證，風格13已正式封裝為032、WC-C已正式封裝，Hub Before/After配對已記錄，新Prompt未實測。此計數不代表平台已安裝或全部實測通過。  
+目前 39 個已登錄項目：新增 YSU-SKILL-039 流線原子筆敘事 v1.0.0（P20，Approved／Partial；保留構圖單模式）；新增 YSU-SKILL-033–038 六套 P11–P16 風格 v1.0.0（Approved／Partial；四單模式、兩雙模式），ACR 仍待定；新增 YSU-SKILL-032 生活街景墨線水彩 v1.0.0（Approved／Partial）；新增 YSU-SKILL-031 岩彩幻境敘事 v1.0.0（Approved／Partial；預設保留構圖、可選風格重構）；新增 YSU-SKILL-030 留白建築明信片 v1.0.0（WC-C）；新增 YSU-SKILL-029 古畫捲軸雕塑高訂 v1.0.0；YSU-SKILL-028 逐格角色動畫製作 v1.0.0 保留。方法／套件已批准，動畫與引擎待實測；WC-A／WC-B 新提示詞仍待生圖驗證，風格13已正式封裝為032、WC-C已正式封裝，Hub Before/After配對已記錄，新Prompt未實測。此計數不代表平台已安裝或全部實測通過。  
 管理對話：YSU Skills 管理中心（使用者於 2026-09-21 指定；不代表已操作聊天 UI 更名）。  
 以下未加新日期的來源核對段落保留 2026-09-21 歷史；該次接續核對已讀三份中央文件、兩個 Skill 的歷史盤點及影片 VALIDATION 全文，並新增來源核對紀錄與本機取回指令；兩套完整來源仍未取得。本機安裝版本均為歷史紀錄，未直讀使用者電腦或重新安裝。  
 下方 YSU-SKILL-001 段落保留首次移交紀錄；該段「本輪」指首次歸檔，不是本次來源核對。本次沒有重跑 Simulator 套件或行為驗證。
@@ -57,6 +57,8 @@
 | YSU-SKILL-036 | 纖維微縮童話 / Fiber Miniature Storyworlds；將角色與環境轉成具有短纖維觸感、遮擋與實體深度的微縮童話。 | 1.0.0 | 22張原始參考、雙語Prompt、歷史測試與原圖縮圖已歸檔；保留構圖單模式；檔案驗收詳見本案段落 | 未安裝 | 未安裝；Published to Hub v1.0.0 / public-r1 |
 | YSU-SKILL-037 | 靛夜剪影詩畫 / Indigo-Night Silhouette Poetry；以清楚剪影、少量色階與靛金色域，建立稀疏而可辨識的詩性敘事。 | 1.0.0 | 18張原始參考、雙語Prompt、歷史測試與原圖縮圖已歸檔；預設保留構圖／可選風格重構；檔案驗收詳見本案段落 | 未安裝 | 未安裝；Published to Hub v1.0.0 / public-r1 |
 | YSU-SKILL-038 | 森境幽光繪本 / Luminous Woodland Storybook；以啞面手繪色層、既有框景與局部暖光，保留場景中的神秘童話感。 | 1.0.0 | 14張原始參考、雙語Prompt、歷史測試與原圖縮圖已歸檔；保留構圖單模式；檔案驗收詳見本案段落 | 未安裝 | 未安裝；Published to Hub v1.0.0 / public-r1 |
+
+| YSU-SKILL-039 | 流線原子筆敘事 / Flowline Ballpoint Narratives；保留原構圖，以偏單色原子筆與紙白重繪每個物件，包含畫中畫與光學效果。 | 1.0.0 | 51檔ZIP、27原始參考、4核可r3預覽、雙語Prompt與原圖縮圖已歸檔；雲端ZIP回下載SHA-256／CRC／manifest一致 | 未安裝 | ChatGPT Skills頁已保存；新對話載入未驗證；未發布Hub |
 
 ## YSU-SKILL-001 — Scientific Interactive Simulator
 
@@ -773,6 +775,7 @@ SHA-256：8608b2c97fa5ddc1d5fca465fbd50abce6543a22f44c8fc90c8e1e540acae4b3
 | YSU-SKILL-036 | image-style | 立體纖維場景 / Three-dimensional fiber scenes | paper-fiber | Short fiber, needle-felted miniature craft | STYLE; Fiber; Felt; Miniature; Three Dimensional; Preserve Composition |
 | YSU-SKILL-037 | image-style | 平面剪影敘事 / Flat silhouette narratives | painting-illustration | Flat illustration, silhouette and subtle paper texture | STYLE; Silhouette; Graphic Illustration; Indigo; Negative Space; Dual Mode |
 | YSU-SKILL-038 | image-style | 繪本場景 / Storybook scenes | painting-illustration | Matte opaque painted color and fine outlines | STYLE; Storybook; Opaque Paint; Localized Glow; Narrative; Preserve Composition |
+| YSU-SKILL-039 | image-style | 原子筆敘事風格轉譯 / Ballpoint narrative style transfer | painting-illustration | 原子筆外觀 / Ballpoint-pen appearance | STYLE; Ballpoint Pen; Ink Drawing; Near Monochrome; Narrative; Preserve Composition |
 | YSU-PENDING-001 | education | 科學解說 / Science communication | — | — | 教學; 影片 |
 
 
@@ -1739,3 +1742,47 @@ Owner於2026-10-05 America/Los_Angeles核可风格與模式，並明示「可以
 | YSU-SKILL-036 | `ysu-fiber-miniature-storyworlds` | `1LZ9Xfu0ds6oXOWP2fbQGWsZlM5OR5j8w` | `1CpQ2-HM6RlwgS_loR8VuXS7PTO3vsjCb` | `1dfnhAFS7-95dSL-v9xo-RDFPUwo7YZ03` |
 | YSU-SKILL-037 | `ysu-indigo-night-silhouette-poetry` | `14lXfhg0bBR8Vci7naPwQZ0KEcKbN443h` | `1oSq0wLAHpqJ3xKmjnyHk40jM1isdw8M2` | `1QpHkVYozd3ycs1RTKFbv5mEUHwbwa1vc` |
 | YSU-SKILL-038 | `ysu-luminous-woodland-storybook` | `1ocd0q1XRMuO3klmsSdTgep_AnAuSQn5d` | `1s-nOEBGquQOSqszJ__vtxG8WX7Rc3BPU` | `1lVcG3scRQ51rCZsn1-7V41S6Q5vKjACC` |
+
+
+## YSU-SKILL-039 — 流線原子筆敘事 / Flowline Ballpoint Narratives
+
+Skill ID：ysu-flowline-ballpoint-narratives
+批次：SSF-P20-20261006；來源 P20 / P style20。正式版本1.0.0。
+
+Tracker Metadata:
+- Category: STYLE
+- Lifecycle: Approved
+- Validation: Partial
+- Version: 1.0.0
+- Graphic References: 31
+- Drive: ARCHIVED
+- ChatGPT: ARCHIVED
+- Codex: NOT_INSTALLED
+- Origin Project: Style Skill Factory
+- Origin Conversation: Style Skill Factory — Master Control
+- Origin Conversation URL:
+- Locator Status: PROJECT_TITLE_ONLY
+- Next Action: 正式打包；r3四圖風格與偏單色簡化已核可。保留構圖單模式；每物件原子筆驗收。通用模板、局部修復與跨模型重現待實測；未發布Hub。
+- Hub Status: Not Published
+- Canonical Drive: https://drive.google.com/drive/folders/1p90E0GGcJuczsCPNKYpRIdY7RINkpG6U
+
+分類：圖像與風格／繪畫與插畫／原子筆；沿用既有大類，不建立新家族。PRESERVE_ONLY，不提供雙模式。必要標準：「每一個物件單獨看，也必須像原子筆畫。」藍黑／靛藍負責結構與明暗，暖象牙紙白留亮面；有意義的紅、赭、青綠辨識色只作克制墨線。
+
+- [正式資料夾](https://drive.google.com/drive/folders/1p90E0GGcJuczsCPNKYpRIdY7RINkpG6U)
+- [SKILL.md](https://drive.google.com/file/d/1LMmDVR-AAoo42CaS-iyFFwC92ENQqMM8/view)
+- [正式ZIP](https://drive.google.com/file/d/1R3o8NBDzVP69BrD6eqCkLxzq8Xqkm7Zq/view)：51檔，17361208 bytes；SHA-256 `d11ecce83d4f48936889f35ac248a420ba1bbd3bae08a18d40c8f3f4f6afb9aa`。完整雲端回下載bytes／SHA-256／CRC／逐檔manifest通過；獨立SKILL.md讀回一致。
+- [原圖縮圖](https://drive.google.com/file/d/16ECf-XU7w_pp-DOVt4ipcgorT0RM7QvT/view)：R21／IMG_0934.JPG，完整構圖等比720×960 WebP、移除metadata。不是測試圖；沿用Factory原參考縮圖與Tracker同步授權。
+- [SOURCE 原圖與歷史審查](https://drive.google.com/drive/folders/1CQE5VOBqiiYs-6Ujko6_GRBZMzUboqm9)：原來源資料夾以同ID移出Pending。27原圖與3個review資料夾名稱／ID／大小保持一致。
+- [r3完整原圖與review](https://drive.google.com/drive/folders/1I8hRj_XBnFwoEA_7iMMZjLRl_ns_tFEF)；[封裝與同步紀錄](https://drive.google.com/drive/folders/1K5HlRHRXvNEFEqWv-lIUKBBIXjJEfFoQ)。
+
+2026-10-06 UTC：Owner明示r3修正已足夠，尤其偏單色簡化符合原風格，核准打包並更新Tracker。此前Awaiting Review是歷史狀態。B神經／連線與D火焰仍有光效殘留、細字／幾何／臉與姿態的保真限制保持記錄；風格批准不等於每物件技術驗收全通過。31參考計數=27原始來源+4核可應用預覽，不含4測試輸入；完整r3 PNG保留私有SOURCE。個別原始圖分類仍Unclassified，不擅自全標Approved或Rejected。
+
+四圖每張一次生成；通用EN／繁中模板為r3提煉，未另生圖；局部修復、跨模型與重複可重現性未測，Validation=Partial。獨立agent以B原圖及R06/R21/R23執行文字交接檢查，正確產生單模式指令／逐物件QA與證據限制；不算影像驗證。
+
+技能來源已提交並push至ChatGPT Skills管理儲存區，commit `e33e265b01da6e4b2d17ce1a322390c0a67acb12`；ChatGPT欄ARCHIVED代表Skills頁套件保存，不宣稱新對話載入已驗證。Codex／Gemini未安裝。未修改HUB、沒有公開發布ZIP；canonical／完整參考與審查仍私有。Tracker只發布管理資訊及選定原圖縮圖。未來HUB沿用滿版cover、不加外圍白邊、不拉伸，畫中固有紙白保留。
+
+## P20 Package File Map
+
+| ID | Slug | Canonical folder ID | SKILL file ID | ZIP file ID |
+|---|---|---|---|---|
+| YSU-SKILL-039 | `ysu-flowline-ballpoint-narratives` | `1p90E0GGcJuczsCPNKYpRIdY7RINkpG6U` | `1LMmDVR-AAoo42CaS-iyFFwC92ENQqMM8` | `1R3o8NBDzVP69BrD6eqCkLxzq8Xqkm7Zq` |

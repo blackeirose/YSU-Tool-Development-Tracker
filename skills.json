@@ -17,7 +17,7 @@
     "source": "Skill Taxonomy v1 table in canonical Drive registry"
   },
   "$comment": "GENERATED FILE — do not edit by hand. Source: Google Drive AI Works/06_Skills/00_SKILL_REGISTRY.md. Regenerate with `npm run skills:index`.",
-  "generated_at": "2026-10-06T05:28:25.013Z",
+  "generated_at": "2026-10-06T12:16:42.928Z",
   "source": {
     "file": "skills-source/00_SKILL_REGISTRY.md",
     "drive_file_id": "1g6Io9lD4YwkDaX5_OUqssvrcEyuCF-1P",
@@ -42,10 +42,10 @@
     ]
   },
   "counts": {
-    "total": 39,
-    "registered": 38,
+    "total": 40,
+    "registered": 39,
     "pending": 1,
-    "with_explicit_metadata": 26
+    "with_explicit_metadata": 27
   },
   "warnings": [],
   "skills": [
@@ -3219,6 +3219,95 @@
           "Storybook",
           "Opaque Paint",
           "Localized Glow",
+          "Narrative",
+          "Preserve Composition"
+        ],
+        "source": "explicit registry taxonomy"
+      }
+    },
+    {
+      "id": "YSU-SKILL-039",
+      "name": "流線原子筆敘事 / Flowline Ballpoint Narratives",
+      "slug": "ysu-flowline-ballpoint-narratives",
+      "category": "STYLE",
+      "lifecycle": "Approved",
+      "validation": "Partial",
+      "version": "1.0.0",
+      "version_note": "1.0.0",
+      "description": "保留原構圖，以偏單色原子筆與紙白重繪每個物件，包含畫中畫與光學效果。",
+      "graphic_reference_count": 31,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "ARCHIVED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "51檔ZIP、27原始參考、4核可r3預覽、雙語Prompt與原圖縮圖已歸檔；雲端ZIP回下載SHA-256／CRC／manifest一致",
+        "chatgpt": "ChatGPT Skills頁已保存；新對話載入未驗證；未發布Hub",
+        "codex": "未安裝"
+      },
+      "origin_project": "Style Skill Factory",
+      "origin_conversation": "Style Skill Factory — Master Control",
+      "origin_conversation_url": null,
+      "locator_status": "PROJECT_TITLE_ONLY",
+      "related_conversations": [],
+      "next_action": "正式打包；r3四圖風格與偏單色簡化已核可。保留構圖單模式；每物件原子筆驗收。通用模板、局部修復與跨模型重現待實測；未發布Hub。",
+      "canonical_drive": "https://drive.google.com/drive/folders/1p90E0GGcJuczsCPNKYpRIdY7RINkpG6U",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/1p90E0GGcJuczsCPNKYpRIdY7RINkpG6U"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://drive.google.com/file/d/1LMmDVR-AAoo42CaS-iyFFwC92ENQqMM8/view"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/1R3o8NBDzVP69BrD6eqCkLxzq8Xqkm7Zq/view"
+        }
+      ],
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "explicit",
+        "lifecycle": "explicit",
+        "validation": "explicit",
+        "version": "explicit",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "explicit",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "explicit",
+        "origin_conversation": "explicit",
+        "origin_conversation_url": "derived",
+        "locator_status": "explicit",
+        "related_conversations": "derived",
+        "next_action": "explicit",
+        "canonical_drive": "explicit",
+        "links": "derived",
+        "registered": "derived",
+        "platform.drive": "explicit",
+        "platform.chatgpt": "explicit",
+        "platform.codex": "explicit"
+      },
+      "has_explicit_metadata": true,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "image-style",
+        "domain": "圖像與風格 / Image & Style",
+        "area": "原子筆敘事風格轉譯 / Ballpoint narrative style transfer",
+        "style_family_id": "painting-illustration",
+        "style_family": "繪畫與插畫 / Painting & Illustration",
+        "medium": "原子筆外觀 / Ballpoint-pen appearance",
+        "tags": [
+          "STYLE",
+          "Ballpoint Pen",
+          "Ink Drawing",
+          "Near Monochrome",
           "Narrative",
           "Preserve Composition"
         ],

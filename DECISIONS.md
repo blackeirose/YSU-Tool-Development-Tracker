@@ -1,5 +1,18 @@
 # DECISIONS.md
 
+## DEC-027 — P20 approved ballpoint package and original-reference cover
+
+**Date:** 2026-10-06 UTC. **Scope:** Skills catalog content only.
+
+The owner accepted P20 r3, specifically its near-monochrome simplification, and requested formal packaging and Tracker synchronization. Add YSU-SKILL-039 / Flowline Ballpoint Narratives / 流線原子筆敘事 v1.0.0 as Approved / Partial, under existing image-style / painting-illustration. PRESERVE_ONLY; every object independently reading as ballpoint drawing is mandatory. Accepted examples retain disclosed emission and content-fidelity limitations; approval does not mean exhaustive technical PASS.
+
+Drive remains canonical. Its verified export retains the seven established protected-release/private-history link omissions. Regenerate skills.json; preserve all 39 previous index records unchanged. Publish only the selected original R21 derivative (720×960 WebP, complete composition, metadata stripped), under standing Factory original-thumbnail authorization. Full references and canonical ZIP remain private. No HUB action is included.
+
+ChatGPT ARCHIVED records a package saved to the Skills page through versioned persistence, with fresh-conversation invocation unverified. Codex remains NOT_INSTALLED. The platform filter already includes archived packages; update its test expectation to include the documented availability states without changing runtime behavior. Update catalog-count expectations from 38 registered / 26 explicit to 39 / 27. No Tasks, UI, Auth, schema, RLS or hosting changes.
+
+Validation and recovery: docs/validation/p20-2026-10-06.md.
+
+
 ## Decision Index
 
 | ID | Title | Status |

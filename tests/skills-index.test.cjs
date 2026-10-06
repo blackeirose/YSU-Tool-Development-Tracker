@@ -132,11 +132,11 @@ test('legacy entries with no metadata block still parse completely',()=>{
 });
 
 test('the live index includes SSF-B02/B03/WC approval independently from image validation',()=>{
- assert.equal(live.counts.registered,38);
+ assert.equal(live.counts.registered,39);
  assert.equal(live.counts.pending,1);
- assert.equal(live.counts.total,39);
- // Existing approved styles and six owner-approved P11–P16 packages have explicit metadata.
- assert.equal(live.counts.with_explicit_metadata,26);
+ assert.equal(live.counts.total,40);
+ // Existing approved styles plus the owner-approved P20 package have explicit metadata.
+ assert.equal(live.counts.with_explicit_metadata,27);
  assert.deepEqual(live.warnings,[]);
  for(const id of ['017','020','021','024']){
   const s=live.skills.find(s=>s.id==='YSU-SKILL-'+id);
@@ -177,7 +177,7 @@ test('the live index includes SSF-B02/B03/WC approval independently from image v
  for(const s of live.skills){
   assert.ok(LIFECYCLES.includes(s.lifecycle),`${s.id} lifecycle`);
   assert.ok(VALIDATIONS.includes(s.validation),`${s.id} validation`);
-  assert.equal(s.has_explicit_metadata,/^YSU-SKILL-(012|01[4-9]|02[0-9]|03[0-8])$/.test(s.id));
+  assert.equal(s.has_explicit_metadata,/^YSU-SKILL-(012|01[4-9]|02[0-9]|03[0-9])$/.test(s.id));
  }
 });
 
@@ -186,5 +186,3 @@ test('regenerating the live index from its committed source is reproducible',()=
  const strip=i=>JSON.stringify({...i,generated_at:null,source:{...i.source,file:null}});
  assert.equal(strip(again),strip(live),'skills.json matches a fresh run of the generator');
 });
-
-
