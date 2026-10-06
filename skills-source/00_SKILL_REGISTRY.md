@@ -51,12 +51,12 @@
 | YSU-SKILL-031 | 岩彩幻境敘事 / Mineral-Pigment Dreamscape Narrative；以細描、啞面碎色與連續敘事空間呈現幻想插畫，預設保留構圖，可選風格重構 | 1.0.0 | 48 檔正式套件、21 原始參考、雙語 Prompt、兩輪測試與縮圖已歸檔；ZIP 回下載核對通過 | 未安裝 | 未安裝／未發布 Hub |
 | YSU-SKILL-032 | 生活街景墨線水彩 / Lived-In Urban Watercolor；以細碎墨線、透明碎色與生活細節，呈現手繪場景敘事；原風格13 | 1.0.0 | 30檔正式套件、7原始參考、兩組核可測試、雙語Prompt與原圖縮圖已歸檔；ZIP回下載核對通過 | 未安裝 | 未安裝／未發布 Hub |
 
-| YSU-SKILL-033 | 溫光微縮敘事 / Warm-Lit Miniature Narratives；以混合材質微縮模型與局部暖光，呈現人物及場景的親密敘事。 | 1.0.0 | 5張原始參考、雙語Prompt、歷史測試與原圖縮圖已歸檔；保留構圖單模式；檔案驗收詳見本案段落 | 未安裝 | 未安裝／未發布 Hub |
-| YSU-SKILL-034 | 暖光繁街手繪 / Warm-Lit Urban Sketch Narratives；以重疊墨線、乾濕色層與暖光節奏，描繪有生活密度的場景。 | 1.0.0 | 38張原始參考、雙語Prompt、歷史測試與原圖縮圖已歸檔；保留構圖單模式；檔案驗收詳見本案段落 | 未安裝 | 未安裝／未發布 Hub |
-| YSU-SKILL-035 | 星夜暈彩繪本 / Starry Wash Storybook；以纖細線稿、流動透明暈彩與安靜色域，呈現柔和的陪伴敘事。 | 1.0.0 | 10張原始參考、雙語Prompt、歷史測試與原圖縮圖已歸檔；預設保留構圖／可選風格重構；檔案驗收詳見本案段落 | 未安裝 | 未安裝／未發布 Hub |
-| YSU-SKILL-036 | 纖維微縮童話 / Fiber Miniature Storyworlds；將角色與環境轉成具有短纖維觸感、遮擋與實體深度的微縮童話。 | 1.0.0 | 22張原始參考、雙語Prompt、歷史測試與原圖縮圖已歸檔；保留構圖單模式；檔案驗收詳見本案段落 | 未安裝 | 未安裝／未發布 Hub |
-| YSU-SKILL-037 | 靛夜剪影詩畫 / Indigo-Night Silhouette Poetry；以清楚剪影、少量色階與靛金色域，建立稀疏而可辨識的詩性敘事。 | 1.0.0 | 18張原始參考、雙語Prompt、歷史測試與原圖縮圖已歸檔；預設保留構圖／可選風格重構；檔案驗收詳見本案段落 | 未安裝 | 未安裝／未發布 Hub |
-| YSU-SKILL-038 | 森境幽光繪本 / Luminous Woodland Storybook；以啞面手繪色層、既有框景與局部暖光，保留場景中的神秘童話感。 | 1.0.0 | 14張原始參考、雙語Prompt、歷史測試與原圖縮圖已歸檔；保留構圖單模式；檔案驗收詳見本案段落 | 未安裝 | 未安裝／未發布 Hub |
+| YSU-SKILL-033 | 溫光微縮敘事 / Warm-Lit Miniature Narratives；以混合材質微縮模型與局部暖光，呈現人物及場景的親密敘事。 | 1.0.0 | 5張原始參考、雙語Prompt、歷史測試與原圖縮圖已歸檔；保留構圖單模式；檔案驗收詳見本案段落 | 未安裝 | 未安裝；Published to Hub v1.0.0 / public-r1 |
+| YSU-SKILL-034 | 暖光繁街手繪 / Warm-Lit Urban Sketch Narratives；以重疊墨線、乾濕色層與暖光節奏，描繪有生活密度的場景。 | 1.0.0 | 38張原始參考、雙語Prompt、歷史測試與原圖縮圖已歸檔；保留構圖單模式；檔案驗收詳見本案段落 | 未安裝 | 未安裝；Published to Hub v1.0.0 / public-r1 |
+| YSU-SKILL-035 | 星夜暈彩繪本 / Starry Wash Storybook；以纖細線稿、流動透明暈彩與安靜色域，呈現柔和的陪伴敘事。 | 1.0.0 | 10張原始參考、雙語Prompt、歷史測試與原圖縮圖已歸檔；預設保留構圖／可選風格重構；檔案驗收詳見本案段落 | 未安裝 | 未安裝；Published to Hub v1.0.0 / public-r1 |
+| YSU-SKILL-036 | 纖維微縮童話 / Fiber Miniature Storyworlds；將角色與環境轉成具有短纖維觸感、遮擋與實體深度的微縮童話。 | 1.0.0 | 22張原始參考、雙語Prompt、歷史測試與原圖縮圖已歸檔；保留構圖單模式；檔案驗收詳見本案段落 | 未安裝 | 未安裝；Published to Hub v1.0.0 / public-r1 |
+| YSU-SKILL-037 | 靛夜剪影詩畫 / Indigo-Night Silhouette Poetry；以清楚剪影、少量色階與靛金色域，建立稀疏而可辨識的詩性敘事。 | 1.0.0 | 18張原始參考、雙語Prompt、歷史測試與原圖縮圖已歸檔；預設保留構圖／可選風格重構；檔案驗收詳見本案段落 | 未安裝 | 未安裝；Published to Hub v1.0.0 / public-r1 |
+| YSU-SKILL-038 | 森境幽光繪本 / Luminous Woodland Storybook；以啞面手繪色層、既有框景與局部暖光，保留場景中的神秘童話感。 | 1.0.0 | 14張原始參考、雙語Prompt、歷史測試與原圖縮圖已歸檔；保留構圖單模式；檔案驗收詳見本案段落 | 未安裝 | 未安裝；Published to Hub v1.0.0 / public-r1 |
 
 ## YSU-SKILL-001 — Scientific Interactive Simulator
 
@@ -1431,8 +1431,14 @@ Tracker Metadata:
 - Origin Conversation: Style Skill Factory — Master Control
 - Origin Conversation URL:
 - Locator Status: PROJECT_TITLE_ONLY
-- Next Action: 已正式封裝；保留構圖單模式。已完成四張共用輸入的探索測試，新通用Prompt與跨模型重現待驗證；未安裝／未發布Hub。
-- Hub Status: Not Published
+- Next Action: Published to Hub；v1.0.0 / public-r1；b_1d8e38a5-91bd-4e88-85d9-ba1b4ab42504；HUB https://hub.ycsu.cc/；影像維持 Partial／未安裝。普通 Member 與瀏覽器實際下載尚未驗證。
+- Hub Status: Published to Hub
+- Hub Version: 1.0.0
+- Hub Release Revision: public-r1
+- Hub Bubble ID: b_1d8e38a5-91bd-4e88-85d9-ba1b4ab42504
+- Hub Parent ID: b_5c9ab19c-b7fd-4208-a053-8135ca2a9c27
+- Hub URL: https://hub.ycsu.cc/
+- Hub Publication Date: 2026-10-05 America/Los_Angeles (2026-10-06 UTC)
 - Canonical Drive: https://drive.google.com/drive/folders/1caOXPDYzqR5FC704tk2dfNJUG8zhGuy1
 
 以混合材質微縮模型與局部暖光，呈現人物及場景的親密敘事。 保留構圖單模式。模式選擇不等於授權新增物件、改变故事、人物身分或建築設計；重構亦需保留必要計數與互動群組。
@@ -1445,8 +1451,19 @@ Tracker Metadata:
 - [原始來源](https://drive.google.com/drive/folders/1AXxX7aytFr5x1llk8QTKUFOhDfphzD0x)：保留原資料夾與圖片ID，已由Pending移入正式SOURCE。
 - [批次審查與私人 Git 來源封存](https://drive.google.com/drive/folders/1x-lLRn3EtuBwWGQMms8p_7vBWij1oON2)：commit `1da05bf0db25b3ecbcb5e3cba122ffd9a0bc193f`；Git bundle分片保存，重組說明與完整hash同存。
 
-Owner於2026-10-05 America/Los_Angeles核可风格與模式，並明示「可以打包，並且更新到TRACKER」。最後核對2026-10-06 UTC。Approved是风格與套件批准，不代表所有原圖均逐張核可、每個測試畫素都準確或通用Prompt已完整驗證。原參考逐圖分類保留Unclassified及分析者角色；不擅自全列Approved。影像維持Partial，平台未安裝，HUB未發布。原圖與完整ZIP私有；Tracker僅公開管理資訊和選定縮圖。未來HUB媒體用滿版cover、不加白框、不拉伸。
+Owner於2026-10-05 America/Los_Angeles核可风格與模式，並明示「可以打包，並且更新到TRACKER」。最後核對2026-10-06 UTC。Approved是风格與套件批准，不代表所有原圖均逐張核可、每個測試畫素都準確或通用Prompt已完整驗證。原參考逐圖分類保留Unclassified及分析者角色；不擅自全列Approved。影像維持Partial，平台未安裝。以下本輪HUB發布紀錄取代先前未發布狀態。原圖與完整ZIP私有；Tracker僅公開管理資訊和選定縮圖。未來HUB媒體用滿版cover、不加白框、不拉伸。
 
+
+### HUB 正式發布 — 2026-10-05 America/Los_Angeles
+
+- Published to Hub；v1.0.0 / public-r1；Child `b_1d8e38a5-91bd-4e88-85d9-ba1b4ab42504`，Parent `b_5c9ab19c-b7fd-4208-a053-8135ca2a9c27`，追加排序 3。
+- HUB入口：https://hub.ycsu.cc/；搜尋「溫光微縮敘事」後展開對應主泡泡。
+- 私有會員 Launch 映射：public-r1 ZIP（下載連結僅由HUB會員入口提供）；83738 bytes；SHA-256 `6659e038e1053e31d5809d6e3df5112c3e5dd86b8b315f5301f510b2a6545145`。此行對公開Tracker匯出須移除下載網址。
+- 指定縮圖 P11-R04；原圖／canonical保持私有。Approved / Partial / NOT_INSTALLED不變。
+- 本輪canonical完整ZIP已真正取得並核对大小、SHA-256、CRC、manifest及解壓；已透過串流取得完整ZIP，先前32MiB工具限制不再構成本輪阻礙。
+- 公開ZIP匿名無Cookie／OAuth完整下載與SHA／CRC／manifest／解壓 PASS；Owner/Admin實際Launch各自分享頁 PASS；Guest維持登入要求；desktop1440／390／320 Detail文字及等比cover圖驗收 PASS。
+- 普通Member無既有session，NOT VERIFIED；Chrome瀏覽器下載觀察工具未取得檔案，NOT VERIFIED，不混稱匿名HTTP或影像驗證。
+- 發布與精準回復紀錄：私有 HUB repo `04_Technology/SKILL_RELEASES/2026-10-05/P11_P16/`，branch `codex/p11-p16-hub-release-20261005`。
 
 ## YSU-SKILL-034 — 暖光繁街手繪 / Warm-Lit Urban Sketch Narratives
 
@@ -1466,8 +1483,14 @@ Tracker Metadata:
 - Origin Conversation: Style Skill Factory — Master Control
 - Origin Conversation URL:
 - Locator Status: PROJECT_TITLE_ONLY
-- Next Action: 已正式封裝；保留構圖單模式。已完成四張共用輸入的探索測試，新通用Prompt與跨模型重現待驗證；未安裝／未發布Hub。
-- Hub Status: Not Published
+- Next Action: Published to Hub；v1.0.0 / public-r1；b_d663a7a8-b8d7-4c0c-ab65-526e1a250b5e；HUB https://hub.ycsu.cc/；影像維持 Partial／未安裝。普通 Member 與瀏覽器實際下載尚未驗證。
+- Hub Status: Published to Hub
+- Hub Version: 1.0.0
+- Hub Release Revision: public-r1
+- Hub Bubble ID: b_d663a7a8-b8d7-4c0c-ab65-526e1a250b5e
+- Hub Parent ID: b_111706ca-3476-4761-adde-2f607b772da7
+- Hub URL: https://hub.ycsu.cc/
+- Hub Publication Date: 2026-10-05 America/Los_Angeles (2026-10-06 UTC)
 - Canonical Drive: https://drive.google.com/drive/folders/1B6HHbs6zmQjg31i649tVUjDUddpzX6ad
 
 以重疊墨線、乾濕色層與暖光節奏，描繪有生活密度的場景。 保留構圖單模式。模式選擇不等於授權新增物件、改变故事、人物身分或建築設計；重構亦需保留必要計數與互動群組。
@@ -1480,8 +1503,19 @@ Tracker Metadata:
 - [原始來源](https://drive.google.com/drive/folders/1ohqKK8fFkEL3w0Jb5IA4YHrdRmasd1N-)：保留原資料夾與圖片ID，已由Pending移入正式SOURCE。
 - [批次審查與私人 Git 來源封存](https://drive.google.com/drive/folders/1x-lLRn3EtuBwWGQMms8p_7vBWij1oON2)：commit `1da05bf0db25b3ecbcb5e3cba122ffd9a0bc193f`；Git bundle分片保存，重組說明與完整hash同存。
 
-Owner於2026-10-05 America/Los_Angeles核可风格與模式，並明示「可以打包，並且更新到TRACKER」。最後核對2026-10-06 UTC。Approved是风格與套件批准，不代表所有原圖均逐張核可、每個測試畫素都準確或通用Prompt已完整驗證。原參考逐圖分類保留Unclassified及分析者角色；不擅自全列Approved。影像維持Partial，平台未安裝，HUB未發布。原圖與完整ZIP私有；Tracker僅公開管理資訊和選定縮圖。未來HUB媒體用滿版cover、不加白框、不拉伸。
+Owner於2026-10-05 America/Los_Angeles核可风格與模式，並明示「可以打包，並且更新到TRACKER」。最後核對2026-10-06 UTC。Approved是风格與套件批准，不代表所有原圖均逐張核可、每個測試畫素都準確或通用Prompt已完整驗證。原參考逐圖分類保留Unclassified及分析者角色；不擅自全列Approved。影像維持Partial，平台未安裝。以下本輪HUB發布紀錄取代先前未發布狀態。原圖與完整ZIP私有；Tracker僅公開管理資訊和選定縮圖。未來HUB媒體用滿版cover、不加白框、不拉伸。
 
+
+### HUB 正式發布 — 2026-10-05 America/Los_Angeles
+
+- Published to Hub；v1.0.0 / public-r1；Child `b_d663a7a8-b8d7-4c0c-ab65-526e1a250b5e`，Parent `b_111706ca-3476-4761-adde-2f607b772da7`，追加排序 5。
+- HUB入口：https://hub.ycsu.cc/；搜尋「暖光繁街手繪」後展開對應主泡泡。
+- 私有會員 Launch 映射：public-r1 ZIP（下載連結僅由HUB會員入口提供）；390069 bytes；SHA-256 `eb5f561faba4e2a9ef1ed91b94b3c4d2bd0cf27e5c252149f78eec1cdc56db85`。此行對公開Tracker匯出須移除下載網址。
+- 指定縮圖 P12-R19；原圖／canonical保持私有。Approved / Partial / NOT_INSTALLED不變。
+- 本輪canonical完整ZIP已真正取得並核对大小、SHA-256、CRC、manifest及解壓；已透過串流取得完整ZIP，先前32MiB工具限制不再構成本輪阻礙。
+- 公開ZIP匿名無Cookie／OAuth完整下載與SHA／CRC／manifest／解壓 PASS；Owner/Admin實際Launch各自分享頁 PASS；Guest維持登入要求；desktop1440／390／320 Detail文字及等比cover圖驗收 PASS。
+- 普通Member無既有session，NOT VERIFIED；Chrome瀏覽器下載觀察工具未取得檔案，NOT VERIFIED，不混稱匿名HTTP或影像驗證。
+- 發布與精準回復紀錄：私有 HUB repo `04_Technology/SKILL_RELEASES/2026-10-05/P11_P16/`，branch `codex/p11-p16-hub-release-20261005`。
 
 ## YSU-SKILL-035 — 星夜暈彩繪本 / Starry Wash Storybook
 
@@ -1501,8 +1535,14 @@ Tracker Metadata:
 - Origin Conversation: Style Skill Factory — Master Control
 - Origin Conversation URL:
 - Locator Status: PROJECT_TITLE_ONLY
-- Next Action: 已正式封裝；預設保留構圖／可選風格重構。已完成四張共用輸入的探索測試，新通用Prompt與跨模型重現待驗證；未安裝／未發布Hub。
-- Hub Status: Not Published
+- Next Action: Published to Hub；v1.0.0 / public-r1；b_9d0abdc8-4b24-4085-b689-0370a384ad81；HUB https://hub.ycsu.cc/；影像維持 Partial／未安裝。普通 Member 與瀏覽器實際下載尚未驗證。
+- Hub Status: Published to Hub
+- Hub Version: 1.0.0
+- Hub Release Revision: public-r1
+- Hub Bubble ID: b_9d0abdc8-4b24-4085-b689-0370a384ad81
+- Hub Parent ID: demo-watercolor-style
+- Hub URL: https://hub.ycsu.cc/
+- Hub Publication Date: 2026-10-05 America/Los_Angeles (2026-10-06 UTC)
 - Canonical Drive: https://drive.google.com/drive/folders/1UnhbObLOfrGe0ljeUDaCaLXj22HfxVaf
 
 以纖細線稿、流動透明暈彩與安靜色域，呈現柔和的陪伴敘事。 預設保留構圖／可選風格重構。模式選擇不等於授權新增物件、改变故事、人物身分或建築設計；重構亦需保留必要計數與互動群組。
@@ -1515,8 +1555,19 @@ Tracker Metadata:
 - [原始來源](https://drive.google.com/drive/folders/1UxR1fL2TGB6xsXyJP-IO5OtNiTVDECvj)：保留原資料夾與圖片ID，已由Pending移入正式SOURCE。
 - [批次審查與私人 Git 來源封存](https://drive.google.com/drive/folders/1x-lLRn3EtuBwWGQMms8p_7vBWij1oON2)：commit `1da05bf0db25b3ecbcb5e3cba122ffd9a0bc193f`；Git bundle分片保存，重組說明與完整hash同存。
 
-Owner於2026-10-05 America/Los_Angeles核可风格與模式，並明示「可以打包，並且更新到TRACKER」。最後核對2026-10-06 UTC。Approved是风格與套件批准，不代表所有原圖均逐張核可、每個測試畫素都準確或通用Prompt已完整驗證。原參考逐圖分類保留Unclassified及分析者角色；不擅自全列Approved。影像維持Partial，平台未安裝，HUB未發布。原圖與完整ZIP私有；Tracker僅公開管理資訊和選定縮圖。未來HUB媒體用滿版cover、不加白框、不拉伸。
+Owner於2026-10-05 America/Los_Angeles核可风格與模式，並明示「可以打包，並且更新到TRACKER」。最後核對2026-10-06 UTC。Approved是风格與套件批准，不代表所有原圖均逐張核可、每個測試畫素都準確或通用Prompt已完整驗證。原參考逐圖分類保留Unclassified及分析者角色；不擅自全列Approved。影像維持Partial，平台未安裝。以下本輪HUB發布紀錄取代先前未發布狀態。原圖與完整ZIP私有；Tracker僅公開管理資訊和選定縮圖。未來HUB媒體用滿版cover、不加白框、不拉伸。
 
+
+### HUB 正式發布 — 2026-10-05 America/Los_Angeles
+
+- Published to Hub；v1.0.0 / public-r1；Child `b_9d0abdc8-4b24-4085-b689-0370a384ad81`，Parent `demo-watercolor-style`，追加排序 5。
+- HUB入口：https://hub.ycsu.cc/；搜尋「星夜暈彩繪本」後展開對應主泡泡。
+- 私有會員 Launch 映射：public-r1 ZIP（下載連結僅由HUB會員入口提供）；198416 bytes；SHA-256 `a28cad1a1b7349507d94be489545f9716dc42312322e6c10d92c56cbd416ae9d`。此行對公開Tracker匯出須移除下載網址。
+- 指定縮圖 P13-R07；原圖／canonical保持私有。Approved / Partial / NOT_INSTALLED不變。
+- 本輪canonical完整ZIP已真正取得並核对大小、SHA-256、CRC、manifest及解壓；已透過串流取得完整ZIP，先前32MiB工具限制不再構成本輪阻礙。
+- 公開ZIP匿名無Cookie／OAuth完整下載與SHA／CRC／manifest／解壓 PASS；Owner/Admin實際Launch各自分享頁 PASS；Guest維持登入要求；desktop1440／390／320 Detail文字及等比cover圖驗收 PASS。
+- 普通Member無既有session，NOT VERIFIED；Chrome瀏覽器下載觀察工具未取得檔案，NOT VERIFIED，不混稱匿名HTTP或影像驗證。
+- 發布與精準回復紀錄：私有 HUB repo `04_Technology/SKILL_RELEASES/2026-10-05/P11_P16/`，branch `codex/p11-p16-hub-release-20261005`。
 
 ## YSU-SKILL-036 — 纖維微縮童話 / Fiber Miniature Storyworlds
 
@@ -1536,8 +1587,14 @@ Tracker Metadata:
 - Origin Conversation: Style Skill Factory — Master Control
 - Origin Conversation URL:
 - Locator Status: PROJECT_TITLE_ONLY
-- Next Action: 已正式封裝；保留構圖單模式。已完成四張共用輸入的探索測試，新通用Prompt與跨模型重現待驗證；未安裝／未發布Hub。
-- Hub Status: Not Published
+- Next Action: Published to Hub；v1.0.0 / public-r1；b_c147c159-51e9-4cdf-844d-a6a0d81d3d3c；HUB https://hub.ycsu.cc/；影像維持 Partial／未安裝。普通 Member 與瀏覽器實際下載尚未驗證。
+- Hub Status: Published to Hub
+- Hub Version: 1.0.0
+- Hub Release Revision: public-r1
+- Hub Bubble ID: b_c147c159-51e9-4cdf-844d-a6a0d81d3d3c
+- Hub Parent ID: demo-massing-daylight
+- Hub URL: https://hub.ycsu.cc/
+- Hub Publication Date: 2026-10-05 America/Los_Angeles (2026-10-06 UTC)
 - Canonical Drive: https://drive.google.com/drive/folders/1LZ9Xfu0ds6oXOWP2fbQGWsZlM5OR5j8w
 
 將角色與環境轉成具有短纖維觸感、遮擋與實體深度的微縮童話。 保留構圖單模式。模式選擇不等於授權新增物件、改变故事、人物身分或建築設計；重構亦需保留必要計數與互動群組。
@@ -1550,8 +1607,19 @@ Tracker Metadata:
 - [原始來源](https://drive.google.com/drive/folders/1Kbog4DPH_FUG8VXs-FtA9BPpdBwakzah)：保留原資料夾與圖片ID，已由Pending移入正式SOURCE。
 - [批次審查與私人 Git 來源封存](https://drive.google.com/drive/folders/1x-lLRn3EtuBwWGQMms8p_7vBWij1oON2)：commit `1da05bf0db25b3ecbcb5e3cba122ffd9a0bc193f`；Git bundle分片保存，重組說明與完整hash同存。
 
-Owner於2026-10-05 America/Los_Angeles核可风格與模式，並明示「可以打包，並且更新到TRACKER」。最後核對2026-10-06 UTC。Approved是风格與套件批准，不代表所有原圖均逐張核可、每個測試畫素都準確或通用Prompt已完整驗證。原參考逐圖分類保留Unclassified及分析者角色；不擅自全列Approved。影像維持Partial，平台未安裝，HUB未發布。原圖與完整ZIP私有；Tracker僅公開管理資訊和選定縮圖。未來HUB媒體用滿版cover、不加白框、不拉伸。
+Owner於2026-10-05 America/Los_Angeles核可风格與模式，並明示「可以打包，並且更新到TRACKER」。最後核對2026-10-06 UTC。Approved是风格與套件批准，不代表所有原圖均逐張核可、每個測試畫素都準確或通用Prompt已完整驗證。原參考逐圖分類保留Unclassified及分析者角色；不擅自全列Approved。影像維持Partial，平台未安裝。以下本輪HUB發布紀錄取代先前未發布狀態。原圖與完整ZIP私有；Tracker僅公開管理資訊和選定縮圖。未來HUB媒體用滿版cover、不加白框、不拉伸。
 
+
+### HUB 正式發布 — 2026-10-05 America/Los_Angeles
+
+- Published to Hub；v1.0.0 / public-r1；Child `b_c147c159-51e9-4cdf-844d-a6a0d81d3d3c`，Parent `demo-massing-daylight`，追加排序 5。
+- HUB入口：https://hub.ycsu.cc/；搜尋「纖維微縮童話」後展開對應主泡泡。
+- 私有會員 Launch 映射：public-r1 ZIP（下載連結僅由HUB會員入口提供）；104989 bytes；SHA-256 `045284633ff1b3d758939e6cdb118f671f3ead6769fe3f8f708eab7f4974045c`。此行對公開Tracker匯出須移除下載網址。
+- 指定縮圖 P14-R16；原圖／canonical保持私有。Approved / Partial / NOT_INSTALLED不變。
+- 本輪canonical完整ZIP已真正取得並核对大小、SHA-256、CRC、manifest及解壓；已透過串流取得完整ZIP，先前32MiB工具限制不再構成本輪阻礙。
+- 公開ZIP匿名無Cookie／OAuth完整下載與SHA／CRC／manifest／解壓 PASS；Owner/Admin實際Launch各自分享頁 PASS；Guest維持登入要求；desktop1440／390／320 Detail文字及等比cover圖驗收 PASS。
+- 普通Member無既有session，NOT VERIFIED；Chrome瀏覽器下載觀察工具未取得檔案，NOT VERIFIED，不混稱匿名HTTP或影像驗證。
+- 發布與精準回復紀錄：私有 HUB repo `04_Technology/SKILL_RELEASES/2026-10-05/P11_P16/`，branch `codex/p11-p16-hub-release-20261005`。
 
 ## YSU-SKILL-037 — 靛夜剪影詩畫 / Indigo-Night Silhouette Poetry
 
@@ -1571,8 +1639,14 @@ Tracker Metadata:
 - Origin Conversation: Style Skill Factory — Master Control
 - Origin Conversation URL:
 - Locator Status: PROJECT_TITLE_ONLY
-- Next Action: 已正式封裝；預設保留構圖／可選風格重構。已完成四張共用輸入的探索測試，新通用Prompt與跨模型重現待驗證；未安裝／未發布Hub。
-- Hub Status: Not Published
+- Next Action: Published to Hub；v1.0.0 / public-r1；b_efab7e93-3081-4c7f-9efe-d716ffb61718；HUB https://hub.ycsu.cc/；影像維持 Partial／未安裝。普通 Member 與瀏覽器實際下載尚未驗證。
+- Hub Status: Published to Hub
+- Hub Version: 1.0.0
+- Hub Release Revision: public-r1
+- Hub Bubble ID: b_efab7e93-3081-4c7f-9efe-d716ffb61718
+- Hub Parent ID: b_ae355bfa-4ac2-4e0b-940a-56882456310e
+- Hub URL: https://hub.ycsu.cc/
+- Hub Publication Date: 2026-10-05 America/Los_Angeles (2026-10-06 UTC)
 - Canonical Drive: https://drive.google.com/drive/folders/14lXfhg0bBR8Vci7naPwQZ0KEcKbN443h
 
 以清楚剪影、少量色階與靛金色域，建立稀疏而可辨識的詩性敘事。 預設保留構圖／可選風格重構。模式選擇不等於授權新增物件、改变故事、人物身分或建築設計；重構亦需保留必要計數與互動群組。
@@ -1585,8 +1659,19 @@ Tracker Metadata:
 - [原始來源](https://drive.google.com/drive/folders/1RVOKFF7eIdYNl5xevTSsHlV-0bfMDReZ)：保留原資料夾與圖片ID，已由Pending移入正式SOURCE。
 - [批次審查與私人 Git 來源封存](https://drive.google.com/drive/folders/1x-lLRn3EtuBwWGQMms8p_7vBWij1oON2)：commit `1da05bf0db25b3ecbcb5e3cba122ffd9a0bc193f`；Git bundle分片保存，重組說明與完整hash同存。
 
-Owner於2026-10-05 America/Los_Angeles核可风格與模式，並明示「可以打包，並且更新到TRACKER」。最後核對2026-10-06 UTC。Approved是风格與套件批准，不代表所有原圖均逐張核可、每個測試畫素都準確或通用Prompt已完整驗證。原參考逐圖分類保留Unclassified及分析者角色；不擅自全列Approved。影像維持Partial，平台未安裝，HUB未發布。原圖與完整ZIP私有；Tracker僅公開管理資訊和選定縮圖。未來HUB媒體用滿版cover、不加白框、不拉伸。
+Owner於2026-10-05 America/Los_Angeles核可风格與模式，並明示「可以打包，並且更新到TRACKER」。最後核對2026-10-06 UTC。Approved是风格與套件批准，不代表所有原圖均逐張核可、每個測試畫素都準確或通用Prompt已完整驗證。原參考逐圖分類保留Unclassified及分析者角色；不擅自全列Approved。影像維持Partial，平台未安裝。以下本輪HUB發布紀錄取代先前未發布狀態。原圖與完整ZIP私有；Tracker僅公開管理資訊和選定縮圖。未來HUB媒體用滿版cover、不加白框、不拉伸。
 
+
+### HUB 正式發布 — 2026-10-05 America/Los_Angeles
+
+- Published to Hub；v1.0.0 / public-r1；Child `b_efab7e93-3081-4c7f-9efe-d716ffb61718`，Parent `b_ae355bfa-4ac2-4e0b-940a-56882456310e`，追加排序 4。
+- HUB入口：https://hub.ycsu.cc/；搜尋「靛夜剪影詩畫」後展開對應主泡泡。
+- 私有會員 Launch 映射：public-r1 ZIP（下載連結僅由HUB會員入口提供）；135071 bytes；SHA-256 `546d079100a419fb90e968abffe2f63cd3f681d767de0263540ca31e4f55b0a4`。此行對公開Tracker匯出須移除下載網址。
+- 指定縮圖 P15-R05；原圖／canonical保持私有。Approved / Partial / NOT_INSTALLED不變。
+- 本輪canonical完整ZIP已真正取得並核对大小、SHA-256、CRC、manifest及解壓；已透過串流取得完整ZIP，先前32MiB工具限制不再構成本輪阻礙。
+- 公開ZIP匿名無Cookie／OAuth完整下載與SHA／CRC／manifest／解壓 PASS；Owner/Admin實際Launch各自分享頁 PASS；Guest維持登入要求；desktop1440／390／320 Detail文字及等比cover圖驗收 PASS。
+- 普通Member無既有session，NOT VERIFIED；Chrome瀏覽器下載觀察工具未取得檔案，NOT VERIFIED，不混稱匿名HTTP或影像驗證。
+- 發布與精準回復紀錄：私有 HUB repo `04_Technology/SKILL_RELEASES/2026-10-05/P11_P16/`，branch `codex/p11-p16-hub-release-20261005`。
 
 ## YSU-SKILL-038 — 森境幽光繪本 / Luminous Woodland Storybook
 
@@ -1606,8 +1691,14 @@ Tracker Metadata:
 - Origin Conversation: Style Skill Factory — Master Control
 - Origin Conversation URL:
 - Locator Status: PROJECT_TITLE_ONLY
-- Next Action: 已正式封裝；保留構圖單模式。已完成四張共用輸入的探索測試，新通用Prompt與跨模型重現待驗證；未安裝／未發布Hub。
-- Hub Status: Not Published
+- Next Action: Published to Hub；v1.0.0 / public-r1；b_2fe20953-144b-442f-bac7-322dfbb58478；HUB https://hub.ycsu.cc/；影像維持 Partial／未安裝。普通 Member 與瀏覽器實際下載尚未驗證。
+- Hub Status: Published to Hub
+- Hub Version: 1.0.0
+- Hub Release Revision: public-r1
+- Hub Bubble ID: b_2fe20953-144b-442f-bac7-322dfbb58478
+- Hub Parent ID: b_ae355bfa-4ac2-4e0b-940a-56882456310e
+- Hub URL: https://hub.ycsu.cc/
+- Hub Publication Date: 2026-10-05 America/Los_Angeles (2026-10-06 UTC)
 - Canonical Drive: https://drive.google.com/drive/folders/1ocd0q1XRMuO3klmsSdTgep_AnAuSQn5d
 
 以啞面手繪色層、既有框景與局部暖光，保留場景中的神秘童話感。 保留構圖單模式。模式選擇不等於授權新增物件、改变故事、人物身分或建築設計；重構亦需保留必要計數與互動群組。
@@ -1620,8 +1711,19 @@ Tracker Metadata:
 - [原始來源](https://drive.google.com/drive/folders/1W_HPXIR-ecvWjzTntei8gdevD6Gw-nyt)：保留原資料夾與圖片ID，已由Pending移入正式SOURCE。
 - [批次審查與私人 Git 來源封存](https://drive.google.com/drive/folders/1x-lLRn3EtuBwWGQMms8p_7vBWij1oON2)：commit `1da05bf0db25b3ecbcb5e3cba122ffd9a0bc193f`；Git bundle分片保存，重組說明與完整hash同存。
 
-Owner於2026-10-05 America/Los_Angeles核可风格與模式，並明示「可以打包，並且更新到TRACKER」。最後核對2026-10-06 UTC。Approved是风格與套件批准，不代表所有原圖均逐張核可、每個測試畫素都準確或通用Prompt已完整驗證。原參考逐圖分類保留Unclassified及分析者角色；不擅自全列Approved。影像維持Partial，平台未安裝，HUB未發布。原圖與完整ZIP私有；Tracker僅公開管理資訊和選定縮圖。未來HUB媒體用滿版cover、不加白框、不拉伸。
+Owner於2026-10-05 America/Los_Angeles核可风格與模式，並明示「可以打包，並且更新到TRACKER」。最後核對2026-10-06 UTC。Approved是风格與套件批准，不代表所有原圖均逐張核可、每個測試畫素都準確或通用Prompt已完整驗證。原參考逐圖分類保留Unclassified及分析者角色；不擅自全列Approved。影像維持Partial，平台未安裝。以下本輪HUB發布紀錄取代先前未發布狀態。原圖與完整ZIP私有；Tracker僅公開管理資訊和選定縮圖。未來HUB媒體用滿版cover、不加白框、不拉伸。
 
+
+### HUB 正式發布 — 2026-10-05 America/Los_Angeles
+
+- Published to Hub；v1.0.0 / public-r1；Child `b_2fe20953-144b-442f-bac7-322dfbb58478`，Parent `b_ae355bfa-4ac2-4e0b-940a-56882456310e`，追加排序 5。
+- HUB入口：https://hub.ycsu.cc/；搜尋「森境幽光繪本」後展開對應主泡泡。
+- 私有會員 Launch 映射：public-r1 ZIP（下載連結僅由HUB會員入口提供）；272328 bytes；SHA-256 `8d047e2a03a3117f3dab24e45d34a528f6acad57fe9bcf93ef2de6f89571d4b8`。此行對公開Tracker匯出須移除下載網址。
+- 指定縮圖 P16-R09；原圖／canonical保持私有。Approved / Partial / NOT_INSTALLED不變。
+- 本輪canonical完整ZIP已真正取得並核对大小、SHA-256、CRC、manifest及解壓；已透過串流取得完整ZIP，先前32MiB工具限制不再構成本輪阻礙。
+- 公開ZIP匿名無Cookie／OAuth完整下載與SHA／CRC／manifest／解壓 PASS；Owner/Admin實際Launch各自分享頁 PASS；Guest維持登入要求；desktop1440／390／320 Detail文字及等比cover圖驗收 PASS。
+- 普通Member無既有session，NOT VERIFIED；Chrome瀏覽器下載觀察工具未取得檔案，NOT VERIFIED，不混稱匿名HTTP或影像驗證。
+- 發布與精準回復紀錄：私有 HUB repo `04_Technology/SKILL_RELEASES/2026-10-05/P11_P16/`，branch `codex/p11-p16-hub-release-20261005`。
 
 ## SSF-P11-P16 審核定案與待定項 — 2026-10-06 UTC
 

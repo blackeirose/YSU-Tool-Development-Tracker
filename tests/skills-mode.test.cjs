@@ -54,7 +54,7 @@ test('every registered Skill appears with lifecycle, validation, version, refs a
  const f=fixture();try{
   await f.toSkills();
   assert.equal(f.rows().length,index.skills.length);
-  assert.equal(index.skills.filter(s=>s.registered).length,32,'all 32 registered Skills are indexed');
+  assert.equal(index.skills.filter(s=>s.registered).length,38,'all 38 registered Skills are indexed');
   const text=f.get('skRows').textContent;
   for(const s of index.skills){
    assert.ok(text.includes(s.name),`${s.id} name shown`);
@@ -178,7 +178,7 @@ test('a failed index load reports it instead of rendering an empty list silently
 });
 
 test('the generated index never invents data and stays in the documented shape',()=>{
- assert.equal(index.counts.registered,32);
+ assert.equal(index.counts.registered,38);
  assert.ok(index.source.file.includes('00_SKILL_REGISTRY.md'));
  for(const s of index.skills){
   assert.match(s.id,/^YSU-(SKILL|PENDING)-\d{3}$/);
@@ -231,7 +231,7 @@ test('taxonomy separates purpose from style and keeps paper styles together',asy
  const f=fixture();try{
   await f.toSkills();
   f.get('skFamily').value='紙藝與纖維 / Paper & Fiber';f.get('skFamily').dispatchEvent(new f.w.Event('input'));
-  assert.deepEqual(f.rows().map(r=>r.dataset.skill).sort(),['YSU-SKILL-015','YSU-SKILL-016','YSU-SKILL-021','YSU-SKILL-022']);
+  assert.deepEqual(f.rows().map(r=>r.dataset.skill).sort(),['YSU-SKILL-015','YSU-SKILL-016','YSU-SKILL-021','YSU-SKILL-022','YSU-SKILL-036']);
   f.get('skDomain').value='建築與空間 / Architecture & Space';f.get('skDomain').dispatchEvent(new f.w.Event('input'));
   assert.equal(f.rows().length,0,'independent filters intersect; no invented architecture support');
   f.get('skFamily').value='';f.get('skFamily').dispatchEvent(new f.w.Event('input'));

@@ -17,7 +17,7 @@
     "source": "Skill Taxonomy v1 table in canonical Drive registry"
   },
   "$comment": "GENERATED FILE — do not edit by hand. Source: Google Drive AI Works/06_Skills/00_SKILL_REGISTRY.md. Regenerate with `npm run skills:index`.",
-  "generated_at": "2026-10-06T04:08:40.566Z",
+  "generated_at": "2026-10-06T05:28:25.013Z",
   "source": {
     "file": "skills-source/00_SKILL_REGISTRY.md",
     "drive_file_id": "1g6Io9lD4YwkDaX5_OUqssvrcEyuCF-1P",
@@ -2709,7 +2709,7 @@
       },
       "platform_notes": {
         "drive": "5張原始參考、雙語Prompt、歷史測試與原圖縮圖已歸檔；保留構圖單模式；檔案驗收詳見本案段落",
-        "chatgpt": "未安裝／未發布 Hub",
+        "chatgpt": "未安裝；Published to Hub v1.0.0 / public-r1",
         "codex": "未安裝"
       },
       "origin_project": "Style Skill Factory",
@@ -2717,7 +2717,7 @@
       "origin_conversation_url": null,
       "locator_status": "PROJECT_TITLE_ONLY",
       "related_conversations": [],
-      "next_action": "已正式封裝；保留構圖單模式。已完成四張共用輸入的探索測試，新通用Prompt與跨模型重現待驗證；未安裝／未發布Hub。",
+      "next_action": "Published to Hub；v1.0.0 / public-r1；b_1d8e38a5-91bd-4e88-85d9-ba1b4ab42504；HUB https://hub.ycsu.cc/；影像維持 Partial／未安裝。普通 Member 與瀏覽器實際下載尚未驗證。",
       "canonical_drive": "https://drive.google.com/drive/folders/1caOXPDYzqR5FC704tk2dfNJUG8zhGuy1",
       "links": [
         {
@@ -2798,7 +2798,7 @@
       },
       "platform_notes": {
         "drive": "38張原始參考、雙語Prompt、歷史測試與原圖縮圖已歸檔；保留構圖單模式；檔案驗收詳見本案段落",
-        "chatgpt": "未安裝／未發布 Hub",
+        "chatgpt": "未安裝；Published to Hub v1.0.0 / public-r1",
         "codex": "未安裝"
       },
       "origin_project": "Style Skill Factory",
@@ -2806,7 +2806,7 @@
       "origin_conversation_url": null,
       "locator_status": "PROJECT_TITLE_ONLY",
       "related_conversations": [],
-      "next_action": "已正式封裝；保留構圖單模式。已完成四張共用輸入的探索測試，新通用Prompt與跨模型重現待驗證；未安裝／未發布Hub。",
+      "next_action": "Published to Hub；v1.0.0 / public-r1；b_d663a7a8-b8d7-4c0c-ab65-526e1a250b5e；HUB https://hub.ycsu.cc/；影像維持 Partial／未安裝。普通 Member 與瀏覽器實際下載尚未驗證。",
       "canonical_drive": "https://drive.google.com/drive/folders/1B6HHbs6zmQjg31i649tVUjDUddpzX6ad",
       "links": [
         {
@@ -2887,7 +2887,7 @@
       },
       "platform_notes": {
         "drive": "10張原始參考、雙語Prompt、歷史測試與原圖縮圖已歸檔；預設保留構圖／可選風格重構；檔案驗收詳見本案段落",
-        "chatgpt": "未安裝／未發布 Hub",
+        "chatgpt": "未安裝；Published to Hub v1.0.0 / public-r1",
         "codex": "未安裝"
       },
       "origin_project": "Style Skill Factory",
@@ -2895,7 +2895,7 @@
       "origin_conversation_url": null,
       "locator_status": "PROJECT_TITLE_ONLY",
       "related_conversations": [],
-      "next_action": "已正式封裝；預設保留構圖／可選風格重構。已完成四張共用輸入的探索測試，新通用Prompt與跨模型重現待驗證；未安裝／未發布Hub。",
+      "next_action": "Published to Hub；v1.0.0 / public-r1；b_9d0abdc8-4b24-4085-b689-0370a384ad81；HUB https://hub.ycsu.cc/；影像維持 Partial／未安裝。普通 Member 與瀏覽器實際下載尚未驗證。",
       "canonical_drive": "https://drive.google.com/drive/folders/1UnhbObLOfrGe0ljeUDaCaLXj22HfxVaf",
       "links": [
         {
@@ -2976,7 +2976,7 @@
       },
       "platform_notes": {
         "drive": "22張原始參考、雙語Prompt、歷史測試與原圖縮圖已歸檔；保留構圖單模式；檔案驗收詳見本案段落",
-        "chatgpt": "未安裝／未發布 Hub",
+        "chatgpt": "未安裝；Published to Hub v1.0.0 / public-r1",
         "codex": "未安裝"
       },
       "origin_project": "Style Skill Factory",
@@ -2984,7 +2984,7 @@
       "origin_conversation_url": null,
       "locator_status": "PROJECT_TITLE_ONLY",
       "related_conversations": [],
-      "next_action": "已正式封裝；保留構圖單模式。已完成四張共用輸入的探索測試，新通用Prompt與跨模型重現待驗證；未安裝／未發布Hub。",
+      "next_action": "Published to Hub；v1.0.0 / public-r1；b_c147c159-51e9-4cdf-844d-a6a0d81d3d3c；HUB https://hub.ycsu.cc/；影像維持 Partial／未安裝。普通 Member 與瀏覽器實際下載尚未驗證。",
       "canonical_drive": "https://drive.google.com/drive/folders/1LZ9Xfu0ds6oXOWP2fbQGWsZlM5OR5j8w",
       "links": [
         {
@@ -3065,7 +3065,7 @@
       },
       "platform_notes": {
         "drive": "18張原始參考、雙語Prompt、歷史測試與原圖縮圖已歸檔；預設保留構圖／可選風格重構；檔案驗收詳見本案段落",
-        "chatgpt": "未安裝／未發布 Hub",
+        "chatgpt": "未安裝；Published to Hub v1.0.0 / public-r1",
         "codex": "未安裝"
       },
       "origin_project": "Style Skill Factory",
@@ -3073,7 +3073,7 @@
       "origin_conversation_url": null,
       "locator_status": "PROJECT_TITLE_ONLY",
       "related_conversations": [],
-      "next_action": "已正式封裝；預設保留構圖／可選風格重構。已完成四張共用輸入的探索測試，新通用Prompt與跨模型重現待驗證；未安裝／未發布Hub。",
+      "next_action": "Published to Hub；v1.0.0 / public-r1；b_efab7e93-3081-4c7f-9efe-d716ffb61718；HUB https://hub.ycsu.cc/；影像維持 Partial／未安裝。普通 Member 與瀏覽器實際下載尚未驗證。",
       "canonical_drive": "https://drive.google.com/drive/folders/14lXfhg0bBR8Vci7naPwQZ0KEcKbN443h",
       "links": [
         {
@@ -3154,7 +3154,7 @@
       },
       "platform_notes": {
         "drive": "14張原始參考、雙語Prompt、歷史測試與原圖縮圖已歸檔；保留構圖單模式；檔案驗收詳見本案段落",
-        "chatgpt": "未安裝／未發布 Hub",
+        "chatgpt": "未安裝；Published to Hub v1.0.0 / public-r1",
         "codex": "未安裝"
       },
       "origin_project": "Style Skill Factory",
@@ -3162,7 +3162,7 @@
       "origin_conversation_url": null,
       "locator_status": "PROJECT_TITLE_ONLY",
       "related_conversations": [],
-      "next_action": "已正式封裝；保留構圖單模式。已完成四張共用輸入的探索測試，新通用Prompt與跨模型重現待驗證；未安裝／未發布Hub。",
+      "next_action": "Published to Hub；v1.0.0 / public-r1；b_2fe20953-144b-442f-bac7-322dfbb58478；HUB https://hub.ycsu.cc/；影像維持 Partial／未安裝。普通 Member 與瀏覽器實際下載尚未驗證。",
       "canonical_drive": "https://drive.google.com/drive/folders/1ocd0q1XRMuO3klmsSdTgep_AnAuSQn5d",
       "links": [
         {
