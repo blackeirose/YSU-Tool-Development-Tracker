@@ -17,16 +17,16 @@
     "source": "Skill Taxonomy v1 table in canonical Drive registry"
   },
   "$comment": "GENERATED FILE — do not edit by hand. Source: Google Drive AI Works/06_Skills/00_SKILL_REGISTRY.md. Regenerate with `npm run skills:index`.",
-  "generated_at": "2026-10-06T12:16:42.928Z",
+  "generated_at": "2026-10-08T23:56:22.209Z",
   "source": {
     "file": "skills-source/00_SKILL_REGISTRY.md",
     "drive_file_id": "1g6Io9lD4YwkDaX5_OUqssvrcEyuCF-1P",
-    "registry_updated": "2026-10-06"
+    "registry_updated": "2026-10-08"
   },
   "registry": {
     "title": "YSU Skills Registry — 統一管理總表",
     "recorded": "2026-09-21",
-    "updated": "2026-10-06",
+    "updated": "2026-10-08",
     "owner": "YuCheng Su",
     "management_conversation": "YSU Skills 管理中心",
     "drive_folder": "https://drive.google.com/drive/folders/1P6b3rLGzrdev1Lh6tZVGAWnPcNkNYoV_",
@@ -262,8 +262,8 @@
       "has_explicit_metadata": false,
       "taxonomy": {
         "version": "1.0",
-        "domain_id": "architecture-space",
-        "domain": "建築與空間 / Architecture & Space",
+        "domain_id": "film-animation",
+        "domain": "影片與動畫 / Film & Animation",
         "area": "室外與施工 / Exterior & construction",
         "style_family_id": null,
         "style_family": null,

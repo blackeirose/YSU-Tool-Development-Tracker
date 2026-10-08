@@ -1,5 +1,9 @@
 # DECISIONS.md
 
+## DEC-029 — Site & Construction Film belongs to Film & Animation
+
+2026-10-08 America/Los_Angeles. Owner explicitly requests that YSU-SKILL-003 be grouped under `film-animation`, not `architecture-space`, before a three-Skill HUB handoff. Change the canonical Drive taxonomy and regenerate the public index with all seven prior protected-link omissions intact. Version, lifecycle, validation, purpose area, tags and cover remain unchanged. This metadata-only Tracker release does not publish any HUB Bubble, install a Skill or validate a new runtime. See `docs/validation/construction-film-taxonomy-2026-10-08.md` for checks and the requested Codex handoff for 001/002/003.
+
 ## DEC-027 — P20 approved ballpoint package and original-reference cover
 
 **Date:** 2026-10-06 UTC. **Scope:** Skills catalog content only.

@@ -1,7 +1,7 @@
 # YSU Skills Registry — 統一管理總表
 
 
-紀錄日期：2026-09-21；最新更新：2026-10-06 UTC。Owner：YuCheng Su。  
+紀錄日期：2026-09-21；最新更新：2026-10-08 UTC。Owner：YuCheng Su。  
 管理入口：Google Drive / My Drive / AI Works / 06_Skills。  
 資料夾：https://drive.google.com/drive/folders/1P6b3rLGzrdev1Lh6tZVGAWnPcNkNYoV_
 
@@ -739,7 +739,7 @@ SHA-256：8608b2c97fa5ddc1d5fca465fbd50abce6543a22f44c8fc90c8e1e540acae4b3
 |---|---|---|---|---|---|
 | YSU-SKILL-001 | engineering-science | 互動模擬 / Interactive simulation | — | — | 科學; 工程 |
 | YSU-SKILL-002 | architecture-space | BIM 與元件 / BIM & components | — | — | Revit; 車輛 |
-| YSU-SKILL-003 | architecture-space | 室外與施工 / Exterior & construction | — | — | 場地; 影片 |
+| YSU-SKILL-003 | film-animation | 室外與施工 / Exterior & construction | — | — | 場地; 影片 |
 | YSU-SKILL-004 | film-animation | 製作統籌 / Production coordination | — | — | Router |
 | YSU-SKILL-005 | film-animation | 導演與敘事 / Direction & narrative | — | — | 分鏡 |
 | YSU-SKILL-006 | character-design | 人物角色 / Human characters | — | — | AAA; 電影 |
