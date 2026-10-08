@@ -44,3 +44,18 @@
 .sk-description{font-size:13px;line-height:1.55;margin:10px 0;color:var(--text)}
 #skDomain,#skFamily{min-height:44px;max-width:100%;border-color:#7c847e}
 #skDomain:focus-visible,#skFamily:focus-visible,.sk-card:focus-visible{outline:2px solid #245bdb;outline-offset:2px}
+
+/* Native tool covers use the original package icons, not fabricated screenshots. */
+.sk-tool-cover{flex-direction:column;gap:16px;background:#edf3f8}
+.sk-tool-cover img{width:64px;height:64px;object-fit:contain}
+.sk-tool-cover span{font-size:13px;font-weight:600;color:var(--blue)}
+.sk-tool-detail-thumb img{height:96px;width:96px;margin:auto;object-fit:contain}
+.sk-description,.sk-value{white-space:pre-line}
+.sk-card,.sk-card h3,.sk-card .card-footer{min-width:0;overflow-wrap:anywhere}
+.sk-card .card-footer{flex-wrap:wrap}
+#skPyrevitBtn{min-height:44px;border-color:#7c847e;color:var(--blue);font-weight:600}
+#skPyrevitBtn:focus-visible{outline:2px solid #245bdb;outline-offset:2px}
+#skDetailBackdrop .launch-link{white-space:normal;overflow-wrap:anywhere;min-height:44px;display:inline-flex;align-items:center;margin:3px}
+#skDetailBackdrop .detail-top h2{overflow-wrap:anywhere}
+#skDetailClose{min-width:44px;min-height:44px;align-self:flex-start}
+@media(max-width:600px){#skillsMode .controls>*{max-width:100%}#skDetailBackdrop{padding:12px}#skDetailBackdrop .detail-modal{width:100%;padding:16px}}

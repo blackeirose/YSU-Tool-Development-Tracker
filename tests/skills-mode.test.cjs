@@ -5,13 +5,15 @@ const vm=require('node:vm');
 const {JSDOM}=require('jsdom');
 const tick=()=>new Promise(r=>setTimeout(r,20));
 const index=JSON.parse(fs.readFileSync('skills.json','utf8'));
+const nativeTools=JSON.parse(fs.readFileSync('tool-catalog.json','utf8')).tools;
+const catalog=[...index.skills,...nativeTools];
 const thumbnails=JSON.parse(fs.readFileSync('skill-thumbnails.json','utf8'));
 
 // Skills Mode is a read-only view over skills.json. The fixture gives it the
 // real generated index and a Supabase stub, so Tasks still boots exactly as it
 // does in production.
 function fixture(options={}){
- const dom=new JSDOM(fs.readFileSync('index.html','utf8'),{url:'https://tracker.example.invalid/',runScripts:'outside-only'}),w=dom.window,d=w.document;
+ const dom=new JSDOM(fs.readFileSync('index.html','utf8'),{url:options.url??'https://tracker.example.invalid/',runScripts:'outside-only'}),w=dom.window,d=w.document;
  w.HTMLDialogElement.prototype.showModal=function(){this.open=true};
  w.HTMLDialogElement.prototype.close=function(){this.open=false};
  w.confirm=()=>true;w.alert=()=>{};
@@ -19,6 +21,10 @@ function fixture(options={}){
  w.supabase={createClient:()=>({auth,from:()=>({select:()=>({order:()=>({order:async()=>({data:[],error:null})})})})})};
  let fetched=[];
  w.fetch=async url=>{fetched.push(String(url));
+  if(String(url).includes('tool-catalog.json')){
+   if(options.failTools)return {ok:false,status:500};
+   return {ok:true,json:async()=>({schema_version:1,tools:options.nativeTools??nativeTools})};
+  }
   if(String(url).includes('skill-thumbnails.json')){
    if(options.failThumbs)return {ok:false,status:404,json:async()=>({})};
    return {ok:true,status:200,json:async()=>JSON.parse(JSON.stringify(options.thumbnails??thumbnails))};
@@ -53,7 +59,7 @@ test('mode switch shows Skills, keeps Tasks intact and defaults to List',async()
 test('every registered Skill appears with lifecycle, validation, version, refs and Drive link',async()=>{
  const f=fixture();try{
   await f.toSkills();
-  assert.equal(f.rows().length,index.skills.length);
+  assert.equal(f.rows().length,catalog.length);
   assert.equal(index.skills.filter(s=>s.registered).length,39,'all 39 registered Skills are indexed');
   const text=f.get('skRows').textContent;
   for(const s of index.skills){
@@ -68,7 +74,7 @@ test('every registered Skill appears with lifecycle, validation, version, refs a
   assert.ok(inkframe.textContent.includes('11'),'graphic reference count shown');
   const links=[...f.get('skRows').querySelectorAll('a')].map(a=>a.href);
   assert.ok(links.some(href=>href.includes('drive.google.com/drive/folders/')),'canonical Drive can be opened');
-  assert.equal(Number(f.get('skCount').textContent),index.skills.length);
+  assert.equal(Number(f.get('skCount').textContent),catalog.length);
  }finally{f.close()}
 });
 
@@ -77,8 +83,9 @@ test('search and every MVP filter narrow the list',async()=>{
   await f.toSkills();
   const all=f.rows().length;
   f.get('skSearch').value='revit';f.get('skSearch').dispatchEvent(new f.w.Event('input'));
-  assert.equal(f.rows().length,1);
-  assert.equal(f.rows()[0].dataset.skill,'YSU-SKILL-002');
+  assert.equal(f.rows().length,5);
+  assert.ok(f.rows().some(r=>r.dataset.skill==='YSU-SKILL-002'));
+  assert.equal(f.rows().filter(r=>r.dataset.skill.startsWith('YSU-TOOL-')).length,4);
   f.get('skSearch').value='';f.get('skSearch').dispatchEvent(new f.w.Event('input'));
   assert.equal(f.rows().length,all);
 
@@ -86,7 +93,7 @@ test('search and every MVP filter narrow the list',async()=>{
    const el=f.get(id);
    if(el.type==='checkbox')el.checked=value;else el.value=value;
    el.dispatchEvent(new f.w.Event('input'));
-   const got=f.rows().map(r=>index.skills.find(s=>s.id===r.dataset.skill));
+   const got=f.rows().map(r=>catalog.find(s=>s.id===r.dataset.skill));
    assert.ok(got.length>0&&got.length<all,`${id}=${value} narrows the list (${got.length}/${all})`);
    got.forEach(s=>assert.ok(check(s),`${id}=${value} kept ${s.id} wrongly`));
    if(el.type==='checkbox')el.checked=false;else el.value='';
@@ -113,7 +120,7 @@ test('Visual view groups by category, collapses and opens detail',async()=>{
   assert.equal(f.get('skVisualView').classList.contains('hidden'),false);
   assert.equal(f.get('skListView').classList.contains('hidden'),true);
   const groups=[...f.d.querySelectorAll('#skVisualView [data-group]')];
-  const categories=[...new Set(index.skills.map(s=>s.taxonomy?.domain || s.category))];
+  const categories=[...new Set(catalog.map(s=>s.taxonomy?.domain || s.category))];
   assert.equal(groups.length,categories.length);
   assert.ok(groups.length>1,'more than one category group');
   const first=groups[0];
@@ -125,7 +132,7 @@ test('Visual view groups by category, collapses and opens detail',async()=>{
   reopened.click();
   assert.equal(f.d.querySelector(`#skVisualView [data-group="${first.dataset.group}"]`).getAttribute('aria-expanded'),'true');
 
-  f.d.querySelector('#skVisualView [data-card]').click();
+  f.d.querySelector('#skVisualView [data-card="YSU-SKILL-001"]').click();
   assert.equal(f.get('skDetailBackdrop').classList.contains('open'),true);
   const body=f.get('skDetailBody').textContent;
   for(const label of ['Lifecycle','Validation','Locator status','Next action','Canonical Drive','Platform / availability'])
@@ -219,12 +226,12 @@ test('Visual cards show curated cover thumbnails and keep the tile for the rest'
 test('a missing or unsafe thumbnail manifest never breaks Skills and never injects a URL',async()=>{
  const missing=fixture({failThumbs:true,storage:{'ysu-skills-view-v1':'visual'}});try{
   await missing.toSkills();
-  assert.equal(missing.rows().length,index.skills.length,'list still renders');
-  assert.equal(missing.d.querySelectorAll('.sk-cover img').length,0);
+  assert.equal(missing.rows().length,catalog.length,'list still renders');
+  assert.equal(missing.d.querySelectorAll('.sk-cover-img:not(.sk-tool-cover) img').length,0);
  }finally{missing.close()}
  const unsafe=fixture({thumbnails:{'YSU-SKILL-001':'https://evil.example/x.png','YSU-SKILL-002':'javascript:alert(1)','YSU-SKILL-003':'assets/skill-thumbs/../../x.webp'},storage:{'ysu-skills-view-v1':'visual'}});try{
   await unsafe.toSkills();
-  assert.equal(unsafe.d.querySelectorAll('.sk-cover img').length,0,'only local assets/skill-thumbs paths are used');
+  assert.equal(unsafe.d.querySelectorAll('.sk-cover-img:not(.sk-tool-cover) img').length,0,'only local assets/skill-thumbs paths are used');
  }finally{unsafe.close()}
 });
 
@@ -245,5 +252,102 @@ test('taxonomy separates purpose from style and keeps paper styles together',asy
   card.dispatchEvent(new f.w.KeyboardEvent('keydown',{key:'Enter',bubbles:true}));
   assert.equal(f.get('skDetailBackdrop').classList.contains('open'),true,'keyboard opens style detail');
   assert.ok(f.get('skDetailBody').textContent.includes('紙藝與纖維'));
+ }finally{f.close()}
+});
+
+test('pyRevit shortcut resets stale filters and shows exactly four covered tools',async()=>{
+ const f=fixture();try{
+  await f.toSkills();
+  f.get('skSearch').value='unrelated';f.get('skHasGraphic').checked=true;f.get('skPlatform').value='chatgpt';
+  f.get('skPyrevitBtn').click();
+  assert.equal(f.get('skCategory').value,'BIM / pyRevit');
+  assert.equal(f.get('skVisualView').classList.contains('hidden'),false);
+  assert.equal(f.rows().length,4);
+  const cards=[...f.d.querySelectorAll('[data-card]')];
+  assert.equal(cards.length,4);
+  for(const tool of nativeTools){
+   const card=cards.find(c=>c.dataset.card===tool.id);
+   assert.ok(card);assert.equal(card.querySelector('img').getAttribute('src'),tool.cover);
+   assert.ok(fs.existsSync(tool.cover));assert.match(card.textContent,/pyRevit 工具/);
+  }
+  assert.ok(!f.get('skVisualView').textContent.match(/PLUMBING|LEVEL MIGRATE/i));
+  f.get('skListBtn').click();assert.equal(f.rows().length,4);
+ }finally{f.close()}
+});
+
+test('tool details distinguish package publication from native validation and route downloads to HUB',async()=>{
+ const f=fixture();try{
+  await f.toSkills();f.get('skPyrevitBtn').click();
+  for(const tool of nativeTools){
+   const card=f.d.querySelector(`[data-card="${tool.id}"]`);card.focus();
+   card.dispatchEvent(new f.w.KeyboardEvent('keydown',{key:'Enter',bubbles:true}));
+   const body=f.get('skDetailBody');
+   assert.ok(body.textContent.includes(tool.version));
+   assert.ok(body.textContent.includes(tool.validation_note));
+   assert.ok(body.textContent.includes(tool.task_id));
+   assert.ok(!body.textContent.includes('Registered Skill'));
+   const links=[...body.querySelectorAll('a')];
+   assert.ok(links.some(a=>a.href==='https://hub.ycsu.cc/'));
+   assert.ok(!links.some(a=>a.href.includes('/releases/download/')),'no protected download URL exposed');
+   if(tool.lifecycle==='Candidate'){
+    assert.match(body.textContent,/不再等待本人原生驗收/);
+    assert.match(body.textContent,/下載入口尚待完成/);
+    assert.ok(!links.some(a=>a.href.endsWith('.zip')));
+   }
+   assert.equal(f.d.activeElement,f.get('skDetailClose'));
+   f.d.dispatchEvent(new f.w.KeyboardEvent('keydown',{key:'Escape',bubbles:true}));
+   assert.equal(f.get('skDetailBackdrop').getAttribute('aria-hidden'),'true');
+   assert.equal(f.d.activeElement,card);
+  }
+ }finally{f.close()}
+});
+
+test('native Revit platform is independent of ChatGPT/Codex installation',async()=>{
+ const f=fixture();try{
+  await f.toSkills();
+  f.get('skPlatform').value='revit';f.get('skPlatform').dispatchEvent(new f.w.Event('input'));
+  assert.equal(f.rows().length,4);
+  f.get('skPlatform').value='codex';f.get('skPlatform').dispatchEvent(new f.w.Event('input'));
+  assert.ok(f.rows().every(r=>!r.dataset.skill.startsWith('YSU-TOOL-')));
+ }finally{f.close()}
+});
+
+test('failed or invalid native catalog reports failure without losing the Skill registry',async()=>{
+ for(const opts of [{failTools:true},{nativeTools:[{id:'YSU-SKILL-001',kind:'pyrevit-tool'}]}]){
+  const f=fixture(opts);try{
+   await f.toSkills();assert.equal(f.rows().length,index.skills.length);
+   assert.match(f.get('skSourceNote').textContent,/工具清單暫時無法載入/);
+  }finally{f.close()}
+ }
+});
+
+test('tool metadata is escaped and external cover injection is rejected',async()=>{
+ const tool={...nativeTools[0],name:'<img src=x onerror=alert(1)>',description:'<script>alert(1)</script>',cover:'https://evil.invalid/x.png',links:[{label:'bad',url:'javascript:alert(1)'}]};
+ const f=fixture({nativeTools:[tool]});try{
+  await f.toSkills();f.get('skPyrevitBtn').click();
+  const card=f.d.querySelector(`[data-card="${tool.id}"]`);
+  assert.equal(card.querySelector('img'),null);assert.equal(card.querySelector('script'),null);
+  assert.ok(card.textContent.includes('<img'));
+  card.click();assert.equal(f.get('skDetailBody').querySelector('script'),null);
+  assert.equal(f.get('skDetailBody').querySelector('a'),null);
+ }finally{f.close()}
+});
+
+test('tool catalog does not alter canonical Skill IDs, counts or references',()=>{
+ assert.equal(nativeTools.length,4);assert.equal(index.skills.length,40);
+ assert.equal(index.counts.registered,39);
+ assert.ok(nativeTools.every(t=>t.kind==='pyrevit-tool'&&t.id.startsWith('YSU-TOOL-')));
+ assert.equal(new Set(nativeTools.map(t=>t.task_id)).size,4);
+ assert.equal(nativeTools.filter(t=>t.version==='1.0.1').length,3);
+ assert.equal(nativeTools.filter(t=>t.version==='0.2.0-candidate').length,1);
+});
+
+test('direct pyRevit entry opens all four cards despite stored Tasks mode',async()=>{
+ const f=fixture({url:'https://tracker.example.invalid/#skills-pyrevit',storage:{'ysu-tracker-mode-v1':'tasks'}});try{
+  await tick();await tick();
+  assert.equal(f.get('skillsMode').classList.contains('hidden'),false);
+  assert.equal(f.get('skVisualView').classList.contains('hidden'),false);
+  assert.equal(f.rows().length,4);
+  assert.equal(f.get('skCategory').value,'BIM / pyRevit');
  }finally{f.close()}
 });
