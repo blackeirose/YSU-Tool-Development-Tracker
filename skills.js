@@ -3,7 +3,8 @@
 // The canonical Skill registry lives in Google Drive
 // (AI Works / 06_Skills / 00_SKILL_REGISTRY.md). skills.json is generated from
 // it by tools/generate-skills-index.mjs. Nothing here writes, and Skills Mode
-// never touches Supabase or the Tasks state.
+// never touches Supabase or the Tasks state. A separate GitHub-maintained
+// tool-catalog.json adds native tools without changing the Drive Skill index.
 //
 // Wrapped in an IIFE: app.js is a classic script sharing the global scope, so
 // names like `search` and `render` must not leak.
@@ -34,6 +35,10 @@
   let view = read(VIEW_KEY) === 'visual' ? 'visual' : 'list';
   let collapsed = new Set();
   let detailId = null;
+  let toolLoadError = false;
+  let detailTrigger = null;
+  let pendingToolsView = location.hash === '#skills-pyrevit';
+  const isTool = s => s.kind === 'pyrevit-tool';
 
   // --- mode switch ---------------------------------------------------------
 
@@ -60,18 +65,29 @@
     const thumbsLoad = fetch('skill-thumbnails.json', { cache: 'no-cache' })
       .then(response => (response.ok ? response.json() : {}))
       .catch(() => ({}));
+    const toolsLoad = fetch('tool-catalog.json', { cache: 'no-cache' })
+      .then(response => { if (!response.ok) throw new Error('Tool catalog unavailable'); return response.json(); })
+      .then(data => {
+        if (data.schema_version !== 1 || !Array.isArray(data.tools) || data.tools.some(s =>
+          s.kind !== 'pyrevit-tool' || !/^YSU-TOOL-[A-Z-]+$/.test(s.id) ||
+          typeof s.name !== 'string' || s.category !== 'BIM / pyRevit') ||
+          new Set(data.tools.map(s => s.id)).size !== data.tools.length) throw new Error('Invalid tool catalog');
+        return data.tools;
+      })
+      .catch(() => { toolLoadError = true; return []; });
     loading = fetch('skills.json', { cache: 'no-cache' })
       .then(response => { if (!response.ok) throw new Error(`HTTP ${response.status}`); return response.json(); })
       .then(data => thumbsLoad.then(map => {
         thumbs = map && typeof map === 'object' && !Array.isArray(map) ? map : {};
         return data;
       }))
-      .then(data => {
+      .then(data => toolsLoad.then(tools => {
         index = data;
-        skills = Array.isArray(data.skills) ? data.skills : [];
+        skills = [...(Array.isArray(data.skills) ? data.skills : []), ...tools];
         buildFilterOptions();
         render();
-      })
+        if (pendingToolsView) showPyrevit();
+      }))
       .catch(error => { fail('Skills index could not be loaded. Run `npm run skills:index` and redeploy.'); console.error(error); });
     return loading;
   }
@@ -93,6 +109,8 @@
     $('skCategory').innerHTML = `<option value="">All categories</option>${categories.map(c => `<option>${esc(c)}</option>`).join('')}`;
     const normalized = index.counts.with_explicit_metadata ?? 0;
     $('skSourceNote').innerHTML = `Source of truth: <a class="launch-link" href="${esc(index.registry.drive_folder)}" target="_blank" rel="noopener noreferrer">00_SKILL_REGISTRY.md in Drive ↗</a> · registry updated ${esc(index.registry.updated ?? UNKNOWN)} · index generated ${esc((index.generated_at || '').slice(0, 10))} · ${index.counts.registered} registered + ${index.counts.pending} pending · ${normalized} of ${index.counts.total} normalized to Tracker Metadata ${esc(index.metadata_contract?.version ?? '')}. skills.json is generated; edit the registry in Drive, never this page.`;
+    $('skSourceNote').innerHTML += `<p>工具 / Tools: ${skills.filter(isTool).length} · GitHub tool-catalog.json。工具卡片管理用途與套件；Tasks 保留開發進度。</p>`;
+    if (toolLoadError) $('skSourceNote').innerHTML += '<p role="alert">工具清單暫時無法載入，請重新整理再試。Tool catalog unavailable; reload to retry. Skills remain available.</p>';
   }
 
   // --- filtering -----------------------------------------------------------
@@ -113,8 +131,11 @@
       if (lifecycle && s.lifecycle !== lifecycle) return false;
       if (validation && s.validation !== validation) return false;
       if (platform) {
-        const state = s.platform[platform];
-        if (!(state === 'ARCHIVED' || state === 'INSTALLED' || state === 'INSTALLED_RECORDED')) return false;
+        if (platform === 'revit') { if (!isTool(s)) return false; }
+        else {
+          const state = s.platform?.[platform];
+          if (!(state === 'ARCHIVED' || state === 'INSTALLED' || state === 'INSTALLED_RECORDED')) return false;
+        }
       }
       if (needGraphic && !s.graphic_reference_count) return false;
       if (needConversation && s.locator_status !== 'DIRECT_LINK') return false;
@@ -147,10 +168,10 @@
       <td class="smallcol">${validationPill(s.validation)}</td>
       <td class="num">${esc(s.version ?? '—')}</td>
       <td class="num">${s.graphic_reference_count || 0}</td>
-      <td class="smallcol">${platformBadges(s.platform)}</td>
-      <td class="smallcol">${esc(s.origin_project ?? '—')}<div class="small">${esc(LOCATOR_LABEL[s.locator_status] || s.locator_status)}</div></td>
+      <td class="smallcol">${isTool(s) ? pill('Revit / pyRevit', 'life-draft') : platformBadges(s.platform)}</td>
+      <td class="smallcol">${isTool(s) ? esc(s.release_state) : `${esc(s.origin_project ?? '—')}<div class="small">${esc(LOCATOR_LABEL[s.locator_status] || s.locator_status)}</div>`}</td>
       <td class="long">${esc(s.next_action ?? '—')}</td>
-      <td class="smallcol">${s.canonical_drive ? `<a class="launch-link" href="${esc(s.canonical_drive)}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">Drive ↗</a>` : '<span class="small">—</span>'}</td>
+      <td class="smallcol">${isTool(s) ? '<a class="launch-link" href="https://hub.ycsu.cc/" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">HUB ↗</a>' : s.canonical_drive ? `<a class="launch-link" href="${esc(s.canonical_drive)}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">Drive ↗</a>` : '<span class="small">—</span>'}</td>
     </tr>`).join('') : '<tr><td colspan="11" class="small">No Skill matches these filters.</td></tr>';
 
     document.querySelectorAll('#skRows tr[data-skill]').forEach(row => {
@@ -198,6 +219,7 @@
   // skill-thumbnails.json (DEC-012). They are not the private Drive graphic
   // references. Only a relative path inside assets/skill-thumbs/ is accepted.
   function thumbFor(s) {
+    if (isTool(s)) return /^assets\/tool-thumbs\/[\w-]+\.png$/.test(s.cover || '') ? s.cover : null;
     const path = typeof thumbs[s.id] === 'string' ? thumbs[s.id].trim() : '';
     return /^assets\/skill-thumbs\/[\w.-]+\.(webp|png|jpe?g)$/i.test(path) ? path : null;
   }
@@ -208,15 +230,15 @@
     const refs = s.graphic_reference_count || 0;
     const thumb = thumbFor(s);
     const cover = thumb
-      ? `<div class="sk-cover sk-cover-img"><img src="${esc(thumb)}" alt="" loading="lazy" decoding="async"></div>`
+      ? `<div class="sk-cover sk-cover-img${isTool(s) ? ' sk-tool-cover' : ''}"><img src="${esc(thumb)}" alt="" loading="lazy" decoding="async">${isTool(s) ? '<span>pyRevit</span>' : ''}</div>`
       : `<div class="sk-cover${refs ? ' sk-cover-has' : ''}"><span class="sk-cover-mark">${refs ? `${refs} ref${refs === 1 ? '' : 's'}` : 'no reference'}</span></div>`;
     return `<article class="task-card sk-card" data-card="${esc(s.id)}" tabindex="0">
       ${cover}
       <h3>${esc(s.name)}</h3>
       <div class="card-sub">${esc(s.taxonomy?.medium || s.taxonomy?.area || s.category)}</div>
       ${s.description ? `<p class="sk-description">${esc(s.description)}</p>` : ''}
-      <div class="task-meta">${lifecyclePill(s.lifecycle)}${validationPill(s.validation)}</div>
-      <div class="card-footer"><span>${esc(s.version ?? 'no version')}</span><span>·</span><span>${refs} ref${refs === 1 ? '' : 's'}</span></div>
+      <div class="task-meta">${isTool(s) ? pill('pyRevit 工具', 'life-draft') + pill(s.release_state, s.lifecycle === 'Candidate' ? 'life-candidate' : 'life-approved') : lifecyclePill(s.lifecycle) + validationPill(s.validation)}</div>
+      <div class="card-footer"><span>${esc(s.version ?? 'no version')}</span><span>·</span><span>${isTool(s) ? '原生操作未重新驗證' : `${refs} ref${refs === 1 ? '' : 's'}`}</span></div>
     </article>`;
   }
 
@@ -241,7 +263,9 @@
     const s = skills.find(item => item.id === id);
     if (!s) return;
     detailId = id;
+    detailTrigger = document.activeElement;
     $('skDetailTitle').textContent = s.name;
+    if (isTool(s)) { openToolDetail(s); showDetail(); return; }
     // The canonical folder has its own field; don't list it twice.
     const links = (s.links || []).filter(l => l.url !== s.canonical_drive)
       .map(l => { const url = safeUrl(l.url); return url ? `<a class="launch-link" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(l.label)} ↗</a>` : ''; }).join('');
@@ -274,10 +298,44 @@
       field('Reference / package links', links || '<span class="small">None recorded</span>', true),
       field('Registry entry', `${s.registered ? 'Registered Skill' : 'Pending candidate — not a released Skill'}<div class="small">${provenance(s)}</div>`, true)
     ].join('');
-    $('skDetailBackdrop').classList.add('open');
+    showDetail();
   }
 
-  function closeDetail() { $('skDetailBackdrop').classList.remove('open'); detailId = null; }
+  function openToolDetail(s) {
+    const thumb = thumbFor(s);
+    const links = (s.links || []).map(l => {
+      const url = safeUrl(l.url);
+      return url ? `<a class="launch-link" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(l.label)} ↗</a>` : '';
+    }).join('');
+    $('skDetailBody').innerHTML = [
+      thumb ? `<div class="detail-field detail-wide sk-detail-thumb sk-tool-detail-thumb"><img src="${esc(thumb)}" alt="${esc(s.name)} icon"></div>` : '',
+      field('類型 / Type', 'pyRevit 工具 · BIM / pyRevit'),
+      field('版本 / Version', esc(s.version)),
+      field('用途 / Purpose', esc(s.description), true),
+      field('發布 / Release', `${pill(s.release_state, s.lifecycle === 'Candidate' ? 'life-candidate' : 'life-approved')}<p>${esc(s.release_note)}</p>`, true),
+      field('驗證範圍 / Validation', esc(s.validation_note), true),
+      field('環境 / Environment', esc(s.compatibility), true),
+      field('限制 / Limits', esc(s.limitations), true),
+      field('安裝與卸載 / Installation', esc(s.installation), true),
+      field('入口與說明 / Links', links, true),
+      field('下一步 / Next action', esc(s.next_action), true),
+      field('Tasks 對應 / Task ID', esc(s.task_id)),
+      field('HUB Bubble ID', esc(s.hub_id)),
+      field('來源版本 / Source commit', esc(s.source_commit), true)
+    ].join('');
+  }
+
+  function showDetail() {
+    $('skDetailBackdrop').classList.add('open');
+    $('skDetailBackdrop').setAttribute('aria-hidden', 'false');
+    $('skDetailClose').focus();
+  }
+  function closeDetail() {
+    $('skDetailBackdrop').classList.remove('open');
+    $('skDetailBackdrop').setAttribute('aria-hidden', 'true');
+    detailId = null;
+    if (detailTrigger?.isConnected) detailTrigger.focus();
+  }
 
   // --- view ----------------------------------------------------------------
 
@@ -291,18 +349,39 @@
 
   function setView(next) { view = next; write(VIEW_KEY, next); applyView(); }
 
+  function showPyrevit() {
+    if (!index) { pendingToolsView = true; return; }
+    pendingToolsView = false;
+    ['skSearch', 'skDomain', 'skFamily', 'skCategory', 'skLifecycle', 'skValidation', 'skPlatform'].forEach(id => { $(id).value = ''; });
+    ['skHasGraphic', 'skHasConversation'].forEach(id => { $(id).checked = false; });
+    $('skCategory').value = 'BIM / pyRevit';
+    collapsed.delete('BIM / pyRevit');
+    setView('visual');
+    render();
+  }
+
   // --- wiring --------------------------------------------------------------
 
   $('tasksModeBtn').addEventListener('click', () => applyMode('tasks', true));
   $('skillsModeBtn').addEventListener('click', () => applyMode('skills', true));
   $('skListBtn').addEventListener('click', () => setView('list'));
   $('skVisualBtn').addEventListener('click', () => setView('visual'));
+  $('skPyrevitBtn').addEventListener('click', showPyrevit);
   ['skSearch', 'skDomain', 'skFamily', 'skCategory', 'skLifecycle', 'skValidation', 'skPlatform', 'skHasGraphic', 'skHasConversation']
     .forEach(id => $(id).addEventListener('input', render));
   $('skDetailClose').addEventListener('click', closeDetail);
   $('skDetailBackdrop').addEventListener('click', event => { if (event.target.id === 'skDetailBackdrop') closeDetail(); });
-  document.addEventListener('keydown', event => { if (event.key === 'Escape' && detailId !== null) closeDetail(); });
+  document.addEventListener('keydown', event => {
+    if (detailId === null) return;
+    if (event.key === 'Escape') closeDetail();
+    if (event.key === 'Tab') {
+      const focusable = [...$('skDetailBackdrop').querySelectorAll('button, a[href]')];
+      const first = focusable[0], last = focusable[focusable.length - 1];
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+    }
+  });
 
   applyView();
-  applyMode(read(MODE_KEY) === 'skills' ? 'skills' : 'tasks', false);
+  applyMode(location.hash === '#skills-pyrevit' || read(MODE_KEY) === 'skills' ? 'skills' : 'tasks', false);
 })();

@@ -279,3 +279,16 @@ Both remain Approved / Untested. Guest UI and Owner/Admin actual Launch → Driv
 ## YSU-SKILL-023 v1.1.1 名稱及 HUB package 同步
 
 023更新為墨影碎筆敘事 / Ink-Shadow Fragmented Narratives，canonical1.1.1、HUBpublic-r1，原Child/Main/slug及R02媒體保持。Registry生成索引只更新023，參考數10、Approved／Untested／未安裝；historicalPartial保留。詳見 INK_SHADOW_V111_RELEASE_20261004.md。新public ZIP網址只在protected Launch與私有HUB發布紀錄；公開source export省略新增的私人歷史canonical ZIP URL。
+
+## Native tool catalog in Skills Mode — 2026-10-08
+
+Skills Mode also displays four native pyRevit tools in a separate `BIM / pyRevit`
+group, with original-icon covers and tool-specific detail fields (DEC-028).
+The `BIM / pyRevit` shortcut opens the four cards and clears unrelated filters;
+`#skills-pyrevit` links directly to that view. Normal mode/view persistence remains.
+AI Skills still come exclusively from the unchanged generated Drive index.
+`tool-catalog.json` is the canonical GitHub record for native tool presentation;
+Tasks in Supabase retains development progress and is not edited by this UI.
+To update a native package's presentation, verify the source/Release and update its
+catalog record; never mark an unavailable ZIP as downloadable. HUB remains the
+normal download entry, with its own permissions unchanged.

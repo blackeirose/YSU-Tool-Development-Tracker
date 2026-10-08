@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "updated": "2026-10-08",
+  "source_repository": "https://github.com/blackeirose/YSU-pyRevit-Tools",
+  "tools": [
+    {
+      "id": "YSU-TOOL-REVISION-CLEANUP",
+      "kind": "pyrevit-tool",
+      "slug": "revision-cleanup",
+      "name": "修訂清理 / Revision Cleanup",
+      "category": "BIM / pyRevit",
+      "description": "清理專案修訂雲線、標籤與可刪除修訂，保留第一筆空白修訂。\nRemove revision clouds, tags and deletable revisions while retaining the first blank revision.",
+      "version": "1.0.1",
+      "lifecycle": "Approved",
+      "validation": "Partial",
+      "release_state": "正式包已發布",
+      "release_note": "2026-10-08 v1.0.1 套件／下載驗證通過；文件修正，執行程式與 v1.0.0 相同。",
+      "validation_note": "包裝、依賴、雜湊與下載驗證通過；本輪沒有重新進行原生 Revit 操作或逐版本相容性驗證。",
+      "compatibility": "Revit 2019+、pyRevit 4.8+（來源宣告，非逐版本實測）",
+      "limitations": "先備份模型，確認刪除範圍與 worksharing 狀態；受保護項目可能保留。",
+      "installation": "先解壓至暫存目錄，再依 README 合併目標按鈕。保留其他工具與共用 extension；卸載只移除目標按鈕。",
+      "next_action": "由 HUB 登入後下載；依 README 安裝，先於測試模型確認操作。",
+      "cover": "assets/tool-thumbs/revision-cleanup.png",
+      "task_id": "82c0f9d7-0d7a-4eb7-8a92-f6f0e2c58b2c",
+      "hub_id": "sat-pyrevit-cleanup",
+      "source_commit": "fda39086c0cba127a325ca8fa5136100dc9bb11c",
+      "links": [
+        {
+          "label": "HUB 下載入口（需登入）",
+          "url": "https://hub.ycsu.cc/"
+        },
+        {
+          "label": "原始碼 / Source",
+          "url": "https://github.com/blackeirose/YSU-pyRevit-Tools/tree/fda39086c0cba127a325ca8fa5136100dc9bb11c/tools/revision-cleanup"
+        },
+        {
+          "label": "安裝與限制 / README",
+          "url": "https://github.com/blackeirose/YSU-pyRevit-Tools/blob/fda39086c0cba127a325ca8fa5136100dc9bb11c/tools/revision-cleanup/README.txt"
+        }
+      ]
+    },
+    {
+      "id": "YSU-TOOL-PICK-FACE-MATERIAL",
+      "kind": "pyrevit-tool",
+      "slug": "pick-face-material",
+      "name": "面材質查詢 / Pick Face Material",
+      "category": "BIM / pyRevit",
+      "description": "點選模型表面，辨識材質、複製名稱並開啟 Materials；不修改模型。\nPick a face to identify its material, copy its name and open Materials without changing the model.",
+      "version": "1.0.1",
+      "lifecycle": "Approved",
+      "validation": "Partial",
+      "release_state": "正式包已發布",
+      "release_note": "2026-10-08 v1.0.1 套件／下載驗證通過；文件修正，執行程式與 v1.0.0 相同。",
+      "validation_note": "包裝、依賴、雜湊與下載驗證通過；本輪沒有重新進行原生 Revit 操作或逐版本相容性驗證。",
+      "compatibility": "Revit 2019+、pyRevit 4.8+（來源宣告，非逐版本實測）",
+      "limitations": "只支援目前模型的表面；不支援連結模型，未指定或無法解析的材質可能無法辨識。",
+      "installation": "先解壓至暫存目錄，再依 README 合併目標按鈕。保留其他工具與共用 extension；卸載只移除目標按鈕。",
+      "next_action": "由 HUB 登入後下載；依 README 安裝，先於測試模型確認操作。",
+      "cover": "assets/tool-thumbs/pick-face-material.png",
+      "task_id": "8f57aa13-eb7c-417f-ad5f-5deb7f867f74",
+      "hub_id": "sat-pyrevit-pickface",
+      "source_commit": "fda39086c0cba127a325ca8fa5136100dc9bb11c",
+      "links": [
+        {
+          "label": "HUB 下載入口（需登入）",
+          "url": "https://hub.ycsu.cc/"
+        },
+        {
+          "label": "原始碼 / Source",
+          "url": "https://github.com/blackeirose/YSU-pyRevit-Tools/tree/fda39086c0cba127a325ca8fa5136100dc9bb11c/tools/pick-face-material"
+        },
+        {
+          "label": "安裝與限制 / README",
+          "url": "https://github.com/blackeirose/YSU-pyRevit-Tools/blob/fda39086c0cba127a325ca8fa5136100dc9bb11c/tools/pick-face-material/README.txt"
+        }
+      ]
+    },
+    {
+      "id": "YSU-TOOL-SHEET-VIEW-TOOLS",
+      "kind": "pyrevit-tool",
+      "slug": "sheet-view-tools",
+      "name": "圖紙與視圖刪除 / Delete Sheets + Views",
+      "category": "BIM / pyRevit",
+      "description": "預覽並刪除所選圖紙及其專用視圖，保留其他圖紙仍使用的視圖、圖例與明細表。\nPreview and delete selected sheets and their exclusive views while preserving shared views, legends and schedules.",
+      "version": "1.0.1",
+      "lifecycle": "Approved",
+      "validation": "Partial",
+      "release_state": "正式包已發布",
+      "release_note": "2026-10-08 v1.0.1 套件／下載驗證通過；文件修正，執行程式與 v1.0.0 相同。",
+      "validation_note": "包裝、依賴、雜湊與下載驗證通過；本輪沒有重新進行原生 Revit 操作或逐版本相容性驗證。",
+      "compatibility": "Revit 2020–2026、pyRevit 4.8+（來源宣告，非逐版本實測）",
+      "limitations": "本包只含 Delete，不含 Add／Create；刪除前先確認預覽、備份及 worksharing 狀態。",
+      "installation": "先解壓至暫存目錄，再依 README 合併目標按鈕。保留其他工具與共用 extension；卸載只移除目標按鈕。",
+      "next_action": "由 HUB 登入後下載；依 README 安裝，先於測試模型確認操作。",
+      "cover": "assets/tool-thumbs/sheet-view-tools.png",
+      "task_id": "6234c6e0-536d-4eeb-a3c5-8c485dff5240",
+      "hub_id": "sat-pyrevit-deletesheet",
+      "source_commit": "fda39086c0cba127a325ca8fa5136100dc9bb11c",
+      "links": [
+        {
+          "label": "HUB 下載入口（需登入）",
+          "url": "https://hub.ycsu.cc/"
+        },
+        {
+          "label": "原始碼 / Source",
+          "url": "https://github.com/blackeirose/YSU-pyRevit-Tools/tree/fda39086c0cba127a325ca8fa5136100dc9bb11c/tools/sheet-view-tools"
+        },
+        {
+          "label": "安裝與限制 / README",
+          "url": "https://github.com/blackeirose/YSU-pyRevit-Tools/blob/fda39086c0cba127a325ca8fa5136100dc9bb11c/tools/sheet-view-tools/README.txt"
+        }
+      ]
+    },
+    {
+      "id": "YSU-TOOL-CREATE-COLOR-LEGEND",
+      "kind": "pyrevit-tool",
+      "slug": "create-color-legend",
+      "name": "建立材質色彩圖例 / Create Color Legend",
+      "category": "BIM / pyRevit",
+      "description": "依來源平面、類別與材質的 Description／顏色，建立或更新材質圖例。\nCreate or update material legends from a source plan, selected categories and material descriptions/colors.",
+      "version": "0.2.0-candidate",
+      "lifecycle": "Candidate",
+      "validation": "Untested",
+      "release_state": "候選版已核准 · 待打包",
+      "release_note": "2026-10-08 Owner 已核准候選版發布；不再等待本人原生驗收。ZIP／下載入口尚待完成。",
+      "validation_note": "9/9 來源檔一致性已核對；原生 Revit 2026 操作與逐版本相容性尚未驗證。",
+      "compatibility": "目標環境：Revit 2026、pyRevit、IronPython 2.7.12；原生驗收尚未完成。",
+      "limitations": "範圍依主要 View Range 與 Crop，忽略 Plan Region 局部範圍；Update All 逐張交易，須檢查部分失敗。",
+      "installation": "先解壓至暫存目錄，再依 README 合併目標按鈕。保留其他工具與共用 extension；卸載只移除目標按鈕。",
+      "next_action": "完成候選 ZIP、下載驗證與 HUB 發布；原生 Revit 驗收列為後續事項，請先於測試模型使用。",
+      "cover": "assets/tool-thumbs/create-color-legend.png",
+      "task_id": "e74ccc3c-a5f3-40d8-a6d3-bed240955a50",
+      "hub_id": "sat-pyrevit-sheetview",
+      "source_commit": "fda39086c0cba127a325ca8fa5136100dc9bb11c",
+      "links": [
+        {
+          "label": "HUB 入口（下載待完成）",
+          "url": "https://hub.ycsu.cc/"
+        },
+        {
+          "label": "原始碼 / Source",
+          "url": "https://github.com/blackeirose/YSU-pyRevit-Tools/tree/fda39086c0cba127a325ca8fa5136100dc9bb11c/tools/create-color-legend"
+        },
+        {
+          "label": "安裝與限制 / README",
+          "url": "https://github.com/blackeirose/YSU-pyRevit-Tools/blob/fda39086c0cba127a325ca8fa5136100dc9bb11c/tools/create-color-legend/README.md"
+        }
+      ]
+    }
+  ]
+}

@@ -6,12 +6,12 @@
   <title>YSU Tool Development Tracker</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="owner-ui.css?v=20260911-otp1">
-  <link rel="stylesheet" href="skills.css?v=20261001-taxonomy1">
+  <link rel="stylesheet" href="skills.css?v=20261008-pyrevit1">
 </head>
 <body>
 <div class="wrap">
   <h1>YSU Tracker</h1>
-  <div class="sub">Tasks tracks tool development. Skills indexes the YSU Skills registry held in Google Drive.</div>
+  <div class="sub">Tasks 追蹤開發進度；Skills 集中瀏覽 AI Skills 與 pyRevit 工具套件。</div>
 
   <div class="authbar">
     <span id="authState" class="small">Loading account…</span>
@@ -81,20 +81,21 @@
 
   <div id="skillsMode" class="hidden" role="tabpanel" aria-labelledby="skillsModeBtn">
     <div class="metrics">
-      <div class="metric">Skills shown<b id="skCount">0</b></div>
+      <div class="metric">Skills / Tools shown<b id="skCount">0</b></div>
       <div class="metric">Approved<b id="skApproved">0</b></div>
       <div class="metric">Verified in part<b id="skPartial">0</b></div>
       <div class="metric">Graphic references<b id="skRefs">0</b></div>
     </div>
 
     <div class="controls">
-      <input id="skSearch" placeholder="Search Skill / ID / purpose">
+      <button id="skPyrevitBtn" type="button">BIM / pyRevit</button>
+      <input id="skSearch" placeholder="Search Skill / tool / purpose" aria-label="Search Skill or tool">
       <select id="skDomain" aria-label="用途大類 / Domain"></select>
       <select id="skFamily" aria-label="風格大類 / Style family"></select>
       <select id="skCategory" aria-label="既有分類 / Legacy category"><option value="">All categories</option></select>
       <select id="skLifecycle"><option value="">All lifecycle</option><option>Candidate</option><option>Draft</option><option>Approved</option><option>Retired</option></select>
       <select id="skValidation"><option value="">All validation</option><option>Untested</option><option>Partial</option><option>Validated</option></select>
-      <select id="skPlatform"><option value="">All platforms</option><option value="drive">Archived in Drive</option><option value="chatgpt">Available in ChatGPT</option><option value="codex">Available in Codex</option></select>
+      <select id="skPlatform"><option value="">All platforms</option><option value="drive">Archived in Drive</option><option value="chatgpt">Available in ChatGPT</option><option value="codex">Available in Codex</option><option value="revit">Revit / pyRevit tools</option></select>
       <label class="sk-check"><input id="skHasGraphic" type="checkbox"> Has graphic reference</label>
       <label class="sk-check"><input id="skHasConversation" type="checkbox"> Has conversation link</label>
       <div class="view-switch"><button id="skListBtn" class="active" type="button">List</button><button id="skVisualBtn" type="button">Visual</button></div>
@@ -104,7 +105,7 @@
       <div class="tablewrap">
         <table id="skTable">
           <thead><tr>
-            <th style="cursor:default">Skill</th>
+            <th style="cursor:default">Skill / Tool</th>
             <th style="cursor:default">ID</th>
             <th style="cursor:default">Category</th>
             <th style="cursor:default">Lifecycle</th>
@@ -114,7 +115,7 @@
             <th style="cursor:default">Platform</th>
             <th style="cursor:default">Origin / locator</th>
             <th style="cursor:default">Next action</th>
-            <th style="cursor:default">Drive</th>
+            <th style="cursor:default">Open</th>
           </tr></thead>
           <tbody id="skRows"></tbody>
         </table>
@@ -125,7 +126,7 @@
     <div id="skSourceNote" class="small"></div>
   </div>
 
-  <div class="note">Tracker data is publicly readable. Editing, adding, deleting, and Kanban status changes are available only after the authorized owner signs in. Skills Mode is read-only for everyone: the registry is maintained in Google Drive.</div>
+  <div class="note">Tracker data is publicly readable. Tasks editing requires the authorized owner. Skills Mode is read-only: AI Skills come from the Drive registry; pyRevit tool cards come from the GitHub catalog. Package publication does not imply native Revit validation.</div>
 </div>
 
 <div id="detailBackdrop" class="detail-backdrop" aria-hidden="true">
@@ -146,7 +147,7 @@
 
 <div id="skDetailBackdrop" class="detail-backdrop" aria-hidden="true">
   <div class="detail-modal" role="dialog" aria-modal="true">
-    <div class="detail-top"><div><div class="small">Skill detail</div><h2 id="skDetailTitle"></h2></div><button id="skDetailClose" class="detail-close" type="button">×</button></div>
+    <div class="detail-top"><div><div class="small">Skill / Tool detail</div><h2 id="skDetailTitle"></h2></div><button id="skDetailClose" class="detail-close" type="button" aria-label="Close detail">×</button></div>
     <div id="skDetailBody" class="detail-grid"></div>
   </div>
 </div>
@@ -155,7 +156,7 @@
 <script src="app.js?v=20260911-otp1"></script>
 <script src="email-otp.js?v=20260911-otp1"></script>
 <script src="owner-ui.js?v=20260911-otp1"></script>
-<script src="skills.js?v=20261001-taxonomy1"></script>
+<script src="skills.js?v=20261008-pyrevit1"></script>
 <script>
 const trackerBaseUpdateMetrics = updateMetrics;
 updateMetrics = function(){

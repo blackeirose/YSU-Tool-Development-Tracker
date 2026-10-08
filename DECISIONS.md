@@ -494,3 +494,30 @@ Owner explicitly authorizes completion of photography Hub publication and this s
 Read-back canonical Drive Registry supplies Published to Hub status, actual Hub entry, Bubble IDs, package revision and publication times. Keep both Approved / Untested; normal Member UI remains NOT VERIFIED due to no suitable session. Owner/Admin Launch-to-Drive actual downloads and Guest sign-in boundary were tested separately. New 029 release changes publishing documents only; canonical Skill, prompts and reference bytes remain unchanged. Public release download URLs stay in protected Hub Launch and private release records, never this public Tracker export.
 
 Regenerate with the existing generator; only 018/029 index entries change, preserving the other 29 entries, counts (30 registered + 1 pending, 18 explicit metadata), thumbnails and taxonomy. Existing 37 tests passed in an approved execution environment using existing Node/jsdom, without Admin or device changes. No Tracker app/UI/Tasks/Auth changes, no Hub code/schema/RLS/Auth/deployment changes. Prior no-Hub statements remain historical.
+
+## DEC-028 — Native pyRevit tool cards in Skills Mode
+
+**Date:** 2026-10-08 America/Los_Angeles. **Scope:** read-only catalog presentation.
+
+Owner requests four covered pyRevit cards inside the existing Skills area under
+`BIM / pyRevit`; Tasks remains the separate development/completion tracker.
+Retain the two top-level modes and the SKILLS label. Distinguish native tools from
+AI Skills in cards/detail and use separate `YSU-TOOL-*` IDs, never Skill IDs.
+
+The existing Drive registry and generated `skills.json` remain authoritative and
+unchanged for AI Skills (DEC-009). A companion, GitHub-maintained
+`tool-catalog.json` holds these four native packages and their existing Tasks/HUB
+IDs. Rendering combines the catalogs, not their storage or lifecycle semantics.
+No Supabase writes or registry migration are part of this UI change.
+
+Use byte-identical original public package icons as covers. Show package release,
+validation limits, declared target environments, installation instructions and HUB
+entry links. Keep protected download URLs out of the public catalog. Exclude Level
+Migrate and Plumbing. Three v1.0.1 packages are published; this does not certify
+new Revit execution or all versions.
+
+Owner separately authorized Color Legend 0.2.0-candidate publication without
+waiting for personal native acceptance. Reflect that decision as approved/pending
+packaging, not a completed download. Native testing remains NOT VERIFIED. This
+supersedes only the owner-wait publication gate, not the evidence limits. No ZIP
+publication, HUB/MAIN mutation or native Revit testing occurs in this Tracker task.
