@@ -1,7 +1,7 @@
 # YSU Skills Registry — 統一管理總表
 
 
-紀錄日期：2026-09-21；最新更新：2026-10-08 UTC。Owner：YuCheng Su。  
+紀錄日期：2026-09-21；最新更新：2026-10-09 UTC。Owner：YuCheng Su。  
 管理入口：Google Drive / My Drive / AI Works / 06_Skills。  
 資料夾：https://drive.google.com/drive/folders/1P6b3rLGzrdev1Lh6tZVGAWnPcNkNYoV_
 
@@ -18,9 +18,9 @@
 
 | ID | 名稱／用途 | 最新已知版本 | Drive 歸檔 | 本機安裝 | ChatGPT Plugins／分享 |  
 |---|---|---|---|---|---|  
-| YSU-SKILL-001 | YSU Scientific Interactive Simulator Skill；科學／工程互動模擬器 | v1.1.1 | 完整 12 檔原始套件已上傳；回下載 SHA-256 一致 | 未核實 | Plugin-ready 檔案已存在；安裝、發布及分享連結均未核實 |  
-| YSU-SKILL-002 | Revit Vehicle Family Builder；Revit 車輛 Family 製作 | 紀錄：installed v1.0.1 / source v1.0.0 | 來源核對紀錄已歸檔；完整來源及逐檔版本比對待完成 | 既有紀錄顯示已安裝；本輪未重驗 | 未核實；不要把 Codex 安裝當成 ChatGPT 安裝 |  
-| YSU-SKILL-003 | YSU Site & Construction Film；場地／施工影片 | 實讀原始 v1.0.0 / 1d05934 | 19 檔原始 ZIP 已回下載驗證；6 圖補充包另存保留 | 既有 installed junction 同源，唯讀核對；未重新安裝或重驗新對話載入 | 未核實；不包含人物對話敘事影片總流程 |  
+| YSU-SKILL-001 | YSU Scientific Interactive Simulator Skill；科學／工程互動模擬器 | v1.1.1 | 完整 12 檔原始 ZIP 已取回核對；獨立 public-r1 ZIP 已上傳並匿名回下載驗證 | 未核實 | Plugin-ready 檔案已存在；安裝、發布及分享連結均未核實 |  
+| YSU-SKILL-002 | Revit Vehicle Family Builder；Revit 車輛 Family 製作 | 紀錄：installed v1.0.1 / source v1.0.0 | 完整 source／installed 目錄已比對；保留 installed v1.0.1；可分享 ZIP 已上傳並匿名回下載驗證 | 既有紀錄顯示已安裝；本輪未重驗 | 未核實；不要把 Codex 安裝當成 ChatGPT 安裝 |  
+| YSU-SKILL-003 | YSU Site & Construction Film；場地／施工影片 | 實讀原始 v1.0.0 / 1d05934 | 2026-09-24 完整 19 檔原始 ZIP 已取回核對；獨立 public-r1 ZIP 已上傳並匿名回下載驗證；6 圖補充包另存保留 | 既有 installed junction 同源，唯讀核對；未重新安裝或重驗新對話載入 | 未核實；不包含人物對話敘事影片總流程 |  
 | YSU-SKILL-004 | Film Center / Router | 文件／參考 v0.2.0 | persistent team／CURRENT FILM／Handoff 規則已更新；3 Graphic＋v0.2.0 ZIP 已歸檔 | 未安裝／未驗證 | 未發布、未改分享；非 runtime release |  
 | YSU-SKILL-005 | Narrative Direction | 文件／參考 v0.2.0 | Camera Grammar＋Beat-to-Shot；6 Graphic＋v0.2.0 ZIP 已歸檔 | 未安裝／未驗證 | 未發布、未改分享；非 runtime release |  
 | YSU-SKILL-006 | AAA Character Bible System v2 | 文件／參考 package 0.1.1 | MD＋範本＋8 張 Graphic＋ZIP 已歸檔；雜湊讀回通過 | 未安裝／未驗證 | 未發布、未改分享；非 runtime release |  
@@ -62,6 +62,28 @@
 
 ## YSU-SKILL-001 — Scientific Interactive Simulator
 
+Tracker Metadata:
+- Lifecycle: Approved
+- Validation: Partial
+- Version: 1.1.1
+- Drive: ARCHIVED
+- ChatGPT: UNVERIFIED
+- Codex: UNVERIFIED
+- Next Action: Published to Hub：v1.1.1 / public-r1；b_c2071a8f-cad6-43a8-a651-723f7ddcba1d；https://hub.ycsu.cc/；2026-10-09 UTC。完整下載／Owner Launch／Guest 登入限制／桌面及手機 Detail 已驗證；普通 Member 未驗證。保留 Approved／Partial；本次未安裝。
+
+### 2026-10-09 UTC — HUB 正式發布（本次現況）
+
+- Hub publication: Published to Hub；v1.1.1 / public-r1；Bubble ID `b_c2071a8f-cad6-43a8-a651-723f7ddcba1d`；Main，parent 為空。
+- HUB 入口：https://hub.ycsu.cc/ 。下載 URL 只由既有 protected Launch 提供，公開 Tracker 匯出須省略。
+- 私有會員 Launch 映射：public-r1 ZIP（下載連結僅由HUB會員入口提供）；大小 46355 bytes；SHA-256 `cfc9e998a95bbeb0ed5deeacbf2bae5a9285cd31978b371d430e6b3fa3831a7b`。
+- 驗收：匿名 HTTP 完整 bytes、CRC、manifest、解壓及 Owner 瀏覽器 Launch→Drive→Download 通過；Guest 維持 Sign in to Launch。普通 Member session 與全新匿名瀏覽器 ZIP 下載 NOT VERIFIED。
+- 來源與邊界：保留 v1.1.1 核心規則、helpers、templates 與來源完整性；公開包只調整發行／安裝／來源說明，不冒稱已部署的通用模擬器。未重新安裝或重驗科學工程模型。
+- 圖片：沿用既有 Tracker 核可封面，兩槽同圖，不含完整私人參考集。精準回復、差異及 all-off 清單存於私有 HUB 發布紀錄。
+- 狀態：Approved / Partial；既有安裝歷史保持原紀錄，本輪沒有安裝或新增原生執行／影像驗證。
+
+
+
+
 
 Skill ID：ysu-scientific-interactive-simulator  
 中央資料夾：https://drive.google.com/drive/folders/1HpDA1z6_2YIEzcSezC5PvA-GdUgNgFUc  
@@ -80,6 +102,28 @@ SKILL_PREVIEW_v1.1.1.md 只是唯讀閱讀預覽；其相對連結所指的檔�
 
 ## YSU-SKILL-002 — Revit Vehicle Family Builder
 
+Tracker Metadata:
+- Lifecycle: Approved
+- Validation: Partial
+- Version: 1.0.1
+- Drive: ARCHIVED
+- ChatGPT: UNVERIFIED
+- Codex: INSTALLED_RECORDED
+- Next Action: Published to Hub：v1.0.1 / public-r1；b_1198cede-0f00-4fe4-bec3-c8e59f6b5377；https://hub.ycsu.cc/；2026-10-09 UTC。完整下載／Owner Launch／Guest 登入限制／桌面及手機 Detail 已驗證；普通 Member 未驗證。保留 Approved／Partial；本次未安裝。
+
+### 2026-10-09 UTC — HUB 正式發布（本次現況）
+
+- Hub publication: Published to Hub；v1.0.1 / public-r1；Bubble ID `b_1198cede-0f00-4fe4-bec3-c8e59f6b5377`；Main，parent 為空。
+- HUB 入口：https://hub.ycsu.cc/ 。下載 URL 只由既有 protected Launch 提供，公開 Tracker 匯出須省略。
+- 私有會員 Launch 映射：public-r1 ZIP（下載連結僅由HUB會員入口提供）；大小 77550 bytes；SHA-256 `6066198e5ff82d56dce10dd7924dc4e8a4d4329013380ae220d02daa3a34b7de`。
+- 驗收：匿名 HTTP 完整 bytes、CRC、manifest、解壓及 Owner 瀏覽器 Launch→Drive→Download 通過；Guest 維持 Sign in to Launch。普通 Member session 與全新匿名瀏覽器 ZIP 下載 NOT VERIFIED。
+- 來源與邊界：完整目錄比對保留 Git source master@70f1a23 v1.0.0 與 installed v1.0.1 的 4 個修改檔、1 個 installed-only 與來源工具文件差異。公開包採較新 installed v1.0.1；私有原始證據及來源仍保留，未用 revit-family-builder 替代。轉彎相容性歷史 FAIL 保留，未重跑 Revit。
+- 圖片：沿用既有 Tracker 核可封面，兩槽同圖，不含完整私人參考集。精準回復、差異及 all-off 清單存於私有 HUB 發布紀錄。
+- 狀態：Approved / Partial；既有安裝歷史保持原紀錄，本輪沒有安裝或新增原生執行／影像驗證。
+
+
+
+
 
 Skill ID：revit-vehicle-family-builder  
 中央資料夾：https://drive.google.com/drive/folders/11Qpu4WY94zEMBqSFg6ycD9kZ8oLrRF6Q  
@@ -97,6 +141,28 @@ Skill ID：revit-vehicle-family-builder
 
 
 ## YSU-SKILL-003 — Site & Construction Film
+
+Tracker Metadata:
+- Lifecycle: Approved
+- Validation: Partial
+- Version: 1.0.0
+- Drive: ARCHIVED
+- ChatGPT: UNVERIFIED
+- Codex: INSTALLED_RECORDED
+- Next Action: Published to Hub：v1.0.0 / public-r1；demo-narrative-film；https://hub.ycsu.cc/；2026-10-09 UTC。完整下載／Owner Launch／Guest 登入限制／桌面及手機 Detail 已驗證；普通 Member 未驗證。保留 Approved／Partial；本次未安裝。
+
+### 2026-10-09 UTC — HUB 正式發布（本次現況）
+
+- Hub publication: Published to Hub；v1.0.0 / public-r1；Bubble ID `demo-narrative-film`；Main，parent 為空。
+- HUB 入口：https://hub.ycsu.cc/ 。下載 URL 只由既有 protected Launch 提供，公開 Tracker 匯出須省略。
+- 私有會員 Launch 映射：public-r1 ZIP（下載連結僅由HUB會員入口提供）；大小 113900 bytes；SHA-256 `82c6423cff5927151cc9c5379d4c739dad2e66be472a9610a31351d1a257bdc9`。
+- 驗收：匿名 HTTP 完整 bytes、CRC、manifest、解壓及 Owner 瀏覽器 Launch→Drive→Download 通過；Guest 維持 Sign in to Launch。普通 Member session 與全新匿名瀏覽器 ZIP 下載 NOT VERIFIED。
+- 來源與邊界：以 2026-09-24 原始來源取回完成紀錄與本輪真實 ZIP 為準；較早缺件敘述保留為歷史。分類維持影片與動畫。移除私人專案證據與付費素材，保留 reusable rules/templates/helpers；本輪既有 resume 測試 17/17 通過，未製作影片。
+- 圖片：沿用既有 Tracker 核可封面，兩槽同圖，不含完整私人參考集。精準回復、差異及 all-off 清單存於私有 HUB 發布紀錄。
+- 狀態：Approved / Partial；既有安裝歷史保持原紀錄，本輪沒有安裝或新增原生執行／影像驗證。
+
+
+
 
 
 Skill ID：ysu-site-construction-film  

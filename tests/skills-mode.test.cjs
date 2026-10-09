@@ -243,7 +243,10 @@ test('taxonomy separates purpose from style and keeps paper styles together',asy
   f.get('skDomain').value='建築與空間 / Architecture & Space';f.get('skDomain').dispatchEvent(new f.w.Event('input'));
   assert.equal(f.rows().length,0,'independent filters intersect; no invented architecture support');
   f.get('skFamily').value='';f.get('skFamily').dispatchEvent(new f.w.Event('input'));
-  assert.deepEqual(f.rows().map(r=>r.dataset.skill).sort(),['YSU-SKILL-002','YSU-SKILL-003']);
+  assert.deepEqual(f.rows().map(r=>r.dataset.skill).sort(),['YSU-SKILL-002']);
+  f.get('skDomain').value='影片與動畫 / Film & Animation';f.get('skDomain').dispatchEvent(new f.w.Event('input'));
+  assert.ok(f.rows().some(r=>r.dataset.skill==='YSU-SKILL-003'),'site/construction film stays in the already-published film domain');
+  assert.ok(!f.rows().some(r=>r.dataset.skill==='YSU-SKILL-002'));
   f.get('skDomain').value='圖像與風格 / Image & Style';f.get('skDomain').dispatchEvent(new f.w.Event('input'));
   f.get('skVisualBtn').click();
   assert.equal(f.d.querySelectorAll('.sk-family-head').length,3,'image/style Skills still use only three style families');

@@ -17,16 +17,16 @@
     "source": "Skill Taxonomy v1 table in canonical Drive registry"
   },
   "$comment": "GENERATED FILE — do not edit by hand. Source: Google Drive AI Works/06_Skills/00_SKILL_REGISTRY.md. Regenerate with `npm run skills:index`.",
-  "generated_at": "2026-10-08T23:56:22.209Z",
+  "generated_at": "2026-10-09T05:24:39.115Z",
   "source": {
     "file": "skills-source/00_SKILL_REGISTRY.md",
     "drive_file_id": "1g6Io9lD4YwkDaX5_OUqssvrcEyuCF-1P",
-    "registry_updated": "2026-10-08"
+    "registry_updated": "2026-10-09"
   },
   "registry": {
     "title": "YSU Skills Registry — 統一管理總表",
     "recorded": "2026-09-21",
-    "updated": "2026-10-08",
+    "updated": "2026-10-09",
     "owner": "YuCheng Su",
     "management_conversation": "YSU Skills 管理中心",
     "drive_folder": "https://drive.google.com/drive/folders/1P6b3rLGzrdev1Lh6tZVGAWnPcNkNYoV_",
@@ -45,7 +45,7 @@
     "total": 40,
     "registered": 39,
     "pending": 1,
-    "with_explicit_metadata": 27
+    "with_explicit_metadata": 30
   },
   "warnings": [],
   "skills": [
@@ -66,7 +66,7 @@
         "codex": "UNVERIFIED"
       },
       "platform_notes": {
-        "drive": "完整 12 檔原始套件已上傳；回下載 SHA-256 一致",
+        "drive": "完整 12 檔原始 ZIP 已取回核對；獨立 public-r1 ZIP 已上傳並匿名回下載驗證",
         "chatgpt": "Plugin-ready 檔案已存在；安裝、發布及分享連結均未核實",
         "codex": "未核實"
       },
@@ -75,7 +75,7 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": null,
+      "next_action": "Published to Hub：v1.1.1 / public-r1；b_c2071a8f-cad6-43a8-a651-723f7ddcba1d；https://hub.ycsu.cc/；2026-10-09 UTC。完整下載／Owner Launch／Guest 登入限制／桌面及手機 Detail 已驗證；普通 Member 未驗證。保留 Approved／Partial；本次未安裝。",
       "canonical_drive": "https://drive.google.com/drive/folders/1HpDA1z6_2YIEzcSezC5PvA-GdUgNgFUc",
       "links": [
         {
@@ -89,9 +89,9 @@
         "name": "derived",
         "slug": "derived",
         "category": "derived",
-        "lifecycle": "derived",
-        "validation": "derived",
-        "version": "derived",
+        "lifecycle": "explicit",
+        "validation": "explicit",
+        "version": "explicit",
         "version_note": "derived",
         "description": "derived",
         "graphic_reference_count": "derived",
@@ -102,12 +102,15 @@
         "origin_conversation_url": "derived",
         "locator_status": "derived",
         "related_conversations": "derived",
-        "next_action": "derived",
+        "next_action": "explicit",
         "canonical_drive": "derived",
         "links": "derived",
-        "registered": "derived"
+        "registered": "derived",
+        "platform.drive": "explicit",
+        "platform.chatgpt": "explicit",
+        "platform.codex": "explicit"
       },
-      "has_explicit_metadata": false,
+      "has_explicit_metadata": true,
       "taxonomy": {
         "version": "1.0",
         "domain_id": "engineering-science",
@@ -140,7 +143,7 @@
         "codex": "INSTALLED_RECORDED"
       },
       "platform_notes": {
-        "drive": "來源核對紀錄已歸檔；完整來源及逐檔版本比對待完成",
+        "drive": "完整 source／installed 目錄已比對；保留 installed v1.0.1；可分享 ZIP 已上傳並匿名回下載驗證",
         "chatgpt": "未核實；不要把 Codex 安裝當成 ChatGPT 安裝",
         "codex": "既有紀錄顯示已安裝；本輪未重驗"
       },
@@ -149,7 +152,7 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": "比較完整目錄而不只 SKILL.md；保留較新的 installed 改進與所有差異，查清 canonical source，再產出可移交套件、驗證和歸檔。禁止用舊 v1.0.0 覆蓋 v1.0.1。",
+      "next_action": "Published to Hub：v1.0.1 / public-r1；b_1198cede-0f00-4fe4-bec3-c8e59f6b5377；https://hub.ycsu.cc/；2026-10-09 UTC。完整下載／Owner Launch／Guest 登入限制／桌面及手機 Detail 已驗證；普通 Member 未驗證。保留 Approved／Partial；本次未安裝。",
       "canonical_drive": "https://drive.google.com/drive/folders/11Qpu4WY94zEMBqSFg6ycD9kZ8oLrRF6Q",
       "links": [
         {
@@ -163,9 +166,9 @@
         "name": "derived",
         "slug": "derived",
         "category": "derived",
-        "lifecycle": "derived",
-        "validation": "derived",
-        "version": "derived",
+        "lifecycle": "explicit",
+        "validation": "explicit",
+        "version": "explicit",
         "version_note": "derived",
         "description": "derived",
         "graphic_reference_count": "derived",
@@ -176,12 +179,15 @@
         "origin_conversation_url": "derived",
         "locator_status": "derived",
         "related_conversations": "derived",
-        "next_action": "derived",
+        "next_action": "explicit",
         "canonical_drive": "derived",
         "links": "derived",
-        "registered": "derived"
+        "registered": "derived",
+        "platform.drive": "explicit",
+        "platform.chatgpt": "explicit",
+        "platform.codex": "explicit"
       },
-      "has_explicit_metadata": false,
+      "has_explicit_metadata": true,
       "taxonomy": {
         "version": "1.0",
         "domain_id": "architecture-space",
@@ -214,7 +220,7 @@
         "codex": "INSTALLED_RECORDED"
       },
       "platform_notes": {
-        "drive": "19 檔原始 ZIP 已回下載驗證；6 圖補充包另存保留",
+        "drive": "2026-09-24 完整 19 檔原始 ZIP 已取回核對；獨立 public-r1 ZIP 已上傳並匿名回下載驗證；6 圖補充包另存保留",
         "chatgpt": "未核實；不包含人物對話敘事影片總流程",
         "codex": "既有 installed junction 同源，唯讀核對；未重新安裝或重驗新對話載入"
       },
@@ -223,7 +229,7 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": "取得包含 references/templates/helpers/tests 的完整來源，保存驗證紀錄，檢查私人媒體／專案路徑等分享邊界，再歸檔及處理平台安裝。不要將 Mānoa 原始影片、Premiere 專案或付費生成流程一起重新執行。",
+      "next_action": "Published to Hub：v1.0.0 / public-r1；demo-narrative-film；https://hub.ycsu.cc/；2026-10-09 UTC。完整下載／Owner Launch／Guest 登入限制／桌面及手機 Detail 已驗證；普通 Member 未驗證。保留 Approved／Partial；本次未安裝。",
       "canonical_drive": "https://drive.google.com/drive/folders/1mgO1gN0uleu5pGJUDEgVo5caR7dtGprh",
       "links": [
         {
@@ -241,9 +247,9 @@
         "name": "derived",
         "slug": "derived",
         "category": "derived",
-        "lifecycle": "derived",
-        "validation": "derived",
-        "version": "derived",
+        "lifecycle": "explicit",
+        "validation": "explicit",
+        "version": "explicit",
         "version_note": "derived",
         "description": "derived",
         "graphic_reference_count": "derived",
@@ -254,12 +260,15 @@
         "origin_conversation_url": "derived",
         "locator_status": "derived",
         "related_conversations": "derived",
-        "next_action": "derived",
+        "next_action": "explicit",
         "canonical_drive": "derived",
         "links": "derived",
-        "registered": "derived"
+        "registered": "derived",
+        "platform.drive": "explicit",
+        "platform.chatgpt": "explicit",
+        "platform.codex": "explicit"
       },
-      "has_explicit_metadata": false,
+      "has_explicit_metadata": true,
       "taxonomy": {
         "version": "1.0",
         "domain_id": "film-animation",
