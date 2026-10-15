@@ -17,7 +17,7 @@
     "source": "Skill Taxonomy v1 table in canonical Drive registry"
   },
   "$comment": "GENERATED FILE — do not edit by hand. Source: Google Drive AI Works/06_Skills/00_SKILL_REGISTRY.md. Regenerate with `npm run skills:index`.",
-  "generated_at": "2026-10-15T06:53:19.026Z",
+  "generated_at": "2026-10-15T21:35:09.543Z",
   "source": {
     "file": "skills-source/00_SKILL_REGISTRY.md",
     "drive_file_id": "1g6Io9lD4YwkDaX5_OUqssvrcEyuCF-1P",
@@ -3341,7 +3341,7 @@
       },
       "platform_notes": {
         "drive": "七份標準檔、雙語Prompt、24張原參考、縮圖與測試證據已歸檔；ZIP回下載完整核對通過",
-        "chatgpt": "ChatGPT Skills頁已保存；新對話載入未驗證；未發布Hub",
+        "chatgpt": "ChatGPT Skills頁已保存；新對話載入未驗證；Published to Hub v1.0.0/public-r1（2026-10-15）",
         "codex": "未安裝"
       },
       "origin_project": "Style Skill Factory",
@@ -3349,7 +3349,7 @@
       "origin_conversation_url": null,
       "locator_status": "PROJECT_TITLE_ONLY",
       "related_conversations": [],
-      "next_action": "依PRESERVE／RECOMPOSE使用；新版泛用Prompt待實測；準備HUB遷移，尚未發布。ChatGPT已保存，跨對話載入未驗證。",
+      "next_action": "依PRESERVE／RECOMPOSE使用；新版泛用Prompt待實測；Published to Hub v1.0.0/public-r1（2026-10-15）；會員下載見HUB。ChatGPT已保存，跨對話載入未驗證。",
       "canonical_drive": "https://drive.google.com/drive/folders/1tNzKfrCNkosv90BDbVotgV6t3O5xUXug",
       "links": [
         {
@@ -3429,7 +3429,7 @@
       },
       "platform_notes": {
         "drive": "七份標準檔、雙語Prompt、14張原參考、縮圖與測試證據已歸檔；ZIP回下載完整核對通過",
-        "chatgpt": "ChatGPT Skills頁已保存；新對話載入未驗證；未發布Hub",
+        "chatgpt": "ChatGPT Skills頁已保存；新對話載入未驗證；Published to Hub v1.0.0/public-r1（2026-10-15）",
         "codex": "未安裝"
       },
       "origin_project": "Style Skill Factory",
@@ -3437,7 +3437,7 @@
       "origin_conversation_url": null,
       "locator_status": "PROJECT_TITLE_ONLY",
       "related_conversations": [],
-      "next_action": "依RECOMPOSE使用；新版泛用Prompt待實測；準備HUB遷移，尚未發布。ChatGPT已保存，跨對話載入未驗證。",
+      "next_action": "依RECOMPOSE使用；新版泛用Prompt待實測；Published to Hub v1.0.0/public-r1（2026-10-15）；會員下載見HUB。ChatGPT已保存，跨對話載入未驗證。",
       "canonical_drive": "https://drive.google.com/drive/folders/1amlXBEk0fKPMOdW4quPOFWagEk-kZL78",
       "links": [
         {
@@ -3517,7 +3517,7 @@
       },
       "platform_notes": {
         "drive": "七份標準檔、雙語Prompt、10張原參考、縮圖與測試證據已歸檔；ZIP回下載完整核對通過",
-        "chatgpt": "ChatGPT Skills頁已保存；新對話載入未驗證；未發布Hub",
+        "chatgpt": "ChatGPT Skills頁已保存；新對話載入未驗證；Published to Hub v1.0.0/public-r1（2026-10-15）",
         "codex": "未安裝"
       },
       "origin_project": "Style Skill Factory",
@@ -3525,7 +3525,7 @@
       "origin_conversation_url": null,
       "locator_status": "PROJECT_TITLE_ONLY",
       "related_conversations": [],
-      "next_action": "依PRESERVE使用；新版泛用Prompt待實測；準備HUB遷移，尚未發布。ChatGPT已保存，跨對話載入未驗證。",
+      "next_action": "依PRESERVE使用；新版泛用Prompt待實測；Published to Hub v1.0.0/public-r1（2026-10-15）；會員下載見HUB。ChatGPT已保存，跨對話載入未驗證。",
       "canonical_drive": "https://drive.google.com/drive/folders/1hddwPsBIeDABcia7LbWoY-kPhKS934Rj",
       "links": [
         {
@@ -3605,7 +3605,7 @@
       },
       "platform_notes": {
         "drive": "七份標準檔、雙語Prompt、9張原參考、縮圖與測試證據已歸檔；ZIP回下載完整核對通過",
-        "chatgpt": "ChatGPT Skills頁已保存；新對話載入未驗證；未發布Hub",
+        "chatgpt": "ChatGPT Skills頁已保存；新對話載入未驗證；Published to Hub v1.0.0/public-r1（2026-10-15）",
         "codex": "未安裝"
       },
       "origin_project": "Style Skill Factory",
@@ -3613,7 +3613,7 @@
       "origin_conversation_url": null,
       "locator_status": "PROJECT_TITLE_ONLY",
       "related_conversations": [],
-      "next_action": "依PRESERVE使用；新版泛用Prompt待實測；準備HUB遷移，尚未發布。ChatGPT已保存，跨對話載入未驗證。",
+      "next_action": "依PRESERVE使用；新版泛用Prompt待實測；Published to Hub v1.0.0/public-r1（2026-10-15）；會員下載見HUB。ChatGPT已保存，跨對話載入未驗證。",
       "canonical_drive": "https://drive.google.com/drive/folders/1qMaszA7pakcwUyafWa4xSEJqwiSKQcbf",
       "links": [
         {
@@ -3693,7 +3693,7 @@
       },
       "platform_notes": {
         "drive": "七份標準檔、雙語Prompt、21張原參考、縮圖與測試證據已歸檔；ZIP回下載完整核對通過",
-        "chatgpt": "ChatGPT Skills頁已保存；新對話載入未驗證；未發布Hub",
+        "chatgpt": "ChatGPT Skills頁已保存；新對話載入未驗證；Published to Hub v1.0.0/public-r1（2026-10-15）",
         "codex": "未安裝"
       },
       "origin_project": "Style Skill Factory",
@@ -3701,7 +3701,7 @@
       "origin_conversation_url": null,
       "locator_status": "PROJECT_TITLE_ONLY",
       "related_conversations": [],
-      "next_action": "依PRESERVE／RECOMPOSE使用；新版泛用Prompt待實測；DENSE切入小圖未實測；準備HUB遷移，尚未發布。ChatGPT已保存，跨對話載入未驗證。",
+      "next_action": "依PRESERVE／RECOMPOSE使用；新版泛用Prompt待實測；DENSE切入小圖未實測；Published to Hub v1.0.0/public-r1（2026-10-15）；會員下載見HUB。ChatGPT已保存，跨對話載入未驗證。",
       "canonical_drive": "https://drive.google.com/drive/folders/1l4S9ldIwE1Ik7yXoBmAZPS-jfdXzLmMX",
       "links": [
         {
