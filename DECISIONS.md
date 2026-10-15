@@ -525,3 +525,8 @@ waiting for personal native acceptance. Reflect that decision as approved/pendin
 packaging, not a completed download. Native testing remains NOT VERIFIED. This
 supersedes only the owner-wait publication gate, not the evidence limits. No ZIP
 publication, HUB/MAIN mutation or native Revit testing occurs in this Tracker task.
+
+
+## DEC-030 — P20261014 five approved style packages
+
+2026-10-15 UTC. Standing Factory catalog/cover authorization covers 040–044 from source slots 1/2/3/4/6. Approved/Partial v1.0.0; modes: dual, RECOMPOSE-only, PRESERVE-only, PRESERVE-only, dual. 042 is independent of 025; 044 dense cut-ins remain image-untested. Use existing broad families and original-reference covers (041/043 crop the lower styled panel). Full sources and ZIPs remain private; no HUB action. ChatGPT Skills-page packages saved, fresh-session invocation unverified; Codex/Gemini not installed. Export the read-back canonical Registry with the current 12 private/protected-link omissions. No app/Tasks/Auth changes. See docs/validation/p20261014-040-044.md.

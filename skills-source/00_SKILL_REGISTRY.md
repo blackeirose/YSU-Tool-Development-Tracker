@@ -1,13 +1,13 @@
 # YSU Skills Registry — 統一管理總表
 
 
-紀錄日期：2026-09-21；最新更新：2026-10-09 UTC。Owner：YuCheng Su。  
+紀錄日期：2026-09-21；最新更新：2026-10-15 UTC。Owner：YuCheng Su。  
 管理入口：Google Drive / My Drive / AI Works / 06_Skills。  
 資料夾：https://drive.google.com/drive/folders/1P6b3rLGzrdev1Lh6tZVGAWnPcNkNYoV_
 
 
 本表是已登錄 YSU 自製 Skills 的管理索引，不是帳號中所有第三方 Skills 的盤點。  
-目前 39 個已登錄項目：新增 YSU-SKILL-039 流線原子筆敘事 v1.0.0（P20，Approved／Partial；保留構圖單模式）；新增 YSU-SKILL-033–038 六套 P11–P16 風格 v1.0.0（Approved／Partial；四單模式、兩雙模式），ACR 仍待定；新增 YSU-SKILL-032 生活街景墨線水彩 v1.0.0（Approved／Partial）；新增 YSU-SKILL-031 岩彩幻境敘事 v1.0.0（Approved／Partial；預設保留構圖、可選風格重構）；新增 YSU-SKILL-030 留白建築明信片 v1.0.0（WC-C）；新增 YSU-SKILL-029 古畫捲軸雕塑高訂 v1.0.0；YSU-SKILL-028 逐格角色動畫製作 v1.0.0 保留。方法／套件已批准，動畫與引擎待實測；WC-A／WC-B 新提示詞仍待生圖驗證，風格13已正式封裝為032、WC-C已正式封裝，Hub Before/After配對已記錄，新Prompt未實測。此計數不代表平台已安裝或全部實測通過。  
+目前 44 個已登錄項目：新增 YSU-SKILL-040～044 五套 P20261014 風格 v1.0.0（Approved／Partial）；040/044雙模式、041重構單模式、042/043保留構圖單模式。原來源05空號不登錄。其餘歷史：新增 YSU-SKILL-039 流線原子筆敘事 v1.0.0（P20，Approved／Partial；保留構圖單模式）；新增 YSU-SKILL-033–038 六套 P11–P16 風格 v1.0.0（Approved／Partial；四單模式、兩雙模式），ACR 仍待定；新增 YSU-SKILL-032 生活街景墨線水彩 v1.0.0（Approved／Partial）；新增 YSU-SKILL-031 岩彩幻境敘事 v1.0.0（Approved／Partial；預設保留構圖、可選風格重構）；新增 YSU-SKILL-030 留白建築明信片 v1.0.0（WC-C）；新增 YSU-SKILL-029 古畫捲軸雕塑高訂 v1.0.0；YSU-SKILL-028 逐格角色動畫製作 v1.0.0 保留。方法／套件已批准，動畫與引擎待實測；WC-A／WC-B 新提示詞仍待生圖驗證，風格13已正式封裝為032、WC-C已正式封裝，Hub Before/After配對已記錄，新Prompt未實測。此計數不代表平台已安裝或全部實測通過。  
 管理對話：YSU Skills 管理中心（使用者於 2026-09-21 指定；不代表已操作聊天 UI 更名）。  
 以下未加新日期的來源核對段落保留 2026-09-21 歷史；該次接續核對已讀三份中央文件、兩個 Skill 的歷史盤點及影片 VALIDATION 全文，並新增來源核對紀錄與本機取回指令；兩套完整來源仍未取得。本機安裝版本均為歷史紀錄，未直讀使用者電腦或重新安裝。  
 下方 YSU-SKILL-001 段落保留首次移交紀錄；該段「本輪」指首次歸檔，不是本次來源核對。本次沒有重跑 Simulator 套件或行為驗證。
@@ -59,6 +59,11 @@
 | YSU-SKILL-038 | 森境幽光繪本 / Luminous Woodland Storybook；以啞面手繪色層、既有框景與局部暖光，保留場景中的神秘童話感。 | 1.0.0 | 14張原始參考、雙語Prompt、歷史測試與原圖縮圖已歸檔；保留構圖單模式；檔案驗收詳見本案段落 | 未安裝 | 未安裝；Published to Hub v1.0.0 / public-r1 |
 
 | YSU-SKILL-039 | 流線原子筆敘事 / Flowline Ballpoint Narratives；保留原構圖，以偏單色原子筆與紙白重繪每個物件，包含畫中畫與光學效果。 | 1.0.0 | 51檔ZIP、27原始參考、4核可r3預覽、雙語Prompt與原圖縮圖已歸檔；雲端ZIP回下載SHA-256／CRC／manifest一致 | 未安裝 | ChatGPT Skills頁已保存；新對話載入未驗證；未發布Hub |
+| YSU-SKILL-040 | 漫畫手稿編輯敘事 / Manga Sketchbook Editorial；用搜尋線、黑墨與局部研究建立漫畫手稿層級。 | 1.0.0 | 七份標準檔、雙語Prompt、24張原參考、縮圖與測試證據已歸檔；ZIP回下載完整核對通過 | 未安裝 | ChatGPT Skills頁已保存；新對話載入未驗證；未發布Hub |
+| YSU-SKILL-041 | 暖紙蝕刻顆粒海報 / Warm Paper Abraded Print；以暖紙、方向性顆粒與留白，重編節制的印刷海報。 | 1.0.0 | 七份標準檔、雙語Prompt、14張原參考、縮圖與測試證據已歸檔；ZIP回下載完整核對通過 | 未安裝 | ChatGPT Skills頁已保存；新對話載入未驗證；未發布Hub |
+| YSU-SKILL-042 | 青橘繁構幻境 / Teal-Orange Intricate Worlds；以細密墨線和內斂拼貼式色面，描繪連續空間。 | 1.0.0 | 七份標準檔、雙語Prompt、10張原參考、縮圖與測試證據已歸檔；ZIP回下載完整核對通過 | 未安裝 | ChatGPT Skills頁已保存；新對話載入未驗證；未發布Hub |
+| YSU-SKILL-043 | 復古套色場景海報 / Retro Spot-Color Scene Posters；用完整套色色版、強剪影與紙白刻線呈現場景。 | 1.0.0 | 七份標準檔、雙語Prompt、9張原參考、縮圖與測試證據已歸檔；ZIP回下載完整核對通過 | 未安裝 | ChatGPT Skills頁已保存；新對話載入未驗證；未發布Hub |
+| YSU-SKILL-044 | 電影寫實拼格海報 / Cinematic Realism Panel Posters；以寫實主圖、電影光線與可調切入小圖編排海報。 | 1.0.0 | 七份標準檔、雙語Prompt、21張原參考、縮圖與測試證據已歸檔；ZIP回下載完整核對通過 | 未安裝 | ChatGPT Skills頁已保存；新對話載入未驗證；未發布Hub |
 
 ## YSU-SKILL-001 — Scientific Interactive Simulator
 
@@ -842,6 +847,11 @@ SHA-256：8608b2c97fa5ddc1d5fca465fbd50abce6543a22f44c8fc90c8e1e540acae4b3
 | YSU-SKILL-037 | image-style | 平面剪影敘事 / Flat silhouette narratives | painting-illustration | Flat illustration, silhouette and subtle paper texture | STYLE; Silhouette; Graphic Illustration; Indigo; Negative Space; Dual Mode |
 | YSU-SKILL-038 | image-style | 繪本場景 / Storybook scenes | painting-illustration | Matte opaque painted color and fine outlines | STYLE; Storybook; Opaque Paint; Localized Glow; Narrative; Preserve Composition |
 | YSU-SKILL-039 | image-style | 原子筆敘事風格轉譯 / Ballpoint narrative style transfer | painting-illustration | 原子筆外觀 / Ballpoint-pen appearance | STYLE; Ballpoint Pen; Ink Drawing; Near Monochrome; Narrative; Preserve Composition |
+| YSU-SKILL-040 | image-style | 風格轉譯 / Style transfer | painting-illustration | Manga / editorial ink | STYLE; Architecture; Interior; Narrative; Dual Mode |
+| YSU-SKILL-041 | image-style | 風格轉譯 / Style transfer | painting-illustration | Structural grain / restricted-ink print | STYLE; Architecture; Interior; Narrative; Recompose |
+| YSU-SKILL-042 | image-style | 風格轉譯 / Style transfer | painting-illustration | Fine ink / interlocking color planes | STYLE; Architecture; Interior; Narrative; Preserve Composition |
+| YSU-SKILL-043 | image-style | 風格轉譯 / Style transfer | painting-illustration | Spot-color / graphic print | STYLE; Architecture; Interior; Narrative; Preserve Composition |
+| YSU-SKILL-044 | image-style | 風格轉譯 / Style transfer | photography-realism | Cinematic realism / editorial panels | STYLE; Architecture; Interior; Narrative; Dual Mode |
 | YSU-PENDING-001 | education | 科學解說 / Science communication | — | — | 教學; 影片 |
 
 
@@ -1872,3 +1882,176 @@ Tracker Metadata:
 | ID | Slug | Canonical folder ID | SKILL file ID | ZIP file ID |
 |---|---|---|---|---|
 | YSU-SKILL-039 | `ysu-flowline-ballpoint-narratives` | `1p90E0GGcJuczsCPNKYpRIdY7RINkpG6U` | `1LMmDVR-AAoo42CaS-iyFFwC92ENQqMM8` | `1R3o8NBDzVP69BrD6eqCkLxzq8Xqkm7Zq` |
+
+
+
+
+## YSU-SKILL-040 — 漫畫手稿編輯敘事 / Manga Sketchbook Editorial
+
+Tracker Metadata:
+- Category: STYLE
+- Lifecycle: Approved
+- Validation: Partial
+- Version: 1.0.0
+- Graphic References: 24
+- Drive: ARCHIVED
+- ChatGPT: ARCHIVED
+- Codex: NOT_INSTALLED
+- Origin Project: Style Skill Factory
+- Origin Conversation: Style Skill Factory — Master Control
+- Locator Status: PROJECT_TITLE_ONLY
+- Canonical Drive: https://drive.google.com/drive/folders/1tNzKfrCNkosv90BDbVotgV6t3O5xUXug
+- Next Action: 依PRESERVE／RECOMPOSE使用；新版泛用Prompt待實測；準備HUB遷移，尚未發布。ChatGPT已保存，跨對話載入未驗證。
+
+Slug：ysu-manga-sketchbook-editorial  
+用途：用搜尋線、黑墨與局部研究建立漫畫手稿層級。  
+來源：P style 20261014-1；原資料夾保持file ID歸入正式SOURCE。最後核可打包：2026-10-14 23:14:30 PDT／2026-10-15 UTC。  
+模式：PRESERVE／RECOMPOSE；預設PRESERVE。r2 人物移到右側、局部研究移到左側，示範編輯層級；底部新增大象創作步驟和註解為失敗，禁止轉為規則。039 的順形原子筆與012的電影墨格不是本風格替代品。  
+中央資料夾：https://drive.google.com/drive/folders/1tNzKfrCNkosv90BDbVotgV6t3O5xUXug  
+直接閱讀SKILL：https://drive.google.com/file/d/11hQAIXtGXwOd53HARu5qHF8QPvp9kpsB/view  
+完整套件：https://drive.google.com/file/d/1MvZDPe04nk84tvFMj3Qcyp5KFUNQOsJX/view  
+縮圖：https://drive.google.com/file/d/1YrKh2Qf30eAS6pFwfm3GFdW12NtU5gwF/view（原始參考衍生，不使用測試圖；02／04只取原參考下半風格成圖）。  
+ZIP大小：26900115 bytes；SHA-256：`0ed8a11a9aefc59b7d31f90c8813555477c8a912cefd869f945ec4612193bfd6`。實際Drive完整回下載、CRC及逐檔manifest核對通過；不是匿名下載驗收。  
+驗證：規則與正式封裝Approved；既有測試含內容／文字／幾何偏差，維持Partial；泛用新模板、跨模型及新參數未實測。逐張原始參考未個別核可者仍Unclassified，分析者Partial建議不冒稱Owner批准。  
+來源、ZIP與完整參考保持私人；選定720px原圖縮圖沿用Factory Tracker授權。ChatGPT Skills頁以逐套Git保存，新對話自動載入未驗證；Codex／Gemini未安裝；HUB未發布。  
+HUB備註：圖片滿版cover；Intrinsic紙白保留；INFO精簡雙語，Tags含STYLE。分類沿用三大類，未新增主泡泡；遷移時依現有4–5子泡泡容量另行確認位置。  
+批次管理／完整證據：https://drive.google.com/drive/folders/1jW6zV9ICZmRYELqheLv5GErSteFocEvX
+
+
+## YSU-SKILL-041 — 暖紙蝕刻顆粒海報 / Warm Paper Abraded Print
+
+Tracker Metadata:
+- Category: STYLE
+- Lifecycle: Approved
+- Validation: Partial
+- Version: 1.0.0
+- Graphic References: 14
+- Drive: ARCHIVED
+- ChatGPT: ARCHIVED
+- Codex: NOT_INSTALLED
+- Origin Project: Style Skill Factory
+- Origin Conversation: Style Skill Factory — Master Control
+- Locator Status: PROJECT_TITLE_ONLY
+- Canonical Drive: https://drive.google.com/drive/folders/1amlXBEk0fKPMOdW4quPOFWagEk-kZL78
+- Next Action: 依RECOMPOSE使用；新版泛用Prompt待實測；準備HUB遷移，尚未發布。ChatGPT已保存，跨對話載入未驗證。
+
+Slug：ysu-warm-paper-abraded-print  
+用途：以暖紙、方向性顆粒與留白，重編節制的印刷海報。  
+來源：P style 20261014-2；原資料夾保持file ID歸入正式SOURCE。最後核可打包：2026-10-14 23:14:30 PDT／2026-10-15 UTC。  
+模式：RECOMPOSE；預設RECOMPOSE。使用者明定直接採 B／RECOMPOSE。早期保留構圖變體及來源交接中的雙模式保留為歷史，不再提供為標準模式。3:4、上下各半、固定橘黑、小剪影、地名、日輪及40%留白均非核心。  
+中央資料夾：https://drive.google.com/drive/folders/1amlXBEk0fKPMOdW4quPOFWagEk-kZL78  
+直接閱讀SKILL：https://drive.google.com/file/d/1KVLy9Z3L_HZ0y-FRzjuiXPxCI18oNKEW/view  
+完整套件：https://drive.google.com/file/d/1nejG_zoZQvo8vyPnQ3J-kVlHLUVEzY0v/view  
+縮圖：https://drive.google.com/file/d/1IWWBAXxmO7u37tlkG6lZRrxHqsK0H5VE/view（原始參考衍生，不使用測試圖；02／04只取原參考下半風格成圖）。  
+ZIP大小：20917807 bytes；SHA-256：`12e874639368bf7ba280029c366f2b779129ebe768e1e3a64922d2722743f2f2`。實際Drive完整回下載、CRC及逐檔manifest核對通過；不是匿名下載驗收。  
+驗證：規則與正式封裝Approved；既有測試含內容／文字／幾何偏差，維持Partial；泛用新模板、跨模型及新參數未實測。逐張原始參考未個別核可者仍Unclassified，分析者Partial建議不冒稱Owner批准。  
+來源、ZIP與完整參考保持私人；選定720px原圖縮圖沿用Factory Tracker授權。ChatGPT Skills頁以逐套Git保存，新對話自動載入未驗證；Codex／Gemini未安裝；HUB未發布。  
+HUB備註：圖片滿版cover；Intrinsic紙白保留；INFO精簡雙語，Tags含STYLE。分類沿用三大類，未新增主泡泡；遷移時依現有4–5子泡泡容量另行確認位置。  
+批次管理／完整證據：https://drive.google.com/drive/folders/1jW6zV9ICZmRYELqheLv5GErSteFocEvX
+
+
+## YSU-SKILL-042 — 青橘繁構幻境 / Teal-Orange Intricate Worlds
+
+Tracker Metadata:
+- Category: STYLE
+- Lifecycle: Approved
+- Validation: Partial
+- Version: 1.0.0
+- Graphic References: 10
+- Drive: ARCHIVED
+- ChatGPT: ARCHIVED
+- Codex: NOT_INSTALLED
+- Origin Project: Style Skill Factory
+- Origin Conversation: Style Skill Factory — Master Control
+- Locator Status: PROJECT_TITLE_ONLY
+- Canonical Drive: https://drive.google.com/drive/folders/1hddwPsBIeDABcia7LbWoY-kPhKS934Rj
+- Next Action: 依PRESERVE使用；新版泛用Prompt待實測；準備HUB遷移，尚未發布。ChatGPT已保存，跨對話載入未驗證。
+
+Slug：ysu-teal-orange-intricate-worlds  
+用途：以細密墨線和內斂拼貼式色面，描繪連續空間。  
+來源：P style 20261014-3；原資料夾保持file ID歸入正式SOURCE。最後核可打包：2026-10-14 23:14:30 PDT／2026-10-15 UTC。  
+模式：PRESERVE；預設PRESERVE。使用者2026-10-14晚間裁決：獨立風格，不併025、不作其子風格。025外放、彩墨／潑墨較強、用色鮮明；本案色面內斂、嵌合與拼貼式交疊、空間連續，建築及室內差異尤其重要。不能只把025降飽和度。拼貼感不等於實體裂紙、纖維或破碎建築。過度剝漆仍是已知測試偏差。  
+中央資料夾：https://drive.google.com/drive/folders/1hddwPsBIeDABcia7LbWoY-kPhKS934Rj  
+直接閱讀SKILL：https://drive.google.com/file/d/1vxGZHGawKvYGir48lUTEHEBaf-UCUq1K/view  
+完整套件：https://drive.google.com/file/d/19CgsT901b4PLxoDgDomHgceM0GRh2F1a/view  
+縮圖：https://drive.google.com/file/d/1thaCnt2Bgc2kPP2FeP5YmDYAAIHyh0C3/view（原始參考衍生，不使用測試圖；02／04只取原參考下半風格成圖）。  
+ZIP大小：20919861 bytes；SHA-256：`00ab742892d8feeccf3c9e23117cd5ed6eac9155ed46042d22a4e0c3d1f5eac7`。實際Drive完整回下載、CRC及逐檔manifest核對通過；不是匿名下載驗收。  
+驗證：規則與正式封裝Approved；既有測試含內容／文字／幾何偏差，維持Partial；泛用新模板、跨模型及新參數未實測。逐張原始參考未個別核可者仍Unclassified，分析者Partial建議不冒稱Owner批准。  
+來源、ZIP與完整參考保持私人；選定720px原圖縮圖沿用Factory Tracker授權。ChatGPT Skills頁以逐套Git保存，新對話自動載入未驗證；Codex／Gemini未安裝；HUB未發布。  
+HUB備註：圖片滿版cover；Intrinsic紙白保留；INFO精簡雙語，Tags含STYLE。分類沿用三大類，未新增主泡泡；遷移時依現有4–5子泡泡容量另行確認位置。  
+批次管理／完整證據：https://drive.google.com/drive/folders/1jW6zV9ICZmRYELqheLv5GErSteFocEvX
+
+
+## YSU-SKILL-043 — 復古套色場景海報 / Retro Spot-Color Scene Posters
+
+Tracker Metadata:
+- Category: STYLE
+- Lifecycle: Approved
+- Validation: Partial
+- Version: 1.0.0
+- Graphic References: 9
+- Drive: ARCHIVED
+- ChatGPT: ARCHIVED
+- Codex: NOT_INSTALLED
+- Origin Project: Style Skill Factory
+- Origin Conversation: Style Skill Factory — Master Control
+- Locator Status: PROJECT_TITLE_ONLY
+- Canonical Drive: https://drive.google.com/drive/folders/1qMaszA7pakcwUyafWa4xSEJqwiSKQcbf
+- Next Action: 依PRESERVE使用；新版泛用Prompt待實測；準備HUB遷移，尚未發布。ChatGPT已保存，跨對話載入未驗證。
+
+Slug：ysu-retro-spot-color-scene-posters  
+用途：用完整套色色版、強剪影與紙白刻線呈現場景。  
+來源：P style 20261014-4；原資料夾保持file ID歸入正式SOURCE。最後核可打包：2026-10-14 23:14:30 PDT／2026-10-15 UTC。  
+模式：PRESERVE；預設PRESERVE。保留構圖單模式。原參考大字、旅遊地名、圓形日輪與印章是可分離展示元素，不是內容規則。與041區別：本案靠完整色版／強剪影；041靠顆粒調性與紙面消散。  
+中央資料夾：https://drive.google.com/drive/folders/1qMaszA7pakcwUyafWa4xSEJqwiSKQcbf  
+直接閱讀SKILL：https://drive.google.com/file/d/1QMGkC3eWYmXs_18CoypBKrZBrbeoyqn1/view  
+完整套件：https://drive.google.com/file/d/1J9nCpv18Ul-ca4O3tDSck0sR_EQeIF69/view  
+縮圖：https://drive.google.com/file/d/1L2QtjrV43f96ZCXMrCob3x4_JCAQcWRO/view（原始參考衍生，不使用測試圖；02／04只取原參考下半風格成圖）。  
+ZIP大小：11475839 bytes；SHA-256：`4ae71fa0ef823a5aa97660f9defa82eb3aaa826eec59e7247f7f9f06f61db2ac`。實際Drive完整回下載、CRC及逐檔manifest核對通過；不是匿名下載驗收。  
+驗證：規則與正式封裝Approved；既有測試含內容／文字／幾何偏差，維持Partial；泛用新模板、跨模型及新參數未實測。逐張原始參考未個別核可者仍Unclassified，分析者Partial建議不冒稱Owner批准。  
+來源、ZIP與完整參考保持私人；選定720px原圖縮圖沿用Factory Tracker授權。ChatGPT Skills頁以逐套Git保存，新對話自動載入未驗證；Codex／Gemini未安裝；HUB未發布。  
+HUB備註：圖片滿版cover；Intrinsic紙白保留；INFO精簡雙語，Tags含STYLE。分類沿用三大類，未新增主泡泡；遷移時依現有4–5子泡泡容量另行確認位置。  
+批次管理／完整證據：https://drive.google.com/drive/folders/1jW6zV9ICZmRYELqheLv5GErSteFocEvX
+
+
+## YSU-SKILL-044 — 電影寫實拼格海報 / Cinematic Realism Panel Posters
+
+Tracker Metadata:
+- Category: STYLE
+- Lifecycle: Approved
+- Validation: Partial
+- Version: 1.0.0
+- Graphic References: 21
+- Drive: ARCHIVED
+- ChatGPT: ARCHIVED
+- Codex: NOT_INSTALLED
+- Origin Project: Style Skill Factory
+- Origin Conversation: Style Skill Factory — Master Control
+- Locator Status: PROJECT_TITLE_ONLY
+- Canonical Drive: https://drive.google.com/drive/folders/1l4S9ldIwE1Ik7yXoBmAZPS-jfdXzLmMX
+- Next Action: 依PRESERVE／RECOMPOSE使用；新版泛用Prompt待實測；DENSE切入小圖未實測；準備HUB遷移，尚未發布。ChatGPT已保存，跨對話載入未驗證。
+
+Slug：ysu-cinematic-realism-panel-posters  
+用途：以寫實主圖、電影光線與可調切入小圖編排海報。  
+來源：P style 20261014-6；原資料夾保持file ID歸入正式SOURCE。最後核可打包：2026-10-14 23:14:30 PDT／2026-10-15 UTC。  
+模式：PRESERVE／RECOMPOSE；預設PRESERVE。獨立於012電影墨格：本案以寫實材質與電影光線為底，012以墨線、圖形化明暗／色塊／網點建構。R09/R17僅適合版面參考，不作寫實材質標準。DENSE為本次核可的新選項，尚未新圖實測。  
+中央資料夾：https://drive.google.com/drive/folders/1l4S9ldIwE1Ik7yXoBmAZPS-jfdXzLmMX  
+直接閱讀SKILL：https://drive.google.com/file/d/11KOjnF7fUQZYtZdRlCNR2tF7GZuUL64s/view  
+完整套件：https://drive.google.com/file/d/1jM4-nYDWxspQXz7cSopU8fd2lmlXdAXm/view  
+縮圖：https://drive.google.com/file/d/1uzhnNOEPNH4lz9l_vX_tWfLmddDG0F3q/view（原始參考衍生，不使用測試圖；02／04只取原參考下半風格成圖）。  
+ZIP大小：15644508 bytes；SHA-256：`5bd44fcc8e1ce1d9221ed5c137773fab72ebe7f8e55ee6fa91b01ee45c320cad`。實際Drive完整回下載、CRC及逐檔manifest核對通過；不是匿名下載驗收。  
+驗證：規則與正式封裝Approved；既有測試含內容／文字／幾何偏差，維持Partial；泛用新模板、跨模型及新參數未實測。逐張原始參考未個別核可者仍Unclassified，分析者Partial建議不冒稱Owner批准。  
+來源、ZIP與完整參考保持私人；選定720px原圖縮圖沿用Factory Tracker授權。ChatGPT Skills頁以逐套Git保存，新對話自動載入未驗證；Codex／Gemini未安裝；HUB未發布。  
+HUB備註：圖片滿版cover；Intrinsic紙白保留；INFO精簡雙語，Tags含STYLE。分類沿用三大類，未新增主泡泡；遷移時依現有4–5子泡泡容量另行確認位置。  
+批次管理／完整證據：https://drive.google.com/drive/folders/1jW6zV9ICZmRYELqheLv5GErSteFocEvX
+
+
+### P20261014 package file mapping
+
+| Skill ID | slug | Folder | SKILL | ZIP |
+|---|---|---|---|---|
+| YSU-SKILL-040 | `ysu-manga-sketchbook-editorial` | `1tNzKfrCNkosv90BDbVotgV6t3O5xUXug` | `11hQAIXtGXwOd53HARu5qHF8QPvp9kpsB` | `1MvZDPe04nk84tvFMj3Qcyp5KFUNQOsJX` |
+| YSU-SKILL-041 | `ysu-warm-paper-abraded-print` | `1amlXBEk0fKPMOdW4quPOFWagEk-kZL78` | `1KVLy9Z3L_HZ0y-FRzjuiXPxCI18oNKEW` | `1nejG_zoZQvo8vyPnQ3J-kVlHLUVEzY0v` |
+| YSU-SKILL-042 | `ysu-teal-orange-intricate-worlds` | `1hddwPsBIeDABcia7LbWoY-kPhKS934Rj` | `1vxGZHGawKvYGir48lUTEHEBaf-UCUq1K` | `19CgsT901b4PLxoDgDomHgceM0GRh2F1a` |
+| YSU-SKILL-043 | `ysu-retro-spot-color-scene-posters` | `1qMaszA7pakcwUyafWa4xSEJqwiSKQcbf` | `1QMGkC3eWYmXs_18CoypBKrZBrbeoyqn1` | `1J9nCpv18Ul-ca4O3tDSck0sR_EQeIF69` |
+| YSU-SKILL-044 | `ysu-cinematic-realism-panel-posters` | `1l4S9ldIwE1Ik7yXoBmAZPS-jfdXzLmMX` | `11KOjnF7fUQZYtZdRlCNR2tF7GZuUL64s` | `1jM4-nYDWxspQXz7cSopU8fd2lmlXdAXm` |

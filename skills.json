@@ -17,16 +17,16 @@
     "source": "Skill Taxonomy v1 table in canonical Drive registry"
   },
   "$comment": "GENERATED FILE — do not edit by hand. Source: Google Drive AI Works/06_Skills/00_SKILL_REGISTRY.md. Regenerate with `npm run skills:index`.",
-  "generated_at": "2026-10-15T01:07:49.434Z",
+  "generated_at": "2026-10-15T06:53:19.026Z",
   "source": {
     "file": "skills-source/00_SKILL_REGISTRY.md",
     "drive_file_id": "1g6Io9lD4YwkDaX5_OUqssvrcEyuCF-1P",
-    "registry_updated": "2026-10-09"
+    "registry_updated": "2026-10-15"
   },
   "registry": {
     "title": "YSU Skills Registry — 統一管理總表",
     "recorded": "2026-09-21",
-    "updated": "2026-10-09",
+    "updated": "2026-10-15",
     "owner": "YuCheng Su",
     "management_conversation": "YSU Skills 管理中心",
     "drive_folder": "https://drive.google.com/drive/folders/1P6b3rLGzrdev1Lh6tZVGAWnPcNkNYoV_",
@@ -42,10 +42,10 @@
     ]
   },
   "counts": {
-    "total": 40,
-    "registered": 39,
+    "total": 45,
+    "registered": 44,
     "pending": 1,
-    "with_explicit_metadata": 30
+    "with_explicit_metadata": 35
   },
   "warnings": [],
   "skills": [
@@ -3319,6 +3319,446 @@
           "Near Monochrome",
           "Narrative",
           "Preserve Composition"
+        ],
+        "source": "explicit registry taxonomy"
+      }
+    },
+    {
+      "id": "YSU-SKILL-040",
+      "name": "漫畫手稿編輯敘事 / Manga Sketchbook Editorial",
+      "slug": "ysu-manga-sketchbook-editorial",
+      "category": "STYLE",
+      "lifecycle": "Approved",
+      "validation": "Partial",
+      "version": "1.0.0",
+      "version_note": "1.0.0",
+      "description": "用搜尋線、黑墨與局部研究建立漫畫手稿層級。",
+      "graphic_reference_count": 24,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "ARCHIVED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "七份標準檔、雙語Prompt、24張原參考、縮圖與測試證據已歸檔；ZIP回下載完整核對通過",
+        "chatgpt": "ChatGPT Skills頁已保存；新對話載入未驗證；未發布Hub",
+        "codex": "未安裝"
+      },
+      "origin_project": "Style Skill Factory",
+      "origin_conversation": "Style Skill Factory — Master Control",
+      "origin_conversation_url": null,
+      "locator_status": "PROJECT_TITLE_ONLY",
+      "related_conversations": [],
+      "next_action": "依PRESERVE／RECOMPOSE使用；新版泛用Prompt待實測；準備HUB遷移，尚未發布。ChatGPT已保存，跨對話載入未驗證。",
+      "canonical_drive": "https://drive.google.com/drive/folders/1tNzKfrCNkosv90BDbVotgV6t3O5xUXug",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/1tNzKfrCNkosv90BDbVotgV6t3O5xUXug"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://drive.google.com/file/d/11hQAIXtGXwOd53HARu5qHF8QPvp9kpsB/view"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/1MvZDPe04nk84tvFMj3Qcyp5KFUNQOsJX/view"
+        }
+      ],
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "explicit",
+        "lifecycle": "explicit",
+        "validation": "explicit",
+        "version": "explicit",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "explicit",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "explicit",
+        "origin_conversation": "explicit",
+        "origin_conversation_url": "derived",
+        "locator_status": "explicit",
+        "related_conversations": "derived",
+        "next_action": "explicit",
+        "canonical_drive": "explicit",
+        "links": "derived",
+        "registered": "derived",
+        "platform.drive": "explicit",
+        "platform.chatgpt": "explicit",
+        "platform.codex": "explicit"
+      },
+      "has_explicit_metadata": true,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "image-style",
+        "domain": "圖像與風格 / Image & Style",
+        "area": "風格轉譯 / Style transfer",
+        "style_family_id": "painting-illustration",
+        "style_family": "繪畫與插畫 / Painting & Illustration",
+        "medium": "Manga / editorial ink",
+        "tags": [
+          "STYLE",
+          "Architecture",
+          "Interior",
+          "Narrative",
+          "Dual Mode"
+        ],
+        "source": "explicit registry taxonomy"
+      }
+    },
+    {
+      "id": "YSU-SKILL-041",
+      "name": "暖紙蝕刻顆粒海報 / Warm Paper Abraded Print",
+      "slug": "ysu-warm-paper-abraded-print",
+      "category": "STYLE",
+      "lifecycle": "Approved",
+      "validation": "Partial",
+      "version": "1.0.0",
+      "version_note": "1.0.0",
+      "description": "以暖紙、方向性顆粒與留白，重編節制的印刷海報。",
+      "graphic_reference_count": 14,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "ARCHIVED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "七份標準檔、雙語Prompt、14張原參考、縮圖與測試證據已歸檔；ZIP回下載完整核對通過",
+        "chatgpt": "ChatGPT Skills頁已保存；新對話載入未驗證；未發布Hub",
+        "codex": "未安裝"
+      },
+      "origin_project": "Style Skill Factory",
+      "origin_conversation": "Style Skill Factory — Master Control",
+      "origin_conversation_url": null,
+      "locator_status": "PROJECT_TITLE_ONLY",
+      "related_conversations": [],
+      "next_action": "依RECOMPOSE使用；新版泛用Prompt待實測；準備HUB遷移，尚未發布。ChatGPT已保存，跨對話載入未驗證。",
+      "canonical_drive": "https://drive.google.com/drive/folders/1amlXBEk0fKPMOdW4quPOFWagEk-kZL78",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/1amlXBEk0fKPMOdW4quPOFWagEk-kZL78"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://drive.google.com/file/d/1KVLy9Z3L_HZ0y-FRzjuiXPxCI18oNKEW/view"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/1nejG_zoZQvo8vyPnQ3J-kVlHLUVEzY0v/view"
+        }
+      ],
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "explicit",
+        "lifecycle": "explicit",
+        "validation": "explicit",
+        "version": "explicit",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "explicit",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "explicit",
+        "origin_conversation": "explicit",
+        "origin_conversation_url": "derived",
+        "locator_status": "explicit",
+        "related_conversations": "derived",
+        "next_action": "explicit",
+        "canonical_drive": "explicit",
+        "links": "derived",
+        "registered": "derived",
+        "platform.drive": "explicit",
+        "platform.chatgpt": "explicit",
+        "platform.codex": "explicit"
+      },
+      "has_explicit_metadata": true,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "image-style",
+        "domain": "圖像與風格 / Image & Style",
+        "area": "風格轉譯 / Style transfer",
+        "style_family_id": "painting-illustration",
+        "style_family": "繪畫與插畫 / Painting & Illustration",
+        "medium": "Structural grain / restricted-ink print",
+        "tags": [
+          "STYLE",
+          "Architecture",
+          "Interior",
+          "Narrative",
+          "Recompose"
+        ],
+        "source": "explicit registry taxonomy"
+      }
+    },
+    {
+      "id": "YSU-SKILL-042",
+      "name": "青橘繁構幻境 / Teal-Orange Intricate Worlds",
+      "slug": "ysu-teal-orange-intricate-worlds",
+      "category": "STYLE",
+      "lifecycle": "Approved",
+      "validation": "Partial",
+      "version": "1.0.0",
+      "version_note": "1.0.0",
+      "description": "以細密墨線和內斂拼貼式色面，描繪連續空間。",
+      "graphic_reference_count": 10,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "ARCHIVED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "七份標準檔、雙語Prompt、10張原參考、縮圖與測試證據已歸檔；ZIP回下載完整核對通過",
+        "chatgpt": "ChatGPT Skills頁已保存；新對話載入未驗證；未發布Hub",
+        "codex": "未安裝"
+      },
+      "origin_project": "Style Skill Factory",
+      "origin_conversation": "Style Skill Factory — Master Control",
+      "origin_conversation_url": null,
+      "locator_status": "PROJECT_TITLE_ONLY",
+      "related_conversations": [],
+      "next_action": "依PRESERVE使用；新版泛用Prompt待實測；準備HUB遷移，尚未發布。ChatGPT已保存，跨對話載入未驗證。",
+      "canonical_drive": "https://drive.google.com/drive/folders/1hddwPsBIeDABcia7LbWoY-kPhKS934Rj",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/1hddwPsBIeDABcia7LbWoY-kPhKS934Rj"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://drive.google.com/file/d/1vxGZHGawKvYGir48lUTEHEBaf-UCUq1K/view"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/19CgsT901b4PLxoDgDomHgceM0GRh2F1a/view"
+        }
+      ],
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "explicit",
+        "lifecycle": "explicit",
+        "validation": "explicit",
+        "version": "explicit",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "explicit",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "explicit",
+        "origin_conversation": "explicit",
+        "origin_conversation_url": "derived",
+        "locator_status": "explicit",
+        "related_conversations": "derived",
+        "next_action": "explicit",
+        "canonical_drive": "explicit",
+        "links": "derived",
+        "registered": "derived",
+        "platform.drive": "explicit",
+        "platform.chatgpt": "explicit",
+        "platform.codex": "explicit"
+      },
+      "has_explicit_metadata": true,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "image-style",
+        "domain": "圖像與風格 / Image & Style",
+        "area": "風格轉譯 / Style transfer",
+        "style_family_id": "painting-illustration",
+        "style_family": "繪畫與插畫 / Painting & Illustration",
+        "medium": "Fine ink / interlocking color planes",
+        "tags": [
+          "STYLE",
+          "Architecture",
+          "Interior",
+          "Narrative",
+          "Preserve Composition"
+        ],
+        "source": "explicit registry taxonomy"
+      }
+    },
+    {
+      "id": "YSU-SKILL-043",
+      "name": "復古套色場景海報 / Retro Spot-Color Scene Posters",
+      "slug": "ysu-retro-spot-color-scene-posters",
+      "category": "STYLE",
+      "lifecycle": "Approved",
+      "validation": "Partial",
+      "version": "1.0.0",
+      "version_note": "1.0.0",
+      "description": "用完整套色色版、強剪影與紙白刻線呈現場景。",
+      "graphic_reference_count": 9,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "ARCHIVED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "七份標準檔、雙語Prompt、9張原參考、縮圖與測試證據已歸檔；ZIP回下載完整核對通過",
+        "chatgpt": "ChatGPT Skills頁已保存；新對話載入未驗證；未發布Hub",
+        "codex": "未安裝"
+      },
+      "origin_project": "Style Skill Factory",
+      "origin_conversation": "Style Skill Factory — Master Control",
+      "origin_conversation_url": null,
+      "locator_status": "PROJECT_TITLE_ONLY",
+      "related_conversations": [],
+      "next_action": "依PRESERVE使用；新版泛用Prompt待實測；準備HUB遷移，尚未發布。ChatGPT已保存，跨對話載入未驗證。",
+      "canonical_drive": "https://drive.google.com/drive/folders/1qMaszA7pakcwUyafWa4xSEJqwiSKQcbf",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/1qMaszA7pakcwUyafWa4xSEJqwiSKQcbf"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://drive.google.com/file/d/1QMGkC3eWYmXs_18CoypBKrZBrbeoyqn1/view"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/1J9nCpv18Ul-ca4O3tDSck0sR_EQeIF69/view"
+        }
+      ],
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "explicit",
+        "lifecycle": "explicit",
+        "validation": "explicit",
+        "version": "explicit",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "explicit",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "explicit",
+        "origin_conversation": "explicit",
+        "origin_conversation_url": "derived",
+        "locator_status": "explicit",
+        "related_conversations": "derived",
+        "next_action": "explicit",
+        "canonical_drive": "explicit",
+        "links": "derived",
+        "registered": "derived",
+        "platform.drive": "explicit",
+        "platform.chatgpt": "explicit",
+        "platform.codex": "explicit"
+      },
+      "has_explicit_metadata": true,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "image-style",
+        "domain": "圖像與風格 / Image & Style",
+        "area": "風格轉譯 / Style transfer",
+        "style_family_id": "painting-illustration",
+        "style_family": "繪畫與插畫 / Painting & Illustration",
+        "medium": "Spot-color / graphic print",
+        "tags": [
+          "STYLE",
+          "Architecture",
+          "Interior",
+          "Narrative",
+          "Preserve Composition"
+        ],
+        "source": "explicit registry taxonomy"
+      }
+    },
+    {
+      "id": "YSU-SKILL-044",
+      "name": "電影寫實拼格海報 / Cinematic Realism Panel Posters",
+      "slug": "ysu-cinematic-realism-panel-posters",
+      "category": "STYLE",
+      "lifecycle": "Approved",
+      "validation": "Partial",
+      "version": "1.0.0",
+      "version_note": "1.0.0",
+      "description": "以寫實主圖、電影光線與可調切入小圖編排海報。",
+      "graphic_reference_count": 21,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "ARCHIVED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "七份標準檔、雙語Prompt、21張原參考、縮圖與測試證據已歸檔；ZIP回下載完整核對通過",
+        "chatgpt": "ChatGPT Skills頁已保存；新對話載入未驗證；未發布Hub",
+        "codex": "未安裝"
+      },
+      "origin_project": "Style Skill Factory",
+      "origin_conversation": "Style Skill Factory — Master Control",
+      "origin_conversation_url": null,
+      "locator_status": "PROJECT_TITLE_ONLY",
+      "related_conversations": [],
+      "next_action": "依PRESERVE／RECOMPOSE使用；新版泛用Prompt待實測；DENSE切入小圖未實測；準備HUB遷移，尚未發布。ChatGPT已保存，跨對話載入未驗證。",
+      "canonical_drive": "https://drive.google.com/drive/folders/1l4S9ldIwE1Ik7yXoBmAZPS-jfdXzLmMX",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/1l4S9ldIwE1Ik7yXoBmAZPS-jfdXzLmMX"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://drive.google.com/file/d/11KOjnF7fUQZYtZdRlCNR2tF7GZuUL64s/view"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/1jM4-nYDWxspQXz7cSopU8fd2lmlXdAXm/view"
+        }
+      ],
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "explicit",
+        "lifecycle": "explicit",
+        "validation": "explicit",
+        "version": "explicit",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "explicit",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "explicit",
+        "origin_conversation": "explicit",
+        "origin_conversation_url": "derived",
+        "locator_status": "explicit",
+        "related_conversations": "derived",
+        "next_action": "explicit",
+        "canonical_drive": "explicit",
+        "links": "derived",
+        "registered": "derived",
+        "platform.drive": "explicit",
+        "platform.chatgpt": "explicit",
+        "platform.codex": "explicit"
+      },
+      "has_explicit_metadata": true,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "image-style",
+        "domain": "圖像與風格 / Image & Style",
+        "area": "風格轉譯 / Style transfer",
+        "style_family_id": "photography-realism",
+        "style_family": "攝影與寫實 / Photography & Realism",
+        "medium": "Cinematic realism / editorial panels",
+        "tags": [
+          "STYLE",
+          "Architecture",
+          "Interior",
+          "Narrative",
+          "Dual Mode"
         ],
         "source": "explicit registry taxonomy"
       }
