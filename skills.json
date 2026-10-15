@@ -17,7 +17,7 @@
     "source": "Skill Taxonomy v1 table in canonical Drive registry"
   },
   "$comment": "GENERATED FILE — do not edit by hand. Source: Google Drive AI Works/06_Skills/00_SKILL_REGISTRY.md. Regenerate with `npm run skills:index`.",
-  "generated_at": "2026-10-09T05:24:39.115Z",
+  "generated_at": "2026-10-15T01:07:49.434Z",
   "source": {
     "file": "skills-source/00_SKILL_REGISTRY.md",
     "drive_file_id": "1g6Io9lD4YwkDaX5_OUqssvrcEyuCF-1P",
@@ -2274,7 +2274,7 @@
       },
       "platform_notes": {
         "drive": "22 檔正式套件、雙語 Prompt、原圖及來源版本已歸檔；回下載 hash 通過",
-        "chatgpt": "未安裝／未發布 Hub；方法通過、動畫／引擎未測",
+        "chatgpt": "未安裝／Published to Hub；v1.0.0/public-r1；動畫／引擎Untested",
         "codex": "未安裝"
       },
       "origin_project": null,
@@ -2282,7 +2282,7 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": "以可讀核可角色參考完成一個小型動作實測；按需求驗證播放、目標尺寸及引擎接入。",
+      "next_action": "Published to Hub；v1.0.0/public-r1；Main demo-ibc-egress；HUB https://hub.ycsu.cc/。下載與Owner入口已驗證；動畫播放／逐格品質／引擎仍Untested，未安裝；下一步以核可角色完成小型實測。",
       "canonical_drive": "https://drive.google.com/drive/folders/1UWhdu91LsZ-De98NkFlXywMLnvrKC_CU",
       "links": [
         {

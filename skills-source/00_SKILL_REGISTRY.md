@@ -45,7 +45,7 @@
 | YSU-SKILL-025 | 彩墨版畫敘事 / Chromatic Ink-Print Narratives；以墨線骨架、平面彩層與碎裂印刷感，統整複雜敘事。 | 1.1.0 | 雙模式新版已歸檔；7標準文件＋雙語Prompt＋原圖＋ZIP回下載hash一致；影像Untested | 未安裝 | 未安裝／Published to Hub；v1.1.0/public-r1雙模式；影像Untested |
 | YSU-SKILL-026 | 極簡時尚人物水彩風格 / Minimalist Fashion Figure Watercolor；以有筆壓的斷線、透明薄彩與主體內留白，保留人物辨識並形成輕盈的時尚插畫。 | 1.0.0 | 正式套件、雙語Prompt、原圖與縮圖已歸檔 | 未安裝 | 未安裝／未發布 Hub |
 | YSU-SKILL-027 | 建築水彩融合 / Architectural Watercolor Fusion；以細建築墨線維持空間結構，結合豐富透明色洗、材料筆觸與留白，呈現成熟建築水彩。 | 1.0.0 | 正式套件、雙語Prompt、原圖與縮圖已歸檔 | 未安裝 | 未安裝／未發布 Hub |
-| YSU-SKILL-028 | 逐格角色動畫製作 / Sprite Animation Production；核可角色→動作→逐格修復→QA→交付 | 1.0.0 | 22 檔正式套件、雙語 Prompt、原圖及來源版本已歸檔；回下載 hash 通過 | 未安裝 | 未安裝／未發布 Hub；方法通過、動畫／引擎未測 |
+| YSU-SKILL-028 | 逐格角色動畫製作 / Sprite Animation Production；核可角色→動作→逐格修復→QA→交付 | 1.0.0 | 22 檔正式套件、雙語 Prompt、原圖及來源版本已歸檔；回下載 hash 通過 | 未安裝 | 未安裝／Published to Hub；v1.0.0/public-r1；動畫／引擎Untested |
 | YSU-SKILL-029 | 古畫捲軸雕塑高訂 / Sculptural Scroll Couture；以古畫捲軸構成立體高訂服裝，呈現黑底時尚人像 | 1.0.0 | 19 檔完整套件、雙語 Prompt、原圖縮圖已歸檔；回下載 hash 通過 | 未安裝 | 未安裝／Published to Hub；規則封裝已批准、新 Prompt 待實測 |
 | YSU-SKILL-030 | 留白建築明信片 / Negative-Space Architectural Postcard；以紙白、斷續墨線與集中藍色暈染，保留建築辨識度 | 1.0.0 | 25 檔正式套件、雙語 Prompt、Before/After 原圖、縮圖已歸檔；ZIP 回下載核對通過 | 未安裝 | 未安裝／未發布 Hub；新版 Prompt Untested |
 | YSU-SKILL-031 | 岩彩幻境敘事 / Mineral-Pigment Dreamscape Narrative；以細描、啞面碎色與連續敘事空間呈現幻想插畫，預設保留構圖，可選風格重構 | 1.0.0 | 48 檔正式套件、21 原始參考、雙語 Prompt、兩輪測試與縮圖已歸檔；ZIP 回下載核對通過 | 未安裝 | 未安裝／未發布 Hub |
@@ -1238,8 +1238,15 @@ Tracker Metadata:
 - Origin Conversation:
 - Origin Conversation URL:
 - Locator Status: UNLOCATED
-- Next Action: 以可讀核可角色參考完成一個小型動作實測；按需求驗證播放、目標尺寸及引擎接入。
+- Next Action: Published to Hub；v1.0.0/public-r1；Main demo-ibc-egress；HUB https://hub.ycsu.cc/。下載與Owner入口已驗證；動畫播放／逐格品質／引擎仍Untested，未安裝；下一步以核可角色完成小型實測。
 - Canonical Drive: https://drive.google.com/drive/folders/1UWhdu91LsZ-De98NkFlXywMLnvrKC_CU
+- Hub Status: Published to Hub
+- Hub Version: 1.0.0
+- Hub Release Revision: public-r1
+- Hub Bubble ID: demo-ibc-egress
+- Hub Parent ID: Main (no parent)
+- Hub URL: https://hub.ycsu.cc/
+- Hub Publication Date: 2026-10-14 America/Los_Angeles
 
 分類：角色設計 / Character Design → 角色動畫製作；tags：ANIMATION、SPRITE、WORKFLOW、GAME_ASSET。這是製作方法，不新增美術風格家族。
 
@@ -1260,6 +1267,19 @@ Master：**Approved**；Method Review：Completed；Package QA：Passed；Animat
 
 2026-10-02 14:18 PDT：使用者要求同步 Tracker 並上傳縮圖，授權發布本 Skill 的索引及 S01 原圖衍生 720px 縮圖。此授權取代前次封裝時「僅私人 Master」的發布範圍；完整原圖、套件與其餘資料維持私人，Hub 未發布。套件 ZIP／HUB_METADATA 為先前核可快照，新的封面公開範圍與實際發布結果另記 COVER_SELECTION.md／TRACKER_RELEASE.json，不改方法或驗證狀態。PENDING 其餘三份 intake 保留。
 
+
+
+### HUB 正式替換發布 — 2026-10-14 America/Los_Angeles
+
+本節取代上述歷史未發布狀態，並不改寫其當時事實。Owner本次核准將原橘色IBC主泡泡替換為028；保留Bubble ID demo-ibc-egress、Main、order5及Workflow Utility medium橘色，無子項。
+
+- Published to Hub；1.0.0/public-r1；HUB https://hub.ycsu.cc/。
+- 私有會員 Launch 映射：public-r1 ZIP（會員下載網址省略）；121911 bytes；SHA-256 `7b0d4c379b5e941752795ee1293105e67e84ed63ef51a11ecd1f07619f53e73f`。此網址不得匯入公開Tracker。
+- 標準七檔、完整中英Prompt、METHOD、DATA_CONTRACT及Schema／示例保留；公開包22檔，核心10檔與canonical逐位元組一致。只附已核可Tracker縮圖，完整JPEG／私有來源紀錄不公開。canonical ZIP與來源／發布母資料夾仍私有。
+- 匿名HTTP完整ZIP／SHA／CRC／manifest／解壓PASS；Owner從HUB正常Launch到正確Drive頁並實際下載新檔，大小與hash一致。兩種下載證據分開。
+- 1280／390／320px Detail文字無水平溢出；Guest維持登入要求、未收到protected URL；其他52筆內容與關聯未更動。
+- Approved／Untested／NOT_INSTALLED不變；未進行動畫播放、逐格品質或引擎接入實測。普通Member無合法現成session，NOT VERIFIED。
+- 發布紀錄由私有 HUB 管理；公開 Tracker 不提供受保護的套件下載網址。
 
 ## Sprite 套件定位表
 
