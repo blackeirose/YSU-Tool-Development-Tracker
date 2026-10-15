@@ -59,11 +59,11 @@
 | YSU-SKILL-038 | 森境幽光繪本 / Luminous Woodland Storybook；以啞面手繪色層、既有框景與局部暖光，保留場景中的神秘童話感。 | 1.0.0 | 14張原始參考、雙語Prompt、歷史測試與原圖縮圖已歸檔；保留構圖單模式；檔案驗收詳見本案段落 | 未安裝 | 未安裝；Published to Hub v1.0.0 / public-r1 |
 
 | YSU-SKILL-039 | 流線原子筆敘事 / Flowline Ballpoint Narratives；保留原構圖，以偏單色原子筆與紙白重繪每個物件，包含畫中畫與光學效果。 | 1.0.0 | 51檔ZIP、27原始參考、4核可r3預覽、雙語Prompt與原圖縮圖已歸檔；雲端ZIP回下載SHA-256／CRC／manifest一致 | 未安裝 | ChatGPT Skills頁已保存；新對話載入未驗證；未發布Hub |
-| YSU-SKILL-040 | 漫畫手稿編輯敘事 / Manga Sketchbook Editorial；用搜尋線、黑墨與局部研究建立漫畫手稿層級。 | 1.0.0 | 七份標準檔、雙語Prompt、24張原參考、縮圖與測試證據已歸檔；ZIP回下載完整核對通過 | 未安裝 | ChatGPT Skills頁已保存；新對話載入未驗證；未發布Hub |
-| YSU-SKILL-041 | 暖紙蝕刻顆粒海報 / Warm Paper Abraded Print；以暖紙、方向性顆粒與留白，重編節制的印刷海報。 | 1.0.0 | 七份標準檔、雙語Prompt、14張原參考、縮圖與測試證據已歸檔；ZIP回下載完整核對通過 | 未安裝 | ChatGPT Skills頁已保存；新對話載入未驗證；未發布Hub |
-| YSU-SKILL-042 | 青橘繁構幻境 / Teal-Orange Intricate Worlds；以細密墨線和內斂拼貼式色面，描繪連續空間。 | 1.0.0 | 七份標準檔、雙語Prompt、10張原參考、縮圖與測試證據已歸檔；ZIP回下載完整核對通過 | 未安裝 | ChatGPT Skills頁已保存；新對話載入未驗證；未發布Hub |
-| YSU-SKILL-043 | 復古套色場景海報 / Retro Spot-Color Scene Posters；用完整套色色版、強剪影與紙白刻線呈現場景。 | 1.0.0 | 七份標準檔、雙語Prompt、9張原參考、縮圖與測試證據已歸檔；ZIP回下載完整核對通過 | 未安裝 | ChatGPT Skills頁已保存；新對話載入未驗證；未發布Hub |
-| YSU-SKILL-044 | 電影寫實拼格海報 / Cinematic Realism Panel Posters；以寫實主圖、電影光線與可調切入小圖編排海報。 | 1.0.0 | 七份標準檔、雙語Prompt、21張原參考、縮圖與測試證據已歸檔；ZIP回下載完整核對通過 | 未安裝 | ChatGPT Skills頁已保存；新對話載入未驗證；未發布Hub |
+| YSU-SKILL-040 | 漫畫手稿編輯敘事 / Manga Sketchbook Editorial；用搜尋線、黑墨與局部研究建立漫畫手稿層級。 | 1.0.0 | 七份標準檔、雙語Prompt、24張原參考、縮圖與測試證據已歸檔；ZIP回下載完整核對通過 | 未安裝 | ChatGPT Skills頁已保存；新對話載入未驗證；Published to Hub v1.0.0/public-r1（2026-10-15） |
+| YSU-SKILL-041 | 暖紙蝕刻顆粒海報 / Warm Paper Abraded Print；以暖紙、方向性顆粒與留白，重編節制的印刷海報。 | 1.0.0 | 七份標準檔、雙語Prompt、14張原參考、縮圖與測試證據已歸檔；ZIP回下載完整核對通過 | 未安裝 | ChatGPT Skills頁已保存；新對話載入未驗證；Published to Hub v1.0.0/public-r1（2026-10-15） |
+| YSU-SKILL-042 | 青橘繁構幻境 / Teal-Orange Intricate Worlds；以細密墨線和內斂拼貼式色面，描繪連續空間。 | 1.0.0 | 七份標準檔、雙語Prompt、10張原參考、縮圖與測試證據已歸檔；ZIP回下載完整核對通過 | 未安裝 | ChatGPT Skills頁已保存；新對話載入未驗證；Published to Hub v1.0.0/public-r1（2026-10-15） |
+| YSU-SKILL-043 | 復古套色場景海報 / Retro Spot-Color Scene Posters；用完整套色色版、強剪影與紙白刻線呈現場景。 | 1.0.0 | 七份標準檔、雙語Prompt、9張原參考、縮圖與測試證據已歸檔；ZIP回下載完整核對通過 | 未安裝 | ChatGPT Skills頁已保存；新對話載入未驗證；Published to Hub v1.0.0/public-r1（2026-10-15） |
+| YSU-SKILL-044 | 電影寫實拼格海報 / Cinematic Realism Panel Posters；以寫實主圖、電影光線與可調切入小圖編排海報。 | 1.0.0 | 七份標準檔、雙語Prompt、21張原參考、縮圖與測試證據已歸檔；ZIP回下載完整核對通過 | 未安裝 | ChatGPT Skills頁已保存；新對話載入未驗證；Published to Hub v1.0.0/public-r1（2026-10-15） |
 
 ## YSU-SKILL-001 — Scientific Interactive Simulator
 
@@ -1901,7 +1901,7 @@ Tracker Metadata:
 - Origin Conversation: Style Skill Factory — Master Control
 - Locator Status: PROJECT_TITLE_ONLY
 - Canonical Drive: https://drive.google.com/drive/folders/1tNzKfrCNkosv90BDbVotgV6t3O5xUXug
-- Next Action: 依PRESERVE／RECOMPOSE使用；新版泛用Prompt待實測；準備HUB遷移，尚未發布。ChatGPT已保存，跨對話載入未驗證。
+- Next Action: 依PRESERVE／RECOMPOSE使用；新版泛用Prompt待實測；Published to Hub v1.0.0/public-r1（2026-10-15）；會員下載見HUB。ChatGPT已保存，跨對話載入未驗證。
 
 Slug：ysu-manga-sketchbook-editorial  
 用途：用搜尋線、黑墨與局部研究建立漫畫手稿層級。  
@@ -1917,6 +1917,18 @@ ZIP大小：26900115 bytes；SHA-256：`0ed8a11a9aefc59b7d31f90c8813555477c8a912
 HUB備註：圖片滿版cover；Intrinsic紙白保留；INFO精簡雙語，Tags含STYLE。分類沿用三大類，未新增主泡泡；遷移時依現有4–5子泡泡容量另行確認位置。  
 批次管理／完整證據：https://drive.google.com/drive/folders/1jW6zV9ICZmRYELqheLv5GErSteFocEvX
 
+### HUB publication — 2026-10-15 America/Los_Angeles (UTC-07:00)
+
+- HUB狀態：Published to Hub；v1.0.0 / public-r1。以上尚未發布／4–5子項備註保留為先前歷史，以本段較晚紀錄為現況。
+- HUB入口：https://hub.ycsu.cc/；於「漫畫與動畫美術 / Comics & Animation Art」選擇本風格。
+- Bubble ID：b_fc31d2b5-cc5b-45bd-a85b-8a04b93e4a64；Parent ID：b_ae355bfa-4ac2-4e0b-940a-56882456310e；排序：6。
+- 私有會員 Launch 映射：public-r1 ZIP（下載連結僅由HUB會員入口提供）；357636 bytes；SHA-256 `6fbe8b784ff089ba5497c53c4720c7bbc268997f5a80e0f598d70c1ff84928eb`。公開Tracker匯出須省略會員下載URL。
+- 發布包：七份標準文件、完整繁中／英文Prompt、既有核可縮圖、公開參考索引與manifest；完整原圖、測試素材、私人審查及內部路徑不公開，附件說明與實際內容一致，核心模式／規則不變。
+- 下載驗收：匿名無Cookie／OAuth完整ZIP下載及Owner/Admin實際HUB Launch→Drive→Download檔案，大小／SHA-256／CRC／manifest／解壓PASS；HTTP與瀏覽器證據分開記錄。
+- 桌面／390px／320px Detail雙語文字框無水平溢出；Guest維持登入要求，普通Member與全新匿名瀏覽器下載體驗NOT VERIFIED。手機Universe既有橫向畫布保留，不擴大修改。
+- 保留Approved／Partial／1.0.0；ChatGPT ARCHIVED（跨對話調用未驗證），Codex NOT_INSTALLED；不宣稱安裝或新增影像驗證。044 DENSE限制不變。
+- Canonical完整套件及資料夾保持私有；公開ZIP列入有效all-off清單。未執行無關撤權試驗，未部署HUB前端，未更動Auth／RLS／schema／write gate。
+- 本輪來源補充：040完整私有ZIP下載受工具限制，9份規則／Prompt文件與縮圖共10檔逐檔匹配canonical manifest；本輪整包canonical回下載NOT VERIFIED，與公開包完整性PASS分開。前階段完整回下載紀錄保留為歷史。
 
 ## YSU-SKILL-041 — 暖紙蝕刻顆粒海報 / Warm Paper Abraded Print
 
@@ -1933,7 +1945,7 @@ Tracker Metadata:
 - Origin Conversation: Style Skill Factory — Master Control
 - Locator Status: PROJECT_TITLE_ONLY
 - Canonical Drive: https://drive.google.com/drive/folders/1amlXBEk0fKPMOdW4quPOFWagEk-kZL78
-- Next Action: 依RECOMPOSE使用；新版泛用Prompt待實測；準備HUB遷移，尚未發布。ChatGPT已保存，跨對話載入未驗證。
+- Next Action: 依RECOMPOSE使用；新版泛用Prompt待實測；Published to Hub v1.0.0/public-r1（2026-10-15）；會員下載見HUB。ChatGPT已保存，跨對話載入未驗證。
 
 Slug：ysu-warm-paper-abraded-print  
 用途：以暖紙、方向性顆粒與留白，重編節制的印刷海報。  
@@ -1949,6 +1961,17 @@ ZIP大小：20917807 bytes；SHA-256：`12e874639368bf7ba280029c366f2b779129ebe7
 HUB備註：圖片滿版cover；Intrinsic紙白保留；INFO精簡雙語，Tags含STYLE。分類沿用三大類，未新增主泡泡；遷移時依現有4–5子泡泡容量另行確認位置。  
 批次管理／完整證據：https://drive.google.com/drive/folders/1jW6zV9ICZmRYELqheLv5GErSteFocEvX
 
+### HUB publication — 2026-10-15 America/Los_Angeles (UTC-07:00)
+
+- HUB狀態：Published to Hub；v1.0.0 / public-r1。以上尚未發布／4–5子項備註保留為先前歷史，以本段較晚紀錄為現況。
+- HUB入口：https://hub.ycsu.cc/；於「版畫與印刷 / Printmaking & Print」選擇本風格。
+- Bubble ID：b_0aec323e-b220-48fa-bf13-95a7da4fa742；Parent ID：b_c19eee22-62ad-45d5-8d4d-a5e00cdce1a9；排序：1。
+- 私有會員 Launch 映射：public-r1 ZIP（下載連結僅由HUB會員入口提供）；85855 bytes；SHA-256 `3fab69dcc29f1426952e4aad894dbda3a7d1439a0bbdb29428c1c75a71745636`。公開Tracker匯出須省略會員下載URL。
+- 發布包：七份標準文件、完整繁中／英文Prompt、既有核可縮圖、公開參考索引與manifest；完整原圖、測試素材、私人審查及內部路徑不公開，附件說明與實際內容一致，核心模式／規則不變。
+- 下載驗收：匿名無Cookie／OAuth完整ZIP下載及Owner/Admin實際HUB Launch→Drive→Download檔案，大小／SHA-256／CRC／manifest／解壓PASS；HTTP與瀏覽器證據分開記錄。
+- 桌面／390px／320px Detail雙語文字框無水平溢出；Guest維持登入要求，普通Member與全新匿名瀏覽器下載體驗NOT VERIFIED。手機Universe既有橫向畫布保留，不擴大修改。
+- 保留Approved／Partial／1.0.0；ChatGPT ARCHIVED（跨對話調用未驗證），Codex NOT_INSTALLED；不宣稱安裝或新增影像驗證。044 DENSE限制不變。
+- Canonical完整套件及資料夾保持私有；公開ZIP列入有效all-off清單。未執行無關撤權試驗，未部署HUB前端，未更動Auth／RLS／schema／write gate。
 
 ## YSU-SKILL-042 — 青橘繁構幻境 / Teal-Orange Intricate Worlds
 
@@ -1965,7 +1988,7 @@ Tracker Metadata:
 - Origin Conversation: Style Skill Factory — Master Control
 - Locator Status: PROJECT_TITLE_ONLY
 - Canonical Drive: https://drive.google.com/drive/folders/1hddwPsBIeDABcia7LbWoY-kPhKS934Rj
-- Next Action: 依PRESERVE使用；新版泛用Prompt待實測；準備HUB遷移，尚未發布。ChatGPT已保存，跨對話載入未驗證。
+- Next Action: 依PRESERVE使用；新版泛用Prompt待實測；Published to Hub v1.0.0/public-r1（2026-10-15）；會員下載見HUB。ChatGPT已保存，跨對話載入未驗證。
 
 Slug：ysu-teal-orange-intricate-worlds  
 用途：以細密墨線和內斂拼貼式色面，描繪連續空間。  
@@ -1981,6 +2004,17 @@ ZIP大小：20919861 bytes；SHA-256：`00ab742892d8feeccf3c9e23117cd5ed6eac9155
 HUB備註：圖片滿版cover；Intrinsic紙白保留；INFO精簡雙語，Tags含STYLE。分類沿用三大類，未新增主泡泡；遷移時依現有4–5子泡泡容量另行確認位置。  
 批次管理／完整證據：https://drive.google.com/drive/folders/1jW6zV9ICZmRYELqheLv5GErSteFocEvX
 
+### HUB publication — 2026-10-15 America/Los_Angeles (UTC-07:00)
+
+- HUB狀態：Published to Hub；v1.0.0 / public-r1。以上尚未發布／4–5子項備註保留為先前歷史，以本段較晚紀錄為現況。
+- HUB入口：https://hub.ycsu.cc/；於「墨彩與混合媒材 / Ink & Mixed Media」選擇本風格。
+- Bubble ID：b_aad48441-1aff-450a-a416-15d36fab91af；Parent ID：b_111706ca-3476-4761-adde-2f607b772da7；排序：6。
+- 私有會員 Launch 映射：public-r1 ZIP（下載連結僅由HUB會員入口提供）；386440 bytes；SHA-256 `ef77352e809a41f57f93b4580a811cab0ba1dec5e589087e1d7f10dc7322f1fe`。公開Tracker匯出須省略會員下載URL。
+- 發布包：七份標準文件、完整繁中／英文Prompt、既有核可縮圖、公開參考索引與manifest；完整原圖、測試素材、私人審查及內部路徑不公開，附件說明與實際內容一致，核心模式／規則不變。
+- 下載驗收：匿名無Cookie／OAuth完整ZIP下載及Owner/Admin實際HUB Launch→Drive→Download檔案，大小／SHA-256／CRC／manifest／解壓PASS；HTTP與瀏覽器證據分開記錄。
+- 桌面／390px／320px Detail雙語文字框無水平溢出；Guest維持登入要求，普通Member與全新匿名瀏覽器下載體驗NOT VERIFIED。手機Universe既有橫向畫布保留，不擴大修改。
+- 保留Approved／Partial／1.0.0；ChatGPT ARCHIVED（跨對話調用未驗證），Codex NOT_INSTALLED；不宣稱安裝或新增影像驗證。044 DENSE限制不變。
+- Canonical完整套件及資料夾保持私有；公開ZIP列入有效all-off清單。未執行無關撤權試驗，未部署HUB前端，未更動Auth／RLS／schema／write gate。
 
 ## YSU-SKILL-043 — 復古套色場景海報 / Retro Spot-Color Scene Posters
 
@@ -1997,7 +2031,7 @@ Tracker Metadata:
 - Origin Conversation: Style Skill Factory — Master Control
 - Locator Status: PROJECT_TITLE_ONLY
 - Canonical Drive: https://drive.google.com/drive/folders/1qMaszA7pakcwUyafWa4xSEJqwiSKQcbf
-- Next Action: 依PRESERVE使用；新版泛用Prompt待實測；準備HUB遷移，尚未發布。ChatGPT已保存，跨對話載入未驗證。
+- Next Action: 依PRESERVE使用；新版泛用Prompt待實測；Published to Hub v1.0.0/public-r1（2026-10-15）；會員下載見HUB。ChatGPT已保存，跨對話載入未驗證。
 
 Slug：ysu-retro-spot-color-scene-posters  
 用途：用完整套色色版、強剪影與紙白刻線呈現場景。  
@@ -2013,6 +2047,17 @@ ZIP大小：11475839 bytes；SHA-256：`4ae71fa0ef823a5aa97660f9defa82eb3aaa826e
 HUB備註：圖片滿版cover；Intrinsic紙白保留；INFO精簡雙語，Tags含STYLE。分類沿用三大類，未新增主泡泡；遷移時依現有4–5子泡泡容量另行確認位置。  
 批次管理／完整證據：https://drive.google.com/drive/folders/1jW6zV9ICZmRYELqheLv5GErSteFocEvX
 
+### HUB publication — 2026-10-15 America/Los_Angeles (UTC-07:00)
+
+- HUB狀態：Published to Hub；v1.0.0 / public-r1。以上尚未發布／4–5子項備註保留為先前歷史，以本段較晚紀錄為現況。
+- HUB入口：https://hub.ycsu.cc/；於「版畫與印刷 / Printmaking & Print」選擇本風格。
+- Bubble ID：b_7e833301-8cf1-45e0-ab97-34284ca448a3；Parent ID：b_c19eee22-62ad-45d5-8d4d-a5e00cdce1a9；排序：2。
+- 私有會員 Launch 映射：public-r1 ZIP（下載連結僅由HUB會員入口提供）；146810 bytes；SHA-256 `a991bb2e542a9b06f8b85bf36fcf33a1093814646954d7fd465f75fc9b37a7f1`。公開Tracker匯出須省略會員下載URL。
+- 發布包：七份標準文件、完整繁中／英文Prompt、既有核可縮圖、公開參考索引與manifest；完整原圖、測試素材、私人審查及內部路徑不公開，附件說明與實際內容一致，核心模式／規則不變。
+- 下載驗收：匿名無Cookie／OAuth完整ZIP下載及Owner/Admin實際HUB Launch→Drive→Download檔案，大小／SHA-256／CRC／manifest／解壓PASS；HTTP與瀏覽器證據分開記錄。
+- 桌面／390px／320px Detail雙語文字框無水平溢出；Guest維持登入要求，普通Member與全新匿名瀏覽器下載體驗NOT VERIFIED。手機Universe既有橫向畫布保留，不擴大修改。
+- 保留Approved／Partial／1.0.0；ChatGPT ARCHIVED（跨對話調用未驗證），Codex NOT_INSTALLED；不宣稱安裝或新增影像驗證。044 DENSE限制不變。
+- Canonical完整套件及資料夾保持私有；公開ZIP列入有效all-off清單。未執行無關撤權試驗，未部署HUB前端，未更動Auth／RLS／schema／write gate。
 
 ## YSU-SKILL-044 — 電影寫實拼格海報 / Cinematic Realism Panel Posters
 
@@ -2029,7 +2074,7 @@ Tracker Metadata:
 - Origin Conversation: Style Skill Factory — Master Control
 - Locator Status: PROJECT_TITLE_ONLY
 - Canonical Drive: https://drive.google.com/drive/folders/1l4S9ldIwE1Ik7yXoBmAZPS-jfdXzLmMX
-- Next Action: 依PRESERVE／RECOMPOSE使用；新版泛用Prompt待實測；DENSE切入小圖未實測；準備HUB遷移，尚未發布。ChatGPT已保存，跨對話載入未驗證。
+- Next Action: 依PRESERVE／RECOMPOSE使用；新版泛用Prompt待實測；DENSE切入小圖未實測；Published to Hub v1.0.0/public-r1（2026-10-15）；會員下載見HUB。ChatGPT已保存，跨對話載入未驗證。
 
 Slug：ysu-cinematic-realism-panel-posters  
 用途：以寫實主圖、電影光線與可調切入小圖編排海報。  
@@ -2044,6 +2089,18 @@ ZIP大小：15644508 bytes；SHA-256：`5bd44fcc8e1ce1d9221ed5c137773fab72ebe7f8
 來源、ZIP與完整參考保持私人；選定720px原圖縮圖沿用Factory Tracker授權。ChatGPT Skills頁以逐套Git保存，新對話自動載入未驗證；Codex／Gemini未安裝；HUB未發布。  
 HUB備註：圖片滿版cover；Intrinsic紙白保留；INFO精簡雙語，Tags含STYLE。分類沿用三大類，未新增主泡泡；遷移時依現有4–5子泡泡容量另行確認位置。  
 批次管理／完整證據：https://drive.google.com/drive/folders/1jW6zV9ICZmRYELqheLv5GErSteFocEvX
+
+### HUB publication — 2026-10-15 America/Los_Angeles (UTC-07:00)
+
+- HUB狀態：Published to Hub；v1.0.0 / public-r1。以上尚未發布／4–5子項備註保留為先前歷史，以本段較晚紀錄為現況。
+- HUB入口：https://hub.ycsu.cc/；於「攝影與寫實 / Photography & Realism」選擇本風格。
+- Bubble ID：b_9f2295d6-4257-49b5-8e28-d1f517fcc525；Parent ID：b_5c9ab19c-b7fd-4208-a053-8135ca2a9c27；排序：4。
+- 私有會員 Launch 映射：public-r1 ZIP（下載連結僅由HUB會員入口提供）；184027 bytes；SHA-256 `8aea1fec03e35a856d12864d180a9a0f9de1f637197abcdb56c6f5d19e44b6b9`。公開Tracker匯出須省略會員下載URL。
+- 發布包：七份標準文件、完整繁中／英文Prompt、既有核可縮圖、公開參考索引與manifest；完整原圖、測試素材、私人審查及內部路徑不公開，附件說明與實際內容一致，核心模式／規則不變。
+- 下載驗收：匿名無Cookie／OAuth完整ZIP下載及Owner/Admin實際HUB Launch→Drive→Download檔案，大小／SHA-256／CRC／manifest／解壓PASS；HTTP與瀏覽器證據分開記錄。
+- 桌面／390px／320px Detail雙語文字框無水平溢出；Guest維持登入要求，普通Member與全新匿名瀏覽器下載體驗NOT VERIFIED。手機Universe既有橫向畫布保留，不擴大修改。
+- 保留Approved／Partial／1.0.0；ChatGPT ARCHIVED（跨對話調用未驗證），Codex NOT_INSTALLED；不宣稱安裝或新增影像驗證。044 DENSE限制不變。
+- Canonical完整套件及資料夾保持私有；公開ZIP列入有效all-off清單。未執行無關撤權試驗，未部署HUB前端，未更動Auth／RLS／schema／write gate。
 
 
 ### P20261014 package file mapping
