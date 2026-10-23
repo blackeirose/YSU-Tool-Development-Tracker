@@ -17,16 +17,16 @@
     "source": "Skill Taxonomy v1 table in canonical Drive registry"
   },
   "$comment": "GENERATED FILE — do not edit by hand. Source: Google Drive AI Works/06_Skills/00_SKILL_REGISTRY.md. Regenerate with `npm run skills:index`.",
-  "generated_at": "2026-10-15T21:35:09.543Z",
+  "generated_at": "2026-10-23T19:25:04.413Z",
   "source": {
     "file": "skills-source/00_SKILL_REGISTRY.md",
     "drive_file_id": "1g6Io9lD4YwkDaX5_OUqssvrcEyuCF-1P",
-    "registry_updated": "2026-10-15"
+    "registry_updated": "2026-10-23"
   },
   "registry": {
     "title": "YSU Skills Registry — 統一管理總表",
     "recorded": "2026-09-21",
-    "updated": "2026-10-15",
+    "updated": "2026-10-23",
     "owner": "YuCheng Su",
     "management_conversation": "YSU Skills 管理中心",
     "drive_folder": "https://drive.google.com/drive/folders/1P6b3rLGzrdev1Lh6tZVGAWnPcNkNYoV_",
@@ -42,10 +42,10 @@
     ]
   },
   "counts": {
-    "total": 45,
-    "registered": 44,
+    "total": 46,
+    "registered": 45,
     "pending": 1,
-    "with_explicit_metadata": 35
+    "with_explicit_metadata": 36
   },
   "warnings": [],
   "skills": [
@@ -3759,6 +3759,93 @@
           "Interior",
           "Narrative",
           "Dual Mode"
+        ],
+        "source": "explicit registry taxonomy"
+      }
+    },
+    {
+      "id": "YSU-SKILL-045",
+      "name": "電影運鏡與轉場設計 / Cinematic Camera & Transition Design",
+      "slug": "ysu-cinematic-camera-transitions",
+      "category": "FILM",
+      "lifecycle": "Draft",
+      "validation": "Untested",
+      "version": "0.1.0",
+      "version_note": "v0.1.0",
+      "description": "依敘事目的選擇運鏡與轉場，產出雙語製作與驗收工作單",
+      "graphic_reference_count": 0,
+      "platform": {
+        "drive": "ARCHIVED",
+        "chatgpt": "ARCHIVED",
+        "codex": "NOT_INSTALLED"
+      },
+      "platform_notes": {
+        "drive": "SKILL、9份參考、介面設定與ZIP已歸檔；完整讀回核對通過",
+        "chatgpt": "ChatGPT Skills頁已保存；新對話載入未驗證",
+        "codex": "未安裝"
+      },
+      "origin_project": "電影運鏡與轉場技法庫",
+      "origin_conversation": "本次對話；未取得正式標題與URL",
+      "origin_conversation_url": null,
+      "locator_status": "UNLOCATED",
+      "related_conversations": [],
+      "next_action": "以核可影片完成運鏡、A/B剪輯與聲音實測；ChatGPT新對話載入仍待確認。文字試用與封裝檢查不提升影片驗證狀態。",
+      "canonical_drive": "https://drive.google.com/drive/folders/1JWGE_srV7s2dVie6G6l-Nys-FhlibIu9",
+      "links": [
+        {
+          "label": "Canonical Drive folder",
+          "url": "https://drive.google.com/drive/folders/1JWGE_srV7s2dVie6G6l-Nys-FhlibIu9"
+        },
+        {
+          "label": "SKILL.md",
+          "url": "https://drive.google.com/file/d/1c8kkrO0v0zY-HXdOLLiD7z0mFCwqYayH/view"
+        },
+        {
+          "label": "Package ZIP",
+          "url": "https://drive.google.com/file/d/1l4l840hHpNBLbYDehI7q4XZqrA7mHTCm/view"
+        }
+      ],
+      "registered": true,
+      "metadata_source": {
+        "id": "derived",
+        "name": "derived",
+        "slug": "derived",
+        "category": "explicit",
+        "lifecycle": "explicit",
+        "validation": "explicit",
+        "version": "explicit",
+        "version_note": "derived",
+        "description": "derived",
+        "graphic_reference_count": "explicit",
+        "platform": "derived",
+        "platform_notes": "derived",
+        "origin_project": "explicit",
+        "origin_conversation": "explicit",
+        "origin_conversation_url": "derived",
+        "locator_status": "explicit",
+        "related_conversations": "derived",
+        "next_action": "explicit",
+        "canonical_drive": "explicit",
+        "links": "derived",
+        "registered": "derived",
+        "platform.drive": "explicit",
+        "platform.chatgpt": "explicit",
+        "platform.codex": "explicit"
+      },
+      "has_explicit_metadata": true,
+      "taxonomy": {
+        "version": "1.0",
+        "domain_id": "film-animation",
+        "domain": "影片與動畫 / Film & Animation",
+        "area": "運鏡與轉場 / Camera & transitions",
+        "style_family_id": null,
+        "style_family": null,
+        "medium": null,
+        "tags": [
+          "運鏡",
+          "轉場",
+          "分鏡",
+          "後製"
         ],
         "source": "explicit registry taxonomy"
       }

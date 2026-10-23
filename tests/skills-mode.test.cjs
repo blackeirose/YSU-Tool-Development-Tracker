@@ -60,7 +60,7 @@ test('every registered Skill appears with lifecycle, validation, version, refs a
  const f=fixture();try{
   await f.toSkills();
   assert.equal(f.rows().length,catalog.length);
-  assert.equal(index.skills.filter(s=>s.registered).length,44,'all 44 registered Skills are indexed');
+  assert.equal(index.skills.filter(s=>s.registered).length,45,'all 45 registered Skills are indexed');
   const text=f.get('skRows').textContent;
   for(const s of index.skills){
    assert.ok(text.includes(s.name),`${s.id} name shown`);
@@ -186,7 +186,7 @@ test('a failed index load reports it instead of rendering an empty list silently
 });
 
 test('the generated index never invents data and stays in the documented shape',()=>{
- assert.equal(index.counts.registered,44);
+ assert.equal(index.counts.registered,45);
  assert.ok(index.source.file.includes('00_SKILL_REGISTRY.md'));
  for(const s of index.skills){
   assert.match(s.id,/^YSU-(SKILL|PENDING)-\d{3}$/);
@@ -337,8 +337,8 @@ test('tool metadata is escaped and external cover injection is rejected',async()
 });
 
 test('tool catalog does not alter canonical Skill IDs, counts or references',()=>{
- assert.equal(nativeTools.length,4);assert.equal(index.skills.length,45);
- assert.equal(index.counts.registered,44);
+ assert.equal(nativeTools.length,4);assert.equal(index.skills.length,46);
+ assert.equal(index.counts.registered,45);
  assert.ok(nativeTools.every(t=>t.kind==='pyrevit-tool'&&t.id.startsWith('YSU-TOOL-')));
  assert.equal(new Set(nativeTools.map(t=>t.task_id)).size,4);
  assert.equal(nativeTools.filter(t=>t.version==='1.0.1').length,3);
@@ -354,3 +354,4 @@ test('direct pyRevit entry opens all four cards despite stored Tasks mode',async
   assert.equal(f.get('skCategory').value,'BIM / pyRevit');
  }finally{f.close()}
 });
+

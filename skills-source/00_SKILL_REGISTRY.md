@@ -1,13 +1,13 @@
 # YSU Skills Registry — 統一管理總表
 
 
-紀錄日期：2026-09-21；最新更新：2026-10-15 UTC。Owner：YuCheng Su。  
+紀錄日期：2026-09-21；最新更新：2026-10-23 Pacific/Honolulu。Owner：YuCheng Su。  
 管理入口：Google Drive / My Drive / AI Works / 06_Skills。  
 資料夾：https://drive.google.com/drive/folders/1P6b3rLGzrdev1Lh6tZVGAWnPcNkNYoV_
 
 
 本表是已登錄 YSU 自製 Skills 的管理索引，不是帳號中所有第三方 Skills 的盤點。  
-目前 44 個已登錄項目：新增 YSU-SKILL-040～044 五套 P20261014 風格 v1.0.0（Approved／Partial）；040/044雙模式、041重構單模式、042/043保留構圖單模式。原來源05空號不登錄。其餘歷史：新增 YSU-SKILL-039 流線原子筆敘事 v1.0.0（P20，Approved／Partial；保留構圖單模式）；新增 YSU-SKILL-033–038 六套 P11–P16 風格 v1.0.0（Approved／Partial；四單模式、兩雙模式），ACR 仍待定；新增 YSU-SKILL-032 生活街景墨線水彩 v1.0.0（Approved／Partial）；新增 YSU-SKILL-031 岩彩幻境敘事 v1.0.0（Approved／Partial；預設保留構圖、可選風格重構）；新增 YSU-SKILL-030 留白建築明信片 v1.0.0（WC-C）；新增 YSU-SKILL-029 古畫捲軸雕塑高訂 v1.0.0；YSU-SKILL-028 逐格角色動畫製作 v1.0.0 保留。方法／套件已批准，動畫與引擎待實測；WC-A／WC-B 新提示詞仍待生圖驗證，風格13已正式封裝為032、WC-C已正式封裝，Hub Before/After配對已記錄，新Prompt未實測。此計數不代表平台已安裝或全部實測通過。  
+目前 45 個已登錄項目：新增 YSU-SKILL-045 電影運鏡與轉場設計 v0.1.0（Draft／Untested；20種技法、雙語工作單與驗收規則）。其餘歷史：新增 YSU-SKILL-040～044 五套 P20261014 風格 v1.0.0（Approved／Partial）；040/044雙模式、041重構單模式、042/043保留構圖單模式。原來源05空號不登錄。其餘歷史：新增 YSU-SKILL-039 流線原子筆敘事 v1.0.0（P20，Approved／Partial；保留構圖單模式）；新增 YSU-SKILL-033–038 六套 P11–P16 風格 v1.0.0（Approved／Partial；四單模式、兩雙模式），ACR 仍待定；新增 YSU-SKILL-032 生活街景墨線水彩 v1.0.0（Approved／Partial）；新增 YSU-SKILL-031 岩彩幻境敘事 v1.0.0（Approved／Partial；預設保留構圖、可選風格重構）；新增 YSU-SKILL-030 留白建築明信片 v1.0.0（WC-C）；新增 YSU-SKILL-029 古畫捲軸雕塑高訂 v1.0.0；YSU-SKILL-028 逐格角色動畫製作 v1.0.0 保留。方法／套件已批准，動畫與引擎待實測；WC-A／WC-B 新提示詞仍待生圖驗證，風格13已正式封裝為032、WC-C已正式封裝，Hub Before/After配對已記錄，新Prompt未實測。此計數不代表平台已安裝或全部實測通過。  
 管理對話：YSU Skills 管理中心（使用者於 2026-09-21 指定；不代表已操作聊天 UI 更名）。  
 以下未加新日期的來源核對段落保留 2026-09-21 歷史；該次接續核對已讀三份中央文件、兩個 Skill 的歷史盤點及影片 VALIDATION 全文，並新增來源核對紀錄與本機取回指令；兩套完整來源仍未取得。本機安裝版本均為歷史紀錄，未直讀使用者電腦或重新安裝。  
 下方 YSU-SKILL-001 段落保留首次移交紀錄；該段「本輪」指首次歸檔，不是本次來源核對。本次沒有重跑 Simulator 套件或行為驗證。
@@ -64,6 +64,7 @@
 | YSU-SKILL-042 | 青橘繁構幻境 / Teal-Orange Intricate Worlds；以細密墨線和內斂拼貼式色面，描繪連續空間。 | 1.0.0 | 七份標準檔、雙語Prompt、10張原參考、縮圖與測試證據已歸檔；ZIP回下載完整核對通過 | 未安裝 | ChatGPT Skills頁已保存；新對話載入未驗證；Published to Hub v1.0.0/public-r1（2026-10-15） |
 | YSU-SKILL-043 | 復古套色場景海報 / Retro Spot-Color Scene Posters；用完整套色色版、強剪影與紙白刻線呈現場景。 | 1.0.0 | 七份標準檔、雙語Prompt、9張原參考、縮圖與測試證據已歸檔；ZIP回下載完整核對通過 | 未安裝 | ChatGPT Skills頁已保存；新對話載入未驗證；Published to Hub v1.0.0/public-r1（2026-10-15） |
 | YSU-SKILL-044 | 電影寫實拼格海報 / Cinematic Realism Panel Posters；以寫實主圖、電影光線與可調切入小圖編排海報。 | 1.0.0 | 七份標準檔、雙語Prompt、21張原參考、縮圖與測試證據已歸檔；ZIP回下載完整核對通過 | 未安裝 | ChatGPT Skills頁已保存；新對話載入未驗證；Published to Hub v1.0.0/public-r1（2026-10-15） |
+| YSU-SKILL-045 | 電影運鏡與轉場設計 / Cinematic Camera & Transition Design；依敘事目的選擇運鏡與轉場，產出雙語製作與驗收工作單 | v0.1.0 | SKILL、9份參考、介面設定與ZIP已歸檔；完整讀回核對通過 | 未安裝 | ChatGPT Skills頁已保存；新對話載入未驗證 |
 
 ## YSU-SKILL-001 — Scientific Interactive Simulator
 
@@ -852,6 +853,7 @@ SHA-256：8608b2c97fa5ddc1d5fca465fbd50abce6543a22f44c8fc90c8e1e540acae4b3
 | YSU-SKILL-042 | image-style | 風格轉譯 / Style transfer | painting-illustration | Fine ink / interlocking color planes | STYLE; Architecture; Interior; Narrative; Preserve Composition |
 | YSU-SKILL-043 | image-style | 風格轉譯 / Style transfer | painting-illustration | Spot-color / graphic print | STYLE; Architecture; Interior; Narrative; Preserve Composition |
 | YSU-SKILL-044 | image-style | 風格轉譯 / Style transfer | photography-realism | Cinematic realism / editorial panels | STYLE; Architecture; Interior; Narrative; Dual Mode |
+| YSU-SKILL-045 | film-animation | 運鏡與轉場 / Camera & transitions | — | — | 運鏡; 轉場; 分鏡; 後製 |
 | YSU-PENDING-001 | education | 科學解說 / Science communication | — | — | 教學; 影片 |
 
 
@@ -2112,3 +2114,40 @@ HUB備註：圖片滿版cover；Intrinsic紙白保留；INFO精簡雙語，Tags�
 | YSU-SKILL-042 | `ysu-teal-orange-intricate-worlds` | `1hddwPsBIeDABcia7LbWoY-kPhKS934Rj` | `1vxGZHGawKvYGir48lUTEHEBaf-UCUq1K` | `19CgsT901b4PLxoDgDomHgceM0GRh2F1a` |
 | YSU-SKILL-043 | `ysu-retro-spot-color-scene-posters` | `1qMaszA7pakcwUyafWa4xSEJqwiSKQcbf` | `1QMGkC3eWYmXs_18CoypBKrZBrbeoyqn1` | `1J9nCpv18Ul-ca4O3tDSck0sR_EQeIF69` |
 | YSU-SKILL-044 | `ysu-cinematic-realism-panel-posters` | `1l4S9ldIwE1Ik7yXoBmAZPS-jfdXzLmMX` | `11KOjnF7fUQZYtZdRlCNR2tF7GZuUL64s` | `1jM4-nYDWxspQXz7cSopU8fd2lmlXdAXm` |
+
+## YSU-SKILL-045 — 電影運鏡與轉場設計 / Cinematic Camera & Transition Design
+
+Tracker Metadata:
+- Category: FILM
+- Lifecycle: Draft
+- Validation: Untested
+- Version: 0.1.0
+- Graphic References: 0
+- Drive: ARCHIVED
+- ChatGPT: ARCHIVED
+- Codex: NOT_INSTALLED
+- Origin Project: 電影運鏡與轉場技法庫
+- Origin Conversation: 本次對話；未取得正式標題與URL
+- Locator Status: UNLOCATED
+- Canonical Drive: https://drive.google.com/drive/folders/1JWGE_srV7s2dVie6G6l-Nys-FhlibIu9
+- Next Action: 以核可影片完成運鏡、A/B剪輯與聲音實測；ChatGPT新對話載入仍待確認。文字試用與封裝檢查不提升影片驗證狀態。
+
+Slug：ysu-cinematic-camera-transitions  
+用途：依敘事目的選擇攝影機、光學、時間、視覺轉場與聲音橋接技法，產出繁中／英文工作單，檢查素材、連續性與最小修復。  
+來源：Owner提供《20種運鏡.pdf》，37頁文字教學；來源PDF與完整工作記錄維持私人。來源無內嵌圖像／影片，Graphic References=0。  
+模式：SELECT／SPECIFY／REVIEW；保留原鏡號、身分、必要人數、幾何與專案鎖定。運鏡與世界動作分層，單張圖不冒稱可驗證270度子彈時間；A/B轉場分開生成與剪輯。  
+定位：可選技法庫，配合既有Director／Producer／generation executor／Post角色；不增加固定階段、不取代既有影片流程、不修改SFDOT主表。  
+建立授權：Owner明示「請把這個做成SKILL 然後更新到TRACKER」。2026-10-23 Pacific/Honolulu。  
+驗證：結構／20技法索引／相對連結與三個獨立文字試用完成。11檔套件、ZIP大小／SHA-256／CRC／逐檔雜湊、Drive展開檔讀回一致。影片生成、剪輯器操作、運鏡效果與聲音皆未實測，維持Draft／Untested。  
+中央資料夾：https://drive.google.com/drive/folders/1JWGE_srV7s2dVie6G6l-Nys-FhlibIu9  
+直接閱讀SKILL：https://drive.google.com/file/d/1c8kkrO0v0zY-HXdOLLiD7z0mFCwqYayH/view  
+完整套件：https://drive.google.com/file/d/1l4l840hHpNBLbYDehI7q4XZqrA7mHTCm/view  
+ZIP大小：22049 bytes；SHA-256：`e49f82ac167f8bd861de4061f5d9822f686412ddc9eda911ea4b2a321ba226cb`。  
+ChatGPT Skills頁Git保存：`74347fca1e78c3b6fb9159460ea58ebf0c74dcee`；新對話自動載入未驗證，使用者本機Codex未安裝。私人歸檔、未發布HUB，未更改分享權限。
+
+### Camera technique package file mapping
+
+| Skill ID | slug | Folder | SKILL | ZIP |
+|---|---|---|---|---|
+| YSU-SKILL-045 | `ysu-cinematic-camera-transitions` | `1JWGE_srV7s2dVie6G6l-Nys-FhlibIu9` | `1c8kkrO0v0zY-HXdOLLiD7z0mFCwqYayH` | `1l4l840hHpNBLbYDehI7q4XZqrA7mHTCm` |
+

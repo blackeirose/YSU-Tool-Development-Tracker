@@ -530,3 +530,10 @@ publication, HUB/MAIN mutation or native Revit testing occurs in this Tracker ta
 ## DEC-030 — P20261014 five approved style packages
 
 2026-10-15 UTC. Standing Factory catalog/cover authorization covers 040–044 from source slots 1/2/3/4/6. Approved/Partial v1.0.0; modes: dual, RECOMPOSE-only, PRESERVE-only, PRESERVE-only, dual. 042 is independent of 025; 044 dense cut-ins remain image-untested. Use existing broad families and original-reference covers (041/043 crop the lower styled panel). Full sources and ZIPs remain private; no HUB action. ChatGPT Skills-page packages saved, fresh-session invocation unverified; Codex/Gemini not installed. Export the read-back canonical Registry with the current 12 private/protected-link omissions. No app/Tasks/Auth changes. See docs/validation/p20261014-040-044.md.
+
+## DEC-031 — Camera and transition design Skill catalog
+
+2026-10-23 Pacific/Honolulu. Owner explicitly requests creating a Skill from the supplied camera-technique document and updating Tracker. Register YSU-SKILL-045, Cinematic Camera & Transition Design v0.1.0, Draft / Untested, under Film & Animation / Camera & transitions. This optional technique library complements existing film roles; it does not replace the film workflow or edit project masters.
+
+Use the read-back canonical Drive Registry and existing generator with all 17 current private/protected-link omissions preserved. Skill package and source stay private. ChatGPT Skills-page save is recorded as ARCHIVED; fresh-session invocation remains unverified, user-local Codex is not installed. Text/packaging checks do not certify footage or audio. Preserve all existing catalog entries, native tools, covers, UI, Tasks and Auth. No HUB publication. See docs/validation/camera-transitions-045.md.
+
