@@ -537,3 +537,7 @@ publication, HUB/MAIN mutation or native Revit testing occurs in this Tracker ta
 
 Use the read-back canonical Drive Registry and existing generator with all 17 current private/protected-link omissions preserved. Skill package and source stay private. ChatGPT Skills-page save is recorded as ARCHIVED; fresh-session invocation remains unverified, user-local Codex is not installed. Text/packaging checks do not certify footage or audio. Preserve all existing catalog entries, native tools, covers, UI, Tasks and Auth. No HUB publication. See docs/validation/camera-transitions-045.md.
 
+
+## DEC-032 — Camera technique library trial published to HUB
+
+2026-10-23 Pacific/Honolulu. Owner authorizes YSU-SKILL-045 v0.1.0/public-r1 trial publication and Tracker status sync. Preserve Draft/Untested and actual platform states. The optional technique library is the sixth Child of the existing orange Architectural Narrative Film Main, within two pages at the existing three-per-page capacity; five core roles remain in development. No suitable same-color Child prototype was available. Reuse protected Launch, keep canonical private, exclude the member package URL from this public export. Preserve all previous catalog entries, media and privacy omissions. No HUB frontend, Auth, schema, Tasks or native-tool change. See docs/validation/camera-transitions-045-hub.md.

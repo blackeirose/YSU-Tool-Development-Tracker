@@ -17,7 +17,7 @@
     "source": "Skill Taxonomy v1 table in canonical Drive registry"
   },
   "$comment": "GENERATED FILE — do not edit by hand. Source: Google Drive AI Works/06_Skills/00_SKILL_REGISTRY.md. Regenerate with `npm run skills:index`.",
-  "generated_at": "2026-10-23T19:25:04.413Z",
+  "generated_at": "2026-10-24T00:41:15.023Z",
   "source": {
     "file": "skills-source/00_SKILL_REGISTRY.md",
     "drive_file_id": "1g6Io9lD4YwkDaX5_OUqssvrcEyuCF-1P",
@@ -3780,7 +3780,7 @@
         "codex": "NOT_INSTALLED"
       },
       "platform_notes": {
-        "drive": "SKILL、9份參考、介面設定與ZIP已歸檔；完整讀回核對通過",
+        "drive": "SKILL、9份參考、介面設定與ZIP已歸檔；完整讀回核對通過；Published to Hub v0.1.0/public-r1（2026-10-23）",
         "chatgpt": "ChatGPT Skills頁已保存；新對話載入未驗證",
         "codex": "未安裝"
       },
@@ -3789,7 +3789,7 @@
       "origin_conversation_url": null,
       "locator_status": "UNLOCATED",
       "related_conversations": [],
-      "next_action": "以核可影片完成運鏡、A/B剪輯與聲音實測；ChatGPT新對話載入仍待確認。文字試用與封裝檢查不提升影片驗證狀態。",
+      "next_action": "Published to Hub v0.1.0/public-r1（2026-10-23 Pacific/Honolulu）；會員下載見 https://hub.ycsu.cc/ 的建築敘事影片 → 電影運鏡與轉場設計。Draft／Untested；以核可影片完成運鏡、A/B剪輯與聲音實測；ChatGPT新對話載入仍待確認。",
       "canonical_drive": "https://drive.google.com/drive/folders/1JWGE_srV7s2dVie6G6l-Nys-FhlibIu9",
       "links": [
         {
