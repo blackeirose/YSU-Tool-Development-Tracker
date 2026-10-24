@@ -64,7 +64,7 @@
 | YSU-SKILL-042 | 青橘繁構幻境 / Teal-Orange Intricate Worlds；以細密墨線和內斂拼貼式色面，描繪連續空間。 | 1.0.0 | 七份標準檔、雙語Prompt、10張原參考、縮圖與測試證據已歸檔；ZIP回下載完整核對通過 | 未安裝 | ChatGPT Skills頁已保存；新對話載入未驗證；Published to Hub v1.0.0/public-r1（2026-10-15） |
 | YSU-SKILL-043 | 復古套色場景海報 / Retro Spot-Color Scene Posters；用完整套色色版、強剪影與紙白刻線呈現場景。 | 1.0.0 | 七份標準檔、雙語Prompt、9張原參考、縮圖與測試證據已歸檔；ZIP回下載完整核對通過 | 未安裝 | ChatGPT Skills頁已保存；新對話載入未驗證；Published to Hub v1.0.0/public-r1（2026-10-15） |
 | YSU-SKILL-044 | 電影寫實拼格海報 / Cinematic Realism Panel Posters；以寫實主圖、電影光線與可調切入小圖編排海報。 | 1.0.0 | 七份標準檔、雙語Prompt、21張原參考、縮圖與測試證據已歸檔；ZIP回下載完整核對通過 | 未安裝 | ChatGPT Skills頁已保存；新對話載入未驗證；Published to Hub v1.0.0/public-r1（2026-10-15） |
-| YSU-SKILL-045 | 電影運鏡與轉場設計 / Cinematic Camera & Transition Design；依敘事目的選擇運鏡與轉場，產出雙語製作與驗收工作單 | v0.1.0 | SKILL、9份參考、介面設定與ZIP已歸檔；完整讀回核對通過 | 未安裝 | ChatGPT Skills頁已保存；新對話載入未驗證 |
+| YSU-SKILL-045 | 電影運鏡與轉場設計 / Cinematic Camera & Transition Design；依敘事目的選擇運鏡與轉場，產出雙語製作與驗收工作單 | v0.1.0 | SKILL、9份參考、介面設定與ZIP已歸檔；完整讀回核對通過；Published to Hub v0.1.0/public-r1（2026-10-23） | 未安裝 | ChatGPT Skills頁已保存；新對話載入未驗證 |
 
 ## YSU-SKILL-001 — Scientific Interactive Simulator
 
@@ -2130,7 +2130,7 @@ Tracker Metadata:
 - Origin Conversation: 本次對話；未取得正式標題與URL
 - Locator Status: UNLOCATED
 - Canonical Drive: https://drive.google.com/drive/folders/1JWGE_srV7s2dVie6G6l-Nys-FhlibIu9
-- Next Action: 以核可影片完成運鏡、A/B剪輯與聲音實測；ChatGPT新對話載入仍待確認。文字試用與封裝檢查不提升影片驗證狀態。
+- Next Action: Published to Hub v0.1.0/public-r1（2026-10-23 Pacific/Honolulu）；會員下載見 https://hub.ycsu.cc/ 的建築敘事影片 → 電影運鏡與轉場設計。Draft／Untested；以核可影片完成運鏡、A/B剪輯與聲音實測；ChatGPT新對話載入仍待確認。
 
 Slug：ysu-cinematic-camera-transitions  
 用途：依敘事目的選擇攝影機、光學、時間、視覺轉場與聲音橋接技法，產出繁中／英文工作單，檢查素材、連續性與最小修復。  
@@ -2144,6 +2144,20 @@ Slug：ysu-cinematic-camera-transitions
 完整套件：https://drive.google.com/file/d/1l4l840hHpNBLbYDehI7q4XZqrA7mHTCm/view  
 ZIP大小：22049 bytes；SHA-256：`e49f82ac167f8bd861de4061f5d9822f686412ddc9eda911ea4b2a321ba226cb`。  
 ChatGPT Skills頁Git保存：`74347fca1e78c3b6fb9159460ea58ebf0c74dcee`；新對話自動載入未驗證，使用者本機Codex未安裝。私人歸檔、未發布HUB，未更改分享權限。
+
+
+### HUB trial publication — 2026-10-23 Pacific/Honolulu (UTC-10:00)
+
+- HUB狀態：Published to Hub，v0.1.0 / public-r1 試用版。以上未發布HUB為先前歷史，以本段較晚紀錄為現況；Lifecycle Draft、Validation Untested 維持。
+- 分類：影片與動畫 / Film & Animation → 運鏡與轉場 / Camera & transitions；HUB入口：https://hub.ycsu.cc/ → 建築敘事影片 / Architectural Narrative Film → NEXT第二頁 → 電影運鏡與轉場設計。
+- Child ID：b_298d3126-92c6-437b-90c2-8d8cef7b1a58；Parent ID：b_9612bfb3-3ebf-46d5-82f9-dab29df88033；排序6；Workflow Utility橘色#D97706；每頁3顆，6子項共兩頁。無適合電影Child的同色Prototype，新增一筆Child、沒有新增Main或搬動舊項。
+- 私有會員 Launch 映射：public-r1 ZIP（下載連結僅由HUB會員入口提供）；61387 bytes；SHA-256 5aaf901fc6a8217b4cab149b34b8bd55eb7df7a22ea76260b52aa32dca6f1d0e。此發布URL只存protected Launch及私有紀錄，公開Tracker匯出必須省略。
+- 公開包15檔：既有SKILL、9份references、agents/openai.yaml，新增雙語README、RELEASE_NOTES、原創攝影機路徑／A-B技法示意圖與manifest。核心10份檔案逐字一致，sources.md僅調整公開來源說明；私人PDF／專案／交接／測試逐字稿不附上，無私人來源依賴或新授權聲明。
+- 下載驗收：匿名無Cookie／OAuth HTTP取得完整ZIP，大小／SHA-256／CRC／逐檔manifest／解壓PASS；Owner/Admin實際HUB Detail→Launch→Drive→Download取得同一完整ZIP另記PASS。普通Member與全新匿名瀏覽器下載體驗NOT VERIFIED，未新增帳號。
+- 桌面及390px／320px雙語Detail文字正常換行，Guest仍需登入才能Launch；影片、聲音、剪輯器、逐格品質、跨模型及新對話載入未實測，不提升Untested。
+- 原始參考數維持0；原創技法示意不是影片成果或原始Graphic Reference。ChatGPT ARCHIVED（新對話載入未驗證）、Codex NOT_INSTALLED保留，不宣稱新增安裝。
+- canonical資料夾／私人ZIP／來源與PUBLIC_RELEASES母資料夾維持私有；僅本公開ZIP設anyone/reader，收到連結者可下載、Owner可撤權。公開包列入既有all-off清單，不代表Drive本身驗證會員。
+- 父泡泡僅精準澄清五核心模組仍開發中、另有045可選試用；其他58既有CMS rows、所有既有媒體／裁切／Tags／排序／Launch未變。純CMS更新，未部署HUB前端。
 
 ### Camera technique package file mapping
 
